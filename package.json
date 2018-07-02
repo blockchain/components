@@ -4,8 +4,8 @@
   "description": "Blockchain.com components library",
   "main": "src/index.js",
   "scripts": {
-    "storybook:start": "start-storybook -p 6006",
-    "storybook:build": "build-storybook",
+    "start": "start-storybook -p 6006",
+    "build": "build-storybook",
     "test": "./node_modules/.bin/jest",
     "test:update": "./node_modules/.bin/jest -u"
   },

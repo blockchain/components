@@ -1,5 +1,7 @@
-import ContainedButton from './Buttons/ContainedButton'
+import * as Buttons from './Buttons'
+import * as Tabs from './Tabs'
 
-export {
-  ContainedButton
+export default {
+  ...Buttons,
+  ...Tabs
 }

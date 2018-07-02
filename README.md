@@ -1,4 +1,4 @@
-# blockchain-components
+# blockchain-info-components
 
 ## Introduction
 
@@ -22,6 +22,11 @@ In order to use this library, follow the steps below:
   * Font files (`.svg`, `.ttf`)
   * Image files (`.png`)
 
+## Commands
+* `yarn start`: Start storybook in development mode
+* `yarn build`: Create storybook release
+* `yarn test`: Run snapshot tests
+* `yarn test:update`: Run tests and update snapshots
 
 ## Development guidelines
 

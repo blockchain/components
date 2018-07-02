@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabMenu component renders correctly 1`] = `
+<styled.div>
+  <Item
+    selected={false}
+  >
+    Item 1
+  </Item>
+  <Item
+    selected={false}
+  >
+    Item 2
+  </Item>
+  <Item
+    selected={false}
+  >
+    Item 3
+  </Item>
+  <Item
+    selected={false}
+  >
+    Item 4
+  </Item>
+</styled.div>
+`;
+
+exports[`TabMenu component renders correctly with a selected item 1`] = `
+<styled.div>
+  <Item
+    selected={false}
+  >
+    Item 1
+  </Item>
+  <Item
+    selected={true}
+  >
+    Item 2
+  </Item>
+  <Item
+    selected={false}
+  >
+    Item 3
+  </Item>
+  <Item
+    selected={false}
+  >
+    Item 4
+  </Item>
+</styled.div>
+`;
