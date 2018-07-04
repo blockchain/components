@@ -25,6 +25,7 @@ const BaseContainedButton = styled.button.attrs({ type: 'button' })`
   &:hover {
     background-color: ${props => lighten(0.1, props.theme[props.backgroundColor])};
     border-color: ${props => lighten(0.1, props.theme[props.borderColor])};
+    transform: scale(0.95);
   }
 `
 

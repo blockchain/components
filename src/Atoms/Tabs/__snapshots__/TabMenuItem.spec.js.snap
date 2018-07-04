@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabMenuItem component renders correctly 1`] = `
+<styled.div>
+  MyTabMenuItem
+  <styled.div
+    visible={false}
+  />
+</styled.div>
+`;
+
+exports[`TabMenuItem component renders correctly when selected 1`] = `
+<styled.div>
+  MyTabMenuItem
+  <styled.div
+    visible={true}
+  />
+</styled.div>
+`;

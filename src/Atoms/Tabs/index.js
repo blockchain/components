@@ -1,5 +1,7 @@
-import * as TabMenu from './TabMenu'
+import TabMenu from './TabMenu'
+import TabMenuItem from './TabMenuItem'
 
 export {
-  TabMenu
+  TabMenu,
+  TabMenuItem
 }

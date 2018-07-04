@@ -1,0 +1,2 @@
+import './Icomoon'
+import './Montserrat'
