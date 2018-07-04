@@ -10,4 +10,5 @@ export default {
   'gray-4': '#757679',
   'gray-5': '#545456',
   'gray-6': '#383838',
+  'transparent': 'rgba(0,0,0,0)'
 }

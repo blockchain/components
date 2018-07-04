@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import TabMenu from './TabMenu'
 import TabMenuItem from './TabMenuItem'
 
-storiesOf('Tabs/TabMenu', module)
+storiesOf('Atoms/Tabs/TabMenu', module)
   .add('default', () => 
     <TabMenu>
       <TabMenuItem>Item 1</TabMenuItem>

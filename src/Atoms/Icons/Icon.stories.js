@@ -40,7 +40,7 @@ const renderIcon = name => (
   </IconContainer>
 )
 
-storiesOf('Icons/Icon', module)
+storiesOf('Atoms/Icons/Icon', module)
   .add('list', () => <Layout>{keysIn(IcomoonMap).map(renderIcon)}</Layout>)
   .add('default', () => <Icon />)
   .add('with name', () => <Icon name='alert-filled' />)

@@ -9,17 +9,19 @@ const BaseInput = styled.input.attrs({ type: props => props.type }) `
   height: 40px;
   padding: 6px 12px;
   box-sizing: border-box;
-  font-family: 'Roboto', sans serif;
+  font-family: 'Montserrat', helvetica, sans serif;
   font-size: 14px;
   font-weight: 300;
-  color: ${props => props.theme['gray-6']};
-  background-color: ${props => props.theme['white']};
+  color: ${props => props.theme[props.color]};
+  background-color: ${props => props.theme[props.backgroundColor]};
   background-image: none;
   outline-width: 0;
   user-select: text;
-  border: 1px solid ${props => props.theme[props.borderColor]};
+  border-width: 1px;
+  border-style: solid;
+  border-color: ${props => props.theme[props.borderColor]};
   &::placeholder {
-    color: ${props => props.theme['gray-6']};
+    color: ${props => props.theme['gray-3']};
     opacity: 0.4;
   }
   &:disabled {
@@ -33,6 +35,8 @@ const Input = props => <BaseInput {...props} />
 
 Input.propTypes = {
   type: PropTypes.oneOf(['text', 'date', 'number', 'password']),
+  color: PropTypes.string,
+  backgroundColor: PropTypes.string,
   borderColor: PropTypes.string,
   width: PropTypes.string,
   disabled: PropTypes.bool
@@ -40,9 +44,11 @@ Input.propTypes = {
 
 Input.defaultProps = {
   type: 'text',
+  color: 'gray-5',
+  backgroundColor: 'white',
   borderColor: 'gray-2',
   width: '100%',
-  disabled: false,
+  disabled: false
 }
 
 export default Input

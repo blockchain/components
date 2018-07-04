@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SearchBar component renders correctly 1`] = `
+exports[`SearchBarUnderlined component renders correctly 1`] = `
 <styled.div>
   <Input
     backgroundColor="white"
-    borderColor="white"
+    borderColor="transparent"
     color="gray-5"
     disabled={false}
     type="text"
@@ -22,33 +22,11 @@ exports[`SearchBar component renders correctly 1`] = `
 </styled.div>
 `;
 
-exports[`SearchBar component renders correctly with borderColor 1`] = `
+exports[`SearchBarUnderlined component renders correctly with handleChange 1`] = `
 <styled.div>
   <Input
     backgroundColor="white"
-    borderColor="gold"
-    color="gray-5"
-    disabled={false}
-    type="text"
-    width="100%"
-  />
-  <styled.div>
-    <Icon
-      color="gray-5"
-      name="search-filled"
-      selectable={true}
-      size="20px"
-      weight={400}
-    />
-  </styled.div>
-</styled.div>
-`;
-
-exports[`SearchBar component renders correctly with handleChange 1`] = `
-<styled.div>
-  <Input
-    backgroundColor="white"
-    borderColor="white"
+    borderColor="transparent"
     color="gray-5"
     disabled={false}
     onChange={[Function]}
@@ -67,11 +45,11 @@ exports[`SearchBar component renders correctly with handleChange 1`] = `
 </styled.div>
 `;
 
-exports[`SearchBar component renders correctly with handleClick 1`] = `
+exports[`SearchBarUnderlined component renders correctly with handleClick 1`] = `
 <styled.div>
   <Input
     backgroundColor="white"
-    borderColor="white"
+    borderColor="transparent"
     color="gray-5"
     disabled={false}
     type="text"
@@ -90,11 +68,11 @@ exports[`SearchBar component renders correctly with handleClick 1`] = `
 </styled.div>
 `;
 
-exports[`SearchBar component renders correctly with value 1`] = `
+exports[`SearchBarUnderlined component renders correctly with value 1`] = `
 <styled.div>
   <Input
     backgroundColor="white"
-    borderColor="white"
+    borderColor="transparent"
     color="gray-5"
     disabled={false}
     type="text"

@@ -5,22 +5,14 @@ import styled from 'styled-components'
 import { Input } from '../../Atoms/Inputs'
 import { Icon } from '../../Atoms/Icons'
 
-const BaseSearchBar = styled.div`
+const BaseSearchBarUnderlined = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-
-  & > :first-child {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-  }
-
-  & > :last-child {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
+  border-bottom: 1px solid ${props => props.theme['gray-2']};
+  background-color: transparent;
 `
 const IconContainer = styled.div`
   display: flex;
@@ -29,27 +21,22 @@ const IconContainer = styled.div`
   align-items: center;
   width: 60px;
   height: 40px;
-  background-color: ${props => props.theme['gold']};
+  background-color: inherit;
 `
 
-const SearchBar = ({ children, borderColor, value, handleChange, handleClick, ...rest }) => (
-  <BaseSearchBar>
-    <Input borderColor={borderColor} value={value} onChange={handleChange} {...rest} />
+const SearchBarUnderlined = ({ children, value, handleChange, handleClick, ...rest }) => (
+  <BaseSearchBarUnderlined>
+    <Input borderColor='transparent' value={value} onChange={handleChange} {...rest} />
     <IconContainer>
       <Icon name='search-filled' size='20px' selectable onClick={handleClick} />
     </IconContainer>
-  </BaseSearchBar>
+  </BaseSearchBarUnderlined>
 )
 
-SearchBar.propTypes = {
+SearchBarUnderlined.propTypes = {
   value: PropTypes.any,
-  borderColor: PropTypes.string,
   handleChange: PropTypes.func,
   handleClick: PropTypes.func
 }
 
-SearchBar.defaultProps = {
-  borderColor: 'white'
-}
-
-export default SearchBar
+export default SearchBarUnderlined

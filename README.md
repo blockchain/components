@@ -6,7 +6,7 @@ The library `blockchain-components` is based on **React**, **styled-components**
 
 ## Methodology
 
-This library has been designed and developed using the familiar with the [Atomic design methodology](http://atomicdesign.bradfrost.com/chapter-2/).
+This library has been designed and developed using the [Atomic design methodology](http://atomicdesign.bradfrost.com/chapter-2/).
 
 An additional attention has be taken to ensure that all components are available and fully functional accross all the different web browsers, as well as responsive on any screen sizes.
 

@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 
 import Text from './Text'
 
-storiesOf('Typography/Text', module)
+storiesOf('Atoms/Typography/Text', module)
   .add('default', () => <Text>MyText</Text>)
   .add('with color', () => <Text color='gold'>MyText</Text>)
   .add('with size', () => <Text size='32px'>MyText</Text>)

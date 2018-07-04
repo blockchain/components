@@ -2,7 +2,9 @@
 
 exports[`Input component renders correctly 1`] = `
 <styled.input
+  backgroundColor="white"
   borderColor="gray-2"
+  color="gray-5"
   disabled={false}
   type="text"
   width="100%"
@@ -11,6 +13,7 @@ exports[`Input component renders correctly 1`] = `
 
 exports[`Input component renders correctly with borderColor 1`] = `
 <styled.input
+  backgroundColor="white"
   borderColor="gray-2"
   color="gold"
   disabled={false}
@@ -21,7 +24,9 @@ exports[`Input component renders correctly with borderColor 1`] = `
 
 exports[`Input component renders correctly with disabled 1`] = `
 <styled.input
+  backgroundColor="white"
   borderColor="gray-2"
+  color="gray-5"
   disabled={true}
   type="text"
   width="100%"
@@ -30,7 +35,9 @@ exports[`Input component renders correctly with disabled 1`] = `
 
 exports[`Input component renders correctly with type 1`] = `
 <styled.input
+  backgroundColor="white"
   borderColor="gray-2"
+  color="gray-5"
   disabled={false}
   type="password"
   width="100%"
@@ -39,7 +46,9 @@ exports[`Input component renders correctly with type 1`] = `
 
 exports[`Input component renders correctly with width 1`] = `
 <styled.input
+  backgroundColor="white"
   borderColor="gray-2"
+  color="gray-5"
   disabled={false}
   type="text"
   width="200px"

@@ -5,7 +5,7 @@ import theme from '../../Tools/theme'
 import { keysIn } from 'ramda'
 
 const BaseText = styled.span`
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', helvetica, sans serif;
   font-weight: ${props => props.weight};
   font-size: ${props => props.size};
   text-transform: ${props => props.uppercase ? 'uppercase' : props.capitalize ? 'capitalize' : 'none'};

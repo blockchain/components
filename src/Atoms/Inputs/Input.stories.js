@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Input from './Input'
 
-storiesOf('Inputs/Input', module)
+storiesOf('Atoms/Inputs/Input', module)
   .add('default', () => <Input />)
   .add('with type', () => <Input type='password' />)
   .add('with borderColor', () => <Input borderColor='gold' />)

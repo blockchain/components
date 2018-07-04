@@ -5,7 +5,7 @@ import TableCell from './TableCell'
 import TableHeader from './TableHeader'
 import TableRow from './TableRow'
 
-storiesOf('Tables/Table', module)
+storiesOf('Atoms/Tables/Table', module)
   .add('default', () => <Table>
       <TableHeader>
         <TableCell>Header 1</TableCell>
