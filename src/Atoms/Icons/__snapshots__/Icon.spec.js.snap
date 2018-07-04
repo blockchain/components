@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon component renders correctly 1`] = `
+<styled.span
+  code="\\\\e957"
+  color="gray-5"
+  selectable={false}
+  size="40px"
+  weight={400}
+/>
+`;
+
+exports[`Icon component renders correctly with color 1`] = `
+<styled.span
+  code="\\\\e957"
+  color="gold"
+  selectable={false}
+  size="40px"
+  weight={400}
+/>
+`;
+
+exports[`Icon component renders correctly with name 1`] = `
+<styled.span
+  code="\\\\e963"
+  color="gray-5"
+  selectable={false}
+  size="40px"
+  weight={400}
+/>
+`;
+
+exports[`Icon component renders correctly with selectable 1`] = `
+<styled.span
+  code="\\\\e957"
+  color="gray-5"
+  selectable={true}
+  size="40px"
+  weight={400}
+/>
+`;
+
+exports[`Icon component renders correctly with size 1`] = `
+<styled.span
+  code="\\\\e957"
+  color="gray-5"
+  selectable={false}
+  size="72px"
+  weight={400}
+/>
+`;
+
+exports[`Icon component renders correctly with uppercase 1`] = `
+<styled.span
+  code="\\\\e957"
+  color="gray-5"
+  selectable={false}
+  size="40px"
+  weight={400}
+/>
+`;

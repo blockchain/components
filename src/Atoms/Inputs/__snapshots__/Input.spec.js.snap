@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component renders correctly 1`] = `
+<styled.input
+  borderColor="gray-2"
+  disabled={false}
+  type="text"
+  width="100%"
+/>
+`;
+
+exports[`Input component renders correctly with borderColor 1`] = `
+<styled.input
+  borderColor="gray-2"
+  color="gold"
+  disabled={false}
+  type="text"
+  width="100%"
+/>
+`;
+
+exports[`Input component renders correctly with disabled 1`] = `
+<styled.input
+  borderColor="gray-2"
+  disabled={true}
+  type="text"
+  width="100%"
+/>
+`;
+
+exports[`Input component renders correctly with type 1`] = `
+<styled.input
+  borderColor="gray-2"
+  disabled={false}
+  type="password"
+  width="100%"
+/>
+`;
+
+exports[`Input component renders correctly with width 1`] = `
+<styled.input
+  borderColor="gray-2"
+  disabled={false}
+  type="text"
+  width="200px"
+/>
+`;

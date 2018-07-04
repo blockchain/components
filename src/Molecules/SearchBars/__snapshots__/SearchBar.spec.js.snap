@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar component renders correctly 1`] = `
+<styled.div>
+  <Input
+    borderColor="white"
+    disabled={false}
+    type="text"
+    width="100%"
+  />
+  <styled.div>
+    <Icon
+      color="gray-5"
+      name="search-filled"
+      selectable={true}
+      size="20px"
+      weight={400}
+    />
+  </styled.div>
+</styled.div>
+`;
+
+exports[`SearchBar component renders correctly with borderColor 1`] = `
+<styled.div>
+  <Input
+    borderColor="gold"
+    disabled={false}
+    type="text"
+    width="100%"
+  />
+  <styled.div>
+    <Icon
+      color="gray-5"
+      name="search-filled"
+      selectable={true}
+      size="20px"
+      weight={400}
+    />
+  </styled.div>
+</styled.div>
+`;

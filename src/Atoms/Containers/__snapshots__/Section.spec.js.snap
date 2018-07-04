@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section component renders correctly 1`] = `
+<styled.section
+  color="white"
+  height="auto"
+  width="100%"
+>
+  MySection
+</styled.section>
+`;
+
+exports[`Section component renders correctly with color 1`] = `
+<styled.section
+  color="gold"
+  height="auto"
+  width="100%"
+>
+  MySection
+</styled.section>
+`;
+
+exports[`Section component renders correctly with height 1`] = `
+<styled.section
+  color="white"
+  height="200px"
+  width="100%"
+>
+  MySection
+</styled.section>
+`;
+
+exports[`Section component renders correctly with width 1`] = `
+<styled.section
+  color="white"
+  height="auto"
+  width="200px"
+>
+  MySection
+</styled.section>
+`;

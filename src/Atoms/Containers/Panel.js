@@ -2,30 +2,33 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const BaseCard = styled.div`
+const BasePanel = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: ${props => props.height};
   width: ${props => props.width};
+  padding: 30px;
+  box-sizing: border-box;
   box-shadow: 0px 0px 25px 5px ${props => props.theme['gray-1']};
+  background-color: ${props => props.theme['white']};
 `
 
-const Card = ({ children, height, width }) => (
-  <BaseCard height={height} width={width}>
+const Panel = ({ children, height, width }) => (
+  <BasePanel height={height} width={width}>
     {children}
-  </BaseCard>
+  </BasePanel>
 )
 
-Card.propTypes = {
+Panel.propTypes = {
   height: PropTypes.string,
   width: PropTypes.string
 }
 
-Card.defaultProps = {
+Panel.defaultProps = {
   height: 'auto',
   width: 'auto'
 }
 
-export default Card
+export default Panel
