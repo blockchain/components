@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { keysIn } from 'ramda'
 import { lighten } from 'polished'
+import theme from '../../Tools/theme'
 import IcomoonMap from './IcomoonMap'
-
 
 const BaseIcon = styled.span`
   font-weight: ${props => props.weight};
@@ -23,7 +24,7 @@ const Icon = ({ name, selectable, ...rest }) => <BaseIcon {...rest} code={Icomoo
 
 Icon.propTypes = {
   name: PropTypes.string.isRequired,
-  color: PropTypes.string,
+  color: PropTypes.oneOf(keysIn(theme)),
   size: PropTypes.string,
   weight: PropTypes.oneOf([100, 200, 300, 400, 500, 600, 700, 800, 900]),
   selectable: PropTypes.bool

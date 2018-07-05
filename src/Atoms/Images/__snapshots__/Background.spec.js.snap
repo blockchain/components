@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Background component renders correctly 1`] = `
+<styled.div
+  height="200px"
+  path={null}
+  stretch={false}
+  width="200px"
+/>
+`;
+
+exports[`Background component renders correctly with height 1`] = `
+<styled.div
+  height="400px"
+  path={null}
+  stretch={false}
+  width="200px"
+/>
+`;
+
+exports[`Background component renders correctly with stretch 1`] = `
+<styled.div
+  height="200px"
+  path={null}
+  stretch={true}
+  width="200px"
+/>
+`;
+
+exports[`Background component renders correctly with width 1`] = `
+<styled.div
+  height="200px"
+  path={null}
+  stretch={false}
+  width="200px"
+/>
+`;
+
+exports[`Background component renders correctly with width 2`] = `
+<styled.div
+  height="200px"
+  path={null}
+  stretch={false}
+  width="600px"
+/>
+`;

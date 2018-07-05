@@ -6,6 +6,5 @@ exports[`ContainedButton component renders correctly 1`] = `
   borderColor="primary"
   color="white"
   disabled={false}
-  width="100%"
 />
 `;

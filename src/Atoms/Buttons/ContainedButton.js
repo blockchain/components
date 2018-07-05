@@ -8,7 +8,7 @@ const BaseContainedButton = styled.button.attrs({ type: 'button' })`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: ${props => props.width};
+  width: 100%;
   height: 40px;
   font-size: 18px;
   font-weight: 300;
@@ -45,14 +45,12 @@ const ContainedButton = ({ children, nature, ...rest }) => (
 
 ContainedButton.propTypes = {
   nature: PropTypes.oneOf(['primary', 'secondary']),
-  disabled: PropTypes.bool,
-  width: PropTypes.string
+  disabled: PropTypes.bool
 }
 
 ContainedButton.defaultProps = {
   nature: 'primary',
-  disabled: false,
-  width: '100%'
+  disabled: false
 }
 
 export default ContainedButton

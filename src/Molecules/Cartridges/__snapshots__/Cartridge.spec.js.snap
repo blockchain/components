@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cartridge component renders correctly 1`] = `
+<Styled(Text)
+  backgroundColor="primary"
+  color="white"
+/>
+`;
+
+exports[`Cartridge component renders correctly with nature 1`] = `
+<Styled(Text)
+  backgroundColor="secondary"
+  color="white"
+/>
+`;

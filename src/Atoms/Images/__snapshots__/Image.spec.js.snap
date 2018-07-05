@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image component renders correctly 1`] = `
+<styled.img
+  height="auto"
+  path={null}
+  selectable={false}
+  width="auto"
+/>
+`;
+
+exports[`Image component renders correctly width width 1`] = `
+<styled.img
+  height="auto"
+  path={null}
+  selectable={false}
+  width="200px"
+/>
+`;
+
+exports[`Image component renders correctly with height 1`] = `
+<styled.img
+  height="50px"
+  path={null}
+  selectable={false}
+  width="auto"
+/>
+`;
+
+exports[`Image component renders correctly with name 1`] = `
+<styled.img
+  height="auto"
+  path={null}
+  selectable={false}
+  width="auto"
+/>
+`;
+
+exports[`Image component renders correctly with selectable 1`] = `
+<styled.img
+  height="auto"
+  path={null}
+  selectable={true}
+  width="auto"
+/>
+`;

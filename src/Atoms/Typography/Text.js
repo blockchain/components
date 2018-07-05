@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import theme from '../../Tools/theme'
 import { keysIn } from 'ramda'
+import theme from '../../Tools/theme'
 
 const BaseText = styled.span`
   font-family: 'Montserrat', helvetica, sans serif;
@@ -14,8 +14,8 @@ const BaseText = styled.span`
   opacity: ${props => props.opacity};
 `
 
-const Text = ({ children, weight, size, uppercase, capitalize, italic, color, opacity }) => (
-  <BaseText color={color} size={size} weight={weight} uppercase={uppercase} capitalize={capitalize} italic={italic} opacity={opacity}>
+const Text = ({ children, weight, size, uppercase, capitalize, italic, color, opacity, ...rest }) => (
+  <BaseText color={color} size={size} weight={weight} uppercase={uppercase} capitalize={capitalize} italic={italic} opacity={opacity} {...rest}>
     {children}
   </BaseText>
 )

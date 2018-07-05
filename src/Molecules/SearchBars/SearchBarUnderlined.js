@@ -26,7 +26,7 @@ const IconContainer = styled.div`
 
 const SearchBarUnderlined = ({ children, value, handleChange, handleClick, ...rest }) => (
   <BaseSearchBarUnderlined>
-    <Input borderColor='transparent' value={value} onChange={handleChange} {...rest} />
+    <Input backgroundColor='transparent' borderColor='transparent' value={value} onChange={handleChange} {...rest} />
     <IconContainer>
       <Icon name='search-filled' size='20px' selectable onClick={handleClick} />
     </IconContainer>

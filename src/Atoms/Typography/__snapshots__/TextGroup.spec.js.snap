@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text component renders correctly 1`] = `
+<styled.div
+  align="justify"
+  inline={true}
+>
+  <Texts />
+</styled.div>
+`;
+
+exports[`Text component renders correctly with align 1`] = `
+<styled.div
+  align="right"
+  inline={true}
+>
+  <Texts />
+</styled.div>
+`;
+
+exports[`Text component renders correctly with inline 1`] = `
+<styled.div
+  align="justify"
+  inline={false}
+>
+  <Texts />
+</styled.div>
+`;

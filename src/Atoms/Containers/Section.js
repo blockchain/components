@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { keysIn } from 'ramda'
+import theme from '../../Tools/theme'
 
 const BaseSection = styled.section`
   display: flex;
@@ -21,7 +23,7 @@ const Section = ({ children, height, width, color }) => (
 )
 
 Section.propTypes = {
-  color: PropTypes.string,
+  color: PropTypes.oneOf(keysIn(theme)),
   height: PropTypes.string,
   width: PropTypes.string
 }

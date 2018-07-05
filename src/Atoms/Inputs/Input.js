@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { lighten, darken } from 'polished'
+import { keysIn } from 'ramda'
+import theme from '../../Tools/theme'
 
 const BaseInput = styled.input.attrs({ type: props => props.type }) `
   display: block;
@@ -35,7 +37,7 @@ const Input = props => <BaseInput {...props} />
 
 Input.propTypes = {
   type: PropTypes.oneOf(['text', 'date', 'number', 'password']),
-  color: PropTypes.string,
+  color: PropTypes.oneOf(keysIn(theme)),
   backgroundColor: PropTypes.string,
   borderColor: PropTypes.string,
   width: PropTypes.string,
