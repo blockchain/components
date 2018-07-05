@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>README.html</title>
+
+</head>
+
+<body>
+
+<p><a href="http://standardjs.com"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg" alt="js-standard-style" /></a> <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="code style: prettier" /></a></p>
+<h1 id="blockchain-components">Blockchain Components</h1>
+<p>The library Blockchain Components is based on React and styled-components. It contains basic components, “atoms”, and more complex “molecules” that are used on the <a href="https://www.blockchain.com">Blockchain.com</a> ecosystem.</p>
+<h2 id="tooling">Tooling</h2>
+<p>Both <code>yarn</code> and <code>npm</code> are supported. The commands are given using <code>npm</code> however you can use the <code>yarn</code> equivalent and it will Just Work™</p>
+<h2 id="installation">Installation</h2>
+<ol type="1">
+<li><code>Just a quick</code>npm i blockchain-info-components` and you are good to go!</li>
+<li>Use your favourite bundler to import the following extensions: ‘js’, ‘css’, ‘svg’, ‘ttf’ and ‘png’</li>
+</ol>
+<h2 id="hacking">Hacking</h2>
+<ol type="1">
+<li>Ensure Node version &gt;= 8.0 is installed</li>
+<li>Install packages: <code>npm i</code></li>
+<li>Start application in dev mode: <code>npm run start</code></li>
+<li>The library will now be accessible at <a href="http://localhost:6006">localhost:6006</a></li>
+</ol>
+<h2 id="architecture">Architecture</h2>
+<p>This library follows the <a href="http://atomicdesign.bradfrost.com/chapter-2/">Atomic Design</a> principles.</p>
+<p>An additional attention has be taken to ensure that all components are available and fully functional accross major web browsers*, as well as responsive on any screen sizes.</p>
+<p>Browsers with &gt; 1% usage: * IE 11 * Safari 11+ * Chrome / Edge / Firefox latest 3 major versions</p>
+<h2 id="release">Release</h2>
+<p>To create a new release, just run <code>npm version patch|minor|major</code></p>
+<p>Please make sure that you are on <code>master</code> with a clean <code>git status</code> first</p>
+<p>Once the versioning pull request is merged, you can generate the changelog using: <code>git-changelog -t @LAST-VERSION-HERE@</code></p>
+<p><code>git-changelog</code> can be installed with the following: <code>npm i -g git-changelog</code></p>
+<h2 id="code-quality">Code Quality</h2>
+<h3 id="linting">Linting</h3>
+<p>The coding style rules are defined by <a href="https://prettier.io/">Prettier</a> and enforced by <a href="https://eslint.org">Eslint</a> The “good practices™” that we follow are defined by the <a href="https://standardjs.com/rules.html">Javascript Standard Style</a></p>
+<p>The following commands are available: * <code>npm run lint:js</code> Lints JS code * <code>npm run lint:css</code> Lints styled components</p>
+<h3 id="unit-tests">Unit Tests</h3>
+<p>Please execute <code>npm test</code> to run the unit tests</p>
+<p>Testing is done using <a href="https://facebook.github.io/jest/">Jest</a> and <a href="http://airbnb.io/enzyme/">Enzyme</a>.</p>
+<h3 id="git-hooks">Git Hooks</h3>
+<p>We use <a href="https://github.com/typicode/husky">Husky</a> to automatically deploy git hooks</p>
+<p>On every <code>git commit</code> and <code>git push</code> we run the unit tests and the linting tasks.</p>
+
+</body>
+</html>
