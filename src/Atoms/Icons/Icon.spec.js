@@ -12,19 +12,19 @@ describe('Icon component', () => {
   })
 
   it('renders correctly with name', () => {
-    const component = shallow(<Icon name='ethereum' />)
+    const component = shallow(<Icon name="ethereum" />)
     const tree = toJson(component)
     expect(tree).toMatchSnapshot()
   })
 
   it('renders correctly with color', () => {
-    const component = shallow(<Icon color='gold' />)
+    const component = shallow(<Icon color="gold" />)
     const tree = toJson(component)
     expect(tree).toMatchSnapshot()
   })
 
   it('renders correctly with size', () => {
-    const component = shallow(<Icon size='72px' />)
+    const component = shallow(<Icon size="72px" />)
     const tree = toJson(component)
     expect(tree).toMatchSnapshot()
   })

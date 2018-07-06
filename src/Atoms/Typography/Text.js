@@ -6,38 +6,59 @@ import theme from '../../Tools/theme'
 
 const BaseText = styled.span`
   font-family: 'Montserrat', helvetica, sans serif;
-  font-weight: ${props => props.weight};
-  font-size: ${props => props.size};
-  text-transform: ${props => props.uppercase ? 'uppercase' : props.capitalize ? 'capitalize' : 'none'};
-  font-style: ${props => props.italic ? 'italic' : 'normal'};
-  color: ${props => props.theme[props.color]};
-  opacity: ${props => props.opacity};
+  font-weight: ${(props) => props.weight};
+  font-size: ${(props) => props.size};
+  text-transform: ${(props) =>
+    props.uppercase ? 'uppercase' : props.capitalize ? 'capitalize' : 'none'};
+  font-style: ${(props) => (props.italic ? 'italic' : 'normal')};
+  color: ${(props) => props.theme[props.color]};
+  opacity: ${(props) => props.opacity};
 `
 
-const Text = ({ children, weight, size, uppercase, capitalize, italic, color, opacity, ...rest }) => (
-  <BaseText color={color} size={size} weight={weight} uppercase={uppercase} capitalize={capitalize} italic={italic} opacity={opacity} {...rest}>
+const Text = ({
+  children,
+  weight,
+  size,
+  uppercase,
+  capitalize,
+  italic,
+  color,
+  opacity,
+  ...rest
+}) => (
+  <BaseText
+    capitalize={capitalize}
+    color={color}
+    italic={italic}
+    opacity={opacity}
+    size={size}
+    uppercase={uppercase}
+    weight={weight}
+    {...rest}
+  >
     {children}
   </BaseText>
 )
 
 Text.propTypes = {
-  color: PropTypes.oneOf(keysIn(theme)),
-  size: PropTypes.string,
-  weight: PropTypes.oneOf([100, 200, 300, 400, 500, 600, 700, 800, 900]),
-  uppercase: PropTypes.bool,
   capitalize: PropTypes.bool,
+  children: PropTypes.node,
+  color: PropTypes.oneOf(keysIn(theme)),
   italic: PropTypes.bool,
-  opacity: PropTypes.number
+  opacity: PropTypes.number,
+  size: PropTypes.string,
+  uppercase: PropTypes.bool,
+  weight: PropTypes.oneOf([100, 200, 300, 400, 500, 600, 700, 800, 900]),
 }
 
 Text.defaultProps = {
-  color: 'gray-5',
-  size: '14px',
-  weight: 300,
-  uppercase: false,
   capitalize: false,
+  color: 'gray-5',
   italic: false,
-  opacity: 1
+  opacity: 1,
+  size: '14px',
+  uppercase: false,
+  weight: 300,
 }
 
 export default Text

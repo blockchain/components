@@ -4,26 +4,28 @@ import styled from 'styled-components'
 
 import ImageMap from './ImageMap'
 
-const BaseImage = styled.img.attrs({ src: props => props.path })`
-  width: ${props => props.width};
-  height: ${props => props.height};
-  cursor: ${props => props.selectable ? 'pointer': 'initial'};
+const BaseImage = styled.img.attrs({ src: (props) => props.path })`
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
+  cursor: ${(props) => (props.selectable ? 'pointer' : 'initial')};
 `
 
-const Image = ({ name, ...rest }) => <BaseImage path={ImageMap[name]} {...rest} />
+const Image = ({ name, ...rest }) => (
+  <BaseImage path={ImageMap[name]} {...rest} />
+)
 
 Image.propTypes = {
-  name: PropTypes.string.isRequired,
-  width: PropTypes.string,
   height: PropTypes.string,
-  selectable: PropTypes.bool
+  name: PropTypes.string.isRequired,
+  selectable: PropTypes.bool,
+  width: PropTypes.string,
 }
 
 Image.defaultProps = {
-  name: 'blockchain-blue',
-  width: 'auto',
   height: 'auto',
-  selectable: false
+  name: 'blockchain-blue',
+  selectable: false,
+  width: 'auto',
 }
 
 export default Image

@@ -1,13 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
 
 import Text from './Text'
 
 storiesOf('Atoms/Typography/Text', module)
   .add('default', () => <Text>MyText</Text>)
-  .add('with color', () => <Text color='gold'>MyText</Text>)
-  .add('with size', () => <Text size='32px'>MyText</Text>)
+  .add('with color', () => <Text color="gold">MyText</Text>)
+  .add('with size', () => <Text size="32px">MyText</Text>)
   .add('with weight', () => <Text weight={500}>MyText</Text>)
   .add('with uppercase', () => <Text uppercase>MyText</Text>)
   .add('with capitalize', () => <Text capitalize>MyText</Text>)

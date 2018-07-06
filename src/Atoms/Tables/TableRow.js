@@ -12,10 +12,10 @@ const BaseTableRow = styled.div`
   box-sizing: border-box;
 `
 
-const TableRow = ({ children }) => (
-  <BaseTableRow>
-    {children}
-  </BaseTableRow>
-)
+const TableRow = ({ children }) => <BaseTableRow>{children}</BaseTableRow>
+
+TableRow.propTypes = {
+  children: PropTypes.node,
+}
 
 export default TableRow

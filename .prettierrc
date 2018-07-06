@@ -1,0 +1,6 @@
+---
+arrowParens: always
+parser: flow
+semi: false
+singleQuote: true
+trailingComma: all

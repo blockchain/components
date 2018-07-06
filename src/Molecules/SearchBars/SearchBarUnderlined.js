@@ -11,7 +11,7 @@ const BaseSearchBarUnderlined = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid ${props => props.theme['gray-2']};
+  border-bottom: 1px solid ${(props) => props.theme['gray-2']};
   background-color: transparent;
 `
 const IconContainer = styled.div`
@@ -24,19 +24,32 @@ const IconContainer = styled.div`
   background-color: inherit;
 `
 
-const SearchBarUnderlined = ({ children, value, handleChange, handleClick, ...rest }) => (
+const SearchBarUnderlined = ({
+  children,
+  value,
+  handleChange,
+  handleClick,
+  ...rest
+}) => (
   <BaseSearchBarUnderlined>
-    <Input backgroundColor='transparent' borderColor='transparent' value={value} onChange={handleChange} {...rest} />
+    <Input
+      backgroundColor="transparent"
+      borderColor="transparent"
+      onChange={handleChange}
+      value={value}
+      {...rest}
+    />
     <IconContainer>
-      <Icon name='search-filled' size='20px' selectable onClick={handleClick} />
+      <Icon name="search-filled" onClick={handleClick} selectable size="20px" />
     </IconContainer>
   </BaseSearchBarUnderlined>
 )
 
 SearchBarUnderlined.propTypes = {
-  value: PropTypes.any,
+  children: PropTypes.node,
   handleChange: PropTypes.func,
-  handleClick: PropTypes.func
+  handleClick: PropTypes.func,
+  value: PropTypes.any,
 }
 
 export default SearchBarUnderlined

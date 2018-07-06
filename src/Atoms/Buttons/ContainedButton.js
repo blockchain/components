@@ -12,9 +12,9 @@ const BaseContainedButton = styled.button.attrs({ type: 'button' })`
   height: 40px;
   font-size: 18px;
   font-weight: 300;
-  color: ${props => props.theme[props.color]};
-  background-color: ${props => props.theme[props.backgroundColor]};
-  border-color: ${props => props.theme[props.borderColor]};
+  color: ${(props) => props.theme[props.color]};
+  background-color: ${(props) => props.theme[props.backgroundColor]};
+  border-color: ${(props) => props.theme[props.borderColor]};
   border-width: 1px;
   border-radius: 5px;
   cursor: pointer;
@@ -23,17 +23,33 @@ const BaseContainedButton = styled.button.attrs({ type: 'button' })`
   transition-timing-function: ease-in-out;
 
   &:hover {
-    background-color: ${props => lighten(0.1, props.theme[props.backgroundColor])};
-    border-color: ${props => lighten(0.1, props.theme[props.borderColor])};
+    background-color: ${(props) =>
+      lighten(0.1, props.theme[props.backgroundColor])};
+    border-color: ${(props) => lighten(0.1, props.theme[props.borderColor])};
     transform: scale(0.95);
   }
 `
 
-const selectStyle = nature => {
+const selectStyle = (nature) => {
   switch (nature) {
-    case 'primary': return { color: 'white', backgroundColor: 'primary', borderColor: 'primary' }
-    case 'secondary': return { color: 'white', backgroundColor: 'secondary', borderColor: 'secondary' }
-    default: return { color: 'white', backgroundColor: 'primary', borderColor: 'primary' }
+    case 'primary':
+      return {
+        backgroundColor: 'primary',
+        borderColor: 'primary',
+        color: 'white',
+      }
+    case 'secondary':
+      return {
+        backgroundColor: 'secondary',
+        borderColor: 'secondary',
+        color: 'white',
+      }
+    default:
+      return {
+        backgroundColor: 'primary',
+        borderColor: 'primary',
+        color: 'white',
+      }
   }
 }
 
@@ -44,13 +60,14 @@ const ContainedButton = ({ children, nature, ...rest }) => (
 )
 
 ContainedButton.propTypes = {
+  children: PropTypes.node,
+  disabled: PropTypes.bool,
   nature: PropTypes.oneOf(['primary', 'secondary']),
-  disabled: PropTypes.bool
 }
 
 ContainedButton.defaultProps = {
+  disabled: false,
   nature: 'primary',
-  disabled: false
 }
 
 export default ContainedButton
