@@ -18,10 +18,11 @@
   "license": "AGPLv3",
   "husky": {
     "hooks": {
-      "pre-commit": "npm run ci:test",
-      "pre-push": "npm run ci:test"
+      "pre-commit": "npm run ci:test && npm run lint:js",
+      "pre-push": "npm run ci:test && npm run lint:js"
     }
   },
+  "sideEffects": false,
   "devDependencies": {
     "@storybook/addon-actions": "3.4.6",
     "@storybook/addon-backgrounds": "3.4.6",
@@ -48,6 +49,7 @@
     "eslint-plugin-prettier": "2.6.2",
     "eslint-plugin-promise": "3.8.0",
     "eslint-plugin-react": "7.10.0",
+    "husky": "1.0.0-rc.12",
     "identity-obj-proxy": "3.0.0",
     "istanbul": "0.4.5",
     "istanbul-coveralls": "1.0.3",
@@ -60,7 +62,6 @@
     "react-dom": "16.4.0",
     "styled-components": "3.3.2"
   },
-  "sideEffects": false,
   "peerDependencies": {
     "polished": "1.9.2",
     "prop-types": "15.6.1",
