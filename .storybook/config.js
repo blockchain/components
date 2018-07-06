@@ -7,19 +7,19 @@ import { theme, ThemeProvider } from '../src'
 
 const req = require.context('../src', true, /stories\.js$/)
 
-addDecorator((story, context) => withInfo({
-  text: 'Documentation',
-  inline: true,
-  header: true
-})(story)(context))
-
-const colors = keysIn(theme).map(x => ({ name: x, value: theme[x] }))
-
-addDecorator(
-  withBackgrounds(colors)
+addDecorator((story, context) =>
+  withInfo({
+    text: 'Documentation',
+    inline: true,
+    header: true,
+  })(story)(context),
 )
 
-addDecorator(story => <ThemeProvider>{story()}</ThemeProvider>)
+const colors = keysIn(theme).map((x) => ({ name: x, value: theme[x] }))
+
+addDecorator(withBackgrounds(colors))
+
+addDecorator((story) => <ThemeProvider>{story()}</ThemeProvider>)
 
 function loadStories() {
   req.keys().forEach((filename) => req(filename))
