@@ -11,29 +11,31 @@ const BaseCartridge = styled(Text)`
   align-items: center;
   padding: 5px;
   box-sizing: border-box;
-  background-color: ${props => props.theme[props.backgroundColor]};
+  background-color: ${(props) => props.theme[props.backgroundColor]};
 `
 
-const selectStyle = nature => {
+const selectStyle = (nature) => {
   switch (nature) {
-    case 'primary': return { color: 'white', backgroundColor: 'primary' }
-    case 'secondary': return { color: 'white', backgroundColor: 'secondary' }
-    default: return { color: 'white', backgroundColor: 'primary' }
+    case 'primary':
+      return { backgroundColor: 'primary', color: 'white' }
+    case 'secondary':
+      return { backgroundColor: 'secondary', color: 'white' }
+    default:
+      return { backgroundColor: 'primary', color: 'white' }
   }
 }
 
 const Cartridge = ({ children, nature }) => (
-  <BaseCartridge {...selectStyle(nature)}>
-    {children}
-  </BaseCartridge>
+  <BaseCartridge {...selectStyle(nature)}>{children}</BaseCartridge>
 )
 
 Cartridge.propTypes = {
-  nature: PropTypes.string
+  children: PropTypes.string,
+  nature: PropTypes.string,
 }
 
 Cartridge.defaultProps = {
-  nature: 'primary'
+  nature: 'primary',
 }
 
 export default Cartridge

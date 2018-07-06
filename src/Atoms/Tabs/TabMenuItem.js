@@ -13,8 +13,11 @@ const BaseTabMenuItem = styled.div`
   box-sizing: border-box;
   cursor: pointer;
 
-
-  &:hover { & :last-child { opacity: 1!important; } }
+  &:hover {
+    & :last-child {
+      opacity: 1 !important;
+    }
+  }
 `
 const TabMenuItemBar = styled.div`
   position: absolute;
@@ -24,11 +27,11 @@ const TabMenuItemBar = styled.div`
   height: 5px;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
-  background-color: ${props => props.theme['gold']};
-  opacity: ${props => props.visible ? '1' : '0'};
+  background-color: ${(props) => props.theme['gold']};
+  opacity: ${(props) => (props.visible ? '1' : '0')};
 `
 
-const TabMenuItem = ({ children, selected, rest }) => (
+const TabMenuItem = ({ children, selected, ...rest }) => (
   <BaseTabMenuItem {...rest}>
     {children}
     <TabMenuItemBar visible={selected} />
@@ -36,11 +39,12 @@ const TabMenuItem = ({ children, selected, rest }) => (
 )
 
 TabMenuItem.propTypes = {
-  selected: PropTypes.bool
+  children: PropTypes.node,
+  selected: PropTypes.bool,
 }
 
 TabMenuItem.defaultProps = {
-  selected: false
+  selected: false,
 }
 
 export default TabMenuItem

@@ -29,27 +29,40 @@ const IconContainer = styled.div`
   align-items: center;
   width: 60px;
   height: 40px;
-  background-color: ${props => props.theme['gold']};
+  background-color: ${(props) => props.theme['gold']};
 `
 
-const SearchBar = ({ children, borderColor, value, handleChange, handleClick, ...rest }) => (
+const SearchBar = ({
+  children,
+  borderColor,
+  value,
+  handleChange,
+  handleClick,
+  ...rest
+}) => (
   <BaseSearchBar>
-    <Input borderColor={borderColor} value={value} onChange={handleChange} {...rest} />
+    <Input
+      borderColor={borderColor}
+      onChange={handleChange}
+      value={value}
+      {...rest}
+    />
     <IconContainer>
-      <Icon name='search-filled' size='20px' selectable onClick={handleClick} />
+      <Icon name="search-filled" onClick={handleClick} selectable size="20px" />
     </IconContainer>
   </BaseSearchBar>
 )
 
 SearchBar.propTypes = {
-  value: PropTypes.any,
   borderColor: PropTypes.string,
+  children: PropTypes.node,
   handleChange: PropTypes.func,
-  handleClick: PropTypes.func
+  handleClick: PropTypes.func,
+  value: PropTypes.any,
 }
 
 SearchBar.defaultProps = {
-  borderColor: 'white'
+  borderColor: 'white',
 }
 
 export default SearchBar

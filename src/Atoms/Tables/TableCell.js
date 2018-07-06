@@ -10,10 +10,10 @@ const BaseTableCell = styled.div`
   width: 100%;
 `
 
-const TableCell = ({ children }) => (
-  <BaseTableCell>
-    {children}
-  </BaseTableCell>
-)
+const TableCell = ({ children }) => <BaseTableCell>{children}</BaseTableCell>
+
+TableCell.propTypes = {
+  children: PropTypes.node,
+}
 
 export default TableCell

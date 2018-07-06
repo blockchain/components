@@ -12,19 +12,19 @@ describe('Background component', () => {
   })
 
   it('renders correctly with width', () => {
-    const component = shallow(<Background name='buy-sell-sell-bch' />)
+    const component = shallow(<Background name="buy-sell-sell-bch" />)
     const tree = toJson(component)
     expect(tree).toMatchSnapshot()
   })
 
   it('renders correctly with height', () => {
-    const component = shallow(<Background height='400px' />)
+    const component = shallow(<Background height="400px" />)
     const tree = toJson(component)
     expect(tree).toMatchSnapshot()
   })
 
   it('renders correctly with width', () => {
-    const component = shallow(<Background width='600px' />)
+    const component = shallow(<Background width="600px" />)
     const tree = toJson(component)
     expect(tree).toMatchSnapshot()
   })

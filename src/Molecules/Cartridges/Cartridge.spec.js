@@ -12,7 +12,7 @@ describe('Cartridge component', () => {
   })
 
   it('renders correctly with nature', () => {
-    const component = shallow(<Cartridge nature='secondary' />)
+    const component = shallow(<Cartridge nature="secondary" />)
     const tree = toJson(component)
     expect(tree).toMatchSnapshot()
   })

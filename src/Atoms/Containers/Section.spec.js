@@ -12,19 +12,19 @@ describe('Section component', () => {
   })
 
   it('renders correctly with width', () => {
-    const component = shallow(<Section width='200px'>MySection</Section>)
+    const component = shallow(<Section width="200px">MySection</Section>)
     const tree = toJson(component)
     expect(tree).toMatchSnapshot()
   })
 
   it('renders correctly with height', () => {
-    const component = shallow(<Section height='200px'>MySection</Section>)
+    const component = shallow(<Section height="200px">MySection</Section>)
     const tree = toJson(component)
     expect(tree).toMatchSnapshot()
   })
 
   it('renders correctly with color', () => {
-    const component = shallow(<Section color='gold'>MySection</Section>)
+    const component = shallow(<Section color="gold">MySection</Section>)
     const tree = toJson(component)
     expect(tree).toMatchSnapshot()
   })

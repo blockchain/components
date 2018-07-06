@@ -13,9 +13,11 @@ const BaseTableHeader = styled.div`
 `
 
 const TableHeader = ({ children }) => (
-  <BaseTableHeader>
-    {children}
-  </BaseTableHeader>
+  <BaseTableHeader>{children}</BaseTableHeader>
 )
+
+TableHeader.propTypes = {
+  children: PropTypes.node,
+}
 
 export default TableHeader

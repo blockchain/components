@@ -21,7 +21,7 @@ const ImageContainer = styled.div`
   align-items: center;
   width: calc(100% / 8);
   height: 200px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   box-sizing: border-box;
 `
 const ImageName = styled.div`
@@ -33,9 +33,9 @@ const ImageName = styled.div`
   height: 30px;
 `
 
-const renderImage = name => (
+const renderImage = (name) => (
   <ImageContainer>
-    <Image name={name} width='30%' />
+    <Image name={name} width="30%" />
     <ImageName>{name}</ImageName>
   </ImageContainer>
 )
@@ -43,7 +43,7 @@ const renderImage = name => (
 storiesOf('Atoms/Images/Image', module)
   .add('list', () => <Layout>{keysIn(ImageMap).map(renderImage)}</Layout>)
   .add('default', () => <Image />)
-  .add('with name', () => <Image name='app-store-badge' />)
-  .add('with height', () => <Image height='50px' />)
-  .add('with width', () => <Image width='200px' />)
+  .add('with name', () => <Image name="app-store-badge" />)
+  .add('with height', () => <Image height="50px" />)
+  .add('with width', () => <Image width="200px" />)
   .add('with selectable', () => <Image selectable />)

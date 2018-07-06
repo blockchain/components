@@ -12,13 +12,13 @@ describe('Text component', () => {
   })
 
   it('renders correctly with color', () => {
-    const component = shallow(<Text color='gold'>MyText</Text>)
+    const component = shallow(<Text color="gold">MyText</Text>)
     const tree = toJson(component)
     expect(tree).toMatchSnapshot()
   })
 
   it('renders correctly with size', () => {
-    const component = shallow(<Text size='32px'>MyText</Text>)
+    const component = shallow(<Text size="32px">MyText</Text>)
     const tree = toJson(component)
     expect(tree).toMatchSnapshot()
   })

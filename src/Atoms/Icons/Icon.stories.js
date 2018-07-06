@@ -21,7 +21,7 @@ const IconContainer = styled.div`
   align-items: center;
   width: calc(100% / 8);
   height: 150px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   box-sizing: border-box;
 `
 const IconName = styled.div`
@@ -33,9 +33,9 @@ const IconName = styled.div`
   height: 30px;
 `
 
-const renderIcon = name => (
+const renderIcon = (name) => (
   <IconContainer>
-    <Icon name={name} size='40px' />
+    <Icon name={name} size="40px" />
     <IconName>{name}</IconName>
   </IconContainer>
 )
@@ -43,8 +43,8 @@ const renderIcon = name => (
 storiesOf('Atoms/Icons/Icon', module)
   .add('list', () => <Layout>{keysIn(IcomoonMap).map(renderIcon)}</Layout>)
   .add('default', () => <Icon />)
-  .add('with name', () => <Icon name='alert-filled' />)
-  .add('with color', () => <Icon color='gold' />)
-  .add('with size', () => <Icon size='72px' />)
+  .add('with name', () => <Icon name="alert-filled" />)
+  .add('with color', () => <Icon color="gold" />)
+  .add('with size', () => <Icon size="72px" />)
   .add('with weight', () => <Icon weight={700} />)
   .add('with selectable', () => <Icon selectable />)

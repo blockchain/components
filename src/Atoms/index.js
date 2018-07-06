@@ -6,5 +6,5 @@ import * as Tabs from './Tabs'
 export default {
   ...Buttons,
   ...Inputs,
-  ...Tabs
+  ...Tabs,
 }
