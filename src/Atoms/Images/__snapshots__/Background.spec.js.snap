@@ -3,7 +3,7 @@
 exports[`Background component renders correctly 1`] = `
 <styled.div
   height="200px"
-  path={null}
+  path={Object {}}
   stretch={false}
   width="200px"
 />
@@ -12,7 +12,7 @@ exports[`Background component renders correctly 1`] = `
 exports[`Background component renders correctly with height 1`] = `
 <styled.div
   height="400px"
-  path={null}
+  path={Object {}}
   stretch={false}
   width="200px"
 />
@@ -21,7 +21,7 @@ exports[`Background component renders correctly with height 1`] = `
 exports[`Background component renders correctly with stretch 1`] = `
 <styled.div
   height="200px"
-  path={null}
+  path={Object {}}
   stretch={true}
   width="200px"
 />
@@ -30,7 +30,7 @@ exports[`Background component renders correctly with stretch 1`] = `
 exports[`Background component renders correctly with width 1`] = `
 <styled.div
   height="200px"
-  path={null}
+  path={Object {}}
   stretch={false}
   width="200px"
 />
@@ -39,7 +39,7 @@ exports[`Background component renders correctly with width 1`] = `
 exports[`Background component renders correctly with width 2`] = `
 <styled.div
   height="200px"
-  path={null}
+  path={Object {}}
   stretch={false}
   width="600px"
 />
