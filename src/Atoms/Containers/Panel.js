@@ -9,7 +9,7 @@ const BasePanel = styled.div`
   align-items: center;
   height: ${(props) => props.height};
   width: ${(props) => props.width};
-  box-shadow: 0px 0px 25px 5px ${(props) => props.theme['gray-1']};
+  box-shadow: 0 0 25px 5px ${(props) => props.theme['gray-1']};
   background-color: ${(props) => props.theme['white']};
 `
 
