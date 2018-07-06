@@ -1,0 +1,4 @@
+---
+hooks:
+  pre-commit: npm run ci:test && npm run lint:js && npm run lint:css
+  pre-push: npm run ci:test && npm run lint:js && npm run lint:css

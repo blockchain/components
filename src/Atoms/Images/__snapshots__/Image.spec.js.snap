@@ -3,7 +3,7 @@
 exports[`Image component renders correctly 1`] = `
 <styled.img
   height="auto"
-  path={null}
+  path={Object {}}
   selectable={false}
   width="auto"
 />
@@ -12,7 +12,7 @@ exports[`Image component renders correctly 1`] = `
 exports[`Image component renders correctly width width 1`] = `
 <styled.img
   height="auto"
-  path={null}
+  path={Object {}}
   selectable={false}
   width="200px"
 />
@@ -21,7 +21,7 @@ exports[`Image component renders correctly width width 1`] = `
 exports[`Image component renders correctly with height 1`] = `
 <styled.img
   height="50px"
-  path={null}
+  path={Object {}}
   selectable={false}
   width="auto"
 />
@@ -30,7 +30,7 @@ exports[`Image component renders correctly with height 1`] = `
 exports[`Image component renders correctly with name 1`] = `
 <styled.img
   height="auto"
-  path={null}
+  path={Object {}}
   selectable={false}
   width="auto"
 />
@@ -39,7 +39,7 @@ exports[`Image component renders correctly with name 1`] = `
 exports[`Image component renders correctly with selectable 1`] = `
 <styled.img
   height="auto"
-  path={null}
+  path={Object {}}
   selectable={true}
   width="auto"
 />
