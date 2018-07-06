@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 const BaseTextGroup = styled.div`
   text-align: ${(props) => props.align};
+
   & > * {
     display: ${(props) => (props.inline ? 'inline' : 'block')};
     margin-right: ${(props) => (props.inline ? '5px' : '0')};

@@ -6,18 +6,22 @@ import { lighten } from 'polished'
 import theme from '../../Tools/theme'
 import IcomoonMap from './IcomoonMap'
 
+const getHoverColor = (props) =>
+  props.selectable
+    ? lighten(0.1, props.theme[props.color])
+    : props.theme[props.color]
+
 const BaseIcon = styled.span`
   font-weight: ${(props) => props.weight};
   font-size: ${(props) => props.size};
   color: ${(props) => props.theme[props.color]};
   cursor: ${(props) => (props.selectable ? 'pointer' : 'inherit')};
+
   &:hover {
-    color: ${(props) =>
-      props.selectable
-        ? lighten(0.1, props.theme[props.color])
-        : props.theme[props.color]};
+    color: ${getHoverColor};
   }
-  &:before {
+
+  &::before {
     font-family: 'icomoon';
     content: '${(props) => props.code}';
   }

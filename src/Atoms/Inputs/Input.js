@@ -21,10 +21,12 @@ const BaseInput = styled.input.attrs({ type: (props) => props.type })`
   border-width: 1px;
   border-style: solid;
   border-color: ${(props) => props.theme[props.borderColor]};
+
   &::placeholder {
     color: ${(props) => props.theme['gray-3']};
     opacity: 0.4;
   }
+
   &:disabled {
     color: ${(props) => props.theme['gray-4']};
     background: ${(props) => props.theme['gray-1']};
