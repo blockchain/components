@@ -13,7 +13,8 @@
     "lint:css": "stylelint './src/**/*.js'",
     "lint:js": "eslint 'src/**/*.js' --max-warnings=0",
     "lint:js:fix": "eslint 'src/**/*.js' --fix",
-    "prettier:fix": "prettier --write 'src/**/*.js'"
+    "prettier:fix": "prettier --write 'src/**/*.js'",
+    "changelog": "git-changelog -t"
   },
   "author": "Blockchain",
   "license": "AGPLv3",
@@ -47,6 +48,7 @@
     "eslint-plugin-promise": "3.8.0",
     "eslint-plugin-react": "7.10.0",
     "eslint-plugin-standard": "3.1.0",
+    "git-changelog": "1.1.2",
     "husky": "1.0.0-rc.12",
     "identity-obj-proxy": "3.0.0",
     "jest": "23.3.0",
