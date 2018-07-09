@@ -12,7 +12,7 @@ describe('Image component', () => {
   })
 
   it('renders correctly with name', () => {
-    const component = shallow(<Image name="app-store-badge" />)
+    const component = shallow(<Image name="brand" />)
     const tree = toJson(component)
     expect(tree).toMatchSnapshot()
   })

@@ -23,7 +23,7 @@ Image.propTypes = {
 
 Image.defaultProps = {
   height: 'auto',
-  name: 'blockchain-blue',
+  name: 'logo',
   selectable: false,
   width: 'auto',
 }

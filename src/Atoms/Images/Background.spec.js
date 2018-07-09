@@ -12,7 +12,7 @@ describe('Background component', () => {
   })
 
   it('renders correctly with width', () => {
-    const component = shallow(<Background name="buy-sell-sell-bch" />)
+    const component = shallow(<Background name="brand" />)
     const tree = toJson(component)
     expect(tree).toMatchSnapshot()
   })
