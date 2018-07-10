@@ -4,15 +4,10 @@
   "description": "Blockchain.com components library",
   "main": "lib/index.js",
   "module": "esm/index.js",
-  "files": [
-    "esm/**/*",
-    "lib/**/*"
-  ],
   "scripts": {
     "start": "start-storybook -p 6006",
     "build": "node utils/build.js",
-    "build:esm": "babel src/ --out-dir esm/ --copy-files --ignore **/*.spec.js,**/*.stories.js,**/__snapshots__",
-    "build:cjs": "babel src/ --out-dir lib/ --plugins @babel/plugin-transform-modules-commonjs --copy-files --ignore **/*.spec.js,**/*.stories.js,**/__snapshots__",
+    "prepare": "node utils/build.js",
     "build-storybook": "build-storybook",
     "test": "jest --notify --watch",
     "test:update": "jest -u",
@@ -62,7 +57,6 @@
     "git-changelog": "1.1.2",
     "husky": "1.0.0-rc.12",
     "identity-obj-proxy": "3.0.0",
-    "in-publish": "^2.0.0",
     "jest": "23.3.0",
     "polished": "1.9.3",
     "prettier": "1.13.7",
@@ -70,7 +64,7 @@
     "ramda": "0.25.0",
     "react": "16.4.1",
     "react-dom": "16.4.1",
-    "rimraf": "^2.6.2",
+    "rimraf": "2.6.2",
     "standard": "11.0.1",
     "styled-components": "3.3.3",
     "stylelint": "9.3.0",
