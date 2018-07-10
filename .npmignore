@@ -1,0 +1,8 @@
+# Ignore unused code
+node_modules
+src
+utils
+
+# Github
+CHANGELOG.md
+CODEOWNERS
