@@ -1,17 +1,32 @@
 {
-  presets: [
+  "presets": [
     ["@babel/preset-env", {
-      modules: false,
-      targets: {
-        browsers: ["> 1%", "last 2 versions", "ie >= 11"]
-      },
+      "modules": false,
+      "targets": {
+        "browsers": [
+          "> 1%",
+          "last 2 versions",
+          "ie >= 11"
+        ]
+      }
     }],
     "@babel/preset-react",
-    "@babel/preset-stage-0",
+    "@babel/preset-stage-0"
   ],
-  env: {
-    test: {
-      presets: ["@babel/preset-env", "@babel/preset-react", "@babel/preset-stage-0"],
+  "env": {
+    "test": {
+      "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react",
+        "@babel/preset-stage-0"
+      ]
     }
-  }
+  },
+  "plugins": [
+    ["inline-import-data-uri", {
+      "extensions": [
+        ".svg"
+      ]
+    }]
+  ]
 }

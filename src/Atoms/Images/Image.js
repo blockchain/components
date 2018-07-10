@@ -4,15 +4,16 @@ import styled from 'styled-components'
 
 import ImageMap from './ImageMap'
 
-const BaseImage = styled.img.attrs({ src: (props) => props.path })`
+const BaseImage = styled.img.attrs({
+  alt: (props) => props.name,
+  src: (props) => ImageMap[props.name],
+})`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   cursor: ${(props) => (props.selectable ? 'pointer' : 'initial')};
 `
 
-const Image = ({ name, ...rest }) => (
-  <BaseImage path={ImageMap[name]} {...rest} />
-)
+const Image = (props) => <BaseImage {...props} />
 
 Image.propTypes = {
   height: PropTypes.string,

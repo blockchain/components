@@ -16,7 +16,7 @@ export {
   TextGroup,
 } from './Atoms'
 
-export { Cartrige, SearchBar, SearchBarUnderlined } from './Molecules'
+export { Cartridge, SearchBar, SearchBarUnderlined } from './Molecules'
 
 export { default as theme } from './Tools/theme'
 export { default as ThemeProvider } from './Tools/ThemeProvider'
