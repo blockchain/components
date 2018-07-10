@@ -34,7 +34,7 @@ const ImageName = styled.div`
 `
 
 const renderImage = (name) => (
-  <ImageContainer>
+  <ImageContainer key={name}>
     <Image name={name} width="30%" />
     <ImageName>{name}</ImageName>
   </ImageContainer>
