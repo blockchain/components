@@ -1,5 +1,6 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-green.svg)](https://conventionalcommits.org)
 
 # Blockchain Components
 The library Blockchain Components is based on React and styled-components. It contains basic components, "atoms", and more complex "molecules" that are used on the [Blockchain.com](https://www.blockchain.com) ecosystem.
