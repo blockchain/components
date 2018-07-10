@@ -35,7 +35,7 @@ Background.propTypes = {
 
 Background.defaultProps = {
   height: '200px',
-  name: 'rocket',
+  name: 'logo',
   stretch: false,
   width: '200px',
 }

@@ -1,5 +1,3 @@
-import { ContainedButton } from './Atoms'
-import theme from './Tools/theme'
-import ThemeProvider from './Tools/ThemeProvider'
-
-export { ContainedButton, theme, ThemeProvider }
+export { ContainedButton } from './Atoms'
+export { default as theme } from './Tools/theme'
+export { default as ThemeProvider } from './Tools/ThemeProvider'

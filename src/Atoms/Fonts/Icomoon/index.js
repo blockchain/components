@@ -1,17 +1,12 @@
 import { injectGlobal } from 'styled-components'
 
-import IcomoonEot from './fonts/icomoon.eot'
-import IcomoonSvg from './fonts/icomoon.svg'
-import IcomoonTtf from './fonts/icomoon.ttf'
+import IcomoonWoff from './fonts/Icomoon.woff'
 
-const FontFace = (name, eot, svg, ttf, weight) => {
+const FontFace = (name, woff, weight) => {
   return `
     @font-face {
       font-family: '${name}';
-      src: url(${eot});
-      src: url('${eot}?#iefix') format('embedded-opentype'),
-          url('${ttf}') format('truetype'),
-          url('${svg}') format('svg');
+      src: url(${woff});
       font-weight: ${weight};
       font-style: normal;
       font-stretch: normal;
@@ -19,15 +14,8 @@ const FontFace = (name, eot, svg, ttf, weight) => {
   `
 }
 
-const Icomoon = FontFace(
-  'icomoon',
-  IcomoonEot,
-  IcomoonSvg,
-  IcomoonTtf,
-  'normal',
-)
+const Icomoon = FontFace('icomoon', IcomoonWoff, 'normal')
 
-// Fonts management
 injectGlobal`
   ${Icomoon}
 `

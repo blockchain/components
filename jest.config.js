@@ -2,7 +2,19 @@ const preprocessMock = require.resolve('./utils/preprocessor')
 const enzyme = require.resolve('./utils/enzyme')
 const raf = require.resolve('./utils/raf')
 
-const assetExt = ['css', 'eot', 'gif', 'jpeg', 'jpg', 'png', 'svg', 'ttf']
+const assetExt = [
+  'css',
+  'eot',
+  'gif',
+  'jpeg',
+  'jpg',
+  'png',
+  'svg',
+  'ttf',
+  'otf',
+  'woff',
+  'woff2',
+]
 
 const codeExt = ['js']
 
@@ -30,7 +42,7 @@ module.exports = {
   ...coverage,
   clearMocks: true,
   moduleFileExtensions: [codeExt],
-  rootDir: process.cwd(),
+  roots: ['<rootDir>/src/'],
   setupFiles: [raf, enzyme],
   snapshotSerializers: [require.resolve('enzyme-to-json/serializer')],
   testPathIgnorePatterns: ['/node_modules/', '.*.ignore.spec.*'],
