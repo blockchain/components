@@ -10,7 +10,7 @@ The commands are given using `npm` however you can use the `yarn` equivalent and
 
 ## Installation
 1. Just a quick `npm i blockchain-info-components` and you are good to go!
-2. Use your favourite bundler to import the following extensions: 'js', 'css', 'svg', 'ttf' and 'png'
+2. Use your favourite bundler to import the following extensions: 'otf', 'woff'
 
 ## Hacking
 

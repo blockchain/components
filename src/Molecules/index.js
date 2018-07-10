@@ -1,3 +1,2 @@
-import * as SearchBar from './SearchBars'
-
-export { SearchBar }
+export { Cartridge } from './Cartridges'
+export { SearchBar, SearchBarUnderlined } from './SearchBars'

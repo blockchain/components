@@ -1,6 +1,4 @@
-import Table from './Table'
-import TableCell from './TableCell'
-import TableHeader from './TableHeader'
-import TableRow from './TableRow'
-
-export { Table, TableCell, TableHeader, TableRow }
+export { default as Table } from './Table'
+export { default as TableCell } from './TableCell'
+export { default as TableHeader } from './TableHeader'
+export { default as TableRow } from './TableRow'
