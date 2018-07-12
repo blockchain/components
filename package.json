@@ -6,6 +6,7 @@
   "module": "esm/index.js",
   "scripts": {
     "start": "start-storybook -p 6006",
+    "build:watch": "nodemon --watch src --exec npm run build",
     "build": "node utils/build.js",
     "prepare": "node utils/build.js",
     "build-storybook": "build-storybook",
@@ -61,6 +62,7 @@
     "husky": "1.0.0-rc.12",
     "identity-obj-proxy": "3.0.0",
     "jest": "23.3.0",
+    "nodemon": "1.18.1",
     "polished": "1.9.3",
     "prettier": "1.13.7",
     "prop-types": "15.6.2",
