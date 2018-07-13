@@ -1,1 +1,1 @@
-export { default as ContainedButton } from './ContainedButton'
+export { default as Button } from './Button'

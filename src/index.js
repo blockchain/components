@@ -1,6 +1,6 @@
 export {
   Background,
-  ContainedButton,
+  Button,
   Icon,
   Image,
   Input,
