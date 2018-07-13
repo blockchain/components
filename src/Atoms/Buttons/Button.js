@@ -14,8 +14,7 @@ const BaseContainedButton = styled.button.attrs({ type: 'button' })`
   font-weight: 300;
   color: ${(props) => props.theme[props.color]};
   background-color: ${(props) => props.theme[props.backgroundColor]};
-  border-color: ${(props) => props.theme[props.borderColor]};
-  border-width: 1px;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   outline: none;
@@ -25,7 +24,6 @@ const BaseContainedButton = styled.button.attrs({ type: 'button' })`
   &:hover {
     background-color: ${(props) =>
       lighten(0.1, props.theme[props.backgroundColor])};
-    border-color: ${(props) => lighten(0.1, props.theme[props.borderColor])};
     transform: scale(0.95);
   }
 `
@@ -35,19 +33,16 @@ const selectStyle = (nature) => {
     case 'primary':
       return {
         backgroundColor: 'primary',
-        borderColor: 'primary',
         color: 'white',
       }
     case 'secondary':
       return {
         backgroundColor: 'secondary',
-        borderColor: 'secondary',
         color: 'white',
       }
     default:
       return {
         backgroundColor: 'primary',
-        borderColor: 'primary',
         color: 'white',
       }
   }

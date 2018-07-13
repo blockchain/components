@@ -1,6 +1,6 @@
 import './Fonts'
 
-export { ContainedButton } from './Buttons'
+export { Button } from './Buttons'
 export { Panel, Section } from './Containers'
 export { Icon } from './Icons'
 export { Background, Image } from './Images'
