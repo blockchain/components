@@ -5,7 +5,7 @@ exports[`SearchBarUnderlined component renders correctly 1`] = `
   <Input
     backgroundColor="transparent"
     borderColor="transparent"
-    color="gray-5"
+    color="gray-7"
     disabled={false}
     type="text"
     width="100%"
@@ -27,7 +27,7 @@ exports[`SearchBarUnderlined component renders correctly with handleChange 1`] =
   <Input
     backgroundColor="transparent"
     borderColor="transparent"
-    color="gray-5"
+    color="gray-7"
     disabled={false}
     onChange={[Function]}
     type="text"
@@ -50,7 +50,7 @@ exports[`SearchBarUnderlined component renders correctly with handleClick 1`] = 
   <Input
     backgroundColor="transparent"
     borderColor="transparent"
-    color="gray-5"
+    color="gray-7"
     disabled={false}
     type="text"
     width="100%"
@@ -73,7 +73,7 @@ exports[`SearchBarUnderlined component renders correctly with value 1`] = `
   <Input
     backgroundColor="transparent"
     borderColor="transparent"
-    color="gray-5"
+    color="gray-7"
     disabled={false}
     type="text"
     value="My search"
