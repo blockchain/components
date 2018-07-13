@@ -13,7 +13,9 @@ const BaseInput = styled.input.attrs({ type: (props) => props.type })`
   font-family: 'Montserrat', helvetica, sans serif;
   font-size: 18px;
   color: ${(props) => props.theme[props.color]};
-  border: none;
+  border-width: ${(props) => (props.borderColor ? '1px' : '0')};
+  border-color: ${(props) => props.borderColor};
+  border-style: solid;
   border-radius: 0.5rem;
   background-color: ${(props) => props.theme[props.backgroundColor]};
   background-image: none;
