@@ -4,7 +4,10 @@ import styled from 'styled-components'
 import { keysIn } from 'ramda'
 import theme from '../../Tools/theme'
 
-const BaseInput = styled.input.attrs({ type: (props) => props.type })`
+const BaseInput = styled.input.attrs({
+  name: (props) => props.name,
+  type: (props) => props.type,
+})`
   display: block;
   width: ${(props) => props.width};
   height: 52px;
@@ -29,13 +32,15 @@ const BaseInput = styled.input.attrs({ type: (props) => props.type })`
   }
 `
 
-const Input = (props) => <BaseInput {...props} />
+const Input = (props) => <BaseInput {...{ ...props, ...props.input }} />
 
 Input.propTypes = {
   backgroundColor: PropTypes.string,
   borderColor: PropTypes.string,
   color: PropTypes.oneOf(keysIn(theme)),
   disabled: PropTypes.bool,
+  input: PropTypes.object,
+  name: PropTypes.string,
   type: PropTypes.oneOf(['text', 'date', 'number', 'password']),
   width: PropTypes.string,
 }
