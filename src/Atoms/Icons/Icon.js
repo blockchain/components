@@ -12,6 +12,7 @@ const getHoverColor = (props) =>
     : props.theme[props.color]
 
 const BaseIcon = styled.span`
+  height: ${(props) => props.size};
   font-weight: ${(props) => props.weight};
   font-size: ${(props) => props.size};
   color: ${(props) => props.theme[props.color]};

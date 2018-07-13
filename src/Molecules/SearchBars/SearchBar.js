@@ -13,13 +13,13 @@ const BaseSearchBar = styled.div`
   width: 100%;
 
   & > :first-child {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   & > :last-child {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
   }
 `
 const IconContainer = styled.div`
@@ -28,7 +28,7 @@ const IconContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 60px;
-  height: 40px;
+  height: 52px;
   background-color: ${(props) => props.theme['gold']};
 `
 
