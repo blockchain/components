@@ -1,8 +1,9 @@
 export default {
+  black: '#000',
   gold: '#FFD700',
   'gray-0': '#F8F8F8',
   'gray-1': '#EEF2F5',
-  'gray-2': '#CCCCCC',
+  'gray-2': '#CCC',
   'gray-3': '#999B9E',
   'gray-4': '#757679',
   'gray-5': '#545456',
@@ -11,5 +12,5 @@ export default {
   primary: '#3558A8',
   secondary: '#10ADE4',
   transparent: 'rgba(0, 0, 0, 0)',
-  white: '#FFFFFF',
+  white: '#FFF',
 }
