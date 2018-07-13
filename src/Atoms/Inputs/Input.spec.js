@@ -17,12 +17,6 @@ describe('Input component', () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with borderColor', () => {
-    const component = shallow(<Input color="gold" />)
-    const tree = toJson(component)
-    expect(tree).toMatchSnapshot()
-  })
-
   it('renders correctly with width', () => {
     const component = shallow(<Input width="200px" />)
     const tree = toJson(component)

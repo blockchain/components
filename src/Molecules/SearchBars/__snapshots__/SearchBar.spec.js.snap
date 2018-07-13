@@ -3,9 +3,9 @@
 exports[`SearchBar component renders correctly 1`] = `
 <styled.div>
   <Input
-    backgroundColor="white"
+    backgroundColor="gray-1"
     borderColor="white"
-    color="gray-5"
+    color="gray-7"
     disabled={false}
     type="text"
     width="100%"
@@ -25,9 +25,9 @@ exports[`SearchBar component renders correctly 1`] = `
 exports[`SearchBar component renders correctly with borderColor 1`] = `
 <styled.div>
   <Input
-    backgroundColor="white"
+    backgroundColor="gray-1"
     borderColor="gold"
-    color="gray-5"
+    color="gray-7"
     disabled={false}
     type="text"
     width="100%"
@@ -47,9 +47,9 @@ exports[`SearchBar component renders correctly with borderColor 1`] = `
 exports[`SearchBar component renders correctly with handleChange 1`] = `
 <styled.div>
   <Input
-    backgroundColor="white"
+    backgroundColor="gray-1"
     borderColor="white"
-    color="gray-5"
+    color="gray-7"
     disabled={false}
     onChange={[Function]}
     type="text"
@@ -70,9 +70,9 @@ exports[`SearchBar component renders correctly with handleChange 1`] = `
 exports[`SearchBar component renders correctly with handleClick 1`] = `
 <styled.div>
   <Input
-    backgroundColor="white"
+    backgroundColor="gray-1"
     borderColor="white"
-    color="gray-5"
+    color="gray-7"
     disabled={false}
     type="text"
     width="100%"
@@ -93,9 +93,9 @@ exports[`SearchBar component renders correctly with handleClick 1`] = `
 exports[`SearchBar component renders correctly with value 1`] = `
 <styled.div>
   <Input
-    backgroundColor="white"
+    backgroundColor="gray-1"
     borderColor="white"
-    color="gray-5"
+    color="gray-7"
     disabled={false}
     type="text"
     value="My search"
