@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { lighten } from 'polished'
 
-const BaseContainedButton = styled.button.attrs({ type: 'button' })`
+const BaseContainedButton = styled.button.attrs({
+  type: (props) => props.type,
+})`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -16,10 +18,11 @@ const BaseContainedButton = styled.button.attrs({ type: 'button' })`
   background-color: ${(props) => props.theme[props.backgroundColor]};
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
   outline: none;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+  opacity: ${(props) => (props.disabled ? 0.5 : 1)};
 
   &:hover {
     background-color: ${(props) =>
@@ -58,11 +61,13 @@ ContainedButton.propTypes = {
   children: PropTypes.node,
   disabled: PropTypes.bool,
   nature: PropTypes.oneOf(['primary', 'secondary']),
+  type: PropTypes.oneOf(['button', 'reset', 'submit']),
 }
 
 ContainedButton.defaultProps = {
   disabled: false,
   nature: 'primary',
+  type: 'button',
 }
 
 export default ContainedButton
