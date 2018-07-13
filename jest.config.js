@@ -28,10 +28,12 @@ const coverage =
     ? {
         collectCoverage: true,
         collectCoverageFrom: [
-          'src/**/**.js',
+          'src/Atoms/**/**.js',
+          'src/Molecules/**/**.js',
           '!src/Tools/**',
           '!**/__snapshots__/**',
           '!**/**.stories.js',
+          '!**/**Map.js',
           '!**/index.js',
         ],
         coverageDirectory: './coverage',
