@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Text component renders correctly 1`] = `
-<styled.span
+exports[`Text should render correctly 1`] = `
+.c0 {
+  font-family: 'Montserrat',helvetica,sans serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: none;
+  font-style: normal;
+  opacity: 1;
+}
+
+<Text
   capitalize={false}
   color="gray-5"
   italic={false}
@@ -10,12 +19,38 @@ exports[`Text component renders correctly 1`] = `
   uppercase={false}
   weight={300}
 >
-  MyText
-</styled.span>
+  <styled.span
+    capitalize={false}
+    color="gray-5"
+    italic={false}
+    opacity={1}
+    size="14px"
+    uppercase={false}
+    weight={300}
+  >
+    <span
+      className="c0"
+      color="gray-5"
+      opacity={1}
+      size="14px"
+    >
+      MyText
+    </span>
+  </styled.span>
+</Text>
 `;
 
-exports[`Text component renders correctly with capitalize 1`] = `
-<styled.span
+exports[`Text should render correctly with capitalize 1`] = `
+.c0 {
+  font-family: 'Montserrat',helvetica,sans serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-style: normal;
+  opacity: 1;
+}
+
+<Text
   capitalize={true}
   color="gray-5"
   italic={false}
@@ -24,12 +59,38 @@ exports[`Text component renders correctly with capitalize 1`] = `
   uppercase={false}
   weight={300}
 >
-  MyText
-</styled.span>
+  <styled.span
+    capitalize={true}
+    color="gray-5"
+    italic={false}
+    opacity={1}
+    size="14px"
+    uppercase={false}
+    weight={300}
+  >
+    <span
+      className="c0"
+      color="gray-5"
+      opacity={1}
+      size="14px"
+    >
+      MyText
+    </span>
+  </styled.span>
+</Text>
 `;
 
-exports[`Text component renders correctly with color 1`] = `
-<styled.span
+exports[`Text should render correctly with color 1`] = `
+.c0 {
+  font-family: 'Montserrat',helvetica,sans serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: none;
+  font-style: normal;
+  opacity: 1;
+}
+
+<Text
   capitalize={false}
   color="gold"
   italic={false}
@@ -38,12 +99,38 @@ exports[`Text component renders correctly with color 1`] = `
   uppercase={false}
   weight={300}
 >
-  MyText
-</styled.span>
+  <styled.span
+    capitalize={false}
+    color="gold"
+    italic={false}
+    opacity={1}
+    size="14px"
+    uppercase={false}
+    weight={300}
+  >
+    <span
+      className="c0"
+      color="gold"
+      opacity={1}
+      size="14px"
+    >
+      MyText
+    </span>
+  </styled.span>
+</Text>
 `;
 
-exports[`Text component renders correctly with italic 1`] = `
-<styled.span
+exports[`Text should render correctly with italic 1`] = `
+.c0 {
+  font-family: 'Montserrat',helvetica,sans serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: none;
+  font-style: italic;
+  opacity: 1;
+}
+
+<Text
   capitalize={false}
   color="gray-5"
   italic={true}
@@ -52,12 +139,38 @@ exports[`Text component renders correctly with italic 1`] = `
   uppercase={false}
   weight={300}
 >
-  MyText
-</styled.span>
+  <styled.span
+    capitalize={false}
+    color="gray-5"
+    italic={true}
+    opacity={1}
+    size="14px"
+    uppercase={false}
+    weight={300}
+  >
+    <span
+      className="c0"
+      color="gray-5"
+      opacity={1}
+      size="14px"
+    >
+      MyText
+    </span>
+  </styled.span>
+</Text>
 `;
 
-exports[`Text component renders correctly with opacity 1`] = `
-<styled.span
+exports[`Text should render correctly with opacity 1`] = `
+.c0 {
+  font-family: 'Montserrat',helvetica,sans serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: none;
+  font-style: normal;
+  opacity: 0.5;
+}
+
+<Text
   capitalize={false}
   color="gray-5"
   italic={false}
@@ -66,12 +179,38 @@ exports[`Text component renders correctly with opacity 1`] = `
   uppercase={false}
   weight={300}
 >
-  MyText
-</styled.span>
+  <styled.span
+    capitalize={false}
+    color="gray-5"
+    italic={false}
+    opacity={0.5}
+    size="14px"
+    uppercase={false}
+    weight={300}
+  >
+    <span
+      className="c0"
+      color="gray-5"
+      opacity={0.5}
+      size="14px"
+    >
+      MyText
+    </span>
+  </styled.span>
+</Text>
 `;
 
-exports[`Text component renders correctly with size 1`] = `
-<styled.span
+exports[`Text should render correctly with size 1`] = `
+.c0 {
+  font-family: 'Montserrat',helvetica,sans serif;
+  font-weight: 300;
+  font-size: 32px;
+  text-transform: none;
+  font-style: normal;
+  opacity: 1;
+}
+
+<Text
   capitalize={false}
   color="gray-5"
   italic={false}
@@ -80,12 +219,38 @@ exports[`Text component renders correctly with size 1`] = `
   uppercase={false}
   weight={300}
 >
-  MyText
-</styled.span>
+  <styled.span
+    capitalize={false}
+    color="gray-5"
+    italic={false}
+    opacity={1}
+    size="32px"
+    uppercase={false}
+    weight={300}
+  >
+    <span
+      className="c0"
+      color="gray-5"
+      opacity={1}
+      size="32px"
+    >
+      MyText
+    </span>
+  </styled.span>
+</Text>
 `;
 
-exports[`Text component renders correctly with uppercase 1`] = `
-<styled.span
+exports[`Text should render correctly with uppercase 1`] = `
+.c0 {
+  font-family: 'Montserrat',helvetica,sans serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-style: normal;
+  opacity: 1;
+}
+
+<Text
   capitalize={false}
   color="gray-5"
   italic={false}
@@ -94,12 +259,38 @@ exports[`Text component renders correctly with uppercase 1`] = `
   uppercase={true}
   weight={300}
 >
-  MyText
-</styled.span>
+  <styled.span
+    capitalize={false}
+    color="gray-5"
+    italic={false}
+    opacity={1}
+    size="14px"
+    uppercase={true}
+    weight={300}
+  >
+    <span
+      className="c0"
+      color="gray-5"
+      opacity={1}
+      size="14px"
+    >
+      MyText
+    </span>
+  </styled.span>
+</Text>
 `;
 
-exports[`Text component renders correctly with weight 1`] = `
-<styled.span
+exports[`Text should render correctly with weight 1`] = `
+.c0 {
+  font-family: 'Montserrat',helvetica,sans serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: none;
+  font-style: normal;
+  opacity: 1;
+}
+
+<Text
   capitalize={false}
   color="gray-5"
   italic={false}
@@ -108,6 +299,23 @@ exports[`Text component renders correctly with weight 1`] = `
   uppercase={false}
   weight={500}
 >
-  MyText
-</styled.span>
+  <styled.span
+    capitalize={false}
+    color="gray-5"
+    italic={false}
+    opacity={1}
+    size="14px"
+    uppercase={false}
+    weight={500}
+  >
+    <span
+      className="c0"
+      color="gray-5"
+      opacity={1}
+      size="14px"
+    >
+      MyText
+    </span>
+  </styled.span>
+</Text>
 `;

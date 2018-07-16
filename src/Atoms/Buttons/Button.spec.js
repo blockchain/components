@@ -4,7 +4,7 @@ import { mount } from 'enzyme'
 import theme from '../../Tools/theme'
 import Button from './Button'
 
-describe('Button component', () => {
+describe('Button', () => {
   it('should render correctly', () => {
     const tree = mount(<Button theme={theme} />)
 

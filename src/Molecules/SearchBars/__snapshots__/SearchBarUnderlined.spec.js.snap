@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SearchBarUnderlined component renders correctly 1`] = `
+exports[`SearchBarUnderlined should render correctly 1`] = `
 <styled.div>
   <Input
     backgroundColor="transparent"
@@ -22,7 +22,7 @@ exports[`SearchBarUnderlined component renders correctly 1`] = `
 </styled.div>
 `;
 
-exports[`SearchBarUnderlined component renders correctly with handleChange 1`] = `
+exports[`SearchBarUnderlined should render correctly with handleChange 1`] = `
 <styled.div>
   <Input
     backgroundColor="transparent"
@@ -45,7 +45,7 @@ exports[`SearchBarUnderlined component renders correctly with handleChange 1`] =
 </styled.div>
 `;
 
-exports[`SearchBarUnderlined component renders correctly with handleClick 1`] = `
+exports[`SearchBarUnderlined should render correctly with handleClick 1`] = `
 <styled.div>
   <Input
     backgroundColor="transparent"
@@ -68,7 +68,7 @@ exports[`SearchBarUnderlined component renders correctly with handleClick 1`] = 
 </styled.div>
 `;
 
-exports[`SearchBarUnderlined component renders correctly with value 1`] = `
+exports[`SearchBarUnderlined should render correctly with value 1`] = `
 <styled.div>
   <Input
     backgroundColor="transparent"

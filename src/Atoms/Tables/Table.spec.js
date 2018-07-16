@@ -1,19 +1,18 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+import { mount } from 'enzyme'
 
 import Table from './Table'
 
-describe('Table component', () => {
-  it('renders correctly', () => {
-    const component = shallow(<Table>MyTable</Table>)
-    const tree = toJson(component)
+describe('Table', () => {
+  it('should render correctly', () => {
+    const tree = mount(<Table>MyTable</Table>)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with highlighted', () => {
-    const component = shallow(<Table>MyTable</Table>)
-    const tree = toJson(component)
+  it('should render correctly with highlighted', () => {
+    const tree = mount(<Table>MyTable</Table>)
+
     expect(tree).toMatchSnapshot()
   })
 })

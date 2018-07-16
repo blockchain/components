@@ -1,17 +1,81 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Table component renders correctly 1`] = `
-<styled.div
+exports[`Table should render correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  box-shadow: 0 0 25px 5px;
+}
+
+.c0 > :first-child {
+  text-transform: uppercase;
+}
+
+<Table
   highlighting={false}
 >
-  MyTable
-</styled.div>
+  <styled.div
+    highlighting={false}
+  >
+    <div
+      className="c0"
+    >
+      MyTable
+    </div>
+  </styled.div>
+</Table>
 `;
 
-exports[`Table component renders correctly with highlighted 1`] = `
-<styled.div
+exports[`Table should render correctly with highlighted 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  box-shadow: 0 0 25px 5px;
+}
+
+.c0 > :first-child {
+  text-transform: uppercase;
+}
+
+<Table
   highlighting={false}
 >
-  MyTable
-</styled.div>
+  <styled.div
+    highlighting={false}
+  >
+    <div
+      className="c0"
+    >
+      MyTable
+    </div>
+  </styled.div>
+</Table>
 `;

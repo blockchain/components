@@ -1,13 +1,12 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+import { mount } from 'enzyme'
 
 import TabMenu from './TabMenu'
 
-describe('TabMenu component', () => {
-  it('renders correctly', () => {
-    const component = shallow(<TabMenu>MyTabMenu</TabMenu>)
-    const tree = toJson(component)
+describe('TabMenu', () => {
+  it('should render correctly', () => {
+    const tree = mount(<TabMenu>MyTabMenu</TabMenu>)
+
     expect(tree).toMatchSnapshot()
   })
 })
