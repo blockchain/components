@@ -1,10 +1,491 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component renders correctly 1`] = `
-<styled.button
-  backgroundColor="primary"
-  color="white"
-  disabled={false}
+exports[`Button component should have a disabled state 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #FFF;
+  background-color: #3558A8;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+  outline: none;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 0.5;
+}
+
+.c0:hover {
+  background-color: #4a70c6;
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+<ContainedButton
+  disabled={true}
+  nature="primary"
+  theme={
+    Object {
+      "black": "#000",
+      "gold": "#FFD700",
+      "gray-0": "#F8F8F8",
+      "gray-1": "#EEF2F5",
+      "gray-2": "#CCC",
+      "gray-3": "#999B9E",
+      "gray-4": "#757679",
+      "gray-5": "#545456",
+      "gray-6": "#383838",
+      "gray-7": "#040d25",
+      "primary": "#3558A8",
+      "secondary": "#10ADE4",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+    }
+  }
   type="button"
-/>
+>
+  <styled.button
+    backgroundColor="primary"
+    color="white"
+    disabled={true}
+    theme={
+      Object {
+        "black": "#000",
+        "gold": "#FFD700",
+        "gray-0": "#F8F8F8",
+        "gray-1": "#EEF2F5",
+        "gray-2": "#CCC",
+        "gray-3": "#999B9E",
+        "gray-4": "#757679",
+        "gray-5": "#545456",
+        "gray-6": "#383838",
+        "gray-7": "#040d25",
+        "primary": "#3558A8",
+        "secondary": "#10ADE4",
+        "transparent": "rgba(0, 0, 0, 0)",
+        "white": "#FFF",
+      }
+    }
+    type="button"
+  >
+    <button
+      className="c0"
+      color="white"
+      disabled={true}
+      type="button"
+    />
+  </styled.button>
+</ContainedButton>
+`;
+
+exports[`Button component should have a secondary style 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #FFF;
+  background-color: #10ADE4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}
+
+.c0:hover {
+  background-color: #36c0f1;
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+<ContainedButton
+  disabled={false}
+  nature="secondary"
+  theme={
+    Object {
+      "black": "#000",
+      "gold": "#FFD700",
+      "gray-0": "#F8F8F8",
+      "gray-1": "#EEF2F5",
+      "gray-2": "#CCC",
+      "gray-3": "#999B9E",
+      "gray-4": "#757679",
+      "gray-5": "#545456",
+      "gray-6": "#383838",
+      "gray-7": "#040d25",
+      "primary": "#3558A8",
+      "secondary": "#10ADE4",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+    }
+  }
+  type="button"
+>
+  <styled.button
+    backgroundColor="secondary"
+    color="white"
+    disabled={false}
+    theme={
+      Object {
+        "black": "#000",
+        "gold": "#FFD700",
+        "gray-0": "#F8F8F8",
+        "gray-1": "#EEF2F5",
+        "gray-2": "#CCC",
+        "gray-3": "#999B9E",
+        "gray-4": "#757679",
+        "gray-5": "#545456",
+        "gray-6": "#383838",
+        "gray-7": "#040d25",
+        "primary": "#3558A8",
+        "secondary": "#10ADE4",
+        "transparent": "rgba(0, 0, 0, 0)",
+        "white": "#FFF",
+      }
+    }
+    type="button"
+  >
+    <button
+      className="c0"
+      color="white"
+      disabled={false}
+      type="button"
+    />
+  </styled.button>
+</ContainedButton>
+`;
+
+exports[`Button component should have a type property 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #FFF;
+  background-color: #3558A8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}
+
+.c0:hover {
+  background-color: #4a70c6;
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+<ContainedButton
+  disabled={false}
+  nature="primary"
+  theme={
+    Object {
+      "black": "#000",
+      "gold": "#FFD700",
+      "gray-0": "#F8F8F8",
+      "gray-1": "#EEF2F5",
+      "gray-2": "#CCC",
+      "gray-3": "#999B9E",
+      "gray-4": "#757679",
+      "gray-5": "#545456",
+      "gray-6": "#383838",
+      "gray-7": "#040d25",
+      "primary": "#3558A8",
+      "secondary": "#10ADE4",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+    }
+  }
+  type="submit"
+>
+  <styled.button
+    backgroundColor="primary"
+    color="white"
+    disabled={false}
+    theme={
+      Object {
+        "black": "#000",
+        "gold": "#FFD700",
+        "gray-0": "#F8F8F8",
+        "gray-1": "#EEF2F5",
+        "gray-2": "#CCC",
+        "gray-3": "#999B9E",
+        "gray-4": "#757679",
+        "gray-5": "#545456",
+        "gray-6": "#383838",
+        "gray-7": "#040d25",
+        "primary": "#3558A8",
+        "secondary": "#10ADE4",
+        "transparent": "rgba(0, 0, 0, 0)",
+        "white": "#FFF",
+      }
+    }
+    type="submit"
+  >
+    <button
+      className="c0"
+      color="white"
+      disabled={false}
+      type="submit"
+    />
+  </styled.button>
+</ContainedButton>
+`;
+
+exports[`Button component should have a type property 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #FFF;
+  background-color: #3558A8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}
+
+.c0:hover {
+  background-color: #4a70c6;
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+<ContainedButton
+  disabled={false}
+  nature="primary"
+  theme={
+    Object {
+      "black": "#000",
+      "gold": "#FFD700",
+      "gray-0": "#F8F8F8",
+      "gray-1": "#EEF2F5",
+      "gray-2": "#CCC",
+      "gray-3": "#999B9E",
+      "gray-4": "#757679",
+      "gray-5": "#545456",
+      "gray-6": "#383838",
+      "gray-7": "#040d25",
+      "primary": "#3558A8",
+      "secondary": "#10ADE4",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+    }
+  }
+  type="reset"
+>
+  <styled.button
+    backgroundColor="primary"
+    color="white"
+    disabled={false}
+    theme={
+      Object {
+        "black": "#000",
+        "gold": "#FFD700",
+        "gray-0": "#F8F8F8",
+        "gray-1": "#EEF2F5",
+        "gray-2": "#CCC",
+        "gray-3": "#999B9E",
+        "gray-4": "#757679",
+        "gray-5": "#545456",
+        "gray-6": "#383838",
+        "gray-7": "#040d25",
+        "primary": "#3558A8",
+        "secondary": "#10ADE4",
+        "transparent": "rgba(0, 0, 0, 0)",
+        "white": "#FFF",
+      }
+    }
+    type="reset"
+  >
+    <button
+      className="c0"
+      color="white"
+      disabled={false}
+      type="reset"
+    />
+  </styled.button>
+</ContainedButton>
+`;
+
+exports[`Button component should render correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #FFF;
+  background-color: #3558A8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}
+
+.c0:hover {
+  background-color: #4a70c6;
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+<ContainedButton
+  disabled={false}
+  nature="primary"
+  theme={
+    Object {
+      "black": "#000",
+      "gold": "#FFD700",
+      "gray-0": "#F8F8F8",
+      "gray-1": "#EEF2F5",
+      "gray-2": "#CCC",
+      "gray-3": "#999B9E",
+      "gray-4": "#757679",
+      "gray-5": "#545456",
+      "gray-6": "#383838",
+      "gray-7": "#040d25",
+      "primary": "#3558A8",
+      "secondary": "#10ADE4",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+    }
+  }
+  type="button"
+>
+  <styled.button
+    backgroundColor="primary"
+    color="white"
+    disabled={false}
+    theme={
+      Object {
+        "black": "#000",
+        "gold": "#FFD700",
+        "gray-0": "#F8F8F8",
+        "gray-1": "#EEF2F5",
+        "gray-2": "#CCC",
+        "gray-3": "#999B9E",
+        "gray-4": "#757679",
+        "gray-5": "#545456",
+        "gray-6": "#383838",
+        "gray-7": "#040d25",
+        "primary": "#3558A8",
+        "secondary": "#10ADE4",
+        "transparent": "rgba(0, 0, 0, 0)",
+        "white": "#FFF",
+      }
+    }
+    type="button"
+  >
+    <button
+      className="c0"
+      color="white"
+      disabled={false}
+      type="button"
+    />
+  </styled.button>
+</ContainedButton>
 `;
