@@ -1,28 +1,700 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Text component renders correctly 1`] = `
-<styled.div
+exports[`TextGroup mount render correctly 1`] = `
+.c1 {
+  font-family: 'Montserrat',helvetica,sans serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: none;
+  font-style: normal;
+  opacity: 1;
+}
+
+.c0 {
+  text-align: justify;
+}
+
+.c0 > * {
+  display: inline;
+  margin-right: 5px;
+}
+
+<TextGroup
   align="justify"
   inline={true}
 >
-  <Texts />
-</styled.div>
+  <styled.div
+    align="justify"
+    inline={true}
+  >
+    <div
+      className="c0"
+    >
+      <Texts>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my first text. This is my first text. This is my first text. This is my first text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my second text. This is my second text. This is my second text. This is my second text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my third text. This is my third text. This is my third text. This is my third text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my fourth text. This is my fourth text. This is my fourth text. This is my fourth text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my fifth text. This is my fifth text. This is my fifth text. This is my fifth text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my sixth text. This is my sixth text. This is my sixth text. This is my sixth text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my seventh text. This is my seventh text. This is my seventh text. This is my seventh text.
+            </span>
+          </styled.span>
+        </Text>
+      </Texts>
+    </div>
+  </styled.div>
+</TextGroup>
 `;
 
-exports[`Text component renders correctly with align 1`] = `
-<styled.div
+exports[`TextGroup mount render correctly with align 1`] = `
+.c1 {
+  font-family: 'Montserrat',helvetica,sans serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: none;
+  font-style: normal;
+  opacity: 1;
+}
+
+.c0 {
+  text-align: right;
+}
+
+.c0 > * {
+  display: inline;
+  margin-right: 5px;
+}
+
+<TextGroup
   align="right"
   inline={true}
 >
-  <Texts />
-</styled.div>
+  <styled.div
+    align="right"
+    inline={true}
+  >
+    <div
+      className="c0"
+    >
+      <Texts>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my first text. This is my first text. This is my first text. This is my first text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my second text. This is my second text. This is my second text. This is my second text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my third text. This is my third text. This is my third text. This is my third text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my fourth text. This is my fourth text. This is my fourth text. This is my fourth text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my fifth text. This is my fifth text. This is my fifth text. This is my fifth text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my sixth text. This is my sixth text. This is my sixth text. This is my sixth text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my seventh text. This is my seventh text. This is my seventh text. This is my seventh text.
+            </span>
+          </styled.span>
+        </Text>
+      </Texts>
+    </div>
+  </styled.div>
+</TextGroup>
 `;
 
-exports[`Text component renders correctly with inline 1`] = `
-<styled.div
+exports[`TextGroup mount render correctly with inline 1`] = `
+.c1 {
+  font-family: 'Montserrat',helvetica,sans serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: none;
+  font-style: normal;
+  opacity: 1;
+}
+
+.c0 {
+  text-align: justify;
+}
+
+.c0 > * {
+  display: block;
+  margin-right: 0;
+}
+
+<TextGroup
   align="justify"
   inline={false}
 >
-  <Texts />
-</styled.div>
+  <styled.div
+    align="justify"
+    inline={false}
+  >
+    <div
+      className="c0"
+    >
+      <Texts>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my first text. This is my first text. This is my first text. This is my first text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my second text. This is my second text. This is my second text. This is my second text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my third text. This is my third text. This is my third text. This is my third text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my fourth text. This is my fourth text. This is my fourth text. This is my fourth text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my fifth text. This is my fifth text. This is my fifth text. This is my fifth text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my sixth text. This is my sixth text. This is my sixth text. This is my sixth text.
+            </span>
+          </styled.span>
+        </Text>
+        <Text
+          capitalize={false}
+          color="gray-5"
+          italic={false}
+          opacity={1}
+          size="14px"
+          uppercase={false}
+          weight={300}
+        >
+          <styled.span
+            capitalize={false}
+            color="gray-5"
+            italic={false}
+            opacity={1}
+            size="14px"
+            uppercase={false}
+            weight={300}
+          >
+            <span
+              className="c1"
+              color="gray-5"
+              opacity={1}
+              size="14px"
+            >
+              This is my seventh text. This is my seventh text. This is my seventh text. This is my seventh text.
+            </span>
+          </styled.span>
+        </Text>
+      </Texts>
+    </div>
+  </styled.div>
+</TextGroup>
 `;

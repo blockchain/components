@@ -1,6 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+import { mount } from 'enzyme'
 
 import Text from './Text'
 import TextGroup from './TextGroup'
@@ -38,34 +37,34 @@ const Texts = () => (
   </React.Fragment>
 )
 
-describe('Text component', () => {
-  it('renders correctly', () => {
-    const component = shallow(
+describe('TextGroup', () => {
+  it('mount render correctly', () => {
+    const tree = mount(
       <TextGroup>
         <Texts />
       </TextGroup>,
     )
-    const tree = toJson(component)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with align', () => {
-    const component = shallow(
+  it('mount render correctly with align', () => {
+    const tree = mount(
       <TextGroup align="right">
         <Texts />
       </TextGroup>,
     )
-    const tree = toJson(component)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with inline', () => {
-    const component = shallow(
+  it('mount render correctly with inline', () => {
+    const tree = mount(
       <TextGroup inline={false}>
         <Texts />
       </TextGroup>,
     )
-    const tree = toJson(component)
+
     expect(tree).toMatchSnapshot()
   })
 })

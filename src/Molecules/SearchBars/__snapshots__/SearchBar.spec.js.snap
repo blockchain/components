@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SearchBar component renders correctly 1`] = `
+exports[`SearchBar should render correctly 1`] = `
 <styled.div>
   <Input
     backgroundColor="gray-1"
@@ -22,7 +22,7 @@ exports[`SearchBar component renders correctly 1`] = `
 </styled.div>
 `;
 
-exports[`SearchBar component renders correctly with borderColor 1`] = `
+exports[`SearchBar should render correctly with borderColor 1`] = `
 <styled.div>
   <Input
     backgroundColor="gray-1"
@@ -44,7 +44,7 @@ exports[`SearchBar component renders correctly with borderColor 1`] = `
 </styled.div>
 `;
 
-exports[`SearchBar component renders correctly with handleChange 1`] = `
+exports[`SearchBar should render correctly with handleChange 1`] = `
 <styled.div>
   <Input
     backgroundColor="gray-1"
@@ -67,7 +67,7 @@ exports[`SearchBar component renders correctly with handleChange 1`] = `
 </styled.div>
 `;
 
-exports[`SearchBar component renders correctly with handleClick 1`] = `
+exports[`SearchBar should render correctly with handleClick 1`] = `
 <styled.div>
   <Input
     backgroundColor="gray-1"
@@ -90,7 +90,7 @@ exports[`SearchBar component renders correctly with handleClick 1`] = `
 </styled.div>
 `;
 
-exports[`SearchBar component renders correctly with value 1`] = `
+exports[`SearchBar should render correctly with value 1`] = `
 <styled.div>
   <Input
     backgroundColor="gray-1"

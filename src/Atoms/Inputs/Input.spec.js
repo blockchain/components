@@ -1,37 +1,36 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+import { mount } from 'enzyme'
 
 import Input from './Input'
 
-describe('Input component', () => {
-  it('renders correctly', () => {
-    const component = shallow(<Input />)
-    const tree = toJson(component)
+describe('Input', () => {
+  it('should render correctly', () => {
+    const tree = mount(<Input />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with type', () => {
-    const component = shallow(<Input type="password" />)
-    const tree = toJson(component)
+  it('should render correctly with type', () => {
+    const tree = mount(<Input type="password" />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with borderColor', () => {
-    const component = shallow(<Input borderColor="gold" />)
-    const tree = toJson(component)
+  it('should render correctly with borderColor', () => {
+    const tree = mount(<Input borderColor="gold" />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with width', () => {
-    const component = shallow(<Input width="200px" />)
-    const tree = toJson(component)
+  it('should render correctly with width', () => {
+    const tree = mount(<Input width="200px" />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with disabled', () => {
-    const component = shallow(<Input disabled />)
-    const tree = toJson(component)
+  it('should render correctly with disabled', () => {
+    const tree = mount(<Input disabled />)
+
     expect(tree).toMatchSnapshot()
   })
 })

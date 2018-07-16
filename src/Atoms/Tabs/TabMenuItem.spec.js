@@ -1,19 +1,18 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+import { mount } from 'enzyme'
 
 import TabMenuItem from './TabMenuItem'
 
-describe('TabMenuItem component', () => {
-  it('renders correctly', () => {
-    const component = shallow(<TabMenuItem>MyTabMenuItem</TabMenuItem>)
-    const tree = toJson(component)
+describe('TabMenuItem', () => {
+  it('should render correctly', () => {
+    const tree = mount(<TabMenuItem>MyTabMenuItem</TabMenuItem>)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly when selected', () => {
-    const component = shallow(<TabMenuItem selected>MyTabMenuItem</TabMenuItem>)
-    const tree = toJson(component)
+  it('should render correctly when selected', () => {
+    const tree = mount(<TabMenuItem selected>MyTabMenuItem</TabMenuItem>)
+
     expect(tree).toMatchSnapshot()
   })
 })

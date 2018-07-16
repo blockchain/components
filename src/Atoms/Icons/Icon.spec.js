@@ -1,43 +1,43 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+import { mount } from 'enzyme'
 
+import theme from '../../Tools/theme'
 import Icon from './Icon'
 
-describe('Icon component', () => {
-  it('renders correctly', () => {
-    const component = shallow(<Icon />)
-    const tree = toJson(component)
+describe('Icon theme={theme}', () => {
+  it('should render correctly', () => {
+    const tree = mount(<Icon theme={theme} />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with name', () => {
-    const component = shallow(<Icon name="ethereum" />)
-    const tree = toJson(component)
+  it('should render correctly with name', () => {
+    const tree = mount(<Icon name="ethereum" theme={theme} />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with color', () => {
-    const component = shallow(<Icon color="gold" />)
-    const tree = toJson(component)
+  it('should render correctly with color', () => {
+    const tree = mount(<Icon color="gold" theme={theme} />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with size', () => {
-    const component = shallow(<Icon size="72px" />)
-    const tree = toJson(component)
+  it('should render correctly with size', () => {
+    const tree = mount(<Icon size="72px" theme={theme} />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with uppercase', () => {
-    const component = shallow(<Icon weight={400} />)
-    const tree = toJson(component)
+  it('should render correctly with uppercase', () => {
+    const tree = mount(<Icon theme={theme} weight={400} />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with selectable', () => {
-    const component = shallow(<Icon selectable />)
-    const tree = toJson(component)
+  it('should render correctly with selectable', () => {
+    const tree = mount(<Icon selectable theme={theme} />)
+
     expect(tree).toMatchSnapshot()
   })
 })

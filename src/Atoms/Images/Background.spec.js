@@ -1,37 +1,36 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+import { mount } from 'enzyme'
 
 import Background from './Background'
 
-describe('Background component', () => {
-  it('renders correctly', () => {
-    const component = shallow(<Background />)
-    const tree = toJson(component)
+describe('Background', () => {
+  it('should render correctly', () => {
+    const tree = mount(<Background />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with width', () => {
-    const component = shallow(<Background name="brand" />)
-    const tree = toJson(component)
+  it('should render correctly with width', () => {
+    const tree = mount(<Background name="brand" />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with height', () => {
-    const component = shallow(<Background height="400px" />)
-    const tree = toJson(component)
+  it('should render correctly with height', () => {
+    const tree = mount(<Background height="400px" />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with width', () => {
-    const component = shallow(<Background width="600px" />)
-    const tree = toJson(component)
+  it('should render correctly with width', () => {
+    const tree = mount(<Background width="600px" />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with stretch', () => {
-    const component = shallow(<Background stretch />)
-    const tree = toJson(component)
+  it('should render correctly with stretch', () => {
+    const tree = mount(<Background stretch />)
+
     expect(tree).toMatchSnapshot()
   })
 })

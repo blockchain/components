@@ -1,61 +1,463 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Icon component renders correctly 1`] = `
-<styled.span
-  code="\\\\e957"
+exports[`Icon theme={theme} should render correctly 1`] = `
+.c0 {
+  height: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  color: #545456;
+  cursor: inherit;
+}
+
+.c0:hover {
+  color: #545456;
+}
+
+.c0::before {
+  font-family: 'icomoon';
+  content: '\\e957';
+}
+
+<Icon
   color="gray-5"
+  name="bitcoin"
   selectable={false}
   size="40px"
+  theme={
+    Object {
+      "black": "#000",
+      "gold": "#FFD700",
+      "gray-0": "#F8F8F8",
+      "gray-1": "#EEF2F5",
+      "gray-2": "#CCC",
+      "gray-3": "#999B9E",
+      "gray-4": "#757679",
+      "gray-5": "#545456",
+      "gray-6": "#383838",
+      "gray-7": "#040d25",
+      "primary": "#3558A8",
+      "secondary": "#10ADE4",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+    }
+  }
   weight={400}
-/>
+>
+  <styled.span
+    code="\\\\e957"
+    color="gray-5"
+    selectable={false}
+    size="40px"
+    theme={
+      Object {
+        "black": "#000",
+        "gold": "#FFD700",
+        "gray-0": "#F8F8F8",
+        "gray-1": "#EEF2F5",
+        "gray-2": "#CCC",
+        "gray-3": "#999B9E",
+        "gray-4": "#757679",
+        "gray-5": "#545456",
+        "gray-6": "#383838",
+        "gray-7": "#040d25",
+        "primary": "#3558A8",
+        "secondary": "#10ADE4",
+        "transparent": "rgba(0, 0, 0, 0)",
+        "white": "#FFF",
+      }
+    }
+    weight={400}
+  >
+    <span
+      className="c0"
+      color="gray-5"
+      size="40px"
+    />
+  </styled.span>
+</Icon>
 `;
 
-exports[`Icon component renders correctly with color 1`] = `
-<styled.span
-  code="\\\\e957"
+exports[`Icon theme={theme} should render correctly with color 1`] = `
+.c0 {
+  height: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  color: #FFD700;
+  cursor: inherit;
+}
+
+.c0:hover {
+  color: #FFD700;
+}
+
+.c0::before {
+  font-family: 'icomoon';
+  content: '\\e957';
+}
+
+<Icon
   color="gold"
+  name="bitcoin"
   selectable={false}
   size="40px"
+  theme={
+    Object {
+      "black": "#000",
+      "gold": "#FFD700",
+      "gray-0": "#F8F8F8",
+      "gray-1": "#EEF2F5",
+      "gray-2": "#CCC",
+      "gray-3": "#999B9E",
+      "gray-4": "#757679",
+      "gray-5": "#545456",
+      "gray-6": "#383838",
+      "gray-7": "#040d25",
+      "primary": "#3558A8",
+      "secondary": "#10ADE4",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+    }
+  }
   weight={400}
-/>
+>
+  <styled.span
+    code="\\\\e957"
+    color="gold"
+    selectable={false}
+    size="40px"
+    theme={
+      Object {
+        "black": "#000",
+        "gold": "#FFD700",
+        "gray-0": "#F8F8F8",
+        "gray-1": "#EEF2F5",
+        "gray-2": "#CCC",
+        "gray-3": "#999B9E",
+        "gray-4": "#757679",
+        "gray-5": "#545456",
+        "gray-6": "#383838",
+        "gray-7": "#040d25",
+        "primary": "#3558A8",
+        "secondary": "#10ADE4",
+        "transparent": "rgba(0, 0, 0, 0)",
+        "white": "#FFF",
+      }
+    }
+    weight={400}
+  >
+    <span
+      className="c0"
+      color="gold"
+      size="40px"
+    />
+  </styled.span>
+</Icon>
 `;
 
-exports[`Icon component renders correctly with name 1`] = `
-<styled.span
-  code="\\\\e963"
+exports[`Icon theme={theme} should render correctly with name 1`] = `
+.c0 {
+  height: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  color: #545456;
+  cursor: inherit;
+}
+
+.c0:hover {
+  color: #545456;
+}
+
+.c0::before {
+  font-family: 'icomoon';
+  content: '\\e963';
+}
+
+<Icon
   color="gray-5"
+  name="ethereum"
   selectable={false}
   size="40px"
+  theme={
+    Object {
+      "black": "#000",
+      "gold": "#FFD700",
+      "gray-0": "#F8F8F8",
+      "gray-1": "#EEF2F5",
+      "gray-2": "#CCC",
+      "gray-3": "#999B9E",
+      "gray-4": "#757679",
+      "gray-5": "#545456",
+      "gray-6": "#383838",
+      "gray-7": "#040d25",
+      "primary": "#3558A8",
+      "secondary": "#10ADE4",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+    }
+  }
   weight={400}
-/>
+>
+  <styled.span
+    code="\\\\e963"
+    color="gray-5"
+    selectable={false}
+    size="40px"
+    theme={
+      Object {
+        "black": "#000",
+        "gold": "#FFD700",
+        "gray-0": "#F8F8F8",
+        "gray-1": "#EEF2F5",
+        "gray-2": "#CCC",
+        "gray-3": "#999B9E",
+        "gray-4": "#757679",
+        "gray-5": "#545456",
+        "gray-6": "#383838",
+        "gray-7": "#040d25",
+        "primary": "#3558A8",
+        "secondary": "#10ADE4",
+        "transparent": "rgba(0, 0, 0, 0)",
+        "white": "#FFF",
+      }
+    }
+    weight={400}
+  >
+    <span
+      className="c0"
+      color="gray-5"
+      size="40px"
+    />
+  </styled.span>
+</Icon>
 `;
 
-exports[`Icon component renders correctly with selectable 1`] = `
-<styled.span
-  code="\\\\e957"
+exports[`Icon theme={theme} should render correctly with selectable 1`] = `
+.c0 {
+  height: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  color: #545456;
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #6d6d70;
+}
+
+.c0::before {
+  font-family: 'icomoon';
+  content: '\\e957';
+}
+
+<Icon
   color="gray-5"
+  name="bitcoin"
   selectable={true}
   size="40px"
+  theme={
+    Object {
+      "black": "#000",
+      "gold": "#FFD700",
+      "gray-0": "#F8F8F8",
+      "gray-1": "#EEF2F5",
+      "gray-2": "#CCC",
+      "gray-3": "#999B9E",
+      "gray-4": "#757679",
+      "gray-5": "#545456",
+      "gray-6": "#383838",
+      "gray-7": "#040d25",
+      "primary": "#3558A8",
+      "secondary": "#10ADE4",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+    }
+  }
   weight={400}
-/>
+>
+  <styled.span
+    code="\\\\e957"
+    color="gray-5"
+    selectable={true}
+    size="40px"
+    theme={
+      Object {
+        "black": "#000",
+        "gold": "#FFD700",
+        "gray-0": "#F8F8F8",
+        "gray-1": "#EEF2F5",
+        "gray-2": "#CCC",
+        "gray-3": "#999B9E",
+        "gray-4": "#757679",
+        "gray-5": "#545456",
+        "gray-6": "#383838",
+        "gray-7": "#040d25",
+        "primary": "#3558A8",
+        "secondary": "#10ADE4",
+        "transparent": "rgba(0, 0, 0, 0)",
+        "white": "#FFF",
+      }
+    }
+    weight={400}
+  >
+    <span
+      className="c0"
+      color="gray-5"
+      size="40px"
+    />
+  </styled.span>
+</Icon>
 `;
 
-exports[`Icon component renders correctly with size 1`] = `
-<styled.span
-  code="\\\\e957"
+exports[`Icon theme={theme} should render correctly with size 1`] = `
+.c0 {
+  height: 72px;
+  font-weight: 400;
+  font-size: 72px;
+  color: #545456;
+  cursor: inherit;
+}
+
+.c0:hover {
+  color: #545456;
+}
+
+.c0::before {
+  font-family: 'icomoon';
+  content: '\\e957';
+}
+
+<Icon
   color="gray-5"
+  name="bitcoin"
   selectable={false}
   size="72px"
+  theme={
+    Object {
+      "black": "#000",
+      "gold": "#FFD700",
+      "gray-0": "#F8F8F8",
+      "gray-1": "#EEF2F5",
+      "gray-2": "#CCC",
+      "gray-3": "#999B9E",
+      "gray-4": "#757679",
+      "gray-5": "#545456",
+      "gray-6": "#383838",
+      "gray-7": "#040d25",
+      "primary": "#3558A8",
+      "secondary": "#10ADE4",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+    }
+  }
   weight={400}
-/>
+>
+  <styled.span
+    code="\\\\e957"
+    color="gray-5"
+    selectable={false}
+    size="72px"
+    theme={
+      Object {
+        "black": "#000",
+        "gold": "#FFD700",
+        "gray-0": "#F8F8F8",
+        "gray-1": "#EEF2F5",
+        "gray-2": "#CCC",
+        "gray-3": "#999B9E",
+        "gray-4": "#757679",
+        "gray-5": "#545456",
+        "gray-6": "#383838",
+        "gray-7": "#040d25",
+        "primary": "#3558A8",
+        "secondary": "#10ADE4",
+        "transparent": "rgba(0, 0, 0, 0)",
+        "white": "#FFF",
+      }
+    }
+    weight={400}
+  >
+    <span
+      className="c0"
+      color="gray-5"
+      size="72px"
+    />
+  </styled.span>
+</Icon>
 `;
 
-exports[`Icon component renders correctly with uppercase 1`] = `
-<styled.span
-  code="\\\\e957"
+exports[`Icon theme={theme} should render correctly with uppercase 1`] = `
+.c0 {
+  height: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  color: #545456;
+  cursor: inherit;
+}
+
+.c0:hover {
+  color: #545456;
+}
+
+.c0::before {
+  font-family: 'icomoon';
+  content: '\\e957';
+}
+
+<Icon
   color="gray-5"
+  name="bitcoin"
   selectable={false}
   size="40px"
+  theme={
+    Object {
+      "black": "#000",
+      "gold": "#FFD700",
+      "gray-0": "#F8F8F8",
+      "gray-1": "#EEF2F5",
+      "gray-2": "#CCC",
+      "gray-3": "#999B9E",
+      "gray-4": "#757679",
+      "gray-5": "#545456",
+      "gray-6": "#383838",
+      "gray-7": "#040d25",
+      "primary": "#3558A8",
+      "secondary": "#10ADE4",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+    }
+  }
   weight={400}
-/>
+>
+  <styled.span
+    code="\\\\e957"
+    color="gray-5"
+    selectable={false}
+    size="40px"
+    theme={
+      Object {
+        "black": "#000",
+        "gold": "#FFD700",
+        "gray-0": "#F8F8F8",
+        "gray-1": "#EEF2F5",
+        "gray-2": "#CCC",
+        "gray-3": "#999B9E",
+        "gray-4": "#757679",
+        "gray-5": "#545456",
+        "gray-6": "#383838",
+        "gray-7": "#040d25",
+        "primary": "#3558A8",
+        "secondary": "#10ADE4",
+        "transparent": "rgba(0, 0, 0, 0)",
+        "white": "#FFF",
+      }
+    }
+    weight={400}
+  >
+    <span
+      className="c0"
+      color="gray-5"
+      size="40px"
+    />
+  </styled.span>
+</Icon>
 `;

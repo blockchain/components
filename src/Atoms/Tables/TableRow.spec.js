@@ -1,13 +1,12 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+import { mount } from 'enzyme'
 
 import TableRow from './TableRow'
 
-describe('TableRow component', () => {
-  it('renders correctly', () => {
-    const component = shallow(<TableRow>MyTableRow</TableRow>)
-    const tree = toJson(component)
+describe('TableRow', () => {
+  it('should render correctly', () => {
+    const tree = mount(<TableRow>MyTableRow</TableRow>)
+
     expect(tree).toMatchSnapshot()
   })
 })

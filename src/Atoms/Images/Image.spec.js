@@ -1,37 +1,37 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+import { mount } from 'enzyme'
 
+import theme from '../../Tools/theme'
 import Image from './Image'
 
-describe('Image component', () => {
-  it('renders correctly', () => {
-    const component = shallow(<Image />)
-    const tree = toJson(component)
+describe('Image', () => {
+  it('should render correctly', () => {
+    const tree = mount(<Image theme={theme} />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with name', () => {
-    const component = shallow(<Image name="brand" />)
-    const tree = toJson(component)
+  it('should render correctly with name', () => {
+    const tree = mount(<Image name="brand" theme={theme} />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with height', () => {
-    const component = shallow(<Image height="50px" />)
-    const tree = toJson(component)
+  it('should render correctly with height', () => {
+    const tree = mount(<Image height="50px" theme={theme} />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly width width', () => {
-    const component = shallow(<Image width="200px" />)
-    const tree = toJson(component)
+  it('should render correctly width width', () => {
+    const tree = mount(<Image theme={theme} width="200px" />)
+
     expect(tree).toMatchSnapshot()
   })
 
-  it('renders correctly with selectable', () => {
-    const component = shallow(<Image selectable />)
-    const tree = toJson(component)
+  it('should render correctly with selectable', () => {
+    const tree = mount(<Image selectable theme={theme} />)
+
     expect(tree).toMatchSnapshot()
   })
 })
