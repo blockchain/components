@@ -2,8 +2,8 @@
 
 exports[`TextGroup mount render correctly 1`] = `
 .c1 {
-  font-family: 'Montserrat',helvetica,sans serif;
-  font-weight: 300;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
   font-size: 14px;
   text-transform: none;
   font-style: normal;
@@ -38,7 +38,7 @@ exports[`TextGroup mount render correctly 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -47,7 +47,7 @@ exports[`TextGroup mount render correctly 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -66,7 +66,7 @@ exports[`TextGroup mount render correctly 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -75,7 +75,7 @@ exports[`TextGroup mount render correctly 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -94,7 +94,7 @@ exports[`TextGroup mount render correctly 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -103,7 +103,7 @@ exports[`TextGroup mount render correctly 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -122,7 +122,7 @@ exports[`TextGroup mount render correctly 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -131,7 +131,7 @@ exports[`TextGroup mount render correctly 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -150,7 +150,7 @@ exports[`TextGroup mount render correctly 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -159,7 +159,7 @@ exports[`TextGroup mount render correctly 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -178,7 +178,7 @@ exports[`TextGroup mount render correctly 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -187,7 +187,7 @@ exports[`TextGroup mount render correctly 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -206,7 +206,7 @@ exports[`TextGroup mount render correctly 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -215,7 +215,7 @@ exports[`TextGroup mount render correctly 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -235,8 +235,8 @@ exports[`TextGroup mount render correctly 1`] = `
 
 exports[`TextGroup mount render correctly with align 1`] = `
 .c1 {
-  font-family: 'Montserrat',helvetica,sans serif;
-  font-weight: 300;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
   font-size: 14px;
   text-transform: none;
   font-style: normal;
@@ -271,7 +271,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -280,7 +280,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -299,7 +299,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -308,7 +308,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -327,7 +327,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -336,7 +336,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -355,7 +355,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -364,7 +364,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -383,7 +383,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -392,7 +392,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -411,7 +411,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -420,7 +420,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -439,7 +439,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -448,7 +448,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -468,8 +468,8 @@ exports[`TextGroup mount render correctly with align 1`] = `
 
 exports[`TextGroup mount render correctly with inline 1`] = `
 .c1 {
-  font-family: 'Montserrat',helvetica,sans serif;
-  font-weight: 300;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
   font-size: 14px;
   text-transform: none;
   font-style: normal;
@@ -504,7 +504,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -513,7 +513,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -532,7 +532,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -541,7 +541,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -560,7 +560,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -569,7 +569,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -588,7 +588,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -597,7 +597,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -616,7 +616,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -625,7 +625,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -644,7 +644,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -653,7 +653,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"
@@ -672,7 +672,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           opacity={1}
           size="14px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <styled.span
             capitalize={false}
@@ -681,7 +681,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             opacity={1}
             size="14px"
             uppercase={false}
-            weight={300}
+            weight={400}
           >
             <span
               className="c1"

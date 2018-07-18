@@ -5,7 +5,7 @@ import { keysIn } from 'ramda'
 import theme from '../../Tools/theme'
 
 const BaseText = styled.span`
-  font-family: 'Montserrat', helvetica, sans serif;
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: ${(props) => props.weight};
   font-size: ${(props) => props.size};
   text-transform: ${(props) =>
@@ -48,7 +48,7 @@ Text.propTypes = {
   opacity: PropTypes.number,
   size: PropTypes.string,
   uppercase: PropTypes.bool,
-  weight: PropTypes.oneOf([100, 200, 300, 400, 500, 600, 700, 800, 900]),
+  weight: PropTypes.oneOf([100, 200, 300, 400, 500, 600, 700]),
 }
 
 Text.defaultProps = {
@@ -58,7 +58,7 @@ Text.defaultProps = {
   opacity: 1,
   size: '14px',
   uppercase: false,
-  weight: 300,
+  weight: 400,
 }
 
 export default Text

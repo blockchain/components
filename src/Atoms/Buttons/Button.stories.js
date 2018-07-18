@@ -1,12 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import ContainedButton from './ContainedButton'
+import Button from './Button'
 
-storiesOf('Atoms/Buttons/ContainedButton', module)
-  .add('default', () => <ContainedButton>My button</ContainedButton>)
-  .add('with nature', () => (
-    <ContainedButton nature="secondary">My button</ContainedButton>
-  ))
-  .add('with width', () => (
-    <ContainedButton width="300px">My button</ContainedButton>
-  ))
+storiesOf('Atoms/Buttons/Button', module)
+  .add('default', () => <Button>My button</Button>)
+  .add('with nature', () => <Button nature="secondary">My button</Button>)
+  .add('with width', () => <Button width="300px">My button</Button>)

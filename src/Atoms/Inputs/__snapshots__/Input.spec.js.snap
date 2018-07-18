@@ -7,7 +7,7 @@ exports[`Input should render correctly 1`] = `
   height: 52px;
   padding: 0 20px;
   box-sizing: border-box;
-  font-family: 'Montserrat',helvetica,sans serif;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 18px;
   border-width: 0;
   border-style: solid;
@@ -56,7 +56,7 @@ exports[`Input should render correctly with borderColor 1`] = `
   height: 52px;
   padding: 0 20px;
   box-sizing: border-box;
-  font-family: 'Montserrat',helvetica,sans serif;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 18px;
   border-width: 1px;
   border-color: gold;
@@ -108,7 +108,7 @@ exports[`Input should render correctly with disabled 1`] = `
   height: 52px;
   padding: 0 20px;
   box-sizing: border-box;
-  font-family: 'Montserrat',helvetica,sans serif;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 18px;
   border-width: 0;
   border-style: solid;
@@ -157,7 +157,7 @@ exports[`Input should render correctly with type 1`] = `
   height: 52px;
   padding: 0 20px;
   box-sizing: border-box;
-  font-family: 'Montserrat',helvetica,sans serif;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 18px;
   border-width: 0;
   border-style: solid;
@@ -206,7 +206,7 @@ exports[`Input should render correctly with width 1`] = `
   height: 52px;
   padding: 0 20px;
   box-sizing: border-box;
-  font-family: 'Montserrat',helvetica,sans serif;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 18px;
   border-width: 0;
   border-style: solid;

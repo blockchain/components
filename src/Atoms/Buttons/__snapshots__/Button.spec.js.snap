@@ -20,7 +20,6 @@ exports[`Button should have a disabled state 1`] = `
   width: 100%;
   height: 40px;
   font-size: 18px;
-  font-weight: 300;
   color: #FFF;
   background-color: #3558A8;
   border: none;
@@ -32,6 +31,7 @@ exports[`Button should have a disabled state 1`] = `
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   opacity: 0.5;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 .c0:hover {
@@ -118,7 +118,6 @@ exports[`Button should have a secondary style 1`] = `
   width: 100%;
   height: 40px;
   font-size: 18px;
-  font-weight: 300;
   color: #FFF;
   background-color: #10ADE4;
   border: none;
@@ -130,6 +129,7 @@ exports[`Button should have a secondary style 1`] = `
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   opacity: 1;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 .c0:hover {
@@ -216,7 +216,6 @@ exports[`Button should have a type property 1`] = `
   width: 100%;
   height: 40px;
   font-size: 18px;
-  font-weight: 300;
   color: #FFF;
   background-color: #3558A8;
   border: none;
@@ -228,6 +227,7 @@ exports[`Button should have a type property 1`] = `
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   opacity: 1;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 .c0:hover {
@@ -314,7 +314,6 @@ exports[`Button should have a type property 2`] = `
   width: 100%;
   height: 40px;
   font-size: 18px;
-  font-weight: 300;
   color: #FFF;
   background-color: #3558A8;
   border: none;
@@ -326,6 +325,7 @@ exports[`Button should have a type property 2`] = `
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   opacity: 1;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 .c0:hover {
@@ -412,7 +412,6 @@ exports[`Button should render correctly 1`] = `
   width: 100%;
   height: 40px;
   font-size: 18px;
-  font-weight: 300;
   color: #FFF;
   background-color: #3558A8;
   border: none;
@@ -424,6 +423,7 @@ exports[`Button should render correctly 1`] = `
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   opacity: 1;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 .c0:hover {

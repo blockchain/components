@@ -13,7 +13,7 @@ const BaseInput = styled.input.attrs({
   height: 52px;
   padding: 0 20px;
   box-sizing: border-box;
-  font-family: 'Montserrat', helvetica, sans serif;
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-size: 18px;
   color: ${(props) => props.theme[props.color]};
   border-width: ${(props) => (props.borderColor ? '1px' : '0')};
