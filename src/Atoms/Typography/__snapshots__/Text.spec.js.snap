@@ -2,8 +2,8 @@
 
 exports[`Text should render correctly 1`] = `
 .c0 {
-  font-family: 'Montserrat',helvetica,sans serif;
-  font-weight: 300;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
   font-size: 14px;
   text-transform: none;
   font-style: normal;
@@ -17,7 +17,7 @@ exports[`Text should render correctly 1`] = `
   opacity={1}
   size="14px"
   uppercase={false}
-  weight={300}
+  weight={400}
 >
   <styled.span
     capitalize={false}
@@ -26,7 +26,7 @@ exports[`Text should render correctly 1`] = `
     opacity={1}
     size="14px"
     uppercase={false}
-    weight={300}
+    weight={400}
   >
     <span
       className="c0"
@@ -42,8 +42,8 @@ exports[`Text should render correctly 1`] = `
 
 exports[`Text should render correctly with capitalize 1`] = `
 .c0 {
-  font-family: 'Montserrat',helvetica,sans serif;
-  font-weight: 300;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
   font-size: 14px;
   text-transform: capitalize;
   font-style: normal;
@@ -57,7 +57,7 @@ exports[`Text should render correctly with capitalize 1`] = `
   opacity={1}
   size="14px"
   uppercase={false}
-  weight={300}
+  weight={400}
 >
   <styled.span
     capitalize={true}
@@ -66,7 +66,7 @@ exports[`Text should render correctly with capitalize 1`] = `
     opacity={1}
     size="14px"
     uppercase={false}
-    weight={300}
+    weight={400}
   >
     <span
       className="c0"
@@ -82,8 +82,8 @@ exports[`Text should render correctly with capitalize 1`] = `
 
 exports[`Text should render correctly with color 1`] = `
 .c0 {
-  font-family: 'Montserrat',helvetica,sans serif;
-  font-weight: 300;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
   font-size: 14px;
   text-transform: none;
   font-style: normal;
@@ -97,7 +97,7 @@ exports[`Text should render correctly with color 1`] = `
   opacity={1}
   size="14px"
   uppercase={false}
-  weight={300}
+  weight={400}
 >
   <styled.span
     capitalize={false}
@@ -106,7 +106,7 @@ exports[`Text should render correctly with color 1`] = `
     opacity={1}
     size="14px"
     uppercase={false}
-    weight={300}
+    weight={400}
   >
     <span
       className="c0"
@@ -122,8 +122,8 @@ exports[`Text should render correctly with color 1`] = `
 
 exports[`Text should render correctly with italic 1`] = `
 .c0 {
-  font-family: 'Montserrat',helvetica,sans serif;
-  font-weight: 300;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
   font-size: 14px;
   text-transform: none;
   font-style: italic;
@@ -137,7 +137,7 @@ exports[`Text should render correctly with italic 1`] = `
   opacity={1}
   size="14px"
   uppercase={false}
-  weight={300}
+  weight={400}
 >
   <styled.span
     capitalize={false}
@@ -146,7 +146,7 @@ exports[`Text should render correctly with italic 1`] = `
     opacity={1}
     size="14px"
     uppercase={false}
-    weight={300}
+    weight={400}
   >
     <span
       className="c0"
@@ -162,8 +162,8 @@ exports[`Text should render correctly with italic 1`] = `
 
 exports[`Text should render correctly with opacity 1`] = `
 .c0 {
-  font-family: 'Montserrat',helvetica,sans serif;
-  font-weight: 300;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
   font-size: 14px;
   text-transform: none;
   font-style: normal;
@@ -177,7 +177,7 @@ exports[`Text should render correctly with opacity 1`] = `
   opacity={0.5}
   size="14px"
   uppercase={false}
-  weight={300}
+  weight={400}
 >
   <styled.span
     capitalize={false}
@@ -186,7 +186,7 @@ exports[`Text should render correctly with opacity 1`] = `
     opacity={0.5}
     size="14px"
     uppercase={false}
-    weight={300}
+    weight={400}
   >
     <span
       className="c0"
@@ -202,8 +202,8 @@ exports[`Text should render correctly with opacity 1`] = `
 
 exports[`Text should render correctly with size 1`] = `
 .c0 {
-  font-family: 'Montserrat',helvetica,sans serif;
-  font-weight: 300;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
   font-size: 32px;
   text-transform: none;
   font-style: normal;
@@ -217,7 +217,7 @@ exports[`Text should render correctly with size 1`] = `
   opacity={1}
   size="32px"
   uppercase={false}
-  weight={300}
+  weight={400}
 >
   <styled.span
     capitalize={false}
@@ -226,7 +226,7 @@ exports[`Text should render correctly with size 1`] = `
     opacity={1}
     size="32px"
     uppercase={false}
-    weight={300}
+    weight={400}
   >
     <span
       className="c0"
@@ -242,8 +242,8 @@ exports[`Text should render correctly with size 1`] = `
 
 exports[`Text should render correctly with uppercase 1`] = `
 .c0 {
-  font-family: 'Montserrat',helvetica,sans serif;
-  font-weight: 300;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
   font-style: normal;
@@ -257,7 +257,7 @@ exports[`Text should render correctly with uppercase 1`] = `
   opacity={1}
   size="14px"
   uppercase={true}
-  weight={300}
+  weight={400}
 >
   <styled.span
     capitalize={false}
@@ -266,7 +266,7 @@ exports[`Text should render correctly with uppercase 1`] = `
     opacity={1}
     size="14px"
     uppercase={true}
-    weight={300}
+    weight={400}
   >
     <span
       className="c0"
@@ -282,7 +282,7 @@ exports[`Text should render correctly with uppercase 1`] = `
 
 exports[`Text should render correctly with weight 1`] = `
 .c0 {
-  font-family: 'Montserrat',helvetica,sans serif;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-weight: 500;
   font-size: 14px;
   text-transform: none;

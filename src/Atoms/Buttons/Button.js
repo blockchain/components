@@ -13,7 +13,6 @@ const BaseContainedButton = styled.button.attrs({
   width: 100%;
   height: 40px;
   font-size: 18px;
-  font-weight: 300;
   color: ${(props) => props.theme[props.color]};
   background-color: ${(props) => props.theme[props.backgroundColor]};
   border: none;
@@ -23,6 +22,7 @@ const BaseContainedButton = styled.button.attrs({
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 
   &:hover {
     background-color: ${(props) =>

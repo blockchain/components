@@ -1,2 +1,2 @@
+import './IBMPlex'
 import './Icomoon'
-import './Montserrat'
