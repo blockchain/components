@@ -11,10 +11,9 @@ The commands are given using `npm` however you can use the `yarn` equivalent and
 
 ## Installation
 1. Just a quick `npm i blockchain-info-components` and you are good to go!
-2. Use your favourite bundler to import the following extensions: 'otf', 'woff'
+2. Use your favourite bundler to import the fonts (.woff files)
 
 ## Hacking
-
 1. Ensure Node version >= 8.0 is installed
 2. Install packages: `npm i`
 3. Start application in dev mode: `npm run start`
