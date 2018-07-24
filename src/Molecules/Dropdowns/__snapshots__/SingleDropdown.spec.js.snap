@@ -7,10 +7,10 @@ exports[`SingleDropdown should render correctly 1`] = `
   box-sizing: border-box;
   color: #383838;
   background-color: rgba(0,0,0,0);
-  background-size: 20px;
+  background-size: 15px;
   background-repeat: no-repeat;
-  background-position: 95% center;
-  background-image: url();
+  background-position: 95% 0%;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -111,8 +111,8 @@ exports[`SingleDropdown should render correctly 1`] = `
       backgroundColor="transparent"
       capitalize={false}
       color="gray6"
+      handleChange={[MockFunction]}
       italic={false}
-      onChange={[MockFunction]}
       size="16px"
       uppercase={false}
       weight={300}
@@ -120,7 +120,6 @@ exports[`SingleDropdown should render correctly 1`] = `
       <select
         className="c0"
         color="gray6"
-        onChange={[MockFunction]}
         size="16px"
       >
         <option
@@ -190,10 +189,10 @@ exports[`SingleDropdown should render correctly with backgroundColor 1`] = `
   box-sizing: border-box;
   color: #383838;
   background-color: #004A7C;
-  background-size: 20px;
+  background-size: 15px;
   background-repeat: no-repeat;
-  background-position: 95% center;
-  background-image: url();
+  background-position: 95% 0%;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -294,8 +293,8 @@ exports[`SingleDropdown should render correctly with backgroundColor 1`] = `
       backgroundColor="orient"
       capitalize={false}
       color="gray6"
+      handleChange={[MockFunction]}
       italic={false}
-      onChange={[MockFunction]}
       size="16px"
       uppercase={false}
       weight={300}
@@ -303,7 +302,6 @@ exports[`SingleDropdown should render correctly with backgroundColor 1`] = `
       <select
         className="c0"
         color="gray6"
-        onChange={[MockFunction]}
         size="16px"
       >
         <option
@@ -373,10 +371,10 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
   box-sizing: border-box;
   color: #383838;
   background-color: rgba(0,0,0,0);
-  background-size: 20px;
+  background-size: 15px;
   background-repeat: no-repeat;
-  background-position: 95% center;
-  background-image: url();
+  background-position: 95% 0%;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -477,8 +475,8 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
       backgroundColor="transparent"
       capitalize={true}
       color="gray6"
+      handleChange={[MockFunction]}
       italic={false}
-      onChange={[MockFunction]}
       size="16px"
       uppercase={false}
       weight={300}
@@ -486,7 +484,6 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
       <select
         className="c0"
         color="gray6"
-        onChange={[MockFunction]}
         size="16px"
       >
         <option
@@ -556,10 +553,10 @@ exports[`SingleDropdown should render correctly with color 1`] = `
   box-sizing: border-box;
   color: #10ADE4;
   background-color: rgba(0,0,0,0);
-  background-size: 20px;
+  background-size: 15px;
   background-repeat: no-repeat;
-  background-position: 95% center;
-  background-image: url();
+  background-position: 95% 0%;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -660,8 +657,8 @@ exports[`SingleDropdown should render correctly with color 1`] = `
       backgroundColor="transparent"
       capitalize={false}
       color="cerulean"
+      handleChange={[MockFunction]}
       italic={false}
-      onChange={[MockFunction]}
       size="16px"
       uppercase={false}
       weight={300}
@@ -669,7 +666,6 @@ exports[`SingleDropdown should render correctly with color 1`] = `
       <select
         className="c0"
         color="cerulean"
-        onChange={[MockFunction]}
         size="16px"
       >
         <option
@@ -739,10 +735,10 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
   box-sizing: border-box;
   color: #383838;
   background-color: rgba(0,0,0,0);
-  background-size: 20px;
+  background-size: 15px;
   background-repeat: no-repeat;
-  background-position: 95% center;
-  background-image: url();
+  background-position: 95% 0%;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -843,8 +839,8 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
       backgroundColor="transparent"
       capitalize={false}
       color="gray6"
+      handleChange={[MockFunction]}
       italic={true}
-      onChange={[MockFunction]}
       size="16px"
       uppercase={false}
       weight={300}
@@ -852,7 +848,6 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
       <select
         className="c0"
         color="gray6"
-        onChange={[MockFunction]}
         size="16px"
       >
         <option
@@ -922,10 +917,10 @@ exports[`SingleDropdown should render correctly with size 1`] = `
   box-sizing: border-box;
   color: #383838;
   background-color: rgba(0,0,0,0);
-  background-size: 20px;
+  background-size: 15px;
   background-repeat: no-repeat;
-  background-position: 95% center;
-  background-image: url();
+  background-position: 95% 0%;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1026,8 +1021,8 @@ exports[`SingleDropdown should render correctly with size 1`] = `
       backgroundColor="transparent"
       capitalize={false}
       color="gray6"
+      handleChange={[MockFunction]}
       italic={false}
-      onChange={[MockFunction]}
       size="32px"
       uppercase={false}
       weight={300}
@@ -1035,7 +1030,6 @@ exports[`SingleDropdown should render correctly with size 1`] = `
       <select
         className="c0"
         color="gray6"
-        onChange={[MockFunction]}
         size="32px"
       >
         <option
@@ -1105,10 +1099,10 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
   box-sizing: border-box;
   color: #383838;
   background-color: rgba(0,0,0,0);
-  background-size: 20px;
+  background-size: 15px;
   background-repeat: no-repeat;
-  background-position: 95% center;
-  background-image: url();
+  background-position: 95% 0%;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1209,8 +1203,8 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
       backgroundColor="transparent"
       capitalize={false}
       color="gray6"
+      handleChange={[MockFunction]}
       italic={false}
-      onChange={[MockFunction]}
       size="16px"
       uppercase={true}
       weight={300}
@@ -1218,7 +1212,6 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
       <select
         className="c0"
         color="gray6"
-        onChange={[MockFunction]}
         size="16px"
       >
         <option
@@ -1288,10 +1281,10 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
   box-sizing: border-box;
   color: #383838;
   background-color: rgba(0,0,0,0);
-  background-size: 20px;
+  background-size: 15px;
   background-repeat: no-repeat;
-  background-position: 95% center;
-  background-image: url();
+  background-position: 95% 0%;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1392,8 +1385,8 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
       backgroundColor="transparent"
       capitalize={false}
       color="gray6"
+      handleChange={[MockFunction]}
       italic={false}
-      onChange={[MockFunction]}
       size="16px"
       uppercase={false}
       weight={500}
@@ -1401,7 +1394,6 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
       <select
         className="c0"
         color="gray6"
-        onChange={[MockFunction]}
         size="16px"
       >
         <option

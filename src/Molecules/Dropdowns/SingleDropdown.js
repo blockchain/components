@@ -12,10 +12,10 @@ const Wrapper = styled.select`
   box-sizing: border-box;
   color: ${(props) => props.theme[props.color]};
   background-color: ${(props) => props.theme[props.backgroundColor]};
-  background-size: 20px;
+  background-size: 15px;
   background-repeat: no-repeat;
-  background-position: 95% center;
-  background-image: url(${ImageMap.partialArrowDown});
+  background-position: 95% 0%;
+  background-image: url(${ImageMap.arrowDownSolid});
   appearance: none;
   border: none;
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -32,8 +32,8 @@ const Wrapper = styled.select`
   text-align: left;
 `
 
-const SingleDropdown = ({ items, value, handleChange, ...rest }) => (
-  <Wrapper {...rest} onChange={handleChange} value={value}>
+const SingleDropdown = ({ items, ...rest }) => (
+  <Wrapper {...rest}>
     {items.map((item) => (
       <option key={item.value} value={item.value}>
         {item.text}
@@ -46,7 +46,6 @@ SingleDropdown.propTypes = {
   backgroundColor: PropTypes.oneOf(keysIn(theme)),
   capitalize: PropTypes.bool,
   color: PropTypes.oneOf(keysIn(theme)),
-  handleChange: PropTypes.func.isRequired,
   italic: PropTypes.bool,
   items: PropTypes.arrayOf(
     PropTypes.shape({
@@ -54,6 +53,7 @@ SingleDropdown.propTypes = {
       value: PropTypes.any,
     }),
   ).isRequired,
+  onChange: PropTypes.func.isRequired,
   size: PropTypes.string,
   uppercase: PropTypes.bool,
   value: PropTypes.any,
