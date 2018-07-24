@@ -1,5 +1,5 @@
 import React from 'react'
-import { mount } from 'enzyme'
+import { mountWithTheme } from '../../Utils/testHelper'
 
 import Text from './Text'
 import TextGroup from './TextGroup'
@@ -39,7 +39,7 @@ const Texts = () => (
 
 describe('TextGroup', () => {
   it('mount render correctly', () => {
-    const tree = mount(
+    const tree = mountWithTheme(
       <TextGroup>
         <Texts />
       </TextGroup>,
@@ -49,7 +49,7 @@ describe('TextGroup', () => {
   })
 
   it('mount render correctly with align', () => {
-    const tree = mount(
+    const tree = mountWithTheme(
       <TextGroup align="right">
         <Texts />
       </TextGroup>,
@@ -59,7 +59,7 @@ describe('TextGroup', () => {
   })
 
   it('mount render correctly with inline', () => {
-    const tree = mount(
+    const tree = mountWithTheme(
       <TextGroup inline={false}>
         <Texts />
       </TextGroup>,

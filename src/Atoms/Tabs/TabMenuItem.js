@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const BaseTabMenuItem = styled.div`
+const Wrapper = styled.div`
   position: relative;
+  flex: 1 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: auto;
   padding: 15px;
   box-sizing: border-box;
   cursor: pointer;
@@ -19,7 +19,7 @@ const BaseTabMenuItem = styled.div`
     }
   }
 `
-const TabMenuItemBar = styled.div`
+const Bar = styled.div`
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -32,10 +32,10 @@ const TabMenuItemBar = styled.div`
 `
 
 const TabMenuItem = ({ children, selected, ...rest }) => (
-  <BaseTabMenuItem {...rest}>
+  <Wrapper {...rest}>
     {children}
-    <TabMenuItemBar visible={selected} />
-  </BaseTabMenuItem>
+    <Bar visible={selected} />
+  </Wrapper>
 )
 
 TabMenuItem.propTypes = {

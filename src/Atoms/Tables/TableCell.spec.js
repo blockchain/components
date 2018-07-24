@@ -1,11 +1,11 @@
 import React from 'react'
-import { mount } from 'enzyme'
+import { mountWithTheme } from '../../Utils/testHelper'
 
 import TableCell from './TableCell'
 
 describe('TableCell', () => {
   it('should render correctly', () => {
-    const tree = mount(<TableCell>MyTableCell</TableCell>)
+    const tree = mountWithTheme(<TableCell>MyTableCell</TableCell>)
 
     expect(tree).toMatchSnapshot()
   })

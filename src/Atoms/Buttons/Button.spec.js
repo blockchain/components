@@ -1,34 +1,33 @@
 import React from 'react'
-import { mount } from 'enzyme'
+import { mountWithTheme } from '../../Utils/testHelper'
 
-import theme from '../../Tools/theme'
 import Button from './Button'
 
 describe('Button', () => {
   it('should render correctly', () => {
-    const tree = mount(<Button theme={theme} />)
+    const tree = mountWithTheme(<Button />)
 
     expect(tree).toMatchSnapshot()
   })
 
   it('should have a disabled state', () => {
-    const tree = mount(<Button disabled theme={theme} />)
+    const tree = mountWithTheme(<Button disabled />)
 
     expect(tree).toMatchSnapshot()
   })
 
   it('should have a secondary style', () => {
-    const tree = mount(<Button nature="secondary" theme={theme} />)
+    const tree = mountWithTheme(<Button nature="secondary" />)
 
     expect(tree).toMatchSnapshot()
   })
 
   it('should have a type property', () => {
-    const submit = mount(<Button theme={theme} type="submit" />)
+    const submit = mountWithTheme(<Button type="submit" />)
 
     expect(submit).toMatchSnapshot()
 
-    const reset = mount(<Button theme={theme} type="reset" />)
+    const reset = mountWithTheme(<Button type="reset" />)
 
     expect(reset).toMatchSnapshot()
   })

@@ -2,14 +2,14 @@
 
 exports[`Cartridge should render correctly 1`] = `
 <Styled(Text)
-  backgroundColor="primary"
+  backgroundColor="orient"
   color="white"
 />
 `;
 
 exports[`Cartridge should render correctly with nature 1`] = `
 <Styled(Text)
-  backgroundColor="secondary"
+  backgroundColor="cerulean"
   color="white"
 />
 `;

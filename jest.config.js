@@ -24,26 +24,21 @@ const getTransformString = (extensions) =>
     .reduce((acc, val) => `${acc}^.+\\\\*${val}|`, '')
     .replace(/.$/, '$')
 
-const coverage =
-  process.argv.indexOf('--coverage') !== -1
-    ? {
-        collectCoverage: true,
-        collectCoverageFrom: [
-          'src/Atoms/**/**.js',
-          'src/Molecules/**/**.js',
-          '!src/Tools/**',
-          '!**/__snapshots__/**',
-          '!**/**.stories.js',
-          '!**/**Map.js',
-          '!**/index.js',
-        ],
-        coverageDirectory: './coverage',
-      }
-    : {}
+const coverageEnabled = process.argv.indexOf('--coverage') !== -1
 
 module.exports = {
-  ...coverage,
   clearMocks: true,
+  collectCoverage: coverageEnabled,
+  collectCoverageFrom: [
+    'src/Atoms/**/**.js',
+    'src/Molecules/**/**.js',
+    '!src/Tools/**',
+    '!**/__snapshots__/**',
+    '!**/**.stories.js',
+    '!**/**Map.js',
+    '!**/index.js',
+  ],
+  coverageDirectory: './coverage',
   moduleFileExtensions: [codeExt],
   roots: ['<rootDir>/src/'],
   setupFiles: [raf, enzyme],

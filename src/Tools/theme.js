@@ -1,16 +1,31 @@
+/* eslint-disable */
 export default {
-  black: '#000',
-  gold: '#FFD700',
-  'gray-0': '#F8F8F8',
-  'gray-1': '#EEF2F5',
-  'gray-2': '#CCC',
-  'gray-3': '#999B9E',
-  'gray-4': '#757679',
-  'gray-5': '#545456',
-  'gray-6': '#383838',
-  'gray-7': '#040d25',
-  primary: '#3558A8',
-  secondary: '#10ADE4',
+  /* blues Dark to Light */
+  bigStone: "#152343",
+  biscay: "#153A62",
+  blueWood: "#27324B",
+  orient: "#004A7C",
+  azure: "#3558A8",
+  cerulean: "#10ADE4",
+  powderBlue: "#B2D5E5",
+  /* gray Light to Dark */
+  gray0: '#F8F8F8',
+  gray1: '#EEF2F5',
+  gray2: '#CCC',
+  gray3: '#999B9E',
+  gray4: '#757679',
+  gray5: '#545456',
+  gray6: '#383838',
+  gray7: '#040d25',
+  // Other
+  gold: '#FFCA00',
+  // Generic
   transparent: 'rgba(0, 0, 0, 0)',
   white: '#FFF',
+  whiteAlpha75: "rgba(255,255,255,0.75)",
+  whiteAlpha10: "rgba(255,255,255,0.1)",
+  black: '#000',
+  blackAlpha75: "rgba(0,0,0,0.75)",
+  blackAlpha05: "rgba(0,0,0,0.05)",
 }
+/* eslint-enable */

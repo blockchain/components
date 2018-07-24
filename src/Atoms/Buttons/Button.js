@@ -35,17 +35,17 @@ const selectStyle = (nature) => {
   switch (nature) {
     case 'primary':
       return {
-        backgroundColor: 'primary',
+        backgroundColor: 'orient',
         color: 'white',
       }
     case 'secondary':
       return {
-        backgroundColor: 'secondary',
+        backgroundColor: 'cerulean',
         color: 'white',
       }
     default:
       return {
-        backgroundColor: 'primary',
+        backgroundColor: 'orient',
         color: 'white',
       }
   }

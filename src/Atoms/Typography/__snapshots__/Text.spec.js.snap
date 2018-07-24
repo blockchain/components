@@ -7,37 +7,68 @@ exports[`Text should render correctly 1`] = `
   font-size: 14px;
   text-transform: none;
   font-style: normal;
+  color: #545456;
   opacity: 1;
 }
 
-<Text
-  capitalize={false}
-  color="gray-5"
-  italic={false}
-  opacity={1}
-  size="14px"
-  uppercase={false}
-  weight={400}
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.span
+  <Text
     capitalize={false}
-    color="gray-5"
+    color="gray5"
     italic={false}
     opacity={1}
     size="14px"
     uppercase={false}
     weight={400}
   >
-    <span
-      className="c0"
-      color="gray-5"
+    <styled.span
+      capitalize={false}
+      color="gray5"
+      italic={false}
       opacity={1}
       size="14px"
+      uppercase={false}
+      weight={400}
     >
-      MyText
-    </span>
-  </styled.span>
-</Text>
+      <span
+        className="c0"
+        color="gray5"
+        opacity={1}
+        size="14px"
+      >
+        MyText
+      </span>
+    </styled.span>
+  </Text>
+</ThemeProvider>
 `;
 
 exports[`Text should render correctly with capitalize 1`] = `
@@ -47,37 +78,68 @@ exports[`Text should render correctly with capitalize 1`] = `
   font-size: 14px;
   text-transform: capitalize;
   font-style: normal;
+  color: #545456;
   opacity: 1;
 }
 
-<Text
-  capitalize={true}
-  color="gray-5"
-  italic={false}
-  opacity={1}
-  size="14px"
-  uppercase={false}
-  weight={400}
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.span
+  <Text
     capitalize={true}
-    color="gray-5"
+    color="gray5"
     italic={false}
     opacity={1}
     size="14px"
     uppercase={false}
     weight={400}
   >
-    <span
-      className="c0"
-      color="gray-5"
+    <styled.span
+      capitalize={true}
+      color="gray5"
+      italic={false}
       opacity={1}
       size="14px"
+      uppercase={false}
+      weight={400}
     >
-      MyText
-    </span>
-  </styled.span>
-</Text>
+      <span
+        className="c0"
+        color="gray5"
+        opacity={1}
+        size="14px"
+      >
+        MyText
+      </span>
+    </styled.span>
+  </Text>
+</ThemeProvider>
 `;
 
 exports[`Text should render correctly with color 1`] = `
@@ -87,19 +149,40 @@ exports[`Text should render correctly with color 1`] = `
   font-size: 14px;
   text-transform: none;
   font-style: normal;
+  color: #FFCA00;
   opacity: 1;
 }
 
-<Text
-  capitalize={false}
-  color="gold"
-  italic={false}
-  opacity={1}
-  size="14px"
-  uppercase={false}
-  weight={400}
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.span
+  <Text
     capitalize={false}
     color="gold"
     italic={false}
@@ -108,16 +191,26 @@ exports[`Text should render correctly with color 1`] = `
     uppercase={false}
     weight={400}
   >
-    <span
-      className="c0"
+    <styled.span
+      capitalize={false}
       color="gold"
+      italic={false}
       opacity={1}
       size="14px"
+      uppercase={false}
+      weight={400}
     >
-      MyText
-    </span>
-  </styled.span>
-</Text>
+      <span
+        className="c0"
+        color="gold"
+        opacity={1}
+        size="14px"
+      >
+        MyText
+      </span>
+    </styled.span>
+  </Text>
+</ThemeProvider>
 `;
 
 exports[`Text should render correctly with italic 1`] = `
@@ -127,37 +220,68 @@ exports[`Text should render correctly with italic 1`] = `
   font-size: 14px;
   text-transform: none;
   font-style: italic;
+  color: #545456;
   opacity: 1;
 }
 
-<Text
-  capitalize={false}
-  color="gray-5"
-  italic={true}
-  opacity={1}
-  size="14px"
-  uppercase={false}
-  weight={400}
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.span
+  <Text
     capitalize={false}
-    color="gray-5"
+    color="gray5"
     italic={true}
     opacity={1}
     size="14px"
     uppercase={false}
     weight={400}
   >
-    <span
-      className="c0"
-      color="gray-5"
+    <styled.span
+      capitalize={false}
+      color="gray5"
+      italic={true}
       opacity={1}
       size="14px"
+      uppercase={false}
+      weight={400}
     >
-      MyText
-    </span>
-  </styled.span>
-</Text>
+      <span
+        className="c0"
+        color="gray5"
+        opacity={1}
+        size="14px"
+      >
+        MyText
+      </span>
+    </styled.span>
+  </Text>
+</ThemeProvider>
 `;
 
 exports[`Text should render correctly with opacity 1`] = `
@@ -167,37 +291,68 @@ exports[`Text should render correctly with opacity 1`] = `
   font-size: 14px;
   text-transform: none;
   font-style: normal;
+  color: #545456;
   opacity: 0.5;
 }
 
-<Text
-  capitalize={false}
-  color="gray-5"
-  italic={false}
-  opacity={0.5}
-  size="14px"
-  uppercase={false}
-  weight={400}
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.span
+  <Text
     capitalize={false}
-    color="gray-5"
+    color="gray5"
     italic={false}
     opacity={0.5}
     size="14px"
     uppercase={false}
     weight={400}
   >
-    <span
-      className="c0"
-      color="gray-5"
+    <styled.span
+      capitalize={false}
+      color="gray5"
+      italic={false}
       opacity={0.5}
       size="14px"
+      uppercase={false}
+      weight={400}
     >
-      MyText
-    </span>
-  </styled.span>
-</Text>
+      <span
+        className="c0"
+        color="gray5"
+        opacity={0.5}
+        size="14px"
+      >
+        MyText
+      </span>
+    </styled.span>
+  </Text>
+</ThemeProvider>
 `;
 
 exports[`Text should render correctly with size 1`] = `
@@ -207,37 +362,68 @@ exports[`Text should render correctly with size 1`] = `
   font-size: 32px;
   text-transform: none;
   font-style: normal;
+  color: #545456;
   opacity: 1;
 }
 
-<Text
-  capitalize={false}
-  color="gray-5"
-  italic={false}
-  opacity={1}
-  size="32px"
-  uppercase={false}
-  weight={400}
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.span
+  <Text
     capitalize={false}
-    color="gray-5"
+    color="gray5"
     italic={false}
     opacity={1}
     size="32px"
     uppercase={false}
     weight={400}
   >
-    <span
-      className="c0"
-      color="gray-5"
+    <styled.span
+      capitalize={false}
+      color="gray5"
+      italic={false}
       opacity={1}
       size="32px"
+      uppercase={false}
+      weight={400}
     >
-      MyText
-    </span>
-  </styled.span>
-</Text>
+      <span
+        className="c0"
+        color="gray5"
+        opacity={1}
+        size="32px"
+      >
+        MyText
+      </span>
+    </styled.span>
+  </Text>
+</ThemeProvider>
 `;
 
 exports[`Text should render correctly with uppercase 1`] = `
@@ -247,37 +433,68 @@ exports[`Text should render correctly with uppercase 1`] = `
   font-size: 14px;
   text-transform: uppercase;
   font-style: normal;
+  color: #545456;
   opacity: 1;
 }
 
-<Text
-  capitalize={false}
-  color="gray-5"
-  italic={false}
-  opacity={1}
-  size="14px"
-  uppercase={true}
-  weight={400}
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.span
+  <Text
     capitalize={false}
-    color="gray-5"
+    color="gray5"
     italic={false}
     opacity={1}
     size="14px"
     uppercase={true}
     weight={400}
   >
-    <span
-      className="c0"
-      color="gray-5"
+    <styled.span
+      capitalize={false}
+      color="gray5"
+      italic={false}
       opacity={1}
       size="14px"
+      uppercase={true}
+      weight={400}
     >
-      MyText
-    </span>
-  </styled.span>
-</Text>
+      <span
+        className="c0"
+        color="gray5"
+        opacity={1}
+        size="14px"
+      >
+        MyText
+      </span>
+    </styled.span>
+  </Text>
+</ThemeProvider>
 `;
 
 exports[`Text should render correctly with weight 1`] = `
@@ -287,35 +504,66 @@ exports[`Text should render correctly with weight 1`] = `
   font-size: 14px;
   text-transform: none;
   font-style: normal;
+  color: #545456;
   opacity: 1;
 }
 
-<Text
-  capitalize={false}
-  color="gray-5"
-  italic={false}
-  opacity={1}
-  size="14px"
-  uppercase={false}
-  weight={500}
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.span
+  <Text
     capitalize={false}
-    color="gray-5"
+    color="gray5"
     italic={false}
     opacity={1}
     size="14px"
     uppercase={false}
     weight={500}
   >
-    <span
-      className="c0"
-      color="gray-5"
+    <styled.span
+      capitalize={false}
+      color="gray5"
+      italic={false}
       opacity={1}
       size="14px"
+      uppercase={false}
+      weight={500}
     >
-      MyText
-    </span>
-  </styled.span>
-</Text>
+      <span
+        className="c0"
+        color="gray5"
+        opacity={1}
+        size="14px"
+      >
+        MyText
+      </span>
+    </styled.span>
+  </Text>
+</ThemeProvider>
 `;

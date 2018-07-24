@@ -11,6 +11,7 @@ const BaseImage = styled.img.attrs({
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   cursor: ${(props) => (props.selectable ? 'pointer' : 'initial')};
+  object-fit: contain;
 `
 
 const Image = (props) => <BaseImage {...props} />
@@ -23,10 +24,10 @@ Image.propTypes = {
 }
 
 Image.defaultProps = {
-  height: 'auto',
+  height: '100%',
   name: 'logo',
   selectable: false,
-  width: 'auto',
+  width: '100%',
 }
 
 export default Image

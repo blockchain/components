@@ -1,11 +1,11 @@
 import React from 'react'
-import { mount } from 'enzyme'
+import { mountWithTheme } from '../../Utils/testHelper'
 
 import TabMenu from './TabMenu'
 
 describe('TabMenu', () => {
   it('should render correctly', () => {
-    const tree = mount(<TabMenu>MyTabMenu</TabMenu>)
+    const tree = mountWithTheme(<TabMenu>MyTabMenu</TabMenu>)
 
     expect(tree).toMatchSnapshot()
   })

@@ -9,26 +9,86 @@ exports[`TabMenu should render correctly 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  border-bottom: 2px solid;
+  border-bottom: 2px solid #EEF2F5;
   box-sizing: border-box;
 }
 
-<TabMenu>
-  <styled.div>
-    <div
-      className="c0"
-    >
-      MyTabMenu
-    </div>
-  </styled.div>
-</TabMenu>
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
+>
+  <TabMenu
+    width="100%"
+  >
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <styled.div
+          width="100%"
+        >
+          <div
+            className="c1"
+            width="100%"
+          >
+            MyTabMenu
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </TabMenu>
+</ThemeProvider>
 `;

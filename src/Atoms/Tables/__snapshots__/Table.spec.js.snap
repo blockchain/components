@@ -18,26 +18,73 @@ exports[`Table should render correctly 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   width: 100%;
-  box-shadow: 0 0 25px 5px;
+  box-shadow: 0 0 25px 5px #EEF2F5;
 }
 
 .c0 > :first-child {
+  color: #999B9E;
   text-transform: uppercase;
 }
 
-<Table
-  highlighting={false}
+.c0 > :nth-child(even) {
+  background-color: #F8F8F8;
+}
+
+.c0 > :nth-child(odd) {
+  background-color: #FFF;
+}
+
+.c0 > :nth-child(even):hover {
+  background-color: #F8F8F8;
+}
+
+.c0 > :nth-child(odd):not(:first-child):hover {
+  background-color: #FFF;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.div
+  <Table
     highlighting={false}
   >
-    <div
-      className="c0"
+    <styled.div
+      highlighting={false}
     >
-      MyTable
-    </div>
-  </styled.div>
-</Table>
+      <div
+        className="c0"
+      >
+        MyTable
+      </div>
+    </styled.div>
+  </Table>
+</ThemeProvider>
 `;
 
 exports[`Table should render correctly with highlighted 1`] = `
@@ -58,24 +105,71 @@ exports[`Table should render correctly with highlighted 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   width: 100%;
-  box-shadow: 0 0 25px 5px;
+  box-shadow: 0 0 25px 5px #EEF2F5;
 }
 
 .c0 > :first-child {
+  color: #999B9E;
   text-transform: uppercase;
 }
 
-<Table
-  highlighting={false}
+.c0 > :nth-child(even) {
+  background-color: #F8F8F8;
+}
+
+.c0 > :nth-child(odd) {
+  background-color: #FFF;
+}
+
+.c0 > :nth-child(even):hover {
+  background-color: #F8F8F8;
+}
+
+.c0 > :nth-child(odd):not(:first-child):hover {
+  background-color: #FFF;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.div
+  <Table
     highlighting={false}
   >
-    <div
-      className="c0"
+    <styled.div
+      highlighting={false}
     >
-      MyTable
-    </div>
-  </styled.div>
-</Table>
+      <div
+        className="c0"
+      >
+        MyTable
+      </div>
+    </styled.div>
+  </Table>
+</ThemeProvider>
 `;

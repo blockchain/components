@@ -41,7 +41,7 @@ Icon.propTypes = {
 }
 
 Icon.defaultProps = {
-  color: 'gray-5',
+  color: 'gray5',
   name: 'bitcoin',
   selectable: false,
   size: '40px',

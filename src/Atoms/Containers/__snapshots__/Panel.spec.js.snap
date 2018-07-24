@@ -9,36 +9,67 @@ exports[`Panel should render correctly 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   height: auto;
-  width: auto;
-  box-shadow: 0 0 25px 5px;
+  width: 100%;
+  box-shadow: 0 0 25px 5px #EEF2F5;
+  background-color: #FFF;
 }
 
-<Panel
-  height="auto"
-  width="auto"
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.div
+  <Panel
     height="auto"
-    width="auto"
+    width="100%"
   >
-    <div
-      className="c0"
+    <styled.div
       height="auto"
-      width="auto"
+      width="100%"
     >
-      MyPanel
-    </div>
-  </styled.div>
-</Panel>
+      <div
+        className="c0"
+        height="auto"
+        width="100%"
+      >
+        MyPanel
+      </div>
+    </styled.div>
+  </Panel>
+</ThemeProvider>
 `;
 
 exports[`Panel should render correctly with height 1`] = `
@@ -50,36 +81,67 @@ exports[`Panel should render correctly with height 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   height: 200px;
-  width: auto;
-  box-shadow: 0 0 25px 5px;
+  width: 100%;
+  box-shadow: 0 0 25px 5px #EEF2F5;
+  background-color: #FFF;
 }
 
-<Panel
-  height="200px"
-  width="auto"
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.div
+  <Panel
     height="200px"
-    width="auto"
+    width="100%"
   >
-    <div
-      className="c0"
+    <styled.div
       height="200px"
-      width="auto"
+      width="100%"
     >
-      MyPanel
-    </div>
-  </styled.div>
-</Panel>
+      <div
+        className="c0"
+        height="200px"
+        width="100%"
+      >
+        MyPanel
+      </div>
+    </styled.div>
+  </Panel>
+</ThemeProvider>
 `;
 
 exports[`Panel should render correctly with width 1`] = `
@@ -91,34 +153,65 @@ exports[`Panel should render correctly with width 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   height: auto;
   width: 200px;
-  box-shadow: 0 0 25px 5px;
+  box-shadow: 0 0 25px 5px #EEF2F5;
+  background-color: #FFF;
 }
 
-<Panel
-  height="auto"
-  width="200px"
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.div
+  <Panel
     height="auto"
     width="200px"
   >
-    <div
-      className="c0"
+    <styled.div
       height="auto"
       width="200px"
     >
-      MyPanel
-    </div>
-  </styled.div>
-</Panel>
+      <div
+        className="c0"
+        height="auto"
+        width="200px"
+      >
+        MyPanel
+      </div>
+    </styled.div>
+  </Panel>
+</ThemeProvider>
 `;

@@ -9,9 +9,11 @@ exports[`Input should render correctly 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 18px;
+  color: #040d25;
   border-width: 0;
   border-style: solid;
   border-radius: 0.5rem;
+  background-color: #EEF2F5;
   background-image: none;
   outline-width: 0;
   -webkit-user-select: text;
@@ -21,32 +23,64 @@ exports[`Input should render correctly 1`] = `
 }
 
 .c0:disabled {
+  color: #757679;
+  background: #EEF2F5;
   cursor: not-allowed;
 }
 
-<Input
-  backgroundColor="gray-1"
-  color="gray-7"
-  disabled={false}
-  type="text"
-  width="100%"
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.input
-    backgroundColor="gray-1"
-    color="gray-7"
+  <Input
+    backgroundColor="gray1"
+    color="gray7"
     disabled={false}
     type="text"
     width="100%"
   >
-    <input
-      className="c0"
-      color="gray-7"
+    <styled.input
+      backgroundColor="gray1"
+      color="gray7"
       disabled={false}
       type="text"
       width="100%"
-    />
-  </styled.input>
-</Input>
+    >
+      <input
+        className="c0"
+        color="gray7"
+        disabled={false}
+        type="text"
+        width="100%"
+      />
+    </styled.input>
+  </Input>
+</ThemeProvider>
 `;
 
 exports[`Input should render correctly with borderColor 1`] = `
@@ -58,10 +92,12 @@ exports[`Input should render correctly with borderColor 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 18px;
+  color: #040d25;
   border-width: 1px;
   border-color: gold;
   border-style: solid;
   border-radius: 0.5rem;
+  background-color: #EEF2F5;
   background-image: none;
   outline-width: 0;
   -webkit-user-select: text;
@@ -71,34 +107,66 @@ exports[`Input should render correctly with borderColor 1`] = `
 }
 
 .c0:disabled {
+  color: #757679;
+  background: #EEF2F5;
   cursor: not-allowed;
 }
 
-<Input
-  backgroundColor="gray-1"
-  borderColor="gold"
-  color="gray-7"
-  disabled={false}
-  type="text"
-  width="100%"
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.input
-    backgroundColor="gray-1"
+  <Input
+    backgroundColor="gray1"
     borderColor="gold"
-    color="gray-7"
+    color="gray7"
     disabled={false}
     type="text"
     width="100%"
   >
-    <input
-      className="c0"
-      color="gray-7"
+    <styled.input
+      backgroundColor="gray1"
+      borderColor="gold"
+      color="gray7"
       disabled={false}
       type="text"
       width="100%"
-    />
-  </styled.input>
-</Input>
+    >
+      <input
+        className="c0"
+        color="gray7"
+        disabled={false}
+        type="text"
+        width="100%"
+      />
+    </styled.input>
+  </Input>
+</ThemeProvider>
 `;
 
 exports[`Input should render correctly with disabled 1`] = `
@@ -110,9 +178,11 @@ exports[`Input should render correctly with disabled 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 18px;
+  color: #040d25;
   border-width: 0;
   border-style: solid;
   border-radius: 0.5rem;
+  background-color: #EEF2F5;
   background-image: none;
   outline-width: 0;
   -webkit-user-select: text;
@@ -122,32 +192,64 @@ exports[`Input should render correctly with disabled 1`] = `
 }
 
 .c0:disabled {
+  color: #757679;
+  background: #EEF2F5;
   cursor: not-allowed;
 }
 
-<Input
-  backgroundColor="gray-1"
-  color="gray-7"
-  disabled={true}
-  type="text"
-  width="100%"
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.input
-    backgroundColor="gray-1"
-    color="gray-7"
+  <Input
+    backgroundColor="gray1"
+    color="gray7"
     disabled={true}
     type="text"
     width="100%"
   >
-    <input
-      className="c0"
-      color="gray-7"
+    <styled.input
+      backgroundColor="gray1"
+      color="gray7"
       disabled={true}
       type="text"
       width="100%"
-    />
-  </styled.input>
-</Input>
+    >
+      <input
+        className="c0"
+        color="gray7"
+        disabled={true}
+        type="text"
+        width="100%"
+      />
+    </styled.input>
+  </Input>
+</ThemeProvider>
 `;
 
 exports[`Input should render correctly with type 1`] = `
@@ -159,9 +261,11 @@ exports[`Input should render correctly with type 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 18px;
+  color: #040d25;
   border-width: 0;
   border-style: solid;
   border-radius: 0.5rem;
+  background-color: #EEF2F5;
   background-image: none;
   outline-width: 0;
   -webkit-user-select: text;
@@ -171,32 +275,64 @@ exports[`Input should render correctly with type 1`] = `
 }
 
 .c0:disabled {
+  color: #757679;
+  background: #EEF2F5;
   cursor: not-allowed;
 }
 
-<Input
-  backgroundColor="gray-1"
-  color="gray-7"
-  disabled={false}
-  type="password"
-  width="100%"
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.input
-    backgroundColor="gray-1"
-    color="gray-7"
+  <Input
+    backgroundColor="gray1"
+    color="gray7"
     disabled={false}
     type="password"
     width="100%"
   >
-    <input
-      className="c0"
-      color="gray-7"
+    <styled.input
+      backgroundColor="gray1"
+      color="gray7"
       disabled={false}
       type="password"
       width="100%"
-    />
-  </styled.input>
-</Input>
+    >
+      <input
+        className="c0"
+        color="gray7"
+        disabled={false}
+        type="password"
+        width="100%"
+      />
+    </styled.input>
+  </Input>
+</ThemeProvider>
 `;
 
 exports[`Input should render correctly with width 1`] = `
@@ -208,9 +344,11 @@ exports[`Input should render correctly with width 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 18px;
+  color: #040d25;
   border-width: 0;
   border-style: solid;
   border-radius: 0.5rem;
+  background-color: #EEF2F5;
   background-image: none;
   outline-width: 0;
   -webkit-user-select: text;
@@ -220,30 +358,62 @@ exports[`Input should render correctly with width 1`] = `
 }
 
 .c0:disabled {
+  color: #757679;
+  background: #EEF2F5;
   cursor: not-allowed;
 }
 
-<Input
-  backgroundColor="gray-1"
-  color="gray-7"
-  disabled={false}
-  type="text"
-  width="200px"
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
 >
-  <styled.input
-    backgroundColor="gray-1"
-    color="gray-7"
+  <Input
+    backgroundColor="gray1"
+    color="gray7"
     disabled={false}
     type="text"
     width="200px"
   >
-    <input
-      className="c0"
-      color="gray-7"
+    <styled.input
+      backgroundColor="gray1"
+      color="gray7"
       disabled={false}
       type="text"
       width="200px"
-    />
-  </styled.input>
-</Input>
+    >
+      <input
+        className="c0"
+        color="gray7"
+        disabled={false}
+        type="text"
+        width="200px"
+      />
+    </styled.input>
+  </Input>
+</ThemeProvider>
 `;
