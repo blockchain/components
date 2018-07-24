@@ -11,7 +11,7 @@ const BaseSearchBarUnderlined = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid ${(props) => props.theme['gray-2']};
+  border-bottom: 1px solid ${(props) => props.theme['gray2']};
   background-color: transparent;
 `
 const IconContainer = styled.div`

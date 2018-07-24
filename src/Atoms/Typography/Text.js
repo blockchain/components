@@ -53,7 +53,7 @@ Text.propTypes = {
 
 Text.defaultProps = {
   capitalize: false,
-  color: 'gray-5',
+  color: 'gray5',
   italic: false,
   opacity: 1,
   size: '14px',

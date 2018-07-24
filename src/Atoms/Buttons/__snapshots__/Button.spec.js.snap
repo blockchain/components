@@ -21,7 +21,7 @@ exports[`Button should have a disabled state 1`] = `
   height: 40px;
   font-size: 18px;
   color: #FFF;
-  background-color: #3558A8;
+  background-color: #004A7C;
   border: none;
   border-radius: 5px;
   cursor: not-allowed;
@@ -35,67 +35,61 @@ exports[`Button should have a disabled state 1`] = `
 }
 
 .c0:hover {
-  background-color: #4a70c6;
+  background-color: #0068af;
   -webkit-transform: scale(0.95);
   -ms-transform: scale(0.95);
   transform: scale(0.95);
 }
 
-<ContainedButton
-  disabled={true}
-  nature="primary"
+<ThemeProvider
   theme={
     Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
       "black": "#000",
-      "gold": "#FFD700",
-      "gray-0": "#F8F8F8",
-      "gray-1": "#EEF2F5",
-      "gray-2": "#CCC",
-      "gray-3": "#999B9E",
-      "gray-4": "#757679",
-      "gray-5": "#545456",
-      "gray-6": "#383838",
-      "gray-7": "#040d25",
-      "primary": "#3558A8",
-      "secondary": "#10ADE4",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
       "transparent": "rgba(0, 0, 0, 0)",
       "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
     }
   }
-  type="button"
 >
-  <styled.button
-    backgroundColor="primary"
-    color="white"
+  <ContainedButton
     disabled={true}
-    theme={
-      Object {
-        "black": "#000",
-        "gold": "#FFD700",
-        "gray-0": "#F8F8F8",
-        "gray-1": "#EEF2F5",
-        "gray-2": "#CCC",
-        "gray-3": "#999B9E",
-        "gray-4": "#757679",
-        "gray-5": "#545456",
-        "gray-6": "#383838",
-        "gray-7": "#040d25",
-        "primary": "#3558A8",
-        "secondary": "#10ADE4",
-        "transparent": "rgba(0, 0, 0, 0)",
-        "white": "#FFF",
-      }
-    }
+    nature="primary"
     type="button"
   >
-    <button
-      className="c0"
+    <styled.button
+      backgroundColor="orient"
       color="white"
       disabled={true}
       type="button"
-    />
-  </styled.button>
-</ContainedButton>
+    >
+      <button
+        className="c0"
+        color="white"
+        disabled={true}
+        type="button"
+      />
+    </styled.button>
+  </ContainedButton>
+</ThemeProvider>
 `;
 
 exports[`Button should have a secondary style 1`] = `
@@ -139,61 +133,55 @@ exports[`Button should have a secondary style 1`] = `
   transform: scale(0.95);
 }
 
-<ContainedButton
-  disabled={false}
-  nature="secondary"
+<ThemeProvider
   theme={
     Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
       "black": "#000",
-      "gold": "#FFD700",
-      "gray-0": "#F8F8F8",
-      "gray-1": "#EEF2F5",
-      "gray-2": "#CCC",
-      "gray-3": "#999B9E",
-      "gray-4": "#757679",
-      "gray-5": "#545456",
-      "gray-6": "#383838",
-      "gray-7": "#040d25",
-      "primary": "#3558A8",
-      "secondary": "#10ADE4",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
       "transparent": "rgba(0, 0, 0, 0)",
       "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
     }
   }
-  type="button"
 >
-  <styled.button
-    backgroundColor="secondary"
-    color="white"
+  <ContainedButton
     disabled={false}
-    theme={
-      Object {
-        "black": "#000",
-        "gold": "#FFD700",
-        "gray-0": "#F8F8F8",
-        "gray-1": "#EEF2F5",
-        "gray-2": "#CCC",
-        "gray-3": "#999B9E",
-        "gray-4": "#757679",
-        "gray-5": "#545456",
-        "gray-6": "#383838",
-        "gray-7": "#040d25",
-        "primary": "#3558A8",
-        "secondary": "#10ADE4",
-        "transparent": "rgba(0, 0, 0, 0)",
-        "white": "#FFF",
-      }
-    }
+    nature="secondary"
     type="button"
   >
-    <button
-      className="c0"
+    <styled.button
+      backgroundColor="cerulean"
       color="white"
       disabled={false}
       type="button"
-    />
-  </styled.button>
-</ContainedButton>
+    >
+      <button
+        className="c0"
+        color="white"
+        disabled={false}
+        type="button"
+      />
+    </styled.button>
+  </ContainedButton>
+</ThemeProvider>
 `;
 
 exports[`Button should have a type property 1`] = `
@@ -217,7 +205,7 @@ exports[`Button should have a type property 1`] = `
   height: 40px;
   font-size: 18px;
   color: #FFF;
-  background-color: #3558A8;
+  background-color: #004A7C;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -231,67 +219,61 @@ exports[`Button should have a type property 1`] = `
 }
 
 .c0:hover {
-  background-color: #4a70c6;
+  background-color: #0068af;
   -webkit-transform: scale(0.95);
   -ms-transform: scale(0.95);
   transform: scale(0.95);
 }
 
-<ContainedButton
-  disabled={false}
-  nature="primary"
+<ThemeProvider
   theme={
     Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
       "black": "#000",
-      "gold": "#FFD700",
-      "gray-0": "#F8F8F8",
-      "gray-1": "#EEF2F5",
-      "gray-2": "#CCC",
-      "gray-3": "#999B9E",
-      "gray-4": "#757679",
-      "gray-5": "#545456",
-      "gray-6": "#383838",
-      "gray-7": "#040d25",
-      "primary": "#3558A8",
-      "secondary": "#10ADE4",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
       "transparent": "rgba(0, 0, 0, 0)",
       "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
     }
   }
-  type="submit"
 >
-  <styled.button
-    backgroundColor="primary"
-    color="white"
+  <ContainedButton
     disabled={false}
-    theme={
-      Object {
-        "black": "#000",
-        "gold": "#FFD700",
-        "gray-0": "#F8F8F8",
-        "gray-1": "#EEF2F5",
-        "gray-2": "#CCC",
-        "gray-3": "#999B9E",
-        "gray-4": "#757679",
-        "gray-5": "#545456",
-        "gray-6": "#383838",
-        "gray-7": "#040d25",
-        "primary": "#3558A8",
-        "secondary": "#10ADE4",
-        "transparent": "rgba(0, 0, 0, 0)",
-        "white": "#FFF",
-      }
-    }
+    nature="primary"
     type="submit"
   >
-    <button
-      className="c0"
+    <styled.button
+      backgroundColor="orient"
       color="white"
       disabled={false}
       type="submit"
-    />
-  </styled.button>
-</ContainedButton>
+    >
+      <button
+        className="c0"
+        color="white"
+        disabled={false}
+        type="submit"
+      />
+    </styled.button>
+  </ContainedButton>
+</ThemeProvider>
 `;
 
 exports[`Button should have a type property 2`] = `
@@ -315,7 +297,7 @@ exports[`Button should have a type property 2`] = `
   height: 40px;
   font-size: 18px;
   color: #FFF;
-  background-color: #3558A8;
+  background-color: #004A7C;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -329,67 +311,61 @@ exports[`Button should have a type property 2`] = `
 }
 
 .c0:hover {
-  background-color: #4a70c6;
+  background-color: #0068af;
   -webkit-transform: scale(0.95);
   -ms-transform: scale(0.95);
   transform: scale(0.95);
 }
 
-<ContainedButton
-  disabled={false}
-  nature="primary"
+<ThemeProvider
   theme={
     Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
       "black": "#000",
-      "gold": "#FFD700",
-      "gray-0": "#F8F8F8",
-      "gray-1": "#EEF2F5",
-      "gray-2": "#CCC",
-      "gray-3": "#999B9E",
-      "gray-4": "#757679",
-      "gray-5": "#545456",
-      "gray-6": "#383838",
-      "gray-7": "#040d25",
-      "primary": "#3558A8",
-      "secondary": "#10ADE4",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
       "transparent": "rgba(0, 0, 0, 0)",
       "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
     }
   }
-  type="reset"
 >
-  <styled.button
-    backgroundColor="primary"
-    color="white"
+  <ContainedButton
     disabled={false}
-    theme={
-      Object {
-        "black": "#000",
-        "gold": "#FFD700",
-        "gray-0": "#F8F8F8",
-        "gray-1": "#EEF2F5",
-        "gray-2": "#CCC",
-        "gray-3": "#999B9E",
-        "gray-4": "#757679",
-        "gray-5": "#545456",
-        "gray-6": "#383838",
-        "gray-7": "#040d25",
-        "primary": "#3558A8",
-        "secondary": "#10ADE4",
-        "transparent": "rgba(0, 0, 0, 0)",
-        "white": "#FFF",
-      }
-    }
+    nature="primary"
     type="reset"
   >
-    <button
-      className="c0"
+    <styled.button
+      backgroundColor="orient"
       color="white"
       disabled={false}
       type="reset"
-    />
-  </styled.button>
-</ContainedButton>
+    >
+      <button
+        className="c0"
+        color="white"
+        disabled={false}
+        type="reset"
+      />
+    </styled.button>
+  </ContainedButton>
+</ThemeProvider>
 `;
 
 exports[`Button should render correctly 1`] = `
@@ -413,7 +389,7 @@ exports[`Button should render correctly 1`] = `
   height: 40px;
   font-size: 18px;
   color: #FFF;
-  background-color: #3558A8;
+  background-color: #004A7C;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -427,65 +403,59 @@ exports[`Button should render correctly 1`] = `
 }
 
 .c0:hover {
-  background-color: #4a70c6;
+  background-color: #0068af;
   -webkit-transform: scale(0.95);
   -ms-transform: scale(0.95);
   transform: scale(0.95);
 }
 
-<ContainedButton
-  disabled={false}
-  nature="primary"
+<ThemeProvider
   theme={
     Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
       "black": "#000",
-      "gold": "#FFD700",
-      "gray-0": "#F8F8F8",
-      "gray-1": "#EEF2F5",
-      "gray-2": "#CCC",
-      "gray-3": "#999B9E",
-      "gray-4": "#757679",
-      "gray-5": "#545456",
-      "gray-6": "#383838",
-      "gray-7": "#040d25",
-      "primary": "#3558A8",
-      "secondary": "#10ADE4",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
       "transparent": "rgba(0, 0, 0, 0)",
       "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
     }
   }
-  type="button"
 >
-  <styled.button
-    backgroundColor="primary"
-    color="white"
+  <ContainedButton
     disabled={false}
-    theme={
-      Object {
-        "black": "#000",
-        "gold": "#FFD700",
-        "gray-0": "#F8F8F8",
-        "gray-1": "#EEF2F5",
-        "gray-2": "#CCC",
-        "gray-3": "#999B9E",
-        "gray-4": "#757679",
-        "gray-5": "#545456",
-        "gray-6": "#383838",
-        "gray-7": "#040d25",
-        "primary": "#3558A8",
-        "secondary": "#10ADE4",
-        "transparent": "rgba(0, 0, 0, 0)",
-        "white": "#FFF",
-      }
-    }
+    nature="primary"
     type="button"
   >
-    <button
-      className="c0"
+    <styled.button
+      backgroundColor="orient"
       color="white"
       disabled={false}
       type="button"
-    />
-  </styled.button>
-</ContainedButton>
+    >
+      <button
+        className="c0"
+        color="white"
+        disabled={false}
+        type="button"
+      />
+    </styled.button>
+  </ContainedButton>
+</ThemeProvider>
 `;

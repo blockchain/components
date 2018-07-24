@@ -8,15 +8,15 @@ const BaseTable = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  box-shadow: 0 0 25px 5px ${(props) => props.theme['gray-1']};
+  box-shadow: 0 0 25px 5px ${(props) => props.theme['gray1']};
 
   & > :first-child {
-    color: ${(props) => props.theme['gray-3']};
+    color: ${(props) => props.theme['gray3']};
     text-transform: uppercase;
   }
 
   & > :nth-child(even) {
-    background-color: ${(props) => props.theme['gray-1']};
+    background-color: ${(props) => props.theme['gray0']};
   }
 
   & > :nth-child(odd) {
@@ -25,12 +25,12 @@ const BaseTable = styled.div`
 
   & > :nth-child(even):hover {
     background-color: ${(props) =>
-      props.highlighting ? props.theme['gray-0'] : props.theme['gray-1']};
+      props.highlighting ? props.theme['gray2'] : props.theme['gray0']};
   }
 
   & > :nth-child(odd):not(:first-child):hover {
     background-color: ${(props) =>
-      props.highlighting ? props.theme['gray-0'] : props.theme['white']};
+      props.highlighting ? props.theme['gray2'] : props.theme['white']};
   }
 `
 

@@ -1,17 +1,19 @@
 import React from 'react'
-import { mount } from 'enzyme'
+import { mountWithTheme } from '../../Utils/testHelper'
 
 import TabMenuItem from './TabMenuItem'
 
 describe('TabMenuItem', () => {
   it('should render correctly', () => {
-    const tree = mount(<TabMenuItem>MyTabMenuItem</TabMenuItem>)
+    const tree = mountWithTheme(<TabMenuItem>MyTabMenuItem</TabMenuItem>)
 
     expect(tree).toMatchSnapshot()
   })
 
   it('should render correctly when selected', () => {
-    const tree = mount(<TabMenuItem selected>MyTabMenuItem</TabMenuItem>)
+    const tree = mountWithTheme(
+      <TabMenuItem selected>MyTabMenuItem</TabMenuItem>,
+    )
 
     expect(tree).toMatchSnapshot()
   })

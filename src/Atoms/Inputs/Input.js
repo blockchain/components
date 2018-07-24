@@ -26,8 +26,8 @@ const BaseInput = styled.input.attrs({
   user-select: text;
 
   &:disabled {
-    color: ${(props) => props.theme['gray-4']};
-    background: ${(props) => props.theme['gray-1']};
+    color: ${(props) => props.theme['gray4']};
+    background: ${(props) => props.theme['gray1']};
     cursor: not-allowed;
   }
 `
@@ -46,8 +46,8 @@ Input.propTypes = {
 }
 
 Input.defaultProps = {
-  backgroundColor: 'gray-1',
-  color: 'gray-7',
+  backgroundColor: 'gray1',
+  color: 'gray7',
   disabled: false,
   type: 'text',
   width: '100%',

@@ -1,0 +1,609 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link should render correctly 1`] = `
+.c0 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none;
+  font-style: normal;
+  color: #545456;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #004A7C;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
+>
+  <Link
+    capitalize={false}
+    color="gray5"
+    italic={false}
+    opacity={1}
+    size="14px"
+    uppercase={false}
+    weight={400}
+  >
+    <styled.a
+      capitalize={false}
+      color="gray5"
+      italic={false}
+      opacity={1}
+      size="14px"
+      uppercase={false}
+      weight={400}
+    >
+      <a
+        className="c0"
+        color="gray5"
+        opacity={1}
+        size="14px"
+      >
+        MyLink
+      </a>
+    </styled.a>
+  </Link>
+</ThemeProvider>
+`;
+
+exports[`Link should render correctly with capitalize 1`] = `
+.c0 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-style: normal;
+  color: #545456;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #004A7C;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
+>
+  <Link
+    capitalize={true}
+    color="gray5"
+    italic={false}
+    opacity={1}
+    size="14px"
+    uppercase={false}
+    weight={400}
+  >
+    <styled.a
+      capitalize={true}
+      color="gray5"
+      italic={false}
+      opacity={1}
+      size="14px"
+      uppercase={false}
+      weight={400}
+    >
+      <a
+        className="c0"
+        color="gray5"
+        opacity={1}
+        size="14px"
+      >
+        MyLink
+      </a>
+    </styled.a>
+  </Link>
+</ThemeProvider>
+`;
+
+exports[`Link should render correctly with color 1`] = `
+.c0 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none;
+  font-style: normal;
+  color: #FFCA00;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #004A7C;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
+>
+  <Link
+    capitalize={false}
+    color="gold"
+    italic={false}
+    opacity={1}
+    size="14px"
+    uppercase={false}
+    weight={400}
+  >
+    <styled.a
+      capitalize={false}
+      color="gold"
+      italic={false}
+      opacity={1}
+      size="14px"
+      uppercase={false}
+      weight={400}
+    >
+      <a
+        className="c0"
+        color="gold"
+        opacity={1}
+        size="14px"
+      >
+        MyLink
+      </a>
+    </styled.a>
+  </Link>
+</ThemeProvider>
+`;
+
+exports[`Link should render correctly with italic 1`] = `
+.c0 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none;
+  font-style: italic;
+  color: #545456;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #004A7C;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
+>
+  <Link
+    capitalize={false}
+    color="gray5"
+    italic={true}
+    opacity={1}
+    size="14px"
+    uppercase={false}
+    weight={400}
+  >
+    <styled.a
+      capitalize={false}
+      color="gray5"
+      italic={true}
+      opacity={1}
+      size="14px"
+      uppercase={false}
+      weight={400}
+    >
+      <a
+        className="c0"
+        color="gray5"
+        opacity={1}
+        size="14px"
+      >
+        MyLink
+      </a>
+    </styled.a>
+  </Link>
+</ThemeProvider>
+`;
+
+exports[`Link should render correctly with opacity 1`] = `
+.c0 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none;
+  font-style: normal;
+  color: #545456;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #004A7C;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
+>
+  <Link
+    capitalize={false}
+    color="gray5"
+    italic={false}
+    opacity={0.5}
+    size="14px"
+    uppercase={false}
+    weight={400}
+  >
+    <styled.a
+      capitalize={false}
+      color="gray5"
+      italic={false}
+      opacity={0.5}
+      size="14px"
+      uppercase={false}
+      weight={400}
+    >
+      <a
+        className="c0"
+        color="gray5"
+        opacity={0.5}
+        size="14px"
+      >
+        MyLink
+      </a>
+    </styled.a>
+  </Link>
+</ThemeProvider>
+`;
+
+exports[`Link should render correctly with size 1`] = `
+.c0 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: none;
+  font-style: normal;
+  color: #545456;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #004A7C;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
+>
+  <Link
+    capitalize={false}
+    color="gray5"
+    italic={false}
+    opacity={1}
+    size="32px"
+    uppercase={false}
+    weight={400}
+  >
+    <styled.a
+      capitalize={false}
+      color="gray5"
+      italic={false}
+      opacity={1}
+      size="32px"
+      uppercase={false}
+      weight={400}
+    >
+      <a
+        className="c0"
+        color="gray5"
+        opacity={1}
+        size="32px"
+      >
+        MyLink
+      </a>
+    </styled.a>
+  </Link>
+</ThemeProvider>
+`;
+
+exports[`Link should render correctly with uppercase 1`] = `
+.c0 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #545456;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #004A7C;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
+>
+  <Link
+    capitalize={false}
+    color="gray5"
+    italic={false}
+    opacity={1}
+    size="14px"
+    uppercase={true}
+    weight={400}
+  >
+    <styled.a
+      capitalize={false}
+      color="gray5"
+      italic={false}
+      opacity={1}
+      size="14px"
+      uppercase={true}
+      weight={400}
+    >
+      <a
+        className="c0"
+        color="gray5"
+        opacity={1}
+        size="14px"
+      >
+        MyLink
+      </a>
+    </styled.a>
+  </Link>
+</ThemeProvider>
+`;
+
+exports[`Link should render correctly with weight 1`] = `
+.c0 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: none;
+  font-style: normal;
+  color: #545456;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #004A7C;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "azure": "#3558A8",
+      "bigStone": "#152343",
+      "biscay": "#153A62",
+      "black": "#000",
+      "blackAlpha05": "rgba(0,0,0,0.05)",
+      "blackAlpha75": "rgba(0,0,0,0.75)",
+      "blueWood": "#27324B",
+      "cerulean": "#10ADE4",
+      "gold": "#FFCA00",
+      "gray0": "#F8F8F8",
+      "gray1": "#EEF2F5",
+      "gray2": "#CCC",
+      "gray3": "#999B9E",
+      "gray4": "#757679",
+      "gray5": "#545456",
+      "gray6": "#383838",
+      "gray7": "#040d25",
+      "orient": "#004A7C",
+      "powderBlue": "#B2D5E5",
+      "transparent": "rgba(0, 0, 0, 0)",
+      "white": "#FFF",
+      "whiteAlpha10": "rgba(255,255,255,0.1)",
+      "whiteAlpha75": "rgba(255,255,255,0.75)",
+    }
+  }
+>
+  <Link
+    capitalize={false}
+    color="gray5"
+    italic={false}
+    opacity={1}
+    size="14px"
+    uppercase={false}
+    weight={500}
+  >
+    <styled.a
+      capitalize={false}
+      color="gray5"
+      italic={false}
+      opacity={1}
+      size="14px"
+      uppercase={false}
+      weight={500}
+    >
+      <a
+        className="c0"
+        color="gray5"
+        opacity={1}
+        size="14px"
+      >
+        MyLink
+      </a>
+    </styled.a>
+  </Link>
+</ThemeProvider>
+`;

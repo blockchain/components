@@ -1,38 +1,50 @@
 {
   "presets": [
-    ["@babel/preset-env", {
-      "modules": false,
-      "targets": {
-        "browsers": [
-          "> 1%",
-          "last 2 versions",
-          "ie >= 11"
-        ]
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "targets": {
+          "browsers": [
+            "> 1%",
+            "last 2 versions",
+            "ie >= 11"
+          ]
+        }
       }
-    }],
+    ],
     "@babel/preset-react",
-    ["@babel/stage-1", {
-      "decoratorsLegacy": true,
-      "pipelineProposal": "minimal"
-    }]
+    [
+      "@babel/stage-1",
+      {
+        "decoratorsLegacy": true,
+        "pipelineProposal": "minimal"
+      }
+    ]
   ],
   "env": {
     "test": {
       "presets": [
         "@babel/preset-env",
         "@babel/preset-react",
-        ["@babel/stage-1", {
-          "decoratorsLegacy": true,
-          "pipelineProposal": "minimal"
-        }]
+        [
+          "@babel/stage-1",
+          {
+            "decoratorsLegacy": true,
+            "pipelineProposal": "minimal"
+          }
+        ]
       ]
     }
   },
   "plugins": [
-    ["inline-import-data-uri", {
-      "extensions": [
-        ".svg"
-      ]
-    }]
+    [
+      "inline-import-data-uri",
+      {
+        "extensions": [
+          ".svg"
+        ]
+      }
+    ]
   ]
 }
