@@ -40,17 +40,15 @@ var SearchBar = function SearchBar(_ref) {
   var children = _ref.children,
       borderColor = _ref.borderColor,
       value = _ref.value,
-      handleChange = _ref.handleChange,
-      handleClick = _ref.handleClick,
-      rest = _objectWithoutProperties(_ref, ["children", "borderColor", "value", "handleChange", "handleClick"]);
+      onClick = _ref.onClick,
+      rest = _objectWithoutProperties(_ref, ["children", "borderColor", "value", "onClick"]);
 
   return React.createElement(BaseSearchBar, null, React.createElement(Input, _extends({
     borderColor: borderColor,
-    onChange: handleChange,
     value: value
   }, rest)), React.createElement(IconContainer, null, React.createElement(Icon, {
     name: "search-filled",
-    onClick: handleClick,
+    onClick: onClick,
     selectable: true,
     size: "20px"
   })));
@@ -59,8 +57,8 @@ var SearchBar = function SearchBar(_ref) {
 SearchBar.propTypes = {
   borderColor: PropTypes.string,
   children: PropTypes.node,
-  handleChange: PropTypes.func,
-  handleClick: PropTypes.func,
+  onChange: PropTypes.func,
+  onClick: PropTypes.func,
   value: PropTypes.any
 };
 SearchBar.defaultProps = {

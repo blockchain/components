@@ -180,7 +180,7 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
 </ThemeProvider>
 `;
 
-exports[`SearchBarUnderlined should render correctly with handleChange 1`] = `
+exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
 .c1 {
   display: block;
   width: 100%;
@@ -298,7 +298,7 @@ exports[`SearchBarUnderlined should render correctly with handleChange 1`] = `
   }
 >
   <SearchBarUnderlined
-    handleChange={[MockFunction]}
+    onChange={[MockFunction]}
   >
     <styled.div>
       <div
@@ -365,7 +365,7 @@ exports[`SearchBarUnderlined should render correctly with handleChange 1`] = `
 </ThemeProvider>
 `;
 
-exports[`SearchBarUnderlined should render correctly with handleClick 1`] = `
+exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
 .c1 {
   display: block;
   width: 100%;
@@ -483,7 +483,7 @@ exports[`SearchBarUnderlined should render correctly with handleClick 1`] = `
   }
 >
   <SearchBarUnderlined
-    handleClick={[MockFunction]}
+    onClick={[MockFunction]}
   >
     <styled.div>
       <div
@@ -494,6 +494,7 @@ exports[`SearchBarUnderlined should render correctly with handleClick 1`] = `
           borderColor="transparent"
           color="gray7"
           disabled={false}
+          onClick={[MockFunction]}
           type="text"
           width="100%"
         >
@@ -502,6 +503,7 @@ exports[`SearchBarUnderlined should render correctly with handleClick 1`] = `
             borderColor="transparent"
             color="gray7"
             disabled={false}
+            onClick={[MockFunction]}
             type="text"
             width="100%"
           >
@@ -509,6 +511,7 @@ exports[`SearchBarUnderlined should render correctly with handleClick 1`] = `
               className="c1"
               color="gray7"
               disabled={false}
+              onClick={[MockFunction]}
               type="text"
               width="100%"
             />
@@ -521,7 +524,6 @@ exports[`SearchBarUnderlined should render correctly with handleClick 1`] = `
             <Icon
               color="gray5"
               name="search-filled"
-              onClick={[MockFunction]}
               selectable={true}
               size="20px"
               weight={400}
@@ -529,7 +531,6 @@ exports[`SearchBarUnderlined should render correctly with handleClick 1`] = `
               <styled.span
                 code="\\\\e92d"
                 color="gray5"
-                onClick={[MockFunction]}
                 selectable={true}
                 size="20px"
                 weight={400}
@@ -537,7 +538,6 @@ exports[`SearchBarUnderlined should render correctly with handleClick 1`] = `
                 <span
                   className="c3"
                   color="gray5"
-                  onClick={[MockFunction]}
                   size="20px"
                 />
               </styled.span>
@@ -668,6 +668,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
   }
 >
   <SearchBarUnderlined
+    onChange={[MockFunction]}
     value="My search"
   >
     <styled.div>
@@ -679,6 +680,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
           borderColor="transparent"
           color="gray7"
           disabled={false}
+          onChange={[MockFunction]}
           type="text"
           value="My search"
           width="100%"
@@ -688,6 +690,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
             borderColor="transparent"
             color="gray7"
             disabled={false}
+            onChange={[MockFunction]}
             type="text"
             value="My search"
             width="100%"
@@ -696,6 +699,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
               className="c1"
               color="gray7"
               disabled={false}
+              onChange={[MockFunction]}
               type="text"
               value="My search"
               width="100%"

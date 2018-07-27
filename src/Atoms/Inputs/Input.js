@@ -41,7 +41,7 @@ Input.propTypes = {
   disabled: PropTypes.bool,
   input: PropTypes.object,
   name: PropTypes.string,
-  type: PropTypes.oneOf(['text', 'date', 'number', 'password']),
+  type: PropTypes.oneOf(['text', 'date', 'number', 'password', 'search']),
   width: PropTypes.string,
 }
 

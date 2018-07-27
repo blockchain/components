@@ -32,23 +32,11 @@ const IconContainer = styled.div`
   background-color: ${(props) => props.theme['gold']};
 `
 
-const SearchBar = ({
-  children,
-  borderColor,
-  value,
-  handleChange,
-  handleClick,
-  ...rest
-}) => (
+const SearchBar = ({ children, borderColor, value, onClick, ...rest }) => (
   <BaseSearchBar>
-    <Input
-      borderColor={borderColor}
-      onChange={handleChange}
-      value={value}
-      {...rest}
-    />
+    <Input borderColor={borderColor} value={value} {...rest} />
     <IconContainer>
-      <Icon name="search-filled" onClick={handleClick} selectable size="20px" />
+      <Icon name="search-filled" onClick={onClick} selectable size="20px" />
     </IconContainer>
   </BaseSearchBar>
 )
@@ -56,8 +44,8 @@ const SearchBar = ({
 SearchBar.propTypes = {
   borderColor: PropTypes.string,
   children: PropTypes.node,
-  handleChange: PropTypes.func,
-  handleClick: PropTypes.func,
+  onChange: PropTypes.func,
+  onClick: PropTypes.func,
   value: PropTypes.any,
 }
 

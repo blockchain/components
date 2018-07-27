@@ -61,7 +61,6 @@ exports[`SingleDropdown should render correctly 1`] = `
     backgroundColor="transparent"
     capitalize={false}
     color="gray6"
-    handleChange={[MockFunction]}
     italic={false}
     items={
       Array [
@@ -103,6 +102,7 @@ exports[`SingleDropdown should render correctly 1`] = `
         },
       ]
     }
+    onChange={[MockFunction]}
     size="16px"
     uppercase={false}
     weight={300}
@@ -111,8 +111,8 @@ exports[`SingleDropdown should render correctly 1`] = `
       backgroundColor="transparent"
       capitalize={false}
       color="gray6"
-      handleChange={[MockFunction]}
       italic={false}
+      onChange={[MockFunction]}
       size="16px"
       uppercase={false}
       weight={300}
@@ -120,6 +120,7 @@ exports[`SingleDropdown should render correctly 1`] = `
       <select
         className="c0"
         color="gray6"
+        onChange={[MockFunction]}
         size="16px"
       >
         <option
@@ -243,7 +244,6 @@ exports[`SingleDropdown should render correctly with backgroundColor 1`] = `
     backgroundColor="orient"
     capitalize={false}
     color="gray6"
-    handleChange={[MockFunction]}
     italic={false}
     items={
       Array [
@@ -285,6 +285,7 @@ exports[`SingleDropdown should render correctly with backgroundColor 1`] = `
         },
       ]
     }
+    onChange={[MockFunction]}
     size="16px"
     uppercase={false}
     weight={300}
@@ -293,8 +294,8 @@ exports[`SingleDropdown should render correctly with backgroundColor 1`] = `
       backgroundColor="orient"
       capitalize={false}
       color="gray6"
-      handleChange={[MockFunction]}
       italic={false}
+      onChange={[MockFunction]}
       size="16px"
       uppercase={false}
       weight={300}
@@ -302,6 +303,7 @@ exports[`SingleDropdown should render correctly with backgroundColor 1`] = `
       <select
         className="c0"
         color="gray6"
+        onChange={[MockFunction]}
         size="16px"
       >
         <option
@@ -425,7 +427,6 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
     backgroundColor="transparent"
     capitalize={true}
     color="gray6"
-    handleChange={[MockFunction]}
     italic={false}
     items={
       Array [
@@ -467,6 +468,7 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
         },
       ]
     }
+    onChange={[MockFunction]}
     size="16px"
     uppercase={false}
     weight={300}
@@ -475,8 +477,8 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
       backgroundColor="transparent"
       capitalize={true}
       color="gray6"
-      handleChange={[MockFunction]}
       italic={false}
+      onChange={[MockFunction]}
       size="16px"
       uppercase={false}
       weight={300}
@@ -484,6 +486,7 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
       <select
         className="c0"
         color="gray6"
+        onChange={[MockFunction]}
         size="16px"
       >
         <option
@@ -607,7 +610,6 @@ exports[`SingleDropdown should render correctly with color 1`] = `
     backgroundColor="transparent"
     capitalize={false}
     color="cerulean"
-    handleChange={[MockFunction]}
     italic={false}
     items={
       Array [
@@ -649,6 +651,7 @@ exports[`SingleDropdown should render correctly with color 1`] = `
         },
       ]
     }
+    onChange={[MockFunction]}
     size="16px"
     uppercase={false}
     weight={300}
@@ -657,8 +660,8 @@ exports[`SingleDropdown should render correctly with color 1`] = `
       backgroundColor="transparent"
       capitalize={false}
       color="cerulean"
-      handleChange={[MockFunction]}
       italic={false}
+      onChange={[MockFunction]}
       size="16px"
       uppercase={false}
       weight={300}
@@ -666,6 +669,7 @@ exports[`SingleDropdown should render correctly with color 1`] = `
       <select
         className="c0"
         color="cerulean"
+        onChange={[MockFunction]}
         size="16px"
       >
         <option
@@ -789,7 +793,6 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
     backgroundColor="transparent"
     capitalize={false}
     color="gray6"
-    handleChange={[MockFunction]}
     italic={true}
     items={
       Array [
@@ -831,6 +834,7 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
         },
       ]
     }
+    onChange={[MockFunction]}
     size="16px"
     uppercase={false}
     weight={300}
@@ -839,8 +843,8 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
       backgroundColor="transparent"
       capitalize={false}
       color="gray6"
-      handleChange={[MockFunction]}
       italic={true}
+      onChange={[MockFunction]}
       size="16px"
       uppercase={false}
       weight={300}
@@ -848,6 +852,7 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
       <select
         className="c0"
         color="gray6"
+        onChange={[MockFunction]}
         size="16px"
       >
         <option
@@ -971,7 +976,6 @@ exports[`SingleDropdown should render correctly with size 1`] = `
     backgroundColor="transparent"
     capitalize={false}
     color="gray6"
-    handleChange={[MockFunction]}
     italic={false}
     items={
       Array [
@@ -1013,6 +1017,7 @@ exports[`SingleDropdown should render correctly with size 1`] = `
         },
       ]
     }
+    onChange={[MockFunction]}
     size="32px"
     uppercase={false}
     weight={300}
@@ -1021,8 +1026,8 @@ exports[`SingleDropdown should render correctly with size 1`] = `
       backgroundColor="transparent"
       capitalize={false}
       color="gray6"
-      handleChange={[MockFunction]}
       italic={false}
+      onChange={[MockFunction]}
       size="32px"
       uppercase={false}
       weight={300}
@@ -1030,6 +1035,7 @@ exports[`SingleDropdown should render correctly with size 1`] = `
       <select
         className="c0"
         color="gray6"
+        onChange={[MockFunction]}
         size="32px"
       >
         <option
@@ -1153,7 +1159,6 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
     backgroundColor="transparent"
     capitalize={false}
     color="gray6"
-    handleChange={[MockFunction]}
     italic={false}
     items={
       Array [
@@ -1195,6 +1200,7 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
         },
       ]
     }
+    onChange={[MockFunction]}
     size="16px"
     uppercase={true}
     weight={300}
@@ -1203,8 +1209,8 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
       backgroundColor="transparent"
       capitalize={false}
       color="gray6"
-      handleChange={[MockFunction]}
       italic={false}
+      onChange={[MockFunction]}
       size="16px"
       uppercase={true}
       weight={300}
@@ -1212,6 +1218,7 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
       <select
         className="c0"
         color="gray6"
+        onChange={[MockFunction]}
         size="16px"
       >
         <option
@@ -1335,7 +1342,6 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
     backgroundColor="transparent"
     capitalize={false}
     color="gray6"
-    handleChange={[MockFunction]}
     italic={false}
     items={
       Array [
@@ -1377,6 +1383,7 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
         },
       ]
     }
+    onChange={[MockFunction]}
     size="16px"
     uppercase={false}
     weight={500}
@@ -1385,8 +1392,8 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
       backgroundColor="transparent"
       capitalize={false}
       color="gray6"
-      handleChange={[MockFunction]}
       italic={false}
+      onChange={[MockFunction]}
       size="16px"
       uppercase={false}
       weight={500}
@@ -1394,6 +1401,7 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
       <select
         className="c0"
         color="gray6"
+        onChange={[MockFunction]}
         size="16px"
       >
         <option
