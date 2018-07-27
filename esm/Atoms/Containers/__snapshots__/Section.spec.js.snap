@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section should render correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+<Section
+  color="white"
+  height="auto"
+  width="100%"
+>
+  <styled.section
+    color="white"
+    height="auto"
+    width="100%"
+  >
+    <section
+      className="c0"
+      color="white"
+      height="auto"
+      width="100%"
+    >
+      MySection
+    </section>
+  </styled.section>
+</Section>
+`;
+
+exports[`Section should render correctly with color 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+<Section
+  color="gold"
+  height="auto"
+  width="100%"
+>
+  <styled.section
+    color="gold"
+    height="auto"
+    width="100%"
+  >
+    <section
+      className="c0"
+      color="gold"
+      height="auto"
+      width="100%"
+    >
+      MySection
+    </section>
+  </styled.section>
+</Section>
+`;
+
+exports[`Section should render correctly with height 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+<Section
+  color="white"
+  height="200px"
+  width="100%"
+>
+  <styled.section
+    color="white"
+    height="200px"
+    width="100%"
+  >
+    <section
+      className="c0"
+      color="white"
+      height="200px"
+      width="100%"
+    >
+      MySection
+    </section>
+  </styled.section>
+</Section>
+`;
+
+exports[`Section should render correctly with width 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  width: 200px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+<Section
+  color="white"
+  height="auto"
+  width="200px"
+>
+  <styled.section
+    color="white"
+    height="auto"
+    width="200px"
+  >
+    <section
+      className="c0"
+      color="white"
+      height="auto"
+      width="200px"
+    >
+      MySection
+    </section>
+  </styled.section>
+</Section>
+`;

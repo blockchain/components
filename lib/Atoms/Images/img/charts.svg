@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>charts icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Explorer-final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bch---tx" transform="translate(-1165.000000, -2101.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="3067"></rect>
+            <g id="products" transform="translate(0.000000, 1726.000000)" fill-rule="nonzero">
+                <g id="bucket-2" transform="translate(760.000000, 282.000000)">
+                    <g id="charts" transform="translate(308.000000, 61.000000)">
+                        <g id="charts-icon" transform="translate(97.000000, 32.000000)">
+                            <circle id="Oval" fill="#90DFAA" cx="34.9392871" cy="34.9392871" r="34.9392871"></circle>
+                            <path d="M55.6843762,52.6272475 L14.1940594,52.6272475 C13.5935842,52.6272475 13.102198,52.1358614 13.102198,51.5353861 L13.102198,18.2884356 C13.102198,17.6879604 13.5935842,17.1965743 14.1940594,17.1965743 L55.6843762,17.1965743 C56.2848515,17.1965743 56.7762376,17.6879604 56.7762376,18.2884356 L56.7762376,51.5352475 C56.7762376,52.1358614 56.2848515,52.6272475 55.6843762,52.6272475 Z" id="Shape" fill="#324A5E"></path>
+                            <rect id="Rectangle-path" fill="#FFFFFF" x="16.3777822" y="20.4721584" width="37.1228713" height="28.879505"></rect>
+                            <path d="M45.2571485,54.9746733 L45.2571485,52.6272475 L24.6212871,52.6272475 L24.6212871,54.9746733 C24.6212871,55.9573069 23.8023564,56.7216238 22.8197228,56.7216238 C21.8370891,56.7216238 21.0727723,57.5405545 21.0727723,58.5231881 C21.0727723,58.9053465 21.4003168,59.2328911 21.7824752,59.2328911 L48.096099,59.2328911 C48.4782574,59.2328911 48.805802,58.9053465 48.805802,58.5231881 C48.805802,57.5405545 47.9868713,56.7216238 47.0042376,56.7216238 C46.0760792,56.7216238 45.2571485,55.9573069 45.2571485,54.9746733 Z" id="Shape" fill="#F1543F"></path>
+                            <rect id="Rectangle-path" fill="#2C9984" x="43.8923564" y="23.7477426" width="6.44194059" height="22.3283366"></rect>
+                            <rect id="Rectangle-path" fill="#F9B54C" x="35.8126931" y="29.9713663" width="6.44194059" height="16.1048515"></rect>
+                            <rect id="Rectangle-path" fill="#54C0EB" x="27.6784158" y="36.1402376" width="6.44194059" height="9.93584158"></rect>
+                            <rect id="Rectangle-path" fill="#4CDBC4" x="19.5441386" y="42.3638614" width="6.44194059" height="3.71235644"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

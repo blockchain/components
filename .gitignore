@@ -1,7 +1,5 @@
 # Ignore generated folders
 node_modules
-esm
-lib
 storybook-static
 
 # Logs

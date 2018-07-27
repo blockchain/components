@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cartridge should render correctly 1`] = `
+<Styled(Text)
+  backgroundColor="orient"
+  color="white"
+/>
+`;
+
+exports[`Cartridge should render correctly with nature 1`] = `
+<Styled(Text)
+  backgroundColor="cerulean"
+  color="white"
+/>
+`;
