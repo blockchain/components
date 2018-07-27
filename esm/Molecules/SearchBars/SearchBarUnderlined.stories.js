@@ -7,9 +7,9 @@ import SearchBarUnderlined from './SearchBarUnderlined'
 storiesOf('Molecules/SearchBars/SearchBarUnderlined', module)
   .add('default', () => <SearchBarUnderlined />)
   .add('with value', () => <SearchBarUnderlined value="My search" />)
-  .add('with handleChange', () => (
-    <SearchBarUnderlined handleChange={action('text-change')} />
+  .add('with onChange', () => (
+    <SearchBarUnderlined onChange={action('text-change')} />
   ))
-  .add('with handleClick', () => (
-    <SearchBarUnderlined handleClick={action('icon-click')} />
+  .add('with onClick', () => (
+    <SearchBarUnderlined onClick={action('icon-click')} />
   ))

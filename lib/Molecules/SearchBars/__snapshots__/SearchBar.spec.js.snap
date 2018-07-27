@@ -380,7 +380,7 @@ exports[`SearchBar should render correctly with borderColor 1`] = `
 </ThemeProvider>
 `;
 
-exports[`SearchBar should render correctly with handleChange 1`] = `
+exports[`SearchBar should render correctly with onChange 1`] = `
 .c1 {
   display: block;
   width: 100%;
@@ -507,7 +507,7 @@ exports[`SearchBar should render correctly with handleChange 1`] = `
 >
   <SearchBar
     borderColor="white"
-    handleChange={[MockFunction]}
+    onChange={[MockFunction]}
   >
     <styled.div>
       <div
@@ -574,7 +574,7 @@ exports[`SearchBar should render correctly with handleChange 1`] = `
 </ThemeProvider>
 `;
 
-exports[`SearchBar should render correctly with handleClick 1`] = `
+exports[`SearchBar should render correctly with onClick 1`] = `
 .c1 {
   display: block;
   width: 100%;
@@ -701,7 +701,7 @@ exports[`SearchBar should render correctly with handleClick 1`] = `
 >
   <SearchBar
     borderColor="white"
-    handleClick={[MockFunction]}
+    onClick={[MockFunction]}
   >
     <styled.div>
       <div
@@ -895,6 +895,7 @@ exports[`SearchBar should render correctly with value 1`] = `
 >
   <SearchBar
     borderColor="white"
+    onChange={[MockFunction]}
     value="My search"
   >
     <styled.div>
@@ -906,6 +907,7 @@ exports[`SearchBar should render correctly with value 1`] = `
           borderColor="white"
           color="gray7"
           disabled={false}
+          onChange={[MockFunction]}
           type="text"
           value="My search"
           width="100%"
@@ -915,6 +917,7 @@ exports[`SearchBar should render correctly with value 1`] = `
             borderColor="white"
             color="gray7"
             disabled={false}
+            onChange={[MockFunction]}
             type="text"
             value="My search"
             width="100%"
@@ -923,6 +926,7 @@ exports[`SearchBar should render correctly with value 1`] = `
               className="c1"
               color="gray7"
               disabled={false}
+              onChange={[MockFunction]}
               type="text"
               value="My search"
               width="100%"
