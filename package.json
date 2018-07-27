@@ -8,6 +8,7 @@
     "start": "start-storybook -p 6006",
     "build:watch": "nodemon --watch src --exec npm run build",
     "build": "node utils/build.js",
+    "postinstall": "node utils/build.js",
     "prepare": "node utils/build.js",
     "build-storybook": "build-storybook",
     "test": "jest --notify --watch",
