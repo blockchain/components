@@ -1,2 +1,0 @@
-import './IBMPlex';
-import './Icomoon';
