@@ -1,13 +1,11 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+import { mountWithTheme } from '../../Utils/testHelper'
 
 import ContainedButton from './ContainedButton'
 
 describe('ContainedButton component', () => {
   it('renders correctly', () => {
-    const component = shallow(<ContainedButton />)
-    const tree = toJson(component)
+    const tree = mountWithTheme(<ContainedButton />)
     expect(tree).toMatchSnapshot()
   })
 })

@@ -1,5 +1,5 @@
 {
-  "name": "blockchain-info-components",
+  "name": "@blockchain-com/components",
   "version": "0.0.1",
   "description": "Blockchain.com components library",
   "main": "lib/index.js",
@@ -18,10 +18,15 @@
     "lint:js": "eslint 'src/**/*.js' --max-warnings=0",
     "lint:js:fix": "eslint 'src/**/*.js' --fix",
     "prettier:fix": "prettier --write 'src/**/*.js'",
-    "changelog": "git-changelog -t"
+    "changelog": "git-changelog -t",
+    "prepublish": "npm version"
   },
   "author": "Blockchain",
   "license": "AGPLv3",
+  "publishConfig": {
+    "access": "public",
+    "scope": "@blockchain-com"
+  },
   "sideEffects": false,
   "devDependencies": {
     "@babel/cli": "7.0.0-beta.53",
@@ -31,8 +36,8 @@
     "@babel/preset-env": "7.0.0-beta.53",
     "@babel/preset-react": "7.0.0-beta.53",
     "@babel/preset-stage-0": "7.0.0-beta.53",
-    "@commitlint/cli": "^7.0.0",
-    "@commitlint/config-conventional": "^7.0.1",
+    "@commitlint/cli": "7.0.0",
+    "@commitlint/config-conventional": "7.0.1",
     "@storybook/addon-actions": "3.4.8",
     "@storybook/addon-backgrounds": "3.4.8",
     "@storybook/addon-info": "3.4.8",

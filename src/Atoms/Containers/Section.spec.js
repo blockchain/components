@@ -10,12 +10,6 @@ describe('Section', () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it('should render correctly with color', () => {
-    const tree = mountWithTheme(<Section color="gold">MySection</Section>)
-
-    expect(tree).toMatchSnapshot()
-  })
-
   it('should render correctly with height', () => {
     const tree = mountWithTheme(<Section height="200px">MySection</Section>)
 
@@ -23,8 +17,12 @@ describe('Section', () => {
   })
 
   it('should render correctly with nature', () => {
-    const tree = mountWithTheme(<Section nature="diamonds">MySection</Section>)
+    const tree = mountWithTheme(<Section nature="blocks">MySection</Section>)
 
     expect(tree).toMatchSnapshot()
+
+    const tree2 = mountWithTheme(<Section nature="diamonds">MySection</Section>)
+
+    expect(tree2).toMatchSnapshot()
   })
 })

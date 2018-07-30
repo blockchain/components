@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { lighten } from 'polished'
 
-const BaseContainedButton = styled.button.attrs({
+const getHoverColor = (disabled, theme) =>
+  disabled ? theme['buttonBackgroundColor'] : theme['buttonHoverColor']
+
+const Wrapper = styled.button.attrs({
   type: (props) => props.type,
 })`
   display: flex;
@@ -11,10 +13,11 @@ const BaseContainedButton = styled.button.attrs({
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 40px;
+  padding: 10px 30px;
+  box-sizing: border-box;
   font-size: 18px;
-  color: ${(props) => props.theme[props.color]};
-  background-color: ${(props) => props.theme[props.backgroundColor]};
+  color: ${(props) => props.theme['buttonColor']};
+  background-color: ${(props) => props.theme['buttonBackgroundColor']};
   border: none;
   border-radius: 5px;
   cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
@@ -22,52 +25,28 @@ const BaseContainedButton = styled.button.attrs({
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
-  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: ${(props) => props.theme['fontPrimary']};
 
   &:hover {
-    background-color: ${(props) =>
-      lighten(0.1, props.theme[props.backgroundColor])};
-    transform: scale(0.95);
+    background-color: ${(props) => getHoverColor(props.disabled, props.theme)};
+    transform: ${(props) => (props.bounced ? 'scale(0.95)' : 'none')};
   }
 `
-
-const selectStyle = (nature) => {
-  switch (nature) {
-    case 'primary':
-      return {
-        backgroundColor: 'orient',
-        color: 'white',
-      }
-    case 'secondary':
-      return {
-        backgroundColor: 'cerulean',
-        color: 'white',
-      }
-    default:
-      return {
-        backgroundColor: 'orient',
-        color: 'white',
-      }
-  }
-}
-
-const ContainedButton = ({ children, nature, ...rest }) => (
-  <BaseContainedButton {...selectStyle(nature)} {...rest}>
-    {children}
-  </BaseContainedButton>
+const Button = ({ children, ...rest }) => (
+  <Wrapper {...rest}>{children}</Wrapper>
 )
 
-ContainedButton.propTypes = {
+Button.propTypes = {
+  bounced: PropTypes.bool,
   children: PropTypes.node,
   disabled: PropTypes.bool,
-  nature: PropTypes.oneOf(['primary', 'secondary']),
   type: PropTypes.oneOf(['button', 'reset', 'submit']),
 }
 
-ContainedButton.defaultProps = {
+Button.defaultProps = {
+  bounced: false,
   disabled: false,
-  nature: 'primary',
   type: 'button',
 }
 
-export default ContainedButton
+export default Button

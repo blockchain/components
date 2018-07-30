@@ -13,14 +13,9 @@ const Text = styled.span`
 `
 const Sample = () => <Text>Hello !</Text>
 
-storiesOf('Molecules/Sections/Section', module)
+storiesOf('Atoms/Containers/Section', module)
   .add('default', () => (
     <Section>
-      <Sample />
-    </Section>
-  ))
-  .add('with color', () => (
-    <Section color="orient">
       <Sample />
     </Section>
   ))

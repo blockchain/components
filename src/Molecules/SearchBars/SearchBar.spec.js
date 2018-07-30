@@ -19,12 +19,6 @@ describe('SearchBar', () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it('should render correctly with borderColor', () => {
-    const tree = mountWithTheme(<SearchBar borderColor="gold" />)
-
-    expect(tree).toMatchSnapshot()
-  })
-
   it('should render correctly with onChange', () => {
     const tree = mountWithTheme(<SearchBar onChange={jest.fn()} />)
 

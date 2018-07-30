@@ -1,5 +1,104 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Button should have a bounced state 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #FFF;
+  background-color: #004A7C;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.c0:hover {
+  background-color: #0068af;
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "buttonBackgroundColor": "#004A7C",
+      "buttonColor": "#FFF",
+      "buttonHoverColor": "#0068af",
+      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeColor": "#FFF",
+      "circleBadgeBackgroundColor": "#CCC",
+      "circleBadgeHoverColor": "#004A7C",
+      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownColor": "#545456",
+      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "iconColor": "#545456",
+      "iconHoverColor": "#757679",
+      "inputBackgroundColor": "#FFF",
+      "inputBorderColor": "#CCC",
+      "inputColor": "#545456",
+      "linkColor": "#545456",
+      "linkHoverColor": "#004A7C",
+      "panelBackgroundColor": "#FFF",
+      "panelShadowColor": "#EEF2F5",
+      "searchBarIconBackgroundColor": "#FFCA00",
+      "searchBarInputBackgroundColor": "#FFF",
+      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
+      "searchBarUnderlinedBorderColor": "#CCC",
+      "sectionBackgroundColor": "#004A7C",
+      "tabMenuBarColor": "#FFCA00",
+      "tabMenuBorderColor": "#EEF2F5",
+      "tableCellEvenBackgroundColor": "#F8F8F8",
+      "tableCellOddBackgroundColor": "#FFF",
+      "tableHeaderColor": "#999B9E",
+      "tableShadowColor": "#EEF2F5",
+      "textColor": "#545456",
+    }
+  }
+>
+  <Button
+    bounced={true}
+    disabled={false}
+    type="button"
+  >
+    <styled.button
+      bounced={true}
+      disabled={false}
+      type="button"
+    >
+      <button
+        className="c0"
+        disabled={false}
+        type="button"
+      />
+    </styled.button>
+  </Button>
+</ThemeProvider>
+`;
+
 exports[`Button should have a disabled state 1`] = `
 .c0 {
   display: -webkit-box;
@@ -18,7 +117,8 @@ exports[`Button should have a disabled state 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  height: 40px;
+  padding: 10px 30px;
+  box-sizing: border-box;
   font-size: 18px;
   color: #FFF;
   background-color: #004A7C;
@@ -35,152 +135,66 @@ exports[`Button should have a disabled state 1`] = `
 }
 
 .c0:hover {
-  background-color: #0068af;
-  -webkit-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
+  background-color: #004A7C;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 
 <ThemeProvider
   theme={
     Object {
-      "azure": "#3558A8",
-      "bigStone": "#152343",
-      "biscay": "#153A62",
-      "black": "#000",
-      "blackAlpha05": "rgba(0,0,0,0.05)",
-      "blackAlpha75": "rgba(0,0,0,0.75)",
-      "blueWood": "#27324B",
-      "cerulean": "#10ADE4",
-      "gold": "#FFCA00",
-      "gray0": "#F8F8F8",
-      "gray1": "#EEF2F5",
-      "gray2": "#CCC",
-      "gray3": "#999B9E",
-      "gray4": "#757679",
-      "gray5": "#545456",
-      "gray6": "#383838",
-      "gray7": "#040d25",
-      "orient": "#004A7C",
-      "powderBlue": "#B2D5E5",
-      "transparent": "rgba(0, 0, 0, 0)",
-      "white": "#FFF",
-      "whiteAlpha10": "rgba(255,255,255,0.1)",
-      "whiteAlpha75": "rgba(255,255,255,0.75)",
+      "buttonBackgroundColor": "#004A7C",
+      "buttonColor": "#FFF",
+      "buttonHoverColor": "#0068af",
+      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeColor": "#FFF",
+      "circleBadgeBackgroundColor": "#CCC",
+      "circleBadgeHoverColor": "#004A7C",
+      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownColor": "#545456",
+      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "iconColor": "#545456",
+      "iconHoverColor": "#757679",
+      "inputBackgroundColor": "#FFF",
+      "inputBorderColor": "#CCC",
+      "inputColor": "#545456",
+      "linkColor": "#545456",
+      "linkHoverColor": "#004A7C",
+      "panelBackgroundColor": "#FFF",
+      "panelShadowColor": "#EEF2F5",
+      "searchBarIconBackgroundColor": "#FFCA00",
+      "searchBarInputBackgroundColor": "#FFF",
+      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
+      "searchBarUnderlinedBorderColor": "#CCC",
+      "sectionBackgroundColor": "#004A7C",
+      "tabMenuBarColor": "#FFCA00",
+      "tabMenuBorderColor": "#EEF2F5",
+      "tableCellEvenBackgroundColor": "#F8F8F8",
+      "tableCellOddBackgroundColor": "#FFF",
+      "tableHeaderColor": "#999B9E",
+      "tableShadowColor": "#EEF2F5",
+      "textColor": "#545456",
     }
   }
 >
-  <ContainedButton
+  <Button
+    bounced={false}
     disabled={true}
-    nature="primary"
     type="button"
   >
     <styled.button
-      backgroundColor="orient"
-      color="white"
+      bounced={false}
       disabled={true}
       type="button"
     >
       <button
         className="c0"
-        color="white"
         disabled={true}
         type="button"
       />
     </styled.button>
-  </ContainedButton>
-</ThemeProvider>
-`;
-
-exports[`Button should have a secondary style 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  font-size: 18px;
-  color: #FFF;
-  background-color: #10ADE4;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  opacity: 1;
-  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-}
-
-.c0:hover {
-  background-color: #36c0f1;
-  -webkit-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
-}
-
-<ThemeProvider
-  theme={
-    Object {
-      "azure": "#3558A8",
-      "bigStone": "#152343",
-      "biscay": "#153A62",
-      "black": "#000",
-      "blackAlpha05": "rgba(0,0,0,0.05)",
-      "blackAlpha75": "rgba(0,0,0,0.75)",
-      "blueWood": "#27324B",
-      "cerulean": "#10ADE4",
-      "gold": "#FFCA00",
-      "gray0": "#F8F8F8",
-      "gray1": "#EEF2F5",
-      "gray2": "#CCC",
-      "gray3": "#999B9E",
-      "gray4": "#757679",
-      "gray5": "#545456",
-      "gray6": "#383838",
-      "gray7": "#040d25",
-      "orient": "#004A7C",
-      "powderBlue": "#B2D5E5",
-      "transparent": "rgba(0, 0, 0, 0)",
-      "white": "#FFF",
-      "whiteAlpha10": "rgba(255,255,255,0.1)",
-      "whiteAlpha75": "rgba(255,255,255,0.75)",
-    }
-  }
->
-  <ContainedButton
-    disabled={false}
-    nature="secondary"
-    type="button"
-  >
-    <styled.button
-      backgroundColor="cerulean"
-      color="white"
-      disabled={false}
-      type="button"
-    >
-      <button
-        className="c0"
-        color="white"
-        disabled={false}
-        type="button"
-      />
-    </styled.button>
-  </ContainedButton>
+  </Button>
 </ThemeProvider>
 `;
 
@@ -202,7 +216,8 @@ exports[`Button should have a type property 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  height: 40px;
+  padding: 10px 30px;
+  box-sizing: border-box;
   font-size: 18px;
   color: #FFF;
   background-color: #004A7C;
@@ -220,59 +235,65 @@ exports[`Button should have a type property 1`] = `
 
 .c0:hover {
   background-color: #0068af;
-  -webkit-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 
 <ThemeProvider
   theme={
     Object {
-      "azure": "#3558A8",
-      "bigStone": "#152343",
-      "biscay": "#153A62",
-      "black": "#000",
-      "blackAlpha05": "rgba(0,0,0,0.05)",
-      "blackAlpha75": "rgba(0,0,0,0.75)",
-      "blueWood": "#27324B",
-      "cerulean": "#10ADE4",
-      "gold": "#FFCA00",
-      "gray0": "#F8F8F8",
-      "gray1": "#EEF2F5",
-      "gray2": "#CCC",
-      "gray3": "#999B9E",
-      "gray4": "#757679",
-      "gray5": "#545456",
-      "gray6": "#383838",
-      "gray7": "#040d25",
-      "orient": "#004A7C",
-      "powderBlue": "#B2D5E5",
-      "transparent": "rgba(0, 0, 0, 0)",
-      "white": "#FFF",
-      "whiteAlpha10": "rgba(255,255,255,0.1)",
-      "whiteAlpha75": "rgba(255,255,255,0.75)",
+      "buttonBackgroundColor": "#004A7C",
+      "buttonColor": "#FFF",
+      "buttonHoverColor": "#0068af",
+      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeColor": "#FFF",
+      "circleBadgeBackgroundColor": "#CCC",
+      "circleBadgeHoverColor": "#004A7C",
+      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownColor": "#545456",
+      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "iconColor": "#545456",
+      "iconHoverColor": "#757679",
+      "inputBackgroundColor": "#FFF",
+      "inputBorderColor": "#CCC",
+      "inputColor": "#545456",
+      "linkColor": "#545456",
+      "linkHoverColor": "#004A7C",
+      "panelBackgroundColor": "#FFF",
+      "panelShadowColor": "#EEF2F5",
+      "searchBarIconBackgroundColor": "#FFCA00",
+      "searchBarInputBackgroundColor": "#FFF",
+      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
+      "searchBarUnderlinedBorderColor": "#CCC",
+      "sectionBackgroundColor": "#004A7C",
+      "tabMenuBarColor": "#FFCA00",
+      "tabMenuBorderColor": "#EEF2F5",
+      "tableCellEvenBackgroundColor": "#F8F8F8",
+      "tableCellOddBackgroundColor": "#FFF",
+      "tableHeaderColor": "#999B9E",
+      "tableShadowColor": "#EEF2F5",
+      "textColor": "#545456",
     }
   }
 >
-  <ContainedButton
+  <Button
+    bounced={false}
     disabled={false}
-    nature="primary"
     type="submit"
   >
     <styled.button
-      backgroundColor="orient"
-      color="white"
+      bounced={false}
       disabled={false}
       type="submit"
     >
       <button
         className="c0"
-        color="white"
         disabled={false}
         type="submit"
       />
     </styled.button>
-  </ContainedButton>
+  </Button>
 </ThemeProvider>
 `;
 
@@ -294,7 +315,8 @@ exports[`Button should have a type property 2`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  height: 40px;
+  padding: 10px 30px;
+  box-sizing: border-box;
   font-size: 18px;
   color: #FFF;
   background-color: #004A7C;
@@ -312,59 +334,65 @@ exports[`Button should have a type property 2`] = `
 
 .c0:hover {
   background-color: #0068af;
-  -webkit-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 
 <ThemeProvider
   theme={
     Object {
-      "azure": "#3558A8",
-      "bigStone": "#152343",
-      "biscay": "#153A62",
-      "black": "#000",
-      "blackAlpha05": "rgba(0,0,0,0.05)",
-      "blackAlpha75": "rgba(0,0,0,0.75)",
-      "blueWood": "#27324B",
-      "cerulean": "#10ADE4",
-      "gold": "#FFCA00",
-      "gray0": "#F8F8F8",
-      "gray1": "#EEF2F5",
-      "gray2": "#CCC",
-      "gray3": "#999B9E",
-      "gray4": "#757679",
-      "gray5": "#545456",
-      "gray6": "#383838",
-      "gray7": "#040d25",
-      "orient": "#004A7C",
-      "powderBlue": "#B2D5E5",
-      "transparent": "rgba(0, 0, 0, 0)",
-      "white": "#FFF",
-      "whiteAlpha10": "rgba(255,255,255,0.1)",
-      "whiteAlpha75": "rgba(255,255,255,0.75)",
+      "buttonBackgroundColor": "#004A7C",
+      "buttonColor": "#FFF",
+      "buttonHoverColor": "#0068af",
+      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeColor": "#FFF",
+      "circleBadgeBackgroundColor": "#CCC",
+      "circleBadgeHoverColor": "#004A7C",
+      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownColor": "#545456",
+      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "iconColor": "#545456",
+      "iconHoverColor": "#757679",
+      "inputBackgroundColor": "#FFF",
+      "inputBorderColor": "#CCC",
+      "inputColor": "#545456",
+      "linkColor": "#545456",
+      "linkHoverColor": "#004A7C",
+      "panelBackgroundColor": "#FFF",
+      "panelShadowColor": "#EEF2F5",
+      "searchBarIconBackgroundColor": "#FFCA00",
+      "searchBarInputBackgroundColor": "#FFF",
+      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
+      "searchBarUnderlinedBorderColor": "#CCC",
+      "sectionBackgroundColor": "#004A7C",
+      "tabMenuBarColor": "#FFCA00",
+      "tabMenuBorderColor": "#EEF2F5",
+      "tableCellEvenBackgroundColor": "#F8F8F8",
+      "tableCellOddBackgroundColor": "#FFF",
+      "tableHeaderColor": "#999B9E",
+      "tableShadowColor": "#EEF2F5",
+      "textColor": "#545456",
     }
   }
 >
-  <ContainedButton
+  <Button
+    bounced={false}
     disabled={false}
-    nature="primary"
     type="reset"
   >
     <styled.button
-      backgroundColor="orient"
-      color="white"
+      bounced={false}
       disabled={false}
       type="reset"
     >
       <button
         className="c0"
-        color="white"
         disabled={false}
         type="reset"
       />
     </styled.button>
-  </ContainedButton>
+  </Button>
 </ThemeProvider>
 `;
 
@@ -386,7 +414,8 @@ exports[`Button should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  height: 40px;
+  padding: 10px 30px;
+  box-sizing: border-box;
   font-size: 18px;
   color: #FFF;
   background-color: #004A7C;
@@ -404,58 +433,64 @@ exports[`Button should render correctly 1`] = `
 
 .c0:hover {
   background-color: #0068af;
-  -webkit-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 
 <ThemeProvider
   theme={
     Object {
-      "azure": "#3558A8",
-      "bigStone": "#152343",
-      "biscay": "#153A62",
-      "black": "#000",
-      "blackAlpha05": "rgba(0,0,0,0.05)",
-      "blackAlpha75": "rgba(0,0,0,0.75)",
-      "blueWood": "#27324B",
-      "cerulean": "#10ADE4",
-      "gold": "#FFCA00",
-      "gray0": "#F8F8F8",
-      "gray1": "#EEF2F5",
-      "gray2": "#CCC",
-      "gray3": "#999B9E",
-      "gray4": "#757679",
-      "gray5": "#545456",
-      "gray6": "#383838",
-      "gray7": "#040d25",
-      "orient": "#004A7C",
-      "powderBlue": "#B2D5E5",
-      "transparent": "rgba(0, 0, 0, 0)",
-      "white": "#FFF",
-      "whiteAlpha10": "rgba(255,255,255,0.1)",
-      "whiteAlpha75": "rgba(255,255,255,0.75)",
+      "buttonBackgroundColor": "#004A7C",
+      "buttonColor": "#FFF",
+      "buttonHoverColor": "#0068af",
+      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeColor": "#FFF",
+      "circleBadgeBackgroundColor": "#CCC",
+      "circleBadgeHoverColor": "#004A7C",
+      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownColor": "#545456",
+      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "iconColor": "#545456",
+      "iconHoverColor": "#757679",
+      "inputBackgroundColor": "#FFF",
+      "inputBorderColor": "#CCC",
+      "inputColor": "#545456",
+      "linkColor": "#545456",
+      "linkHoverColor": "#004A7C",
+      "panelBackgroundColor": "#FFF",
+      "panelShadowColor": "#EEF2F5",
+      "searchBarIconBackgroundColor": "#FFCA00",
+      "searchBarInputBackgroundColor": "#FFF",
+      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
+      "searchBarUnderlinedBorderColor": "#CCC",
+      "sectionBackgroundColor": "#004A7C",
+      "tabMenuBarColor": "#FFCA00",
+      "tabMenuBorderColor": "#EEF2F5",
+      "tableCellEvenBackgroundColor": "#F8F8F8",
+      "tableCellOddBackgroundColor": "#FFF",
+      "tableHeaderColor": "#999B9E",
+      "tableShadowColor": "#EEF2F5",
+      "textColor": "#545456",
     }
   }
 >
-  <ContainedButton
+  <Button
+    bounced={false}
     disabled={false}
-    nature="primary"
     type="button"
   >
     <styled.button
-      backgroundColor="orient"
-      color="white"
+      bounced={false}
       disabled={false}
       type="button"
     >
       <button
         className="c0"
-        color="white"
         disabled={false}
         type="button"
       />
     </styled.button>
-  </ContainedButton>
+  </Button>
 </ThemeProvider>
 `;

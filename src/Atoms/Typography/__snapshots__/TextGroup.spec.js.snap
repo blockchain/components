@@ -23,29 +23,37 @@ exports[`TextGroup mount render correctly 1`] = `
 <ThemeProvider
   theme={
     Object {
-      "azure": "#3558A8",
-      "bigStone": "#152343",
-      "biscay": "#153A62",
-      "black": "#000",
-      "blackAlpha05": "rgba(0,0,0,0.05)",
-      "blackAlpha75": "rgba(0,0,0,0.75)",
-      "blueWood": "#27324B",
-      "cerulean": "#10ADE4",
-      "gold": "#FFCA00",
-      "gray0": "#F8F8F8",
-      "gray1": "#EEF2F5",
-      "gray2": "#CCC",
-      "gray3": "#999B9E",
-      "gray4": "#757679",
-      "gray5": "#545456",
-      "gray6": "#383838",
-      "gray7": "#040d25",
-      "orient": "#004A7C",
-      "powderBlue": "#B2D5E5",
-      "transparent": "rgba(0, 0, 0, 0)",
-      "white": "#FFF",
-      "whiteAlpha10": "rgba(255,255,255,0.1)",
-      "whiteAlpha75": "rgba(255,255,255,0.75)",
+      "buttonBackgroundColor": "#004A7C",
+      "buttonColor": "#FFF",
+      "buttonHoverColor": "#0068af",
+      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeColor": "#FFF",
+      "circleBadgeBackgroundColor": "#CCC",
+      "circleBadgeHoverColor": "#004A7C",
+      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownColor": "#545456",
+      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "iconColor": "#545456",
+      "iconHoverColor": "#757679",
+      "inputBackgroundColor": "#FFF",
+      "inputBorderColor": "#CCC",
+      "inputColor": "#545456",
+      "linkColor": "#545456",
+      "linkHoverColor": "#004A7C",
+      "panelBackgroundColor": "#FFF",
+      "panelShadowColor": "#EEF2F5",
+      "searchBarIconBackgroundColor": "#FFCA00",
+      "searchBarInputBackgroundColor": "#FFF",
+      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
+      "searchBarUnderlinedBorderColor": "#CCC",
+      "sectionBackgroundColor": "#004A7C",
+      "tabMenuBarColor": "#FFCA00",
+      "tabMenuBorderColor": "#EEF2F5",
+      "tableCellEvenBackgroundColor": "#F8F8F8",
+      "tableCellOddBackgroundColor": "#FFF",
+      "tableHeaderColor": "#999B9E",
+      "tableShadowColor": "#EEF2F5",
+      "textColor": "#545456",
     }
   }
 >
@@ -63,7 +71,6 @@ exports[`TextGroup mount render correctly 1`] = `
         <Texts>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -72,7 +79,6 @@ exports[`TextGroup mount render correctly 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -81,7 +87,6 @@ exports[`TextGroup mount render correctly 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -91,7 +96,6 @@ exports[`TextGroup mount render correctly 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -100,7 +104,6 @@ exports[`TextGroup mount render correctly 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -109,7 +112,6 @@ exports[`TextGroup mount render correctly 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -119,7 +121,6 @@ exports[`TextGroup mount render correctly 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -128,7 +129,6 @@ exports[`TextGroup mount render correctly 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -137,7 +137,6 @@ exports[`TextGroup mount render correctly 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -147,7 +146,6 @@ exports[`TextGroup mount render correctly 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -156,7 +154,6 @@ exports[`TextGroup mount render correctly 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -165,7 +162,6 @@ exports[`TextGroup mount render correctly 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -175,7 +171,6 @@ exports[`TextGroup mount render correctly 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -184,7 +179,6 @@ exports[`TextGroup mount render correctly 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -193,7 +187,6 @@ exports[`TextGroup mount render correctly 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -203,7 +196,6 @@ exports[`TextGroup mount render correctly 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -212,7 +204,6 @@ exports[`TextGroup mount render correctly 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -221,7 +212,6 @@ exports[`TextGroup mount render correctly 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -231,7 +221,6 @@ exports[`TextGroup mount render correctly 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -240,7 +229,6 @@ exports[`TextGroup mount render correctly 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -249,7 +237,6 @@ exports[`TextGroup mount render correctly 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -287,29 +274,37 @@ exports[`TextGroup mount render correctly with align 1`] = `
 <ThemeProvider
   theme={
     Object {
-      "azure": "#3558A8",
-      "bigStone": "#152343",
-      "biscay": "#153A62",
-      "black": "#000",
-      "blackAlpha05": "rgba(0,0,0,0.05)",
-      "blackAlpha75": "rgba(0,0,0,0.75)",
-      "blueWood": "#27324B",
-      "cerulean": "#10ADE4",
-      "gold": "#FFCA00",
-      "gray0": "#F8F8F8",
-      "gray1": "#EEF2F5",
-      "gray2": "#CCC",
-      "gray3": "#999B9E",
-      "gray4": "#757679",
-      "gray5": "#545456",
-      "gray6": "#383838",
-      "gray7": "#040d25",
-      "orient": "#004A7C",
-      "powderBlue": "#B2D5E5",
-      "transparent": "rgba(0, 0, 0, 0)",
-      "white": "#FFF",
-      "whiteAlpha10": "rgba(255,255,255,0.1)",
-      "whiteAlpha75": "rgba(255,255,255,0.75)",
+      "buttonBackgroundColor": "#004A7C",
+      "buttonColor": "#FFF",
+      "buttonHoverColor": "#0068af",
+      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeColor": "#FFF",
+      "circleBadgeBackgroundColor": "#CCC",
+      "circleBadgeHoverColor": "#004A7C",
+      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownColor": "#545456",
+      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "iconColor": "#545456",
+      "iconHoverColor": "#757679",
+      "inputBackgroundColor": "#FFF",
+      "inputBorderColor": "#CCC",
+      "inputColor": "#545456",
+      "linkColor": "#545456",
+      "linkHoverColor": "#004A7C",
+      "panelBackgroundColor": "#FFF",
+      "panelShadowColor": "#EEF2F5",
+      "searchBarIconBackgroundColor": "#FFCA00",
+      "searchBarInputBackgroundColor": "#FFF",
+      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
+      "searchBarUnderlinedBorderColor": "#CCC",
+      "sectionBackgroundColor": "#004A7C",
+      "tabMenuBarColor": "#FFCA00",
+      "tabMenuBorderColor": "#EEF2F5",
+      "tableCellEvenBackgroundColor": "#F8F8F8",
+      "tableCellOddBackgroundColor": "#FFF",
+      "tableHeaderColor": "#999B9E",
+      "tableShadowColor": "#EEF2F5",
+      "textColor": "#545456",
     }
   }
 >
@@ -327,7 +322,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
         <Texts>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -336,7 +330,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -345,7 +338,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -355,7 +347,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -364,7 +355,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -373,7 +363,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -383,7 +372,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -392,7 +380,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -401,7 +388,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -411,7 +397,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -420,7 +405,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -429,7 +413,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -439,7 +422,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -448,7 +430,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -457,7 +438,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -467,7 +447,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -476,7 +455,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -485,7 +463,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -495,7 +472,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -504,7 +480,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -513,7 +488,6 @@ exports[`TextGroup mount render correctly with align 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -551,29 +525,37 @@ exports[`TextGroup mount render correctly with inline 1`] = `
 <ThemeProvider
   theme={
     Object {
-      "azure": "#3558A8",
-      "bigStone": "#152343",
-      "biscay": "#153A62",
-      "black": "#000",
-      "blackAlpha05": "rgba(0,0,0,0.05)",
-      "blackAlpha75": "rgba(0,0,0,0.75)",
-      "blueWood": "#27324B",
-      "cerulean": "#10ADE4",
-      "gold": "#FFCA00",
-      "gray0": "#F8F8F8",
-      "gray1": "#EEF2F5",
-      "gray2": "#CCC",
-      "gray3": "#999B9E",
-      "gray4": "#757679",
-      "gray5": "#545456",
-      "gray6": "#383838",
-      "gray7": "#040d25",
-      "orient": "#004A7C",
-      "powderBlue": "#B2D5E5",
-      "transparent": "rgba(0, 0, 0, 0)",
-      "white": "#FFF",
-      "whiteAlpha10": "rgba(255,255,255,0.1)",
-      "whiteAlpha75": "rgba(255,255,255,0.75)",
+      "buttonBackgroundColor": "#004A7C",
+      "buttonColor": "#FFF",
+      "buttonHoverColor": "#0068af",
+      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeColor": "#FFF",
+      "circleBadgeBackgroundColor": "#CCC",
+      "circleBadgeHoverColor": "#004A7C",
+      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownColor": "#545456",
+      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "iconColor": "#545456",
+      "iconHoverColor": "#757679",
+      "inputBackgroundColor": "#FFF",
+      "inputBorderColor": "#CCC",
+      "inputColor": "#545456",
+      "linkColor": "#545456",
+      "linkHoverColor": "#004A7C",
+      "panelBackgroundColor": "#FFF",
+      "panelShadowColor": "#EEF2F5",
+      "searchBarIconBackgroundColor": "#FFCA00",
+      "searchBarInputBackgroundColor": "#FFF",
+      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
+      "searchBarUnderlinedBorderColor": "#CCC",
+      "sectionBackgroundColor": "#004A7C",
+      "tabMenuBarColor": "#FFCA00",
+      "tabMenuBorderColor": "#EEF2F5",
+      "tableCellEvenBackgroundColor": "#F8F8F8",
+      "tableCellOddBackgroundColor": "#FFF",
+      "tableHeaderColor": "#999B9E",
+      "tableShadowColor": "#EEF2F5",
+      "textColor": "#545456",
     }
   }
 >
@@ -591,7 +573,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
         <Texts>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -600,7 +581,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -609,7 +589,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -619,7 +598,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -628,7 +606,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -637,7 +614,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -647,7 +623,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -656,7 +631,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -665,7 +639,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -675,7 +648,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -684,7 +656,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -693,7 +664,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -703,7 +673,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -712,7 +681,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -721,7 +689,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -731,7 +698,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -740,7 +706,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -749,7 +714,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >
@@ -759,7 +723,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           </Text>
           <Text
             capitalize={false}
-            color="gray5"
             italic={false}
             opacity={1}
             size="14px"
@@ -768,7 +731,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           >
             <styled.span
               capitalize={false}
-              color="gray5"
               italic={false}
               opacity={1}
               size="14px"
@@ -777,7 +739,6 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             >
               <span
                 className="c1"
-                color="gray5"
                 opacity={1}
                 size="14px"
               >

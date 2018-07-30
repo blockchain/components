@@ -4,8 +4,18 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  width: 60px;\n  height: 52px;\n  background-color: ", ";\n  border-top-right-radius: 0.5rem;\n  border-bottom-right-radius: 0.5rem;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  width: 60px;\n  height: 52px;\n  background-color: ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color: ", ";\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -15,7 +25,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  align-items: center;\n  width: 100%;\n\n  & > :first-child {\n    border-top-right-radius: 0;\n    border-bottom-right-radius: 0;\n  }\n\n  & > :last-child {\n    border-top-right-radius: 0.5rem;\n    border-bottom-right-radius: 0.5rem;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  align-items: center;\n  width: 100%;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -31,20 +41,23 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Input } from '../../Atoms/Inputs';
 import { Icon } from '../../Atoms/Icons';
-var BaseSearchBar = styled.div(_templateObject());
-var IconContainer = styled.div(_templateObject2(), function (props) {
-  return props.theme['gold'];
+var Wrapper = styled.div(_templateObject());
+var SearchInput = styled(Input)(_templateObject2(), function (props) {
+  return props.theme['searchBarInputBackgroundColor'];
+});
+var IconContainer = styled.div(_templateObject3(), function (props) {
+  return props.theme['searchBarIconBackgroundColor'];
 });
 
 var SearchBar = function SearchBar(_ref) {
   var children = _ref.children,
-      borderColor = _ref.borderColor,
       value = _ref.value,
+      onChange = _ref.onChange,
       onClick = _ref.onClick,
-      rest = _objectWithoutProperties(_ref, ["children", "borderColor", "value", "onClick"]);
+      rest = _objectWithoutProperties(_ref, ["children", "value", "onChange", "onClick"]);
 
-  return React.createElement(BaseSearchBar, null, React.createElement(Input, _extends({
-    borderColor: borderColor,
+  return React.createElement(Wrapper, null, React.createElement(SearchInput, _extends({
+    onChange: onChange,
     value: value
   }, rest)), React.createElement(IconContainer, null, React.createElement(Icon, {
     name: "search-filled",
@@ -55,13 +68,9 @@ var SearchBar = function SearchBar(_ref) {
 };
 
 SearchBar.propTypes = {
-  borderColor: PropTypes.string,
   children: PropTypes.node,
   onChange: PropTypes.func,
   onClick: PropTypes.func,
   value: PropTypes.any
-};
-SearchBar.defaultProps = {
-  borderColor: 'white'
 };
 export default SearchBar;

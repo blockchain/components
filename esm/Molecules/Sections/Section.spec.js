@@ -23,8 +23,12 @@ describe('Section', () => {
   })
 
   it('should render correctly with nature', () => {
-    const tree = mountWithTheme(<Section nature="diamonds">MySection</Section>)
+    const tree = mountWithTheme(<Section nature="blocks">MySection</Section>)
 
     expect(tree).toMatchSnapshot()
+
+    const tree2 = mountWithTheme(<Section nature="diamonds">MySection</Section>)
+
+    expect(tree2).toMatchSnapshot()
   })
 })

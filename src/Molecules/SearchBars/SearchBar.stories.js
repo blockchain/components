@@ -7,6 +7,5 @@ import SearchBar from './SearchBar'
 storiesOf('Molecules/SearchBars/SearchBar', module)
   .add('default', () => <SearchBar />)
   .add('with value', () => <SearchBar value="My search" />)
-  .add('with borderColor', () => <SearchBar borderColor="gold" />)
   .add('with onChange', () => <SearchBar onChange={action('text-change')} />)
   .add('with onClick', () => <SearchBar onClick={action('icon-click')} />)

@@ -5,7 +5,6 @@ import Link from './Link'
 
 storiesOf('Atoms/Links/Link', module)
   .add('default', () => <Link>MyLink</Link>)
-  .add('with color', () => <Link color="gold">MyLink</Link>)
   .add('with size', () => <Link size="32px">MyLink</Link>)
   .add('with weight', () => <Link weight={500}>MyLink</Link>)
   .add('with uppercase', () => <Link uppercase>MyLink</Link>)

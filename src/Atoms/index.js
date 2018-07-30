@@ -1,7 +1,7 @@
 import './Fonts'
 
 export { Button } from './Buttons'
-export { Panel } from './Containers'
+export { Container, Panel, Section } from './Containers'
 export { Icon } from './Icons'
 export { Background, Image } from './Images'
 export { Input } from './Inputs'

@@ -3,7 +3,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: block;\n  width: ", ";\n  height: 52px;\n  padding: 0 20px;\n  box-sizing: border-box;\n  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;\n  font-size: 18px;\n  color: ", ";\n  border-width: ", ";\n  border-color: ", ";\n  border-style: solid;\n  border-radius: 0.5rem;\n  background-color: ", ";\n  background-image: none;\n  outline-width: 0;\n  user-select: text;\n\n  &:disabled {\n    color: ", ";\n    background: ", ";\n    cursor: not-allowed;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: block;\n  width: ", ";\n  height: 52px;\n  padding: 0 20px;\n  box-sizing: border-box;\n  font-family: ", ";\n  font-size: 18px;\n  color: ", ";\n  border-width: 1px;\n  border-color: ", ";\n  border-style: solid;\n  border-radius: 0.5rem;\n  background-color: ", ";\n  background-image: none;\n  outline-width: 0;\n  user-select: text;\n\n  &:disabled {\n    color: ", ";\n    background: ", ";\n    cursor: not-allowed;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -17,8 +17,6 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { keysIn } from 'ramda';
-import theme from '../../Tools/theme';
 var BaseInput = styled.input.attrs({
   name: function name(props) {
     return props.name;
@@ -29,17 +27,17 @@ var BaseInput = styled.input.attrs({
 })(_templateObject(), function (props) {
   return props.width;
 }, function (props) {
-  return props.theme[props.color];
+  return props.theme['fontPrimary'];
 }, function (props) {
-  return props.borderColor ? '1px' : '0';
+  return props.theme['inputColor'];
 }, function (props) {
-  return props.borderColor;
+  return props.theme['inputBorderColor'];
 }, function (props) {
-  return props.theme[props.backgroundColor];
+  return props.theme['inputBackgroundColor'];
 }, function (props) {
-  return props.theme['gray4'];
+  return props.theme['inputColor'];
 }, function (props) {
-  return props.theme['gray1'];
+  return props.theme['inputBackgroundColor'];
 });
 
 var Input = function Input(props) {
@@ -47,9 +45,6 @@ var Input = function Input(props) {
 };
 
 Input.propTypes = {
-  backgroundColor: PropTypes.string,
-  borderColor: PropTypes.string,
-  color: PropTypes.oneOf(keysIn(theme)),
   disabled: PropTypes.bool,
   input: PropTypes.object,
   name: PropTypes.string,
@@ -57,8 +52,6 @@ Input.propTypes = {
   width: PropTypes.string
 };
 Input.defaultProps = {
-  backgroundColor: 'gray1',
-  color: 'gray7',
   disabled: false,
   type: 'text',
   width: '100%'

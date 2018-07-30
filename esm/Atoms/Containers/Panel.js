@@ -5,7 +5,7 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: ", ";\n  width: ", ";\n  box-shadow: 0 0 25px 5px ", ";\n  background-color: ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: ", ";\n  width: ", ";\n  min-width: ", ";\n  box-shadow: 0 0 25px 5px ", ";\n  background-color: ", ";\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -24,9 +24,11 @@ var BasePanel = styled.div(_templateObject(), function (props) {
 }, function (props) {
   return props.width;
 }, function (props) {
-  return props.theme['gray1'];
+  return props.width;
 }, function (props) {
-  return props.theme['white'];
+  return props.theme['panelShadowColor'];
+}, function (props) {
+  return props.theme['panelBackgroundColor'];
 });
 
 var Panel = function Panel(_ref) {

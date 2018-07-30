@@ -5,7 +5,7 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;\n  font-weight: ", ";\n  font-size: ", ";\n  text-transform: ", ";\n  font-style: ", ";\n  color: ", ";\n  opacity: ", ";\n  cursor: pointer;\n\n  &:hover {\n    color: ", ";\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  font-family: ", ";\n  font-weight: ", ";\n  font-size: ", ";\n  text-transform: ", ";\n  font-style: ", ";\n  color: ", ";\n  opacity: ", ";\n  cursor: pointer;\n\n  &:hover {\n    color: ", ";\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -19,9 +19,9 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { keysIn } from 'ramda';
-import theme from '../../Tools/theme';
 var BaseLink = styled.a(_templateObject(), function (props) {
+  return props.theme['fontPrimary'];
+}, function (props) {
   return props.weight;
 }, function (props) {
   return props.size;
@@ -30,11 +30,11 @@ var BaseLink = styled.a(_templateObject(), function (props) {
 }, function (props) {
   return props.italic ? 'italic' : 'normal';
 }, function (props) {
-  return props.theme[props.color];
+  return props.theme['linkColor'];
 }, function (props) {
   return props.opacity;
 }, function (props) {
-  return props.theme['orient'];
+  return props.theme['linkHoverColor'];
 });
 
 var Link = function Link(_ref) {
@@ -44,13 +44,11 @@ var Link = function Link(_ref) {
       uppercase = _ref.uppercase,
       capitalize = _ref.capitalize,
       italic = _ref.italic,
-      color = _ref.color,
       opacity = _ref.opacity,
-      rest = _objectWithoutProperties(_ref, ["children", "weight", "size", "uppercase", "capitalize", "italic", "color", "opacity"]);
+      rest = _objectWithoutProperties(_ref, ["children", "weight", "size", "uppercase", "capitalize", "italic", "opacity"]);
 
   return React.createElement(BaseLink, _extends({
     capitalize: capitalize,
-    color: color,
     italic: italic,
     opacity: opacity,
     size: size,
@@ -62,7 +60,6 @@ var Link = function Link(_ref) {
 Link.propTypes = {
   capitalize: PropTypes.bool,
   children: PropTypes.node,
-  color: PropTypes.oneOf(keysIn(theme)),
   italic: PropTypes.bool,
   opacity: PropTypes.number,
   size: PropTypes.string,
@@ -71,7 +68,6 @@ Link.propTypes = {
 };
 Link.defaultProps = {
   capitalize: false,
-  color: 'gray5',
   italic: false,
   opacity: 1,
   size: '14px',

@@ -1,10 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { keysIn } from 'ramda'
-import theme from '../../Tools/theme'
 
-const BaseInput = styled.input.attrs({
+const Wrapper = styled.input.attrs({
   name: (props) => props.name,
   type: (props) => props.type,
 })`
@@ -13,31 +11,28 @@ const BaseInput = styled.input.attrs({
   height: 52px;
   padding: 0 20px;
   box-sizing: border-box;
-  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: ${(props) => props.theme['fontPrimary']};
   font-size: 18px;
-  color: ${(props) => props.theme[props.color]};
-  border-width: ${(props) => (props.borderColor ? '1px' : '0')};
-  border-color: ${(props) => props.borderColor};
+  color: ${(props) => props.theme['inputColor']};
+  border-width: 1px;
+  border-color: ${(props) => props.theme['inputBorderColor']};
   border-style: solid;
   border-radius: 0.5rem;
-  background-color: ${(props) => props.theme[props.backgroundColor]};
+  background-color: ${(props) => props.theme['inputBackgroundColor']};
   background-image: none;
   outline-width: 0;
   user-select: text;
 
   &:disabled {
-    color: ${(props) => props.theme['gray4']};
-    background: ${(props) => props.theme['gray1']};
+    color: ${(props) => props.theme['inputColor']};
+    background: ${(props) => props.theme['inputBackgroundColor']};
     cursor: not-allowed;
   }
 `
 
-const Input = (props) => <BaseInput {...{ ...props, ...props.input }} />
+const Input = (props) => <Wrapper {...{ ...props, ...props.input }} />
 
 Input.propTypes = {
-  backgroundColor: PropTypes.string,
-  borderColor: PropTypes.string,
-  color: PropTypes.oneOf(keysIn(theme)),
   disabled: PropTypes.bool,
   input: PropTypes.object,
   name: PropTypes.string,
@@ -46,8 +41,6 @@ Input.propTypes = {
 }
 
 Input.defaultProps = {
-  backgroundColor: 'gray1',
-  color: 'gray7',
   disabled: false,
   type: 'text',
   width: '100%',

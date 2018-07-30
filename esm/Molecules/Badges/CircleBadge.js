@@ -17,8 +17,6 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { keysIn } from 'ramda';
-import theme from '../../Tools/theme';
 import Image from '../../Atoms/Images/Image';
 import Link from '../../Atoms/Links/Link';
 var Wrapper = styled(Link).attrs({
@@ -31,22 +29,18 @@ var Wrapper = styled(Link).attrs({
 }, function (props) {
   return props.size;
 }, function (props) {
-  return props.theme[props.color];
+  return props.theme['circleBadgeBackgroundColor'];
 }, function (props) {
-  return props.theme[props.hoverColor];
+  return props.theme['circleBadgeHoverColor'];
 });
 
 var CircleBadge = function CircleBadge(_ref) {
-  var color = _ref.color,
-      hoverColor = _ref.hoverColor,
-      name = _ref.name,
+  var name = _ref.name,
       size = _ref.size,
       url = _ref.url,
-      rest = _objectWithoutProperties(_ref, ["color", "hoverColor", "name", "size", "url"]);
+      rest = _objectWithoutProperties(_ref, ["name", "size", "url"]);
 
   return React.createElement(Wrapper, {
-    color: color,
-    hoverColor: hoverColor,
     size: size,
     url: url
   }, React.createElement(Image, {
@@ -56,15 +50,11 @@ var CircleBadge = function CircleBadge(_ref) {
 };
 
 CircleBadge.propTypes = {
-  color: PropTypes.oneOf(keysIn(theme)),
-  hoverColor: PropTypes.oneOf(keysIn(theme)),
   name: PropTypes.oneOf(['facebook', 'linkedIn', 'twitter']),
   size: PropTypes.string,
   url: PropTypes.string.isRequired
 };
 CircleBadge.defaultProps = {
-  color: 'gray2',
-  hoverColor: 'orient',
   name: 'facebook',
   size: '40px'
 };
