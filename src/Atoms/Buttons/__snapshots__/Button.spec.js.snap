@@ -78,7 +78,7 @@ exports[`Button should have a bounced state 1`] = `
     }
   }
 >
-  <ContainedButton
+  <Button
     bounced={true}
     disabled={false}
     type="button"
@@ -94,7 +94,7 @@ exports[`Button should have a bounced state 1`] = `
         type="button"
       />
     </styled.button>
-  </ContainedButton>
+  </Button>
 </ThemeProvider>
 `;
 
@@ -176,7 +176,7 @@ exports[`Button should have a disabled state 1`] = `
     }
   }
 >
-  <ContainedButton
+  <Button
     bounced={false}
     disabled={true}
     type="button"
@@ -192,7 +192,7 @@ exports[`Button should have a disabled state 1`] = `
         type="button"
       />
     </styled.button>
-  </ContainedButton>
+  </Button>
 </ThemeProvider>
 `;
 
@@ -274,7 +274,7 @@ exports[`Button should have a type property 1`] = `
     }
   }
 >
-  <ContainedButton
+  <Button
     bounced={false}
     disabled={false}
     type="submit"
@@ -290,7 +290,7 @@ exports[`Button should have a type property 1`] = `
         type="submit"
       />
     </styled.button>
-  </ContainedButton>
+  </Button>
 </ThemeProvider>
 `;
 
@@ -372,7 +372,7 @@ exports[`Button should have a type property 2`] = `
     }
   }
 >
-  <ContainedButton
+  <Button
     bounced={false}
     disabled={false}
     type="reset"
@@ -388,7 +388,7 @@ exports[`Button should have a type property 2`] = `
         type="reset"
       />
     </styled.button>
-  </ContainedButton>
+  </Button>
 </ThemeProvider>
 `;
 
@@ -470,7 +470,7 @@ exports[`Button should render correctly 1`] = `
     }
   }
 >
-  <ContainedButton
+  <Button
     bounced={false}
     disabled={false}
     type="button"
@@ -486,6 +486,6 @@ exports[`Button should render correctly 1`] = `
         type="button"
       />
     </styled.button>
-  </ContainedButton>
+  </Button>
 </ThemeProvider>
 `;
