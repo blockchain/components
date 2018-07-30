@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import ImageMap from './ImageMap'
 
-const BaseBackground = styled.div`
+const Wrapper = styled.div`
   height: ${(props) => props.height};
   width: ${(props) => props.width};
   background-image: url(${(props) => props.path});
@@ -14,7 +14,7 @@ const BaseBackground = styled.div`
 `
 
 const Background = ({ children, name, height, width, stretch, ...rest }) => (
-  <BaseBackground
+  <Wrapper
     height={height}
     path={ImageMap[name]}
     stretch={stretch}
@@ -22,7 +22,7 @@ const Background = ({ children, name, height, width, stretch, ...rest }) => (
     {...rest}
   >
     {children}
-  </BaseBackground>
+  </Wrapper>
 )
 
 Background.propTypes = {

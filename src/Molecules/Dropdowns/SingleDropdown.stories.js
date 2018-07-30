@@ -19,23 +19,9 @@ storiesOf('Molecules/Dropdowns/SingleDropdown', module)
   .add('default', () => (
     <SingleDropdown handleChange={action('item-click')} items={items} />
   ))
-  .add('with backgroundColor', () => (
-    <SingleDropdown
-      backgroundColor="orient"
-      handleChange={action('item-click')}
-      items={items}
-    />
-  ))
   .add('with capitalize', () => (
     <SingleDropdown
       capitalize
-      handleChange={action('item-click')}
-      items={items}
-    />
-  ))
-  .add('with color', () => (
-    <SingleDropdown
-      color="orient"
       handleChange={action('item-click')}
       items={items}
     />

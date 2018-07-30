@@ -1,5 +1,5 @@
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  align-items: center;\n  width: 100%;\n  padding: 10px 30px;\n  box-sizing: border-box;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  align-items: center;\n  width: 100%;\n  padding: 10px 30px;\n  box-sizing: border-box;\n  color: ", ";\n  text-transform: uppercase;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -13,7 +13,9 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-var BaseTableHeader = styled.div(_templateObject());
+var BaseTableHeader = styled.div(_templateObject(), function (props) {
+  return props.theme['tableHeaderColor'];
+});
 
 var TableHeader = function TableHeader(_ref) {
   var children = _ref.children;

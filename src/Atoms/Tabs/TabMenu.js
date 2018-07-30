@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  border-bottom: 2px solid ${(props) => props.theme['gray1']};
+  border-bottom: 2px solid ${(props) => props.theme['tabMenuBorderColor']};
   box-sizing: border-box;
 `
 const Container = styled.div`

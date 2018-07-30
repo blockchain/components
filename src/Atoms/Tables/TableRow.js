@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const BaseTableRow = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -12,7 +12,7 @@ const BaseTableRow = styled.div`
   box-sizing: border-box;
 `
 
-const TableRow = ({ children }) => <BaseTableRow>{children}</BaseTableRow>
+const TableRow = ({ children }) => <Wrapper>{children}</Wrapper>
 
 TableRow.propTypes = {
   children: PropTypes.node,

@@ -2,49 +2,27 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const BaseTable = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  box-shadow: 0 0 25px 5px ${(props) => props.theme['gray1']};
-
-  & > :first-child {
-    color: ${(props) => props.theme['gray3']};
-    text-transform: uppercase;
-  }
+  box-shadow: 0 0 25px 5px ${(props) => props.theme['tableShadowColor']};
 
   & > :nth-child(even) {
-    background-color: ${(props) => props.theme['gray0']};
+    background-color: ${(props) => props.theme['tableCellEvenBackgroundColor']};
   }
 
   & > :nth-child(odd) {
-    background-color: ${(props) => props.theme['white']};
-  }
-
-  & > :nth-child(even):hover {
-    background-color: ${(props) =>
-      props.highlighting ? props.theme['gray2'] : props.theme['gray0']};
-  }
-
-  & > :nth-child(odd):not(:first-child):hover {
-    background-color: ${(props) =>
-      props.highlighting ? props.theme['gray2'] : props.theme['white']};
+    background-color: ${(props) => props.theme['tableCellOddBackgroundColor']};
   }
 `
 
-const Table = ({ children, highlighting }) => (
-  <BaseTable highlighting={highlighting}>{children}</BaseTable>
-)
+const Table = ({ children }) => <Wrapper>{children}</Wrapper>
 
 Table.propTypes = {
   children: PropTypes.node,
-  highlighting: PropTypes.bool,
-}
-
-Table.defaultProps = {
-  highlighting: false,
 }
 
 export default Table

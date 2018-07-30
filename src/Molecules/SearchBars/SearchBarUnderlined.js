@@ -5,14 +5,20 @@ import styled from 'styled-components'
 import { Input } from '../../Atoms/Inputs'
 import { Icon } from '../../Atoms/Icons'
 
-const BaseSearchBarUnderlined = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid ${(props) => props.theme['gray2']};
-  background-color: transparent;
+  border-bottom: 1px solid
+    ${(props) => props.theme['searchBarUnderlinedBorderColor']};
+  background-color: ${(props) =>
+    props.theme['searchBarUnderlinedBackgroundColor']};
+`
+const SearchInput = styled(Input)`
+  background-color: inherit;
+  border-color: transparent;
 `
 const IconContainer = styled.div`
   display: flex;
@@ -21,7 +27,6 @@ const IconContainer = styled.div`
   align-items: center;
   width: 60px;
   height: 40px;
-  background-color: inherit;
 `
 
 const SearchBarUnderlined = ({
@@ -31,18 +36,12 @@ const SearchBarUnderlined = ({
   handleClick,
   ...rest
 }) => (
-  <BaseSearchBarUnderlined>
-    <Input
-      backgroundColor="transparent"
-      borderColor="transparent"
-      onChange={handleChange}
-      value={value}
-      {...rest}
-    />
+  <Wrapper>
+    <SearchInput onChange={handleChange} value={value} {...rest} />
     <IconContainer>
       <Icon name="search-filled" onClick={handleClick} selectable size="20px" />
     </IconContainer>
-  </BaseSearchBarUnderlined>
+  </Wrapper>
 )
 
 SearchBarUnderlined.propTypes = {

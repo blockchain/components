@@ -19,13 +19,10 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { keysIn } from 'ramda';
-import { lighten } from 'polished';
-import theme from '../../Tools/theme';
 import IcomoonMap from './IcomoonMap';
 
-var getHoverColor = function getHoverColor(props) {
-  return props.selectable ? lighten(0.1, props.theme[props.color]) : props.theme[props.color];
+var getHoverColor = function getHoverColor(selectable, theme) {
+  return selectable ? theme['iconHoverColor'] : theme['iconColor'];
 };
 
 var BaseIcon = styled.span(_templateObject(), function (props) {
@@ -35,10 +32,12 @@ var BaseIcon = styled.span(_templateObject(), function (props) {
 }, function (props) {
   return props.size;
 }, function (props) {
-  return props.theme[props.color];
+  return props.theme['iconColor'];
 }, function (props) {
   return props.selectable ? 'pointer' : 'inherit';
-}, getHoverColor, function (props) {
+}, function (props) {
+  return getHoverColor(props.selectable, props.theme);
+}, function (props) {
   return props.code;
 });
 
@@ -54,14 +53,12 @@ var Icon = function Icon(_ref) {
 };
 
 Icon.propTypes = {
-  color: PropTypes.oneOf(keysIn(theme)),
   name: PropTypes.string.isRequired,
   selectable: PropTypes.bool,
   size: PropTypes.string,
   weight: PropTypes.oneOf([100, 200, 300, 400, 500, 600, 700, 800, 900])
 };
 Icon.defaultProps = {
-  color: 'gray5',
   name: 'bitcoin',
   selectable: false,
   size: '40px',

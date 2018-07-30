@@ -29,7 +29,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 var Wrapper = styled.div(_templateObject());
 var Bar = styled.div(_templateObject2(), function (props) {
-  return props.theme['gold'];
+  return props.theme['tabMenuBarColor'];
 }, function (props) {
   return props.visible ? '1' : '0';
 });

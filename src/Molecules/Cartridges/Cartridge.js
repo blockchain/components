@@ -1,55 +1,24 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
-
+import { merge } from 'ramda'
 import Text from '../../Atoms/Typography/Text'
 
-const BaseCartridge = styled(Text)`
+const Wrapper = styled(Text)`
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 300;
-  font-size: ${(props) => props.size};
-  text-transform: ${(props) =>
-    props.uppercase ? 'uppercase' : props.capitalize ? 'capitalize' : 'none'};
-  font-style: ${(props) => (props.italic ? 'italic' : 'normal')};
+  color: ${(props) => props.theme['cartridgeColor']};
+  background-color: ${(props) => props.theme['cartridgeBackgroundColor']};
   padding: 5px;
   box-sizing: border-box;
-  background-color: ${(props) => props.theme[props.backgroundColor]};
 `
 
-const selectStyle = (nature) => {
-  switch (nature) {
-    case 'primary':
-      return { backgroundColor: 'orient', color: 'white' }
-    case 'secondary':
-      return { backgroundColor: 'cerulean', color: 'white' }
-    default:
-      return { backgroundColor: 'orient', color: 'white' }
-  }
-}
-
-const Cartridge = ({ children, nature }) => (
-  <BaseCartridge {...selectStyle(nature)}>{children}</BaseCartridge>
+const Cartridge = ({ children, ...rest }) => (
+  <Wrapper {...rest}>{children}</Wrapper>
 )
 
-Cartridge.propTypes = {
-  children: PropTypes.any,
-  italic: PropTypes.bool,
-  nature: PropTypes.string,
-  opacity: PropTypes.number,
-  size: PropTypes.string,
-  uppercase: PropTypes.bool,
-}
-
-Cartridge.defaultProps = {
-  italic: false,
-  nature: 'primary',
-  opacity: 1,
-  size: '14px',
-  uppercase: false,
-}
-
+Cartridge.propTypes = Text.propTypes
+Cartridge.defaultProps = merge(Text.defaultProps, { weight: 300 })
 export default Cartridge

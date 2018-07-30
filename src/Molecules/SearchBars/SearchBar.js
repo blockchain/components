@@ -5,22 +5,17 @@ import styled from 'styled-components'
 import { Input } from '../../Atoms/Inputs'
 import { Icon } from '../../Atoms/Icons'
 
-const BaseSearchBar = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-
-  & > :first-child {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  & > :last-child {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-  }
+`
+const SearchInput = styled(Input)`
+  background-color: ${(props) => props.theme['searchBarInputBackgroundColor']};
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 `
 const IconContainer = styled.div`
   display: flex;
@@ -29,28 +24,25 @@ const IconContainer = styled.div`
   align-items: center;
   width: 60px;
   height: 52px;
-  background-color: ${(props) => props.theme['gold']};
+  background-color: ${(props) => props.theme['searchBarIconBackgroundColor']};
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 `
 
-const SearchBar = ({ children, borderColor, value, onClick, ...rest }) => (
-  <BaseSearchBar>
-    <Input borderColor={borderColor} value={value} {...rest} />
+const SearchBar = ({ children, value, onChange, onClick, ...rest }) => (
+  <Wrapper>
+    <SearchInput onChange={onChange} value={value} {...rest} />
     <IconContainer>
       <Icon name="search-filled" onClick={onClick} selectable size="20px" />
     </IconContainer>
-  </BaseSearchBar>
+  </Wrapper>
 )
 
 SearchBar.propTypes = {
-  borderColor: PropTypes.string,
   children: PropTypes.node,
   onChange: PropTypes.func,
   onClick: PropTypes.func,
   value: PropTypes.any,
-}
-
-SearchBar.defaultProps = {
-  borderColor: 'white',
 }
 
 export default SearchBar

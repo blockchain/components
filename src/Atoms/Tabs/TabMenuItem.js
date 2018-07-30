@@ -27,7 +27,7 @@ const Bar = styled.div`
   height: 5px;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
-  background-color: ${(props) => props.theme['gold']};
+  background-color: ${(props) => props.theme['tabMenuBarColor']};
   opacity: ${(props) => (props.visible ? '1' : '0')};
 `
 

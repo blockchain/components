@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-const BaseTextGroup = styled.div`
+const Wrapper = styled.div`
   text-align: ${(props) => props.align};
 
   & > * {
@@ -12,7 +12,7 @@ const BaseTextGroup = styled.div`
 `
 
 const TextGroup = ({ children, ...rest }) => (
-  <BaseTextGroup {...rest}>{children}</BaseTextGroup>
+  <Wrapper {...rest}>{children}</Wrapper>
 )
 
 TextGroup.propTypes = {

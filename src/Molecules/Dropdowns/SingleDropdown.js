@@ -1,24 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { keysIn } from 'ramda'
-
 import ImageMap from '../../Atoms/Images/ImageMap'
-import theme from '../../Tools/theme'
 
 const Wrapper = styled.select`
   margin-bottom: 0;
   min-width: 100px;
   box-sizing: border-box;
-  color: ${(props) => props.theme[props.color]};
-  background-color: ${(props) => props.theme[props.backgroundColor]};
+  color: ${(props) => props.theme['dropdownColor']};
+  background-color: ${(props) => props.theme['dropdownBackgroundColor']};
   background-size: 15px;
   background-repeat: no-repeat;
   background-position: 95% 0%;
   background-image: url(${ImageMap.arrowDownSolid});
   appearance: none;
   border: none;
-  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: ${(props) => props.theme['fontPrimary']};
   font-size: ${(props) => props.size};
   font-weight: ${(props) => props.weight};
   text-transform: ${(props) =>
@@ -43,9 +40,7 @@ const SingleDropdown = ({ items, ...rest }) => (
 )
 
 SingleDropdown.propTypes = {
-  backgroundColor: PropTypes.oneOf(keysIn(theme)),
   capitalize: PropTypes.bool,
-  color: PropTypes.oneOf(keysIn(theme)),
   italic: PropTypes.bool,
   items: PropTypes.arrayOf(
     PropTypes.shape({
@@ -61,9 +56,7 @@ SingleDropdown.propTypes = {
 }
 
 SingleDropdown.defaultProps = {
-  backgroundColor: 'transparent',
   capitalize: false,
-  color: 'gray6',
   italic: false,
   size: '16px',
   uppercase: false,

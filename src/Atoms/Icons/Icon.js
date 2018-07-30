@@ -1,25 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { keysIn } from 'ramda'
-import { lighten } from 'polished'
-import theme from '../../Tools/theme'
+
+import Text from './../Typography/Text'
 import IcomoonMap from './IcomoonMap'
 
-const getHoverColor = (props) =>
-  props.selectable
-    ? lighten(0.1, props.theme[props.color])
-    : props.theme[props.color]
+const getHoverColor = (selectable, theme) =>
+  selectable ? theme['iconHoverColor'] : theme['iconColor']
 
-const BaseIcon = styled.span`
-  height: ${(props) => props.size};
-  font-weight: ${(props) => props.weight};
-  font-size: ${(props) => props.size};
-  color: ${(props) => props.theme[props.color]};
+const Wrapper = styled(Text)`
+  color: ${(props) => props.theme['iconColor']};
   cursor: ${(props) => (props.selectable ? 'pointer' : 'inherit')};
 
   &:hover {
-    color: ${getHoverColor};
+    color: ${(props) => getHoverColor(props.selectable, props.theme)};
   }
 
   &::before {
@@ -28,20 +22,16 @@ const BaseIcon = styled.span`
   }
 `
 
-const Icon = ({ name, selectable, ...rest }) => (
-  <BaseIcon {...rest} code={IcomoonMap[name]} selectable={selectable} />
+const Icon = ({ name, ...rest }) => (
+  <Wrapper {...rest} code={IcomoonMap[name]} />
 )
 
 Icon.propTypes = {
-  color: PropTypes.oneOf(keysIn(theme)),
   name: PropTypes.string.isRequired,
   selectable: PropTypes.bool,
-  size: PropTypes.string,
-  weight: PropTypes.oneOf([100, 200, 300, 400, 500, 600, 700, 800, 900]),
 }
 
 Icon.defaultProps = {
-  color: 'gray5',
   name: 'bitcoin',
   selectable: false,
   size: '40px',

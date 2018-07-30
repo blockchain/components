@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import ImageMap from './ImageMap'
 
-const BaseImage = styled.img.attrs({
+const Wrapper = styled.img.attrs({
   alt: (props) => props.name,
   src: (props) => ImageMap[props.name],
 })`
@@ -14,7 +14,7 @@ const BaseImage = styled.img.attrs({
   object-fit: contain;
 `
 
-const Image = (props) => <BaseImage {...props} />
+const Image = (props) => <Wrapper {...props} />
 
 Image.propTypes = {
   height: PropTypes.string,

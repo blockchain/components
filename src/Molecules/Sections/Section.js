@@ -1,10 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { keysIn } from 'ramda'
-import theme from '../../Tools/theme'
-
-import Container from '../../Atoms/Containers/Container'
 
 const diamonds = `
   url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='30px' height='64px' viewBox='0 0 30 64' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 50.2 %2855047%29 - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3Ez%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cdefs%3E%3C/defs%3E%3Cg id='z' stroke='none' stroke-width='1' fill='none' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cg id='falling-triangles' fill='%23000000'%3E%3Cpath d='M2.33618344,1.31115035 L3.38585426,0.251418681 C3.54680276,0.0904506736 3.76523712,-1.39313792e-17 3.9930192,0 C4.22080127,1.39313792e-17 4.43923563,0.0904506736 4.60018414,0.251418681 L5.65445026,1.30657816 L6.68563026,2.33896691 L7.31588133,2.97043478 L7.74941611,3.38786984 C8.08352796,3.7243145 8.08352796,4.2690432 7.74941611,4.60548786 L6.70094584,5.65904116 L4.61429369,7.74847596 C4.27846301,8.08384135 3.73472839,8.08384135 3.39889771,7.74847596 L1.31269611,5.65996967 L0.252087421,4.6074173 C0.0906912601,4.44632753 -2.79201609e-17,4.22770147 0,3.99971948 C2.79201609e-17,3.77173748 0.0906912601,3.55311142 0.252087421,3.39202165 L1.31005348,2.33683025 L2.33618344,1.31115035 Z M24.3361834,33.3111504 L25.3858543,32.2514187 C25.5468028,32.0904507 25.7652371,32 25.9930192,32 C26.2208013,32 26.4392356,32.0904507 26.6001841,32.2514187 L27.6544503,33.3065782 L28.6856303,34.3389669 L29.3158813,34.9704348 L29.7494161,35.3878698 C30.083528,35.7243145 30.083528,36.2690432 29.7494161,36.6054879 L28.7009458,37.6590412 L26.6142937,39.748476 C26.278463,40.0838413 25.7347284,40.0838413 25.3988977,39.748476 L23.3126961,37.6599697 L22.2520874,36.6074173 C22.0906913,36.4463275 22,36.2277015 22,35.9997195 C22,35.7717375 22.0906913,35.5531114 22.2520874,35.3920217 L23.3100535,34.3368303 L24.3361834,33.3111504 Z' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -32,28 +28,23 @@ const Wrapper = styled.section`
   align-items: center;
   height: ${(props) => props.height};
   width: 100%;
-  padding: 30px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: ${(props) => props.theme[props.color]};
+  background-color: ${(props) => props.theme['sectionBackgroundColor']};
   background-image: ${(props) => selectBackgroundImage(props.nature)};
 `
 
-const Section = ({ children, color, height, nature }) => (
-  <Wrapper color={color} height={height} nature={nature}>
-    <Container>{children}</Container>
+const Section = ({ children, height, nature }) => (
+  <Wrapper height={height} nature={nature}>
+    {children}
   </Wrapper>
 )
 
 Section.propTypes = {
   children: PropTypes.node,
-  color: PropTypes.oneOf(keysIn(theme)),
   height: PropTypes.string,
   nature: PropTypes.oneOf(['none', 'diamonds', 'blocks']),
 }
 
 Section.defaultProps = {
-  color: 'white',
   height: 'auto',
   nature: 'none',
 }

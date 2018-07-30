@@ -16,12 +16,6 @@ describe('Input', () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it('should render correctly with borderColor', () => {
-    const tree = mountWithTheme(<Input borderColor="gold" />)
-
-    expect(tree).toMatchSnapshot()
-  })
-
   it('should render correctly with width', () => {
     const tree = mountWithTheme(<Input width="200px" />)
 

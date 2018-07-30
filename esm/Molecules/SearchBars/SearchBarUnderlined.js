@@ -4,8 +4,18 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  width: 60px;\n  height: 40px;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  width: 60px;\n  height: 40px;\n  background-color: inherit;\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color: inherit;\n  border-color: transparent;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -15,7 +25,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  align-items: center;\n  width: 100%;\n  border-bottom: 1px solid ", ";\n  background-color: transparent;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  align-items: center;\n  width: 100%;\n  border-bottom: 1px solid\n    ", ";\n  background-color: ", ";\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32,9 +42,12 @@ import styled from 'styled-components';
 import { Input } from '../../Atoms/Inputs';
 import { Icon } from '../../Atoms/Icons';
 var BaseSearchBarUnderlined = styled.div(_templateObject(), function (props) {
-  return props.theme['gray2'];
+  return props.theme['searchBarUnderlinedBorderColor'];
+}, function (props) {
+  return props.theme['searchBarUnderlinedBackgroundColor'];
 });
-var IconContainer = styled.div(_templateObject2());
+var SearchInput = styled(Input)(_templateObject2());
+var IconContainer = styled.div(_templateObject3());
 
 var SearchBarUnderlined = function SearchBarUnderlined(_ref) {
   var children = _ref.children,
@@ -43,9 +56,7 @@ var SearchBarUnderlined = function SearchBarUnderlined(_ref) {
       handleClick = _ref.handleClick,
       rest = _objectWithoutProperties(_ref, ["children", "value", "handleChange", "handleClick"]);
 
-  return React.createElement(BaseSearchBarUnderlined, null, React.createElement(Input, _extends({
-    backgroundColor: "transparent",
-    borderColor: "transparent",
+  return React.createElement(BaseSearchBarUnderlined, null, React.createElement(SearchInput, _extends({
     onChange: handleChange,
     value: value
   }, rest)), React.createElement(IconContainer, null, React.createElement(Icon, {
