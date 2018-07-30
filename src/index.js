@@ -1,6 +1,7 @@
 export {
   Background,
   Button,
+  Container,
   Icon,
   Image,
   Input,
