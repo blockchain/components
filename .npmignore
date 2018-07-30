@@ -1,4 +1,7 @@
 # Ignore unused code
+.storybook
+.vscode
+coverage
 node_modules
 src
 utils
