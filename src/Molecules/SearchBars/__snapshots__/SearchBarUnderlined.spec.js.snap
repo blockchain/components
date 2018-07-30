@@ -586,27 +586,22 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
       <div
         className="c0"
       >
-        <Styled(Input)
-          onClick={[MockFunction]}
-        >
+        <Styled(Input)>
           <Input
             className="c1"
             disabled={false}
-            onClick={[MockFunction]}
             type="text"
             width="100%"
           >
             <styled.input
               className="c1"
               disabled={false}
-              onClick={[MockFunction]}
               type="text"
               width="100%"
             >
               <input
                 className="c1 c2"
                 disabled={false}
-                onClick={[MockFunction]}
                 type="text"
                 width="100%"
               />
@@ -619,12 +614,14 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
           >
             <Icon
               name="search-filled"
+              onClick={[MockFunction]}
               selectable={true}
               size="20px"
               weight={400}
             >
               <Styled(Text)
                 code="\\\\e92d"
+                onClick={[MockFunction]}
                 selectable={true}
                 size="20px"
                 weight={400}
@@ -634,6 +631,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
                   className="c4"
                   code="\\\\e92d"
                   italic={false}
+                  onClick={[MockFunction]}
                   opacity={1}
                   selectable={true}
                   size="20px"
@@ -645,6 +643,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
                     className="c4"
                     code="\\\\e92d"
                     italic={false}
+                    onClick={[MockFunction]}
                     opacity={1}
                     selectable={true}
                     size="20px"
@@ -653,6 +652,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
                   >
                     <span
                       className="c4 c5"
+                      onClick={[MockFunction]}
                       opacity={1}
                       size="20px"
                     />

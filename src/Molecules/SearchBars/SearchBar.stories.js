@@ -8,8 +8,6 @@ storiesOf('Molecules/SearchBars/SearchBar', module)
   .add('default', () => <SearchBar />)
   .add('with value', () => <SearchBar value="My search" />)
   .add('with handleChange', () => (
-    <SearchBar handleChange={action('text-change')} />
+    <SearchBar onChange={action('text-change')} />
   ))
-  .add('with handleClick', () => (
-    <SearchBar handleClick={action('icon-click')} />
-  ))
+  .add('with handleClick', () => <SearchBar onClick={action('icon-click')} />)

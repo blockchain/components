@@ -220,7 +220,7 @@ exports[`SearchBar should render correctly 1`] = `
 </ThemeProvider>
 `;
 
-exports[`SearchBar should render correctly with handleChange 1`] = `
+exports[`SearchBar should render correctly with onChange 1`] = `
 .c2 {
   display: block;
   width: 100%;
@@ -359,32 +359,33 @@ exports[`SearchBar should render correctly with handleChange 1`] = `
   }
 >
   <SearchBar
-    handleChange={[MockFunction]}
+    onChange={[MockFunction]}
   >
     <styled.div>
       <div
         className="c0"
       >
         <Styled(Input)
-          handleChange={[MockFunction]}
+          onChange={[MockFunction]}
         >
           <Input
             className="c1"
             disabled={false}
-            handleChange={[MockFunction]}
+            onChange={[MockFunction]}
             type="text"
             width="100%"
           >
             <styled.input
               className="c1"
               disabled={false}
-              handleChange={[MockFunction]}
+              onChange={[MockFunction]}
               type="text"
               width="100%"
             >
               <input
                 className="c1 c2"
                 disabled={false}
+                onChange={[MockFunction]}
                 type="text"
                 width="100%"
               />

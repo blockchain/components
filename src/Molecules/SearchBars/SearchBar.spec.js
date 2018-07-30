@@ -19,8 +19,8 @@ describe('SearchBar', () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it('should render correctly with handleChange', () => {
-    const tree = mountWithTheme(<SearchBar handleChange={jest.fn()} />)
+  it('should render correctly with onChange', () => {
+    const tree = mountWithTheme(<SearchBar onChange={jest.fn()} />)
 
     expect(tree).toMatchSnapshot()
   })

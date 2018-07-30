@@ -31,23 +31,23 @@ const IconContainer = styled.div`
 
 const SearchBarUnderlined = ({
   children,
+  onChange,
+  onClick,
   value,
-  handleChange,
-  handleClick,
   ...rest
 }) => (
   <Wrapper>
-    <SearchInput onChange={handleChange} value={value} {...rest} />
+    <SearchInput onChange={onChange} value={value} {...rest} />
     <IconContainer>
-      <Icon name="search-filled" onClick={handleClick} selectable size="20px" />
+      <Icon name="search-filled" onClick={onClick} selectable size="20px" />
     </IconContainer>
   </Wrapper>
 )
 
 SearchBarUnderlined.propTypes = {
   children: PropTypes.node,
-  handleChange: PropTypes.func,
-  handleClick: PropTypes.func,
+  onChange: PropTypes.func,
+  onClick: PropTypes.func,
   value: PropTypes.any,
 }
 
