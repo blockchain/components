@@ -1,5 +1,6 @@
 const { execSync } = require('child_process')
 const path = require('path')
+const fs = require('fs')
 
 const babel = path
   .resolve(__dirname, '../node_modules/.bin/babel')
@@ -22,4 +23,9 @@ const ignoreGlobs = [
 const baseCmd = `${babel} src/ --config-file ${babelrc} -D --ignore "${ignoreGlobs}"`
 
 exec(`${baseCmd} -d lib/ --plugins @babel/plugin-transform-modules-commonjs`)
+
+fs.createReadStream('utils/fontMock.js').pipe(
+  fs.createWriteStream('lib/Atoms/Fonts/index.js'),
+)
+
 exec(`${baseCmd} -d esm/`)
