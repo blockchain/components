@@ -18,7 +18,8 @@
     "lint:js": "eslint 'src/**/*.js' --max-warnings=0",
     "lint:js:fix": "eslint 'src/**/*.js' --fix",
     "prettier:fix": "prettier --write 'src/**/*.js'",
-    "changelog": "git-changelog -t"
+    "changelog": "git-changelog -t",
+    "pre-publish": "node utils/build.js"
   },
   "author": "Blockchain",
   "license": "AGPLv3",
