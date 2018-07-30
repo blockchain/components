@@ -13,7 +13,8 @@ const Wrapper = styled.button.attrs({
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 40px;
+  padding: 10px 30px;
+  box-sizing: border-box;
   font-size: 18px;
   color: ${(props) => props.theme['buttonColor']};
   background-color: ${(props) => props.theme['buttonBackgroundColor']};

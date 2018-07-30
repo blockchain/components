@@ -6,6 +6,7 @@ export {
   Input,
   Link,
   Panel,
+  Section,
   Table,
   TableCell,
   TableHeader,
@@ -21,7 +22,6 @@ export {
   Cartridge,
   SearchBar,
   SearchBarUnderlined,
-  Section,
   SingleDropdown,
 } from './Molecules'
 
