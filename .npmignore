@@ -1,5 +1,9 @@
 # Ignore unused code
 node_modules
+src
+utils
+package-lock.json
+yarn.lock
 
 # Github
 CHANGELOG.md

@@ -1,6 +1,6 @@
 {
   "name": "blockchain-info-components",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Blockchain.com components library",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -31,8 +31,8 @@
     "@babel/preset-env": "7.0.0-beta.53",
     "@babel/preset-react": "7.0.0-beta.53",
     "@babel/preset-stage-0": "7.0.0-beta.53",
-    "@commitlint/cli": "^7.0.0",
-    "@commitlint/config-conventional": "^7.0.1",
+    "@commitlint/cli": "7.0.0",
+    "@commitlint/config-conventional": "7.0.1",
     "@storybook/addon-actions": "3.4.8",
     "@storybook/addon-backgrounds": "3.4.8",
     "@storybook/addon-info": "3.4.8",
