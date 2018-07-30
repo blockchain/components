@@ -19,7 +19,8 @@
     "lint:js:fix": "eslint 'src/**/*.js' --fix",
     "prettier:fix": "prettier --write 'src/**/*.js'",
     "changelog": "git-changelog -t",
-    "prepublish": "npm version"
+    "preversion": "./utils/preversion.sh",
+    "postversion": "./utils/postversion.sh"
   },
   "author": "Blockchain",
   "license": "AGPLv3",
