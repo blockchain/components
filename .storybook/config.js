@@ -3,7 +3,7 @@ import { configure, addDecorator } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import withBackgrounds from '@storybook/addon-backgrounds'
 import { keysIn } from 'ramda'
-import { theme, ThemeProvider } from '../src'
+import { palette, ThemeProvider } from '../src'
 
 const req = require.context('../src', true, /stories\.js$/)
 
@@ -15,7 +15,7 @@ addDecorator((story, context) =>
   })(story)(context),
 )
 
-const colors = keysIn(theme).map((x) => ({ name: x, value: theme[x] }))
+const colors = keysIn(palette).map((x) => ({ name: x, value: palette[x] }))
 
 addDecorator(withBackgrounds(colors))
 

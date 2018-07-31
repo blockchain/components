@@ -2,6 +2,7 @@ import palette from './palette'
 import { lighten } from 'polished'
 /* eslint-disable sort-keys */
 export default {
+  palette,
   fontPrimary: "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
   buttonColor: palette['white'],
   buttonBackgroundColor: palette['orient'],
