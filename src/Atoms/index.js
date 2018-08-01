@@ -1,5 +1,3 @@
-import './Fonts'
-
 export { Button } from './Buttons'
 export { Container, Panel, Section } from './Containers'
 export { Icon } from './Icons'

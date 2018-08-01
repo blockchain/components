@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
 import { keysIn } from 'ramda'
-import IcomoonMap from './IcomoonMap'
+import IconMap from './IconMap'
 import Icon from './Icon'
 
 const Layout = styled.div`
@@ -41,9 +41,8 @@ const renderIcon = (name) => (
 )
 
 storiesOf('Atoms/Icons/Icon', module)
-  .add('list', () => <Layout>{keysIn(IcomoonMap).map(renderIcon)}</Layout>)
+  .add('list', () => <Layout>{keysIn(IconMap).map(renderIcon)}</Layout>)
   .add('default', () => <Icon />)
-  .add('with name', () => <Icon name="alert-filled" />)
-  .add('with size', () => <Icon size="72px" />)
-  .add('with weight', () => <Icon weight={700} />)
+  .add('with name', () => <Icon name="alertFilled" />)
+  .add('with size', () => <Icon size="100px" />)
   .add('with selectable', () => <Icon selectable />)

@@ -22,12 +22,6 @@ describe('Icon theme={theme}', () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it('should render correctly with uppercase', () => {
-    const tree = mountWithTheme(<Icon weight={400} />)
-
-    expect(tree).toMatchSnapshot()
-  })
-
   it('should render correctly with selectable', () => {
     const tree = mountWithTheme(<Icon selectable />)
 

@@ -24,8 +24,8 @@ const baseCmd = `${babel} src/ --config-file ${babelrc} -D --ignore "${ignoreGlo
 
 exec(`${baseCmd} -d lib/ --plugins @babel/plugin-transform-modules-commonjs`)
 
-fs.createReadStream('utils/fontMock.js').pipe(
-  fs.createWriteStream('lib/Atoms/Fonts/index.js'),
-)
+// fs.createReadStream('utils/fontMock.js').pipe(
+//   fs.createWriteStream('lib/Atoms/Fonts/index.js'),
+// )
 
 exec(`${baseCmd} -d esm/`)

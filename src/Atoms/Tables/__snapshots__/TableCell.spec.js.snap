@@ -71,7 +71,7 @@ exports[`TableCell should render correctly 1`] = `
       "searchBarInputBackgroundColor": "#FFF",
       "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
       "searchBarUnderlinedBorderColor": "#CCC",
-      "sectionBackgroundColor": "#004A7C",
+      "sectionBackgroundColor": "rgba(0, 0, 0, 0)",
       "tabMenuBarColor": "#FFCA00",
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
