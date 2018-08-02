@@ -1,6 +1,7 @@
 export {
   Background,
   Button,
+  ButtonGroup,
   Container,
   Icon,
   Image,
