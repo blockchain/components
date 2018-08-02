@@ -1,7 +1,7 @@
 {
   "presets": [
     [
-      "@babel/preset-env",
+      "@babel/env",
       {
         "modules": false,
         "targets": {
@@ -13,31 +13,19 @@
         }
       }
     ],
-    "@babel/preset-react",
-    [
-      "@babel/stage-1",
-      {
-        "decoratorsLegacy": true,
-        "pipelineProposal": "minimal"
-      }
-    ]
+    "@babel/react",
   ],
   "env": {
     "test": {
       "presets": [
-        "@babel/preset-env",
-        "@babel/preset-react",
-        [
-          "@babel/stage-1",
-          {
-            "decoratorsLegacy": true,
-            "pipelineProposal": "minimal"
-          }
-        ]
+        "@babel/env",
+        "@babel/react",
       ]
     }
   },
   "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-export-namespace-from",
     [
       "inline-import-data-uri",
       {
