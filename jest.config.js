@@ -45,6 +45,7 @@ module.exports = {
   setupTestFrameworkScriptFile: testFramework,
   snapshotSerializers: [require.resolve('enzyme-to-json/serializer')],
   testPathIgnorePatterns: ['/node_modules/', '.*.ignore.spec.*'],
+  testURL: 'http://localhost/',
   transform: {
     [getTransformString(codeExt)]: 'babel-jest',
     [getTransformString(assetExt)]: preprocessMock,
