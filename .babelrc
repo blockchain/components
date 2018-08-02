@@ -45,6 +45,12 @@
           ".svg"
         ]
       }
+    ],
+    [
+      "inline-react-svg",
+      {
+        "ignorePattern": ".\/img\/(.*)"
+      }
     ]
   ]
 }

@@ -30,7 +30,7 @@ const Wrapper = styled.input.attrs({
   }
 `
 
-const Input = (props) => <Wrapper {...{ ...props, ...props.input }} />
+const Input = ({ input, ...rest }) => <Wrapper {...input} {...rest} />
 
 Input.propTypes = {
   disabled: PropTypes.bool,

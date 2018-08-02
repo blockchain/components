@@ -1,41 +1,44 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import IconMap from './IconMap'
 
-import Text from './../Typography/Text'
-import IcomoonMap from './IcomoonMap'
+const getHoverColor = (props) =>
+  props.selectable ? 'iconHoverColor' : 'iconColor'
 
-const getHoverColor = (selectable, theme) =>
-  selectable ? theme['iconHoverColor'] : theme['iconColor']
+const Wrapper = styled.div`
+  & > svg {
+    fill: ${(props) => props.theme['iconColor']};
+    width: ${(props) => props.size};
+    height: ${(props) => props.size};
+    cursor: ${(props) => (props.selectable ? 'pointer' : 'default')};
 
-const Wrapper = styled(Text)`
-  color: ${(props) => props.theme['iconColor']};
-  cursor: ${(props) => (props.selectable ? 'pointer' : 'inherit')};
-
-  &:hover {
-    color: ${(props) => getHoverColor(props.selectable, props.theme)};
-  }
-
-  &::before {
-    font-family: 'icomoon';
-    content: '${(props) => props.code}';
+    &:hover {
+      fill: ${(props) => props.theme[getHoverColor(props)]};
+    }
   }
 `
 
-const Icon = ({ name, ...rest }) => (
-  <Wrapper {...rest} code={IcomoonMap[name]} />
-)
+const Icon = ({ name, ...rest }) => {
+  const Svg = IconMap[name]
+
+  return (
+    <Wrapper {...rest}>
+      <Svg />
+    </Wrapper>
+  )
+}
 
 Icon.propTypes = {
   name: PropTypes.string.isRequired,
   selectable: PropTypes.bool,
+  size: PropTypes.string,
 }
 
 Icon.defaultProps = {
   name: 'bitcoin',
   selectable: false,
   size: '40px',
-  weight: 400,
 }
 
 export default Icon

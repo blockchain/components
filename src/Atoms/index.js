@@ -1,6 +1,4 @@
-import './Fonts'
-
-export { Button } from './Buttons'
+export { Button, ButtonGroup } from './Buttons'
 export { Container, Panel, Section } from './Containers'
 export { Icon } from './Icons'
 export { Background, Image } from './Images'

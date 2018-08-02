@@ -11,7 +11,6 @@ The commands are given using `npm` however you can use the `yarn` equivalent and
 
 ## Installation
 1. Just a quick `npm i blockchain-info-components` and you are good to go!
-2. Use your favourite bundler to import the fonts (.woff files)
 
 ## Hacking
 1. Ensure Node version >= 8.0 is installed
@@ -28,16 +27,6 @@ Browsers with > 1% usage:
 * IE 11
 * Safari 11+
 * Chrome / Edge / Firefox latest 2 major versions
-
-## Release
-To create a new release, just run `npm version patch|minor|major`
-
-Please make sure that you are on `master` with a clean `git status` first
-
-Once the versioning pull request is merged, you can generate the changelog using:
-`git-changelog -t @LAST-VERSION-HERE@`
-
-`git-changelog` can be installed with the following: `npm i -g git-changelog`
 
 ## Code Quality
 ### Linting

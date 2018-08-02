@@ -33,7 +33,7 @@ const SearchBar = ({ children, value, onChange, onClick, ...rest }) => (
   <Wrapper>
     <SearchInput onChange={onChange} value={value} {...rest} />
     <IconContainer>
-      <Icon name="search-filled" onClick={onClick} selectable size="20px" />
+      <Icon name="searchFilled" onClick={onClick} selectable size="20px" />
     </IconContainer>
   </Wrapper>
 )

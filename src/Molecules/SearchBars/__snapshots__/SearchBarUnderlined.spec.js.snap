@@ -29,28 +29,15 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
   cursor: not-allowed;
 }
 
-.c5 {
-  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  text-transform: none;
-  font-style: normal;
-  color: #545456;
-  opacity: 1;
-}
-
-.c4 {
-  color: #545456;
+.c4 > svg {
+  fill: #545456;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 }
 
-.c4:hover {
-  color: #757679;
-}
-
-.c4::before {
-  font-family: 'icomoon';
-  content: '\\e92d';
+.c4 > svg:hover {
+  fill: #757679;
 }
 
 .c0 {
@@ -150,7 +137,7 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
       "searchBarInputBackgroundColor": "#FFF",
       "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
       "searchBarUnderlinedBorderColor": "#CCC",
-      "sectionBackgroundColor": "#004A7C",
+      "sectionBackgroundColor": "rgba(0, 0, 0, 0)",
       "tabMenuBarColor": "#FFCA00",
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
@@ -193,47 +180,40 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
             className="c3"
           >
             <Icon
-              name="search-filled"
+              name="searchFilled"
               selectable={true}
               size="20px"
-              weight={400}
             >
-              <Styled(Text)
-                code="\\\\e92d"
+              <styled.div
                 selectable={true}
                 size="20px"
-                weight={400}
               >
-                <Text
-                  capitalize={false}
+                <div
                   className="c4"
-                  code="\\\\e92d"
-                  italic={false}
-                  opacity={1}
-                  selectable={true}
                   size="20px"
-                  uppercase={false}
-                  weight={400}
                 >
-                  <styled.span
-                    capitalize={false}
-                    className="c4"
-                    code="\\\\e92d"
-                    italic={false}
-                    opacity={1}
-                    selectable={true}
-                    size="20px"
-                    uppercase={false}
-                    weight={400}
+                  <searchFilled
+                    height="32"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <span
-                      className="c4 c5"
-                      opacity={1}
-                      size="20px"
-                    />
-                  </styled.span>
-                </Text>
-              </Styled(Text)>
+                    <svg
+                      height="32"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        search-filled
+                      </title>
+                      <path
+                        d="M14.856.104a12.34 12.34 0 0 0-1.559-.095c-7.069 0-12.8 5.731-12.8 12.8s5.731 12.8 12.8 12.8c2.513 0 4.858-.724 6.835-1.976l-.052.031 7.672 7.672c.41.409.975.662 1.6.662s1.19-.253 1.6-.662c.409-.41.662-.975.662-1.6s-.253-1.19-.662-1.6l-7.544-7.528a12.659 12.659 0 0 0 2.648-7.777c0-.55-.035-1.091-.102-1.623l.007.063C25.213 5.45 20.669.884 14.923.11l-.066-.007zm-1.64 2.92c5.421 0 9.816 4.395 9.816 9.816s-4.395 9.816-9.816 9.816c-5.421 0-9.816-4.395-9.816-9.816v-.042.002c.014-5.402 4.396-9.776 9.8-9.776h.017-.001z"
+                      />
+                    </svg>
+                  </searchFilled>
+                </div>
+              </styled.div>
             </Icon>
           </div>
         </styled.div>
@@ -272,28 +252,15 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
   cursor: not-allowed;
 }
 
-.c5 {
-  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  text-transform: none;
-  font-style: normal;
-  color: #545456;
-  opacity: 1;
-}
-
-.c4 {
-  color: #545456;
+.c4 > svg {
+  fill: #545456;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 }
 
-.c4:hover {
-  color: #757679;
-}
-
-.c4::before {
-  font-family: 'icomoon';
-  content: '\\e92d';
+.c4 > svg:hover {
+  fill: #757679;
 }
 
 .c0 {
@@ -393,7 +360,7 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
       "searchBarInputBackgroundColor": "#FFF",
       "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
       "searchBarUnderlinedBorderColor": "#CCC",
-      "sectionBackgroundColor": "#004A7C",
+      "sectionBackgroundColor": "rgba(0, 0, 0, 0)",
       "tabMenuBarColor": "#FFCA00",
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
@@ -443,47 +410,40 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
             className="c3"
           >
             <Icon
-              name="search-filled"
+              name="searchFilled"
               selectable={true}
               size="20px"
-              weight={400}
             >
-              <Styled(Text)
-                code="\\\\e92d"
+              <styled.div
                 selectable={true}
                 size="20px"
-                weight={400}
               >
-                <Text
-                  capitalize={false}
+                <div
                   className="c4"
-                  code="\\\\e92d"
-                  italic={false}
-                  opacity={1}
-                  selectable={true}
                   size="20px"
-                  uppercase={false}
-                  weight={400}
                 >
-                  <styled.span
-                    capitalize={false}
-                    className="c4"
-                    code="\\\\e92d"
-                    italic={false}
-                    opacity={1}
-                    selectable={true}
-                    size="20px"
-                    uppercase={false}
-                    weight={400}
+                  <searchFilled
+                    height="32"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <span
-                      className="c4 c5"
-                      opacity={1}
-                      size="20px"
-                    />
-                  </styled.span>
-                </Text>
-              </Styled(Text)>
+                    <svg
+                      height="32"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        search-filled
+                      </title>
+                      <path
+                        d="M14.856.104a12.34 12.34 0 0 0-1.559-.095c-7.069 0-12.8 5.731-12.8 12.8s5.731 12.8 12.8 12.8c2.513 0 4.858-.724 6.835-1.976l-.052.031 7.672 7.672c.41.409.975.662 1.6.662s1.19-.253 1.6-.662c.409-.41.662-.975.662-1.6s-.253-1.19-.662-1.6l-7.544-7.528a12.659 12.659 0 0 0 2.648-7.777c0-.55-.035-1.091-.102-1.623l.007.063C25.213 5.45 20.669.884 14.923.11l-.066-.007zm-1.64 2.92c5.421 0 9.816 4.395 9.816 9.816s-4.395 9.816-9.816 9.816c-5.421 0-9.816-4.395-9.816-9.816v-.042.002c.014-5.402 4.396-9.776 9.8-9.776h.017-.001z"
+                      />
+                    </svg>
+                  </searchFilled>
+                </div>
+              </styled.div>
             </Icon>
           </div>
         </styled.div>
@@ -522,28 +482,15 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
   cursor: not-allowed;
 }
 
-.c5 {
-  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  text-transform: none;
-  font-style: normal;
-  color: #545456;
-  opacity: 1;
-}
-
-.c4 {
-  color: #545456;
+.c4 > svg {
+  fill: #545456;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 }
 
-.c4:hover {
-  color: #757679;
-}
-
-.c4::before {
-  font-family: 'icomoon';
-  content: '\\e92d';
+.c4 > svg:hover {
+  fill: #757679;
 }
 
 .c0 {
@@ -643,7 +590,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
       "searchBarInputBackgroundColor": "#FFF",
       "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
       "searchBarUnderlinedBorderColor": "#CCC",
-      "sectionBackgroundColor": "#004A7C",
+      "sectionBackgroundColor": "rgba(0, 0, 0, 0)",
       "tabMenuBarColor": "#FFCA00",
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
@@ -688,52 +635,43 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
             className="c3"
           >
             <Icon
-              name="search-filled"
+              name="searchFilled"
               onClick={[MockFunction]}
               selectable={true}
               size="20px"
-              weight={400}
             >
-              <Styled(Text)
-                code="\\\\e92d"
+              <styled.div
                 onClick={[MockFunction]}
                 selectable={true}
                 size="20px"
-                weight={400}
               >
-                <Text
-                  capitalize={false}
+                <div
                   className="c4"
-                  code="\\\\e92d"
-                  italic={false}
                   onClick={[MockFunction]}
-                  opacity={1}
-                  selectable={true}
                   size="20px"
-                  uppercase={false}
-                  weight={400}
                 >
-                  <styled.span
-                    capitalize={false}
-                    className="c4"
-                    code="\\\\e92d"
-                    italic={false}
-                    onClick={[MockFunction]}
-                    opacity={1}
-                    selectable={true}
-                    size="20px"
-                    uppercase={false}
-                    weight={400}
+                  <searchFilled
+                    height="32"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <span
-                      className="c4 c5"
-                      onClick={[MockFunction]}
-                      opacity={1}
-                      size="20px"
-                    />
-                  </styled.span>
-                </Text>
-              </Styled(Text)>
+                    <svg
+                      height="32"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        search-filled
+                      </title>
+                      <path
+                        d="M14.856.104a12.34 12.34 0 0 0-1.559-.095c-7.069 0-12.8 5.731-12.8 12.8s5.731 12.8 12.8 12.8c2.513 0 4.858-.724 6.835-1.976l-.052.031 7.672 7.672c.41.409.975.662 1.6.662s1.19-.253 1.6-.662c.409-.41.662-.975.662-1.6s-.253-1.19-.662-1.6l-7.544-7.528a12.659 12.659 0 0 0 2.648-7.777c0-.55-.035-1.091-.102-1.623l.007.063C25.213 5.45 20.669.884 14.923.11l-.066-.007zm-1.64 2.92c5.421 0 9.816 4.395 9.816 9.816s-4.395 9.816-9.816 9.816c-5.421 0-9.816-4.395-9.816-9.816v-.042.002c.014-5.402 4.396-9.776 9.8-9.776h.017-.001z"
+                      />
+                    </svg>
+                  </searchFilled>
+                </div>
+              </styled.div>
             </Icon>
           </div>
         </styled.div>
@@ -772,28 +710,15 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
   cursor: not-allowed;
 }
 
-.c5 {
-  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  text-transform: none;
-  font-style: normal;
-  color: #545456;
-  opacity: 1;
-}
-
-.c4 {
-  color: #545456;
+.c4 > svg {
+  fill: #545456;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 }
 
-.c4:hover {
-  color: #757679;
-}
-
-.c4::before {
-  font-family: 'icomoon';
-  content: '\\e92d';
+.c4 > svg:hover {
+  fill: #757679;
 }
 
 .c0 {
@@ -893,7 +818,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
       "searchBarInputBackgroundColor": "#FFF",
       "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
       "searchBarUnderlinedBorderColor": "#CCC",
-      "sectionBackgroundColor": "#004A7C",
+      "sectionBackgroundColor": "rgba(0, 0, 0, 0)",
       "tabMenuBarColor": "#FFCA00",
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
@@ -948,47 +873,40 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
             className="c3"
           >
             <Icon
-              name="search-filled"
+              name="searchFilled"
               selectable={true}
               size="20px"
-              weight={400}
             >
-              <Styled(Text)
-                code="\\\\e92d"
+              <styled.div
                 selectable={true}
                 size="20px"
-                weight={400}
               >
-                <Text
-                  capitalize={false}
+                <div
                   className="c4"
-                  code="\\\\e92d"
-                  italic={false}
-                  opacity={1}
-                  selectable={true}
                   size="20px"
-                  uppercase={false}
-                  weight={400}
                 >
-                  <styled.span
-                    capitalize={false}
-                    className="c4"
-                    code="\\\\e92d"
-                    italic={false}
-                    opacity={1}
-                    selectable={true}
-                    size="20px"
-                    uppercase={false}
-                    weight={400}
+                  <searchFilled
+                    height="32"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <span
-                      className="c4 c5"
-                      opacity={1}
-                      size="20px"
-                    />
-                  </styled.span>
-                </Text>
-              </Styled(Text)>
+                    <svg
+                      height="32"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        search-filled
+                      </title>
+                      <path
+                        d="M14.856.104a12.34 12.34 0 0 0-1.559-.095c-7.069 0-12.8 5.731-12.8 12.8s5.731 12.8 12.8 12.8c2.513 0 4.858-.724 6.835-1.976l-.052.031 7.672 7.672c.41.409.975.662 1.6.662s1.19-.253 1.6-.662c.409-.41.662-.975.662-1.6s-.253-1.19-.662-1.6l-7.544-7.528a12.659 12.659 0 0 0 2.648-7.777c0-.55-.035-1.091-.102-1.623l.007.063C25.213 5.45 20.669.884 14.923.11l-.066-.007zm-1.64 2.92c5.421 0 9.816 4.395 9.816 9.816s-4.395 9.816-9.816 9.816c-5.421 0-9.816-4.395-9.816-9.816v-.042.002c.014-5.402 4.396-9.776 9.8-9.776h.017-.001z"
+                      />
+                    </svg>
+                  </searchFilled>
+                </div>
+              </styled.div>
             </Icon>
           </div>
         </styled.div>

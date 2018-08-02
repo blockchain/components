@@ -26,7 +26,7 @@ export default {
   searchBarIconBackgroundColor: palette['gold'],
   searchBarUnderlinedBackgroundColor: palette['transparent'],
   searchBarUnderlinedBorderColor: palette['gray2'],
-  sectionBackgroundColor: palette['orient'],
+  sectionBackgroundColor: palette['transparent'],
   tableShadowColor: palette['gray1'],
   tableHeaderColor: palette['gray3'],
   tableCellEvenBackgroundColor: palette['gray0'],
