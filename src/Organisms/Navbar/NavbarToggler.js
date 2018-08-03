@@ -9,6 +9,10 @@ const Toggler = styled(Icon).attrs({ selectable: true, size: '20px' })`
 
   & > svg {
     fill: ${(props) => props.theme['navbarTogglerColor']};
+
+    &:hover {
+      fill: ${(props) => props.theme['navbarTogglerColor']};
+    }
   }
 
   @media (min-width: 768px) {

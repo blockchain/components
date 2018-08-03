@@ -47,7 +47,7 @@ const Container = styled.div`
     }
 
     &::after {
-      border-color: rgba(136, 183, 213, 0);
+      border-color: transparent;
       border-bottom-color: ${(props) =>
         props.theme['navbarDropdownContentBackgroundColor']};
       border-width: 10px;
@@ -55,7 +55,7 @@ const Container = styled.div`
     }
 
     &::before {
-      border-color: rgba(194, 225, 245, 0);
+      border-color: transparent;
       border-bottom-color: ${(props) =>
         props.theme['navbarDropdownContentBackgroundColor']};
       border-width: 12px;

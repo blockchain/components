@@ -54,14 +54,14 @@ exports[`NavbarDropdownContent should render correctly 1`] = `
   }
 
   .c1::after {
-    border-color: rgba(136,183,213,0);
+    border-color: transparent;
     border-bottom-color: #FFF;
     border-width: 10px;
     margin-left: -10px;
   }
 
   .c1::before {
-    border-color: rgba(194,225,245,0);
+    border-color: transparent;
     border-bottom-color: #FFF;
     border-width: 12px;
     margin-left: -12px;

@@ -21,6 +21,10 @@ exports[`NavbarToggler should render correctly 1`] = `
   fill: #FFF;
 }
 
+.c0 > svg:hover {
+  fill: #FFF;
+}
+
 @media (min-width:768px) {
   .c0 {
     display: none;
@@ -166,6 +170,10 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
 }
 
 .c0 > svg {
+  fill: #FFF;
+}
+
+.c0 > svg:hover {
   fill: #FFF;
 }
 
