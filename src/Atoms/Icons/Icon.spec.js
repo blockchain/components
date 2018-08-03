@@ -3,7 +3,7 @@ import { mountWithTheme } from '../../Utils/testHelper'
 
 import Icon from './Icon'
 
-describe('Icon theme={theme}', () => {
+describe('Icon', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<Icon />)
 
