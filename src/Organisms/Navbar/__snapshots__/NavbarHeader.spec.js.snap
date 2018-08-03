@@ -1,25 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TableRow should render correctly 1`] = `
+exports[`NavbarHeader should render correctly 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  padding: 30px 30px;
-  box-sizing: border-box;
+  z-index: 15;
+  margin-right: 25px;
 }
 
 <ThemeProvider
@@ -89,14 +73,12 @@ exports[`TableRow should render correctly 1`] = `
     }
   }
 >
-  <TableRow>
+  <NavbarHeader>
     <styled.div>
       <div
         className="c0"
-      >
-        MyTableRow
-      </div>
+      />
     </styled.div>
-  </TableRow>
+  </NavbarHeader>
 </ThemeProvider>
 `;

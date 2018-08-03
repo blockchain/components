@@ -44,6 +44,11 @@ exports[`TableHeader should render correctly 1`] = `
       "inputColor": "#545456",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
+      "navbarDropdownContentBackgroundColor": "#FFF",
+      "navbarDropdownContentShadowColor": "#545456",
+      "navbarDropdownHeaderColor": "#FFF",
+      "navbarMenuBagroundColor": "#004A7C",
+      "navbarTogglerColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",

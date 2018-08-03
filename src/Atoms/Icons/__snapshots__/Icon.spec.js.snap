@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Icon theme={theme} should render correctly 1`] = `
+exports[`Icon should render correctly 1`] = `
 .c0 > svg {
   fill: #545456;
   width: 40px;
@@ -32,6 +32,11 @@ exports[`Icon theme={theme} should render correctly 1`] = `
       "inputColor": "#545456",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
+      "navbarDropdownContentBackgroundColor": "#FFF",
+      "navbarDropdownContentShadowColor": "#545456",
+      "navbarDropdownHeaderColor": "#FFF",
+      "navbarMenuBagroundColor": "#004A7C",
+      "navbarTogglerColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -113,7 +118,7 @@ exports[`Icon theme={theme} should render correctly 1`] = `
 </ThemeProvider>
 `;
 
-exports[`Icon theme={theme} should render correctly with name 1`] = `
+exports[`Icon should render correctly with name 1`] = `
 .c0 > svg {
   fill: #545456;
   width: 40px;
@@ -145,6 +150,11 @@ exports[`Icon theme={theme} should render correctly with name 1`] = `
       "inputColor": "#545456",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
+      "navbarDropdownContentBackgroundColor": "#FFF",
+      "navbarDropdownContentShadowColor": "#545456",
+      "navbarDropdownHeaderColor": "#FFF",
+      "navbarMenuBagroundColor": "#004A7C",
+      "navbarTogglerColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -226,7 +236,7 @@ exports[`Icon theme={theme} should render correctly with name 1`] = `
 </ThemeProvider>
 `;
 
-exports[`Icon theme={theme} should render correctly with selectable 1`] = `
+exports[`Icon should render correctly with selectable 1`] = `
 .c0 > svg {
   fill: #545456;
   width: 40px;
@@ -258,6 +268,11 @@ exports[`Icon theme={theme} should render correctly with selectable 1`] = `
       "inputColor": "#545456",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
+      "navbarDropdownContentBackgroundColor": "#FFF",
+      "navbarDropdownContentShadowColor": "#545456",
+      "navbarDropdownHeaderColor": "#FFF",
+      "navbarMenuBagroundColor": "#004A7C",
+      "navbarTogglerColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -339,7 +354,7 @@ exports[`Icon theme={theme} should render correctly with selectable 1`] = `
 </ThemeProvider>
 `;
 
-exports[`Icon theme={theme} should render correctly with size 1`] = `
+exports[`Icon should render correctly with size 1`] = `
 .c0 > svg {
   fill: #545456;
   width: 72px;
@@ -371,6 +386,11 @@ exports[`Icon theme={theme} should render correctly with size 1`] = `
       "inputColor": "#545456",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
+      "navbarDropdownContentBackgroundColor": "#FFF",
+      "navbarDropdownContentShadowColor": "#545456",
+      "navbarDropdownHeaderColor": "#FFF",
+      "navbarMenuBagroundColor": "#004A7C",
+      "navbarTogglerColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
