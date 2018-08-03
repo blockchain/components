@@ -15,6 +15,7 @@ export {
   TableRow,
   TabMenu,
   TabMenuItem,
+  TabMenuToggler,
   Text,
   TextGroup,
 } from './Atoms'

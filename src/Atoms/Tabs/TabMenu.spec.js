@@ -9,4 +9,22 @@ describe('TabMenu', () => {
 
     expect(tree).toMatchSnapshot()
   })
+
+  it('should render correctly with height', () => {
+    const tree = mountWithTheme(<TabMenu height="200px">MyTabMenu</TabMenu>)
+
+    expect(tree).toMatchSnapshot()
+  })
+
+  it('should render correctly with toggled', () => {
+    const tree = mountWithTheme(<TabMenu toggled>MyTabMenu</TabMenu>)
+
+    expect(tree).toMatchSnapshot()
+  })
+
+  it('should render correctly with width', () => {
+    const tree = mountWithTheme(<TabMenu width="50%">MyTabMenu</TabMenu>)
+
+    expect(tree).toMatchSnapshot()
+  })
 })

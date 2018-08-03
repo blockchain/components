@@ -5,17 +5,26 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   position: relative;
   flex: 1 auto;
-  display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  order: 1;
   padding: 15px;
   box-sizing: border-box;
   cursor: pointer;
 
-  &:hover {
-    & :last-child {
-      opacity: 1 !important;
+  &.hidden {
+    order: 2;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      & :last-child {
+        opacity: 1;
+      }
     }
   }
 `
@@ -28,18 +37,19 @@ const Bar = styled.div`
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   background-color: ${(props) => props.theme['tabMenuBarColor']};
-  opacity: ${(props) => (props.visible ? '1' : '0')};
+  opacity: ${(props) => (props.selected ? '1' : '0')};
 `
 
-const TabMenuItem = ({ children, selected, ...rest }) => (
-  <Wrapper {...rest}>
+const TabMenuItem = ({ children, className, selected, ...rest }) => (
+  <Wrapper className={selected ? '' : 'hidden'} {...rest}>
     {children}
-    <Bar visible={selected} />
+    <Bar selected={selected} />
   </Wrapper>
 )
 
 TabMenuItem.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
   selected: PropTypes.bool,
 }
 
