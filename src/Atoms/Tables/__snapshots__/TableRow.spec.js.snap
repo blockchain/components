@@ -18,7 +18,7 @@ exports[`TableRow should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 30px 30px;
+  padding: 1.875rem;
   box-sizing: border-box;
 }
 
@@ -40,6 +40,7 @@ exports[`TableRow should render correctly 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",

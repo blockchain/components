@@ -25,7 +25,7 @@ exports[`NavbarToggler should render correctly 1`] = `
   fill: #FFF;
 }
 
-@media (min-width:768px) {
+@media (min-width:48rem) {
   .c0 {
     display: none;
   }
@@ -49,6 +49,7 @@ exports[`NavbarToggler should render correctly 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -177,7 +178,7 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
   fill: #FFF;
 }
 
-@media (min-width:768px) {
+@media (min-width:48rem) {
   .c0 {
     display: none;
   }
@@ -201,6 +202,7 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",

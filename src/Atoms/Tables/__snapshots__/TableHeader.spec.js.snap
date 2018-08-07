@@ -18,7 +18,7 @@ exports[`TableHeader should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 10px 30px;
+  padding: 0.7rem 1.875rem;
   box-sizing: border-box;
   color: #999B9E;
   text-transform: uppercase;
@@ -42,6 +42,7 @@ exports[`TableHeader should render correctly 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",

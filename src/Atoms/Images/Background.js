@@ -34,10 +34,10 @@ Background.propTypes = {
 }
 
 Background.defaultProps = {
-  height: '200px',
+  height: '12rem',
   name: 'logo',
   stretch: false,
-  width: '200px',
+  width: '12rem',
 }
 
 export default Background

@@ -24,7 +24,7 @@ exports[`NavbarNav should render correctly 1`] = `
   list-style-type: none;
 }
 
-@media (min-width:768px) {
+@media (min-width:48rem) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -60,6 +60,7 @@ exports[`NavbarNav should render correctly 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -150,7 +151,7 @@ exports[`NavbarNav should render correctly with toggled 1`] = `
   list-style-type: none;
 }
 
-@media (min-width:768px) {
+@media (min-width:48rem) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -186,6 +187,7 @@ exports[`NavbarNav should render correctly with toggled 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -276,7 +278,7 @@ exports[`NavbarNav should render correctly with toggled 2`] = `
   list-style-type: none;
 }
 
-@media (min-width:768px) {
+@media (min-width:48rem) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -312,6 +314,7 @@ exports[`NavbarNav should render correctly with toggled 2`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",

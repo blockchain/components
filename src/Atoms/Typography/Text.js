@@ -29,7 +29,7 @@ Text.defaultProps = {
   capitalize: false,
   italic: false,
   opacity: 1,
-  size: '14px',
+  size: '1rem',
   uppercase: false,
   weight: 400,
 }

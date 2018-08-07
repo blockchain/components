@@ -18,13 +18,12 @@ exports[`Button should have a bounced state 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 10px 30px;
+  padding: 0.7rem 1.875rem;
   box-sizing: border-box;
-  font-size: 18px;
   color: #FFF;
   background-color: #004A7C;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.125rem;
   cursor: pointer;
   outline: none;
   -webkit-transition-duration: 0.3s;
@@ -33,6 +32,8 @@ exports[`Button should have a bounced state 1`] = `
   transition-timing-function: ease-in-out;
   opacity: 1;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .c0:hover {
@@ -60,6 +61,7 @@ exports[`Button should have a bounced state 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -147,13 +149,12 @@ exports[`Button should have a disabled state 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 10px 30px;
+  padding: 0.7rem 1.875rem;
   box-sizing: border-box;
-  font-size: 18px;
   color: #FFF;
   background-color: #004A7C;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.125rem;
   cursor: not-allowed;
   outline: none;
   -webkit-transition-duration: 0.3s;
@@ -162,6 +163,8 @@ exports[`Button should have a disabled state 1`] = `
   transition-timing-function: ease-in-out;
   opacity: 0.5;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .c0:hover {
@@ -189,6 +192,7 @@ exports[`Button should have a disabled state 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -276,13 +280,12 @@ exports[`Button should have a type property 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 10px 30px;
+  padding: 0.7rem 1.875rem;
   box-sizing: border-box;
-  font-size: 18px;
   color: #FFF;
   background-color: #004A7C;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.125rem;
   cursor: pointer;
   outline: none;
   -webkit-transition-duration: 0.3s;
@@ -291,6 +294,8 @@ exports[`Button should have a type property 1`] = `
   transition-timing-function: ease-in-out;
   opacity: 1;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .c0:hover {
@@ -318,6 +323,7 @@ exports[`Button should have a type property 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -405,13 +411,12 @@ exports[`Button should have a type property 2`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 10px 30px;
+  padding: 0.7rem 1.875rem;
   box-sizing: border-box;
-  font-size: 18px;
   color: #FFF;
   background-color: #004A7C;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.125rem;
   cursor: pointer;
   outline: none;
   -webkit-transition-duration: 0.3s;
@@ -420,6 +425,8 @@ exports[`Button should have a type property 2`] = `
   transition-timing-function: ease-in-out;
   opacity: 1;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .c0:hover {
@@ -447,6 +454,7 @@ exports[`Button should have a type property 2`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -534,13 +542,12 @@ exports[`Button should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 10px 30px;
+  padding: 0.7rem 1.875rem;
   box-sizing: border-box;
-  font-size: 18px;
   color: #FFF;
   background-color: #004A7C;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.125rem;
   cursor: pointer;
   outline: none;
   -webkit-transition-duration: 0.3s;
@@ -549,6 +556,8 @@ exports[`Button should render correctly 1`] = `
   transition-timing-function: ease-in-out;
   opacity: 1;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .c0:hover {
@@ -576,6 +585,7 @@ exports[`Button should render correctly 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",

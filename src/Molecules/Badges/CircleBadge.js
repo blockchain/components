@@ -15,7 +15,7 @@ const Wrapper = styled(Link).attrs({
   align-items: center;
   height: ${(props) => props.size};
   width: ${(props) => props.size};
-  padding: 7px;
+  padding: 0.4rem;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: ${(props) => props.theme['circleBadgeBackgroundColor']};
@@ -40,7 +40,7 @@ CircleBadge.propTypes = {
 
 CircleBadge.defaultProps = {
   name: 'facebook',
-  size: '40px',
+  size: '2.625rem',
 }
 
 export default CircleBadge

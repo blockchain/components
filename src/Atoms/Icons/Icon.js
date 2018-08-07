@@ -38,7 +38,7 @@ Icon.propTypes = {
 Icon.defaultProps = {
   name: 'bitcoin',
   selectable: false,
-  size: '40px',
+  size: '2.75rem',
 }
 
 export default Icon

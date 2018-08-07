@@ -17,18 +17,9 @@ exports[`TabMenuItem should render correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  padding: 15px;
+  padding: 1rem;
   box-sizing: border-box;
   cursor: pointer;
-}
-
-.c0.hidden {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
 }
 
 .c1 {
@@ -36,7 +27,7 @@ exports[`TabMenuItem should render correctly 1`] = `
   bottom: -2px;
   left: 0;
   width: 100%;
-  height: 5px;
+  height: 0.325rem;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
@@ -45,7 +36,21 @@ exports[`TabMenuItem should render correctly 1`] = `
   opacity: 0;
 }
 
-@media (min-width:768px) {
+@media (max-width:48rem) {
+  .c0 {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .c0.hidden {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+@media (min-width:48rem) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -55,6 +60,9 @@ exports[`TabMenuItem should render correctly 1`] = `
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
   }
 
   .c0:hover :last-child {
@@ -80,6 +88,7 @@ exports[`TabMenuItem should render correctly 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -133,10 +142,10 @@ exports[`TabMenuItem should render correctly 1`] = `
     selected={false}
   >
     <styled.div
-      className="hidden"
+      className="undefined disabled"
     >
       <div
-        className="hidden c0"
+        className="undefined disabled c0"
       >
         MyTabMenuItem
         <styled.div
@@ -170,18 +179,9 @@ exports[`TabMenuItem should render correctly when selected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  padding: 15px;
+  padding: 1rem;
   box-sizing: border-box;
   cursor: pointer;
-}
-
-.c0.hidden {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
 }
 
 .c1 {
@@ -189,7 +189,7 @@ exports[`TabMenuItem should render correctly when selected 1`] = `
   bottom: -2px;
   left: 0;
   width: 100%;
-  height: 5px;
+  height: 0.325rem;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
@@ -198,7 +198,21 @@ exports[`TabMenuItem should render correctly when selected 1`] = `
   opacity: 1;
 }
 
-@media (min-width:768px) {
+@media (max-width:48rem) {
+  .c0 {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .c0.hidden {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+@media (min-width:48rem) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -208,6 +222,9 @@ exports[`TabMenuItem should render correctly when selected 1`] = `
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
   }
 
   .c0:hover :last-child {
@@ -233,6 +250,7 @@ exports[`TabMenuItem should render correctly when selected 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -285,9 +303,7 @@ exports[`TabMenuItem should render correctly when selected 1`] = `
   <TabMenuItem
     selected={true}
   >
-    <styled.div
-      className=""
-    >
+    <styled.div>
       <div
         className="c0"
       >

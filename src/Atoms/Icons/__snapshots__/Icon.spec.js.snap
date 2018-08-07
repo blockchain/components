@@ -3,8 +3,8 @@
 exports[`Icon should render correctly 1`] = `
 .c0 > svg {
   fill: #545456;
-  width: 40px;
-  height: 40px;
+  width: 2.75rem;
+  height: 2.75rem;
   cursor: default;
 }
 
@@ -30,6 +30,7 @@ exports[`Icon should render correctly 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -82,15 +83,15 @@ exports[`Icon should render correctly 1`] = `
   <Icon
     name="bitcoin"
     selectable={false}
-    size="40px"
+    size="2.75rem"
   >
     <styled.div
       selectable={false}
-      size="40px"
+      size="2.75rem"
     >
       <div
         className="c0"
-        size="40px"
+        size="2.75rem"
       >
         <bitcoin
           height="32"
@@ -121,8 +122,8 @@ exports[`Icon should render correctly 1`] = `
 exports[`Icon should render correctly with name 1`] = `
 .c0 > svg {
   fill: #545456;
-  width: 40px;
-  height: 40px;
+  width: 2.75rem;
+  height: 2.75rem;
   cursor: default;
 }
 
@@ -148,6 +149,7 @@ exports[`Icon should render correctly with name 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -200,15 +202,15 @@ exports[`Icon should render correctly with name 1`] = `
   <Icon
     name="ethereum"
     selectable={false}
-    size="40px"
+    size="2.75rem"
   >
     <styled.div
       selectable={false}
-      size="40px"
+      size="2.75rem"
     >
       <div
         className="c0"
-        size="40px"
+        size="2.75rem"
       >
         <ethereum
           height="32"
@@ -239,8 +241,8 @@ exports[`Icon should render correctly with name 1`] = `
 exports[`Icon should render correctly with selectable 1`] = `
 .c0 > svg {
   fill: #545456;
-  width: 40px;
-  height: 40px;
+  width: 2.75rem;
+  height: 2.75rem;
   cursor: pointer;
 }
 
@@ -266,6 +268,7 @@ exports[`Icon should render correctly with selectable 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -318,15 +321,15 @@ exports[`Icon should render correctly with selectable 1`] = `
   <Icon
     name="bitcoin"
     selectable={true}
-    size="40px"
+    size="2.75rem"
   >
     <styled.div
       selectable={true}
-      size="40px"
+      size="2.75rem"
     >
       <div
         className="c0"
-        size="40px"
+        size="2.75rem"
       >
         <bitcoin
           height="32"
@@ -384,6 +387,7 @@ exports[`Icon should render correctly with size 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",

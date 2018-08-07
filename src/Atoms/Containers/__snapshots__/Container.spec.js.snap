@@ -22,9 +22,9 @@ exports[`Container should render correctly 1`] = `
   margin: 0 auto;
 }
 
-@media (min-width:1200px) {
+@media (min-width:75rem) {
   .c0 {
-    width: 1140px;
+    width: 75rem;
   }
 }
 
@@ -46,6 +46,7 @@ exports[`Container should render correctly 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",

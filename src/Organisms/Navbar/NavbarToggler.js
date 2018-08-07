@@ -15,7 +15,7 @@ const Toggler = styled(Icon).attrs({ selectable: true, size: '20px' })`
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
     display: none;
   }
 `

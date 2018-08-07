@@ -18,6 +18,7 @@ export default {
   inputColor: palette['gray5'],
   inputBackgroundColor: palette['white'],
   inputBorderColor: palette['gray2'],
+  inputPlaceholderColor: palette['gray3'],
   linkColor: palette['gray5'],
   linkHoverColor: palette['orient'],
   navbarDropdownContentBackgroundColor: palette['white'],

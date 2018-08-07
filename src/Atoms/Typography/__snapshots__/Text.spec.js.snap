@@ -4,7 +4,7 @@ exports[`Text should render correctly 1`] = `
 .c0 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   text-transform: none;
   font-style: normal;
   color: #545456;
@@ -29,6 +29,7 @@ exports[`Text should render correctly 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -82,7 +83,7 @@ exports[`Text should render correctly 1`] = `
     capitalize={false}
     italic={false}
     opacity={1}
-    size="14px"
+    size="1rem"
     uppercase={false}
     weight={400}
   >
@@ -90,14 +91,14 @@ exports[`Text should render correctly 1`] = `
       capitalize={false}
       italic={false}
       opacity={1}
-      size="14px"
+      size="1rem"
       uppercase={false}
       weight={400}
     >
       <span
         className="c0"
         opacity={1}
-        size="14px"
+        size="1rem"
       >
         MyText
       </span>
@@ -110,7 +111,7 @@ exports[`Text should render correctly with capitalize 1`] = `
 .c0 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   text-transform: capitalize;
   font-style: normal;
   color: #545456;
@@ -135,6 +136,7 @@ exports[`Text should render correctly with capitalize 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -188,7 +190,7 @@ exports[`Text should render correctly with capitalize 1`] = `
     capitalize={true}
     italic={false}
     opacity={1}
-    size="14px"
+    size="1rem"
     uppercase={false}
     weight={400}
   >
@@ -196,14 +198,14 @@ exports[`Text should render correctly with capitalize 1`] = `
       capitalize={true}
       italic={false}
       opacity={1}
-      size="14px"
+      size="1rem"
       uppercase={false}
       weight={400}
     >
       <span
         className="c0"
         opacity={1}
-        size="14px"
+        size="1rem"
       >
         MyText
       </span>
@@ -216,7 +218,7 @@ exports[`Text should render correctly with italic 1`] = `
 .c0 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   text-transform: none;
   font-style: italic;
   color: #545456;
@@ -241,6 +243,7 @@ exports[`Text should render correctly with italic 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -294,7 +297,7 @@ exports[`Text should render correctly with italic 1`] = `
     capitalize={false}
     italic={true}
     opacity={1}
-    size="14px"
+    size="1rem"
     uppercase={false}
     weight={400}
   >
@@ -302,14 +305,14 @@ exports[`Text should render correctly with italic 1`] = `
       capitalize={false}
       italic={true}
       opacity={1}
-      size="14px"
+      size="1rem"
       uppercase={false}
       weight={400}
     >
       <span
         className="c0"
         opacity={1}
-        size="14px"
+        size="1rem"
       >
         MyText
       </span>
@@ -322,7 +325,7 @@ exports[`Text should render correctly with opacity 1`] = `
 .c0 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   text-transform: none;
   font-style: normal;
   color: #545456;
@@ -347,6 +350,7 @@ exports[`Text should render correctly with opacity 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -400,7 +404,7 @@ exports[`Text should render correctly with opacity 1`] = `
     capitalize={false}
     italic={false}
     opacity={0.5}
-    size="14px"
+    size="1rem"
     uppercase={false}
     weight={400}
   >
@@ -408,14 +412,14 @@ exports[`Text should render correctly with opacity 1`] = `
       capitalize={false}
       italic={false}
       opacity={0.5}
-      size="14px"
+      size="1rem"
       uppercase={false}
       weight={400}
     >
       <span
         className="c0"
         opacity={0.5}
-        size="14px"
+        size="1rem"
       >
         MyText
       </span>
@@ -453,6 +457,7 @@ exports[`Text should render correctly with size 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -534,7 +539,7 @@ exports[`Text should render correctly with uppercase 1`] = `
 .c0 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   text-transform: uppercase;
   font-style: normal;
   color: #545456;
@@ -559,6 +564,7 @@ exports[`Text should render correctly with uppercase 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -612,7 +618,7 @@ exports[`Text should render correctly with uppercase 1`] = `
     capitalize={false}
     italic={false}
     opacity={1}
-    size="14px"
+    size="1rem"
     uppercase={true}
     weight={400}
   >
@@ -620,14 +626,14 @@ exports[`Text should render correctly with uppercase 1`] = `
       capitalize={false}
       italic={false}
       opacity={1}
-      size="14px"
+      size="1rem"
       uppercase={true}
       weight={400}
     >
       <span
         className="c0"
         opacity={1}
-        size="14px"
+        size="1rem"
       >
         MyText
       </span>
@@ -640,7 +646,7 @@ exports[`Text should render correctly with weight 1`] = `
 .c0 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1rem;
   text-transform: none;
   font-style: normal;
   color: #545456;
@@ -665,6 +671,7 @@ exports[`Text should render correctly with weight 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -718,7 +725,7 @@ exports[`Text should render correctly with weight 1`] = `
     capitalize={false}
     italic={false}
     opacity={1}
-    size="14px"
+    size="1rem"
     uppercase={false}
     weight={500}
   >
@@ -726,14 +733,14 @@ exports[`Text should render correctly with weight 1`] = `
       capitalize={false}
       italic={false}
       opacity={1}
-      size="14px"
+      size="1rem"
       uppercase={false}
       weight={500}
     >
       <span
         className="c0"
         opacity={1}
-        size="14px"
+        size="1rem"
       >
         MyText
       </span>

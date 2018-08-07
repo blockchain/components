@@ -3,8 +3,8 @@
 exports[`Cartridge should render correctly 1`] = `
 .c1 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 1rem;
   text-transform: none;
   font-style: normal;
   color: #545456;
@@ -27,10 +27,9 @@ exports[`Cartridge should render correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-weight: 300;
   color: #FFF;
   background-color: #004A7C;
-  padding: 5px;
+  padding: 0.3rem;
   box-sizing: border-box;
 }
 
@@ -52,6 +51,7 @@ exports[`Cartridge should render correctly 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -105,40 +105,40 @@ exports[`Cartridge should render correctly 1`] = `
     capitalize={false}
     italic={false}
     opacity={1}
-    size="14px"
+    size="1rem"
     uppercase={false}
-    weight={300}
+    weight={400}
   >
     <Styled(Text)
       capitalize={false}
       italic={false}
       opacity={1}
-      size="14px"
+      size="1rem"
       uppercase={false}
-      weight={300}
+      weight={400}
     >
       <Text
         capitalize={false}
         className="c0"
         italic={false}
         opacity={1}
-        size="14px"
+        size="1rem"
         uppercase={false}
-        weight={300}
+        weight={400}
       >
         <styled.span
           capitalize={false}
           className="c0"
           italic={false}
           opacity={1}
-          size="14px"
+          size="1rem"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <span
             className="c0 c1"
             opacity={1}
-            size="14px"
+            size="1rem"
           />
         </styled.span>
       </Text>
@@ -150,8 +150,8 @@ exports[`Cartridge should render correctly 1`] = `
 exports[`Cartridge should render correctly with capitalize 1`] = `
 .c1 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 1rem;
   text-transform: capitalize;
   font-style: normal;
   color: #545456;
@@ -174,10 +174,9 @@ exports[`Cartridge should render correctly with capitalize 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-weight: 300;
   color: #FFF;
   background-color: #004A7C;
-  padding: 5px;
+  padding: 0.3rem;
   box-sizing: border-box;
 }
 
@@ -199,6 +198,7 @@ exports[`Cartridge should render correctly with capitalize 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -252,40 +252,40 @@ exports[`Cartridge should render correctly with capitalize 1`] = `
     capitalize={true}
     italic={false}
     opacity={1}
-    size="14px"
+    size="1rem"
     uppercase={false}
-    weight={300}
+    weight={400}
   >
     <Styled(Text)
       capitalize={true}
       italic={false}
       opacity={1}
-      size="14px"
+      size="1rem"
       uppercase={false}
-      weight={300}
+      weight={400}
     >
       <Text
         capitalize={true}
         className="c0"
         italic={false}
         opacity={1}
-        size="14px"
+        size="1rem"
         uppercase={false}
-        weight={300}
+        weight={400}
       >
         <styled.span
           capitalize={true}
           className="c0"
           italic={false}
           opacity={1}
-          size="14px"
+          size="1rem"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <span
             className="c0 c1"
             opacity={1}
-            size="14px"
+            size="1rem"
           />
         </styled.span>
       </Text>
@@ -297,8 +297,8 @@ exports[`Cartridge should render correctly with capitalize 1`] = `
 exports[`Cartridge should render correctly with italic 1`] = `
 .c1 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 1rem;
   text-transform: none;
   font-style: italic;
   color: #545456;
@@ -321,10 +321,9 @@ exports[`Cartridge should render correctly with italic 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-weight: 300;
   color: #FFF;
   background-color: #004A7C;
-  padding: 5px;
+  padding: 0.3rem;
   box-sizing: border-box;
 }
 
@@ -346,6 +345,7 @@ exports[`Cartridge should render correctly with italic 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -399,40 +399,40 @@ exports[`Cartridge should render correctly with italic 1`] = `
     capitalize={false}
     italic={true}
     opacity={1}
-    size="14px"
+    size="1rem"
     uppercase={false}
-    weight={300}
+    weight={400}
   >
     <Styled(Text)
       capitalize={false}
       italic={true}
       opacity={1}
-      size="14px"
+      size="1rem"
       uppercase={false}
-      weight={300}
+      weight={400}
     >
       <Text
         capitalize={false}
         className="c0"
         italic={true}
         opacity={1}
-        size="14px"
+        size="1rem"
         uppercase={false}
-        weight={300}
+        weight={400}
       >
         <styled.span
           capitalize={false}
           className="c0"
           italic={true}
           opacity={1}
-          size="14px"
+          size="1rem"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <span
             className="c0 c1"
             opacity={1}
-            size="14px"
+            size="1rem"
           />
         </styled.span>
       </Text>
@@ -444,8 +444,8 @@ exports[`Cartridge should render correctly with italic 1`] = `
 exports[`Cartridge should render correctly with opacity 1`] = `
 .c1 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 1rem;
   text-transform: none;
   font-style: normal;
   color: #545456;
@@ -468,10 +468,9 @@ exports[`Cartridge should render correctly with opacity 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-weight: 300;
   color: #FFF;
   background-color: #004A7C;
-  padding: 5px;
+  padding: 0.3rem;
   box-sizing: border-box;
 }
 
@@ -493,6 +492,7 @@ exports[`Cartridge should render correctly with opacity 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -546,40 +546,40 @@ exports[`Cartridge should render correctly with opacity 1`] = `
     capitalize={false}
     italic={false}
     opacity={0.5}
-    size="14px"
+    size="1rem"
     uppercase={false}
-    weight={300}
+    weight={400}
   >
     <Styled(Text)
       capitalize={false}
       italic={false}
       opacity={0.5}
-      size="14px"
+      size="1rem"
       uppercase={false}
-      weight={300}
+      weight={400}
     >
       <Text
         capitalize={false}
         className="c0"
         italic={false}
         opacity={0.5}
-        size="14px"
+        size="1rem"
         uppercase={false}
-        weight={300}
+        weight={400}
       >
         <styled.span
           capitalize={false}
           className="c0"
           italic={false}
           opacity={0.5}
-          size="14px"
+          size="1rem"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <span
             className="c0 c1"
             opacity={0.5}
-            size="14px"
+            size="1rem"
           />
         </styled.span>
       </Text>
@@ -591,7 +591,7 @@ exports[`Cartridge should render correctly with opacity 1`] = `
 exports[`Cartridge should render correctly with size 1`] = `
 .c1 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   text-transform: none;
   font-style: normal;
@@ -615,10 +615,9 @@ exports[`Cartridge should render correctly with size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-weight: 300;
   color: #FFF;
   background-color: #004A7C;
-  padding: 5px;
+  padding: 0.3rem;
   box-sizing: border-box;
 }
 
@@ -640,6 +639,7 @@ exports[`Cartridge should render correctly with size 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -695,7 +695,7 @@ exports[`Cartridge should render correctly with size 1`] = `
     opacity={1}
     size="18px"
     uppercase={false}
-    weight={300}
+    weight={400}
   >
     <Styled(Text)
       capitalize={false}
@@ -703,7 +703,7 @@ exports[`Cartridge should render correctly with size 1`] = `
       opacity={1}
       size="18px"
       uppercase={false}
-      weight={300}
+      weight={400}
     >
       <Text
         capitalize={false}
@@ -712,7 +712,7 @@ exports[`Cartridge should render correctly with size 1`] = `
         opacity={1}
         size="18px"
         uppercase={false}
-        weight={300}
+        weight={400}
       >
         <styled.span
           capitalize={false}
@@ -721,7 +721,7 @@ exports[`Cartridge should render correctly with size 1`] = `
           opacity={1}
           size="18px"
           uppercase={false}
-          weight={300}
+          weight={400}
         >
           <span
             className="c0 c1"
@@ -738,8 +738,8 @@ exports[`Cartridge should render correctly with size 1`] = `
 exports[`Cartridge should render correctly with uppercase 1`] = `
 .c1 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 1rem;
   text-transform: uppercase;
   font-style: normal;
   color: #545456;
@@ -762,10 +762,9 @@ exports[`Cartridge should render correctly with uppercase 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-weight: 300;
   color: #FFF;
   background-color: #004A7C;
-  padding: 5px;
+  padding: 0.3rem;
   box-sizing: border-box;
 }
 
@@ -787,6 +786,7 @@ exports[`Cartridge should render correctly with uppercase 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -840,40 +840,40 @@ exports[`Cartridge should render correctly with uppercase 1`] = `
     capitalize={false}
     italic={false}
     opacity={1}
-    size="14px"
+    size="1rem"
     uppercase={true}
-    weight={300}
+    weight={400}
   >
     <Styled(Text)
       capitalize={false}
       italic={false}
       opacity={1}
-      size="14px"
+      size="1rem"
       uppercase={true}
-      weight={300}
+      weight={400}
     >
       <Text
         capitalize={false}
         className="c0"
         italic={false}
         opacity={1}
-        size="14px"
+        size="1rem"
         uppercase={true}
-        weight={300}
+        weight={400}
       >
         <styled.span
           capitalize={false}
           className="c0"
           italic={false}
           opacity={1}
-          size="14px"
+          size="1rem"
           uppercase={true}
-          weight={300}
+          weight={400}
         >
           <span
             className="c0 c1"
             opacity={1}
-            size="14px"
+            size="1rem"
           />
         </styled.span>
       </Text>

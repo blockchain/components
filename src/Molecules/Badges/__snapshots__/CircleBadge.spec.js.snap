@@ -11,7 +11,7 @@ exports[`CircleBadge should render correctly 1`] = `
 .c1 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.625rem;
   text-transform: none;
   font-style: normal;
   color: #545456;
@@ -39,9 +39,9 @@ exports[`CircleBadge should render correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 40px;
-  width: 40px;
-  padding: 7px;
+  height: 2.625rem;
+  width: 2.625rem;
+  padding: 0.4rem;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: #CCC;
@@ -71,6 +71,7 @@ exports[`CircleBadge should render correctly 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -122,11 +123,11 @@ exports[`CircleBadge should render correctly 1`] = `
 >
   <CircleBadge
     name="facebook"
-    size="40px"
+    size="2.625rem"
     url="http://www.blockchain.com"
   >
     <Styled(Link)
-      size="40px"
+      size="2.625rem"
       url="http://www.blockchain.com"
     >
       <Link
@@ -135,7 +136,7 @@ exports[`CircleBadge should render correctly 1`] = `
         href="http://www.blockchain.com"
         italic={false}
         opacity={1}
-        size="40px"
+        size="2.625rem"
         target="_blank"
         uppercase={false}
         url="http://www.blockchain.com"
@@ -147,7 +148,7 @@ exports[`CircleBadge should render correctly 1`] = `
           href="http://www.blockchain.com"
           italic={false}
           opacity={1}
-          size="40px"
+          size="2.625rem"
           target="_blank"
           uppercase={false}
           url="http://www.blockchain.com"
@@ -157,7 +158,7 @@ exports[`CircleBadge should render correctly 1`] = `
             className="c0 c1"
             href="http://www.blockchain.com"
             opacity={1}
-            size="40px"
+            size="2.625rem"
             target="_blank"
           >
             <Image
@@ -201,7 +202,7 @@ exports[`CircleBadge should render correctly with name 1`] = `
 .c1 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.625rem;
   text-transform: none;
   font-style: normal;
   color: #545456;
@@ -229,9 +230,9 @@ exports[`CircleBadge should render correctly with name 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 40px;
-  width: 40px;
-  padding: 7px;
+  height: 2.625rem;
+  width: 2.625rem;
+  padding: 0.4rem;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: #CCC;
@@ -261,6 +262,7 @@ exports[`CircleBadge should render correctly with name 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -312,11 +314,11 @@ exports[`CircleBadge should render correctly with name 1`] = `
 >
   <CircleBadge
     name="linkedIn"
-    size="40px"
+    size="2.625rem"
     url="http://www.blockchain.com"
   >
     <Styled(Link)
-      size="40px"
+      size="2.625rem"
       url="http://www.blockchain.com"
     >
       <Link
@@ -325,7 +327,7 @@ exports[`CircleBadge should render correctly with name 1`] = `
         href="http://www.blockchain.com"
         italic={false}
         opacity={1}
-        size="40px"
+        size="2.625rem"
         target="_blank"
         uppercase={false}
         url="http://www.blockchain.com"
@@ -337,7 +339,7 @@ exports[`CircleBadge should render correctly with name 1`] = `
           href="http://www.blockchain.com"
           italic={false}
           opacity={1}
-          size="40px"
+          size="2.625rem"
           target="_blank"
           uppercase={false}
           url="http://www.blockchain.com"
@@ -347,7 +349,7 @@ exports[`CircleBadge should render correctly with name 1`] = `
             className="c0 c1"
             href="http://www.blockchain.com"
             opacity={1}
-            size="40px"
+            size="2.625rem"
             target="_blank"
           >
             <Image
@@ -421,7 +423,7 @@ exports[`CircleBadge should render correctly with size 1`] = `
   align-items: center;
   height: 80px;
   width: 80px;
-  padding: 7px;
+  padding: 0.4rem;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: #CCC;
@@ -451,6 +453,7 @@ exports[`CircleBadge should render correctly with size 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",

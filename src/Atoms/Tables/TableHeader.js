@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  padding: 10px 30px;
+  padding: 0.7rem 1.875rem;
   box-sizing: border-box;
   color: ${(props) => props.theme['tableHeaderColor']};
   text-transform: uppercase;

@@ -18,7 +18,7 @@ exports[`Table should render correctly 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   width: 100%;
-  box-shadow: 0 0 25px 5px #EEF2F5;
+  box-shadow: 0 0 1.5rem 0.4rem #EEF2F5;
 }
 
 .c0 > :nth-child(even) {
@@ -47,6 +47,7 @@ exports[`Table should render correctly 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",

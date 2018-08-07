@@ -3,14 +3,14 @@
 exports[`NavbarDropdownHeader should render correctly 1`] = `
 .c0 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 600;
   color: #FFF;
   cursor: pointer;
   display: none;
 }
 
-@media (min-width:768px) {
+@media (min-width:48rem) {
   .c0 {
     display: block;
   }
@@ -34,6 +34,7 @@ exports[`NavbarDropdownHeader should render correctly 1`] = `
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
