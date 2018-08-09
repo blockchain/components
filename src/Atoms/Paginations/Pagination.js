@@ -6,18 +6,16 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  padding: 1.875rem;
-  box-sizing: border-box;
+  align-items: flex-start;
+  margin: 10px 0;
 `
 
-const TableRow = ({ children, ...rest }) => (
-  <Wrapper {...rest}>{children}</Wrapper>
-)
+const Pagination = ({ children, ...rest }) => {
+  return <Wrapper {...rest}>{children}</Wrapper>
+}
 
-TableRow.propTypes = {
+Pagination.propTypes = {
   children: PropTypes.node,
 }
 
-export default TableRow
+export default Pagination

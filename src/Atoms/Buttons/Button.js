@@ -2,9 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const getHoverColor = (disabled, theme) =>
-  disabled ? theme['buttonBackgroundColor'] : theme['buttonHoverColor']
-
 const Wrapper = styled.button.attrs({
   type: (props) => props.type,
 })`
@@ -29,7 +26,10 @@ const Wrapper = styled.button.attrs({
   font-weight: 600;
 
   &:hover {
-    background-color: ${(props) => getHoverColor(props.disabled, props.theme)};
+    background-color: ${(props) =>
+      props.disabled
+        ? props.theme['buttonBackgroundColor']
+        : props.theme['buttonHoverColor']};
     transform: ${(props) => (props.bounced ? 'scale(0.95)' : 'none')};
   }
 `

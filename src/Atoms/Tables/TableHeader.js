@@ -10,11 +10,11 @@ const Wrapper = styled.div`
   width: 100%;
   padding: 0.7rem 1.875rem;
   box-sizing: border-box;
-  color: ${(props) => props.theme['tableHeaderColor']};
-  text-transform: uppercase;
 `
 
-const TableHeader = ({ children }) => <Wrapper>{children}</Wrapper>
+const TableHeader = ({ children, ...rest }) => (
+  <Wrapper {...rest}>{children}</Wrapper>
+)
 
 TableHeader.propTypes = {
   children: PropTypes.node,

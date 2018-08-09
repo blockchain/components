@@ -17,10 +17,14 @@ exports[`CircleBadge should render correctly 1`] = `
   color: #545456;
   opacity: 1;
   cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c1:hover {
   color: #004A7C;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 {
@@ -79,6 +83,13 @@ exports[`CircleBadge should render correctly 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "#004A7C",
+      "paginationHoverColor": "#FFF",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -115,7 +126,6 @@ exports[`CircleBadge should render correctly 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
     }
@@ -208,10 +218,14 @@ exports[`CircleBadge should render correctly with name 1`] = `
   color: #545456;
   opacity: 1;
   cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c1:hover {
   color: #004A7C;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 {
@@ -270,6 +284,13 @@ exports[`CircleBadge should render correctly with name 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "#004A7C",
+      "paginationHoverColor": "#FFF",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -306,7 +327,6 @@ exports[`CircleBadge should render correctly with name 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
     }
@@ -399,10 +419,14 @@ exports[`CircleBadge should render correctly with size 1`] = `
   color: #545456;
   opacity: 1;
   cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c1:hover {
   color: #004A7C;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 {
@@ -461,6 +485,13 @@ exports[`CircleBadge should render correctly with size 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "#004A7C",
+      "paginationHoverColor": "#FFF",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -497,7 +528,6 @@ exports[`CircleBadge should render correctly with size 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
     }

@@ -7,13 +7,23 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 100%;
+  width: ${(props) => props.width};
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 `
 
-const TableCell = ({ children }) => <Wrapper>{children}</Wrapper>
+const TableCell = ({ children, ...rest }) => (
+  <Wrapper {...rest}>{children}</Wrapper>
+)
 
 TableCell.propTypes = {
   children: PropTypes.node,
+  width: PropTypes.string,
+}
+
+TableCell.defaultProps = {
+  width: 'auto',
 }
 
 export default TableCell

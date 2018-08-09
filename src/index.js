@@ -7,6 +7,8 @@ export {
   Image,
   Input,
   Link,
+  Pagination,
+  PaginationItem,
   Panel,
   Section,
   Table,

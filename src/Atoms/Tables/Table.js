@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   }
 `
 
-const Table = ({ children }) => <Wrapper>{children}</Wrapper>
+const Table = ({ children, ...rest }) => <Wrapper {...rest}>{children}</Wrapper>
 
 Table.propTypes = {
   children: PropTypes.node,
