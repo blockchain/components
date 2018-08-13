@@ -137,8 +137,8 @@ exports[`SearchBar should render correctly 1`] = `
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
       "paginationBorderColor": "#EEF2F5",
       "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "#004A7C",
-      "paginationHoverColor": "#FFF",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
       "paginationSelectedBackgroundColor": "#10ADE4",
       "paginationSelectedColor": "#FFF",
       "palette": Object {
@@ -150,6 +150,7 @@ exports[`SearchBar should render correctly 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -219,13 +220,13 @@ exports[`SearchBar should render correctly 1`] = `
               size="1.3rem"
             >
               <Styled(searchFilled)
-                selectable={true}
+                selectable="1"
                 size="1.3rem"
               >
                 <searchFilled
                   className="c4"
                   height="32"
-                  selectable={true}
+                  selectable="1"
                   size="1.3rem"
                   viewBox="0 0 32 32"
                   width="32"
@@ -234,7 +235,7 @@ exports[`SearchBar should render correctly 1`] = `
                   <svg
                     className="c4"
                     height="32"
-                    selectable={true}
+                    selectable="1"
                     size="1.3rem"
                     viewBox="0 0 32 32"
                     width="32"
@@ -395,8 +396,8 @@ exports[`SearchBar should render correctly with onChange 1`] = `
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
       "paginationBorderColor": "#EEF2F5",
       "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "#004A7C",
-      "paginationHoverColor": "#FFF",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
       "paginationSelectedBackgroundColor": "#10ADE4",
       "paginationSelectedColor": "#FFF",
       "palette": Object {
@@ -408,6 +409,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -484,13 +486,13 @@ exports[`SearchBar should render correctly with onChange 1`] = `
               size="1.3rem"
             >
               <Styled(searchFilled)
-                selectable={true}
+                selectable="1"
                 size="1.3rem"
               >
                 <searchFilled
                   className="c4"
                   height="32"
-                  selectable={true}
+                  selectable="1"
                   size="1.3rem"
                   viewBox="0 0 32 32"
                   width="32"
@@ -499,7 +501,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
                   <svg
                     className="c4"
                     height="32"
-                    selectable={true}
+                    selectable="1"
                     size="1.3rem"
                     viewBox="0 0 32 32"
                     width="32"
@@ -660,8 +662,8 @@ exports[`SearchBar should render correctly with onClick 1`] = `
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
       "paginationBorderColor": "#EEF2F5",
       "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "#004A7C",
-      "paginationHoverColor": "#FFF",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
       "paginationSelectedBackgroundColor": "#10ADE4",
       "paginationSelectedColor": "#FFF",
       "palette": Object {
@@ -673,6 +675,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -746,14 +749,14 @@ exports[`SearchBar should render correctly with onClick 1`] = `
             >
               <Styled(searchFilled)
                 onClick={[MockFunction]}
-                selectable={true}
+                selectable="1"
                 size="1.3rem"
               >
                 <searchFilled
                   className="c4"
                   height="32"
                   onClick={[MockFunction]}
-                  selectable={true}
+                  selectable="1"
                   size="1.3rem"
                   viewBox="0 0 32 32"
                   width="32"
@@ -763,7 +766,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
                     className="c4"
                     height="32"
                     onClick={[MockFunction]}
-                    selectable={true}
+                    selectable="1"
                     size="1.3rem"
                     viewBox="0 0 32 32"
                     width="32"
@@ -924,8 +927,8 @@ exports[`SearchBar should render correctly with value 1`] = `
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
       "paginationBorderColor": "#EEF2F5",
       "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "#004A7C",
-      "paginationHoverColor": "#FFF",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
       "paginationSelectedBackgroundColor": "#10ADE4",
       "paginationSelectedColor": "#FFF",
       "palette": Object {
@@ -937,6 +940,7 @@ exports[`SearchBar should render correctly with value 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -1018,13 +1022,13 @@ exports[`SearchBar should render correctly with value 1`] = `
               size="1.3rem"
             >
               <Styled(searchFilled)
-                selectable={true}
+                selectable="1"
                 size="1.3rem"
               >
                 <searchFilled
                   className="c4"
                   height="32"
-                  selectable={true}
+                  selectable="1"
                   size="1.3rem"
                   viewBox="0 0 32 32"
                   width="32"
@@ -1033,7 +1037,7 @@ exports[`SearchBar should render correctly with value 1`] = `
                   <svg
                     className="c4"
                     height="32"
-                    selectable={true}
+                    selectable="1"
                     size="1.3rem"
                     viewBox="0 0 32 32"
                     width="32"

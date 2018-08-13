@@ -7,20 +7,20 @@ const Wrapper = styled.div`
   fill: ${(props) => props.theme['iconColor']};
   width: ${(props) => props.size};
   height: ${(props) => props.size};
-  cursor: ${(props) => (props.selectable ? 'pointer' : 'default')};
+  cursor: ${(props) => (props.selectable === '1' ? 'pointer' : 'default')};
 
   &:hover {
     fill: ${(props) =>
-      props.selectable
+      props.selectable === '1'
         ? props.theme['iconHoverColor']
         : props.theme['iconColor']};
   }
 `
 
-const Icon = ({ name, ...rest }) => {
+const Icon = ({ name, selectable, ...rest }) => {
   const Svg = IconMap[name]
   const IconSvg = Wrapper.withComponent(Svg)
-  return <IconSvg {...rest} />
+  return <IconSvg selectable={selectable ? '1' : '0'} {...rest} />
 }
 
 Icon.propTypes = {

@@ -41,8 +41,8 @@ exports[`Icon should render correctly 1`] = `
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
       "paginationBorderColor": "#EEF2F5",
       "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "#004A7C",
-      "paginationHoverColor": "#FFF",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
       "paginationSelectedBackgroundColor": "#10ADE4",
       "paginationSelectedColor": "#FFF",
       "palette": Object {
@@ -54,6 +54,7 @@ exports[`Icon should render correctly 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -92,13 +93,13 @@ exports[`Icon should render correctly 1`] = `
     size="2.75rem"
   >
     <Styled(bitcoin)
-      selectable={false}
+      selectable="0"
       size="2.75rem"
     >
       <bitcoin
         className="c0"
         height="32"
-        selectable={false}
+        selectable="0"
         size="2.75rem"
         viewBox="0 0 32 32"
         width="32"
@@ -107,7 +108,7 @@ exports[`Icon should render correctly 1`] = `
         <svg
           className="c0"
           height="32"
-          selectable={false}
+          selectable="0"
           size="2.75rem"
           viewBox="0 0 32 32"
           width="32"
@@ -167,8 +168,8 @@ exports[`Icon should render correctly with name 1`] = `
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
       "paginationBorderColor": "#EEF2F5",
       "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "#004A7C",
-      "paginationHoverColor": "#FFF",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
       "paginationSelectedBackgroundColor": "#10ADE4",
       "paginationSelectedColor": "#FFF",
       "palette": Object {
@@ -180,6 +181,7 @@ exports[`Icon should render correctly with name 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -218,13 +220,13 @@ exports[`Icon should render correctly with name 1`] = `
     size="2.75rem"
   >
     <Styled(ethereum)
-      selectable={false}
+      selectable="0"
       size="2.75rem"
     >
       <ethereum
         className="c0"
         height="32"
-        selectable={false}
+        selectable="0"
         size="2.75rem"
         viewBox="0 0 32 32"
         width="32"
@@ -233,7 +235,7 @@ exports[`Icon should render correctly with name 1`] = `
         <svg
           className="c0"
           height="32"
-          selectable={false}
+          selectable="0"
           size="2.75rem"
           viewBox="0 0 32 32"
           width="32"
@@ -293,8 +295,8 @@ exports[`Icon should render correctly with selectable 1`] = `
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
       "paginationBorderColor": "#EEF2F5",
       "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "#004A7C",
-      "paginationHoverColor": "#FFF",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
       "paginationSelectedBackgroundColor": "#10ADE4",
       "paginationSelectedColor": "#FFF",
       "palette": Object {
@@ -306,6 +308,7 @@ exports[`Icon should render correctly with selectable 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -344,13 +347,13 @@ exports[`Icon should render correctly with selectable 1`] = `
     size="2.75rem"
   >
     <Styled(bitcoin)
-      selectable={true}
+      selectable="1"
       size="2.75rem"
     >
       <bitcoin
         className="c0"
         height="32"
-        selectable={true}
+        selectable="1"
         size="2.75rem"
         viewBox="0 0 32 32"
         width="32"
@@ -359,7 +362,7 @@ exports[`Icon should render correctly with selectable 1`] = `
         <svg
           className="c0"
           height="32"
-          selectable={true}
+          selectable="1"
           size="2.75rem"
           viewBox="0 0 32 32"
           width="32"
@@ -419,8 +422,8 @@ exports[`Icon should render correctly with size 1`] = `
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
       "paginationBorderColor": "#EEF2F5",
       "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "#004A7C",
-      "paginationHoverColor": "#FFF",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
       "paginationSelectedBackgroundColor": "#10ADE4",
       "paginationSelectedColor": "#FFF",
       "palette": Object {
@@ -432,6 +435,7 @@ exports[`Icon should render correctly with size 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -470,13 +474,13 @@ exports[`Icon should render correctly with size 1`] = `
     size="72px"
   >
     <Styled(bitcoin)
-      selectable={false}
+      selectable="0"
       size="72px"
     >
       <bitcoin
         className="c0"
         height="32"
-        selectable={false}
+        selectable="0"
         size="72px"
         viewBox="0 0 32 32"
         width="32"
@@ -485,7 +489,7 @@ exports[`Icon should render correctly with size 1`] = `
         <svg
           className="c0"
           height="32"
-          selectable={false}
+          selectable="0"
           size="72px"
           viewBox="0 0 32 32"
           width="32"

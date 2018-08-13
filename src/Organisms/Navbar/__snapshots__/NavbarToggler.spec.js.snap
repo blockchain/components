@@ -4,14 +4,11 @@ exports[`NavbarToggler should render correctly 1`] = `
 .c0 {
   z-index: 15;
   margin-right: 20px;
+  fill: #FFF !important;
 }
 
-.c0 > svg {
-  fill: #FFF;
-}
-
-.c0 > svg:hover {
-  fill: #FFF;
+.c0:hover {
+  fill: #FFF !important;
 }
 
 .c1 {
@@ -60,8 +57,8 @@ exports[`NavbarToggler should render correctly 1`] = `
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
       "paginationBorderColor": "#EEF2F5",
       "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "#004A7C",
-      "paginationHoverColor": "#FFF",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
       "paginationSelectedBackgroundColor": "#10ADE4",
       "paginationSelectedColor": "#FFF",
       "palette": Object {
@@ -73,6 +70,7 @@ exports[`NavbarToggler should render correctly 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -123,14 +121,14 @@ exports[`NavbarToggler should render correctly 1`] = `
         <Styled(hamburgerMenu)
           className="c0"
           onClick={[MockFunction]}
-          selectable={true}
+          selectable="1"
           size="20px"
         >
           <hamburgerMenu
             className="c0 c1"
             height="32"
             onClick={[MockFunction]}
-            selectable={true}
+            selectable="1"
             size="20px"
             viewBox="0 0 32 32"
             width="32"
@@ -140,7 +138,7 @@ exports[`NavbarToggler should render correctly 1`] = `
               className="c0 c1"
               height="32"
               onClick={[MockFunction]}
-              selectable={true}
+              selectable="1"
               size="20px"
               viewBox="0 0 32 32"
               width="32"
@@ -165,14 +163,11 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
 .c0 {
   z-index: 15;
   margin-right: 20px;
+  fill: #FFF !important;
 }
 
-.c0 > svg {
-  fill: #FFF;
-}
-
-.c0 > svg:hover {
-  fill: #FFF;
+.c0:hover {
+  fill: #FFF !important;
 }
 
 .c1 {
@@ -221,8 +216,8 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
       "paginationBorderColor": "#EEF2F5",
       "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "#004A7C",
-      "paginationHoverColor": "#FFF",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
       "paginationSelectedBackgroundColor": "#10ADE4",
       "paginationSelectedColor": "#FFF",
       "palette": Object {
@@ -234,6 +229,7 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -284,14 +280,14 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
         <Styled(closeFilled)
           className="c0"
           onClick={[MockFunction]}
-          selectable={true}
+          selectable="1"
           size="20px"
         >
           <closeFilled
             className="c0 c1"
             height="32"
             onClick={[MockFunction]}
-            selectable={true}
+            selectable="1"
             size="20px"
             viewBox="0 0 32 32"
             width="32"
@@ -301,7 +297,7 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
               className="c0 c1"
               height="32"
               onClick={[MockFunction]}
-              selectable={true}
+              selectable="1"
               size="20px"
               viewBox="0 0 32 32"
               width="32"

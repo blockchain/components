@@ -13,7 +13,6 @@ export {
   Section,
   Table,
   TableCell,
-  TableHeader,
   TableRow,
   TabMenu,
   TabMenuItem,

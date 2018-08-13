@@ -2,15 +2,33 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+const selectAlign = (align) => {
+  switch (align) {
+    case 'left':
+      return 'flex-start'
+    case 'center':
+      return 'center'
+    case 'right':
+      return 'flex-end'
+    default:
+      return 'flex-start'
+  }
+}
+
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: ${(props) => props.width};
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  flex-direction: row;
+  justify-content: ${(props) => selectAlign(props.align)};
+  align-items: center;
+  min-width: 0;
+  flex-basis: ${(props) => props.width};
+
+  & > * {
+    display: ${(props) => (props.shrinked ? 'block' : 'initial')};
+    text-overflow: ${(props) => (props.shrinked ? 'ellipsis' : 'initial')};
+    overflow: ${(props) => (props.shrinked ? 'hidden' : 'initial')};
+    white-space: ${(props) => (props.shrinked ? 'nowrap' : 'initial')};
+  }
 `
 
 const TableCell = ({ children, ...rest }) => (
@@ -18,12 +36,16 @@ const TableCell = ({ children, ...rest }) => (
 )
 
 TableCell.propTypes = {
+  align: PropTypes.oneOf(['left', 'center', 'right']),
   children: PropTypes.node,
+  shrinked: PropTypes.bool,
   width: PropTypes.string,
 }
 
 TableCell.defaultProps = {
-  width: 'auto',
+  align: 'left',
+  shrinked: true,
+  width: '100%',
 }
 
 export default TableCell
