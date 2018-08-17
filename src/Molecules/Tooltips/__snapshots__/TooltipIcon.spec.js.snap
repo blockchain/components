@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TooltipIcon should render correctly 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 5px;
+}
+
+.c1 {
+  fill: #545456;
+  width: 20px;
+  height: 20px;
+  cursor: default;
+}
+
+.c1:hover {
+  fill: #545456;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "buttonBackgroundColor": "#004A7C",
+      "buttonColor": "#FFF",
+      "buttonHoverColor": "#0068af",
+      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeColor": "#FFF",
+      "circleBadgeBackgroundColor": "#CCC",
+      "circleBadgeHoverColor": "#004A7C",
+      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownColor": "#545456",
+      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
+      "iconColor": "#545456",
+      "iconHoverColor": "#757679",
+      "inputBackgroundColor": "#FFF",
+      "inputBorderColor": "#CCC",
+      "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
+      "linkColor": "#545456",
+      "linkHoverColor": "#004A7C",
+      "navbarDropdownContentBackgroundColor": "#FFF",
+      "navbarDropdownContentShadowColor": "#545456",
+      "navbarDropdownHeaderColor": "#FFF",
+      "navbarMenuBagroundColor": "#004A7C",
+      "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
+      "palette": Object {
+        "azure": "#3558A8",
+        "bigStone": "#152343",
+        "biscay": "#153A62",
+        "black": "#000",
+        "blackAlpha05": "rgba(0,0,0,0.05)",
+        "blackAlpha75": "rgba(0,0,0,0.75)",
+        "blueWood": "#27324B",
+        "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
+        "gold": "#FFCA00",
+        "gray0": "#F8F8F8",
+        "gray1": "#EEF2F5",
+        "gray2": "#CCC",
+        "gray3": "#999B9E",
+        "gray4": "#757679",
+        "gray5": "#545456",
+        "gray6": "#383838",
+        "gray7": "#040d25",
+        "orient": "#004A7C",
+        "powderBlue": "#B2D5E5",
+        "transparent": "rgba(0, 0, 0, 0)",
+        "white": "#FFF",
+        "whiteAlpha10": "rgba(255,255,255,0.1)",
+        "whiteAlpha75": "rgba(255,255,255,0.75)",
+      },
+      "panelBackgroundColor": "#FFF",
+      "panelShadowColor": "#EEF2F5",
+      "searchBarIconBackgroundColor": "#FFCA00",
+      "searchBarInputBackgroundColor": "#FFF",
+      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
+      "searchBarUnderlinedBorderColor": "#CCC",
+      "sectionBackgroundColor": "rgba(0, 0, 0, 0)",
+      "tabMenuBarColor": "#FFCA00",
+      "tabMenuBorderColor": "#EEF2F5",
+      "tableCellEvenBackgroundColor": "#F8F8F8",
+      "tableCellOddBackgroundColor": "#FFF",
+      "tableShadowColor": "#EEF2F5",
+      "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
+    }
+  }
+>
+  <TooltipIcon
+    name="questionInCircle"
+  >
+    <Styled(Icon)
+      name="questionInCircle"
+    >
+      <Icon
+        className="c0"
+        name="questionInCircle"
+        selectable={false}
+        size="20px"
+      >
+        <Styled(questionInCircle)
+          className="c0"
+          selectable="0"
+          size="20px"
+        >
+          <questionInCircle
+            className="c0 c1"
+            height="32"
+            selectable="0"
+            size="20px"
+            viewBox="0 0 32 32"
+            width="32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <svg
+              className="c0 c1"
+              height="32"
+              selectable="0"
+              size="20px"
+              viewBox="0 0 32 32"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                question-in-circle
+              </title>
+              <path
+                d="M16 .39C7.379.39.39 7.379.39 16S7.379 31.61 16 31.61c8.621 0 15.61-6.989 15.61-15.61C31.61 7.379 24.621.39 16 .39zm0 29.955C8.077 30.345 1.655 23.922 1.655 16S8.078 1.655 16 1.655c7.923 0 14.345 6.423 14.345 14.345 0 7.923-6.423 14.345-14.345 14.345z"
+                stroke="#000"
+                strokeMiterlimit="10"
+                strokeWidth=".78"
+              />
+              <path
+                d="M11.559 12.308a1.179 1.179 0 0 1-1.146-1.388l-.001.007c.585-2.677 2.638-4.16 5.62-4.16 3.348 0 5.588 1.616 5.588 4.683 0 4.02-3.653 4.542-4.316 7.446-.115.534-.58.93-1.139.937H16.02a1.155 1.155 0 0 1-1.126-1.413l-.001.008c.702-3.122 3.731-3.512 3.731-6.501 0-1.616-1.14-2.404-2.872-2.404-1.499 0-2.505.648-2.857 1.943a1.197 1.197 0 0 1-1.142.844l-.047-.001h.002zm5.612 11.661a1.218 1.218 0 0 1-2.436 0 1.218 1.218 0 0 1 2.436 0z"
+              />
+            </svg>
+          </questionInCircle>
+        </Styled(questionInCircle)>
+      </Icon>
+    </Styled(Icon)>
+  </TooltipIcon>
+</ThemeProvider>
+`;

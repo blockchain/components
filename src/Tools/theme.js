@@ -13,6 +13,7 @@ export default {
   circleBadgeHoverColor: palette['orient'],
   dropdownColor: palette['gray5'],
   dropdownBackgroundColor: palette['transparent'],
+  footerCategoryColor: palette['gray6'],
   iconColor: palette['gray5'],
   iconHoverColor: palette['gray4'],
   inputColor: palette['gray5'],
@@ -46,5 +47,13 @@ export default {
   tabMenuBorderColor: palette['gray1'],
   tabMenuBarColor: palette['gold'],
   textColor: palette['gray5'],
+  togglerBorderColor: palette['gray1'],
+  togglerColor: palette['cerulean'],
+  togglerBackgroundColor: palette['white'],
+  togglerSelectedColor: palette['white'],
+  togglerSelectedBackgroundColor: palette['cerulean'],
+  tooltipColor: palette['white'],
+  tooltipBackgroundColor: palette['gray6'],
+  tooltipBorderColor: palette['gray6'],
 }
 /* eslint-enable */

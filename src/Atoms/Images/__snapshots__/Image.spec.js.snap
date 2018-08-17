@@ -21,6 +21,7 @@ exports[`Image should render correctly 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
@@ -80,6 +81,14 @@ exports[`Image should render correctly 1`] = `
       "tableCellOddBackgroundColor": "#FFF",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -99,6 +108,7 @@ exports[`Image should render correctly 1`] = `
         "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
         "dropdownColor": "#545456",
         "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+        "footerCategoryColor": "#383838",
         "iconColor": "#545456",
         "iconHoverColor": "#757679",
         "inputBackgroundColor": "#FFF",
@@ -158,6 +168,14 @@ exports[`Image should render correctly 1`] = `
         "tableCellOddBackgroundColor": "#FFF",
         "tableShadowColor": "#EEF2F5",
         "textColor": "#545456",
+        "togglerBackgroundColor": "#FFF",
+        "togglerBorderColor": "#EEF2F5",
+        "togglerColor": "#10ADE4",
+        "togglerSelectedBackgroundColor": "#10ADE4",
+        "togglerSelectedColor": "#FFF",
+        "tooltipBackgroundColor": "#383838",
+        "tooltipBorderColor": "#383838",
+        "tooltipColor": "#FFF",
       }
     }
     width="100%"
@@ -178,6 +196,7 @@ exports[`Image should render correctly 1`] = `
           "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
           "dropdownColor": "#545456",
           "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+          "footerCategoryColor": "#383838",
           "iconColor": "#545456",
           "iconHoverColor": "#757679",
           "inputBackgroundColor": "#FFF",
@@ -237,6 +256,14 @@ exports[`Image should render correctly 1`] = `
           "tableCellOddBackgroundColor": "#FFF",
           "tableShadowColor": "#EEF2F5",
           "textColor": "#545456",
+          "togglerBackgroundColor": "#FFF",
+          "togglerBorderColor": "#EEF2F5",
+          "togglerColor": "#10ADE4",
+          "togglerSelectedBackgroundColor": "#10ADE4",
+          "togglerSelectedColor": "#FFF",
+          "tooltipBackgroundColor": "#383838",
+          "tooltipBorderColor": "#383838",
+          "tooltipColor": "#FFF",
         }
       }
       width="100%"
@@ -275,6 +302,7 @@ exports[`Image should render correctly width width 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
@@ -334,6 +362,14 @@ exports[`Image should render correctly width width 1`] = `
       "tableCellOddBackgroundColor": "#FFF",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -353,6 +389,7 @@ exports[`Image should render correctly width width 1`] = `
         "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
         "dropdownColor": "#545456",
         "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+        "footerCategoryColor": "#383838",
         "iconColor": "#545456",
         "iconHoverColor": "#757679",
         "inputBackgroundColor": "#FFF",
@@ -412,6 +449,14 @@ exports[`Image should render correctly width width 1`] = `
         "tableCellOddBackgroundColor": "#FFF",
         "tableShadowColor": "#EEF2F5",
         "textColor": "#545456",
+        "togglerBackgroundColor": "#FFF",
+        "togglerBorderColor": "#EEF2F5",
+        "togglerColor": "#10ADE4",
+        "togglerSelectedBackgroundColor": "#10ADE4",
+        "togglerSelectedColor": "#FFF",
+        "tooltipBackgroundColor": "#383838",
+        "tooltipBorderColor": "#383838",
+        "tooltipColor": "#FFF",
       }
     }
     width="200px"
@@ -432,6 +477,7 @@ exports[`Image should render correctly width width 1`] = `
           "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
           "dropdownColor": "#545456",
           "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+          "footerCategoryColor": "#383838",
           "iconColor": "#545456",
           "iconHoverColor": "#757679",
           "inputBackgroundColor": "#FFF",
@@ -491,6 +537,14 @@ exports[`Image should render correctly width width 1`] = `
           "tableCellOddBackgroundColor": "#FFF",
           "tableShadowColor": "#EEF2F5",
           "textColor": "#545456",
+          "togglerBackgroundColor": "#FFF",
+          "togglerBorderColor": "#EEF2F5",
+          "togglerColor": "#10ADE4",
+          "togglerSelectedBackgroundColor": "#10ADE4",
+          "togglerSelectedColor": "#FFF",
+          "tooltipBackgroundColor": "#383838",
+          "tooltipBorderColor": "#383838",
+          "tooltipColor": "#FFF",
         }
       }
       width="200px"
@@ -529,6 +583,7 @@ exports[`Image should render correctly with height 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
@@ -588,6 +643,14 @@ exports[`Image should render correctly with height 1`] = `
       "tableCellOddBackgroundColor": "#FFF",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -607,6 +670,7 @@ exports[`Image should render correctly with height 1`] = `
         "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
         "dropdownColor": "#545456",
         "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+        "footerCategoryColor": "#383838",
         "iconColor": "#545456",
         "iconHoverColor": "#757679",
         "inputBackgroundColor": "#FFF",
@@ -666,6 +730,14 @@ exports[`Image should render correctly with height 1`] = `
         "tableCellOddBackgroundColor": "#FFF",
         "tableShadowColor": "#EEF2F5",
         "textColor": "#545456",
+        "togglerBackgroundColor": "#FFF",
+        "togglerBorderColor": "#EEF2F5",
+        "togglerColor": "#10ADE4",
+        "togglerSelectedBackgroundColor": "#10ADE4",
+        "togglerSelectedColor": "#FFF",
+        "tooltipBackgroundColor": "#383838",
+        "tooltipBorderColor": "#383838",
+        "tooltipColor": "#FFF",
       }
     }
     width="100%"
@@ -686,6 +758,7 @@ exports[`Image should render correctly with height 1`] = `
           "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
           "dropdownColor": "#545456",
           "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+          "footerCategoryColor": "#383838",
           "iconColor": "#545456",
           "iconHoverColor": "#757679",
           "inputBackgroundColor": "#FFF",
@@ -745,6 +818,14 @@ exports[`Image should render correctly with height 1`] = `
           "tableCellOddBackgroundColor": "#FFF",
           "tableShadowColor": "#EEF2F5",
           "textColor": "#545456",
+          "togglerBackgroundColor": "#FFF",
+          "togglerBorderColor": "#EEF2F5",
+          "togglerColor": "#10ADE4",
+          "togglerSelectedBackgroundColor": "#10ADE4",
+          "togglerSelectedColor": "#FFF",
+          "tooltipBackgroundColor": "#383838",
+          "tooltipBorderColor": "#383838",
+          "tooltipColor": "#FFF",
         }
       }
       width="100%"
@@ -783,6 +864,7 @@ exports[`Image should render correctly with name 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
@@ -842,6 +924,14 @@ exports[`Image should render correctly with name 1`] = `
       "tableCellOddBackgroundColor": "#FFF",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -861,6 +951,7 @@ exports[`Image should render correctly with name 1`] = `
         "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
         "dropdownColor": "#545456",
         "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+        "footerCategoryColor": "#383838",
         "iconColor": "#545456",
         "iconHoverColor": "#757679",
         "inputBackgroundColor": "#FFF",
@@ -920,6 +1011,14 @@ exports[`Image should render correctly with name 1`] = `
         "tableCellOddBackgroundColor": "#FFF",
         "tableShadowColor": "#EEF2F5",
         "textColor": "#545456",
+        "togglerBackgroundColor": "#FFF",
+        "togglerBorderColor": "#EEF2F5",
+        "togglerColor": "#10ADE4",
+        "togglerSelectedBackgroundColor": "#10ADE4",
+        "togglerSelectedColor": "#FFF",
+        "tooltipBackgroundColor": "#383838",
+        "tooltipBorderColor": "#383838",
+        "tooltipColor": "#FFF",
       }
     }
     width="100%"
@@ -940,6 +1039,7 @@ exports[`Image should render correctly with name 1`] = `
           "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
           "dropdownColor": "#545456",
           "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+          "footerCategoryColor": "#383838",
           "iconColor": "#545456",
           "iconHoverColor": "#757679",
           "inputBackgroundColor": "#FFF",
@@ -999,6 +1099,14 @@ exports[`Image should render correctly with name 1`] = `
           "tableCellOddBackgroundColor": "#FFF",
           "tableShadowColor": "#EEF2F5",
           "textColor": "#545456",
+          "togglerBackgroundColor": "#FFF",
+          "togglerBorderColor": "#EEF2F5",
+          "togglerColor": "#10ADE4",
+          "togglerSelectedBackgroundColor": "#10ADE4",
+          "togglerSelectedColor": "#FFF",
+          "tooltipBackgroundColor": "#383838",
+          "tooltipBorderColor": "#383838",
+          "tooltipColor": "#FFF",
         }
       }
       width="100%"
@@ -1037,6 +1145,7 @@ exports[`Image should render correctly with selectable 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
@@ -1096,6 +1205,14 @@ exports[`Image should render correctly with selectable 1`] = `
       "tableCellOddBackgroundColor": "#FFF",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -1115,6 +1232,7 @@ exports[`Image should render correctly with selectable 1`] = `
         "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
         "dropdownColor": "#545456",
         "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+        "footerCategoryColor": "#383838",
         "iconColor": "#545456",
         "iconHoverColor": "#757679",
         "inputBackgroundColor": "#FFF",
@@ -1174,6 +1292,14 @@ exports[`Image should render correctly with selectable 1`] = `
         "tableCellOddBackgroundColor": "#FFF",
         "tableShadowColor": "#EEF2F5",
         "textColor": "#545456",
+        "togglerBackgroundColor": "#FFF",
+        "togglerBorderColor": "#EEF2F5",
+        "togglerColor": "#10ADE4",
+        "togglerSelectedBackgroundColor": "#10ADE4",
+        "togglerSelectedColor": "#FFF",
+        "tooltipBackgroundColor": "#383838",
+        "tooltipBorderColor": "#383838",
+        "tooltipColor": "#FFF",
       }
     }
     width="100%"
@@ -1194,6 +1320,7 @@ exports[`Image should render correctly with selectable 1`] = `
           "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
           "dropdownColor": "#545456",
           "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+          "footerCategoryColor": "#383838",
           "iconColor": "#545456",
           "iconHoverColor": "#757679",
           "inputBackgroundColor": "#FFF",
@@ -1253,6 +1380,14 @@ exports[`Image should render correctly with selectable 1`] = `
           "tableCellOddBackgroundColor": "#FFF",
           "tableShadowColor": "#EEF2F5",
           "textColor": "#545456",
+          "togglerBackgroundColor": "#FFF",
+          "togglerBorderColor": "#EEF2F5",
+          "togglerColor": "#10ADE4",
+          "togglerSelectedBackgroundColor": "#10ADE4",
+          "togglerSelectedColor": "#FFF",
+          "tooltipBackgroundColor": "#383838",
+          "tooltipBorderColor": "#383838",
+          "tooltipColor": "#FFF",
         }
       }
       width="100%"

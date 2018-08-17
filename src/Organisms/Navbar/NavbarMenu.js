@@ -14,6 +14,7 @@ const Wrapper = styled.div`
   padding: 60px 0 15px 0;
   background-color: ${(props) => props.theme['navbarMenuBagroundColor']};
   z-index: 10;
+  transform: translate3d(0, 0, 0);
 
   @media (min-width: 768px) {
     position: relative;
