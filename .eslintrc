@@ -18,6 +18,10 @@ env:
 globals:
   Event: true
 
+settings:
+  react:
+    version: 16.4.2
+
 rules:
   react/jsx-no-bind: warn
   react/sort-comp:
