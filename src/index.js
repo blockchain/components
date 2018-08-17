@@ -31,7 +31,7 @@ export {
   TogglerItem,
   Tooltip,
   TooltipHost,
-  TooltipItem,
+  TooltipIcon,
 } from './Molecules'
 
 export {
