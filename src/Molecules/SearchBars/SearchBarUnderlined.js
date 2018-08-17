@@ -39,7 +39,7 @@ const SearchBarUnderlined = ({
   <Wrapper>
     <SearchInput onChange={onChange} value={value} {...rest} />
     <IconContainer>
-      <Icon name="searchFilled" onClick={onClick} selectable size="20px" />
+      <Icon name="searchFilled" onClick={onClick} selectable size="1.3rem" />
     </IconContainer>
   </Wrapper>
 )

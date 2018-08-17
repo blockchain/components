@@ -1,31 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavbarToggler should render correctly 1`] = `
-.c1 > svg {
+.c0 {
+  z-index: 15;
+  margin-right: 20px;
+  fill: #FFF !important;
+}
+
+.c0:hover {
+  fill: #FFF !important;
+}
+
+.c1 {
   fill: #545456;
   width: 20px;
   height: 20px;
   cursor: pointer;
 }
 
-.c1 > svg:hover {
+.c1:hover {
   fill: #757679;
 }
 
-.c0 {
-  z-index: 15;
-  margin-right: 20px;
-}
-
-.c0 > svg {
-  fill: #FFF;
-}
-
-.c0 > svg:hover {
-  fill: #FFF;
-}
-
-@media (min-width:768px) {
+@media (min-width:48rem) {
   .c0 {
     display: none;
   }
@@ -44,11 +41,13 @@ exports[`NavbarToggler should render correctly 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -56,6 +55,13 @@ exports[`NavbarToggler should render correctly 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -65,6 +71,7 @@ exports[`NavbarToggler should render correctly 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -92,9 +99,16 @@ exports[`NavbarToggler should render correctly 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -113,39 +127,41 @@ exports[`NavbarToggler should render correctly 1`] = `
         selectable={true}
         size="20px"
       >
-        <styled.div
+        <Styled(hamburgerMenu)
           className="c0"
           onClick={[MockFunction]}
-          selectable={true}
+          selectable="1"
           size="20px"
         >
-          <div
+          <hamburgerMenu
             className="c0 c1"
+            height="32"
             onClick={[MockFunction]}
+            selectable="1"
             size="20px"
+            viewBox="0 0 32 32"
+            width="32"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <hamburgerMenu
+            <svg
+              className="c0 c1"
               height="32"
+              onClick={[MockFunction]}
+              selectable="1"
+              size="20px"
               viewBox="0 0 32 32"
               width="32"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                height="32"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>
-                  hamburger-menu
-                </title>
-                <path
-                  d="M0 23.592h32v4.128H0v-4.128zM0 13.936h32v4.128H0v-4.128zM0 4.28h32v4.128H0V4.28z"
-                />
-              </svg>
-            </hamburgerMenu>
-          </div>
-        </styled.div>
+              <title>
+                hamburger-menu
+              </title>
+              <path
+                d="M0 23.592h32v4.128H0v-4.128zM0 13.936h32v4.128H0v-4.128zM0 4.28h32v4.128H0V4.28z"
+              />
+            </svg>
+          </hamburgerMenu>
+        </Styled(hamburgerMenu)>
       </Icon>
     </Styled(Icon)>
   </NavbarToggler>
@@ -153,31 +169,28 @@ exports[`NavbarToggler should render correctly 1`] = `
 `;
 
 exports[`NavbarToggler should render correctly with toggled 1`] = `
-.c1 > svg {
+.c0 {
+  z-index: 15;
+  margin-right: 20px;
+  fill: #FFF !important;
+}
+
+.c0:hover {
+  fill: #FFF !important;
+}
+
+.c1 {
   fill: #545456;
   width: 20px;
   height: 20px;
   cursor: pointer;
 }
 
-.c1 > svg:hover {
+.c1:hover {
   fill: #757679;
 }
 
-.c0 {
-  z-index: 15;
-  margin-right: 20px;
-}
-
-.c0 > svg {
-  fill: #FFF;
-}
-
-.c0 > svg:hover {
-  fill: #FFF;
-}
-
-@media (min-width:768px) {
+@media (min-width:48rem) {
   .c0 {
     display: none;
   }
@@ -196,11 +209,13 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -208,6 +223,13 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -217,6 +239,7 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -244,9 +267,16 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -265,39 +295,41 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
         selectable={true}
         size="20px"
       >
-        <styled.div
+        <Styled(closeFilled)
           className="c0"
           onClick={[MockFunction]}
-          selectable={true}
+          selectable="1"
           size="20px"
         >
-          <div
+          <closeFilled
             className="c0 c1"
+            height="32"
             onClick={[MockFunction]}
+            selectable="1"
             size="20px"
+            viewBox="0 0 32 32"
+            width="32"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <closeFilled
+            <svg
+              className="c0 c1"
               height="32"
+              onClick={[MockFunction]}
+              selectable="1"
+              size="20px"
               viewBox="0 0 32 32"
               width="32"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                height="32"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>
-                  close-filled
-                </title>
-                <path
-                  d="M31.432.568c-.301-.301-.717-.487-1.176-.487s-.875.186-1.176.487L17.176 12.472c-.301.301-.717.487-1.176.487s-.875-.186-1.176-.487L2.92.568C2.619.267 2.203.081 1.744.081S.869.267.568.568C.267.869.081 1.285.081 1.744s.186.875.487 1.176l11.904 11.904c.301.301.487.717.487 1.176s-.186.875-.487 1.176L.568 29.08c-.301.301-.487.717-.487 1.176s.186.875.487 1.176c.301.301.717.487 1.176.487s.875-.186 1.176-.487l11.904-11.904c.301-.301.717-.487 1.176-.487s.875.186 1.176.487L29.08 31.432c.301.301.717.487 1.176.487s.875-.186 1.176-.487c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176L19.528 17.176c-.301-.301-.487-.717-.487-1.176s.186-.875.487-1.176L31.432 2.92c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176z"
-                />
-              </svg>
-            </closeFilled>
-          </div>
-        </styled.div>
+              <title>
+                close-filled
+              </title>
+              <path
+                d="M31.432.568c-.301-.301-.717-.487-1.176-.487s-.875.186-1.176.487L17.176 12.472c-.301.301-.717.487-1.176.487s-.875-.186-1.176-.487L2.92.568C2.619.267 2.203.081 1.744.081S.869.267.568.568C.267.869.081 1.285.081 1.744s.186.875.487 1.176l11.904 11.904c.301.301.487.717.487 1.176s-.186.875-.487 1.176L.568 29.08c-.301.301-.487.717-.487 1.176s.186.875.487 1.176c.301.301.717.487 1.176.487s.875-.186 1.176-.487l11.904-11.904c.301-.301.717-.487 1.176-.487s.875.186 1.176.487L29.08 31.432c.301.301.717.487 1.176.487s.875-.186 1.176-.487c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176L19.528 17.176c-.301-.301-.487-.717-.487-1.176s.186-.875.487-1.176L31.432 2.92c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176z"
+              />
+            </svg>
+          </closeFilled>
+        </Styled(closeFilled)>
       </Icon>
     </Styled(Icon)>
   </NavbarToggler>

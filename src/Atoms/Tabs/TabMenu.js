@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   align-items: center;
   width: ${(props) => props.width};
   min-height: ${(props) => props.height};
-  border-bottom: 2px solid ${(props) => props.theme['tabMenuBorderColor']};
+  border-bottom: 0.125rem solid ${(props) => props.theme['tabMenuBorderColor']};
   box-sizing: border-box;
 `
 const Container = styled.div`
@@ -21,13 +21,13 @@ const Container = styled.div`
   width: 100%;
   min-height: 100%;
 
-  @media (max-width: 767px) {
-    & > .hidden {
+  @media (max-width: 48rem) {
+    & > .disabled {
       display: ${(props) => (props.toggled ? 'flex' : 'none')};
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
     flex-direction: row;
     align-items: center;
   }
@@ -47,7 +47,7 @@ TabMenu.propTypes = {
 }
 
 TabMenu.defaultProps = {
-  height: '50px',
+  height: '3rem',
   toggled: false,
   width: '100%',
 }

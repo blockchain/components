@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 
   & > * {
     display: ${(props) => (props.inline ? 'inline' : 'block')};
-    margin-right: ${(props) => (props.inline ? '5px' : '0')};
+    margin-right: ${(props) => (props.inline ? '0.4rem' : '0')};
   }
 `
 

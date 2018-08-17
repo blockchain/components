@@ -12,6 +12,7 @@ import bitcoinInCircle from './assets/bitcoin-in-circle.svg'
 import bitcoinReceiptFilled from './assets/bitcoin-receipt-filled.svg'
 import bitcoinReceipt from './assets/bitcoin-receipt.svg'
 import bitcoin from './assets/bitcoin.svg'
+import blocks from './assets/blocks.svg'
 import buildFilled from './assets/build-filled.svg'
 import build from './assets/build.svg'
 import cameraFilled from './assets/camera-filled.svg'
@@ -107,6 +108,7 @@ import stackOfCoins from './assets/stack-of-coins.svg'
 import supportFilled from './assets/support-filled.svg'
 import support from './assets/support.svg'
 import switch2 from './assets/switch2.svg'
+import transactions3 from './assets/transactions3.svg'
 import transactions2Filled from './assets/transactions-2-filled.svg'
 import transactions2 from './assets/transactions-2.svg'
 import transactionsFilled from './assets/transactions-filled.svg'
@@ -139,6 +141,7 @@ export default {
   bitcoinInCircleFilled,
   bitcoinReceipt,
   bitcoinReceiptFilled,
+  blocks,
   build,
   buildFilled,
   camera,
@@ -237,6 +240,7 @@ export default {
   transactions,
   transactions2,
   transactions2Filled,
+  transactions3,
   transactionsFilled,
   trash,
   trashFilled,

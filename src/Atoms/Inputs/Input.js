@@ -8,16 +8,16 @@ const Wrapper = styled.input.attrs({
 })`
   display: block;
   width: ${(props) => props.width};
-  height: 52px;
-  padding: 0 20px;
+  height: 3.2rem;
+  padding: 0 1.4rem;
   box-sizing: border-box;
   font-family: ${(props) => props.theme['fontPrimary']};
-  font-size: 18px;
+  font-size: 1rem;
   color: ${(props) => props.theme['inputColor']};
   border-width: 1px;
   border-color: ${(props) => props.theme['inputBorderColor']};
   border-style: solid;
-  border-radius: 0.5rem;
+  border-radius: 0.125rem;
   background-color: ${(props) => props.theme['inputBackgroundColor']};
   background-image: none;
   outline-width: 0;
@@ -27,6 +27,11 @@ const Wrapper = styled.input.attrs({
     color: ${(props) => props.theme['inputColor']};
     background: ${(props) => props.theme['inputBackgroundColor']};
     cursor: not-allowed;
+  }
+
+  &::placeholder {
+    color: ${(props) => props.theme['inputPlaceholderColor']};
+    font-size: 0.875rem;
   }
 `
 

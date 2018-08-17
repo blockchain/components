@@ -11,16 +11,20 @@ exports[`CircleBadge should render correctly 1`] = `
 .c1 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.625rem;
   text-transform: none;
   font-style: normal;
   color: #545456;
   opacity: 1;
   cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c1:hover {
   color: #004A7C;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 {
@@ -39,9 +43,9 @@ exports[`CircleBadge should render correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 40px;
-  width: 40px;
-  padding: 7px;
+  height: 2.625rem;
+  width: 2.625rem;
+  padding: 0.4rem;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: #CCC;
@@ -66,11 +70,13 @@ exports[`CircleBadge should render correctly 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -78,6 +84,13 @@ exports[`CircleBadge should render correctly 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -87,6 +100,7 @@ exports[`CircleBadge should render correctly 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -114,19 +128,26 @@ exports[`CircleBadge should render correctly 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
   <CircleBadge
     name="facebook"
-    size="40px"
+    size="2.625rem"
     url="http://www.blockchain.com"
   >
     <Styled(Link)
-      size="40px"
+      size="2.625rem"
       url="http://www.blockchain.com"
     >
       <Link
@@ -135,7 +156,7 @@ exports[`CircleBadge should render correctly 1`] = `
         href="http://www.blockchain.com"
         italic={false}
         opacity={1}
-        size="40px"
+        size="2.625rem"
         target="_blank"
         uppercase={false}
         url="http://www.blockchain.com"
@@ -147,7 +168,7 @@ exports[`CircleBadge should render correctly 1`] = `
           href="http://www.blockchain.com"
           italic={false}
           opacity={1}
-          size="40px"
+          size="2.625rem"
           target="_blank"
           uppercase={false}
           url="http://www.blockchain.com"
@@ -157,7 +178,7 @@ exports[`CircleBadge should render correctly 1`] = `
             className="c0 c1"
             href="http://www.blockchain.com"
             opacity={1}
-            size="40px"
+            size="2.625rem"
             target="_blank"
           >
             <Image
@@ -201,16 +222,20 @@ exports[`CircleBadge should render correctly with name 1`] = `
 .c1 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.625rem;
   text-transform: none;
   font-style: normal;
   color: #545456;
   opacity: 1;
   cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c1:hover {
   color: #004A7C;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 {
@@ -229,9 +254,9 @@ exports[`CircleBadge should render correctly with name 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 40px;
-  width: 40px;
-  padding: 7px;
+  height: 2.625rem;
+  width: 2.625rem;
+  padding: 0.4rem;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: #CCC;
@@ -256,11 +281,13 @@ exports[`CircleBadge should render correctly with name 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -268,6 +295,13 @@ exports[`CircleBadge should render correctly with name 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -277,6 +311,7 @@ exports[`CircleBadge should render correctly with name 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -304,19 +339,26 @@ exports[`CircleBadge should render correctly with name 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
   <CircleBadge
     name="linkedIn"
-    size="40px"
+    size="2.625rem"
     url="http://www.blockchain.com"
   >
     <Styled(Link)
-      size="40px"
+      size="2.625rem"
       url="http://www.blockchain.com"
     >
       <Link
@@ -325,7 +367,7 @@ exports[`CircleBadge should render correctly with name 1`] = `
         href="http://www.blockchain.com"
         italic={false}
         opacity={1}
-        size="40px"
+        size="2.625rem"
         target="_blank"
         uppercase={false}
         url="http://www.blockchain.com"
@@ -337,7 +379,7 @@ exports[`CircleBadge should render correctly with name 1`] = `
           href="http://www.blockchain.com"
           italic={false}
           opacity={1}
-          size="40px"
+          size="2.625rem"
           target="_blank"
           uppercase={false}
           url="http://www.blockchain.com"
@@ -347,7 +389,7 @@ exports[`CircleBadge should render correctly with name 1`] = `
             className="c0 c1"
             href="http://www.blockchain.com"
             opacity={1}
-            size="40px"
+            size="2.625rem"
             target="_blank"
           >
             <Image
@@ -397,10 +439,14 @@ exports[`CircleBadge should render correctly with size 1`] = `
   color: #545456;
   opacity: 1;
   cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c1:hover {
   color: #004A7C;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 {
@@ -421,7 +467,7 @@ exports[`CircleBadge should render correctly with size 1`] = `
   align-items: center;
   height: 80px;
   width: 80px;
-  padding: 7px;
+  padding: 0.4rem;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: #CCC;
@@ -446,11 +492,13 @@ exports[`CircleBadge should render correctly with size 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -458,6 +506,13 @@ exports[`CircleBadge should render correctly with size 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -467,6 +522,7 @@ exports[`CircleBadge should render correctly with size 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -494,9 +550,16 @@ exports[`CircleBadge should render correctly with size 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >

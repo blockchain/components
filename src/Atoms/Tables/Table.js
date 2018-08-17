@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  box-shadow: 0 0 25px 5px ${(props) => props.theme['tableShadowColor']};
+  box-shadow: 0 0 1.5rem 0.4rem ${(props) => props.theme['tableShadowColor']};
 
   & > :nth-child(even) {
     background-color: ${(props) => props.theme['tableCellEvenBackgroundColor']};
@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   }
 `
 
-const Table = ({ children }) => <Wrapper>{children}</Wrapper>
+const Table = ({ children, ...rest }) => <Wrapper {...rest}>{children}</Wrapper>
 
 Table.propTypes = {
   children: PropTypes.node,

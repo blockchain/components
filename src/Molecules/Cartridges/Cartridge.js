@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { merge } from 'ramda'
 import Text from '../../Atoms/Typography/Text'
 
 const Wrapper = styled(Text)`
@@ -8,10 +7,9 @@ const Wrapper = styled(Text)`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-weight: 300;
   color: ${(props) => props.theme['cartridgeColor']};
   background-color: ${(props) => props.theme['cartridgeBackgroundColor']};
-  padding: 5px;
+  padding: 0.3rem;
   box-sizing: border-box;
 `
 
@@ -20,5 +18,6 @@ const Cartridge = ({ children, ...rest }) => (
 )
 
 Cartridge.propTypes = Text.propTypes
-Cartridge.defaultProps = merge(Text.defaultProps, { weight: 300 })
+Cartridge.defaultProps = Text.defaultProps
+
 export default Cartridge

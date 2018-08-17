@@ -8,18 +8,22 @@ const Wrapper = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  order: 1;
-  padding: 15px;
+  padding: 1rem;
   box-sizing: border-box;
   cursor: pointer;
 
-  &.hidden {
-    order: 2;
+  @media (max-width: 48rem) {
+    order: 1;
+
+    &.hidden {
+      order: 2;
+    }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
     display: flex;
     justify-content: center;
+    order: 1;
 
     &:hover {
       & :last-child {
@@ -33,7 +37,7 @@ const Bar = styled.div`
   bottom: -2px;
   left: 0;
   width: 100%;
-  height: 5px;
+  height: 0.325rem;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   background-color: ${(props) => props.theme['tabMenuBarColor']};
@@ -41,7 +45,7 @@ const Bar = styled.div`
 `
 
 const TabMenuItem = ({ children, className, selected, ...rest }) => (
-  <Wrapper className={selected ? '' : 'hidden'} {...rest}>
+  <Wrapper className={selected ? className : `${className} disabled`} {...rest}>
     {children}
     <Bar selected={selected} />
   </Wrapper>

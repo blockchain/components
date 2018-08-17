@@ -12,9 +12,11 @@ const Wrapper = styled.a`
   color: ${(props) => props.theme['linkColor']};
   opacity: ${(props) => props.opacity};
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     color: ${(props) => props.theme['linkHoverColor']};
+    text-decoration: none;
   }
 `
 
@@ -34,7 +36,7 @@ Link.defaultProps = {
   capitalize: false,
   italic: false,
   opacity: 1,
-  size: '14px',
+  size: '1rem',
   uppercase: false,
   weight: 400,
 }

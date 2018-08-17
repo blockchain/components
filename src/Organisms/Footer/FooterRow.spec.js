@@ -1,11 +1,11 @@
 import React from 'react'
 import { mountWithTheme } from '../../Utils/testHelper'
 
-import TableHeader from './TableHeader'
+import FooterRow from './FooterRow'
 
-describe('TableHeader', () => {
+describe('FooterRow', () => {
   it('should render correctly', () => {
-    const tree = mountWithTheme(<TableHeader>MyTableHeader</TableHeader>)
+    const tree = mountWithTheme(<FooterRow>FooterRow</FooterRow>)
 
     expect(tree).toMatchSnapshot()
   })

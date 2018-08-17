@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TableHeader should render correctly 1`] = `
+exports[`Pagination should render correctly 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -13,15 +13,11 @@ exports[`TableHeader should render correctly 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  padding: 10px 30px;
-  box-sizing: border-box;
-  color: #999B9E;
-  text-transform: uppercase;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  margin: 10px 0;
 }
 
 <ThemeProvider
@@ -37,11 +33,13 @@ exports[`TableHeader should render correctly 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -49,6 +47,13 @@ exports[`TableHeader should render correctly 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -58,6 +63,7 @@ exports[`TableHeader should render correctly 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -85,20 +91,25 @@ exports[`TableHeader should render correctly 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
-  <TableHeader>
+  <Pagination>
     <styled.div>
       <div
         className="c0"
-      >
-        MyTableHeader
-      </div>
+      />
     </styled.div>
-  </TableHeader>
+  </Pagination>
 </ThemeProvider>
 `;

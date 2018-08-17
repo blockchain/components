@@ -7,6 +7,7 @@ export default {
   orient: '#004A7C',
   azure: '#3558A8',
   cerulean: '#10ADE4',
+  ceruleanAlpha10: 'rgba(16,173,228,0.1)',
   powderBlue: '#B2D5E5',
   /* gray Light to Dark */
   gray0: '#F8F8F8',

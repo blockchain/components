@@ -4,16 +4,16 @@ exports[`Input should render correctly 1`] = `
 .c0 {
   display: block;
   width: 100%;
-  height: 52px;
-  padding: 0 20px;
+  height: 3.2rem;
+  padding: 0 1.4rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   color: #545456;
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.5rem;
+  border-radius: 0.125rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -29,6 +29,26 @@ exports[`Input should render correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c0::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
 <ThemeProvider
   theme={
     Object {
@@ -42,11 +62,13 @@ exports[`Input should render correctly 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -54,6 +76,13 @@ exports[`Input should render correctly 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -63,6 +92,7 @@ exports[`Input should render correctly 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -90,9 +120,16 @@ exports[`Input should render correctly 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -121,16 +158,16 @@ exports[`Input should render correctly with disabled 1`] = `
 .c0 {
   display: block;
   width: 100%;
-  height: 52px;
-  padding: 0 20px;
+  height: 3.2rem;
+  padding: 0 1.4rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   color: #545456;
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.5rem;
+  border-radius: 0.125rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -146,6 +183,26 @@ exports[`Input should render correctly with disabled 1`] = `
   cursor: not-allowed;
 }
 
+.c0::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
 <ThemeProvider
   theme={
     Object {
@@ -159,11 +216,13 @@ exports[`Input should render correctly with disabled 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -171,6 +230,13 @@ exports[`Input should render correctly with disabled 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -180,6 +246,7 @@ exports[`Input should render correctly with disabled 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -207,9 +274,16 @@ exports[`Input should render correctly with disabled 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -238,16 +312,16 @@ exports[`Input should render correctly with type 1`] = `
 .c0 {
   display: block;
   width: 100%;
-  height: 52px;
-  padding: 0 20px;
+  height: 3.2rem;
+  padding: 0 1.4rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   color: #545456;
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.5rem;
+  border-radius: 0.125rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -263,6 +337,26 @@ exports[`Input should render correctly with type 1`] = `
   cursor: not-allowed;
 }
 
+.c0::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
 <ThemeProvider
   theme={
     Object {
@@ -276,11 +370,13 @@ exports[`Input should render correctly with type 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -288,6 +384,13 @@ exports[`Input should render correctly with type 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -297,6 +400,7 @@ exports[`Input should render correctly with type 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -324,9 +428,16 @@ exports[`Input should render correctly with type 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -355,16 +466,16 @@ exports[`Input should render correctly with width 1`] = `
 .c0 {
   display: block;
   width: 200px;
-  height: 52px;
-  padding: 0 20px;
+  height: 3.2rem;
+  padding: 0 1.4rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   color: #545456;
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.5rem;
+  border-radius: 0.125rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -380,6 +491,26 @@ exports[`Input should render correctly with width 1`] = `
   cursor: not-allowed;
 }
 
+.c0::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
 <ThemeProvider
   theme={
     Object {
@@ -393,11 +524,13 @@ exports[`Input should render correctly with width 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -405,6 +538,13 @@ exports[`Input should render correctly with width 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -414,6 +554,7 @@ exports[`Input should render correctly with width 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -441,9 +582,16 @@ exports[`Input should render correctly with width 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >

@@ -3,30 +3,24 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import IconMap from './IconMap'
 
-const getHoverColor = (props) =>
-  props.selectable ? 'iconHoverColor' : 'iconColor'
-
 const Wrapper = styled.div`
-  & > svg {
-    fill: ${(props) => props.theme['iconColor']};
-    width: ${(props) => props.size};
-    height: ${(props) => props.size};
-    cursor: ${(props) => (props.selectable ? 'pointer' : 'default')};
+  fill: ${(props) => props.theme['iconColor']};
+  width: ${(props) => props.size};
+  height: ${(props) => props.size};
+  cursor: ${(props) => (props.selectable === '1' ? 'pointer' : 'default')};
 
-    &:hover {
-      fill: ${(props) => props.theme[getHoverColor(props)]};
-    }
+  &:hover {
+    fill: ${(props) =>
+      props.selectable === '1'
+        ? props.theme['iconHoverColor']
+        : props.theme['iconColor']};
   }
 `
 
-const Icon = ({ name, ...rest }) => {
+const Icon = ({ name, selectable, ...rest }) => {
   const Svg = IconMap[name]
-
-  return (
-    <Wrapper {...rest}>
-      <Svg />
-    </Wrapper>
-  )
+  const IconSvg = Wrapper.withComponent(Svg)
+  return <IconSvg selectable={selectable ? '1' : '0'} {...rest} />
 }
 
 Icon.propTypes = {
@@ -38,7 +32,7 @@ Icon.propTypes = {
 Icon.defaultProps = {
   name: 'bitcoin',
   selectable: false,
-  size: '40px',
+  size: '2.75rem',
 }
 
 export default Icon

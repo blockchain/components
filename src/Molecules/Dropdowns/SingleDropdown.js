@@ -5,11 +5,11 @@ import ImageMap from '../../Atoms/Images/ImageMap'
 
 const Wrapper = styled.select`
   margin-bottom: 0;
-  min-width: 100px;
+  min-width: 6rem;
   box-sizing: border-box;
   color: ${(props) => props.theme['dropdownColor']};
   background-color: ${(props) => props.theme['dropdownBackgroundColor']};
-  background-size: 15px;
+  background-size: 1rem;
   background-repeat: no-repeat;
   background-position: 95% 0%;
   background-image: url(${ImageMap.arrowDownSolid});
@@ -21,7 +21,7 @@ const Wrapper = styled.select`
   text-transform: ${(props) =>
     props.uppercase ? 'uppercase' : props.capitalize ? 'capitalize' : 'none'};
   font-style: ${(props) => (props.italic ? 'italic' : 'normal')};
-  border-radius: 5px;
+  border-radius: 0.3rem;
   height: 2.5rem;
   line-height: 2.5rem;
   cursor: pointer;
@@ -58,7 +58,7 @@ SingleDropdown.propTypes = {
 SingleDropdown.defaultProps = {
   capitalize: false,
   italic: false,
-  size: '16px',
+  size: '1rem',
   uppercase: false,
   weight: 300,
 }

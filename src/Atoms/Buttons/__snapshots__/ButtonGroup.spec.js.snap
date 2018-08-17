@@ -18,13 +18,12 @@ exports[`Button should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 10px 30px;
+  padding: 0.7rem 1.875rem;
   box-sizing: border-box;
-  font-size: 18px;
   color: #FFF;
   background-color: #004A7C;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.125rem;
   cursor: pointer;
   outline: none;
   -webkit-transition-duration: 0.3s;
@@ -33,6 +32,8 @@ exports[`Button should render correctly 1`] = `
   transition-timing-function: ease-in-out;
   opacity: 1;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .c1:hover {
@@ -61,7 +62,7 @@ exports[`Button should render correctly 1`] = `
 }
 
 .c0 *:not(:last-child) {
-  margin-right: 5px;
+  margin-right: 0.4rem;
 }
 
 .c0 > :first-child {
@@ -94,11 +95,13 @@ exports[`Button should render correctly 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -106,6 +109,13 @@ exports[`Button should render correctly 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -115,6 +125,7 @@ exports[`Button should render correctly 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -142,9 +153,16 @@ exports[`Button should render correctly 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >

@@ -25,15 +25,15 @@ const IconContainer = styled.div`
   width: 60px;
   height: 52px;
   background-color: ${(props) => props.theme['searchBarIconBackgroundColor']};
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
 `
 
 const SearchBar = ({ children, value, onChange, onClick, ...rest }) => (
   <Wrapper>
     <SearchInput onChange={onChange} value={value} {...rest} />
     <IconContainer>
-      <Icon name="searchFilled" onClick={onClick} selectable size="20px" />
+      <Icon name="searchFilled" onClick={onClick} selectable size="1.3rem" />
     </IconContainer>
   </Wrapper>
 )

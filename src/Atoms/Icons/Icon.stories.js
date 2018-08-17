@@ -32,14 +32,12 @@ const IconName = styled.div`
   width: 100%;
   height: 30px;
 `
-
 const renderIcon = (name) => (
   <IconContainer>
     <Icon name={name} size="40px" />
     <IconName>{name}</IconName>
   </IconContainer>
 )
-
 storiesOf('Atoms/Icons/Icon', module)
   .add('list', () => <Layout>{keysIn(IconMap).map(renderIcon)}</Layout>)
   .add('default', () => <Icon />)

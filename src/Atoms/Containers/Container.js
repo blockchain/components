@@ -11,8 +11,8 @@ const Wrapper = styled.div`
   height: ${(props) => props.height};
   margin: 0 auto;
 
-  @media (min-width: 1200px) {
-    width: 1140px;
+  @media (min-width: 75rem) {
+    width: 75rem;
   }
 `
 

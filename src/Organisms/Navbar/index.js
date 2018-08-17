@@ -9,7 +9,7 @@ import NavbarNavDropdown from './NavbarNavDropdown'
 import NavbarNavItem from './NavbarNavItem'
 import NavbarToggler from './NavbarToggler'
 
-export default {
+export {
   Navbar,
   NavbarBrand,
   NavbarDropdownContent,

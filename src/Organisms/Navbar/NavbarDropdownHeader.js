@@ -4,13 +4,13 @@ import styled from 'styled-components'
 
 const Wrapper = styled.span`
   font-family: ${(props) => props.theme['fontPrimary']};
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 600;
   color: ${(props) => props.theme['navbarDropdownHeaderColor']};
   cursor: pointer;
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
     display: block;
   }
 `

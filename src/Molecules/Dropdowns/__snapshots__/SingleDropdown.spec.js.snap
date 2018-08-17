@@ -3,11 +3,11 @@
 exports[`SingleDropdown should render correctly 1`] = `
 .c0 {
   margin-bottom: 0;
-  min-width: 100px;
+  min-width: 6rem;
   box-sizing: border-box;
   color: #545456;
   background-color: rgba(0,0,0,0);
-  background-size: 15px;
+  background-size: 1rem;
   background-repeat: no-repeat;
   background-position: 95% 0%;
   background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
@@ -16,11 +16,11 @@ exports[`SingleDropdown should render correctly 1`] = `
   appearance: none;
   border: none;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   text-transform: none;
   font-style: normal;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   height: 2.5rem;
   line-height: 2.5rem;
   cursor: pointer;
@@ -41,11 +41,13 @@ exports[`SingleDropdown should render correctly 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -53,6 +55,13 @@ exports[`SingleDropdown should render correctly 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -62,6 +71,7 @@ exports[`SingleDropdown should render correctly 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -89,9 +99,16 @@ exports[`SingleDropdown should render correctly 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -139,7 +156,7 @@ exports[`SingleDropdown should render correctly 1`] = `
       ]
     }
     onChange={[MockFunction]}
-    size="16px"
+    size="1rem"
     uppercase={false}
     weight={300}
   >
@@ -147,14 +164,14 @@ exports[`SingleDropdown should render correctly 1`] = `
       capitalize={false}
       italic={false}
       onChange={[MockFunction]}
-      size="16px"
+      size="1rem"
       uppercase={false}
       weight={300}
     >
       <select
         className="c0"
         onChange={[MockFunction]}
-        size="16px"
+        size="1rem"
       >
         <option
           key="1"
@@ -219,11 +236,11 @@ exports[`SingleDropdown should render correctly 1`] = `
 exports[`SingleDropdown should render correctly with capitalize 1`] = `
 .c0 {
   margin-bottom: 0;
-  min-width: 100px;
+  min-width: 6rem;
   box-sizing: border-box;
   color: #545456;
   background-color: rgba(0,0,0,0);
-  background-size: 15px;
+  background-size: 1rem;
   background-repeat: no-repeat;
   background-position: 95% 0%;
   background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
@@ -232,11 +249,11 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
   appearance: none;
   border: none;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   text-transform: capitalize;
   font-style: normal;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   height: 2.5rem;
   line-height: 2.5rem;
   cursor: pointer;
@@ -257,11 +274,13 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -269,6 +288,13 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -278,6 +304,7 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -305,9 +332,16 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -355,7 +389,7 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
       ]
     }
     onChange={[MockFunction]}
-    size="16px"
+    size="1rem"
     uppercase={false}
     weight={300}
   >
@@ -363,14 +397,14 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
       capitalize={true}
       italic={false}
       onChange={[MockFunction]}
-      size="16px"
+      size="1rem"
       uppercase={false}
       weight={300}
     >
       <select
         className="c0"
         onChange={[MockFunction]}
-        size="16px"
+        size="1rem"
       >
         <option
           key="1"
@@ -435,11 +469,11 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
 exports[`SingleDropdown should render correctly with italic 1`] = `
 .c0 {
   margin-bottom: 0;
-  min-width: 100px;
+  min-width: 6rem;
   box-sizing: border-box;
   color: #545456;
   background-color: rgba(0,0,0,0);
-  background-size: 15px;
+  background-size: 1rem;
   background-repeat: no-repeat;
   background-position: 95% 0%;
   background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
@@ -448,11 +482,11 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
   appearance: none;
   border: none;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   text-transform: none;
   font-style: italic;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   height: 2.5rem;
   line-height: 2.5rem;
   cursor: pointer;
@@ -473,11 +507,13 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -485,6 +521,13 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -494,6 +537,7 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -521,9 +565,16 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -571,7 +622,7 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
       ]
     }
     onChange={[MockFunction]}
-    size="16px"
+    size="1rem"
     uppercase={false}
     weight={300}
   >
@@ -579,14 +630,14 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
       capitalize={false}
       italic={true}
       onChange={[MockFunction]}
-      size="16px"
+      size="1rem"
       uppercase={false}
       weight={300}
     >
       <select
         className="c0"
         onChange={[MockFunction]}
-        size="16px"
+        size="1rem"
       >
         <option
           key="1"
@@ -651,11 +702,11 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
 exports[`SingleDropdown should render correctly with size 1`] = `
 .c0 {
   margin-bottom: 0;
-  min-width: 100px;
+  min-width: 6rem;
   box-sizing: border-box;
   color: #545456;
   background-color: rgba(0,0,0,0);
-  background-size: 15px;
+  background-size: 1rem;
   background-repeat: no-repeat;
   background-position: 95% 0%;
   background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
@@ -668,7 +719,7 @@ exports[`SingleDropdown should render correctly with size 1`] = `
   font-weight: 300;
   text-transform: none;
   font-style: normal;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   height: 2.5rem;
   line-height: 2.5rem;
   cursor: pointer;
@@ -689,11 +740,13 @@ exports[`SingleDropdown should render correctly with size 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -701,6 +754,13 @@ exports[`SingleDropdown should render correctly with size 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -710,6 +770,7 @@ exports[`SingleDropdown should render correctly with size 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -737,9 +798,16 @@ exports[`SingleDropdown should render correctly with size 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -867,11 +935,11 @@ exports[`SingleDropdown should render correctly with size 1`] = `
 exports[`SingleDropdown should render correctly with uppercase 1`] = `
 .c0 {
   margin-bottom: 0;
-  min-width: 100px;
+  min-width: 6rem;
   box-sizing: border-box;
   color: #545456;
   background-color: rgba(0,0,0,0);
-  background-size: 15px;
+  background-size: 1rem;
   background-repeat: no-repeat;
   background-position: 95% 0%;
   background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
@@ -880,11 +948,11 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
   appearance: none;
   border: none;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
   font-style: normal;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   height: 2.5rem;
   line-height: 2.5rem;
   cursor: pointer;
@@ -905,11 +973,13 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -917,6 +987,13 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -926,6 +1003,7 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -953,9 +1031,16 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -1003,7 +1088,7 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
       ]
     }
     onChange={[MockFunction]}
-    size="16px"
+    size="1rem"
     uppercase={true}
     weight={300}
   >
@@ -1011,14 +1096,14 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
       capitalize={false}
       italic={false}
       onChange={[MockFunction]}
-      size="16px"
+      size="1rem"
       uppercase={true}
       weight={300}
     >
       <select
         className="c0"
         onChange={[MockFunction]}
-        size="16px"
+        size="1rem"
       >
         <option
           key="1"
@@ -1083,11 +1168,11 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
 exports[`SingleDropdown should render correctly with weight 1`] = `
 .c0 {
   margin-bottom: 0;
-  min-width: 100px;
+  min-width: 6rem;
   box-sizing: border-box;
   color: #545456;
   background-color: rgba(0,0,0,0);
-  background-size: 15px;
+  background-size: 1rem;
   background-repeat: no-repeat;
   background-position: 95% 0%;
   background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
@@ -1096,11 +1181,11 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
   appearance: none;
   border: none;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   text-transform: none;
   font-style: normal;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   height: 2.5rem;
   line-height: 2.5rem;
   cursor: pointer;
@@ -1121,11 +1206,13 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
       "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#383838",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
       "inputBorderColor": "#CCC",
       "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
@@ -1133,6 +1220,13 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
       "navbarDropdownHeaderColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
       "palette": Object {
         "azure": "#3558A8",
         "bigStone": "#152343",
@@ -1142,6 +1236,7 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
         "gold": "#FFCA00",
         "gray0": "#F8F8F8",
         "gray1": "#EEF2F5",
@@ -1169,9 +1264,16 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
       "tabMenuBorderColor": "#EEF2F5",
       "tableCellEvenBackgroundColor": "#F8F8F8",
       "tableCellOddBackgroundColor": "#FFF",
-      "tableHeaderColor": "#999B9E",
       "tableShadowColor": "#EEF2F5",
       "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
     }
   }
 >
@@ -1219,7 +1321,7 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
       ]
     }
     onChange={[MockFunction]}
-    size="16px"
+    size="1rem"
     uppercase={false}
     weight={500}
   >
@@ -1227,14 +1329,14 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
       capitalize={false}
       italic={false}
       onChange={[MockFunction]}
-      size="16px"
+      size="1rem"
       uppercase={false}
       weight={500}
     >
       <select
         className="c0"
         onChange={[MockFunction]}
-        size="16px"
+        size="1rem"
       >
         <option
           key="1"

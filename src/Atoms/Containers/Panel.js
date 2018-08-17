@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   height: ${(props) => props.height};
   width: ${(props) => props.width};
   min-width: ${(props) => props.width};
-  box-shadow: 0 0 25px 5px ${(props) => props.theme['panelShadowColor']};
+  box-shadow: 0 0 1.5rem 0.4rem ${(props) => props.theme['panelShadowColor']};
   background-color: ${(props) => props.theme['panelBackgroundColor']};
 `
 

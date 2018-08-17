@@ -6,16 +6,13 @@ import { Icon } from '../../Atoms/Icons'
 const Toggler = styled(Icon).attrs({ selectable: true, size: '20px' })`
   z-index: 15;
   margin-right: 20px;
+  fill: ${(props) => props.theme['navbarTogglerColor']} !important;
 
-  & > svg {
-    fill: ${(props) => props.theme['navbarTogglerColor']};
-
-    &:hover {
-      fill: ${(props) => props.theme['navbarTogglerColor']};
-    }
+  &:hover {
+    fill: ${(props) => props.theme['navbarTogglerColor']} !important;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
     display: none;
   }
 `

@@ -2,9 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const getHoverColor = (disabled, theme) =>
-  disabled ? theme['buttonBackgroundColor'] : theme['buttonHoverColor']
-
 const Wrapper = styled.button.attrs({
   type: (props) => props.type,
 })`
@@ -13,22 +10,26 @@ const Wrapper = styled.button.attrs({
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 10px 30px;
+  padding: 0.7rem 1.875rem;
   box-sizing: border-box;
-  font-size: 18px;
   color: ${(props) => props.theme['buttonColor']};
   background-color: ${(props) => props.theme['buttonBackgroundColor']};
   border: none;
-  border-radius: 5px;
+  border-radius: 0.125rem;
   cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
   outline: none;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
   font-family: ${(props) => props.theme['fontPrimary']};
+  font-size: 1rem;
+  font-weight: 600;
 
   &:hover {
-    background-color: ${(props) => getHoverColor(props.disabled, props.theme)};
+    background-color: ${(props) =>
+      props.disabled
+        ? props.theme['buttonBackgroundColor']
+        : props.theme['buttonHoverColor']};
     transform: ${(props) => (props.bounced ? 'scale(0.95)' : 'none')};
   }
 `

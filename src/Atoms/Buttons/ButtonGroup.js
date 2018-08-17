@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   align-items: center;
 
   & *:not(:last-child) {
-    margin-right: 5px;
+    margin-right: 0.4rem;
   }
 
   & > :first-child {

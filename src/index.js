@@ -7,11 +7,12 @@ export {
   Image,
   Input,
   Link,
+  Pagination,
+  PaginationItem,
   Panel,
   Section,
   Table,
   TableCell,
-  TableHeader,
   TableRow,
   TabMenu,
   TabMenuItem,
@@ -26,9 +27,30 @@ export {
   SearchBar,
   SearchBarUnderlined,
   SingleDropdown,
+  Toggler,
+  TogglerItem,
+  Tooltip,
+  TooltipHost,
+  TooltipIcon,
 } from './Molecules'
 
-export { Navbar } from './Organisms'
+export {
+  Footer,
+  FooterCategory,
+  FooterElement,
+  FooterGroup,
+  FooterRow,
+  Navbar,
+  NavbarBrand,
+  NavbarDropdownContent,
+  NavbarDropdownHeader,
+  NavbarHeader,
+  NavbarMenu,
+  NavbarNav,
+  NavbarNavDropdown,
+  NavbarNavItem,
+  NavbarToggler,
+} from './Organisms'
 
 export { default as palette } from './Tools/palette'
 export { default as theme } from './Tools/theme'
