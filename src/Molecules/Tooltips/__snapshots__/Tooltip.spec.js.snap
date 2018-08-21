@@ -22,12 +22,7 @@ exports[`Tooltip should render correctly 1`] = `
 }
 
 .c0.place-top::before {
-  border-left: 9px solid transparent;
-  border-right: 9px solid transparent;
-  bottom: -7px;
-  left: 50%;
-  margin-left: -9px;
-  border-top: 7px solid #383838 !important;
+  border-top-color: #383838 !important;
 }
 
 .c0.place-top::after {

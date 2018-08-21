@@ -28,7 +28,7 @@ class TooltipHost extends React.PureComponent {
 TooltipHost.propTypes = {
   children: PropTypes.node.isRequired,
   id: PropTypes.string.isRequired,
-  tip: PropTypes.string.isRequired,
+  tip: PropTypes.string,
 }
 
 export default TooltipHost
