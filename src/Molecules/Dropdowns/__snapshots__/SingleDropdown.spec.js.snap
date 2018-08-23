@@ -2,15 +2,33 @@
 
 exports[`SingleDropdown should render correctly 1`] = `
 .c0 {
-  margin-bottom: 0;
+  width: 100%;
   min-width: 6rem;
-  box-sizing: border-box;
+  position: relative;
+  border-radius: 3px;
+}
+
+.c0::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -5px;
+  z-index: 1;
+  text-align: center;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #545456;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  width: 100%;
   color: #545456;
-  background-color: rgba(0,0,0,0);
-  background-size: 1rem;
-  background-repeat: no-repeat;
-  background-position: 95% 0%;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -21,11 +39,11 @@ exports[`SingleDropdown should render correctly 1`] = `
   text-transform: none;
   font-style: normal;
   border-radius: 0.3rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
   cursor: pointer;
   outline: none;
   text-align: left;
+  padding: 0.4rem 0;
+  box-sizing: border-box;
 }
 
 <ThemeProvider
@@ -34,14 +52,14 @@ exports[`SingleDropdown should render correctly 1`] = `
       "buttonBackgroundColor": "#004A7C",
       "buttonColor": "#FFF",
       "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeBackgroundColor": "#10ADE4",
       "cartridgeColor": "#FFF",
       "circleBadgeBackgroundColor": "#CCC",
       "circleBadgeHoverColor": "#004A7C",
-      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownArrowColor": "#545456",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#383838",
+      "footerCategoryColor": "#040d25",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
@@ -166,91 +184,119 @@ exports[`SingleDropdown should render correctly 1`] = `
     size="1rem"
     uppercase={false}
     weight={300}
+    width="100%"
   >
-    <styled.select
-      capitalize={false}
-      italic={false}
+    <styled.div
       onChange={[MockFunction]}
-      size="1rem"
-      uppercase={false}
-      weight={300}
+      width="100%"
     >
-      <select
+      <div
         className="c0"
         onChange={[MockFunction]}
-        size="1rem"
+        width="100%"
       >
-        <option
-          key="1"
-          value={1}
+        <styled.select
+          capitalize={false}
+          italic={false}
+          size="1rem"
+          uppercase={false}
+          weight={300}
         >
-          Item1
-        </option>
-        <option
-          key="2"
-          value={2}
-        >
-          Item2
-        </option>
-        <option
-          key="3"
-          value={3}
-        >
-          Item3
-        </option>
-        <option
-          key="4"
-          value={4}
-        >
-          Item4
-        </option>
-        <option
-          key="5"
-          value={5}
-        >
-          Item5
-        </option>
-        <option
-          key="6"
-          value={6}
-        >
-          Item6
-        </option>
-        <option
-          key="7"
-          value={7}
-        >
-          Item7
-        </option>
-        <option
-          key="8"
-          value={8}
-        >
-          Item8
-        </option>
-        <option
-          key="9"
-          value={9}
-        >
-          Item9
-        </option>
-      </select>
-    </styled.select>
+          <select
+            className="c1"
+            size="1rem"
+          >
+            <option
+              key="1"
+              value={1}
+            >
+              Item1
+            </option>
+            <option
+              key="2"
+              value={2}
+            >
+              Item2
+            </option>
+            <option
+              key="3"
+              value={3}
+            >
+              Item3
+            </option>
+            <option
+              key="4"
+              value={4}
+            >
+              Item4
+            </option>
+            <option
+              key="5"
+              value={5}
+            >
+              Item5
+            </option>
+            <option
+              key="6"
+              value={6}
+            >
+              Item6
+            </option>
+            <option
+              key="7"
+              value={7}
+            >
+              Item7
+            </option>
+            <option
+              key="8"
+              value={8}
+            >
+              Item8
+            </option>
+            <option
+              key="9"
+              value={9}
+            >
+              Item9
+            </option>
+          </select>
+        </styled.select>
+      </div>
+    </styled.div>
   </SingleDropdown>
 </ThemeProvider>
 `;
 
 exports[`SingleDropdown should render correctly with capitalize 1`] = `
 .c0 {
-  margin-bottom: 0;
+  width: 100%;
   min-width: 6rem;
-  box-sizing: border-box;
+  position: relative;
+  border-radius: 3px;
+}
+
+.c0::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -5px;
+  z-index: 1;
+  text-align: center;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #545456;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  width: 100%;
   color: #545456;
-  background-color: rgba(0,0,0,0);
-  background-size: 1rem;
-  background-repeat: no-repeat;
-  background-position: 95% 0%;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -261,11 +307,11 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
   text-transform: capitalize;
   font-style: normal;
   border-radius: 0.3rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
   cursor: pointer;
   outline: none;
   text-align: left;
+  padding: 0.4rem 0;
+  box-sizing: border-box;
 }
 
 <ThemeProvider
@@ -274,14 +320,14 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
       "buttonBackgroundColor": "#004A7C",
       "buttonColor": "#FFF",
       "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeBackgroundColor": "#10ADE4",
       "cartridgeColor": "#FFF",
       "circleBadgeBackgroundColor": "#CCC",
       "circleBadgeHoverColor": "#004A7C",
-      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownArrowColor": "#545456",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#383838",
+      "footerCategoryColor": "#040d25",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
@@ -406,91 +452,119 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
     size="1rem"
     uppercase={false}
     weight={300}
+    width="100%"
   >
-    <styled.select
-      capitalize={true}
-      italic={false}
+    <styled.div
       onChange={[MockFunction]}
-      size="1rem"
-      uppercase={false}
-      weight={300}
+      width="100%"
     >
-      <select
+      <div
         className="c0"
         onChange={[MockFunction]}
-        size="1rem"
+        width="100%"
       >
-        <option
-          key="1"
-          value={1}
+        <styled.select
+          capitalize={true}
+          italic={false}
+          size="1rem"
+          uppercase={false}
+          weight={300}
         >
-          Item1
-        </option>
-        <option
-          key="2"
-          value={2}
-        >
-          Item2
-        </option>
-        <option
-          key="3"
-          value={3}
-        >
-          Item3
-        </option>
-        <option
-          key="4"
-          value={4}
-        >
-          Item4
-        </option>
-        <option
-          key="5"
-          value={5}
-        >
-          Item5
-        </option>
-        <option
-          key="6"
-          value={6}
-        >
-          Item6
-        </option>
-        <option
-          key="7"
-          value={7}
-        >
-          Item7
-        </option>
-        <option
-          key="8"
-          value={8}
-        >
-          Item8
-        </option>
-        <option
-          key="9"
-          value={9}
-        >
-          Item9
-        </option>
-      </select>
-    </styled.select>
+          <select
+            className="c1"
+            size="1rem"
+          >
+            <option
+              key="1"
+              value={1}
+            >
+              Item1
+            </option>
+            <option
+              key="2"
+              value={2}
+            >
+              Item2
+            </option>
+            <option
+              key="3"
+              value={3}
+            >
+              Item3
+            </option>
+            <option
+              key="4"
+              value={4}
+            >
+              Item4
+            </option>
+            <option
+              key="5"
+              value={5}
+            >
+              Item5
+            </option>
+            <option
+              key="6"
+              value={6}
+            >
+              Item6
+            </option>
+            <option
+              key="7"
+              value={7}
+            >
+              Item7
+            </option>
+            <option
+              key="8"
+              value={8}
+            >
+              Item8
+            </option>
+            <option
+              key="9"
+              value={9}
+            >
+              Item9
+            </option>
+          </select>
+        </styled.select>
+      </div>
+    </styled.div>
   </SingleDropdown>
 </ThemeProvider>
 `;
 
 exports[`SingleDropdown should render correctly with italic 1`] = `
 .c0 {
-  margin-bottom: 0;
+  width: 100%;
   min-width: 6rem;
-  box-sizing: border-box;
+  position: relative;
+  border-radius: 3px;
+}
+
+.c0::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -5px;
+  z-index: 1;
+  text-align: center;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #545456;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  width: 100%;
   color: #545456;
-  background-color: rgba(0,0,0,0);
-  background-size: 1rem;
-  background-repeat: no-repeat;
-  background-position: 95% 0%;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -501,11 +575,11 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
   text-transform: none;
   font-style: italic;
   border-radius: 0.3rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
   cursor: pointer;
   outline: none;
   text-align: left;
+  padding: 0.4rem 0;
+  box-sizing: border-box;
 }
 
 <ThemeProvider
@@ -514,14 +588,14 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
       "buttonBackgroundColor": "#004A7C",
       "buttonColor": "#FFF",
       "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeBackgroundColor": "#10ADE4",
       "cartridgeColor": "#FFF",
       "circleBadgeBackgroundColor": "#CCC",
       "circleBadgeHoverColor": "#004A7C",
-      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownArrowColor": "#545456",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#383838",
+      "footerCategoryColor": "#040d25",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
@@ -646,91 +720,119 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
     size="1rem"
     uppercase={false}
     weight={300}
+    width="100%"
   >
-    <styled.select
-      capitalize={false}
-      italic={true}
+    <styled.div
       onChange={[MockFunction]}
-      size="1rem"
-      uppercase={false}
-      weight={300}
+      width="100%"
     >
-      <select
+      <div
         className="c0"
         onChange={[MockFunction]}
-        size="1rem"
+        width="100%"
       >
-        <option
-          key="1"
-          value={1}
+        <styled.select
+          capitalize={false}
+          italic={true}
+          size="1rem"
+          uppercase={false}
+          weight={300}
         >
-          Item1
-        </option>
-        <option
-          key="2"
-          value={2}
-        >
-          Item2
-        </option>
-        <option
-          key="3"
-          value={3}
-        >
-          Item3
-        </option>
-        <option
-          key="4"
-          value={4}
-        >
-          Item4
-        </option>
-        <option
-          key="5"
-          value={5}
-        >
-          Item5
-        </option>
-        <option
-          key="6"
-          value={6}
-        >
-          Item6
-        </option>
-        <option
-          key="7"
-          value={7}
-        >
-          Item7
-        </option>
-        <option
-          key="8"
-          value={8}
-        >
-          Item8
-        </option>
-        <option
-          key="9"
-          value={9}
-        >
-          Item9
-        </option>
-      </select>
-    </styled.select>
+          <select
+            className="c1"
+            size="1rem"
+          >
+            <option
+              key="1"
+              value={1}
+            >
+              Item1
+            </option>
+            <option
+              key="2"
+              value={2}
+            >
+              Item2
+            </option>
+            <option
+              key="3"
+              value={3}
+            >
+              Item3
+            </option>
+            <option
+              key="4"
+              value={4}
+            >
+              Item4
+            </option>
+            <option
+              key="5"
+              value={5}
+            >
+              Item5
+            </option>
+            <option
+              key="6"
+              value={6}
+            >
+              Item6
+            </option>
+            <option
+              key="7"
+              value={7}
+            >
+              Item7
+            </option>
+            <option
+              key="8"
+              value={8}
+            >
+              Item8
+            </option>
+            <option
+              key="9"
+              value={9}
+            >
+              Item9
+            </option>
+          </select>
+        </styled.select>
+      </div>
+    </styled.div>
   </SingleDropdown>
 </ThemeProvider>
 `;
 
 exports[`SingleDropdown should render correctly with size 1`] = `
 .c0 {
-  margin-bottom: 0;
+  width: 100%;
   min-width: 6rem;
-  box-sizing: border-box;
+  position: relative;
+  border-radius: 3px;
+}
+
+.c0::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -5px;
+  z-index: 1;
+  text-align: center;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #545456;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  width: 100%;
   color: #545456;
-  background-color: rgba(0,0,0,0);
-  background-size: 1rem;
-  background-repeat: no-repeat;
-  background-position: 95% 0%;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -741,11 +843,11 @@ exports[`SingleDropdown should render correctly with size 1`] = `
   text-transform: none;
   font-style: normal;
   border-radius: 0.3rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
   cursor: pointer;
   outline: none;
   text-align: left;
+  padding: 0.4rem 0;
+  box-sizing: border-box;
 }
 
 <ThemeProvider
@@ -754,14 +856,14 @@ exports[`SingleDropdown should render correctly with size 1`] = `
       "buttonBackgroundColor": "#004A7C",
       "buttonColor": "#FFF",
       "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeBackgroundColor": "#10ADE4",
       "cartridgeColor": "#FFF",
       "circleBadgeBackgroundColor": "#CCC",
       "circleBadgeHoverColor": "#004A7C",
-      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownArrowColor": "#545456",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#383838",
+      "footerCategoryColor": "#040d25",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
@@ -886,91 +988,119 @@ exports[`SingleDropdown should render correctly with size 1`] = `
     size="32px"
     uppercase={false}
     weight={300}
+    width="100%"
   >
-    <styled.select
-      capitalize={false}
-      italic={false}
+    <styled.div
       onChange={[MockFunction]}
-      size="32px"
-      uppercase={false}
-      weight={300}
+      width="100%"
     >
-      <select
+      <div
         className="c0"
         onChange={[MockFunction]}
-        size="32px"
+        width="100%"
       >
-        <option
-          key="1"
-          value={1}
+        <styled.select
+          capitalize={false}
+          italic={false}
+          size="32px"
+          uppercase={false}
+          weight={300}
         >
-          Item1
-        </option>
-        <option
-          key="2"
-          value={2}
-        >
-          Item2
-        </option>
-        <option
-          key="3"
-          value={3}
-        >
-          Item3
-        </option>
-        <option
-          key="4"
-          value={4}
-        >
-          Item4
-        </option>
-        <option
-          key="5"
-          value={5}
-        >
-          Item5
-        </option>
-        <option
-          key="6"
-          value={6}
-        >
-          Item6
-        </option>
-        <option
-          key="7"
-          value={7}
-        >
-          Item7
-        </option>
-        <option
-          key="8"
-          value={8}
-        >
-          Item8
-        </option>
-        <option
-          key="9"
-          value={9}
-        >
-          Item9
-        </option>
-      </select>
-    </styled.select>
+          <select
+            className="c1"
+            size="32px"
+          >
+            <option
+              key="1"
+              value={1}
+            >
+              Item1
+            </option>
+            <option
+              key="2"
+              value={2}
+            >
+              Item2
+            </option>
+            <option
+              key="3"
+              value={3}
+            >
+              Item3
+            </option>
+            <option
+              key="4"
+              value={4}
+            >
+              Item4
+            </option>
+            <option
+              key="5"
+              value={5}
+            >
+              Item5
+            </option>
+            <option
+              key="6"
+              value={6}
+            >
+              Item6
+            </option>
+            <option
+              key="7"
+              value={7}
+            >
+              Item7
+            </option>
+            <option
+              key="8"
+              value={8}
+            >
+              Item8
+            </option>
+            <option
+              key="9"
+              value={9}
+            >
+              Item9
+            </option>
+          </select>
+        </styled.select>
+      </div>
+    </styled.div>
   </SingleDropdown>
 </ThemeProvider>
 `;
 
 exports[`SingleDropdown should render correctly with uppercase 1`] = `
 .c0 {
-  margin-bottom: 0;
+  width: 100%;
   min-width: 6rem;
-  box-sizing: border-box;
+  position: relative;
+  border-radius: 3px;
+}
+
+.c0::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -5px;
+  z-index: 1;
+  text-align: center;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #545456;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  width: 100%;
   color: #545456;
-  background-color: rgba(0,0,0,0);
-  background-size: 1rem;
-  background-repeat: no-repeat;
-  background-position: 95% 0%;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -981,11 +1111,11 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
   text-transform: uppercase;
   font-style: normal;
   border-radius: 0.3rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
   cursor: pointer;
   outline: none;
   text-align: left;
+  padding: 0.4rem 0;
+  box-sizing: border-box;
 }
 
 <ThemeProvider
@@ -994,14 +1124,14 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
       "buttonBackgroundColor": "#004A7C",
       "buttonColor": "#FFF",
       "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeBackgroundColor": "#10ADE4",
       "cartridgeColor": "#FFF",
       "circleBadgeBackgroundColor": "#CCC",
       "circleBadgeHoverColor": "#004A7C",
-      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownArrowColor": "#545456",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#383838",
+      "footerCategoryColor": "#040d25",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
@@ -1126,91 +1256,119 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
     size="1rem"
     uppercase={true}
     weight={300}
+    width="100%"
   >
-    <styled.select
-      capitalize={false}
-      italic={false}
+    <styled.div
       onChange={[MockFunction]}
-      size="1rem"
-      uppercase={true}
-      weight={300}
+      width="100%"
     >
-      <select
+      <div
         className="c0"
         onChange={[MockFunction]}
-        size="1rem"
+        width="100%"
       >
-        <option
-          key="1"
-          value={1}
+        <styled.select
+          capitalize={false}
+          italic={false}
+          size="1rem"
+          uppercase={true}
+          weight={300}
         >
-          Item1
-        </option>
-        <option
-          key="2"
-          value={2}
-        >
-          Item2
-        </option>
-        <option
-          key="3"
-          value={3}
-        >
-          Item3
-        </option>
-        <option
-          key="4"
-          value={4}
-        >
-          Item4
-        </option>
-        <option
-          key="5"
-          value={5}
-        >
-          Item5
-        </option>
-        <option
-          key="6"
-          value={6}
-        >
-          Item6
-        </option>
-        <option
-          key="7"
-          value={7}
-        >
-          Item7
-        </option>
-        <option
-          key="8"
-          value={8}
-        >
-          Item8
-        </option>
-        <option
-          key="9"
-          value={9}
-        >
-          Item9
-        </option>
-      </select>
-    </styled.select>
+          <select
+            className="c1"
+            size="1rem"
+          >
+            <option
+              key="1"
+              value={1}
+            >
+              Item1
+            </option>
+            <option
+              key="2"
+              value={2}
+            >
+              Item2
+            </option>
+            <option
+              key="3"
+              value={3}
+            >
+              Item3
+            </option>
+            <option
+              key="4"
+              value={4}
+            >
+              Item4
+            </option>
+            <option
+              key="5"
+              value={5}
+            >
+              Item5
+            </option>
+            <option
+              key="6"
+              value={6}
+            >
+              Item6
+            </option>
+            <option
+              key="7"
+              value={7}
+            >
+              Item7
+            </option>
+            <option
+              key="8"
+              value={8}
+            >
+              Item8
+            </option>
+            <option
+              key="9"
+              value={9}
+            >
+              Item9
+            </option>
+          </select>
+        </styled.select>
+      </div>
+    </styled.div>
   </SingleDropdown>
 </ThemeProvider>
 `;
 
 exports[`SingleDropdown should render correctly with weight 1`] = `
 .c0 {
-  margin-bottom: 0;
+  width: 100%;
   min-width: 6rem;
-  box-sizing: border-box;
+  position: relative;
+  border-radius: 3px;
+}
+
+.c0::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -5px;
+  z-index: 1;
+  text-align: center;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #545456;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  width: 100%;
   color: #545456;
-  background-color: rgba(0,0,0,0);
-  background-size: 1rem;
-  background-repeat: no-repeat;
-  background-position: 95% 0%;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJzb3J0LWRvd24iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1zb3J0LWRvd24gZmEtdy0xMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00MSAyODhoMjM4YzIxLjQgMCAzMi4xIDI1LjkgMTcgNDFMMTc3IDQ0OGMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMjQgMzI5Yy0xNS4xLTE1LjEtNC40LTQxIDE3LTQxeiI+PC9wYXRoPjwvc3ZnPgo=);
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1221,11 +1379,11 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
   text-transform: none;
   font-style: normal;
   border-radius: 0.3rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
   cursor: pointer;
   outline: none;
   text-align: left;
+  padding: 0.4rem 0;
+  box-sizing: border-box;
 }
 
 <ThemeProvider
@@ -1234,14 +1392,14 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
       "buttonBackgroundColor": "#004A7C",
       "buttonColor": "#FFF",
       "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeBackgroundColor": "#10ADE4",
       "cartridgeColor": "#FFF",
       "circleBadgeBackgroundColor": "#CCC",
       "circleBadgeHoverColor": "#004A7C",
-      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownArrowColor": "#545456",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#383838",
+      "footerCategoryColor": "#040d25",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
@@ -1366,76 +1524,86 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
     size="1rem"
     uppercase={false}
     weight={500}
+    width="100%"
   >
-    <styled.select
-      capitalize={false}
-      italic={false}
+    <styled.div
       onChange={[MockFunction]}
-      size="1rem"
-      uppercase={false}
-      weight={500}
+      width="100%"
     >
-      <select
+      <div
         className="c0"
         onChange={[MockFunction]}
-        size="1rem"
+        width="100%"
       >
-        <option
-          key="1"
-          value={1}
+        <styled.select
+          capitalize={false}
+          italic={false}
+          size="1rem"
+          uppercase={false}
+          weight={500}
         >
-          Item1
-        </option>
-        <option
-          key="2"
-          value={2}
-        >
-          Item2
-        </option>
-        <option
-          key="3"
-          value={3}
-        >
-          Item3
-        </option>
-        <option
-          key="4"
-          value={4}
-        >
-          Item4
-        </option>
-        <option
-          key="5"
-          value={5}
-        >
-          Item5
-        </option>
-        <option
-          key="6"
-          value={6}
-        >
-          Item6
-        </option>
-        <option
-          key="7"
-          value={7}
-        >
-          Item7
-        </option>
-        <option
-          key="8"
-          value={8}
-        >
-          Item8
-        </option>
-        <option
-          key="9"
-          value={9}
-        >
-          Item9
-        </option>
-      </select>
-    </styled.select>
+          <select
+            className="c1"
+            size="1rem"
+          >
+            <option
+              key="1"
+              value={1}
+            >
+              Item1
+            </option>
+            <option
+              key="2"
+              value={2}
+            >
+              Item2
+            </option>
+            <option
+              key="3"
+              value={3}
+            >
+              Item3
+            </option>
+            <option
+              key="4"
+              value={4}
+            >
+              Item4
+            </option>
+            <option
+              key="5"
+              value={5}
+            >
+              Item5
+            </option>
+            <option
+              key="6"
+              value={6}
+            >
+              Item6
+            </option>
+            <option
+              key="7"
+              value={7}
+            >
+              Item7
+            </option>
+            <option
+              key="8"
+              value={8}
+            >
+              Item8
+            </option>
+            <option
+              key="9"
+              value={9}
+            >
+              Item9
+            </option>
+          </select>
+        </styled.select>
+      </div>
+    </styled.div>
   </SingleDropdown>
 </ThemeProvider>
 `;

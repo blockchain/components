@@ -39,6 +39,7 @@ export {
   FooterCategory,
   FooterElement,
   FooterGroup,
+  FooterLink,
   FooterRow,
   Navbar,
   NavbarBrand,

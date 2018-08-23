@@ -15,7 +15,7 @@ const Wrapper = styled(Link).attrs({
   align-items: center;
   height: ${(props) => props.size};
   width: ${(props) => props.size};
-  padding: 0.4rem;
+  padding: 0.6rem;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: ${(props) => props.theme['circleBadgeBackgroundColor']};
@@ -23,6 +23,10 @@ const Wrapper = styled(Link).attrs({
 
   &:hover {
     background-color: ${(props) => props.theme['circleBadgeHoverColor']};
+  }
+
+  & > img {
+    width: auto;
   }
 `
 

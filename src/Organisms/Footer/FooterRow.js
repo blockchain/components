@@ -4,15 +4,16 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: wrap;
-  width: 100%;
 
-  & > :last-child {
-    margin-right: 0;
-    margin-bottom: 0;
+  @media (min-width: 48rem) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   @media (min-width: 62rem) {

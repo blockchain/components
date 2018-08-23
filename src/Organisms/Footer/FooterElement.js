@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 1.3rem;
+  margin-top: 1.25rem;
 `
 
 const FooterElement = ({ children, ...rest }) => (

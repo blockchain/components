@@ -2,12 +2,16 @@
 
 exports[`FooterCategory should render correctly 1`] = `
 .c0 {
-  color: #383838;
+  color: #040d25;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 
 <ThemeProvider
@@ -16,14 +20,14 @@ exports[`FooterCategory should render correctly 1`] = `
       "buttonBackgroundColor": "#004A7C",
       "buttonColor": "#FFF",
       "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeBackgroundColor": "#10ADE4",
       "cartridgeColor": "#FFF",
       "circleBadgeBackgroundColor": "#CCC",
       "circleBadgeHoverColor": "#004A7C",
-      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownArrowColor": "#545456",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#383838",
+      "footerCategoryColor": "#040d25",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",

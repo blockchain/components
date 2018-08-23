@@ -3,6 +3,7 @@ export {
   FooterCategory,
   FooterElement,
   FooterGroup,
+  FooterLink,
   FooterRow,
 } from './Footer'
 
