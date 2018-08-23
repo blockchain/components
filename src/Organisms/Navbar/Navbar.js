@@ -10,6 +10,8 @@ const Wrapper = styled.div`
   align-items: center;
   width: 100%;
   height: ${(props) => props.height};
+  padding: 0 3rem;
+  box-sizing: border-box;
 `
 
 const Navbar = ({ children, height, ...rest }) => (

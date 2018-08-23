@@ -17,8 +17,10 @@ exports[`Button should render correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  height: 2.5rem;
+  line-height: 2.5rem;
   width: 100%;
-  padding: 0.7rem 1.875rem;
+  padding: 0 1rem;
   box-sizing: border-box;
   color: #FFF;
   background-color: #004A7C;
@@ -26,10 +28,8 @@ exports[`Button should render correctly 1`] = `
   border-radius: 0.125rem;
   cursor: pointer;
   outline: none;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   opacity: 1;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
@@ -105,8 +105,13 @@ exports[`Button should render correctly 1`] = `
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
-      "navbarDropdownContentShadowColor": "#545456",
+      "navbarDropdownContentBorderColor": "#999B9E",
+      "navbarDropdownContentShadowColor": "rgba(0,0,0,0.25)",
+      "navbarDropdownContentShadowColor2": "rgba(0,0,0,0.10)",
+      "navbarDropdownDescriptionColor": "#999B9E",
       "navbarDropdownHeaderColor": "#FFF",
+      "navbarDropdownTitleColor": "#3558A8",
+      "navbarDropdownTitleMobileColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
@@ -122,6 +127,8 @@ exports[`Button should render correctly 1`] = `
         "biscay": "#153A62",
         "black": "#000",
         "blackAlpha05": "rgba(0,0,0,0.05)",
+        "blackAlpha10": "rgba(0,0,0,0.10)",
+        "blackAlpha25": "rgba(0,0,0,0.25)",
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",

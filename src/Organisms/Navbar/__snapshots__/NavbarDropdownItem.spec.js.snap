@@ -1,56 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tooltip should render correctly 1`] = `
-.c0 {
-  color: #FFF !important;
-  border: 1px solid #383838 !important;
-  background-color: #383838 !important;
-  cursor: pointer;
-  max-width: 350px;
+exports[`NavbarDropdownItem should render correctly 1`] = `
+.c1 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 0.8rem;
-  font-weight: 300;
-  z-index: 5;
+  font-weight: 400;
+  font-size: 1rem;
   text-transform: none;
-  text-align: left;
-  pointer-events: auto !important;
+  font-style: normal;
+  color: #545456;
+  opacity: 1;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
-.c0:hover {
-  visibility: visible !important;
-  opacity: 1 !important;
+.c1:hover {
+  color: #004A7C;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
-.c0.place-top::before {
-  border-top-color: #383838 !important;
-}
-
-.c0.place-top::after {
-  border-top-color: #383838 !important;
-}
-
-.c0.place-left::before {
-  border-left-color: #383838 !important;
-}
-
-.c0.place-left::after {
-  border-left-color: #383838 !important;
-}
-
-.c0.place-bottom::before {
-  border-bottom-color: #383838 !important;
-}
-
-.c0.place-bottom::after {
-  border-bottom-color: #383838 !important;
-}
-
-.c0.place-right::before {
-  border-right-color: #383838 !important;
-}
-
-.c0.place-right::after {
-  border-right-color: #383838 !important;
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 2.5rem;
+  margin-bottom: 1.5rem;
+  white-space: nowrap;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 <ThemeProvider
@@ -144,36 +137,34 @@ exports[`Tooltip should render correctly 1`] = `
     }
   }
 >
-  <Tooltip
-    id="storybook.test"
-  >
-    <Styled(ReactTooltip)
-      border={true}
-      delayHide={250}
-      effect="solid"
-      id="storybook.test"
-      type="light"
-    >
-      <ReactTooltip
-        border={true}
+  <NavbarDropdownItem>
+    <Styled(Link)>
+      <Link
+        capitalize={false}
         className="c0"
-        delayHide={250}
-        effect="solid"
-        id="storybook.test"
-        insecure={true}
-        resizeHide={true}
-        type="light"
-        wrapper="div"
+        italic={false}
+        opacity={1}
+        size="1rem"
+        uppercase={false}
+        weight={400}
       >
-        <div
-          className="__react_component_tooltip place-top type-dark "
-          data-id="tooltip"
-          id="storybook.test"
+        <styled.a
+          capitalize={false}
+          className="c0"
+          italic={false}
+          opacity={1}
+          size="1rem"
+          uppercase={false}
+          weight={400}
         >
-          Tooltip
-        </div>
-      </ReactTooltip>
-    </Styled(ReactTooltip)>
-  </Tooltip>
+          <a
+            className="c0 c1"
+            opacity={1}
+            size="1rem"
+          />
+        </styled.a>
+      </Link>
+    </Styled(Link)>
+  </NavbarDropdownItem>
 </ThemeProvider>
 `;

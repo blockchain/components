@@ -6,9 +6,9 @@ exports[`NavbarMenu should render correctly 1`] = `
   top: 0;
   right: 0;
   display: none;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -18,7 +18,8 @@ exports[`NavbarMenu should render correctly 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   width: 100%;
-  padding: 60px 0 15px 0;
+  padding: 4.5rem 1.5rem 1.5rem 1.5rem;
+  box-sizing: border-box;
   background-color: #004A7C;
   z-index: 10;
   -webkit-transform: translate3d(0,0,0);
@@ -26,7 +27,7 @@ exports[`NavbarMenu should render correctly 1`] = `
   transform: translate3d(0,0,0);
 }
 
-@media (min-width:768px) {
+@media (min-width:48rem) {
   .c0 {
     position: relative;
     top: initial;
@@ -45,8 +46,7 @@ exports[`NavbarMenu should render correctly 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%;
-    padding: 15px 0;
+    padding: 1rem 0;
     background-color: transparent;
   }
 }
@@ -74,8 +74,13 @@ exports[`NavbarMenu should render correctly 1`] = `
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
-      "navbarDropdownContentShadowColor": "#545456",
+      "navbarDropdownContentBorderColor": "#999B9E",
+      "navbarDropdownContentShadowColor": "rgba(0,0,0,0.25)",
+      "navbarDropdownContentShadowColor2": "rgba(0,0,0,0.10)",
+      "navbarDropdownDescriptionColor": "#999B9E",
       "navbarDropdownHeaderColor": "#FFF",
+      "navbarDropdownTitleColor": "#3558A8",
+      "navbarDropdownTitleMobileColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
@@ -91,6 +96,8 @@ exports[`NavbarMenu should render correctly 1`] = `
         "biscay": "#153A62",
         "black": "#000",
         "blackAlpha05": "rgba(0,0,0,0.05)",
+        "blackAlpha10": "rgba(0,0,0,0.10)",
+        "blackAlpha25": "rgba(0,0,0,0.25)",
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
@@ -158,9 +165,9 @@ exports[`NavbarMenu should render correctly with toggled 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -170,7 +177,8 @@ exports[`NavbarMenu should render correctly with toggled 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   width: 100%;
-  padding: 60px 0 15px 0;
+  padding: 4.5rem 1.5rem 1.5rem 1.5rem;
+  box-sizing: border-box;
   background-color: #004A7C;
   z-index: 10;
   -webkit-transform: translate3d(0,0,0);
@@ -178,7 +186,7 @@ exports[`NavbarMenu should render correctly with toggled 1`] = `
   transform: translate3d(0,0,0);
 }
 
-@media (min-width:768px) {
+@media (min-width:48rem) {
   .c0 {
     position: relative;
     top: initial;
@@ -197,8 +205,7 @@ exports[`NavbarMenu should render correctly with toggled 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%;
-    padding: 15px 0;
+    padding: 1rem 0;
     background-color: transparent;
   }
 }
@@ -226,8 +233,13 @@ exports[`NavbarMenu should render correctly with toggled 1`] = `
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
-      "navbarDropdownContentShadowColor": "#545456",
+      "navbarDropdownContentBorderColor": "#999B9E",
+      "navbarDropdownContentShadowColor": "rgba(0,0,0,0.25)",
+      "navbarDropdownContentShadowColor2": "rgba(0,0,0,0.10)",
+      "navbarDropdownDescriptionColor": "#999B9E",
       "navbarDropdownHeaderColor": "#FFF",
+      "navbarDropdownTitleColor": "#3558A8",
+      "navbarDropdownTitleMobileColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
@@ -243,6 +255,8 @@ exports[`NavbarMenu should render correctly with toggled 1`] = `
         "biscay": "#153A62",
         "black": "#000",
         "blackAlpha05": "rgba(0,0,0,0.05)",
+        "blackAlpha10": "rgba(0,0,0,0.10)",
+        "blackAlpha25": "rgba(0,0,0,0.25)",
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",

@@ -3,7 +3,6 @@
 exports[`NavbarDropdownContent should render correctly 1`] = `
 .c0 {
   width: 100%;
-  margin: 10px 0;
   z-index: 10;
 }
 
@@ -26,25 +25,31 @@ exports[`NavbarDropdownContent should render correctly 1`] = `
   .c0 {
     position: absolute;
     width: auto;
+    margin: 0.25rem 0;
     background-color: transparent;
   }
 }
 
-@media (min-width:768px) {
+@media (max-width:48rem) {
+  .c1 {
+    padding: 1.1rem 0;
+  }
+}
+
+@media (min-width:48rem) {
   .c1 {
     margin-top: 15px;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 2rem;
+    border-radius: 0.25rem;
     box-sizing: border-box;
     background-color: #FFF;
-    border: 1px solid #FFF;
-    box-shadow: 0 0 15px 0 #545456;
+    box-shadow: 0 10px 60px -10px rgba(0,0,0,0.25), 0 8px 16px rgba(0,0,0,0.10);
   }
 
   .c1::after,
   .c1::before {
     bottom: 100%;
-    left: 15%;
+    left: 10%;
     border: solid transparent;
     content: ' ';
     height: 0;
@@ -91,8 +96,13 @@ exports[`NavbarDropdownContent should render correctly 1`] = `
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
-      "navbarDropdownContentShadowColor": "#545456",
+      "navbarDropdownContentBorderColor": "#999B9E",
+      "navbarDropdownContentShadowColor": "rgba(0,0,0,0.25)",
+      "navbarDropdownContentShadowColor2": "rgba(0,0,0,0.10)",
+      "navbarDropdownDescriptionColor": "#999B9E",
       "navbarDropdownHeaderColor": "#FFF",
+      "navbarDropdownTitleColor": "#3558A8",
+      "navbarDropdownTitleMobileColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
@@ -108,6 +118,8 @@ exports[`NavbarDropdownContent should render correctly 1`] = `
         "biscay": "#153A62",
         "black": "#000",
         "blackAlpha05": "rgba(0,0,0,0.05)",
+        "blackAlpha10": "rgba(0,0,0,0.10)",
+        "blackAlpha25": "rgba(0,0,0,0.25)",
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",

@@ -1,56 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tooltip should render correctly 1`] = `
-.c0 {
-  color: #FFF !important;
-  border: 1px solid #383838 !important;
-  background-color: #383838 !important;
-  cursor: pointer;
-  max-width: 350px;
+exports[`NavbarDropdownItemDescription should render correctly 1`] = `
+.c1 {
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 0.8rem;
-  font-weight: 300;
-  z-index: 5;
+  font-weight: 500;
+  font-size: 0.875rem;
   text-transform: none;
-  text-align: left;
-  pointer-events: auto !important;
+  font-style: normal;
+  color: #545456;
+  opacity: 1;
 }
 
-.c0:hover {
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-.c0.place-top::before {
-  border-top-color: #383838 !important;
-}
-
-.c0.place-top::after {
-  border-top-color: #383838 !important;
-}
-
-.c0.place-left::before {
-  border-left-color: #383838 !important;
-}
-
-.c0.place-left::after {
-  border-left-color: #383838 !important;
-}
-
-.c0.place-bottom::before {
-  border-bottom-color: #383838 !important;
-}
-
-.c0.place-bottom::after {
-  border-bottom-color: #383838 !important;
-}
-
-.c0.place-right::before {
-  border-right-color: #383838 !important;
-}
-
-.c0.place-right::after {
-  border-right-color: #383838 !important;
+.c0 {
+  color: #999B9E;
 }
 
 <ThemeProvider
@@ -144,36 +106,34 @@ exports[`Tooltip should render correctly 1`] = `
     }
   }
 >
-  <Tooltip
-    id="storybook.test"
-  >
-    <Styled(ReactTooltip)
-      border={true}
-      delayHide={250}
-      effect="solid"
-      id="storybook.test"
-      type="light"
-    >
-      <ReactTooltip
-        border={true}
+  <NavbarDropdownItemDescription>
+    <Styled(Text)>
+      <Text
+        capitalize={false}
         className="c0"
-        delayHide={250}
-        effect="solid"
-        id="storybook.test"
-        insecure={true}
-        resizeHide={true}
-        type="light"
-        wrapper="div"
+        italic={false}
+        opacity={1}
+        size="0.875rem"
+        uppercase={false}
+        weight={500}
       >
-        <div
-          className="__react_component_tooltip place-top type-dark "
-          data-id="tooltip"
-          id="storybook.test"
+        <styled.span
+          capitalize={false}
+          className="c0"
+          italic={false}
+          opacity={1}
+          size="0.875rem"
+          uppercase={false}
+          weight={500}
         >
-          Tooltip
-        </div>
-      </ReactTooltip>
-    </Styled(ReactTooltip)>
-  </Tooltip>
+          <span
+            className="c0 c1"
+            opacity={1}
+            size="0.875rem"
+          />
+        </styled.span>
+      </Text>
+    </Styled(Text)>
+  </NavbarDropdownItemDescription>
 </ThemeProvider>
 `;

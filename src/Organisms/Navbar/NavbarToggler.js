@@ -5,7 +5,6 @@ import { Icon } from '../../Atoms/Icons'
 
 const Toggler = styled(Icon).attrs({ selectable: true, size: '20px' })`
   z-index: 15;
-  margin-right: 20px;
   fill: ${(props) => props.theme['navbarTogglerColor']} !important;
 
   &:hover {
