@@ -4,13 +4,20 @@ import styled from 'styled-components'
 
 const Wrapper = styled.li`
   position: relative;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
-  padding: 10px 15px;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 0.5px solid
+    ${(props) => props.theme['navbarDropdownContentBorderColor']};
   box-sizing: border-box;
 
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: auto;
+    padding: 0.75rem 1rem;
+    border-top: none;
+
     & :last-child {
       display: none;
     }

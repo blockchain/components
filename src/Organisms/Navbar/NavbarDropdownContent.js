@@ -4,12 +4,12 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   width: 100%;
-  margin: 10px 0;
   z-index: 10;
 
   @media (min-width: 768px) {
     position: absolute;
     width: auto;
+    margin: 0.25rem 0;
     background-color: transparent;
   }
 `
@@ -22,22 +22,24 @@ const Container = styled.div`
     margin-bottom: 0 !important;
   }
 
-  @media (min-width: 768px) {
+  @media (max-width: 48rem) {
+    padding: 1.1rem 0;
+  }
+
+  @media (min-width: 48rem) {
     margin-top: 15px;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 2rem;
+    border-radius: 0.25rem;
     box-sizing: border-box;
     background-color: ${(props) =>
       props.theme['navbarDropdownContentBackgroundColor']};
-    border: 1px solid
-      ${(props) => props.theme['navbarDropdownContentBackgroundColor']};
-    box-shadow: 0 0 15px 0
-      ${(props) => props.theme['navbarDropdownContentShadowColor']};
+    box-shadow: 0 10px 60px -10px ${(props) => props.theme['navbarDropdownContentShadowColor']},
+      0 8px 16px ${(props) => props.theme['navbarDropdownContentShadowColor2']};
 
     &::after,
     &::before {
       bottom: 100%;
-      left: 15%;
+      left: 10%;
       border: solid transparent;
       content: ' ';
       height: 0;

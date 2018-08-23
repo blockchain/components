@@ -3,6 +3,7 @@ export {
   FooterCategory,
   FooterElement,
   FooterGroup,
+  FooterLink,
   FooterRow,
 } from './Footer'
 
@@ -11,6 +12,9 @@ export {
   NavbarBrand,
   NavbarDropdownContent,
   NavbarDropdownHeader,
+  NavbarDropdownItem,
+  NavbarDropdownItemDescription,
+  NavbarDropdownItemTitle,
   NavbarHeader,
   NavbarMenu,
   NavbarNav,

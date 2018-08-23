@@ -45,7 +45,7 @@ exports[`CircleBadge should render correctly 1`] = `
   align-items: center;
   height: 2.625rem;
   width: 2.625rem;
-  padding: 0.4rem;
+  padding: 0.6rem;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: #CCC;
@@ -57,20 +57,24 @@ exports[`CircleBadge should render correctly 1`] = `
   background-color: #004A7C;
 }
 
+.c0 > img {
+  width: auto;
+}
+
 <ThemeProvider
   theme={
     Object {
       "buttonBackgroundColor": "#004A7C",
       "buttonColor": "#FFF",
       "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeBackgroundColor": "#10ADE4",
       "cartridgeColor": "#FFF",
       "circleBadgeBackgroundColor": "#CCC",
       "circleBadgeHoverColor": "#004A7C",
-      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownArrowColor": "#545456",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#383838",
+      "footerCategoryColor": "#040d25",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
@@ -80,8 +84,13 @@ exports[`CircleBadge should render correctly 1`] = `
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
-      "navbarDropdownContentShadowColor": "#545456",
+      "navbarDropdownContentBorderColor": "#999B9E",
+      "navbarDropdownContentShadowColor": "rgba(0,0,0,0.25)",
+      "navbarDropdownContentShadowColor2": "rgba(0,0,0,0.10)",
+      "navbarDropdownDescriptionColor": "#999B9E",
       "navbarDropdownHeaderColor": "#FFF",
+      "navbarDropdownTitleColor": "#3558A8",
+      "navbarDropdownTitleMobileColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
@@ -97,6 +106,8 @@ exports[`CircleBadge should render correctly 1`] = `
         "biscay": "#153A62",
         "black": "#000",
         "blackAlpha05": "rgba(0,0,0,0.05)",
+        "blackAlpha10": "rgba(0,0,0,0.10)",
+        "blackAlpha25": "rgba(0,0,0,0.25)",
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
@@ -256,7 +267,7 @@ exports[`CircleBadge should render correctly with name 1`] = `
   align-items: center;
   height: 2.625rem;
   width: 2.625rem;
-  padding: 0.4rem;
+  padding: 0.6rem;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: #CCC;
@@ -268,20 +279,24 @@ exports[`CircleBadge should render correctly with name 1`] = `
   background-color: #004A7C;
 }
 
+.c0 > img {
+  width: auto;
+}
+
 <ThemeProvider
   theme={
     Object {
       "buttonBackgroundColor": "#004A7C",
       "buttonColor": "#FFF",
       "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeBackgroundColor": "#10ADE4",
       "cartridgeColor": "#FFF",
       "circleBadgeBackgroundColor": "#CCC",
       "circleBadgeHoverColor": "#004A7C",
-      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownArrowColor": "#545456",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#383838",
+      "footerCategoryColor": "#040d25",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
@@ -291,8 +306,13 @@ exports[`CircleBadge should render correctly with name 1`] = `
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
-      "navbarDropdownContentShadowColor": "#545456",
+      "navbarDropdownContentBorderColor": "#999B9E",
+      "navbarDropdownContentShadowColor": "rgba(0,0,0,0.25)",
+      "navbarDropdownContentShadowColor2": "rgba(0,0,0,0.10)",
+      "navbarDropdownDescriptionColor": "#999B9E",
       "navbarDropdownHeaderColor": "#FFF",
+      "navbarDropdownTitleColor": "#3558A8",
+      "navbarDropdownTitleMobileColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
@@ -308,6 +328,8 @@ exports[`CircleBadge should render correctly with name 1`] = `
         "biscay": "#153A62",
         "black": "#000",
         "blackAlpha05": "rgba(0,0,0,0.05)",
+        "blackAlpha10": "rgba(0,0,0,0.10)",
+        "blackAlpha25": "rgba(0,0,0,0.25)",
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",
@@ -467,7 +489,7 @@ exports[`CircleBadge should render correctly with size 1`] = `
   align-items: center;
   height: 80px;
   width: 80px;
-  padding: 0.4rem;
+  padding: 0.6rem;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: #CCC;
@@ -479,20 +501,24 @@ exports[`CircleBadge should render correctly with size 1`] = `
   background-color: #004A7C;
 }
 
+.c0 > img {
+  width: auto;
+}
+
 <ThemeProvider
   theme={
     Object {
       "buttonBackgroundColor": "#004A7C",
       "buttonColor": "#FFF",
       "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#004A7C",
+      "cartridgeBackgroundColor": "#10ADE4",
       "cartridgeColor": "#FFF",
       "circleBadgeBackgroundColor": "#CCC",
       "circleBadgeHoverColor": "#004A7C",
-      "dropdownBackgroundColor": "rgba(0, 0, 0, 0)",
+      "dropdownArrowColor": "#545456",
       "dropdownColor": "#545456",
       "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#383838",
+      "footerCategoryColor": "#040d25",
       "iconColor": "#545456",
       "iconHoverColor": "#757679",
       "inputBackgroundColor": "#FFF",
@@ -502,8 +528,13 @@ exports[`CircleBadge should render correctly with size 1`] = `
       "linkColor": "#545456",
       "linkHoverColor": "#004A7C",
       "navbarDropdownContentBackgroundColor": "#FFF",
-      "navbarDropdownContentShadowColor": "#545456",
+      "navbarDropdownContentBorderColor": "#999B9E",
+      "navbarDropdownContentShadowColor": "rgba(0,0,0,0.25)",
+      "navbarDropdownContentShadowColor2": "rgba(0,0,0,0.10)",
+      "navbarDropdownDescriptionColor": "#999B9E",
       "navbarDropdownHeaderColor": "#FFF",
+      "navbarDropdownTitleColor": "#3558A8",
+      "navbarDropdownTitleMobileColor": "#FFF",
       "navbarMenuBagroundColor": "#004A7C",
       "navbarTogglerColor": "#FFF",
       "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
@@ -519,6 +550,8 @@ exports[`CircleBadge should render correctly with size 1`] = `
         "biscay": "#153A62",
         "black": "#000",
         "blackAlpha05": "rgba(0,0,0,0.05)",
+        "blackAlpha10": "rgba(0,0,0,0.10)",
+        "blackAlpha25": "rgba(0,0,0,0.25)",
         "blackAlpha75": "rgba(0,0,0,0.75)",
         "blueWood": "#27324B",
         "cerulean": "#10ADE4",

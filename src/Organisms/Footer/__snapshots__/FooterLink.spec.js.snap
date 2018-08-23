@@ -1,32 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Toggler should render correctly 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  border: 1px solid #EEF2F5;
-  border-radius: 0.2rem;
-  box-sizing: border-box;
+exports[`FooterElement should render correctly 1`] = `
+.c1 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: none;
+  font-style: normal;
+  color: #545456;
+  opacity: 1;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
-.c0 > *:not(:last-child) {
-  border-right: 1px solid #EEF2F5;
+.c1:hover {
+  color: #004A7C;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  position: relative;
 }
 
 <ThemeProvider
@@ -120,14 +115,36 @@ exports[`Toggler should render correctly 1`] = `
     }
   }
 >
-  <Toggler>
-    <styled.div>
-      <div
+  <FooterLink>
+    <Styled(Link)>
+      <Link
+        capitalize={false}
         className="c0"
+        italic={false}
+        opacity={1}
+        size="1rem"
+        uppercase={false}
+        weight={500}
       >
-        Toggler
-      </div>
-    </styled.div>
-  </Toggler>
+        <styled.a
+          capitalize={false}
+          className="c0"
+          italic={false}
+          opacity={1}
+          size="1rem"
+          uppercase={false}
+          weight={500}
+        >
+          <a
+            className="c0 c1"
+            opacity={1}
+            size="1rem"
+          >
+            FooterLink
+          </a>
+        </styled.a>
+      </Link>
+    </Styled(Link)>
+  </FooterLink>
 </ThemeProvider>
 `;

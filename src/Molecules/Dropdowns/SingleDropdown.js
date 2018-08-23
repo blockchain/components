@@ -1,18 +1,34 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import ImageMap from '../../Atoms/Images/ImageMap'
 
-const Wrapper = styled.select`
-  margin-bottom: 0;
+const Wrapper = styled.div`
+  width: ${(props) => props.width};
   min-width: 6rem;
-  box-sizing: border-box;
+  position: relative;
+  border-radius: 3px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -5px;
+    z-index: 1;
+    text-align: center;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid ${(props) => props.theme['dropdownArrowColor']};
+    pointer-events: none;
+  }
+`
+const Select = styled.select`
+  position: relative;
+  width: 100%;
   color: ${(props) => props.theme['dropdownColor']};
-  background-color: ${(props) => props.theme['dropdownBackgroundColor']};
-  background-size: 1rem;
-  background-repeat: no-repeat;
-  background-position: 95% 0%;
-  background-image: url(${ImageMap.arrowDownSolid});
+  background-color: transparent;
   appearance: none;
   border: none;
   font-family: ${(props) => props.theme['fontPrimary']};
@@ -22,20 +38,37 @@ const Wrapper = styled.select`
     props.uppercase ? 'uppercase' : props.capitalize ? 'capitalize' : 'none'};
   font-style: ${(props) => (props.italic ? 'italic' : 'normal')};
   border-radius: 0.3rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
   cursor: pointer;
   outline: none;
   text-align: left;
+  padding: 0.4rem 0;
+  box-sizing: border-box;
 `
 
-const SingleDropdown = ({ items, ...rest }) => (
-  <Wrapper {...rest}>
-    {items.map((item) => (
-      <option key={item.value} value={item.value}>
-        {item.text}
-      </option>
-    ))}
+const SingleDropdown = ({
+  capitalize,
+  italic,
+  items,
+  size,
+  uppercase,
+  weight,
+  width,
+  ...rest
+}) => (
+  <Wrapper width={width} {...rest}>
+    <Select
+      capitalize={capitalize}
+      italic={italic}
+      size={size}
+      uppercase={uppercase}
+      weight={weight}
+    >
+      {items.map((item) => (
+        <option key={item.value} value={item.value}>
+          {item.text}
+        </option>
+      ))}
+    </Select>
   </Wrapper>
 )
 
@@ -53,6 +86,7 @@ SingleDropdown.propTypes = {
   uppercase: PropTypes.bool,
   value: PropTypes.any,
   weight: PropTypes.oneOf([100, 200, 300, 400, 500, 600, 700, 800, 900]),
+  width: PropTypes.string.isRequired,
 }
 
 SingleDropdown.defaultProps = {
@@ -61,6 +95,7 @@ SingleDropdown.defaultProps = {
   size: '1rem',
   uppercase: false,
   weight: 300,
+  width: '100%',
 }
 
 export default SingleDropdown

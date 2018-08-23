@@ -1,11 +1,11 @@
 import React from 'react'
 import { mountWithTheme } from '../../Utils/testHelper'
 
-import Cartridge from './Cartridge'
+import NavbarDropdownItem from './NavbarDropdownItem'
 
-describe('Cartridge', () => {
+describe('NavbarDropdownItem', () => {
   it('should render correctly', () => {
-    const tree = mountWithTheme(<Cartridge />)
+    const tree = mountWithTheme(<NavbarDropdownItem />)
 
     expect(tree).toMatchSnapshot()
   })

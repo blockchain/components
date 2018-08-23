@@ -1,11 +1,11 @@
 import React from 'react'
 import { mountWithTheme } from '../../Utils/testHelper'
 
-import Cartridge from './Cartridge'
+import FooterLink from './FooterLink'
 
-describe('Cartridge', () => {
+describe('FooterElement', () => {
   it('should render correctly', () => {
-    const tree = mountWithTheme(<Cartridge />)
+    const tree = mountWithTheme(<FooterLink>FooterLink</FooterLink>)
 
     expect(tree).toMatchSnapshot()
   })

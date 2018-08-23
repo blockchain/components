@@ -7,24 +7,24 @@ const Wrapper = styled.div`
   top: 0;
   right: 0;
   display: ${(props) => (props.toggled ? 'flex' : 'none')};
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  padding: 60px 0 15px 0;
+  padding: 4.5rem 1.5rem 1.5rem 1.5rem;
+  box-sizing: border-box;
   background-color: ${(props) => props.theme['navbarMenuBagroundColor']};
   z-index: 10;
   transform: translate3d(0, 0, 0);
 
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
     position: relative;
     top: initial;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 15px 0;
+    padding: 1rem 0;
     background-color: transparent;
   }
 `

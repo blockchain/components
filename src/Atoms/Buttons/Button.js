@@ -9,8 +9,10 @@ const Wrapper = styled.button.attrs({
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 2.5rem;
+  line-height: 2.5rem;
   width: 100%;
-  padding: 0.7rem 1.875rem;
+  padding: 0 1rem;
   box-sizing: border-box;
   color: ${(props) => props.theme['buttonColor']};
   background-color: ${(props) => props.theme['buttonBackgroundColor']};
@@ -18,8 +20,7 @@ const Wrapper = styled.button.attrs({
   border-radius: 0.125rem;
   cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
   outline: none;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
+  transition: all 0.3s ease 0s;
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
   font-family: ${(props) => props.theme['fontPrimary']};
   font-size: 1rem;
