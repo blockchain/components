@@ -41,7 +41,14 @@ Input.propTypes = {
   disabled: PropTypes.bool,
   input: PropTypes.object,
   name: PropTypes.string,
-  type: PropTypes.oneOf(['text', 'date', 'number', 'password', 'search']),
+  type: PropTypes.oneOf([
+    'checkbox',
+    'date',
+    'number',
+    'password',
+    'search',
+    'text',
+  ]),
   width: PropTypes.string,
 }
 

@@ -5,7 +5,8 @@ import Cartridge from './Cartridge'
 
 describe('Cartridge', () => {
   it('should render correctly', () => {
-    const tree = mountWithTheme(<Cartridge />)
+    const item = <span />
+    const tree = mountWithTheme(<Cartridge>{item}</Cartridge>)
 
     expect(tree).toMatchSnapshot()
   })
