@@ -45,24 +45,9 @@ const Select = styled.select`
   box-sizing: border-box;
 `
 
-const SingleDropdown = ({
-  capitalize,
-  italic,
-  items,
-  size,
-  uppercase,
-  weight,
-  width,
-  ...rest
-}) => (
-  <Wrapper width={width} {...rest}>
-    <Select
-      capitalize={capitalize}
-      italic={italic}
-      size={size}
-      uppercase={uppercase}
-      weight={weight}
-    >
+const SingleDropdown = ({ items, width, ...rest }) => (
+  <Wrapper width={width}>
+    <Select {...rest}>
       {items.map((item) => (
         <option key={item.value} value={item.value}>
           {item.text}

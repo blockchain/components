@@ -187,23 +187,23 @@ exports[`SingleDropdown should render correctly 1`] = `
     width="100%"
   >
     <styled.div
-      onChange={[MockFunction]}
       width="100%"
     >
       <div
         className="c0"
-        onChange={[MockFunction]}
         width="100%"
       >
         <styled.select
           capitalize={false}
           italic={false}
+          onChange={[MockFunction]}
           size="1rem"
           uppercase={false}
           weight={300}
         >
           <select
             className="c1"
+            onChange={[MockFunction]}
             size="1rem"
           >
             <option
@@ -455,23 +455,23 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
     width="100%"
   >
     <styled.div
-      onChange={[MockFunction]}
       width="100%"
     >
       <div
         className="c0"
-        onChange={[MockFunction]}
         width="100%"
       >
         <styled.select
           capitalize={true}
           italic={false}
+          onChange={[MockFunction]}
           size="1rem"
           uppercase={false}
           weight={300}
         >
           <select
             className="c1"
+            onChange={[MockFunction]}
             size="1rem"
           >
             <option
@@ -723,23 +723,23 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
     width="100%"
   >
     <styled.div
-      onChange={[MockFunction]}
       width="100%"
     >
       <div
         className="c0"
-        onChange={[MockFunction]}
         width="100%"
       >
         <styled.select
           capitalize={false}
           italic={true}
+          onChange={[MockFunction]}
           size="1rem"
           uppercase={false}
           weight={300}
         >
           <select
             className="c1"
+            onChange={[MockFunction]}
             size="1rem"
           >
             <option
@@ -991,23 +991,23 @@ exports[`SingleDropdown should render correctly with size 1`] = `
     width="100%"
   >
     <styled.div
-      onChange={[MockFunction]}
       width="100%"
     >
       <div
         className="c0"
-        onChange={[MockFunction]}
         width="100%"
       >
         <styled.select
           capitalize={false}
           italic={false}
+          onChange={[MockFunction]}
           size="32px"
           uppercase={false}
           weight={300}
         >
           <select
             className="c1"
+            onChange={[MockFunction]}
             size="32px"
           >
             <option
@@ -1259,23 +1259,23 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
     width="100%"
   >
     <styled.div
-      onChange={[MockFunction]}
       width="100%"
     >
       <div
         className="c0"
-        onChange={[MockFunction]}
         width="100%"
       >
         <styled.select
           capitalize={false}
           italic={false}
+          onChange={[MockFunction]}
           size="1rem"
           uppercase={true}
           weight={300}
         >
           <select
             className="c1"
+            onChange={[MockFunction]}
             size="1rem"
           >
             <option
@@ -1527,23 +1527,23 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
     width="100%"
   >
     <styled.div
-      onChange={[MockFunction]}
       width="100%"
     >
       <div
         className="c0"
-        onChange={[MockFunction]}
         width="100%"
       >
         <styled.select
           capitalize={false}
           italic={false}
+          onChange={[MockFunction]}
           size="1rem"
           uppercase={false}
           weight={500}
         >
           <select
             className="c1"
+            onChange={[MockFunction]}
             size="1rem"
           >
             <option

@@ -70,6 +70,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "23.5.0",
     "jest-styled-components": "6.0.1",
+    "ncp": "2.0.0",
     "nodemon": "1.18.3",
     "polished": "1.9.3",
     "prettier": "1.14.2",
@@ -77,7 +78,7 @@
     "ramda": "0.25.0",
     "react": "16.4.2",
     "react-dom": "16.4.2",
-    "react-tooltip": "3.6.1",
+    "react-tooltip": "git://github.com/plondon/react-tooltip.git#93bfe390a52ae9df882c21bf420e6c345f38db02",
     "rimraf": "2.6.2",
     "standard": "11.0.1",
     "styled-components": "3.4.2",
@@ -94,7 +95,7 @@
     "ramda": "^0.25.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-tooltip": "^3.6.1",
+    "react-tooltip": "git://github.com/plondon/react-tooltip.git#93bfe390a52ae9df882c21bf420e6c345f38db02",
     "styled-components": "^3.3.3"
   }
 }
