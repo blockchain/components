@@ -2,8 +2,8 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-green.svg)](https://conventionalcommits.org)
 
-# Blockchain Components
-The library Blockchain Components is based on React and styled-components. It contains basic components, "atoms", and more complex "molecules" that are used on the [Blockchain.com](https://www.blockchain.com) ecosystem.
+# Components
+The library Components is based on React and styled-components. It contains basic components, "atoms", and more complex "molecules" that are used on the [Blockchain.com](https://www.blockchain.com) ecosystem.
 
 ## Tooling
 Both `yarn` and `npm` are supported.
@@ -21,13 +21,13 @@ The commands are given using `npm` however you can use the `yarn` equivalent and
 ## Tips
 If you want to change the library and reflect your changes on your consumer app without having to push to the repo and release, just:
 
-1. `git clone git@github.com:blockchain/blockchain-info-components.git`
-2. `cd path-to/blockchain-info-components`
+1. `git clone git@github.com:blockchain/components.git`
+2. `cd path-to/components`
 3. `npm link`
 4. `cd path-to/my-app`
 5. `npm link @blockchain-com/components`
 
-You can also use the task `npm run build:watch` on blockchain-info-components to automatically recompile the library and trigger a refresh on your app :fire:.
+You can also use the task `npm run build:watch` on `components` to automatically recompile the library and trigger a refresh on your app :fire:.
 
 :zap: you need to run `npm link @blockchain-com/components` everytime you run `npm i` or `yarn`...
 

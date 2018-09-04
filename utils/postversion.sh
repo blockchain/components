@@ -11,4 +11,4 @@ echo
 echo "Version $npm_package_version"
 echo
 echo "Done! Please create a PR to merge the branch v$npm_package_version to master:"
-echo "https://github.com/blockchain/blockchain-info-components/compare/master...$npm_package_version"
+echo "https://github.com/blockchain/components/compare/master...$npm_package_version"
