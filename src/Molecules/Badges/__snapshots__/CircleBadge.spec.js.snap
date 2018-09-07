@@ -164,11 +164,9 @@ exports[`CircleBadge should render correctly 1`] = `
       <Link
         capitalize={false}
         className="c0"
-        href="http://www.blockchain.com"
         italic={false}
         opacity={1}
         size="2.625rem"
-        target="_blank"
         uppercase={false}
         url="http://www.blockchain.com"
         weight={400}
@@ -176,21 +174,17 @@ exports[`CircleBadge should render correctly 1`] = `
         <styled.a
           capitalize={false}
           className="c0"
-          href="http://www.blockchain.com"
           italic={false}
           opacity={1}
           size="2.625rem"
-          target="_blank"
           uppercase={false}
           url="http://www.blockchain.com"
           weight={400}
         >
           <a
             className="c0 c1"
-            href="http://www.blockchain.com"
             opacity={1}
             size="2.625rem"
-            target="_blank"
           >
             <Image
               height="100%"
@@ -386,11 +380,9 @@ exports[`CircleBadge should render correctly with name 1`] = `
       <Link
         capitalize={false}
         className="c0"
-        href="http://www.blockchain.com"
         italic={false}
         opacity={1}
         size="2.625rem"
-        target="_blank"
         uppercase={false}
         url="http://www.blockchain.com"
         weight={400}
@@ -398,21 +390,17 @@ exports[`CircleBadge should render correctly with name 1`] = `
         <styled.a
           capitalize={false}
           className="c0"
-          href="http://www.blockchain.com"
           italic={false}
           opacity={1}
           size="2.625rem"
-          target="_blank"
           uppercase={false}
           url="http://www.blockchain.com"
           weight={400}
         >
           <a
             className="c0 c1"
-            href="http://www.blockchain.com"
             opacity={1}
             size="2.625rem"
-            target="_blank"
           >
             <Image
               height="100%"
@@ -608,11 +596,9 @@ exports[`CircleBadge should render correctly with size 1`] = `
       <Link
         capitalize={false}
         className="c0"
-        href="http://www.blockchain.com"
         italic={false}
         opacity={1}
         size="80px"
-        target="_blank"
         uppercase={false}
         url="http://www.blockchain.com"
         weight={400}
@@ -620,21 +606,17 @@ exports[`CircleBadge should render correctly with size 1`] = `
         <styled.a
           capitalize={false}
           className="c0"
-          href="http://www.blockchain.com"
           italic={false}
           opacity={1}
           size="80px"
-          target="_blank"
           uppercase={false}
           url="http://www.blockchain.com"
           weight={400}
         >
           <a
             className="c0 c1"
-            href="http://www.blockchain.com"
             opacity={1}
             size="80px"
-            target="_blank"
           >
             <Image
               height="100%"

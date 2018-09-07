@@ -5,10 +5,7 @@ import styled from 'styled-components'
 import Image from '../../Atoms/Images/Image'
 import Link from '../../Atoms/Links/Link'
 
-const Wrapper = styled(Link).attrs({
-  href: (props) => props.url,
-  target: '_blank',
-})`
+const Wrapper = styled(Link)`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -30,8 +27,8 @@ const Wrapper = styled(Link).attrs({
   }
 `
 
-const CircleBadge = ({ name, size, url, ...rest }) => (
-  <Wrapper size={size} url={url}>
+const CircleBadge = ({ name, size, ...rest }) => (
+  <Wrapper size={size} {...rest}>
     <Image name={name} selectable />
   </Wrapper>
 )
@@ -39,7 +36,6 @@ const CircleBadge = ({ name, size, url, ...rest }) => (
 CircleBadge.propTypes = {
   name: PropTypes.oneOf(['facebook', 'linkedIn', 'twitter']),
   size: PropTypes.string,
-  url: PropTypes.string.isRequired,
 }
 
 CircleBadge.defaultProps = {

@@ -6,6 +6,7 @@ import SearchBarUnderlined from './SearchBarUnderlined'
 
 storiesOf('Molecules/SearchBars/SearchBarUnderlined', module)
   .add('default', () => <SearchBarUnderlined />)
+  .add('with width', () => <SearchBarUnderlined width="200px" />)
   .add('with value', () => <SearchBarUnderlined value="My search" />)
   .add('with onChange', () => (
     <SearchBarUnderlined onChange={action('text-change')} />

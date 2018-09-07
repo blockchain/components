@@ -199,10 +199,15 @@ exports[`SearchBar should render correctly 1`] = `
     }
   }
 >
-  <SearchBar>
-    <styled.div>
+  <SearchBar
+    width="100%"
+  >
+    <styled.div
+      width="100%"
+    >
       <div
         className="c0"
+        width="100%"
       >
         <Styled(Input)>
           <Input
@@ -476,10 +481,14 @@ exports[`SearchBar should render correctly with onChange 1`] = `
 >
   <SearchBar
     onChange={[MockFunction]}
+    width="100%"
   >
-    <styled.div>
+    <styled.div
+      width="100%"
+    >
       <div
         className="c0"
+        width="100%"
       >
         <Styled(Input)
           onChange={[MockFunction]}
@@ -758,10 +767,14 @@ exports[`SearchBar should render correctly with onClick 1`] = `
 >
   <SearchBar
     onClick={[MockFunction]}
+    width="100%"
   >
-    <styled.div>
+    <styled.div
+      width="100%"
+    >
       <div
         className="c0"
+        width="100%"
       >
         <Styled(Input)>
           <Input
@@ -1040,10 +1053,305 @@ exports[`SearchBar should render correctly with value 1`] = `
   <SearchBar
     onChange={[MockFunction]}
     value="My search"
+    width="100%"
   >
-    <styled.div>
+    <styled.div
+      width="100%"
+    >
       <div
         className="c0"
+        width="100%"
+      >
+        <Styled(Input)
+          onChange={[MockFunction]}
+          value="My search"
+        >
+          <Input
+            className="c1"
+            disabled={false}
+            onChange={[MockFunction]}
+            type="text"
+            value="My search"
+            width="100%"
+          >
+            <styled.input
+              className="c1"
+              disabled={false}
+              onChange={[MockFunction]}
+              type="text"
+              value="My search"
+              width="100%"
+            >
+              <input
+                className="c1 c2"
+                disabled={false}
+                onChange={[MockFunction]}
+                type="text"
+                value="My search"
+                width="100%"
+              />
+            </styled.input>
+          </Input>
+        </Styled(Input)>
+        <styled.div>
+          <div
+            className="c3"
+          >
+            <Icon
+              name="searchFilled"
+              selectable={true}
+              size="1.3rem"
+            >
+              <Styled(searchFilled)
+                selectable="1"
+                size="1.3rem"
+              >
+                <searchFilled
+                  className="c4"
+                  height="32"
+                  selectable="1"
+                  size="1.3rem"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <svg
+                    className="c4"
+                    height="32"
+                    selectable="1"
+                    size="1.3rem"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      search-filled
+                    </title>
+                    <path
+                      d="M14.856.104a12.34 12.34 0 0 0-1.559-.095c-7.069 0-12.8 5.731-12.8 12.8s5.731 12.8 12.8 12.8c2.513 0 4.858-.724 6.835-1.976l-.052.031 7.672 7.672c.41.409.975.662 1.6.662s1.19-.253 1.6-.662c.409-.41.662-.975.662-1.6s-.253-1.19-.662-1.6l-7.544-7.528a12.659 12.659 0 0 0 2.648-7.777c0-.55-.035-1.091-.102-1.623l.007.063C25.213 5.45 20.669.884 14.923.11l-.066-.007zm-1.64 2.92c5.421 0 9.816 4.395 9.816 9.816s-4.395 9.816-9.816 9.816c-5.421 0-9.816-4.395-9.816-9.816v-.042.002c.014-5.402 4.396-9.776 9.8-9.776h.017-.001z"
+                    />
+                  </svg>
+                </searchFilled>
+              </Styled(searchFilled)>
+            </Icon>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </SearchBar>
+</ThemeProvider>
+`;
+
+exports[`SearchBar should render correctly with width 1`] = `
+.c2 {
+  display: block;
+  width: 100%;
+  height: 3.2rem;
+  padding: 0 1.4rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  color: #545456;
+  border-width: 1px;
+  border-color: #CCC;
+  border-style: solid;
+  border-radius: 0.125rem;
+  background-color: #FFF;
+  background-image: none;
+  outline-width: 0;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.c2:disabled {
+  color: #545456;
+  background: #FFF;
+  cursor: not-allowed;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c2::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c2:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c2::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c1 {
+  background-color: #FFF;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 60px;
+  height: 52px;
+  background-color: #FFCA00;
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+}
+
+.c4 {
+  fill: #545456;
+  width: 1.3rem;
+  height: 1.3rem;
+  cursor: pointer;
+}
+
+.c4:hover {
+  fill: #757679;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "buttonBackgroundColor": "#004A7C",
+      "buttonColor": "#FFF",
+      "buttonHoverColor": "#0068af",
+      "cartridgeBackgroundColor": "#10ADE4",
+      "cartridgeColor": "#FFF",
+      "circleBadgeBackgroundColor": "#CCC",
+      "circleBadgeHoverColor": "#004A7C",
+      "dropdownArrowColor": "#545456",
+      "dropdownColor": "#545456",
+      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+      "footerCategoryColor": "#040d25",
+      "iconColor": "#545456",
+      "iconHoverColor": "#757679",
+      "inputBackgroundColor": "#FFF",
+      "inputBorderColor": "#CCC",
+      "inputColor": "#545456",
+      "inputPlaceholderColor": "#999B9E",
+      "linkColor": "#545456",
+      "linkHoverColor": "#004A7C",
+      "navbarDropdownContentBackgroundColor": "#FFF",
+      "navbarDropdownContentBorderColor": "#999B9E",
+      "navbarDropdownContentShadowColor": "rgba(0,0,0,0.25)",
+      "navbarDropdownContentShadowColor2": "rgba(0,0,0,0.10)",
+      "navbarDropdownDescriptionColor": "#999B9E",
+      "navbarDropdownHeaderColor": "#FFF",
+      "navbarDropdownTitleColor": "#3558A8",
+      "navbarDropdownTitleMobileColor": "#FFF",
+      "navbarMenuBagroundColor": "#004A7C",
+      "navbarTogglerColor": "#FFF",
+      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
+      "paginationBorderColor": "#EEF2F5",
+      "paginationColor": "#383838",
+      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
+      "paginationHoverColor": "#383838",
+      "paginationSelectedBackgroundColor": "#10ADE4",
+      "paginationSelectedColor": "#FFF",
+      "palette": Object {
+        "azure": "#3558A8",
+        "bigStone": "#152343",
+        "biscay": "#153A62",
+        "black": "#000",
+        "blackAlpha05": "rgba(0,0,0,0.05)",
+        "blackAlpha10": "rgba(0,0,0,0.10)",
+        "blackAlpha25": "rgba(0,0,0,0.25)",
+        "blackAlpha75": "rgba(0,0,0,0.75)",
+        "blueWood": "#27324B",
+        "cerulean": "#10ADE4",
+        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
+        "gold": "#FFCA00",
+        "gray0": "#F8F8F8",
+        "gray1": "#EEF2F5",
+        "gray2": "#CCC",
+        "gray3": "#999B9E",
+        "gray4": "#757679",
+        "gray5": "#545456",
+        "gray6": "#383838",
+        "gray7": "#040d25",
+        "orient": "#004A7C",
+        "powderBlue": "#B2D5E5",
+        "transparent": "rgba(0, 0, 0, 0)",
+        "white": "#FFF",
+        "whiteAlpha10": "rgba(255,255,255,0.1)",
+        "whiteAlpha75": "rgba(255,255,255,0.75)",
+      },
+      "panelBackgroundColor": "#FFF",
+      "panelShadowColor": "#EEF2F5",
+      "searchBarIconBackgroundColor": "#FFCA00",
+      "searchBarInputBackgroundColor": "#FFF",
+      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
+      "searchBarUnderlinedBorderColor": "#CCC",
+      "sectionBackgroundColor": "rgba(0, 0, 0, 0)",
+      "tabMenuBarColor": "#FFCA00",
+      "tabMenuBorderColor": "#EEF2F5",
+      "tableCellEvenBackgroundColor": "#F8F8F8",
+      "tableCellOddBackgroundColor": "#FFF",
+      "tableShadowColor": "#EEF2F5",
+      "textColor": "#545456",
+      "togglerBackgroundColor": "#FFF",
+      "togglerBorderColor": "#EEF2F5",
+      "togglerColor": "#10ADE4",
+      "togglerSelectedBackgroundColor": "#10ADE4",
+      "togglerSelectedColor": "#FFF",
+      "tooltipBackgroundColor": "#383838",
+      "tooltipBorderColor": "#383838",
+      "tooltipColor": "#FFF",
+    }
+  }
+>
+  <SearchBar
+    onChange={[MockFunction]}
+    value="My search"
+    width="200px"
+  >
+    <styled.div
+      width="200px"
+    >
+      <div
+        className="c0"
+        width="200px"
       >
         <Styled(Input)
           onChange={[MockFunction]}
