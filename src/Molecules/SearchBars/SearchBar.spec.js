@@ -11,6 +11,14 @@ describe('SearchBar', () => {
     expect(tree).toMatchSnapshot()
   })
 
+  it('should render correctly with width', () => {
+    const tree = mountWithTheme(
+      <SearchBar onChange={jest.fn()} value="My search" width="200px" />,
+    )
+
+    expect(tree).toMatchSnapshot()
+  })
+
   it('should render correctly with value', () => {
     const tree = mountWithTheme(
       <SearchBar onChange={jest.fn()} value="My search" />,

@@ -31,12 +31,13 @@ const IconContainer = styled.div`
 
 const SearchBarUnderlined = ({
   children,
+  width,
   onChange,
   onClick,
   value,
   ...rest
 }) => (
-  <Wrapper>
+  <Wrapper width={width}>
     <SearchInput onChange={onChange} value={value} {...rest} />
     <IconContainer>
       <Icon name="searchFilled" onClick={onClick} selectable size="1.3rem" />
@@ -49,6 +50,11 @@ SearchBarUnderlined.propTypes = {
   onChange: PropTypes.func,
   onClick: PropTypes.func,
   value: PropTypes.any,
+  width: PropTypes.string,
+}
+
+SearchBarUnderlined.defaultProps = {
+  width: '100%',
 }
 
 export default SearchBarUnderlined

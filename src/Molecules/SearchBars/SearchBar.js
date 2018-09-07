@@ -29,8 +29,8 @@ const IconContainer = styled.div`
   border-bottom-right-radius: 0.125rem;
 `
 
-const SearchBar = ({ children, value, onChange, onClick, ...rest }) => (
-  <Wrapper>
+const SearchBar = ({ children, width, value, onChange, onClick, ...rest }) => (
+  <Wrapper width={width}>
     <SearchInput onChange={onChange} value={value} {...rest} />
     <IconContainer>
       <Icon name="searchFilled" onClick={onClick} selectable size="1.3rem" />
@@ -43,6 +43,11 @@ SearchBar.propTypes = {
   onChange: PropTypes.func,
   onClick: PropTypes.func,
   value: PropTypes.any,
+  width: PropTypes.string,
+}
+
+SearchBar.defaultProps = {
+  width: '100%',
 }
 
 export default SearchBar
