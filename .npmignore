@@ -1,13 +1,30 @@
 # Ignore unused code
+.changelogrc
+.eslintignore
+.eslintrc
+.huskyrc
+.prettierrc
 .storybook
+.stylelintrc
 .vscode
-coverage
-node_modules
-src
-utils
+
+commitlint.config.js
+jest.config.js
 package-lock.json
 yarn.lock
+yarn-error.log
+
+coverage/
+node_modules/
+src/
+utils/
+
+__fixtures__
+__snapshots__
+*.spec.js
+*.stories.js
 
 # Github
+README.md
 CHANGELOG.md
 CODEOWNERS
