@@ -7,6 +7,6 @@ describe('NavbarDropdownItemTitle', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<NavbarDropdownItemTitle />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(NavbarDropdownItemTitle)).toMatchSnapshot()
   })
 })

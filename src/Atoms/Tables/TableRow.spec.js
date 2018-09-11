@@ -7,6 +7,6 @@ describe('TableRow', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<TableRow>MyTableRow</TableRow>)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(TableRow)).toMatchSnapshot()
   })
 })

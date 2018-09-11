@@ -7,6 +7,6 @@ describe('TabMenuToggler', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<TabMenuToggler />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(TabMenuToggler)).toMatchSnapshot()
   })
 })

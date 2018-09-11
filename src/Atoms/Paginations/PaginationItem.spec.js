@@ -7,6 +7,6 @@ describe('PaginationItem', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<PaginationItem selected />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(PaginationItem)).toMatchSnapshot()
   })
 })

@@ -7,6 +7,6 @@ describe('NavbarHeader', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<NavbarHeader />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(NavbarHeader)).toMatchSnapshot()
   })
 })

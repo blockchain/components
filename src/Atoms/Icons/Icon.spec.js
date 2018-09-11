@@ -7,24 +7,24 @@ describe('Icon', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<Icon />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(Icon)).toMatchSnapshot()
   })
 
   it('should render correctly with name', () => {
     const tree = mountWithTheme(<Icon name="ethereum" />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(Icon)).toMatchSnapshot()
   })
 
   it('should render correctly with size', () => {
     const tree = mountWithTheme(<Icon size="72px" />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(Icon)).toMatchSnapshot()
   })
 
   it('should render correctly with selectable', () => {
     const tree = mountWithTheme(<Icon selectable />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(Icon)).toMatchSnapshot()
   })
 })

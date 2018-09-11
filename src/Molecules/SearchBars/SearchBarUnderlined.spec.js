@@ -8,7 +8,7 @@ describe('SearchBarUnderlined', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<SearchBarUnderlined />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(SearchBarUnderlined)).toMatchSnapshot()
   })
 
   it('should render correctly with width', () => {
@@ -20,7 +20,7 @@ describe('SearchBarUnderlined', () => {
       />,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(SearchBarUnderlined)).toMatchSnapshot()
   })
 
   it('should render correctly with value', () => {
@@ -28,18 +28,18 @@ describe('SearchBarUnderlined', () => {
       <SearchBarUnderlined onChange={jest.fn()} value="My search" />,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(SearchBarUnderlined)).toMatchSnapshot()
   })
 
   it('should render correctly with onChange', () => {
     const tree = mountWithTheme(<SearchBarUnderlined onChange={jest.fn()} />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(SearchBarUnderlined)).toMatchSnapshot()
   })
 
   it('should render correctly with onClick', () => {
     const tree = mountWithTheme(<SearchBarUnderlined onClick={jest.fn()} />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(SearchBarUnderlined)).toMatchSnapshot()
   })
 })

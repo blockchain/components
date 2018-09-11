@@ -7,12 +7,12 @@ describe('NavbarMenu', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<NavbarMenu />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(NavbarMenu)).toMatchSnapshot()
   })
 
   it('should render correctly with toggled', () => {
     const tree = mountWithTheme(<NavbarMenu toggled />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(NavbarMenu)).toMatchSnapshot()
   })
 })

@@ -7,6 +7,6 @@ describe('Container', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<Container>MyContainer</Container>)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(Container)).toMatchSnapshot()
   })
 })

@@ -21,7 +21,7 @@ describe('SingleDropdown', () => {
       <SingleDropdown items={items} onChange={jest.fn()} />,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(SingleDropdown)).toMatchSnapshot()
   })
 
   it('should render correctly with capitalize', () => {
@@ -29,7 +29,7 @@ describe('SingleDropdown', () => {
       <SingleDropdown capitalize items={items} onChange={jest.fn()} />,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(SingleDropdown)).toMatchSnapshot()
   })
 
   it('should render correctly with italic', () => {
@@ -37,7 +37,7 @@ describe('SingleDropdown', () => {
       <SingleDropdown italic items={items} onChange={jest.fn()} />,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(SingleDropdown)).toMatchSnapshot()
   })
 
   it('should render correctly with size', () => {
@@ -45,7 +45,7 @@ describe('SingleDropdown', () => {
       <SingleDropdown items={items} onChange={jest.fn()} size="32px" />,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(SingleDropdown)).toMatchSnapshot()
   })
 
   it('should render correctly with uppercase', () => {
@@ -53,7 +53,7 @@ describe('SingleDropdown', () => {
       <SingleDropdown items={items} onChange={jest.fn()} uppercase />,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(SingleDropdown)).toMatchSnapshot()
   })
 
   it('should render correctly with weight', () => {
@@ -61,6 +61,6 @@ describe('SingleDropdown', () => {
       <SingleDropdown items={items} onChange={jest.fn()} weight={500} />,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(SingleDropdown)).toMatchSnapshot()
   })
 })

@@ -3,7 +3,7 @@ import { mountWithTheme } from '../../Utils/testHelper'
 
 import TooltipHost from './TooltipHost'
 
-describe('Tooltip', () => {
+describe('TooltipHost', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(
       <TooltipHost id="storybook.test" tip="test">
@@ -11,6 +11,6 @@ describe('Tooltip', () => {
       </TooltipHost>,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(TooltipHost)).toMatchSnapshot()
   })
 })
