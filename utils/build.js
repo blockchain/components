@@ -1,6 +1,7 @@
 const { execSync } = require('child_process')
 const path = require('path')
 const fs = require('fs')
+const rimraf = require('rimraf')
 
 const babel = path
   .resolve(__dirname, '../node_modules/.bin/babel')
@@ -19,6 +20,9 @@ const ignoreGlobs = [
   '**/*.stories.js',
   '**/__snapshots__',
 ].join(',')
+
+rimraf.sync('lib')
+rimraf.sync('esm')
 
 const baseCmd = `${babel} src/ --config-file ${babelrc} -D --ignore "${ignoreGlobs}"`
 

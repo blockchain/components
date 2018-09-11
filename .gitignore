@@ -6,6 +6,7 @@ lib
 
 # Logs
 *.log
+yarn-error.log
 
 # Editor
 .DS_Store

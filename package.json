@@ -7,6 +7,7 @@
   "scripts": {
     "start": "start-storybook -p 6006",
     "build:watch": "nodemon --watch src --exec npm run build",
+    "prebuild": "npm ci",
     "build": "node utils/build.js",
     "prepare": "node utils/build.js",
     "build-storybook": "build-storybook",
@@ -23,7 +24,7 @@
     "postversion": "./utils/postversion.sh"
   },
   "author": "Blockchain",
-  "license": "AGPLv3",
+  "license": "AGPL-3.0-or-later",
   "publishConfig": {
     "access": "public",
     "scope": "@blockchain-com"
@@ -45,9 +46,9 @@
     "@storybook/addon-notes": "3.4.10",
     "@storybook/cli": "3.4.10",
     "@storybook/react": "3.4.10",
-    "babel-core": "7.0.0-bridge.0",
+    "babel-core": "7.0.0-0",
     "babel-eslint": "9.0.0",
-    "babel-jest": "23.4.2",
+    "babel-jest": "23.6.0",
     "babel-loader": "8.0.2",
     "babel-plugin-inline-import-data-uri": "1.0.1",
     "babel-plugin-inline-react-svg": "0.5.4",
@@ -68,8 +69,8 @@
     "git-changelog": "1.1.2",
     "husky": "1.0.0-rc.13",
     "identity-obj-proxy": "3.0.0",
-    "jest": "23.5.0",
-    "jest-styled-components": "6.1.1",
+    "jest": "23.6.0",
+    "jest-styled-components": "6.2.0",
     "ncp": "2.0.0",
     "nodemon": "1.18.4",
     "polished": "2.0.3",
@@ -81,7 +82,7 @@
     "react-tooltip": "3.8.1",
     "rimraf": "2.6.2",
     "standard": "12.0.1",
-    "styled-components": "3.4.5",
+    "styled-components": "3.4.6",
     "stylelint": "9.5.0",
     "stylelint-config-recommended": "2.1.0",
     "stylelint-config-standard": "18.2.0",
@@ -96,6 +97,6 @@
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-tooltip": "^3.8.1",
-    "styled-components": "^3.4.5"
+    "styled-components": "^3.4.6"
   }
 }
