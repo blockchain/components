@@ -18,6 +18,6 @@ describe('Button', () => {
       </ButtonGroup>,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(ButtonGroup)).toMatchSnapshot()
   })
 })

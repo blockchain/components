@@ -7,6 +7,6 @@ describe('NavbarNavItem', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<NavbarNavItem />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(NavbarNavItem)).toMatchSnapshot()
   })
 })

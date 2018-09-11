@@ -7,7 +7,7 @@ describe('CircleBadge', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<CircleBadge url="http://www.blockchain.com" />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(CircleBadge)).toMatchSnapshot()
   })
 
   it('should render correctly with name', () => {
@@ -15,7 +15,7 @@ describe('CircleBadge', () => {
       <CircleBadge name="linkedIn" url="http://www.blockchain.com" />,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(CircleBadge)).toMatchSnapshot()
   })
 
   it('should render correctly with size', () => {
@@ -23,6 +23,6 @@ describe('CircleBadge', () => {
       <CircleBadge size="80px" url="http://www.blockchain.com" />,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(CircleBadge)).toMatchSnapshot()
   })
 })

@@ -7,6 +7,6 @@ describe('Toggler', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<Toggler>Toggler</Toggler>)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(Toggler)).toMatchSnapshot()
   })
 })

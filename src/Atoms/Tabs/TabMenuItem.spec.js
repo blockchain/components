@@ -7,7 +7,7 @@ describe('TabMenuItem', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<TabMenuItem>MyTabMenuItem</TabMenuItem>)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(TabMenuItem)).toMatchSnapshot()
   })
 
   it('should render correctly when selected', () => {
@@ -15,6 +15,6 @@ describe('TabMenuItem', () => {
       <TabMenuItem selected>MyTabMenuItem</TabMenuItem>,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(TabMenuItem)).toMatchSnapshot()
   })
 })

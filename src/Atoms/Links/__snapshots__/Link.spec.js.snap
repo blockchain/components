@@ -20,98 +20,15 @@ exports[`Link should render correctly 1`] = `
   text-decoration: none;
 }
 
-<ThemeProvider
-  theme={
-    Object {
-      "buttonBackgroundColor": "#004A7C",
-      "buttonColor": "#FFF",
-      "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#10ADE4",
-      "cartridgeColor": "#FFF",
-      "circleBadgeBackgroundColor": "#CCC",
-      "circleBadgeHoverColor": "#004A7C",
-      "dropdownArrowColor": "#545456",
-      "dropdownColor": "#545456",
-      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#040d25",
-      "iconColor": "#545456",
-      "iconHoverColor": "#757679",
-      "inputBackgroundColor": "#FFF",
-      "inputBorderColor": "#CCC",
-      "inputColor": "#545456",
-      "inputPlaceholderColor": "#999B9E",
-      "linkColor": "#545456",
-      "linkHoverColor": "#004A7C",
-      "navbarDropdownContentBackgroundColor": "#FFF",
-      "navbarDropdownContentBorderColor": "#999B9E",
-      "navbarDropdownContentShadowColor": "rgba(0,0,0,0.25)",
-      "navbarDropdownContentShadowColor2": "rgba(0,0,0,0.10)",
-      "navbarDropdownDescriptionColor": "#999B9E",
-      "navbarDropdownHeaderColor": "#FFF",
-      "navbarDropdownTitleColor": "#3558A8",
-      "navbarDropdownTitleMobileColor": "#FFF",
-      "navbarMenuBagroundColor": "#004A7C",
-      "navbarTogglerColor": "#FFF",
-      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
-      "paginationBorderColor": "#EEF2F5",
-      "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
-      "paginationHoverColor": "#383838",
-      "paginationSelectedBackgroundColor": "#10ADE4",
-      "paginationSelectedColor": "#FFF",
-      "palette": Object {
-        "azure": "#3558A8",
-        "bigStone": "#152343",
-        "biscay": "#153A62",
-        "black": "#000",
-        "blackAlpha05": "rgba(0,0,0,0.05)",
-        "blackAlpha10": "rgba(0,0,0,0.10)",
-        "blackAlpha25": "rgba(0,0,0,0.25)",
-        "blackAlpha75": "rgba(0,0,0,0.75)",
-        "blueWood": "#27324B",
-        "cerulean": "#10ADE4",
-        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
-        "gold": "#FFCA00",
-        "gray0": "#F8F8F8",
-        "gray1": "#EEF2F5",
-        "gray2": "#CCC",
-        "gray3": "#999B9E",
-        "gray4": "#757679",
-        "gray5": "#545456",
-        "gray6": "#383838",
-        "gray7": "#040d25",
-        "orient": "#004A7C",
-        "powderBlue": "#B2D5E5",
-        "transparent": "rgba(0, 0, 0, 0)",
-        "white": "#FFF",
-        "whiteAlpha10": "rgba(255,255,255,0.1)",
-        "whiteAlpha75": "rgba(255,255,255,0.75)",
-      },
-      "panelBackgroundColor": "#FFF",
-      "panelShadowColor": "#EEF2F5",
-      "searchBarIconBackgroundColor": "#FFCA00",
-      "searchBarInputBackgroundColor": "#FFF",
-      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
-      "searchBarUnderlinedBorderColor": "#CCC",
-      "sectionBackgroundColor": "rgba(0, 0, 0, 0)",
-      "tabMenuBarColor": "#FFCA00",
-      "tabMenuBorderColor": "#EEF2F5",
-      "tableCellEvenBackgroundColor": "#F8F8F8",
-      "tableCellOddBackgroundColor": "#FFF",
-      "tableShadowColor": "#EEF2F5",
-      "textColor": "#545456",
-      "togglerBackgroundColor": "#FFF",
-      "togglerBorderColor": "#EEF2F5",
-      "togglerColor": "#10ADE4",
-      "togglerSelectedBackgroundColor": "#10ADE4",
-      "togglerSelectedColor": "#FFF",
-      "tooltipBackgroundColor": "#383838",
-      "tooltipBorderColor": "#383838",
-      "tooltipColor": "#FFF",
-    }
-  }
+<Link
+  capitalize={false}
+  italic={false}
+  opacity={1}
+  size="1rem"
+  uppercase={false}
+  weight={400}
 >
-  <Link
+  <styled.a
     capitalize={false}
     italic={false}
     opacity={1}
@@ -119,24 +36,15 @@ exports[`Link should render correctly 1`] = `
     uppercase={false}
     weight={400}
   >
-    <styled.a
-      capitalize={false}
-      italic={false}
+    <a
+      className="c0"
       opacity={1}
       size="1rem"
-      uppercase={false}
-      weight={400}
     >
-      <a
-        className="c0"
-        opacity={1}
-        size="1rem"
-      >
-        MyLink
-      </a>
-    </styled.a>
-  </Link>
-</ThemeProvider>
+      MyLink
+    </a>
+  </styled.a>
+</Link>
 `;
 
 exports[`Link should render correctly with capitalize 1`] = `
@@ -159,98 +67,15 @@ exports[`Link should render correctly with capitalize 1`] = `
   text-decoration: none;
 }
 
-<ThemeProvider
-  theme={
-    Object {
-      "buttonBackgroundColor": "#004A7C",
-      "buttonColor": "#FFF",
-      "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#10ADE4",
-      "cartridgeColor": "#FFF",
-      "circleBadgeBackgroundColor": "#CCC",
-      "circleBadgeHoverColor": "#004A7C",
-      "dropdownArrowColor": "#545456",
-      "dropdownColor": "#545456",
-      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#040d25",
-      "iconColor": "#545456",
-      "iconHoverColor": "#757679",
-      "inputBackgroundColor": "#FFF",
-      "inputBorderColor": "#CCC",
-      "inputColor": "#545456",
-      "inputPlaceholderColor": "#999B9E",
-      "linkColor": "#545456",
-      "linkHoverColor": "#004A7C",
-      "navbarDropdownContentBackgroundColor": "#FFF",
-      "navbarDropdownContentBorderColor": "#999B9E",
-      "navbarDropdownContentShadowColor": "rgba(0,0,0,0.25)",
-      "navbarDropdownContentShadowColor2": "rgba(0,0,0,0.10)",
-      "navbarDropdownDescriptionColor": "#999B9E",
-      "navbarDropdownHeaderColor": "#FFF",
-      "navbarDropdownTitleColor": "#3558A8",
-      "navbarDropdownTitleMobileColor": "#FFF",
-      "navbarMenuBagroundColor": "#004A7C",
-      "navbarTogglerColor": "#FFF",
-      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
-      "paginationBorderColor": "#EEF2F5",
-      "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
-      "paginationHoverColor": "#383838",
-      "paginationSelectedBackgroundColor": "#10ADE4",
-      "paginationSelectedColor": "#FFF",
-      "palette": Object {
-        "azure": "#3558A8",
-        "bigStone": "#152343",
-        "biscay": "#153A62",
-        "black": "#000",
-        "blackAlpha05": "rgba(0,0,0,0.05)",
-        "blackAlpha10": "rgba(0,0,0,0.10)",
-        "blackAlpha25": "rgba(0,0,0,0.25)",
-        "blackAlpha75": "rgba(0,0,0,0.75)",
-        "blueWood": "#27324B",
-        "cerulean": "#10ADE4",
-        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
-        "gold": "#FFCA00",
-        "gray0": "#F8F8F8",
-        "gray1": "#EEF2F5",
-        "gray2": "#CCC",
-        "gray3": "#999B9E",
-        "gray4": "#757679",
-        "gray5": "#545456",
-        "gray6": "#383838",
-        "gray7": "#040d25",
-        "orient": "#004A7C",
-        "powderBlue": "#B2D5E5",
-        "transparent": "rgba(0, 0, 0, 0)",
-        "white": "#FFF",
-        "whiteAlpha10": "rgba(255,255,255,0.1)",
-        "whiteAlpha75": "rgba(255,255,255,0.75)",
-      },
-      "panelBackgroundColor": "#FFF",
-      "panelShadowColor": "#EEF2F5",
-      "searchBarIconBackgroundColor": "#FFCA00",
-      "searchBarInputBackgroundColor": "#FFF",
-      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
-      "searchBarUnderlinedBorderColor": "#CCC",
-      "sectionBackgroundColor": "rgba(0, 0, 0, 0)",
-      "tabMenuBarColor": "#FFCA00",
-      "tabMenuBorderColor": "#EEF2F5",
-      "tableCellEvenBackgroundColor": "#F8F8F8",
-      "tableCellOddBackgroundColor": "#FFF",
-      "tableShadowColor": "#EEF2F5",
-      "textColor": "#545456",
-      "togglerBackgroundColor": "#FFF",
-      "togglerBorderColor": "#EEF2F5",
-      "togglerColor": "#10ADE4",
-      "togglerSelectedBackgroundColor": "#10ADE4",
-      "togglerSelectedColor": "#FFF",
-      "tooltipBackgroundColor": "#383838",
-      "tooltipBorderColor": "#383838",
-      "tooltipColor": "#FFF",
-    }
-  }
+<Link
+  capitalize={true}
+  italic={false}
+  opacity={1}
+  size="1rem"
+  uppercase={false}
+  weight={400}
 >
-  <Link
+  <styled.a
     capitalize={true}
     italic={false}
     opacity={1}
@@ -258,24 +83,15 @@ exports[`Link should render correctly with capitalize 1`] = `
     uppercase={false}
     weight={400}
   >
-    <styled.a
-      capitalize={true}
-      italic={false}
+    <a
+      className="c0"
       opacity={1}
       size="1rem"
-      uppercase={false}
-      weight={400}
     >
-      <a
-        className="c0"
-        opacity={1}
-        size="1rem"
-      >
-        MyLink
-      </a>
-    </styled.a>
-  </Link>
-</ThemeProvider>
+      MyLink
+    </a>
+  </styled.a>
+</Link>
 `;
 
 exports[`Link should render correctly with italic 1`] = `
@@ -298,98 +114,15 @@ exports[`Link should render correctly with italic 1`] = `
   text-decoration: none;
 }
 
-<ThemeProvider
-  theme={
-    Object {
-      "buttonBackgroundColor": "#004A7C",
-      "buttonColor": "#FFF",
-      "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#10ADE4",
-      "cartridgeColor": "#FFF",
-      "circleBadgeBackgroundColor": "#CCC",
-      "circleBadgeHoverColor": "#004A7C",
-      "dropdownArrowColor": "#545456",
-      "dropdownColor": "#545456",
-      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#040d25",
-      "iconColor": "#545456",
-      "iconHoverColor": "#757679",
-      "inputBackgroundColor": "#FFF",
-      "inputBorderColor": "#CCC",
-      "inputColor": "#545456",
-      "inputPlaceholderColor": "#999B9E",
-      "linkColor": "#545456",
-      "linkHoverColor": "#004A7C",
-      "navbarDropdownContentBackgroundColor": "#FFF",
-      "navbarDropdownContentBorderColor": "#999B9E",
-      "navbarDropdownContentShadowColor": "rgba(0,0,0,0.25)",
-      "navbarDropdownContentShadowColor2": "rgba(0,0,0,0.10)",
-      "navbarDropdownDescriptionColor": "#999B9E",
-      "navbarDropdownHeaderColor": "#FFF",
-      "navbarDropdownTitleColor": "#3558A8",
-      "navbarDropdownTitleMobileColor": "#FFF",
-      "navbarMenuBagroundColor": "#004A7C",
-      "navbarTogglerColor": "#FFF",
-      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
-      "paginationBorderColor": "#EEF2F5",
-      "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
-      "paginationHoverColor": "#383838",
-      "paginationSelectedBackgroundColor": "#10ADE4",
-      "paginationSelectedColor": "#FFF",
-      "palette": Object {
-        "azure": "#3558A8",
-        "bigStone": "#152343",
-        "biscay": "#153A62",
-        "black": "#000",
-        "blackAlpha05": "rgba(0,0,0,0.05)",
-        "blackAlpha10": "rgba(0,0,0,0.10)",
-        "blackAlpha25": "rgba(0,0,0,0.25)",
-        "blackAlpha75": "rgba(0,0,0,0.75)",
-        "blueWood": "#27324B",
-        "cerulean": "#10ADE4",
-        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
-        "gold": "#FFCA00",
-        "gray0": "#F8F8F8",
-        "gray1": "#EEF2F5",
-        "gray2": "#CCC",
-        "gray3": "#999B9E",
-        "gray4": "#757679",
-        "gray5": "#545456",
-        "gray6": "#383838",
-        "gray7": "#040d25",
-        "orient": "#004A7C",
-        "powderBlue": "#B2D5E5",
-        "transparent": "rgba(0, 0, 0, 0)",
-        "white": "#FFF",
-        "whiteAlpha10": "rgba(255,255,255,0.1)",
-        "whiteAlpha75": "rgba(255,255,255,0.75)",
-      },
-      "panelBackgroundColor": "#FFF",
-      "panelShadowColor": "#EEF2F5",
-      "searchBarIconBackgroundColor": "#FFCA00",
-      "searchBarInputBackgroundColor": "#FFF",
-      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
-      "searchBarUnderlinedBorderColor": "#CCC",
-      "sectionBackgroundColor": "rgba(0, 0, 0, 0)",
-      "tabMenuBarColor": "#FFCA00",
-      "tabMenuBorderColor": "#EEF2F5",
-      "tableCellEvenBackgroundColor": "#F8F8F8",
-      "tableCellOddBackgroundColor": "#FFF",
-      "tableShadowColor": "#EEF2F5",
-      "textColor": "#545456",
-      "togglerBackgroundColor": "#FFF",
-      "togglerBorderColor": "#EEF2F5",
-      "togglerColor": "#10ADE4",
-      "togglerSelectedBackgroundColor": "#10ADE4",
-      "togglerSelectedColor": "#FFF",
-      "tooltipBackgroundColor": "#383838",
-      "tooltipBorderColor": "#383838",
-      "tooltipColor": "#FFF",
-    }
-  }
+<Link
+  capitalize={false}
+  italic={true}
+  opacity={1}
+  size="1rem"
+  uppercase={false}
+  weight={400}
 >
-  <Link
+  <styled.a
     capitalize={false}
     italic={true}
     opacity={1}
@@ -397,24 +130,15 @@ exports[`Link should render correctly with italic 1`] = `
     uppercase={false}
     weight={400}
   >
-    <styled.a
-      capitalize={false}
-      italic={true}
+    <a
+      className="c0"
       opacity={1}
       size="1rem"
-      uppercase={false}
-      weight={400}
     >
-      <a
-        className="c0"
-        opacity={1}
-        size="1rem"
-      >
-        MyLink
-      </a>
-    </styled.a>
-  </Link>
-</ThemeProvider>
+      MyLink
+    </a>
+  </styled.a>
+</Link>
 `;
 
 exports[`Link should render correctly with opacity 1`] = `
@@ -437,98 +161,15 @@ exports[`Link should render correctly with opacity 1`] = `
   text-decoration: none;
 }
 
-<ThemeProvider
-  theme={
-    Object {
-      "buttonBackgroundColor": "#004A7C",
-      "buttonColor": "#FFF",
-      "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#10ADE4",
-      "cartridgeColor": "#FFF",
-      "circleBadgeBackgroundColor": "#CCC",
-      "circleBadgeHoverColor": "#004A7C",
-      "dropdownArrowColor": "#545456",
-      "dropdownColor": "#545456",
-      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#040d25",
-      "iconColor": "#545456",
-      "iconHoverColor": "#757679",
-      "inputBackgroundColor": "#FFF",
-      "inputBorderColor": "#CCC",
-      "inputColor": "#545456",
-      "inputPlaceholderColor": "#999B9E",
-      "linkColor": "#545456",
-      "linkHoverColor": "#004A7C",
-      "navbarDropdownContentBackgroundColor": "#FFF",
-      "navbarDropdownContentBorderColor": "#999B9E",
-      "navbarDropdownContentShadowColor": "rgba(0,0,0,0.25)",
-      "navbarDropdownContentShadowColor2": "rgba(0,0,0,0.10)",
-      "navbarDropdownDescriptionColor": "#999B9E",
-      "navbarDropdownHeaderColor": "#FFF",
-      "navbarDropdownTitleColor": "#3558A8",
-      "navbarDropdownTitleMobileColor": "#FFF",
-      "navbarMenuBagroundColor": "#004A7C",
-      "navbarTogglerColor": "#FFF",
-      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
-      "paginationBorderColor": "#EEF2F5",
-      "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
-      "paginationHoverColor": "#383838",
-      "paginationSelectedBackgroundColor": "#10ADE4",
-      "paginationSelectedColor": "#FFF",
-      "palette": Object {
-        "azure": "#3558A8",
-        "bigStone": "#152343",
-        "biscay": "#153A62",
-        "black": "#000",
-        "blackAlpha05": "rgba(0,0,0,0.05)",
-        "blackAlpha10": "rgba(0,0,0,0.10)",
-        "blackAlpha25": "rgba(0,0,0,0.25)",
-        "blackAlpha75": "rgba(0,0,0,0.75)",
-        "blueWood": "#27324B",
-        "cerulean": "#10ADE4",
-        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
-        "gold": "#FFCA00",
-        "gray0": "#F8F8F8",
-        "gray1": "#EEF2F5",
-        "gray2": "#CCC",
-        "gray3": "#999B9E",
-        "gray4": "#757679",
-        "gray5": "#545456",
-        "gray6": "#383838",
-        "gray7": "#040d25",
-        "orient": "#004A7C",
-        "powderBlue": "#B2D5E5",
-        "transparent": "rgba(0, 0, 0, 0)",
-        "white": "#FFF",
-        "whiteAlpha10": "rgba(255,255,255,0.1)",
-        "whiteAlpha75": "rgba(255,255,255,0.75)",
-      },
-      "panelBackgroundColor": "#FFF",
-      "panelShadowColor": "#EEF2F5",
-      "searchBarIconBackgroundColor": "#FFCA00",
-      "searchBarInputBackgroundColor": "#FFF",
-      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
-      "searchBarUnderlinedBorderColor": "#CCC",
-      "sectionBackgroundColor": "rgba(0, 0, 0, 0)",
-      "tabMenuBarColor": "#FFCA00",
-      "tabMenuBorderColor": "#EEF2F5",
-      "tableCellEvenBackgroundColor": "#F8F8F8",
-      "tableCellOddBackgroundColor": "#FFF",
-      "tableShadowColor": "#EEF2F5",
-      "textColor": "#545456",
-      "togglerBackgroundColor": "#FFF",
-      "togglerBorderColor": "#EEF2F5",
-      "togglerColor": "#10ADE4",
-      "togglerSelectedBackgroundColor": "#10ADE4",
-      "togglerSelectedColor": "#FFF",
-      "tooltipBackgroundColor": "#383838",
-      "tooltipBorderColor": "#383838",
-      "tooltipColor": "#FFF",
-    }
-  }
+<Link
+  capitalize={false}
+  italic={false}
+  opacity={0.5}
+  size="1rem"
+  uppercase={false}
+  weight={400}
 >
-  <Link
+  <styled.a
     capitalize={false}
     italic={false}
     opacity={0.5}
@@ -536,24 +177,15 @@ exports[`Link should render correctly with opacity 1`] = `
     uppercase={false}
     weight={400}
   >
-    <styled.a
-      capitalize={false}
-      italic={false}
+    <a
+      className="c0"
       opacity={0.5}
       size="1rem"
-      uppercase={false}
-      weight={400}
     >
-      <a
-        className="c0"
-        opacity={0.5}
-        size="1rem"
-      >
-        MyLink
-      </a>
-    </styled.a>
-  </Link>
-</ThemeProvider>
+      MyLink
+    </a>
+  </styled.a>
+</Link>
 `;
 
 exports[`Link should render correctly with size 1`] = `
@@ -576,98 +208,15 @@ exports[`Link should render correctly with size 1`] = `
   text-decoration: none;
 }
 
-<ThemeProvider
-  theme={
-    Object {
-      "buttonBackgroundColor": "#004A7C",
-      "buttonColor": "#FFF",
-      "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#10ADE4",
-      "cartridgeColor": "#FFF",
-      "circleBadgeBackgroundColor": "#CCC",
-      "circleBadgeHoverColor": "#004A7C",
-      "dropdownArrowColor": "#545456",
-      "dropdownColor": "#545456",
-      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#040d25",
-      "iconColor": "#545456",
-      "iconHoverColor": "#757679",
-      "inputBackgroundColor": "#FFF",
-      "inputBorderColor": "#CCC",
-      "inputColor": "#545456",
-      "inputPlaceholderColor": "#999B9E",
-      "linkColor": "#545456",
-      "linkHoverColor": "#004A7C",
-      "navbarDropdownContentBackgroundColor": "#FFF",
-      "navbarDropdownContentBorderColor": "#999B9E",
-      "navbarDropdownContentShadowColor": "rgba(0,0,0,0.25)",
-      "navbarDropdownContentShadowColor2": "rgba(0,0,0,0.10)",
-      "navbarDropdownDescriptionColor": "#999B9E",
-      "navbarDropdownHeaderColor": "#FFF",
-      "navbarDropdownTitleColor": "#3558A8",
-      "navbarDropdownTitleMobileColor": "#FFF",
-      "navbarMenuBagroundColor": "#004A7C",
-      "navbarTogglerColor": "#FFF",
-      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
-      "paginationBorderColor": "#EEF2F5",
-      "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
-      "paginationHoverColor": "#383838",
-      "paginationSelectedBackgroundColor": "#10ADE4",
-      "paginationSelectedColor": "#FFF",
-      "palette": Object {
-        "azure": "#3558A8",
-        "bigStone": "#152343",
-        "biscay": "#153A62",
-        "black": "#000",
-        "blackAlpha05": "rgba(0,0,0,0.05)",
-        "blackAlpha10": "rgba(0,0,0,0.10)",
-        "blackAlpha25": "rgba(0,0,0,0.25)",
-        "blackAlpha75": "rgba(0,0,0,0.75)",
-        "blueWood": "#27324B",
-        "cerulean": "#10ADE4",
-        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
-        "gold": "#FFCA00",
-        "gray0": "#F8F8F8",
-        "gray1": "#EEF2F5",
-        "gray2": "#CCC",
-        "gray3": "#999B9E",
-        "gray4": "#757679",
-        "gray5": "#545456",
-        "gray6": "#383838",
-        "gray7": "#040d25",
-        "orient": "#004A7C",
-        "powderBlue": "#B2D5E5",
-        "transparent": "rgba(0, 0, 0, 0)",
-        "white": "#FFF",
-        "whiteAlpha10": "rgba(255,255,255,0.1)",
-        "whiteAlpha75": "rgba(255,255,255,0.75)",
-      },
-      "panelBackgroundColor": "#FFF",
-      "panelShadowColor": "#EEF2F5",
-      "searchBarIconBackgroundColor": "#FFCA00",
-      "searchBarInputBackgroundColor": "#FFF",
-      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
-      "searchBarUnderlinedBorderColor": "#CCC",
-      "sectionBackgroundColor": "rgba(0, 0, 0, 0)",
-      "tabMenuBarColor": "#FFCA00",
-      "tabMenuBorderColor": "#EEF2F5",
-      "tableCellEvenBackgroundColor": "#F8F8F8",
-      "tableCellOddBackgroundColor": "#FFF",
-      "tableShadowColor": "#EEF2F5",
-      "textColor": "#545456",
-      "togglerBackgroundColor": "#FFF",
-      "togglerBorderColor": "#EEF2F5",
-      "togglerColor": "#10ADE4",
-      "togglerSelectedBackgroundColor": "#10ADE4",
-      "togglerSelectedColor": "#FFF",
-      "tooltipBackgroundColor": "#383838",
-      "tooltipBorderColor": "#383838",
-      "tooltipColor": "#FFF",
-    }
-  }
+<Link
+  capitalize={false}
+  italic={false}
+  opacity={1}
+  size="32px"
+  uppercase={false}
+  weight={400}
 >
-  <Link
+  <styled.a
     capitalize={false}
     italic={false}
     opacity={1}
@@ -675,24 +224,15 @@ exports[`Link should render correctly with size 1`] = `
     uppercase={false}
     weight={400}
   >
-    <styled.a
-      capitalize={false}
-      italic={false}
+    <a
+      className="c0"
       opacity={1}
       size="32px"
-      uppercase={false}
-      weight={400}
     >
-      <a
-        className="c0"
-        opacity={1}
-        size="32px"
-      >
-        MyLink
-      </a>
-    </styled.a>
-  </Link>
-</ThemeProvider>
+      MyLink
+    </a>
+  </styled.a>
+</Link>
 `;
 
 exports[`Link should render correctly with uppercase 1`] = `
@@ -715,98 +255,15 @@ exports[`Link should render correctly with uppercase 1`] = `
   text-decoration: none;
 }
 
-<ThemeProvider
-  theme={
-    Object {
-      "buttonBackgroundColor": "#004A7C",
-      "buttonColor": "#FFF",
-      "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#10ADE4",
-      "cartridgeColor": "#FFF",
-      "circleBadgeBackgroundColor": "#CCC",
-      "circleBadgeHoverColor": "#004A7C",
-      "dropdownArrowColor": "#545456",
-      "dropdownColor": "#545456",
-      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#040d25",
-      "iconColor": "#545456",
-      "iconHoverColor": "#757679",
-      "inputBackgroundColor": "#FFF",
-      "inputBorderColor": "#CCC",
-      "inputColor": "#545456",
-      "inputPlaceholderColor": "#999B9E",
-      "linkColor": "#545456",
-      "linkHoverColor": "#004A7C",
-      "navbarDropdownContentBackgroundColor": "#FFF",
-      "navbarDropdownContentBorderColor": "#999B9E",
-      "navbarDropdownContentShadowColor": "rgba(0,0,0,0.25)",
-      "navbarDropdownContentShadowColor2": "rgba(0,0,0,0.10)",
-      "navbarDropdownDescriptionColor": "#999B9E",
-      "navbarDropdownHeaderColor": "#FFF",
-      "navbarDropdownTitleColor": "#3558A8",
-      "navbarDropdownTitleMobileColor": "#FFF",
-      "navbarMenuBagroundColor": "#004A7C",
-      "navbarTogglerColor": "#FFF",
-      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
-      "paginationBorderColor": "#EEF2F5",
-      "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
-      "paginationHoverColor": "#383838",
-      "paginationSelectedBackgroundColor": "#10ADE4",
-      "paginationSelectedColor": "#FFF",
-      "palette": Object {
-        "azure": "#3558A8",
-        "bigStone": "#152343",
-        "biscay": "#153A62",
-        "black": "#000",
-        "blackAlpha05": "rgba(0,0,0,0.05)",
-        "blackAlpha10": "rgba(0,0,0,0.10)",
-        "blackAlpha25": "rgba(0,0,0,0.25)",
-        "blackAlpha75": "rgba(0,0,0,0.75)",
-        "blueWood": "#27324B",
-        "cerulean": "#10ADE4",
-        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
-        "gold": "#FFCA00",
-        "gray0": "#F8F8F8",
-        "gray1": "#EEF2F5",
-        "gray2": "#CCC",
-        "gray3": "#999B9E",
-        "gray4": "#757679",
-        "gray5": "#545456",
-        "gray6": "#383838",
-        "gray7": "#040d25",
-        "orient": "#004A7C",
-        "powderBlue": "#B2D5E5",
-        "transparent": "rgba(0, 0, 0, 0)",
-        "white": "#FFF",
-        "whiteAlpha10": "rgba(255,255,255,0.1)",
-        "whiteAlpha75": "rgba(255,255,255,0.75)",
-      },
-      "panelBackgroundColor": "#FFF",
-      "panelShadowColor": "#EEF2F5",
-      "searchBarIconBackgroundColor": "#FFCA00",
-      "searchBarInputBackgroundColor": "#FFF",
-      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
-      "searchBarUnderlinedBorderColor": "#CCC",
-      "sectionBackgroundColor": "rgba(0, 0, 0, 0)",
-      "tabMenuBarColor": "#FFCA00",
-      "tabMenuBorderColor": "#EEF2F5",
-      "tableCellEvenBackgroundColor": "#F8F8F8",
-      "tableCellOddBackgroundColor": "#FFF",
-      "tableShadowColor": "#EEF2F5",
-      "textColor": "#545456",
-      "togglerBackgroundColor": "#FFF",
-      "togglerBorderColor": "#EEF2F5",
-      "togglerColor": "#10ADE4",
-      "togglerSelectedBackgroundColor": "#10ADE4",
-      "togglerSelectedColor": "#FFF",
-      "tooltipBackgroundColor": "#383838",
-      "tooltipBorderColor": "#383838",
-      "tooltipColor": "#FFF",
-    }
-  }
+<Link
+  capitalize={false}
+  italic={false}
+  opacity={1}
+  size="1rem"
+  uppercase={true}
+  weight={400}
 >
-  <Link
+  <styled.a
     capitalize={false}
     italic={false}
     opacity={1}
@@ -814,24 +271,15 @@ exports[`Link should render correctly with uppercase 1`] = `
     uppercase={true}
     weight={400}
   >
-    <styled.a
-      capitalize={false}
-      italic={false}
+    <a
+      className="c0"
       opacity={1}
       size="1rem"
-      uppercase={true}
-      weight={400}
     >
-      <a
-        className="c0"
-        opacity={1}
-        size="1rem"
-      >
-        MyLink
-      </a>
-    </styled.a>
-  </Link>
-</ThemeProvider>
+      MyLink
+    </a>
+  </styled.a>
+</Link>
 `;
 
 exports[`Link should render correctly with weight 1`] = `
@@ -854,98 +302,15 @@ exports[`Link should render correctly with weight 1`] = `
   text-decoration: none;
 }
 
-<ThemeProvider
-  theme={
-    Object {
-      "buttonBackgroundColor": "#004A7C",
-      "buttonColor": "#FFF",
-      "buttonHoverColor": "#0068af",
-      "cartridgeBackgroundColor": "#10ADE4",
-      "cartridgeColor": "#FFF",
-      "circleBadgeBackgroundColor": "#CCC",
-      "circleBadgeHoverColor": "#004A7C",
-      "dropdownArrowColor": "#545456",
-      "dropdownColor": "#545456",
-      "fontPrimary": "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
-      "footerCategoryColor": "#040d25",
-      "iconColor": "#545456",
-      "iconHoverColor": "#757679",
-      "inputBackgroundColor": "#FFF",
-      "inputBorderColor": "#CCC",
-      "inputColor": "#545456",
-      "inputPlaceholderColor": "#999B9E",
-      "linkColor": "#545456",
-      "linkHoverColor": "#004A7C",
-      "navbarDropdownContentBackgroundColor": "#FFF",
-      "navbarDropdownContentBorderColor": "#999B9E",
-      "navbarDropdownContentShadowColor": "rgba(0,0,0,0.25)",
-      "navbarDropdownContentShadowColor2": "rgba(0,0,0,0.10)",
-      "navbarDropdownDescriptionColor": "#999B9E",
-      "navbarDropdownHeaderColor": "#FFF",
-      "navbarDropdownTitleColor": "#3558A8",
-      "navbarDropdownTitleMobileColor": "#FFF",
-      "navbarMenuBagroundColor": "#004A7C",
-      "navbarTogglerColor": "#FFF",
-      "paginationBackgroundColor": "rgba(0, 0, 0, 0)",
-      "paginationBorderColor": "#EEF2F5",
-      "paginationColor": "#383838",
-      "paginationHoverBackgroundColor": "rgba(16,173,228,0.1)",
-      "paginationHoverColor": "#383838",
-      "paginationSelectedBackgroundColor": "#10ADE4",
-      "paginationSelectedColor": "#FFF",
-      "palette": Object {
-        "azure": "#3558A8",
-        "bigStone": "#152343",
-        "biscay": "#153A62",
-        "black": "#000",
-        "blackAlpha05": "rgba(0,0,0,0.05)",
-        "blackAlpha10": "rgba(0,0,0,0.10)",
-        "blackAlpha25": "rgba(0,0,0,0.25)",
-        "blackAlpha75": "rgba(0,0,0,0.75)",
-        "blueWood": "#27324B",
-        "cerulean": "#10ADE4",
-        "ceruleanAlpha10": "rgba(16,173,228,0.1)",
-        "gold": "#FFCA00",
-        "gray0": "#F8F8F8",
-        "gray1": "#EEF2F5",
-        "gray2": "#CCC",
-        "gray3": "#999B9E",
-        "gray4": "#757679",
-        "gray5": "#545456",
-        "gray6": "#383838",
-        "gray7": "#040d25",
-        "orient": "#004A7C",
-        "powderBlue": "#B2D5E5",
-        "transparent": "rgba(0, 0, 0, 0)",
-        "white": "#FFF",
-        "whiteAlpha10": "rgba(255,255,255,0.1)",
-        "whiteAlpha75": "rgba(255,255,255,0.75)",
-      },
-      "panelBackgroundColor": "#FFF",
-      "panelShadowColor": "#EEF2F5",
-      "searchBarIconBackgroundColor": "#FFCA00",
-      "searchBarInputBackgroundColor": "#FFF",
-      "searchBarUnderlinedBackgroundColor": "rgba(0, 0, 0, 0)",
-      "searchBarUnderlinedBorderColor": "#CCC",
-      "sectionBackgroundColor": "rgba(0, 0, 0, 0)",
-      "tabMenuBarColor": "#FFCA00",
-      "tabMenuBorderColor": "#EEF2F5",
-      "tableCellEvenBackgroundColor": "#F8F8F8",
-      "tableCellOddBackgroundColor": "#FFF",
-      "tableShadowColor": "#EEF2F5",
-      "textColor": "#545456",
-      "togglerBackgroundColor": "#FFF",
-      "togglerBorderColor": "#EEF2F5",
-      "togglerColor": "#10ADE4",
-      "togglerSelectedBackgroundColor": "#10ADE4",
-      "togglerSelectedColor": "#FFF",
-      "tooltipBackgroundColor": "#383838",
-      "tooltipBorderColor": "#383838",
-      "tooltipColor": "#FFF",
-    }
-  }
+<Link
+  capitalize={false}
+  italic={false}
+  opacity={1}
+  size="1rem"
+  uppercase={false}
+  weight={500}
 >
-  <Link
+  <styled.a
     capitalize={false}
     italic={false}
     opacity={1}
@@ -953,22 +318,13 @@ exports[`Link should render correctly with weight 1`] = `
     uppercase={false}
     weight={500}
   >
-    <styled.a
-      capitalize={false}
-      italic={false}
+    <a
+      className="c0"
       opacity={1}
       size="1rem"
-      uppercase={false}
-      weight={500}
     >
-      <a
-        className="c0"
-        opacity={1}
-        size="1rem"
-      >
-        MyLink
-      </a>
-    </styled.a>
-  </Link>
-</ThemeProvider>
+      MyLink
+    </a>
+  </styled.a>
+</Link>
 `;

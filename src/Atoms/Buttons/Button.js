@@ -17,7 +17,7 @@ const Wrapper = styled.button.attrs({
   color: ${(props) => props.theme['buttonColor']};
   background-color: ${(props) => props.theme['buttonBackgroundColor']};
   border: none;
-  border-radius: 0.125rem;
+  border-radius: ${(props) => props.theme.buttonBorderRadius};
   cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
   outline: none;
   transition: all 0.3s ease 0s;

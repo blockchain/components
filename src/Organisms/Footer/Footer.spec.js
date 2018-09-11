@@ -7,6 +7,6 @@ describe('Footer', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<Footer>Footer</Footer>)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(Footer)).toMatchSnapshot()
   })
 })

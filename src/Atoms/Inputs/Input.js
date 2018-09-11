@@ -17,7 +17,7 @@ const Wrapper = styled.input.attrs({
   border-width: 1px;
   border-color: ${(props) => props.theme['inputBorderColor']};
   border-style: solid;
-  border-radius: 0.125rem;
+  border-radius: ${(props) => props.theme.inputBorderRadius};
   background-color: ${(props) => props.theme['inputBackgroundColor']};
   background-image: none;
   outline-width: 0;

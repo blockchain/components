@@ -8,6 +8,6 @@ describe('Cartridge', () => {
     const item = <span />
     const tree = mountWithTheme(<Cartridge>{item}</Cartridge>)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(Cartridge)).toMatchSnapshot()
   })
 })

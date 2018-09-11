@@ -45,7 +45,7 @@ describe('TextGroup', () => {
       </TextGroup>,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(TextGroup)).toMatchSnapshot()
   })
 
   it('mount render correctly with align', () => {
@@ -55,7 +55,7 @@ describe('TextGroup', () => {
       </TextGroup>,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(TextGroup)).toMatchSnapshot()
   })
 
   it('mount render correctly with inline', () => {
@@ -65,6 +65,6 @@ describe('TextGroup', () => {
       </TextGroup>,
     )
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(TextGroup)).toMatchSnapshot()
   })
 })

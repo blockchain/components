@@ -7,6 +7,6 @@ describe('TooltipIcon', () => {
   it('should render correctly', () => {
     const tree = mountWithTheme(<TooltipIcon name="questionInCircle" />)
 
-    expect(tree).toMatchSnapshot()
+    expect(tree.find(TooltipIcon)).toMatchSnapshot()
   })
 })
