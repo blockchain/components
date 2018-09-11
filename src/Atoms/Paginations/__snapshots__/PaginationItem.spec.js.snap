@@ -18,6 +18,7 @@ exports[`PaginationItem should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 5px 8px;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
   font-weight: 500;
   color: #FFF;

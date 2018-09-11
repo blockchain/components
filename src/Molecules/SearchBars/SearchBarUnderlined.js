@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: ${(props) => props.width};
   border-bottom: 1px solid
     ${(props) => props.theme['searchBarUnderlinedBorderColor']};
   background-color: ${(props) =>

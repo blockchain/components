@@ -831,7 +831,7 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
+  width: 200px;
   border-bottom: 1px solid #CCC;
   background-color: rgba(0,0,0,0);
 }
