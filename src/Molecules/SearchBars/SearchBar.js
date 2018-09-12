@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: ${(props) => props.width};
 `
 const SearchInput = styled(Input)`
   background-color: ${(props) => props.theme['searchBarInputBackgroundColor']};

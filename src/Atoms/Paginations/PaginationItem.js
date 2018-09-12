@@ -8,7 +8,7 @@ const Wrapper = styled.a`
   justify-content: center;
   align-items: center;
   padding: 5px 8px;
-  font-family: ${(props) => props.theme.palette['fontPrimary']};
+  font-family: ${(props) => props.theme['fontPrimary']};
   font-size: 1rem;
   font-weight: 500;
   color: ${(props) =>
