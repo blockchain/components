@@ -6,12 +6,14 @@ import bellFilled from './assets/bell-filled.svg'
 import bell from './assets/bell.svg'
 import bitcoinCart from './assets/bitcoin-cart.svg'
 import bitcoinCash from './assets/bitcoin-cash.svg'
+import bitcoinCash2 from './assets/bitcoin-cash2.svg'
 import bitcoinFilled from './assets/bitcoin-filled.svg'
 import bitcoinInCircleFilled from './assets/bitcoin-in-circle-filled.svg'
 import bitcoinInCircle from './assets/bitcoin-in-circle.svg'
 import bitcoinReceiptFilled from './assets/bitcoin-receipt-filled.svg'
 import bitcoinReceipt from './assets/bitcoin-receipt.svg'
 import bitcoin from './assets/bitcoin.svg'
+import bitcoin2 from './assets/bitcoin2.svg'
 import blocks from './assets/blocks.svg'
 import buildFilled from './assets/build-filled.svg'
 import build from './assets/build.svg'
@@ -47,6 +49,7 @@ import email from './assets/email.svg'
 import ethereumCart from './assets/ethereum-cart.svg'
 import ethereumFilled from './assets/ethereum-filled.svg'
 import ethereum from './assets/ethereum.svg'
+import ethereum2 from './assets/ethereum2.svg'
 import exchange2Filled from './assets/exchange-2-filled.svg'
 import exchange2 from './assets/exchange-2.svg'
 import exchangeFilled from './assets/exchange-filled.svg'
@@ -134,8 +137,10 @@ export default {
   bell,
   bellFilled,
   bitcoin,
+  bitcoin2,
   bitcoinCart,
   bitcoinCash,
+  bitcoinCash2,
   bitcoinFilled,
   bitcoinInCircle,
   bitcoinInCircleFilled,
@@ -174,6 +179,7 @@ export default {
   email,
   emailFilled,
   ethereum,
+  ethereum2,
   ethereumCart,
   ethereumFilled,
   exchange,
