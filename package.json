@@ -79,7 +79,7 @@
     "ramda": "0.25.0",
     "react": "16.5.0",
     "react-dom": "16.5.0",
-    "react-tooltip": "3.8.1",
+    "react-tooltip": "3.8.4",
     "rimraf": "2.6.2",
     "standard": "12.0.1",
     "styled-components": "3.4.6",
@@ -96,7 +96,6 @@
     "ramda": "^0.25.0",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
-    "react-tooltip": "^3.8.1",
     "styled-components": "^3.4.6"
   }
 }
