@@ -19,7 +19,7 @@
     "test": {
       "presets": [
         "@babel/env",
-        "@babel/react",
+        "@babel/react"
       ]
     }
   },
@@ -32,12 +32,6 @@
         "extensions": [
           ".svg"
         ]
-      }
-    ],
-    [
-      "inline-react-svg",
-      {
-        "ignorePattern": ".\/img\/(.*)"
       }
     ]
   ]

@@ -18,9 +18,13 @@ const Wrapper = styled.div`
 `
 
 const Icon = ({ name, selectable, ...rest }) => {
-  const Svg = IconMap[name]
-  const IconSvg = Wrapper.withComponent(Svg)
-  return <IconSvg selectable={selectable ? '1' : '0'} {...rest} />
+  const IconSvg = Wrapper.withComponent(IconMap[name])
+
+  return (
+    <Wrapper>
+      <IconSvg selectable={selectable ? '1' : '0'} {...rest} />
+    </Wrapper>
+  )
 }
 
 Icon.propTypes = {
