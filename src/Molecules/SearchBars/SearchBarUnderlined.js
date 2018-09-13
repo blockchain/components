@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { Input } from '../../Atoms/Inputs'
-import { Icon } from '../../Atoms/Icons'
+import Icon from '../../Atoms/Icons/Icon'
 
 const Wrapper = styled.div`
   display: flex;

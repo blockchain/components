@@ -4,23 +4,29 @@ import styled from 'styled-components'
 import IconMap from './IconMap'
 
 const Wrapper = styled.div`
-  fill: ${(props) => props.theme['iconColor']};
-  width: ${(props) => props.size};
-  height: ${(props) => props.size};
-  cursor: ${(props) => (props.selectable === '1' ? 'pointer' : 'default')};
+  & > svg {
+    width: ${(props) => props.size};
+    height: ${(props) => props.size};
+    fill: ${(props) => props.theme['iconColor']};
+    cursor: ${(props) => (props.selectable === '1' ? 'pointer' : 'default')};
 
-  &:hover {
-    fill: ${(props) =>
-      props.selectable === '1'
-        ? props.theme['iconHoverColor']
-        : props.theme['iconColor']};
+    &:hover {
+      fill: ${(props) =>
+        props.selectable === '1'
+          ? props.theme['iconHoverColor']
+          : props.theme['iconColor']};
+    }
   }
 `
 
 const Icon = ({ name, selectable, ...rest }) => {
-  const Svg = IconMap[name]
-  const IconSvg = Wrapper.withComponent(Svg)
-  return <IconSvg selectable={selectable ? '1' : '0'} {...rest} />
+  const IconSvg = IconMap[name]
+
+  return (
+    <Wrapper selectable={selectable ? '1' : '0'} {...rest}>
+      <IconSvg />
+    </Wrapper>
+  )
 }
 
 Icon.propTypes = {

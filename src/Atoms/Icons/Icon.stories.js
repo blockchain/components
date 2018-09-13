@@ -32,6 +32,7 @@ const IconName = styled.div`
   width: 100%;
   height: 30px;
 `
+
 const renderIcon = (name) => (
   <IconContainer>
     <Icon name={name} size="40px" />
