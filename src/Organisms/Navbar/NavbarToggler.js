@@ -1,14 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Icon } from '../../Atoms/Icons'
+import Icon from '../../Atoms/Icons/Icon'
 
 const Toggler = styled(Icon).attrs({ selectable: true, size: '20px' })`
   z-index: 15;
-  fill: ${(props) => props.theme['navbarTogglerColor']} !important;
 
-  &:hover {
+  & > svg {
     fill: ${(props) => props.theme['navbarTogglerColor']} !important;
+
+    &:hover {
+      fill: ${(props) => props.theme['navbarTogglerColor']} !important;
+    }
   }
 
   @media (min-width: 48rem) {

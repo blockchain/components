@@ -49,6 +49,17 @@ exports[`SearchBar should render correctly 1`] = `
   font-size: 0.875rem;
 }
 
+.c4 > svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: #545456;
+  cursor: pointer;
+}
+
+.c4 > svg:hover {
+  fill: #757679;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -97,17 +108,6 @@ exports[`SearchBar should render correctly 1`] = `
   border-bottom-right-radius: 0.125rem;
 }
 
-.c4 {
-  fill: #545456;
-  width: 1.3rem;
-  height: 1.3rem;
-  cursor: pointer;
-}
-
-.c4:hover {
-  fill: #757679;
-}
-
 <SearchBar
   width="100%"
 >
@@ -149,37 +149,36 @@ exports[`SearchBar should render correctly 1`] = `
             selectable={true}
             size="1.3rem"
           >
-            <Styled(searchFilled)
+            <styled.div
               selectable="1"
               size="1.3rem"
             >
-              <searchFilled
+              <div
                 className="c4"
-                height="32"
-                selectable="1"
                 size="1.3rem"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  className="c4"
+                <searchFilled
                   height="32"
-                  selectable="1"
-                  size="1.3rem"
                   viewBox="0 0 32 32"
                   width="32"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <title>
-                    search-filled
-                  </title>
-                  <path
-                    d="M14.856.104a12.34 12.34 0 0 0-1.559-.095c-7.069 0-12.8 5.731-12.8 12.8s5.731 12.8 12.8 12.8c2.513 0 4.858-.724 6.835-1.976l-.052.031 7.672 7.672c.41.409.975.662 1.6.662s1.19-.253 1.6-.662c.409-.41.662-.975.662-1.6s-.253-1.19-.662-1.6l-7.544-7.528a12.659 12.659 0 0 0 2.648-7.777c0-.55-.035-1.091-.102-1.623l.007.063C25.213 5.45 20.669.884 14.923.11l-.066-.007zm-1.64 2.92c5.421 0 9.816 4.395 9.816 9.816s-4.395 9.816-9.816 9.816c-5.421 0-9.816-4.395-9.816-9.816v-.042.002c.014-5.402 4.396-9.776 9.8-9.776h.017-.001z"
-                  />
-                </svg>
-              </searchFilled>
-            </Styled(searchFilled)>
+                  <svg
+                    height="32"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      search-filled
+                    </title>
+                    <path
+                      d="M14.856.104a12.34 12.34 0 0 0-1.559-.095c-7.069 0-12.8 5.731-12.8 12.8s5.731 12.8 12.8 12.8c2.513 0 4.858-.724 6.835-1.976l-.052.031 7.672 7.672c.41.409.975.662 1.6.662s1.19-.253 1.6-.662c.409-.41.662-.975.662-1.6s-.253-1.19-.662-1.6l-7.544-7.528a12.659 12.659 0 0 0 2.648-7.777c0-.55-.035-1.091-.102-1.623l.007.063C25.213 5.45 20.669.884 14.923.11l-.066-.007zm-1.64 2.92c5.421 0 9.816 4.395 9.816 9.816s-4.395 9.816-9.816 9.816c-5.421 0-9.816-4.395-9.816-9.816v-.042.002c.014-5.402 4.396-9.776 9.8-9.776h.017-.001z"
+                    />
+                  </svg>
+                </searchFilled>
+              </div>
+            </styled.div>
           </Icon>
         </div>
       </styled.div>
@@ -237,6 +236,17 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   font-size: 0.875rem;
 }
 
+.c4 > svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: #545456;
+  cursor: pointer;
+}
+
+.c4 > svg:hover {
+  fill: #757679;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -283,17 +293,6 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   background-color: #FFCA00;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
-}
-
-.c4 {
-  fill: #545456;
-  width: 1.3rem;
-  height: 1.3rem;
-  cursor: pointer;
-}
-
-.c4:hover {
-  fill: #757679;
 }
 
 <SearchBar
@@ -343,37 +342,36 @@ exports[`SearchBar should render correctly with onChange 1`] = `
             selectable={true}
             size="1.3rem"
           >
-            <Styled(searchFilled)
+            <styled.div
               selectable="1"
               size="1.3rem"
             >
-              <searchFilled
+              <div
                 className="c4"
-                height="32"
-                selectable="1"
                 size="1.3rem"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  className="c4"
+                <searchFilled
                   height="32"
-                  selectable="1"
-                  size="1.3rem"
                   viewBox="0 0 32 32"
                   width="32"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <title>
-                    search-filled
-                  </title>
-                  <path
-                    d="M14.856.104a12.34 12.34 0 0 0-1.559-.095c-7.069 0-12.8 5.731-12.8 12.8s5.731 12.8 12.8 12.8c2.513 0 4.858-.724 6.835-1.976l-.052.031 7.672 7.672c.41.409.975.662 1.6.662s1.19-.253 1.6-.662c.409-.41.662-.975.662-1.6s-.253-1.19-.662-1.6l-7.544-7.528a12.659 12.659 0 0 0 2.648-7.777c0-.55-.035-1.091-.102-1.623l.007.063C25.213 5.45 20.669.884 14.923.11l-.066-.007zm-1.64 2.92c5.421 0 9.816 4.395 9.816 9.816s-4.395 9.816-9.816 9.816c-5.421 0-9.816-4.395-9.816-9.816v-.042.002c.014-5.402 4.396-9.776 9.8-9.776h.017-.001z"
-                  />
-                </svg>
-              </searchFilled>
-            </Styled(searchFilled)>
+                  <svg
+                    height="32"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      search-filled
+                    </title>
+                    <path
+                      d="M14.856.104a12.34 12.34 0 0 0-1.559-.095c-7.069 0-12.8 5.731-12.8 12.8s5.731 12.8 12.8 12.8c2.513 0 4.858-.724 6.835-1.976l-.052.031 7.672 7.672c.41.409.975.662 1.6.662s1.19-.253 1.6-.662c.409-.41.662-.975.662-1.6s-.253-1.19-.662-1.6l-7.544-7.528a12.659 12.659 0 0 0 2.648-7.777c0-.55-.035-1.091-.102-1.623l.007.063C25.213 5.45 20.669.884 14.923.11l-.066-.007zm-1.64 2.92c5.421 0 9.816 4.395 9.816 9.816s-4.395 9.816-9.816 9.816c-5.421 0-9.816-4.395-9.816-9.816v-.042.002c.014-5.402 4.396-9.776 9.8-9.776h.017-.001z"
+                    />
+                  </svg>
+                </searchFilled>
+              </div>
+            </styled.div>
           </Icon>
         </div>
       </styled.div>
@@ -431,6 +429,17 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   font-size: 0.875rem;
 }
 
+.c4 > svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: #545456;
+  cursor: pointer;
+}
+
+.c4 > svg:hover {
+  fill: #757679;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -479,17 +488,6 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   border-bottom-right-radius: 0.125rem;
 }
 
-.c4 {
-  fill: #545456;
-  width: 1.3rem;
-  height: 1.3rem;
-  cursor: pointer;
-}
-
-.c4:hover {
-  fill: #757679;
-}
-
 <SearchBar
   onClick={[MockFunction]}
   width="100%"
@@ -533,40 +531,38 @@ exports[`SearchBar should render correctly with onClick 1`] = `
             selectable={true}
             size="1.3rem"
           >
-            <Styled(searchFilled)
+            <styled.div
               onClick={[MockFunction]}
               selectable="1"
               size="1.3rem"
             >
-              <searchFilled
+              <div
                 className="c4"
-                height="32"
                 onClick={[MockFunction]}
-                selectable="1"
                 size="1.3rem"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  className="c4"
+                <searchFilled
                   height="32"
-                  onClick={[MockFunction]}
-                  selectable="1"
-                  size="1.3rem"
                   viewBox="0 0 32 32"
                   width="32"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <title>
-                    search-filled
-                  </title>
-                  <path
-                    d="M14.856.104a12.34 12.34 0 0 0-1.559-.095c-7.069 0-12.8 5.731-12.8 12.8s5.731 12.8 12.8 12.8c2.513 0 4.858-.724 6.835-1.976l-.052.031 7.672 7.672c.41.409.975.662 1.6.662s1.19-.253 1.6-.662c.409-.41.662-.975.662-1.6s-.253-1.19-.662-1.6l-7.544-7.528a12.659 12.659 0 0 0 2.648-7.777c0-.55-.035-1.091-.102-1.623l.007.063C25.213 5.45 20.669.884 14.923.11l-.066-.007zm-1.64 2.92c5.421 0 9.816 4.395 9.816 9.816s-4.395 9.816-9.816 9.816c-5.421 0-9.816-4.395-9.816-9.816v-.042.002c.014-5.402 4.396-9.776 9.8-9.776h.017-.001z"
-                  />
-                </svg>
-              </searchFilled>
-            </Styled(searchFilled)>
+                  <svg
+                    height="32"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      search-filled
+                    </title>
+                    <path
+                      d="M14.856.104a12.34 12.34 0 0 0-1.559-.095c-7.069 0-12.8 5.731-12.8 12.8s5.731 12.8 12.8 12.8c2.513 0 4.858-.724 6.835-1.976l-.052.031 7.672 7.672c.41.409.975.662 1.6.662s1.19-.253 1.6-.662c.409-.41.662-.975.662-1.6s-.253-1.19-.662-1.6l-7.544-7.528a12.659 12.659 0 0 0 2.648-7.777c0-.55-.035-1.091-.102-1.623l.007.063C25.213 5.45 20.669.884 14.923.11l-.066-.007zm-1.64 2.92c5.421 0 9.816 4.395 9.816 9.816s-4.395 9.816-9.816 9.816c-5.421 0-9.816-4.395-9.816-9.816v-.042.002c.014-5.402 4.396-9.776 9.8-9.776h.017-.001z"
+                    />
+                  </svg>
+                </searchFilled>
+              </div>
+            </styled.div>
           </Icon>
         </div>
       </styled.div>
@@ -624,6 +620,17 @@ exports[`SearchBar should render correctly with value 1`] = `
   font-size: 0.875rem;
 }
 
+.c4 > svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: #545456;
+  cursor: pointer;
+}
+
+.c4 > svg:hover {
+  fill: #757679;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -670,17 +677,6 @@ exports[`SearchBar should render correctly with value 1`] = `
   background-color: #FFCA00;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
-}
-
-.c4 {
-  fill: #545456;
-  width: 1.3rem;
-  height: 1.3rem;
-  cursor: pointer;
-}
-
-.c4:hover {
-  fill: #757679;
 }
 
 <SearchBar
@@ -735,37 +731,36 @@ exports[`SearchBar should render correctly with value 1`] = `
             selectable={true}
             size="1.3rem"
           >
-            <Styled(searchFilled)
+            <styled.div
               selectable="1"
               size="1.3rem"
             >
-              <searchFilled
+              <div
                 className="c4"
-                height="32"
-                selectable="1"
                 size="1.3rem"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  className="c4"
+                <searchFilled
                   height="32"
-                  selectable="1"
-                  size="1.3rem"
                   viewBox="0 0 32 32"
                   width="32"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <title>
-                    search-filled
-                  </title>
-                  <path
-                    d="M14.856.104a12.34 12.34 0 0 0-1.559-.095c-7.069 0-12.8 5.731-12.8 12.8s5.731 12.8 12.8 12.8c2.513 0 4.858-.724 6.835-1.976l-.052.031 7.672 7.672c.41.409.975.662 1.6.662s1.19-.253 1.6-.662c.409-.41.662-.975.662-1.6s-.253-1.19-.662-1.6l-7.544-7.528a12.659 12.659 0 0 0 2.648-7.777c0-.55-.035-1.091-.102-1.623l.007.063C25.213 5.45 20.669.884 14.923.11l-.066-.007zm-1.64 2.92c5.421 0 9.816 4.395 9.816 9.816s-4.395 9.816-9.816 9.816c-5.421 0-9.816-4.395-9.816-9.816v-.042.002c.014-5.402 4.396-9.776 9.8-9.776h.017-.001z"
-                  />
-                </svg>
-              </searchFilled>
-            </Styled(searchFilled)>
+                  <svg
+                    height="32"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      search-filled
+                    </title>
+                    <path
+                      d="M14.856.104a12.34 12.34 0 0 0-1.559-.095c-7.069 0-12.8 5.731-12.8 12.8s5.731 12.8 12.8 12.8c2.513 0 4.858-.724 6.835-1.976l-.052.031 7.672 7.672c.41.409.975.662 1.6.662s1.19-.253 1.6-.662c.409-.41.662-.975.662-1.6s-.253-1.19-.662-1.6l-7.544-7.528a12.659 12.659 0 0 0 2.648-7.777c0-.55-.035-1.091-.102-1.623l.007.063C25.213 5.45 20.669.884 14.923.11l-.066-.007zm-1.64 2.92c5.421 0 9.816 4.395 9.816 9.816s-4.395 9.816-9.816 9.816c-5.421 0-9.816-4.395-9.816-9.816v-.042.002c.014-5.402 4.396-9.776 9.8-9.776h.017-.001z"
+                    />
+                  </svg>
+                </searchFilled>
+              </div>
+            </styled.div>
           </Icon>
         </div>
       </styled.div>
@@ -823,6 +818,17 @@ exports[`SearchBar should render correctly with width 1`] = `
   font-size: 0.875rem;
 }
 
+.c4 > svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: #545456;
+  cursor: pointer;
+}
+
+.c4 > svg:hover {
+  fill: #757679;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -869,17 +875,6 @@ exports[`SearchBar should render correctly with width 1`] = `
   background-color: #FFCA00;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
-}
-
-.c4 {
-  fill: #545456;
-  width: 1.3rem;
-  height: 1.3rem;
-  cursor: pointer;
-}
-
-.c4:hover {
-  fill: #757679;
 }
 
 <SearchBar
@@ -934,37 +929,36 @@ exports[`SearchBar should render correctly with width 1`] = `
             selectable={true}
             size="1.3rem"
           >
-            <Styled(searchFilled)
+            <styled.div
               selectable="1"
               size="1.3rem"
             >
-              <searchFilled
+              <div
                 className="c4"
-                height="32"
-                selectable="1"
                 size="1.3rem"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  className="c4"
+                <searchFilled
                   height="32"
-                  selectable="1"
-                  size="1.3rem"
                   viewBox="0 0 32 32"
                   width="32"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <title>
-                    search-filled
-                  </title>
-                  <path
-                    d="M14.856.104a12.34 12.34 0 0 0-1.559-.095c-7.069 0-12.8 5.731-12.8 12.8s5.731 12.8 12.8 12.8c2.513 0 4.858-.724 6.835-1.976l-.052.031 7.672 7.672c.41.409.975.662 1.6.662s1.19-.253 1.6-.662c.409-.41.662-.975.662-1.6s-.253-1.19-.662-1.6l-7.544-7.528a12.659 12.659 0 0 0 2.648-7.777c0-.55-.035-1.091-.102-1.623l.007.063C25.213 5.45 20.669.884 14.923.11l-.066-.007zm-1.64 2.92c5.421 0 9.816 4.395 9.816 9.816s-4.395 9.816-9.816 9.816c-5.421 0-9.816-4.395-9.816-9.816v-.042.002c.014-5.402 4.396-9.776 9.8-9.776h.017-.001z"
-                  />
-                </svg>
-              </searchFilled>
-            </Styled(searchFilled)>
+                  <svg
+                    height="32"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      search-filled
+                    </title>
+                    <path
+                      d="M14.856.104a12.34 12.34 0 0 0-1.559-.095c-7.069 0-12.8 5.731-12.8 12.8s5.731 12.8 12.8 12.8c2.513 0 4.858-.724 6.835-1.976l-.052.031 7.672 7.672c.41.409.975.662 1.6.662s1.19-.253 1.6-.662c.409-.41.662-.975.662-1.6s-.253-1.19-.662-1.6l-7.544-7.528a12.659 12.659 0 0 0 2.648-7.777c0-.55-.035-1.091-.102-1.623l.007.063C25.213 5.45 20.669.884 14.923.11l-.066-.007zm-1.64 2.92c5.421 0 9.816 4.395 9.816 9.816s-4.395 9.816-9.816 9.816c-5.421 0-9.816-4.395-9.816-9.816v-.042.002c.014-5.402 4.396-9.776 9.8-9.776h.017-.001z"
+                    />
+                  </svg>
+                </searchFilled>
+              </div>
+            </styled.div>
           </Icon>
         </div>
       </styled.div>

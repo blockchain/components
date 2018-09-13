@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TooltipIcon should render correctly 1`] = `
+.c1 > svg {
+  width: 20px;
+  height: 20px;
+  fill: #545456;
+  cursor: default;
+}
+
+.c1 > svg:hover {
+  fill: #545456;
+}
+
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: 5px;
-}
-
-.c1 {
-  fill: #545456;
-  width: 20px;
-  height: 20px;
-  cursor: default;
-}
-
-.c1:hover {
-  fill: #545456;
 }
 
 <TooltipIcon
@@ -32,44 +32,43 @@ exports[`TooltipIcon should render correctly 1`] = `
       selectable={false}
       size="20px"
     >
-      <Styled(questionInCircle)
+      <styled.div
         className="c0"
         selectable="0"
         size="20px"
       >
-        <questionInCircle
+        <div
           className="c0 c1"
-          height="32"
-          selectable="0"
           size="20px"
-          viewBox="0 0 32 32"
-          width="32"
-          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            className="c0 c1"
+          <questionInCircle
             height="32"
-            selectable="0"
-            size="20px"
             viewBox="0 0 32 32"
             width="32"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>
-              question-in-circle
-            </title>
-            <path
-              d="M16 .39C7.379.39.39 7.379.39 16S7.379 31.61 16 31.61c8.621 0 15.61-6.989 15.61-15.61C31.61 7.379 24.621.39 16 .39zm0 29.955C8.077 30.345 1.655 23.922 1.655 16S8.078 1.655 16 1.655c7.923 0 14.345 6.423 14.345 14.345 0 7.923-6.423 14.345-14.345 14.345z"
-              stroke="#000"
-              strokeMiterlimit="10"
-              strokeWidth=".78"
-            />
-            <path
-              d="M11.559 12.308a1.179 1.179 0 0 1-1.146-1.388l-.001.007c.585-2.677 2.638-4.16 5.62-4.16 3.348 0 5.588 1.616 5.588 4.683 0 4.02-3.653 4.542-4.316 7.446-.115.534-.58.93-1.139.937H16.02a1.155 1.155 0 0 1-1.126-1.413l-.001.008c.702-3.122 3.731-3.512 3.731-6.501 0-1.616-1.14-2.404-2.872-2.404-1.499 0-2.505.648-2.857 1.943a1.197 1.197 0 0 1-1.142.844l-.047-.001h.002zm5.612 11.661a1.218 1.218 0 0 1-2.436 0 1.218 1.218 0 0 1 2.436 0z"
-            />
-          </svg>
-        </questionInCircle>
-      </Styled(questionInCircle)>
+            <svg
+              height="32"
+              viewBox="0 0 32 32"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                question-in-circle
+              </title>
+              <path
+                d="M16 .39C7.379.39.39 7.379.39 16S7.379 31.61 16 31.61c8.621 0 15.61-6.989 15.61-15.61C31.61 7.379 24.621.39 16 .39zm0 29.955C8.077 30.345 1.655 23.922 1.655 16S8.078 1.655 16 1.655c7.923 0 14.345 6.423 14.345 14.345 0 7.923-6.423 14.345-14.345 14.345z"
+                stroke="#000"
+                strokeMiterlimit="10"
+                strokeWidth=".78"
+              />
+              <path
+                d="M11.559 12.308a1.179 1.179 0 0 1-1.146-1.388l-.001.007c.585-2.677 2.638-4.16 5.62-4.16 3.348 0 5.588 1.616 5.588 4.683 0 4.02-3.653 4.542-4.316 7.446-.115.534-.58.93-1.139.937H16.02a1.155 1.155 0 0 1-1.126-1.413l-.001.008c.702-3.122 3.731-3.512 3.731-6.501 0-1.616-1.14-2.404-2.872-2.404-1.499 0-2.505.648-2.857 1.943a1.197 1.197 0 0 1-1.142.844l-.047-.001h.002zm5.612 11.661a1.218 1.218 0 0 1-2.436 0 1.218 1.218 0 0 1 2.436 0z"
+              />
+            </svg>
+          </questionInCircle>
+        </div>
+      </styled.div>
     </Icon>
   </Styled(Icon)>
 </TooltipIcon>
