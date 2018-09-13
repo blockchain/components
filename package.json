@@ -1,6 +1,6 @@
 {
   "name": "@blockchain-com/components",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Blockchain.com components library",
   "main": "lib/index.js",
   "module": "esm/index.js",
