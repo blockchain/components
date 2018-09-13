@@ -29,6 +29,6 @@ export default {
   blackAlpha75: 'rgba(0,0,0,0.75)',
   blackAlpha25: 'rgba(0,0,0,0.25)',
   blackAlpha10: 'rgba(0,0,0,0.10)',
-  blackAlpha05: 'rgba(0,0,0,0.05)'
+  blackAlpha05: 'rgba(0,0,0,0.05)',
 }
 /* eslint-enable */

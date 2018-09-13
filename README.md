@@ -61,3 +61,10 @@ We use [Husky](https://github.com/typicode/husky) to automatically deploy git ho
 On every `git commit` and `git push` we run the unit tests and the linting tasks.
 
 The commit messages are also validated and must follow the [Conventional Commits](https://conventionalcommits.org/) spec.
+
+### Icons SVG
+
+In order to support new icons, you have to 
+* Add you icon in the directory `/Atoms/Icons/assets`
+* Run the command `yarn generateIcons`
+* Add a new entry in the file `/Atoms/Icons/IconMap.js`
