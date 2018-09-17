@@ -8,6 +8,7 @@ export {
   BlockchainLoader,
   FlatLoader,
   FlatLoader2,
+  FussionLoader,
   HeartbeatLoader,
 } from './Loaders'
 export { Pagination, PaginationItem } from './Paginations'

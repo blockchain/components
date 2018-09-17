@@ -10,6 +10,7 @@ export {
   BlockchainLoader,
   FlatLoader,
   FlatLoader2,
+  FussionLoader,
   HeartbeatLoader,
   Pagination,
   PaginationItem,

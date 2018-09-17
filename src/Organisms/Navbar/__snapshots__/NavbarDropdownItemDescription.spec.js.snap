@@ -15,6 +15,12 @@ exports[`NavbarDropdownItemDescription should render correctly 1`] = `
   color: rgba(255,255,255,0.50);
 }
 
+@media (min-width:48rem) {
+  .c0 {
+    color: #999B9E;
+  }
+}
+
 <NavbarDropdownItemDescription>
   <Styled(Text)>
     <Text

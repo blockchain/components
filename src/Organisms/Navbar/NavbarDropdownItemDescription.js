@@ -8,7 +8,11 @@ const Wrapper = styled(Text).attrs({
   size: '0.875rem',
   weight: 500,
 })`
-  color: ${(props) => props.theme['navbarDropdownDescriptionColor']};
+  color: ${(props) => props.theme['navbarDropdownDescriptionMobileColor']};
+
+  @media (min-width: 48rem) {
+    color: ${(props) => props.theme['navbarDropdownDescriptionColor']};
+  }
 `
 
 const NavbarDropdownItemDescription = ({ children, ...rest }) => (
