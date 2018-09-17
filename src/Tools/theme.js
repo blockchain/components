@@ -32,7 +32,7 @@ export default {
   navbarDropdownHeaderColor: palette['white'],
   navbarDropdownTitleColor: palette['azure'],
   navbarDropdownTitleMobileColor: palette['white'],
-  navbarDropdownDescriptionColor: palette['gray3'],
+  navbarDropdownDescriptionColor: palette['whiteAlpha50'],
   navbarMenuBagroundColor: palette['orient'],
   navbarTogglerColor: palette['white'],
   paginationBorderColor: palette['gray1'],

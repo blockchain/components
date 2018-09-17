@@ -19,11 +19,6 @@ exports[`NavbarDropdownItemTitle should render correctly 1`] = `
   .c0 {
     color: #3558A8;
   }
-
-  .c0:hover {
-    -webkit-text-decoration: underline;
-    text-decoration: underline;
-  }
 }
 
 <NavbarDropdownItemTitle>

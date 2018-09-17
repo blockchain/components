@@ -24,6 +24,12 @@ exports[`NavbarNav should render correctly 1`] = `
   list-style-type: none;
 }
 
+@media (max-width:48rem) {
+  .c0 > li:first-child {
+    border-top: none;
+  }
+}
+
 @media (min-width:48rem) {
   .c0 {
     display: -webkit-box;
@@ -82,6 +88,12 @@ exports[`NavbarNav should render correctly with toggled 1`] = `
   list-style-type: none;
 }
 
+@media (max-width:48rem) {
+  .c0 > li:first-child {
+    border-top: none;
+  }
+}
+
 @media (min-width:48rem) {
   .c0 {
     display: -webkit-box;
@@ -138,6 +150,12 @@ exports[`NavbarNav should render correctly with toggled 2`] = `
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
+}
+
+@media (max-width:48rem) {
+  .c0 > li:first-child {
+    border-top: none;
+  }
 }
 
 @media (min-width:48rem) {

@@ -14,6 +14,14 @@ const Wrapper = styled(Link)`
   margin-bottom: 1.5rem;
   white-space: nowrap;
   text-decoration: none;
+
+  @media (min-width: 48rem) {
+    &:hover {
+      & > :first-child {
+        text-decoration: underline;
+      }
+    }
+  }
 `
 
 const NavbarDropdownItem = ({ children, ...rest }) => (

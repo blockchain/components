@@ -28,7 +28,7 @@ const Container = styled.div`
 
   @media (min-width: 48rem) {
     margin-top: 15px;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 0.25rem;
     box-sizing: border-box;
     background-color: ${(props) =>
