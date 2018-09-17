@@ -47,7 +47,7 @@ exports[`NavbarDropdownItem should render correctly 1`] = `
 }
 
 @media (min-width:48rem) {
-  .c0:hover > :first-child {
+  .c0:hover span:first-child {
     -webkit-text-decoration: underline;
     text-decoration: underline;
   }

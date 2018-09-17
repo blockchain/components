@@ -16,10 +16,8 @@ const Wrapper = styled(Link)`
   text-decoration: none;
 
   @media (min-width: 48rem) {
-    &:hover {
-      & > :first-child {
-        text-decoration: underline;
-      }
+    &:hover span:first-child {
+      text-decoration: underline;
     }
   }
 `
