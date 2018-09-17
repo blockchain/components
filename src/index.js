@@ -32,6 +32,7 @@ export {
   SearchBar,
   SearchBarUnderlined,
   SingleDropdown,
+  Toast,
   Toggler,
   TogglerItem,
   Tooltip,

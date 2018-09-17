@@ -1,0 +1,866 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast should render correctly 1`] = `
+.c4 > svg {
+  width: 10px;
+  height: 10px;
+  fill: #545456;
+  cursor: pointer;
+}
+
+.c4 > svg:hover {
+  fill: #757679;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 1.025rem;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  background-color: #FFF;
+  border-radius: 0.125rem;
+  color: #000;
+  box-shadow: rgba(67,90,111,0.416) 0 0 1px, rgba(67,90,111,0.3) 0 8px 10px -4px;
+  min-width: 250px;
+  max-width: 560px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0%;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+}
+
+.c3 {
+  padding-left: 1.025rem;
+}
+
+<Toast
+  title="Hey! This is a default toast."
+  type="default"
+>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <styled.div>
+            <div
+              className="c2"
+            >
+              Hey! This is a default toast.
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+      <styled.div>
+        <div
+          className="c3"
+        >
+          <Icon
+            name="closeFilled"
+            selectable={true}
+            size="10px"
+          >
+            <styled.div
+              selectable="1"
+              size="10px"
+            >
+              <div
+                className="c4"
+                size="10px"
+              >
+                <closeFilled
+                  height="32"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <svg
+                    height="32"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      close-filled
+                    </title>
+                    <path
+                      d="M31.432.568c-.301-.301-.717-.487-1.176-.487s-.875.186-1.176.487L17.176 12.472c-.301.301-.717.487-1.176.487s-.875-.186-1.176-.487L2.92.568C2.619.267 2.203.081 1.744.081S.869.267.568.568C.267.869.081 1.285.081 1.744s.186.875.487 1.176l11.904 11.904c.301.301.487.717.487 1.176s-.186.875-.487 1.176L.568 29.08c-.301.301-.487.717-.487 1.176s.186.875.487 1.176c.301.301.717.487 1.176.487s.875-.186 1.176-.487l11.904-11.904c.301-.301.717-.487 1.176-.487s.875.186 1.176.487L29.08 31.432c.301.301.717.487 1.176.487s.875-.186 1.176-.487c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176L19.528 17.176c-.301-.301-.487-.717-.487-1.176s.186-.875.487-1.176L31.432 2.92c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176z"
+                    />
+                  </svg>
+                </closeFilled>
+              </div>
+            </styled.div>
+          </Icon>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</Toast>
+`;
+
+exports[`Toast should render correctly with description 1`] = `
+.c5 > svg {
+  width: 10px;
+  height: 10px;
+  fill: #545456;
+  cursor: pointer;
+}
+
+.c5 > svg:hover {
+  fill: #757679;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 1.025rem;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  background-color: #FFF;
+  border-radius: 0.125rem;
+  color: #000;
+  box-shadow: rgba(67,90,111,0.416) 0 0 1px, rgba(67,90,111,0.3) 0 8px 10px -4px;
+  min-width: 250px;
+  max-width: 560px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0%;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0.325rem;
+}
+
+.c4 {
+  padding-left: 1.025rem;
+}
+
+<Toast
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  title="This is a default toast."
+  type="default"
+>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <styled.div>
+            <div
+              className="c2"
+            >
+              This is a default toast.
+            </div>
+          </styled.div>
+          <styled.div>
+            <div
+              className="c3"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+      <styled.div>
+        <div
+          className="c4"
+        >
+          <Icon
+            name="closeFilled"
+            selectable={true}
+            size="10px"
+          >
+            <styled.div
+              selectable="1"
+              size="10px"
+            >
+              <div
+                className="c5"
+                size="10px"
+              >
+                <closeFilled
+                  height="32"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <svg
+                    height="32"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      close-filled
+                    </title>
+                    <path
+                      d="M31.432.568c-.301-.301-.717-.487-1.176-.487s-.875.186-1.176.487L17.176 12.472c-.301.301-.717.487-1.176.487s-.875-.186-1.176-.487L2.92.568C2.619.267 2.203.081 1.744.081S.869.267.568.568C.267.869.081 1.285.081 1.744s.186.875.487 1.176l11.904 11.904c.301.301.487.717.487 1.176s-.186.875-.487 1.176L.568 29.08c-.301.301-.487.717-.487 1.176s.186.875.487 1.176c.301.301.717.487 1.176.487s.875-.186 1.176-.487l11.904-11.904c.301-.301.717-.487 1.176-.487s.875.186 1.176.487L29.08 31.432c.301.301.717.487 1.176.487s.875-.186 1.176-.487c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176L19.528 17.176c-.301-.301-.487-.717-.487-1.176s.186-.875.487-1.176L31.432 2.92c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176z"
+                    />
+                  </svg>
+                </closeFilled>
+              </div>
+            </styled.div>
+          </Icon>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</Toast>
+`;
+
+exports[`Toast should render correctly with type=danger 1`] = `
+.c7 > svg {
+  width: 10px;
+  height: 10px;
+  fill: #545456;
+  cursor: pointer;
+}
+
+.c7 > svg:hover {
+  fill: #757679;
+}
+
+.c2 > svg {
+  width: 16px;
+  height: 16px;
+  fill: #545456;
+  cursor: default;
+}
+
+.c2 > svg:hover {
+  fill: #545456;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 1.025rem;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  background-color: #FFF;
+  border-radius: 0.125rem;
+  color: #000;
+  box-shadow: rgba(67,90,111,0.416) 0 0 1px, rgba(67,90,111,0.3) 0 8px 10px -4px;
+  min-width: 250px;
+  max-width: 560px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0%;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0.325rem;
+}
+
+.c6 {
+  padding-left: 1.025rem;
+}
+
+.c1 {
+  padding-right: 1.025rem;
+}
+
+.c1 > svg {
+  fill: #F36331;
+}
+
+.c1 > svg:hover {
+  fill: #F36331;
+}
+
+<Toast
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  title="This is a default toast."
+  type="danger"
+>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <Styled(Icon)
+        name="exclamationMarkFilled"
+        size="16px"
+        type="danger"
+      >
+        <Icon
+          className="c1"
+          name="exclamationMarkFilled"
+          selectable={false}
+          size="16px"
+          type="danger"
+        >
+          <styled.div
+            className="c1"
+            selectable="0"
+            size="16px"
+            type="danger"
+          >
+            <div
+              className="c1 c2"
+              size="16px"
+              type="danger"
+            >
+              <exclamationMarkFilled
+                height="32"
+                viewBox="0 0 32 32"
+                width="32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  height="32"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M35.594 27.5c1.156 2-.293 4.5-2.598 4.5H3.004C.695 32-.746 29.496.406 27.5l14.996-26c1.153-2 4.043-1.996 5.196 0zM18 22.125A2.877 2.877 0 0 0 15.125 25 2.877 2.877 0 0 0 18 27.875 2.877 2.877 0 0 0 20.875 25 2.877 2.877 0 0 0 18 22.125zm-2.73-10.336l.464 8.5a.75.75 0 0 0 .75.711h3.032a.75.75 0 0 0 .75-.71l.464-8.5a.75.75 0 0 0-.75-.79h-3.96a.75.75 0 0 0-.75.79zm0 0"
+                  />
+                </svg>
+              </exclamationMarkFilled>
+            </div>
+          </styled.div>
+        </Icon>
+      </Styled(Icon)>
+      <styled.div>
+        <div
+          className="c3"
+        >
+          <styled.div>
+            <div
+              className="c4"
+            >
+              This is a default toast.
+            </div>
+          </styled.div>
+          <styled.div>
+            <div
+              className="c5"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+      <styled.div>
+        <div
+          className="c6"
+        >
+          <Icon
+            name="closeFilled"
+            selectable={true}
+            size="10px"
+          >
+            <styled.div
+              selectable="1"
+              size="10px"
+            >
+              <div
+                className="c7"
+                size="10px"
+              >
+                <closeFilled
+                  height="32"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <svg
+                    height="32"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      close-filled
+                    </title>
+                    <path
+                      d="M31.432.568c-.301-.301-.717-.487-1.176-.487s-.875.186-1.176.487L17.176 12.472c-.301.301-.717.487-1.176.487s-.875-.186-1.176-.487L2.92.568C2.619.267 2.203.081 1.744.081S.869.267.568.568C.267.869.081 1.285.081 1.744s.186.875.487 1.176l11.904 11.904c.301.301.487.717.487 1.176s-.186.875-.487 1.176L.568 29.08c-.301.301-.487.717-.487 1.176s.186.875.487 1.176c.301.301.717.487 1.176.487s.875-.186 1.176-.487l11.904-11.904c.301-.301.717-.487 1.176-.487s.875.186 1.176.487L29.08 31.432c.301.301.717.487 1.176.487s.875-.186 1.176-.487c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176L19.528 17.176c-.301-.301-.487-.717-.487-1.176s.186-.875.487-1.176L31.432 2.92c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176z"
+                    />
+                  </svg>
+                </closeFilled>
+              </div>
+            </styled.div>
+          </Icon>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</Toast>
+`;
+
+exports[`Toast should render correctly with type=success 1`] = `
+.c7 > svg {
+  width: 10px;
+  height: 10px;
+  fill: #545456;
+  cursor: pointer;
+}
+
+.c7 > svg:hover {
+  fill: #757679;
+}
+
+.c2 > svg {
+  width: 16px;
+  height: 16px;
+  fill: #545456;
+  cursor: default;
+}
+
+.c2 > svg:hover {
+  fill: #545456;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 1.025rem;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  background-color: #FFF;
+  border-radius: 0.125rem;
+  color: #000;
+  box-shadow: rgba(67,90,111,0.416) 0 0 1px, rgba(67,90,111,0.3) 0 8px 10px -4px;
+  min-width: 250px;
+  max-width: 560px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0%;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0.325rem;
+}
+
+.c6 {
+  padding-left: 1.025rem;
+}
+
+.c1 {
+  padding-right: 1.025rem;
+}
+
+.c1 > svg {
+  fill: #47B881;
+}
+
+.c1 > svg:hover {
+  fill: #47B881;
+}
+
+<Toast
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  title="This is a default toast."
+  type="success"
+>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <Styled(Icon)
+        name="checkmarkInCircleFilled"
+        size="16px"
+        type="success"
+      >
+        <Icon
+          className="c1"
+          name="checkmarkInCircleFilled"
+          selectable={false}
+          size="16px"
+          type="success"
+        >
+          <styled.div
+            className="c1"
+            selectable="0"
+            size="16px"
+            type="success"
+          >
+            <div
+              className="c1 c2"
+              size="16px"
+              type="success"
+            >
+              <checkmarkInCircleFilled
+                height="32"
+                viewBox="0 0 32 32"
+                width="32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  height="32"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.5 16c0 8.559-6.941 15.5-15.5 15.5C7.441 31.5.5 24.559.5 16 .5 7.441 7.441.5 16 .5 24.559.5 31.5 7.441 31.5 16zm-17.293 8.207l11.5-11.5a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0L13.5 19.258l-4.379-4.38a1 1 0 0 0-1.414 0l-1.414 1.415a1 1 0 0 0 0 1.414l6.5 6.5a1 1 0 0 0 1.414 0zm0 0"
+                  />
+                </svg>
+              </checkmarkInCircleFilled>
+            </div>
+          </styled.div>
+        </Icon>
+      </Styled(Icon)>
+      <styled.div>
+        <div
+          className="c3"
+        >
+          <styled.div>
+            <div
+              className="c4"
+            >
+              This is a default toast.
+            </div>
+          </styled.div>
+          <styled.div>
+            <div
+              className="c5"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+      <styled.div>
+        <div
+          className="c6"
+        >
+          <Icon
+            name="closeFilled"
+            selectable={true}
+            size="10px"
+          >
+            <styled.div
+              selectable="1"
+              size="10px"
+            >
+              <div
+                className="c7"
+                size="10px"
+              >
+                <closeFilled
+                  height="32"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <svg
+                    height="32"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      close-filled
+                    </title>
+                    <path
+                      d="M31.432.568c-.301-.301-.717-.487-1.176-.487s-.875.186-1.176.487L17.176 12.472c-.301.301-.717.487-1.176.487s-.875-.186-1.176-.487L2.92.568C2.619.267 2.203.081 1.744.081S.869.267.568.568C.267.869.081 1.285.081 1.744s.186.875.487 1.176l11.904 11.904c.301.301.487.717.487 1.176s-.186.875-.487 1.176L.568 29.08c-.301.301-.487.717-.487 1.176s.186.875.487 1.176c.301.301.717.487 1.176.487s.875-.186 1.176-.487l11.904-11.904c.301-.301.717-.487 1.176-.487s.875.186 1.176.487L29.08 31.432c.301.301.717.487 1.176.487s.875-.186 1.176-.487c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176L19.528 17.176c-.301-.301-.487-.717-.487-1.176s.186-.875.487-1.176L31.432 2.92c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176z"
+                    />
+                  </svg>
+                </closeFilled>
+              </div>
+            </styled.div>
+          </Icon>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</Toast>
+`;
+
+exports[`Toast should render correctly with type=warning 1`] = `
+.c7 > svg {
+  width: 10px;
+  height: 10px;
+  fill: #545456;
+  cursor: pointer;
+}
+
+.c7 > svg:hover {
+  fill: #757679;
+}
+
+.c2 > svg {
+  width: 16px;
+  height: 16px;
+  fill: #545456;
+  cursor: default;
+}
+
+.c2 > svg:hover {
+  fill: #545456;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 1.025rem;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  background-color: #FFF;
+  border-radius: 0.125rem;
+  color: #000;
+  box-shadow: rgba(67,90,111,0.416) 0 0 1px, rgba(67,90,111,0.3) 0 8px 10px -4px;
+  min-width: 250px;
+  max-width: 560px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0%;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0.325rem;
+}
+
+.c6 {
+  padding-left: 1.025rem;
+}
+
+.c1 {
+  padding-right: 1.025rem;
+}
+
+.c1 > svg {
+  fill: #F7C653;
+}
+
+.c1 > svg:hover {
+  fill: #F7C653;
+}
+
+<Toast
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  title="This is a default toast."
+  type="warning"
+>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <Styled(Icon)
+        name="exclamationMarkFilled"
+        size="16px"
+        type="warning"
+      >
+        <Icon
+          className="c1"
+          name="exclamationMarkFilled"
+          selectable={false}
+          size="16px"
+          type="warning"
+        >
+          <styled.div
+            className="c1"
+            selectable="0"
+            size="16px"
+            type="warning"
+          >
+            <div
+              className="c1 c2"
+              size="16px"
+              type="warning"
+            >
+              <exclamationMarkFilled
+                height="32"
+                viewBox="0 0 32 32"
+                width="32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  height="32"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M35.594 27.5c1.156 2-.293 4.5-2.598 4.5H3.004C.695 32-.746 29.496.406 27.5l14.996-26c1.153-2 4.043-1.996 5.196 0zM18 22.125A2.877 2.877 0 0 0 15.125 25 2.877 2.877 0 0 0 18 27.875 2.877 2.877 0 0 0 20.875 25 2.877 2.877 0 0 0 18 22.125zm-2.73-10.336l.464 8.5a.75.75 0 0 0 .75.711h3.032a.75.75 0 0 0 .75-.71l.464-8.5a.75.75 0 0 0-.75-.79h-3.96a.75.75 0 0 0-.75.79zm0 0"
+                  />
+                </svg>
+              </exclamationMarkFilled>
+            </div>
+          </styled.div>
+        </Icon>
+      </Styled(Icon)>
+      <styled.div>
+        <div
+          className="c3"
+        >
+          <styled.div>
+            <div
+              className="c4"
+            >
+              This is a default toast.
+            </div>
+          </styled.div>
+          <styled.div>
+            <div
+              className="c5"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+      <styled.div>
+        <div
+          className="c6"
+        >
+          <Icon
+            name="closeFilled"
+            selectable={true}
+            size="10px"
+          >
+            <styled.div
+              selectable="1"
+              size="10px"
+            >
+              <div
+                className="c7"
+                size="10px"
+              >
+                <closeFilled
+                  height="32"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <svg
+                    height="32"
+                    viewBox="0 0 32 32"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      close-filled
+                    </title>
+                    <path
+                      d="M31.432.568c-.301-.301-.717-.487-1.176-.487s-.875.186-1.176.487L17.176 12.472c-.301.301-.717.487-1.176.487s-.875-.186-1.176-.487L2.92.568C2.619.267 2.203.081 1.744.081S.869.267.568.568C.267.869.081 1.285.081 1.744s.186.875.487 1.176l11.904 11.904c.301.301.487.717.487 1.176s-.186.875-.487 1.176L.568 29.08c-.301.301-.487.717-.487 1.176s.186.875.487 1.176c.301.301.717.487 1.176.487s.875-.186 1.176-.487l11.904-11.904c.301-.301.717-.487 1.176-.487s.875.186 1.176.487L29.08 31.432c.301.301.717.487 1.176.487s.875-.186 1.176-.487c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176L19.528 17.176c-.301-.301-.487-.717-.487-1.176s.186-.875.487-1.176L31.432 2.92c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176z"
+                    />
+                  </svg>
+                </closeFilled>
+              </div>
+            </styled.div>
+          </Icon>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</Toast>
+`;
