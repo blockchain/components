@@ -24,6 +24,7 @@ export default {
   inputPlaceholderColor: palette['gray3'],
   linkColor: palette['gray5'],
   linkHoverColor: palette['orient'],
+  loaderColor: palette['cerulean'],
   navbarDropdownContentBackgroundColor: palette['white'],
   navbarDropdownContentBorderColor: palette['gray3'],
   navbarDropdownContentShadowColor: palette['blackAlpha25'],

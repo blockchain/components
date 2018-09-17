@@ -1,0 +1,1043 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlockchainLoader should render correctly 1`] = `
+.c0 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.c1 {
+  width: 70%;
+  height: 70%;
+  -webkit-transform-origin: 85% 35%;
+  -ms-transform-origin: 85% 35%;
+  transform-origin: 85% 35%;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.c4 {
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  float: left;
+  border: 0;
+  -webkit-animation: ijAREv 3s infinite ease-in-out;
+  animation: ijAREv 3s infinite ease-in-out;
+}
+
+.c3 {
+  background-color: #153a62;
+}
+
+.c8 {
+  background-color: #799eb2;
+}
+
+.c20 {
+  background-color: #3558a8;
+}
+
+.c31 {
+  background-color: #b2d5e5;
+}
+
+.c16 {
+  background-color: #10ade4;
+}
+
+.c2 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.c5 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.c6 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.c7 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.c9 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.c10 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.c11 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.c12 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.c13 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.c14 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.c15 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.c17 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.c18 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.c19 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.c21 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.c22 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.c23 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.c24 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.c25 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.c26 {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.c27 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.c28 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.c29 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.c30 {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.c32 {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+<BlockchainLoader
+  size="150px"
+>
+  <styled.div
+    size="150px"
+  >
+    <div
+      className="c0"
+      size="150px"
+    >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c2"
+            >
+              <styled.div
+                className="c2 c3"
+              >
+                <div
+                  className="c2 c3 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c5"
+            >
+              <styled.div
+                className="c5 c3"
+              >
+                <div
+                  className="c5 c3 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c6"
+            >
+              <styled.div
+                className="c6 c3"
+              >
+                <div
+                  className="c6 c3 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c7"
+            >
+              <styled.div
+                className="c7 c8"
+              >
+                <div
+                  className="c7 c8 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c9"
+            >
+              <styled.div
+                className="c9 c8"
+              >
+                <div
+                  className="c9 c8 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c10"
+            >
+              <styled.div
+                className="c10 c3"
+              >
+                <div
+                  className="c10 c3 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c11"
+            >
+              <styled.div
+                className="c11 c3"
+              >
+                <div
+                  className="c11 c3 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c12"
+            >
+              <styled.div
+                className="c12 c3"
+              >
+                <div
+                  className="c12 c3 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c13"
+            >
+              <styled.div
+                className="c13 c8"
+              >
+                <div
+                  className="c13 c8 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c14"
+            >
+              <styled.div
+                className="c14 c8"
+              >
+                <div
+                  className="c14 c8 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c15"
+            >
+              <styled.div
+                className="c15 c16"
+              >
+                <div
+                  className="c15 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c17"
+            >
+              <styled.div
+                className="c17 c16"
+              >
+                <div
+                  className="c17 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c18"
+            >
+              <styled.div
+                className="c18 c16"
+              >
+                <div
+                  className="c18 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c19"
+            >
+              <styled.div
+                className="c19 c20"
+              >
+                <div
+                  className="c19 c20 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c21"
+            >
+              <styled.div
+                className="c21 c20"
+              >
+                <div
+                  className="c21 c20 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c22"
+            >
+              <styled.div
+                className="c22 c16"
+              >
+                <div
+                  className="c22 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c23"
+            >
+              <styled.div
+                className="c23 c16"
+              >
+                <div
+                  className="c23 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c24"
+            >
+              <styled.div
+                className="c24 c16"
+              >
+                <div
+                  className="c24 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c25"
+            >
+              <styled.div
+                className="c25 c20"
+              >
+                <div
+                  className="c25 c20 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c26"
+            >
+              <styled.div
+                className="c26 c20"
+              >
+                <div
+                  className="c26 c20 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c27"
+            >
+              <styled.div
+                className="c27 c16"
+              >
+                <div
+                  className="c27 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c28"
+            >
+              <styled.div
+                className="c28 c16"
+              >
+                <div
+                  className="c28 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c29"
+            >
+              <styled.div
+                className="c29 c16"
+              >
+                <div
+                  className="c29 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c30"
+            >
+              <styled.div
+                className="c30 c31"
+              >
+                <div
+                  className="c30 c31 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c32"
+            >
+              <styled.div
+                className="c32 c31"
+              >
+                <div
+                  className="c32 c31 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</BlockchainLoader>
+`;
+
+exports[`BlockchainLoader should render correctly with size 1`] = `
+.c0 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.c1 {
+  width: 70%;
+  height: 70%;
+  -webkit-transform-origin: 85% 35%;
+  -ms-transform-origin: 85% 35%;
+  transform-origin: 85% 35%;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.c4 {
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  float: left;
+  border: 0;
+  -webkit-animation: ijAREv 3s infinite ease-in-out;
+  animation: ijAREv 3s infinite ease-in-out;
+}
+
+.c3 {
+  background-color: #153a62;
+}
+
+.c8 {
+  background-color: #799eb2;
+}
+
+.c20 {
+  background-color: #3558a8;
+}
+
+.c31 {
+  background-color: #b2d5e5;
+}
+
+.c16 {
+  background-color: #10ade4;
+}
+
+.c2 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.c5 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.c6 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.c7 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.c9 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.c10 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.c11 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.c12 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.c13 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.c14 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.c15 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.c17 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.c18 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.c19 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.c21 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.c22 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.c23 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.c24 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.c25 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.c26 {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.c27 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.c28 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.c29 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.c30 {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.c32 {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+<BlockchainLoader
+  size="200px"
+>
+  <styled.div
+    size="200px"
+  >
+    <div
+      className="c0"
+      size="200px"
+    >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c2"
+            >
+              <styled.div
+                className="c2 c3"
+              >
+                <div
+                  className="c2 c3 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c5"
+            >
+              <styled.div
+                className="c5 c3"
+              >
+                <div
+                  className="c5 c3 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c6"
+            >
+              <styled.div
+                className="c6 c3"
+              >
+                <div
+                  className="c6 c3 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c7"
+            >
+              <styled.div
+                className="c7 c8"
+              >
+                <div
+                  className="c7 c8 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c9"
+            >
+              <styled.div
+                className="c9 c8"
+              >
+                <div
+                  className="c9 c8 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c10"
+            >
+              <styled.div
+                className="c10 c3"
+              >
+                <div
+                  className="c10 c3 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c11"
+            >
+              <styled.div
+                className="c11 c3"
+              >
+                <div
+                  className="c11 c3 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c12"
+            >
+              <styled.div
+                className="c12 c3"
+              >
+                <div
+                  className="c12 c3 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c13"
+            >
+              <styled.div
+                className="c13 c8"
+              >
+                <div
+                  className="c13 c8 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c14"
+            >
+              <styled.div
+                className="c14 c8"
+              >
+                <div
+                  className="c14 c8 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c15"
+            >
+              <styled.div
+                className="c15 c16"
+              >
+                <div
+                  className="c15 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c17"
+            >
+              <styled.div
+                className="c17 c16"
+              >
+                <div
+                  className="c17 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c18"
+            >
+              <styled.div
+                className="c18 c16"
+              >
+                <div
+                  className="c18 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c19"
+            >
+              <styled.div
+                className="c19 c20"
+              >
+                <div
+                  className="c19 c20 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c21"
+            >
+              <styled.div
+                className="c21 c20"
+              >
+                <div
+                  className="c21 c20 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c22"
+            >
+              <styled.div
+                className="c22 c16"
+              >
+                <div
+                  className="c22 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c23"
+            >
+              <styled.div
+                className="c23 c16"
+              >
+                <div
+                  className="c23 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c24"
+            >
+              <styled.div
+                className="c24 c16"
+              >
+                <div
+                  className="c24 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c25"
+            >
+              <styled.div
+                className="c25 c20"
+              >
+                <div
+                  className="c25 c20 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c26"
+            >
+              <styled.div
+                className="c26 c20"
+              >
+                <div
+                  className="c26 c20 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c27"
+            >
+              <styled.div
+                className="c27 c16"
+              >
+                <div
+                  className="c27 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c28"
+            >
+              <styled.div
+                className="c28 c16"
+              >
+                <div
+                  className="c28 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c29"
+            >
+              <styled.div
+                className="c29 c16"
+              >
+                <div
+                  className="c29 c16 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c30"
+            >
+              <styled.div
+                className="c30 c31"
+              >
+                <div
+                  className="c30 c31 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+          <Styled(Styled(styled.div))>
+            <Styled(styled.div)
+              className="c32"
+            >
+              <styled.div
+                className="c32 c31"
+              >
+                <div
+                  className="c32 c31 c4"
+                />
+              </styled.div>
+            </Styled(styled.div)>
+          </Styled(Styled(styled.div))>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</BlockchainLoader>
+`;
