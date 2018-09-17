@@ -5,10 +5,14 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
   margin-top: 1.25rem;
+
+  & > :first-child {
+    margin-right: 0.75rem;
+  }
 `
 
 const FooterElement = ({ children, ...rest }) => (

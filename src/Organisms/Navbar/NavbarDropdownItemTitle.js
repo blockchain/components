@@ -12,10 +12,6 @@ const Wrapper = styled(Text).attrs({
 
   @media (min-width: 48rem) {
     color: ${(props) => props.theme['navbarDropdownTitleColor']};
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 `
 

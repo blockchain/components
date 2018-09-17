@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FussionLoader should render correctly 1`] = `
+.c0 {
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  width: 8px;
+  height: 8px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.c1 > div {
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #10ADE4;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c1 > div:nth-child(1) {
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  -webkit-animation: cDEyoB 1s 0s ease infinite;
+  animation: cDEyoB 1s 0s ease infinite;
+}
+
+.c1 > div:nth-child(2) {
+  top: 50%;
+  left: 100%;
+  z-index: 2;
+  -webkit-animation: bjqCJF 1s 0s ease infinite;
+  animation: bjqCJF 1s 0s ease infinite;
+}
+
+.c1 > div:nth-child(3) {
+  top: 100%;
+  left: 50%;
+  z-index: 1;
+  -webkit-animation: IydCq 1s 0s ease infinite;
+  animation: IydCq 1s 0s ease infinite;
+}
+
+.c1 > div:nth-child(4) {
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  -webkit-animation: dsyxXP 1s 0s ease infinite;
+  animation: dsyxXP 1s 0s ease infinite;
+}
+
+<FussionLoader>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</FussionLoader>
+`;

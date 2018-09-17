@@ -39,7 +39,7 @@ exports[`NavbarDropdownContent should render correctly 1`] = `
 @media (min-width:48rem) {
   .c1 {
     margin-top: 15px;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 0.25rem;
     box-sizing: border-box;
     background-color: #FFF;

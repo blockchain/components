@@ -24,6 +24,7 @@ export default {
   transparent: 'rgba(0, 0, 0, 0)',
   white: '#FFF',
   whiteAlpha75: 'rgba(255,255,255,0.75)',
+  whiteAlpha50: 'rgba(255,255,255,0.50)',
   whiteAlpha10: 'rgba(255,255,255,0.1)',
   black: '#000',
   blackAlpha75: 'rgba(0,0,0,0.75)',
