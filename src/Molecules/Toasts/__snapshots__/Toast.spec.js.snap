@@ -328,11 +328,13 @@ exports[`Toast should render correctly with type=danger 1`] = `
 }
 
 .c1 {
-  padding-right: 1.025rem;
+  padding-right: 0.5rem;
+  margin-left: -0.5rem;
 }
 
 .c1 > svg {
   fill: #F36331;
+  width: 100%;
 }
 
 .c1 > svg:hover {
@@ -531,11 +533,13 @@ exports[`Toast should render correctly with type=success 1`] = `
 }
 
 .c1 {
-  padding-right: 1.025rem;
+  padding-right: 0.5rem;
+  margin-left: -0.5rem;
 }
 
 .c1 > svg {
   fill: #47B881;
+  width: 100%;
 }
 
 .c1 > svg:hover {
@@ -734,11 +738,13 @@ exports[`Toast should render correctly with type=warning 1`] = `
 }
 
 .c1 {
-  padding-right: 1.025rem;
+  padding-right: 0.5rem;
+  margin-left: -0.5rem;
 }
 
 .c1 > svg {
   fill: #F7C653;
+  width: 100%;
 }
 
 .c1 > svg:hover {
