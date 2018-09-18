@@ -54,6 +54,7 @@ import exchange2Filled from './assets/exchange-2-filled.svg'
 import exchange2 from './assets/exchange-2.svg'
 import exchangeFilled from './assets/exchange-filled.svg'
 import exchange from './assets/exchange.svg'
+import exclamationMarkFilled from './assets/exclamationMarkFilled.svg'
 import gearsFilled from './assets/gears-filled.svg'
 import gears from './assets/gears.svg'
 import globe from './assets/globe.svg'
@@ -186,6 +187,7 @@ export default {
   exchange2,
   exchange2Filled,
   exchangeFilled,
+  exclamationMarkFilled,
   gears,
   gearsFilled,
   globe,

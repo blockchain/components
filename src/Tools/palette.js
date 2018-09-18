@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  /* blues Dark to Light */
+  // Blue shades (Dark to Light)
   bigStone: '#152343',
   biscay: '#153A62',
   blueWood: '#27324B',
@@ -9,7 +9,7 @@ export default {
   cerulean: '#10ADE4',
   ceruleanAlpha10: 'rgba(16,173,228,0.1)',
   powderBlue: '#B2D5E5',
-  /* gray Light to Dark */
+  // Gray shades (Light to Dark)
   gray0: '#F8F8F8',
   gray1: '#EEF2F5',
   gray2: '#CCC',
@@ -20,6 +20,9 @@ export default {
   gray7: '#040d25',
   // Other
   gold: '#FFCA00',
+  green: '#47B881',
+  red: '#F36331',
+  yellow: '#F7C653',
   // Generic
   transparent: 'rgba(0, 0, 0, 0)',
   white: '#FFF',
