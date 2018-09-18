@@ -52,10 +52,12 @@ const Close = styled.div`
 `
 
 const Indicator = styled(Icon)`
-  padding-right: ${PADDING};
+  padding-right: 0.5rem;
+  margin-left: -0.5rem;
 
   & > svg {
     fill: ${getBackgroundColor};
+    width: 100%;
   }
 
   & > svg:hover {
