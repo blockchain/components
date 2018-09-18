@@ -4,7 +4,7 @@ exports[`Input should render correctly 1`] = `
 .c0 {
   display: block;
   width: 100%;
-  height: 3.2rem;
+  height: 2.7rem;
   padding: 0 1.4rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
@@ -73,7 +73,7 @@ exports[`Input should render correctly with disabled 1`] = `
 .c0 {
   display: block;
   width: 100%;
-  height: 3.2rem;
+  height: 2.7rem;
   padding: 0 1.4rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
@@ -142,7 +142,7 @@ exports[`Input should render correctly with type 1`] = `
 .c0 {
   display: block;
   width: 100%;
-  height: 3.2rem;
+  height: 2.7rem;
   padding: 0 1.4rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
@@ -211,7 +211,7 @@ exports[`Input should render correctly with width 1`] = `
 .c0 {
   display: block;
   width: 200px;
-  height: 3.2rem;
+  height: 2.7rem;
   padding: 0 1.4rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
