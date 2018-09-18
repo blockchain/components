@@ -4,7 +4,7 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
 .c2 {
   display: block;
   width: 100%;
-  height: 3.2rem;
+  height: 2.7rem;
   padding: 0 1.4rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
@@ -189,7 +189,7 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
 .c2 {
   display: block;
   width: 100%;
-  height: 3.2rem;
+  height: 2.7rem;
   padding: 0 1.4rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
@@ -380,7 +380,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
 .c2 {
   display: block;
   width: 100%;
-  height: 3.2rem;
+  height: 2.7rem;
   padding: 0 1.4rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
@@ -569,7 +569,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
 .c2 {
   display: block;
   width: 100%;
-  height: 3.2rem;
+  height: 2.7rem;
   padding: 0 1.4rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
@@ -765,7 +765,7 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
 .c2 {
   display: block;
   width: 100%;
-  height: 3.2rem;
+  height: 2.7rem;
   padding: 0 1.4rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;

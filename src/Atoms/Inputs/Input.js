@@ -8,7 +8,7 @@ const Wrapper = styled.input.attrs({
 })`
   display: block;
   width: ${(props) => props.width};
-  height: 3.2rem;
+  height: 2.7rem;
   padding: 0 1.4rem;
   box-sizing: border-box;
   font-family: ${(props) => props.theme['fontPrimary']};

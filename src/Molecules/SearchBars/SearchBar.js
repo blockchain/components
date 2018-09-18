@@ -22,8 +22,8 @@ const IconContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 52px;
+  width: 50px;
+  height: 2.7rem;
   background-color: ${(props) => props.theme['searchBarIconBackgroundColor']};
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
