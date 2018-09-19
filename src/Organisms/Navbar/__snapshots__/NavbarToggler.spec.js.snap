@@ -1,26 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavbarToggler should render correctly 1`] = `
-.c1 > svg {
-  width: 20px;
-  height: 20px;
+.c1 {
   fill: #545456;
   cursor: pointer;
 }
 
-.c1 > svg:hover {
+.c1:hover {
   fill: #757679;
 }
 
 .c0 {
   z-index: 15;
-}
-
-.c0 > svg {
   fill: #FFF !important;
 }
 
-.c0 > svg:hover {
+.c0:hover {
   fill: #FFF !important;
 }
 
@@ -34,76 +29,60 @@ exports[`NavbarToggler should render correctly 1`] = `
   onToggle={[MockFunction]}
   toggled={false}
 >
-  <Styled(Icon)
-    name="hamburgerMenu"
+  <Styled(withStyle)
     onClick={[MockFunction]}
   >
-    <Icon
+    <withStyle
       className="c0"
-      name="hamburgerMenu"
       onClick={[MockFunction]}
       selectable={true}
       size="20px"
     >
-      <styled.div
+      <styled.svg
         className="c0"
+        height="20px"
         onClick={[MockFunction]}
-        selectable="1"
-        size="20px"
+        selectable={true}
+        viewBox="0 0 448 512"
+        width="20px"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <div
+        <svg
           className="c0 c1"
+          height="20px"
           onClick={[MockFunction]}
-          size="20px"
+          viewBox="0 0 448 512"
+          width="20px"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <hamburgerMenu
-            height="32"
-            viewBox="0 0 32 32"
-            width="32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <svg
-              height="32"
-              viewBox="0 0 32 32"
-              width="32"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                hamburger-menu
-              </title>
-              <path
-                d="M0 23.592h32v4.128H0v-4.128zM0 13.936h32v4.128H0v-4.128zM0 4.28h32v4.128H0V4.28z"
-              />
-            </svg>
-          </hamburgerMenu>
-        </div>
-      </styled.div>
-    </Icon>
-  </Styled(Icon)>
+          <Bars>
+            <path
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            />
+          </Bars>
+        </svg>
+      </styled.svg>
+    </withStyle>
+  </Styled(withStyle)>
 </NavbarToggler>
 `;
 
 exports[`NavbarToggler should render correctly with toggled 1`] = `
-.c1 > svg {
-  width: 20px;
-  height: 20px;
+.c1 {
   fill: #545456;
   cursor: pointer;
 }
 
-.c1 > svg:hover {
+.c1:hover {
   fill: #757679;
 }
 
 .c0 {
   z-index: 15;
-}
-
-.c0 > svg {
   fill: #FFF !important;
 }
 
-.c0 > svg:hover {
+.c0:hover {
   fill: #FFF !important;
 }
 
@@ -117,51 +96,40 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
   onToggle={[MockFunction]}
   toggled={true}
 >
-  <Styled(Icon)
-    name="closeFilled"
+  <Styled(withStyle)
     onClick={[MockFunction]}
   >
-    <Icon
+    <withStyle
       className="c0"
-      name="closeFilled"
       onClick={[MockFunction]}
       selectable={true}
-      size="20px"
+      size="25px"
     >
-      <styled.div
+      <styled.svg
         className="c0"
+        height="25px"
         onClick={[MockFunction]}
-        selectable="1"
-        size="20px"
+        selectable={true}
+        viewBox="0 0 352 512"
+        width="25px"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <div
+        <svg
           className="c0 c1"
+          height="25px"
           onClick={[MockFunction]}
-          size="20px"
+          viewBox="0 0 352 512"
+          width="25px"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <closeFilled
-            height="32"
-            viewBox="0 0 32 32"
-            width="32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <svg
-              height="32"
-              viewBox="0 0 32 32"
-              width="32"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                close-filled
-              </title>
-              <path
-                d="M31.432.568c-.301-.301-.717-.487-1.176-.487s-.875.186-1.176.487L17.176 12.472c-.301.301-.717.487-1.176.487s-.875-.186-1.176-.487L2.92.568C2.619.267 2.203.081 1.744.081S.869.267.568.568C.267.869.081 1.285.081 1.744s.186.875.487 1.176l11.904 11.904c.301.301.487.717.487 1.176s-.186.875-.487 1.176L.568 29.08c-.301.301-.487.717-.487 1.176s.186.875.487 1.176c.301.301.717.487 1.176.487s.875-.186 1.176-.487l11.904-11.904c.301-.301.717-.487 1.176-.487s.875.186 1.176.487L29.08 31.432c.301.301.717.487 1.176.487s.875-.186 1.176-.487c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176L19.528 17.176c-.301-.301-.487-.717-.487-1.176s.186-.875.487-1.176L31.432 2.92c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176z"
-              />
-            </svg>
-          </closeFilled>
-        </div>
-      </styled.div>
-    </Icon>
-  </Styled(Icon)>
+          <Times>
+            <path
+              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            />
+          </Times>
+        </svg>
+      </styled.svg>
+    </withStyle>
+  </Styled(withStyle)>
 </NavbarToggler>
 `;

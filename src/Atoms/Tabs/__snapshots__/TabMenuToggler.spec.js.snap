@@ -1,14 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TabMenuToggler should render correctly 1`] = `
-.c1 > svg {
-  width: 1.3rem;
-  height: 1.3rem;
+.c1 {
   fill: #545456;
   cursor: pointer;
 }
 
-.c1 > svg:hover {
+.c1:hover {
   fill: #757679;
 }
 
@@ -25,45 +23,35 @@ exports[`TabMenuToggler should render correctly 1`] = `
 }
 
 <TabMenuToggler>
-  <Styled(Icon)>
-    <Icon
+  <Styled(withStyle)>
+    <withStyle
       className="c0"
-      name="hamburgerMenu"
       selectable={true}
       size="1.3rem"
     >
-      <styled.div
+      <styled.svg
         className="c0"
-        selectable="1"
-        size="1.3rem"
+        height="1.3rem"
+        selectable={true}
+        viewBox="0 0 448 512"
+        width="1.3rem"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <div
+        <svg
           className="c0 c1"
-          size="1.3rem"
+          height="1.3rem"
+          viewBox="0 0 448 512"
+          width="1.3rem"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <hamburgerMenu
-            height="32"
-            viewBox="0 0 32 32"
-            width="32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <svg
-              height="32"
-              viewBox="0 0 32 32"
-              width="32"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                hamburger-menu
-              </title>
-              <path
-                d="M0 23.592h32v4.128H0v-4.128zM0 13.936h32v4.128H0v-4.128zM0 4.28h32v4.128H0V4.28z"
-              />
-            </svg>
-          </hamburgerMenu>
-        </div>
-      </styled.div>
-    </Icon>
-  </Styled(Icon)>
+          <Bars>
+            <path
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            />
+          </Bars>
+        </svg>
+      </styled.svg>
+    </withStyle>
+  </Styled(withStyle)>
 </TabMenuToggler>
 `;

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { Input } from '../../Atoms/Inputs'
-import Icon from '../../Atoms/Icons/Icon'
+import { FaIcon } from '../../Atoms/Icons'
 
 const Wrapper = styled.div`
   display: flex;
@@ -40,7 +40,7 @@ const SearchBarUnderlined = ({
   <Wrapper width={width}>
     <SearchInput onChange={onChange} value={value} {...rest} />
     <IconContainer>
-      <Icon name="searchFilled" onClick={onClick} selectable size="1.3rem" />
+      <FaIcon.Search onClick={onClick} selectable size="1.3rem" />
     </IconContainer>
   </Wrapper>
 )

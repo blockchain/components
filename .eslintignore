@@ -1,1 +1,4 @@
 *.js.snap
+/src/Atoms/Icons/**/icons/**/*.js
+/src/Atoms/Icons/fa/index.js
+/utils/generateIcons/index.js

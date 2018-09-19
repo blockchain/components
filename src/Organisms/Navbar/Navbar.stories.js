@@ -111,7 +111,7 @@ storiesOf('Organisms/Navbar', module)
             </NavbarNavItem>
           </NavbarNav>
         </NavbarMenu>
-        <NavbarToggler />
+        <NavbarToggler toggled />
       </Navbar>
     </Wrapper>
   ))

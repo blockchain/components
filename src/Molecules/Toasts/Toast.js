@@ -2,21 +2,9 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
-import Icon from '../../Atoms/Icons/Icon'
+import { FaIcon } from '../../Atoms/Icons'
 
 const PADDING = '1.025rem'
-
-const getBackgroundColor = (props) => {
-  if (props.type === 'success') {
-    return props.theme.successColor
-  }
-
-  if (props.type === 'warning') {
-    return props.theme.warningColor
-  }
-
-  return props.theme.dangerColor
-}
 
 const Wrapper = styled.div`
   display: inline-flex;
@@ -30,63 +18,62 @@ const Wrapper = styled.div`
   min-width: 250px;
   max-width: 560px;
 `
-
 const Content = styled.div`
   display: flex;
   flex: 1 1 0%;
   flex-direction: column;
 `
-
 const Title = styled.div`
   display: flex;
   font-weight: 600;
 `
-
 const Description = styled.div`
   display: flex;
   padding-top: 0.325rem;
 `
-
 const Close = styled.div`
   padding-left: ${PADDING};
 `
-
-const Indicator = styled(Icon)`
+const IndicatorSuccess = styled(FaIcon.CheckCircle).attrs({ size: '16px' })`
   padding-right: ${PADDING};
+  fill: ${(props) => props.theme.successColor};
 
-  & > svg {
-    fill: ${getBackgroundColor};
+  &:hover {
+    fill: ${(props) => props.theme.successColor};
   }
+`
+const IndicatorWarning = styled(FaIcon.ExclamationCircle).attrs({
+  size: '16px',
+})`
+  padding-right: ${PADDING};
+  fill: ${(props) => props.theme.warningColor};
 
-  & > svg:hover {
-    fill: ${getBackgroundColor};
+  &:hover {
+    fill: ${(props) => props.theme.warningColor};
+  }
+`
+const IndicatorDanger = styled(IndicatorWarning)`
+  fill: ${(props) => props.theme.dangerColor};
+
+  &:hover {
+    fill: ${(props) => props.theme.dangerColor};
   }
 `
 
-const Toast = ({ description, onClose, title, type, ...rest }) => {
-  return (
-    <Wrapper {...rest}>
-      {type !== 'default' && (
-        <Indicator
-          name={
-            type === 'success'
-              ? 'checkmarkInCircleFilled'
-              : 'exclamationMarkFilled'
-          }
-          size="16px"
-          type={type}
-        />
-      )}
-      <Content>
-        <Title>{title}</Title>
-        {description && <Description>{description}</Description>}
-      </Content>
-      <Close>
-        <Icon name="closeFilled" onClick={onClose} selectable size="10px" />
-      </Close>
-    </Wrapper>
-  )
-}
+const Toast = ({ description, onClose, title, type, ...rest }) => (
+  <Wrapper {...rest}>
+    {type === 'success' && <IndicatorSuccess />}
+    {type === 'warning' && <IndicatorWarning />}
+    {type === 'danger' && <IndicatorDanger />}
+    <Content>
+      <Title>{title}</Title>
+      {description && <Description>{description}</Description>}
+    </Content>
+    <Close>
+      <FaIcon.Times onClick={onClose} selectable size="16px" />
+    </Close>
+  </Wrapper>
+)
 
 Toast.propTypes = {
   description: PropTypes.string,
