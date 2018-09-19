@@ -10,19 +10,6 @@ const generateClass = (componentName, svg, width, height) => `
 
   export default withStyle(${componentName},${width},${height})
 `
-const generateTest = (componentName) => `
-  import React from 'react'
-  import { mountWithTheme } from '../../../../Utils/testHelper'
-
-  import ${componentName} from './${componentName}'
-
-  describe('${componentName}', () => {
-    it('should render correctly', () => {
-      const tree = mountWithTheme(<${componentName} />)
-      expect(tree.find(${componentName})).toMatchSnapshot()
-    })
-  })
-`
 const generateExport = (componentNames) => {
   return componentNames
     .map(
@@ -35,5 +22,4 @@ const generateExport = (componentNames) => {
 module.exports = {
   generateClass,
   generateExport,
-  generateTest,
 }

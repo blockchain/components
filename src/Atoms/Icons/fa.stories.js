@@ -37,13 +37,17 @@ const renderIcon = (key) => {
   return <Component size="40px" />
 }
 
-storiesOf('Atoms/Icons/FaIcon', module).add('list', () => (
-  <Layout>
-    {keysIn(FaIcon).map((key) => (
-      <IconContainer key={key}>
-        {renderIcon(key)}
-        <IconName>{key}</IconName>
-      </IconContainer>
-    ))}
-  </Layout>
-))
+storiesOf('Atoms/Icons/FaIcon', module)
+  .add('default', () => <FaIcon.Bitcoin />)
+  .add('with size', () => <FaIcon.Bitcoin size="80px" />)
+  .add('with selectable', () => <FaIcon.Bitcoin selectable />)
+  .add('list', () => (
+    <Layout>
+      {keysIn(FaIcon).map((key) => (
+        <IconContainer key={key}>
+          {renderIcon(key)}
+          <IconName>{key}</IconName>
+        </IconContainer>
+      ))}
+    </Layout>
+  ))

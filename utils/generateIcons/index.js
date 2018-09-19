@@ -81,18 +81,6 @@ const createClassFile = (p) => {
   })
 }
 
-const createTestFile = (p) => {
-  return p.then(({ componentName }) => {
-    const testFilename = componentName + '.spec.js'
-    const testFullpath = path.join(destinationDirectory, testFilename)
-    let testOutput = fs.createWriteStream(testFullpath)
-    const testMarkup = generateTest(componentName)
-    testOutput.end(testMarkup)
-
-    return componentName
-  })
-}
-
 const getComponentName = (p) => {
   return p.then(({ componentName }) => {
     return componentName
