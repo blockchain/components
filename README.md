@@ -62,16 +62,20 @@ On every `git commit` and `git push` we run the unit tests and the linting tasks
 
 The commit messages are also validated and must follow the [Conventional Commits](https://conventionalcommits.org/) spec.
 
-### Icons update
+### Icons
 
-## FontAwesome
+#### How to use
+  * FontAwesome:
+    * Use `<FaIcon.XXX>` where XXX is the PascalCase version of the FontAwesome icon name.
+  * Custom
+    * Use `<Icon.XXX>` where XXX is the name of the React class representing your custom icon.
 
-* Replace the icons in `/Icons/fa/assets/`
-* Run command `yarn build-icons`
+#### How to update
 
-This command will regenerate all the FontAwesome React classes and the main export file.
-
-## Custom
-
-* Encapsulate your svg icon in a React class in `Icons/custom/icons`
-* Update manually the entry point `/Icons/custom/index.js`
+* FontAwesome
+  * Replace the icons in `/Icons/fa*/assets`
+  * Run command `yarn build-icons`
+    * This command will regenerate all the FontAwesome React classes and the main export file.
+* Custom
+  * Encapsulate your svg icon in a React class in `Icons/custom/icons`
+  * Update manually the entry point `/Icons/custom/index.js`
