@@ -61,3 +61,17 @@ We use [Husky](https://github.com/typicode/husky) to automatically deploy git ho
 On every `git commit` and `git push` we run the unit tests and the linting tasks.
 
 The commit messages are also validated and must follow the [Conventional Commits](https://conventionalcommits.org/) spec.
+
+### Icons update
+
+## FontAwesome
+
+* Replace the icons in `/Icons/fa/assets/`
+* Run command `yarn build-icons`
+
+This command will regenerate all the FontAwesome React classes and the main export file.
+
+## Custom
+
+* Encapsulate your svg icon in a React class in `Icons/custom/icons`
+* Update manually the entry point `/Icons/custom/index.js`

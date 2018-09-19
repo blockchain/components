@@ -1,14 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Toast should render correctly 1`] = `
-.c4 > svg {
-  width: 10px;
-  height: 10px;
+.c4 {
   fill: #545456;
   cursor: pointer;
 }
 
-.c4 > svg:hover {
+.c4:hover {
   fill: #757679;
 }
 
@@ -77,42 +75,32 @@ exports[`Toast should render correctly 1`] = `
         <div
           className="c3"
         >
-          <Icon
-            name="closeFilled"
+          <withStyle
             selectable={true}
-            size="10px"
+            size="16px"
           >
-            <styled.div
-              selectable="1"
-              size="10px"
+            <styled.svg
+              height="16px"
+              selectable={true}
+              viewBox="0 0 352 512"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
+              <svg
                 className="c4"
-                size="10px"
+                height="16px"
+                viewBox="0 0 352 512"
+                width="16px"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <closeFilled
-                  height="32"
-                  viewBox="0 0 32 32"
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <svg
-                    height="32"
-                    viewBox="0 0 32 32"
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>
-                      close-filled
-                    </title>
-                    <path
-                      d="M31.432.568c-.301-.301-.717-.487-1.176-.487s-.875.186-1.176.487L17.176 12.472c-.301.301-.717.487-1.176.487s-.875-.186-1.176-.487L2.92.568C2.619.267 2.203.081 1.744.081S.869.267.568.568C.267.869.081 1.285.081 1.744s.186.875.487 1.176l11.904 11.904c.301.301.487.717.487 1.176s-.186.875-.487 1.176L.568 29.08c-.301.301-.487.717-.487 1.176s.186.875.487 1.176c.301.301.717.487 1.176.487s.875-.186 1.176-.487l11.904-11.904c.301-.301.717-.487 1.176-.487s.875.186 1.176.487L29.08 31.432c.301.301.717.487 1.176.487s.875-.186 1.176-.487c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176L19.528 17.176c-.301-.301-.487-.717-.487-1.176s.186-.875.487-1.176L31.432 2.92c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176z"
-                    />
-                  </svg>
-                </closeFilled>
-              </div>
-            </styled.div>
-          </Icon>
+                <Times>
+                  <path
+                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                  />
+                </Times>
+              </svg>
+            </styled.svg>
+          </withStyle>
         </div>
       </styled.div>
     </div>
@@ -121,14 +109,12 @@ exports[`Toast should render correctly 1`] = `
 `;
 
 exports[`Toast should render correctly with description 1`] = `
-.c5 > svg {
-  width: 10px;
-  height: 10px;
+.c5 {
   fill: #545456;
   cursor: pointer;
 }
 
-.c5 > svg:hover {
+.c5:hover {
   fill: #757679;
 }
 
@@ -213,42 +199,32 @@ exports[`Toast should render correctly with description 1`] = `
         <div
           className="c4"
         >
-          <Icon
-            name="closeFilled"
+          <withStyle
             selectable={true}
-            size="10px"
+            size="16px"
           >
-            <styled.div
-              selectable="1"
-              size="10px"
+            <styled.svg
+              height="16px"
+              selectable={true}
+              viewBox="0 0 352 512"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
+              <svg
                 className="c5"
-                size="10px"
+                height="16px"
+                viewBox="0 0 352 512"
+                width="16px"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <closeFilled
-                  height="32"
-                  viewBox="0 0 32 32"
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <svg
-                    height="32"
-                    viewBox="0 0 32 32"
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>
-                      close-filled
-                    </title>
-                    <path
-                      d="M31.432.568c-.301-.301-.717-.487-1.176-.487s-.875.186-1.176.487L17.176 12.472c-.301.301-.717.487-1.176.487s-.875-.186-1.176-.487L2.92.568C2.619.267 2.203.081 1.744.081S.869.267.568.568C.267.869.081 1.285.081 1.744s.186.875.487 1.176l11.904 11.904c.301.301.487.717.487 1.176s-.186.875-.487 1.176L.568 29.08c-.301.301-.487.717-.487 1.176s.186.875.487 1.176c.301.301.717.487 1.176.487s.875-.186 1.176-.487l11.904-11.904c.301-.301.717-.487 1.176-.487s.875.186 1.176.487L29.08 31.432c.301.301.717.487 1.176.487s.875-.186 1.176-.487c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176L19.528 17.176c-.301-.301-.487-.717-.487-1.176s.186-.875.487-1.176L31.432 2.92c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176z"
-                    />
-                  </svg>
-                </closeFilled>
-              </div>
-            </styled.div>
-          </Icon>
+                <Times>
+                  <path
+                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                  />
+                </Times>
+              </svg>
+            </styled.svg>
+          </withStyle>
         </div>
       </styled.div>
     </div>
@@ -257,25 +233,21 @@ exports[`Toast should render correctly with description 1`] = `
 `;
 
 exports[`Toast should render correctly with type=danger 1`] = `
-.c7 > svg {
-  width: 10px;
-  height: 10px;
+.c8 {
   fill: #545456;
   cursor: pointer;
 }
 
-.c7 > svg:hover {
+.c8:hover {
   fill: #757679;
 }
 
-.c2 > svg {
-  width: 16px;
-  height: 16px;
+.c3 {
   fill: #545456;
   cursor: default;
 }
 
-.c2 > svg:hover {
+.c3:hover {
   fill: #545456;
 }
 
@@ -294,7 +266,7 @@ exports[`Toast should render correctly with type=danger 1`] = `
   max-width: 560px;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -307,7 +279,7 @@ exports[`Toast should render correctly with type=danger 1`] = `
   flex-direction: column;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -315,7 +287,7 @@ exports[`Toast should render correctly with type=danger 1`] = `
   font-weight: 600;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -323,19 +295,24 @@ exports[`Toast should render correctly with type=danger 1`] = `
   padding-top: 0.325rem;
 }
 
-.c6 {
+.c7 {
   padding-left: 1.025rem;
 }
 
-.c1 {
+.c2 {
   padding-right: 1.025rem;
+  fill: #F7C653;
 }
 
-.c1 > svg {
+.c2:hover {
+  fill: #F7C653;
+}
+
+.c1 {
   fill: #F36331;
 }
 
-.c1 > svg:hover {
+.c1:hover {
   fill: #F36331;
 }
 
@@ -348,64 +325,54 @@ exports[`Toast should render correctly with type=danger 1`] = `
     <div
       className="c0"
     >
-      <Styled(Icon)
-        name="exclamationMarkFilled"
-        size="16px"
-        type="danger"
-      >
-        <Icon
+      <Styled(Styled(withStyle))>
+        <Styled(withStyle)
           className="c1"
-          name="exclamationMarkFilled"
-          selectable={false}
-          size="16px"
-          type="danger"
         >
-          <styled.div
-            className="c1"
-            selectable="0"
+          <withStyle
+            className="c1 c2"
+            selectable={false}
             size="16px"
-            type="danger"
           >
-            <div
+            <styled.svg
               className="c1 c2"
-              size="16px"
-              type="danger"
+              height="16px"
+              selectable={false}
+              viewBox="0 0 512 512"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <exclamationMarkFilled
-                height="32"
-                viewBox="0 0 32 32"
-                width="32"
+              <svg
+                className="c1 c2 c3"
+                height="16px"
+                viewBox="0 0 512 512"
+                width="16px"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  height="32"
-                  viewBox="0 0 32 32"
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                <ExclamationCircle>
                   <path
-                    d="M35.594 27.5c1.156 2-.293 4.5-2.598 4.5H3.004C.695 32-.746 29.496.406 27.5l14.996-26c1.153-2 4.043-1.996 5.196 0zM18 22.125A2.877 2.877 0 0 0 15.125 25 2.877 2.877 0 0 0 18 27.875 2.877 2.877 0 0 0 20.875 25 2.877 2.877 0 0 0 18 22.125zm-2.73-10.336l.464 8.5a.75.75 0 0 0 .75.711h3.032a.75.75 0 0 0 .75-.71l.464-8.5a.75.75 0 0 0-.75-.79h-3.96a.75.75 0 0 0-.75.79zm0 0"
+                    d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
                   />
-                </svg>
-              </exclamationMarkFilled>
-            </div>
-          </styled.div>
-        </Icon>
-      </Styled(Icon)>
+                </ExclamationCircle>
+              </svg>
+            </styled.svg>
+          </withStyle>
+        </Styled(withStyle)>
+      </Styled(Styled(withStyle))>
       <styled.div>
         <div
-          className="c3"
+          className="c4"
         >
           <styled.div>
             <div
-              className="c4"
+              className="c5"
             >
               This is a default toast.
             </div>
           </styled.div>
           <styled.div>
             <div
-              className="c5"
+              className="c6"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
@@ -414,44 +381,34 @@ exports[`Toast should render correctly with type=danger 1`] = `
       </styled.div>
       <styled.div>
         <div
-          className="c6"
+          className="c7"
         >
-          <Icon
-            name="closeFilled"
+          <withStyle
             selectable={true}
-            size="10px"
+            size="16px"
           >
-            <styled.div
-              selectable="1"
-              size="10px"
+            <styled.svg
+              height="16px"
+              selectable={true}
+              viewBox="0 0 352 512"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
-                className="c7"
-                size="10px"
+              <svg
+                className="c8"
+                height="16px"
+                viewBox="0 0 352 512"
+                width="16px"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <closeFilled
-                  height="32"
-                  viewBox="0 0 32 32"
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <svg
-                    height="32"
-                    viewBox="0 0 32 32"
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>
-                      close-filled
-                    </title>
-                    <path
-                      d="M31.432.568c-.301-.301-.717-.487-1.176-.487s-.875.186-1.176.487L17.176 12.472c-.301.301-.717.487-1.176.487s-.875-.186-1.176-.487L2.92.568C2.619.267 2.203.081 1.744.081S.869.267.568.568C.267.869.081 1.285.081 1.744s.186.875.487 1.176l11.904 11.904c.301.301.487.717.487 1.176s-.186.875-.487 1.176L.568 29.08c-.301.301-.487.717-.487 1.176s.186.875.487 1.176c.301.301.717.487 1.176.487s.875-.186 1.176-.487l11.904-11.904c.301-.301.717-.487 1.176-.487s.875.186 1.176.487L29.08 31.432c.301.301.717.487 1.176.487s.875-.186 1.176-.487c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176L19.528 17.176c-.301-.301-.487-.717-.487-1.176s.186-.875.487-1.176L31.432 2.92c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176z"
-                    />
-                  </svg>
-                </closeFilled>
-              </div>
-            </styled.div>
-          </Icon>
+                <Times>
+                  <path
+                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                  />
+                </Times>
+              </svg>
+            </styled.svg>
+          </withStyle>
         </div>
       </styled.div>
     </div>
@@ -460,25 +417,21 @@ exports[`Toast should render correctly with type=danger 1`] = `
 `;
 
 exports[`Toast should render correctly with type=success 1`] = `
-.c7 > svg {
-  width: 10px;
-  height: 10px;
+.c7 {
   fill: #545456;
   cursor: pointer;
 }
 
-.c7 > svg:hover {
+.c7:hover {
   fill: #757679;
 }
 
-.c2 > svg {
-  width: 16px;
-  height: 16px;
+.c2 {
   fill: #545456;
   cursor: default;
 }
 
-.c2 > svg:hover {
+.c2:hover {
   fill: #545456;
 }
 
@@ -532,13 +485,10 @@ exports[`Toast should render correctly with type=success 1`] = `
 
 .c1 {
   padding-right: 1.025rem;
-}
-
-.c1 > svg {
   fill: #47B881;
 }
 
-.c1 > svg:hover {
+.c1:hover {
   fill: #47B881;
 }
 
@@ -551,50 +501,36 @@ exports[`Toast should render correctly with type=success 1`] = `
     <div
       className="c0"
     >
-      <Styled(Icon)
-        name="checkmarkInCircleFilled"
-        size="16px"
-        type="success"
-      >
-        <Icon
+      <Styled(withStyle)>
+        <withStyle
           className="c1"
-          name="checkmarkInCircleFilled"
           selectable={false}
           size="16px"
-          type="success"
         >
-          <styled.div
+          <styled.svg
             className="c1"
-            selectable="0"
-            size="16px"
-            type="success"
+            height="16px"
+            selectable={false}
+            viewBox="0 0 512 512"
+            width="16px"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <div
+            <svg
               className="c1 c2"
-              size="16px"
-              type="success"
+              height="16px"
+              viewBox="0 0 512 512"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <checkmarkInCircleFilled
-                height="32"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <svg
-                  height="32"
-                  viewBox="0 0 32 32"
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M31.5 16c0 8.559-6.941 15.5-15.5 15.5C7.441 31.5.5 24.559.5 16 .5 7.441 7.441.5 16 .5 24.559.5 31.5 7.441 31.5 16zm-17.293 8.207l11.5-11.5a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0L13.5 19.258l-4.379-4.38a1 1 0 0 0-1.414 0l-1.414 1.415a1 1 0 0 0 0 1.414l6.5 6.5a1 1 0 0 0 1.414 0zm0 0"
-                  />
-                </svg>
-              </checkmarkInCircleFilled>
-            </div>
-          </styled.div>
-        </Icon>
-      </Styled(Icon)>
+              <CheckCircle>
+                <path
+                  d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                />
+              </CheckCircle>
+            </svg>
+          </styled.svg>
+        </withStyle>
+      </Styled(withStyle)>
       <styled.div>
         <div
           className="c3"
@@ -619,42 +555,32 @@ exports[`Toast should render correctly with type=success 1`] = `
         <div
           className="c6"
         >
-          <Icon
-            name="closeFilled"
+          <withStyle
             selectable={true}
-            size="10px"
+            size="16px"
           >
-            <styled.div
-              selectable="1"
-              size="10px"
+            <styled.svg
+              height="16px"
+              selectable={true}
+              viewBox="0 0 352 512"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
+              <svg
                 className="c7"
-                size="10px"
+                height="16px"
+                viewBox="0 0 352 512"
+                width="16px"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <closeFilled
-                  height="32"
-                  viewBox="0 0 32 32"
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <svg
-                    height="32"
-                    viewBox="0 0 32 32"
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>
-                      close-filled
-                    </title>
-                    <path
-                      d="M31.432.568c-.301-.301-.717-.487-1.176-.487s-.875.186-1.176.487L17.176 12.472c-.301.301-.717.487-1.176.487s-.875-.186-1.176-.487L2.92.568C2.619.267 2.203.081 1.744.081S.869.267.568.568C.267.869.081 1.285.081 1.744s.186.875.487 1.176l11.904 11.904c.301.301.487.717.487 1.176s-.186.875-.487 1.176L.568 29.08c-.301.301-.487.717-.487 1.176s.186.875.487 1.176c.301.301.717.487 1.176.487s.875-.186 1.176-.487l11.904-11.904c.301-.301.717-.487 1.176-.487s.875.186 1.176.487L29.08 31.432c.301.301.717.487 1.176.487s.875-.186 1.176-.487c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176L19.528 17.176c-.301-.301-.487-.717-.487-1.176s.186-.875.487-1.176L31.432 2.92c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176z"
-                    />
-                  </svg>
-                </closeFilled>
-              </div>
-            </styled.div>
-          </Icon>
+                <Times>
+                  <path
+                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                  />
+                </Times>
+              </svg>
+            </styled.svg>
+          </withStyle>
         </div>
       </styled.div>
     </div>
@@ -663,25 +589,21 @@ exports[`Toast should render correctly with type=success 1`] = `
 `;
 
 exports[`Toast should render correctly with type=warning 1`] = `
-.c7 > svg {
-  width: 10px;
-  height: 10px;
+.c7 {
   fill: #545456;
   cursor: pointer;
 }
 
-.c7 > svg:hover {
+.c7:hover {
   fill: #757679;
 }
 
-.c2 > svg {
-  width: 16px;
-  height: 16px;
+.c2 {
   fill: #545456;
   cursor: default;
 }
 
-.c2 > svg:hover {
+.c2:hover {
   fill: #545456;
 }
 
@@ -735,13 +657,10 @@ exports[`Toast should render correctly with type=warning 1`] = `
 
 .c1 {
   padding-right: 1.025rem;
-}
-
-.c1 > svg {
   fill: #F7C653;
 }
 
-.c1 > svg:hover {
+.c1:hover {
   fill: #F7C653;
 }
 
@@ -754,50 +673,36 @@ exports[`Toast should render correctly with type=warning 1`] = `
     <div
       className="c0"
     >
-      <Styled(Icon)
-        name="exclamationMarkFilled"
-        size="16px"
-        type="warning"
-      >
-        <Icon
+      <Styled(withStyle)>
+        <withStyle
           className="c1"
-          name="exclamationMarkFilled"
           selectable={false}
           size="16px"
-          type="warning"
         >
-          <styled.div
+          <styled.svg
             className="c1"
-            selectable="0"
-            size="16px"
-            type="warning"
+            height="16px"
+            selectable={false}
+            viewBox="0 0 512 512"
+            width="16px"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <div
+            <svg
               className="c1 c2"
-              size="16px"
-              type="warning"
+              height="16px"
+              viewBox="0 0 512 512"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <exclamationMarkFilled
-                height="32"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <svg
-                  height="32"
-                  viewBox="0 0 32 32"
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M35.594 27.5c1.156 2-.293 4.5-2.598 4.5H3.004C.695 32-.746 29.496.406 27.5l14.996-26c1.153-2 4.043-1.996 5.196 0zM18 22.125A2.877 2.877 0 0 0 15.125 25 2.877 2.877 0 0 0 18 27.875 2.877 2.877 0 0 0 20.875 25 2.877 2.877 0 0 0 18 22.125zm-2.73-10.336l.464 8.5a.75.75 0 0 0 .75.711h3.032a.75.75 0 0 0 .75-.71l.464-8.5a.75.75 0 0 0-.75-.79h-3.96a.75.75 0 0 0-.75.79zm0 0"
-                  />
-                </svg>
-              </exclamationMarkFilled>
-            </div>
-          </styled.div>
-        </Icon>
-      </Styled(Icon)>
+              <ExclamationCircle>
+                <path
+                  d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+                />
+              </ExclamationCircle>
+            </svg>
+          </styled.svg>
+        </withStyle>
+      </Styled(withStyle)>
       <styled.div>
         <div
           className="c3"
@@ -822,42 +727,32 @@ exports[`Toast should render correctly with type=warning 1`] = `
         <div
           className="c6"
         >
-          <Icon
-            name="closeFilled"
+          <withStyle
             selectable={true}
-            size="10px"
+            size="16px"
           >
-            <styled.div
-              selectable="1"
-              size="10px"
+            <styled.svg
+              height="16px"
+              selectable={true}
+              viewBox="0 0 352 512"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
+              <svg
                 className="c7"
-                size="10px"
+                height="16px"
+                viewBox="0 0 352 512"
+                width="16px"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <closeFilled
-                  height="32"
-                  viewBox="0 0 32 32"
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <svg
-                    height="32"
-                    viewBox="0 0 32 32"
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>
-                      close-filled
-                    </title>
-                    <path
-                      d="M31.432.568c-.301-.301-.717-.487-1.176-.487s-.875.186-1.176.487L17.176 12.472c-.301.301-.717.487-1.176.487s-.875-.186-1.176-.487L2.92.568C2.619.267 2.203.081 1.744.081S.869.267.568.568C.267.869.081 1.285.081 1.744s.186.875.487 1.176l11.904 11.904c.301.301.487.717.487 1.176s-.186.875-.487 1.176L.568 29.08c-.301.301-.487.717-.487 1.176s.186.875.487 1.176c.301.301.717.487 1.176.487s.875-.186 1.176-.487l11.904-11.904c.301-.301.717-.487 1.176-.487s.875.186 1.176.487L29.08 31.432c.301.301.717.487 1.176.487s.875-.186 1.176-.487c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176L19.528 17.176c-.301-.301-.487-.717-.487-1.176s.186-.875.487-1.176L31.432 2.92c.301-.301.487-.717.487-1.176s-.186-.875-.487-1.176z"
-                    />
-                  </svg>
-                </closeFilled>
-              </div>
-            </styled.div>
-          </Icon>
+                <Times>
+                  <path
+                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                  />
+                </Times>
+              </svg>
+            </styled.svg>
+          </withStyle>
         </div>
       </styled.div>
     </div>

@@ -1,17 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Icon from '../../Atoms/Icons/Icon'
+import { FaIcon } from '../../Atoms/Icons'
 
-const Toggler = styled(Icon).attrs({ selectable: true, size: '20px' })`
+const TogglerExpand = styled(FaIcon.Bars).attrs({
+  selectable: true,
+  size: '20px',
+})`
   z-index: 15;
+  fill: ${(props) => props.theme['navbarTogglerColor']} !important;
 
-  & > svg {
+  &:hover {
     fill: ${(props) => props.theme['navbarTogglerColor']} !important;
-
-    &:hover {
-      fill: ${(props) => props.theme['navbarTogglerColor']} !important;
-    }
   }
 
   @media (min-width: 48rem) {
@@ -19,12 +19,28 @@ const Toggler = styled(Icon).attrs({ selectable: true, size: '20px' })`
   }
 `
 
-const NavbarToggler = ({ onToggle, toggled }) => (
-  <Toggler
-    name={toggled ? 'closeFilled' : 'hamburgerMenu'}
-    onClick={onToggle}
-  />
-)
+const TogglerCollapse = styled(FaIcon.Times).attrs({
+  selectable: true,
+  size: '25px',
+})`
+  z-index: 15;
+  fill: ${(props) => props.theme['navbarTogglerColor']} !important;
+
+  &:hover {
+    fill: ${(props) => props.theme['navbarTogglerColor']} !important;
+  }
+
+  @media (min-width: 48rem) {
+    display: none;
+  }
+`
+
+const NavbarToggler = ({ onToggle, toggled }) =>
+  toggled ? (
+    <TogglerCollapse onClick={onToggle} />
+  ) : (
+    <TogglerExpand onClick={onToggle} />
+  )
 
 NavbarToggler.propTypes = {
   onToggle: PropTypes.func.isRequired,

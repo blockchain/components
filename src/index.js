@@ -4,6 +4,7 @@ export {
   ButtonGroup,
   Container,
   Icon,
+  FaIcon,
   Image,
   Input,
   Link,
@@ -37,7 +38,6 @@ export {
   TogglerItem,
   Tooltip,
   TooltipHost,
-  TooltipIcon,
 } from './Molecules'
 
 export {

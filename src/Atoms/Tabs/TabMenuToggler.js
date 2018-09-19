@@ -2,10 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import Icon from '../../Atoms/Icons/Icon'
+import { FaIcon } from '../../Atoms/Icons'
 
-const Toggler = styled(Icon).attrs({
-  name: 'hamburgerMenu',
+const Toggler = styled(FaIcon.Bars).attrs({
   selectable: true,
   size: '1.3rem',
 })`
