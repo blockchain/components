@@ -1,52 +1,116 @@
 const camelCase = require('camelcase')
 const path = require('path')
 const fs = require('fs')
+const request = require('request')
 const rimraf = require('rimraf')
+const DecompressZip = require('decompress-zip')
 const SVGO = require('svgo')
 const svgoConfig = require('./svgo.config')
 const svgo = new SVGO(svgoConfig)
-const { generateClass, generateExport, generateTest } = require('./generate')
+const { generateClass, generateExport } = require('./generate')
 
 // Variables
 const viewBoxRegex = /(viewBox="[0-9.]+[ ][0-9.]+[ ]([0-9.]+)[ ]([0-9.]+))/
 const pathRegex = /(<path.*?\/>)/gm
 const iconDirectory = path.resolve(__dirname, '../../src/Atoms/Icons')
-const sourceDirectory = `${iconDirectory}/fa/assets`
-const destinationDirectory = `${iconDirectory}/fa/icons`
+const sourceDirectory = `${iconDirectory}/assets`
+const destinationDirectory = `${iconDirectory}/fa`
+const faVersion = '5.3.1'
+const faName = `fontawesome-free-${faVersion}-desktop`
 
-// Check if source folder exists
-if (!fs.existsSync(sourceDirectory)) {
-  return console.log(
-    `Warning: Directory ${sourceDirectory} does not exist and will be ignored.`,
-  )
+const url = `https://github.com/FortAwesome/Font-Awesome/releases/download/${faVersion}/${faName}.zip`
+
+const blacklist = ['500px.svg']
+
+console.log('Cleanup')
+
+if (fs.existsSync(sourceDirectory)) {
+  rimraf.sync(sourceDirectory)
 }
 
-// Remove destination folder and process files
-rimraf(destinationDirectory, () => {
-  console.log(`Info: Folder ${destinationDirectory} removed.`)
-  // Recreate destination folder
-  fs.mkdirSync(destinationDirectory)
-  // Process folder to generate react components and test files
-  const componentNames = processDirectory(sourceDirectory, destinationDirectory)
-  const result = Promise.all(componentNames).then(createExportFile).then(console.log)
-})
+if (fs.existsSync(destinationDirectory)) {
+  rimraf.sync(destinationDirectory)
+}
 
-function processDirectory(sourceDirectory, destinationDirectory) {
-  return fs.readdirSync(sourceDirectory)
-    .filter(file => (path.parse(file).ext === '.svg'))
-    .map(file => path.join(sourceDirectory, file))
+fs.mkdirSync(sourceDirectory)
+fs.mkdirSync(destinationDirectory)
+fs.mkdirSync(`${destinationDirectory}/brands`)
+fs.mkdirSync(`${destinationDirectory}/regular`)
+fs.mkdirSync(`${destinationDirectory}/solid`)
+
+console.log('Downloading font...')
+
+request(url)
+  .pipe(fs.createWriteStream(`${sourceDirectory}/fa.zip`))
+  .on('close', function() {
+    console.log('Font downloaded!')
+    console.log('Decompress files...')
+
+    const unzip = new DecompressZip(`${sourceDirectory}/fa.zip`)
+
+    unzip.extract({ path: `${sourceDirectory}` }).on('extract', function() {
+      // Process folder to generate react components and test files
+      const brand = processDirectory(
+        `${sourceDirectory}/${faName}/svgs/brands`,
+        `${destinationDirectory}/brands`,
+        'Fab',
+      )
+
+      const regular = processDirectory(
+        `${sourceDirectory}/${faName}/svgs/regular`,
+        `${destinationDirectory}/regular`,
+        'Far',
+      )
+
+      const solid = processDirectory(
+        `${sourceDirectory}/${faName}/svgs/solid`,
+        `${destinationDirectory}/solid`,
+        'Fas',
+      )
+
+      const exportsBrand = Promise.all(brand).then((comps) => {
+        return createExportFile(comps, 'brands', 'Fab')
+      })
+
+      const exportsRegular = Promise.all(regular).then((comps) => {
+        return createExportFile(comps, 'regular', 'Far')
+      })
+
+      const exportsSolid = Promise.all(solid).then((comps) => {
+        return createExportFile(comps, 'solid', 'Fas')
+      })
+
+      Promise.all([exportsBrand, exportsRegular, exportsSolid]).then(() => {
+        rimraf.sync(sourceDirectory)
+
+        console.log('Icons successfully generated!')
+      })
+    })
+  })
+
+function processDirectory(src, dest, type) {
+  return fs
+    .readdirSync(src)
+    .filter((file) => {
+      return (
+        path.parse(file).ext === '.svg' &&
+        !blacklist.includes(path.parse(file).base)
+      )
+    })
+    .map((file) => path.join(src, file))
     .map(readFile)
     .map(processFile)
-    .map(createClassFile)
+    .map(createClassFile(dest, type))
     .map(getComponentName)
 }
 
-const readFile = (filepath) => new Promise((resolve, reject) => {
-  fs.readFile(filepath, 'UTF8', (err, contents) => {
-    if (err) return reject(err)
-    return resolve({ contents, filepath })
+const readFile = (filepath) =>
+  new Promise((resolve, reject) => {
+    fs.readFile(filepath, 'UTF8', (err, contents) => {
+      if (err) return reject(err)
+      return resolve({ contents, filepath })
+    })
   })
-})
 
 const processFile = (p) => {
   return p.then(({ contents, filepath }) => {
@@ -54,16 +118,22 @@ const processFile = (p) => {
     const componentName = camelCase(filename, {
       pascalCase: true,
     })
-    return { contents, filepath, componentName }
+
+    return {
+      contents,
+      filename,
+      filepath,
+      componentName,
+    }
   })
 }
 
-const createClassFile = (p) => {
-  return p.then(({ contents, filepath, componentName }) => {
-    const classFilename = componentName + '.js'
-    const classFullpath = path.join(destinationDirectory, classFilename)
+const createClassFile = (dest, type) => (p) => {
+  return p.then(({ contents, filepath, filename, componentName }) => {
+    const classFilename = filename + '.js'
+    const classFullpath = path.join(dest, classFilename)
+    const classOutput = fs.createWriteStream(classFullpath)
 
-    let classOutput = fs.createWriteStream(classFullpath)
     return svgo.optimize(contents).then((results) => {
       const viewBoxMatches = results.data.match(viewBoxRegex)
       const width = viewBoxMatches[2]
@@ -74,31 +144,33 @@ const createClassFile = (p) => {
         paths,
         width,
         height,
+        type,
       )
+
       classOutput.end(classMarkup)
-      return { componentName }
+
+      return { componentName, filename }
     })
   })
 }
 
-const getComponentName = (p) => {
-  return p.then(({ componentName }) => {
-    return componentName
+const createExportFile = (componentNames, category, type) => {
+  console.log(`Generating React classes for ${category}...`)
+
+  const folder = `${destinationDirectory}/${category}`
+  const exportFilename = 'index.js'
+  const exportFullpath = path.join(folder, exportFilename)
+
+  fs.unlink(exportFullpath, () => {
+    const exportOutput = fs.createWriteStream(exportFullpath)
+    const exportMarkup = generateExport(componentNames, type)
+
+    exportOutput.end(exportMarkup)
   })
 }
 
-const createExportFile = (componentNames) => {
-  const destinationDirectory = `${iconDirectory}/fa`
-  const exportFilename = 'index.js'
-  const exportFullpath = path.join(destinationDirectory, exportFilename)
-
-  fs.unlink(exportFullpath, () => {
-    // Create new export file
-    let exportOutput = fs.createWriteStream(exportFullpath)
-    const exportMarkup = generateExport(componentNames)
-    exportOutput.end(exportMarkup)
-
+const getComponentName = (p) => {
+  return p.then(({ componentName, filename }) => {
+    return { componentName, filename }
   })
-
-  return `FA Icons successfully generated !`
 }

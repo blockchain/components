@@ -2,7 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
 
-import { Icon } from './index'
+import {
+  BcBitcoin,
+  BcBitcoinCash,
+  BcBlocks,
+  BcEthereum,
+  BcTransactions,
+} from '.'
 
 const Layout = styled.div`
   display: flex;
@@ -32,29 +38,27 @@ const IconName = styled.div`
   height: 30px;
 `
 
-storiesOf('Atoms/Icons/Icon', module)
-  .add('list', () => (
-    <Layout>
-      <IconContainer>
-        <Icon.Bitcoin size="40px" />
-        <IconName>Bitcoin</IconName>
-      </IconContainer>
-      <IconContainer>
-        <Icon.BitcoinCash size="40px" />
-        <IconName>BitcoinCash</IconName>
-      </IconContainer>
-      <IconContainer>
-        <Icon.Blocks size="40px" />
-        <IconName>Blocks</IconName>
-      </IconContainer>
-      <IconContainer>
-        <Icon.Ethereum size="40px" />
-        <IconName>Ethereum</IconName>
-      </IconContainer>
-      <IconContainer>
-        <Icon.Transactions size="40px" />
-        <IconName>Transactions</IconName>
-      </IconContainer>
-    </Layout>
-  ))
-  .add('with size', () => <Icon.Bitcoin size="80px" />)
+storiesOf('Atoms/Icons/custom', module).add('custom', () => (
+  <Layout>
+    <IconContainer>
+      <BcBitcoin size="40px" />
+      <IconName>Bitcoin</IconName>
+    </IconContainer>
+    <IconContainer>
+      <BcBitcoinCash size="40px" />
+      <IconName>BitcoinCash</IconName>
+    </IconContainer>
+    <IconContainer>
+      <BcBlocks size="40px" />
+      <IconName>Blocks</IconName>
+    </IconContainer>
+    <IconContainer>
+      <BcEthereum size="40px" />
+      <IconName>Ethereum</IconName>
+    </IconContainer>
+    <IconContainer>
+      <BcTransactions size="40px" />
+      <IconName>Transactions</IconName>
+    </IconContainer>
+  </Layout>
+))

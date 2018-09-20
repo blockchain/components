@@ -2,7 +2,11 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
-import { FaIcon } from '../../Atoms/Icons'
+import {
+  FasCheckCircle,
+  FasExclamationCircle,
+  FasTimes,
+} from '../../Atoms/Icons'
 
 const PADDING = '1.025rem'
 
@@ -34,7 +38,9 @@ const Description = styled.div`
 const Close = styled.div`
   padding-left: ${PADDING};
 `
-const IndicatorSuccess = styled(FaIcon.CheckCircle).attrs({ size: '16px' })`
+const IndicatorSuccess = styled(FasCheckCircle).attrs({
+  size: '16px',
+})`
   padding-right: ${PADDING};
   fill: ${(props) => props.theme.successColor};
 
@@ -42,7 +48,7 @@ const IndicatorSuccess = styled(FaIcon.CheckCircle).attrs({ size: '16px' })`
     fill: ${(props) => props.theme.successColor};
   }
 `
-const IndicatorWarning = styled(FaIcon.ExclamationCircle).attrs({
+const IndicatorWarning = styled(FasExclamationCircle).attrs({
   size: '16px',
 })`
   padding-right: ${PADDING};
@@ -70,7 +76,7 @@ const Toast = ({ description, onClose, title, type, ...rest }) => (
       {description && <Description>{description}</Description>}
     </Content>
     <Close>
-      <FaIcon.Times onClick={onClose} selectable size="16px" />
+      <FasTimes onClick={onClose} selectable size="16px" />
     </Close>
   </Wrapper>
 )

@@ -1,6 +1,6 @@
 export { Button, ButtonGroup } from './Buttons'
 export { Container, Panel, Section } from './Containers'
-export { Icon, FaIcon } from './Icons'
+export * from './Icons'
 export { Background, Image } from './Images'
 export { Input } from './Inputs'
 export { Link } from './Links'

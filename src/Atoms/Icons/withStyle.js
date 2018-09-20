@@ -14,9 +14,9 @@ const Wrapper = styled.svg`
   }
 `
 
-/* eslint-disable react/prefer-stateless-function */
-export default (WrappedComponent, width, height) => {
-  class withStyle extends React.PureComponent {
+export default (path, width, height, name) => {
+  /* eslint-disable react/prefer-stateless-function */
+  class WithStyle extends React.PureComponent {
     render() {
       const { size, ...rest } = this.props
       return (
@@ -27,21 +27,23 @@ export default (WrappedComponent, width, height) => {
           xmlns="http://www.w3.org/2000/svg"
           {...rest}
         >
-          <WrappedComponent />
+          {path}
         </Wrapper>
       )
     }
   }
 
-  withStyle.propTypes = {
+  WithStyle.displayName = name
+
+  WithStyle.propTypes = {
     selectable: PropTypes.bool,
     size: PropTypes.string,
   }
 
-  withStyle.defaultProps = {
+  WithStyle.defaultProps = {
     selectable: false,
     size: '2.75rem',
   }
 
-  return withStyle
+  return WithStyle
 }
