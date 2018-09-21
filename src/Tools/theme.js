@@ -72,4 +72,4 @@ export default {
   tooltipColor: palette.white,
   warningColor: palette.yellow,
 }
-/* eslint-enable */
+/* eslint-enable sort-keys */

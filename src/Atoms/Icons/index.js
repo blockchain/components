@@ -1,4 +1,4 @@
-import * as Icon from './custom'
-import * as FaIcon from './fa'
-
-export { Icon, FaIcon }
+export * from './custom'
+export * from './fa/brands'
+export * from './fa/regular'
+export * from './fa/solid'

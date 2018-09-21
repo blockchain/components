@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* eslint-disable sort-keys */
 export default {
   // Blue shades (Dark to Light)
   bigStone: '#152343',
@@ -33,6 +33,6 @@ export default {
   blackAlpha75: 'rgba(0,0,0,0.75)',
   blackAlpha25: 'rgba(0,0,0,0.25)',
   blackAlpha10: 'rgba(0,0,0,0.10)',
-  blackAlpha05: 'rgba(0,0,0,0.05)'
+  blackAlpha05: 'rgba(0,0,0,0.05)',
 }
-/* eslint-enable */
+/* eslint-enable sort-keys */

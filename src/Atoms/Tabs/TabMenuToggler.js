@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { FaIcon } from '../../Atoms/Icons'
+import { FasBars } from '../../Atoms/Icons'
 
-const Toggler = styled(FaIcon.Bars).attrs({
+const Toggler = styled(FasBars).attrs({
   selectable: true,
   size: '1.3rem',
 })`

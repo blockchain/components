@@ -1,20 +1,26 @@
-const generateClass = (componentName, svg, width, height) => `
-  import React from 'react'
-  import withStyle from '../../withStyle'
+const generateClass = (
+  componentName,
+  svg,
+  width,
+  height,
+  type,
+) => `import React from 'react'
+import withStyle from '../../withStyle'
 
-  const ${componentName} = () => (
-    <React.Fragment>
-      ${svg}
-    </React.Fragment>
-  )
+const InnerSvg = (
+  <>
+    ${svg}
+  </>
+)
 
-  export default withStyle(${componentName},${width},${height})
+export const ${type}${componentName} = withStyle(InnerSvg, ${width}, ${height}, '${type}${componentName}')
 `
-const generateExport = (componentNames) => {
+
+const generateExport = (componentNames, type) => {
   return componentNames
     .map(
-      (componentName) =>
-        `export { default as ${componentName} } from './icons/${componentName}'\r\n`,
+      ({ componentName, filename }) =>
+        `export { ${type}${componentName} } from './${filename}'\r\n`,
     )
     .join('')
 }

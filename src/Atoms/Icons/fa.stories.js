@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
-import { keysIn } from 'ramda'
-import { FaIcon } from './index'
+
+import { FasCheckCircle, FarCheckCircle, FabFacebook } from '.'
 
 const Layout = styled.div`
   display: flex;
@@ -32,22 +32,19 @@ const IconName = styled.div`
   height: 30px;
 `
 
-const renderIcon = (key) => {
-  const Component = FaIcon[key]
-  return <Component size="40px" />
-}
-
-storiesOf('Atoms/Icons/FaIcon', module)
-  .add('default', () => <FaIcon.Bitcoin />)
-  .add('with size', () => <FaIcon.Bitcoin size="80px" />)
-  .add('with selectable', () => <FaIcon.Bitcoin selectable />)
-  .add('list', () => (
-    <Layout>
-      {keysIn(FaIcon).map((key) => (
-        <IconContainer key={key}>
-          {renderIcon(key)}
-          <IconName>{key}</IconName>
-        </IconContainer>
-      ))}
-    </Layout>
-  ))
+storiesOf('Atoms/Icons/font-awesome', module).add('fa', () => (
+  <Layout>
+    <IconContainer>
+      <FasCheckCircle size="40px" />
+      <IconName>Check Circle (solid)</IconName>
+    </IconContainer>
+    <IconContainer>
+      <FarCheckCircle size="40px" />
+      <IconName>Check Circle (regular)</IconName>
+    </IconContainer>
+    <IconContainer>
+      <FabFacebook size="40px" />
+      <IconName>Facebook</IconName>
+    </IconContainer>
+  </Layout>
+))

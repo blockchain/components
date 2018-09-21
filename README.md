@@ -12,6 +12,25 @@ The commands are given using `npm` however you can use the `yarn` equivalent and
 ## Installation
 1. Just a quick `npm i @blockchain-com/components` and you are good to go!
 
+## Icons
+1. FontAwesome
+Use `<Fas... />` where "Fas" is the type ("Fab", "Far" and "Fas" are avaible, same as fontawesome.com) and "..." is the FontAwesome icon name.
+The full icon list is available [here](https://fontawesome.com/icons) (free version only)
+
+2. Custom
+Use `<Bc... />` where "..." is the name of the icon.
+
+3. Examples
+```javascript
+// FontAwesome
+<FasCheckCircle />
+<FarCheckCircle />
+<FabFacebook />
+
+// Custom
+<BcBitcoin />
+```
+
 ## Hacking
 1. Ensure Node version >= 8.0 is installed
 2. Install packages: `npm i`
@@ -61,21 +80,3 @@ We use [Husky](https://github.com/typicode/husky) to automatically deploy git ho
 On every `git commit` and `git push` we run the unit tests and the linting tasks.
 
 The commit messages are also validated and must follow the [Conventional Commits](https://conventionalcommits.org/) spec.
-
-### Icons
-
-#### How to use
-  * FontAwesome:
-    * Use `<FaIcon.XXX>` where XXX is the PascalCase version of the FontAwesome icon name.
-  * Custom
-    * Use `<Icon.XXX>` where XXX is the name of the React class representing your custom icon.
-
-#### How to update
-
-* FontAwesome
-  * Replace the icons in `/Icons/fa*/assets`
-  * Run command `yarn build-icons`
-    * This command will regenerate all the FontAwesome React classes and the main export file.
-* Custom
-  * Encapsulate your svg icon in a React class in `Icons/custom/icons`
-  * Update manually the entry point `/Icons/custom/index.js`

@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { FaIcon } from '../../Atoms/Icons'
 
-const TogglerExpand = styled(FaIcon.Bars).attrs({
+import { FasTimes, FasBars } from '../../Atoms/Icons'
+
+const TogglerExpand = styled(FasTimes).attrs({
   selectable: true,
   size: '20px',
 })`
@@ -19,7 +20,7 @@ const TogglerExpand = styled(FaIcon.Bars).attrs({
   }
 `
 
-const TogglerCollapse = styled(FaIcon.Times).attrs({
+const TogglerCollapse = styled(FasBars).attrs({
   selectable: true,
   size: '25px',
 })`
