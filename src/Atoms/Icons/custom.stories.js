@@ -7,10 +7,7 @@ import {
   BcBitcoinCash,
   BcBlocks,
   BcEthereum,
-  BcFacebook,
-  BcLinkedin,
   BcTransactions,
-  BcTwitter,
 } from '.'
 
 const Layout = styled.div`
@@ -61,20 +58,8 @@ storiesOf('Atoms/Icons/custom', module)
         <IconName>Ethereum</IconName>
       </IconContainer>
       <IconContainer>
-        <BcFacebook size="40px" />
-        <IconName>Facebook</IconName>
-      </IconContainer>
-      <IconContainer>
-        <BcLinkedin size="40px" />
-        <IconName>Linkedin</IconName>
-      </IconContainer>
-      <IconContainer>
         <BcTransactions size="40px" />
         <IconName>Transactions</IconName>
-      </IconContainer>
-      <IconContainer>
-        <BcTwitter size="40px" />
-        <IconName>Twitter</IconName>
       </IconContainer>
     </Layout>
   ))

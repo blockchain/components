@@ -101,8 +101,8 @@ exports[`CircleBadge should render correctly 1`] = `
           opacity={1}
           size="2.625rem"
         >
-          <Styled(BcFacebook)>
-            <BcFacebook
+          <Styled(FabFacebookF)>
+            <FabFacebookF
               className="c2"
               selectable={true}
               size="fit-content"
@@ -111,24 +111,24 @@ exports[`CircleBadge should render correctly 1`] = `
                 className="c2"
                 height="fit-content"
                 selectable={true}
-                viewBox="0 0 12 23"
+                viewBox="0 0 264 512"
                 width="fit-content"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <svg
                   className="c2 c3"
                   height="fit-content"
-                  viewBox="0 0 12 23"
+                  viewBox="0 0 264 512"
                   width="fit-content"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M12,6.82397126 L7.82523639,6.82397126 L7.82523639,4.95754409 C7.82523639,4.07968648 8.40626019,3.87491835 8.81512879,3.87491835 L11.7378546,3.87491835 L11.7378546,0.0127367734 L7.50342354,0 C3.66318878,0 2.93446365,2.87949053 2.93446365,4.72338341 L2.93446365,6.82397126 L0,6.82397126 L0,10.7429784 L2.93446365,10.7429784 L2.93446365,22.5 L7.82523639,22.5 L7.82523639,10.7429784 L11.5921096,10.7429784 L12,6.82397126 Z"
+                    d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"
                   />
                 </svg>
               </styled.svg>
-            </BcFacebook>
-          </Styled(BcFacebook)>
+            </FabFacebookF>
+          </Styled(FabFacebookF)>
         </a>
       </styled.a>
     </Link>
@@ -237,8 +237,8 @@ exports[`CircleBadge should render correctly with name 1`] = `
           opacity={1}
           size="2.625rem"
         >
-          <Styled(BcLinkedin)>
-            <BcLinkedin
+          <Styled(FabLinkedinIn)>
+            <FabLinkedinIn
               className="c2"
               selectable={true}
               size="fit-content"
@@ -247,24 +247,24 @@ exports[`CircleBadge should render correctly with name 1`] = `
                 className="c2"
                 height="fit-content"
                 selectable={true}
-                viewBox="0 0 22 21"
+                viewBox="0 0 448 512"
                 width="fit-content"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <svg
                   className="c2 c3"
                   height="fit-content"
-                  viewBox="0 0 22 21"
+                  viewBox="0 0 448 512"
                   width="fit-content"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M14.5273,11.5 C13.4223,11.5 12.5273,12.396 12.5273,13.5 L12.5273,20.5 L7.5273,20.5 C7.5273,20.5 7.5863,8.5 7.5273,7.5 L12.5273,7.5 L12.5273,8.985 C12.5273,8.985 14.0753,7.542 16.4663,7.542 C19.4273,7.542 21.5273,9.685 21.5273,13.846 L21.5273,20.5 L16.5273,20.5 L16.5273,13.5 C16.5273,12.396 15.6323,11.5 14.5273,11.5 L14.5273,11.5 Z M3.0173,5.5 L2.9883,5.5 C1.4773,5.5 0.5003,4.318 0.5003,3.019 C0.5003,1.69 1.5073,0.607 3.0473,0.607 C4.5883,0.607 5.5353,1.725 5.5653,3.054 C5.5653,4.354 4.5883,5.5 3.0173,5.5 L3.0173,5.5 Z M5.5273,20.5 L0.5273,20.5 L0.5273,7.5 L5.5273,7.5 L5.5273,20.5 Z"
+                    d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"
                   />
                 </svg>
               </styled.svg>
-            </BcLinkedin>
-          </Styled(BcLinkedin)>
+            </FabLinkedinIn>
+          </Styled(FabLinkedinIn)>
         </a>
       </styled.a>
     </Link>
@@ -373,8 +373,8 @@ exports[`CircleBadge should render correctly with size 1`] = `
           opacity={1}
           size="80px"
         >
-          <Styled(BcFacebook)>
-            <BcFacebook
+          <Styled(FabFacebookF)>
+            <FabFacebookF
               className="c2"
               selectable={true}
               size="fit-content"
@@ -383,24 +383,24 @@ exports[`CircleBadge should render correctly with size 1`] = `
                 className="c2"
                 height="fit-content"
                 selectable={true}
-                viewBox="0 0 12 23"
+                viewBox="0 0 264 512"
                 width="fit-content"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <svg
                   className="c2 c3"
                   height="fit-content"
-                  viewBox="0 0 12 23"
+                  viewBox="0 0 264 512"
                   width="fit-content"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M12,6.82397126 L7.82523639,6.82397126 L7.82523639,4.95754409 C7.82523639,4.07968648 8.40626019,3.87491835 8.81512879,3.87491835 L11.7378546,3.87491835 L11.7378546,0.0127367734 L7.50342354,0 C3.66318878,0 2.93446365,2.87949053 2.93446365,4.72338341 L2.93446365,6.82397126 L0,6.82397126 L0,10.7429784 L2.93446365,10.7429784 L2.93446365,22.5 L7.82523639,22.5 L7.82523639,10.7429784 L11.5921096,10.7429784 L12,6.82397126 Z"
+                    d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"
                   />
                 </svg>
               </styled.svg>
-            </BcFacebook>
-          </Styled(BcFacebook)>
+            </FabFacebookF>
+          </Styled(FabFacebookF)>
         </a>
       </styled.a>
     </Link>

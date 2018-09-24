@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { BcFacebook, BcLinkedin, BcTwitter } from '../../Atoms/Icons'
+import { FabFacebookF, FabLinkedinIn, FabTwitter } from '../../Atoms/Icons'
 import Link from '../../Atoms/Links/Link'
 
 const Wrapper = styled(Link)`
@@ -22,7 +22,7 @@ const Wrapper = styled(Link)`
     background-color: ${(props) => props.theme['circleBadgeHoverColor']};
   }
 `
-const WhiteBcFacebook = styled(BcFacebook).attrs({
+const WhiteFacebook = styled(FabFacebookF).attrs({
   selectable: true,
   size: 'fit-content',
 })`
@@ -32,7 +32,7 @@ const WhiteBcFacebook = styled(BcFacebook).attrs({
     fill: ${(props) => props.theme['circleBadgeColor']};
   }
 `
-const WhiteBcLinkedin = styled(BcLinkedin).attrs({
+const WhiteLinkedin = styled(FabLinkedinIn).attrs({
   selectable: true,
   size: 'fit-content',
 })`
@@ -42,7 +42,7 @@ const WhiteBcLinkedin = styled(BcLinkedin).attrs({
     fill: ${(props) => props.theme['circleBadgeColor']};
   }
 `
-const WhiteBcTwitter = styled(BcTwitter).attrs({
+const WhiteTwitter = styled(FabTwitter).attrs({
   selectable: true,
   size: 'fit-content',
 })`
@@ -55,9 +55,9 @@ const WhiteBcTwitter = styled(BcTwitter).attrs({
 
 const CircleBadge = ({ name, size, ...rest }) => (
   <Wrapper size={size} {...rest}>
-    {name === 'facebook' && <WhiteBcFacebook />}
-    {name === 'linkedin' && <WhiteBcLinkedin />}
-    {name === 'twitter' && <WhiteBcTwitter />}
+    {name === 'facebook' && <WhiteFacebook />}
+    {name === 'linkedin' && <WhiteLinkedin />}
+    {name === 'twitter' && <WhiteTwitter />}
   </Wrapper>
 )
 
