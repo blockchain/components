@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import Image from '../../Atoms/Images/Image'
+import { FabFacebookF, FabLinkedinIn, FabTwitter } from '../../Atoms/Icons'
 import Link from '../../Atoms/Links/Link'
 
 const Wrapper = styled(Link)`
@@ -21,20 +21,48 @@ const Wrapper = styled(Link)`
   &:hover {
     background-color: ${(props) => props.theme['circleBadgeHoverColor']};
   }
+`
+const WhiteFacebook = styled(FabFacebookF).attrs({
+  selectable: true,
+  size: 'fit-content',
+})`
+  fill: ${(props) => props.theme['circleBadgeColor']};
 
-  & > img {
-    width: auto;
+  &:hover {
+    fill: ${(props) => props.theme['circleBadgeColor']};
+  }
+`
+const WhiteLinkedin = styled(FabLinkedinIn).attrs({
+  selectable: true,
+  size: 'fit-content',
+})`
+  fill: ${(props) => props.theme['circleBadgeColor']};
+
+  &:hover {
+    fill: ${(props) => props.theme['circleBadgeColor']};
+  }
+`
+const WhiteTwitter = styled(FabTwitter).attrs({
+  selectable: true,
+  size: 'fit-content',
+})`
+  fill: ${(props) => props.theme['circleBadgeColor']};
+
+  &:hover {
+    fill: ${(props) => props.theme['circleBadgeColor']};
   }
 `
 
 const CircleBadge = ({ name, size, ...rest }) => (
   <Wrapper size={size} {...rest}>
-    <Image name={name} selectable />
+    {name === 'facebook' && <WhiteFacebook />}
+    {name === 'linkedin' && <WhiteLinkedin />}
+    {name === 'twitter' && <WhiteTwitter />}
   </Wrapper>
 )
 
 CircleBadge.propTypes = {
-  name: PropTypes.oneOf(['facebook', 'linkedIn', 'twitter']),
+  name: PropTypes.oneOf(['facebook', 'linkedin', 'twitter']),
   size: PropTypes.string,
 }
 

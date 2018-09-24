@@ -38,27 +38,30 @@ const IconName = styled.div`
   height: 30px;
 `
 
-storiesOf('Atoms/Icons/custom', module).add('custom', () => (
-  <Layout>
-    <IconContainer>
-      <BcBitcoin size="40px" />
-      <IconName>Bitcoin</IconName>
-    </IconContainer>
-    <IconContainer>
-      <BcBitcoinCash size="40px" />
-      <IconName>BitcoinCash</IconName>
-    </IconContainer>
-    <IconContainer>
-      <BcBlocks size="40px" />
-      <IconName>Blocks</IconName>
-    </IconContainer>
-    <IconContainer>
-      <BcEthereum size="40px" />
-      <IconName>Ethereum</IconName>
-    </IconContainer>
-    <IconContainer>
-      <BcTransactions size="40px" />
-      <IconName>Transactions</IconName>
-    </IconContainer>
-  </Layout>
-))
+storiesOf('Atoms/Icons/custom', module)
+  .add('list', () => (
+    <Layout>
+      <IconContainer>
+        <BcBitcoin size="40px" />
+        <IconName>Bitcoin</IconName>
+      </IconContainer>
+      <IconContainer>
+        <BcBitcoinCash size="40px" />
+        <IconName>BitcoinCash</IconName>
+      </IconContainer>
+      <IconContainer>
+        <BcBlocks size="40px" />
+        <IconName>Blocks</IconName>
+      </IconContainer>
+      <IconContainer>
+        <BcEthereum size="40px" />
+        <IconName>Ethereum</IconName>
+      </IconContainer>
+      <IconContainer>
+        <BcTransactions size="40px" />
+        <IconName>Transactions</IconName>
+      </IconContainer>
+    </Layout>
+  ))
+  .add('with size', () => <BcBitcoin size="150px" />)
+  .add('with selectable', () => <BcBitcoin selectable />)
