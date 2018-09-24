@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
 import Button from '../../Atoms/Buttons/Button'
-import Image from '../../Atoms/Images/Image'
+import { BrandName } from '../../Atoms/Brand'
 import Section from '../../Atoms/Containers/Section'
 import Navbar from './Navbar'
 import NavbarBrand from './NavbarBrand'
@@ -54,7 +54,7 @@ storiesOf('Organisms/Navbar', module)
       <Navbar>
         <NavbarHeader>
           <NavbarBrand>
-            <Image name="brand" width="175px" />
+            <BrandName width="175px" />
           </NavbarBrand>
         </NavbarHeader>
         <NavbarMenu>
@@ -87,7 +87,7 @@ storiesOf('Organisms/Navbar', module)
       <Navbar>
         <NavbarHeader>
           <NavbarBrand>
-            <Image name="brand" width="175px" />
+            <BrandName width="175px" />
           </NavbarBrand>
         </NavbarHeader>
         <NavbarMenu toggled>

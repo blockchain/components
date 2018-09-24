@@ -1,11 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CircleBadge should render correctly 1`] = `
-.c2 {
-  width: 100%;
-  height: 100%;
+.c3 {
+  fill: #545456;
   cursor: pointer;
-  object-fit: contain;
+}
+
+.c3:hover {
+  fill: #757679;
 }
 
 .c1 {
@@ -57,8 +59,12 @@ exports[`CircleBadge should render correctly 1`] = `
   background-color: #004A7C;
 }
 
-.c0 > img {
-  width: auto;
+.c2 {
+  fill: #FFF;
+}
+
+.c2:hover {
+  fill: #FFF;
 }
 
 <CircleBadge
@@ -95,28 +101,34 @@ exports[`CircleBadge should render correctly 1`] = `
           opacity={1}
           size="2.625rem"
         >
-          <Image
-            height="100%"
-            name="facebook"
-            selectable={true}
-            width="100%"
-          >
-            <styled.img
-              height="100%"
-              name="facebook"
+          <Styled(BcFacebook)>
+            <BcFacebook
+              className="c2"
               selectable={true}
-              width="100%"
+              size="fit-content"
             >
-              <img
-                alt="facebook"
+              <styled.svg
                 className="c2"
-                height="100%"
-                name="facebook"
-                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTJweCIgaGVpZ2h0PSIyM3B4IiB2aWV3Qm94PSIwIDAgMTIgMjMiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUwLjIgKDU1MDQ3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5GaWxsIDI1NjwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJ3aGl0ZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iSWNvbnMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00MzkuMDAwMDAwLCAtMS4wMDAwMDApIj4KICAgICAgICAgICAgPGcgaWQ9IkZpbGwtMjU2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MzkuMDAwMDAwLCAxLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTEyLDYuODIzOTcxMjYgTDcuODI1MjM2MzksNi44MjM5NzEyNiBMNy44MjUyMzYzOSw0Ljk1NzU0NDA5IEM3LjgyNTIzNjM5LDQuMDc5Njg2NDggOC40MDYyNjAxOSwzLjg3NDkxODM1IDguODE1MTI4NzksMy44NzQ5MTgzNSBMMTEuNzM3ODU0NiwzLjg3NDkxODM1IEwxMS43Mzc4NTQ2LDAuMDEyNzM2NzczNCBMNy41MDM0MjM1NCwwIEMzLjY2MzE4ODc4LDAgMi45MzQ0NjM2NSwyLjg3OTQ5MDUzIDIuOTM0NDYzNjUsNC43MjMzODM0MSBMMi45MzQ0NjM2NSw2LjgyMzk3MTI2IEwwLDYuODIzOTcxMjYgTDAsMTAuNzQyOTc4NCBMMi45MzQ0NjM2NSwxMC43NDI5Nzg0IEwyLjkzNDQ2MzY1LDIyLjUgTDcuODI1MjM2MzksMjIuNSBMNy44MjUyMzYzOSwxMC43NDI5Nzg0IEwxMS41OTIxMDk2LDEwLjc0Mjk3ODQgTDEyLDYuODIzOTcxMjYgWiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4="
-                width="100%"
-              />
-            </styled.img>
-          </Image>
+                height="fit-content"
+                selectable={true}
+                viewBox="0 0 12 23"
+                width="fit-content"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="c2 c3"
+                  height="fit-content"
+                  viewBox="0 0 12 23"
+                  width="fit-content"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12,6.82397126 L7.82523639,6.82397126 L7.82523639,4.95754409 C7.82523639,4.07968648 8.40626019,3.87491835 8.81512879,3.87491835 L11.7378546,3.87491835 L11.7378546,0.0127367734 L7.50342354,0 C3.66318878,0 2.93446365,2.87949053 2.93446365,4.72338341 L2.93446365,6.82397126 L0,6.82397126 L0,10.7429784 L2.93446365,10.7429784 L2.93446365,22.5 L7.82523639,22.5 L7.82523639,10.7429784 L11.5921096,10.7429784 L12,6.82397126 Z"
+                  />
+                </svg>
+              </styled.svg>
+            </BcFacebook>
+          </Styled(BcFacebook)>
         </a>
       </styled.a>
     </Link>
@@ -125,11 +137,13 @@ exports[`CircleBadge should render correctly 1`] = `
 `;
 
 exports[`CircleBadge should render correctly with name 1`] = `
-.c2 {
-  width: 100%;
-  height: 100%;
+.c3 {
+  fill: #545456;
   cursor: pointer;
-  object-fit: contain;
+}
+
+.c3:hover {
+  fill: #757679;
 }
 
 .c1 {
@@ -181,12 +195,16 @@ exports[`CircleBadge should render correctly with name 1`] = `
   background-color: #004A7C;
 }
 
-.c0 > img {
-  width: auto;
+.c2 {
+  fill: #FFF;
+}
+
+.c2:hover {
+  fill: #FFF;
 }
 
 <CircleBadge
-  name="linkedIn"
+  name="linkedin"
   size="2.625rem"
   url="http://www.blockchain.com"
 >
@@ -219,28 +237,34 @@ exports[`CircleBadge should render correctly with name 1`] = `
           opacity={1}
           size="2.625rem"
         >
-          <Image
-            height="100%"
-            name="linkedIn"
-            selectable={true}
-            width="100%"
-          >
-            <styled.img
-              height="100%"
-              name="linkedIn"
+          <Styled(BcLinkedin)>
+            <BcLinkedin
+              className="c2"
               selectable={true}
-              width="100%"
+              size="fit-content"
             >
-              <img
-                alt="linkedIn"
+              <styled.svg
                 className="c2"
-                height="100%"
-                name="linkedIn"
-                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjJweCIgaGVpZ2h0PSIyMXB4IiB2aWV3Qm94PSIwIDAgMjIgMjEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUwLjIgKDU1MDQ3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5GaWxsIDI2MzwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJ3aGl0ZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iSWNvbnMiIGNsYXNzPSJzb2NpYWwtaWNvbnMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05OC4wMDAwMDAsIC01MC4wMDAwMDApIj4KICAgICAgICAgICAgPGcgaWQ9IkZpbGwtMjYzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5OC4wMDAwMDAsIDUwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTE0LjUyNzMsMTEuNSBDMTMuNDIyMywxMS41IDEyLjUyNzMsMTIuMzk2IDEyLjUyNzMsMTMuNSBMMTIuNTI3MywyMC41IEw3LjUyNzMsMjAuNSBDNy41MjczLDIwLjUgNy41ODYzLDguNSA3LjUyNzMsNy41IEwxMi41MjczLDcuNSBMMTIuNTI3Myw4Ljk4NSBDMTIuNTI3Myw4Ljk4NSAxNC4wNzUzLDcuNTQyIDE2LjQ2NjMsNy41NDIgQzE5LjQyNzMsNy41NDIgMjEuNTI3Myw5LjY4NSAyMS41MjczLDEzLjg0NiBMMjEuNTI3MywyMC41IEwxNi41MjczLDIwLjUgTDE2LjUyNzMsMTMuNSBDMTYuNTI3MywxMi4zOTYgMTUuNjMyMywxMS41IDE0LjUyNzMsMTEuNSBMMTQuNTI3MywxMS41IFogTTMuMDE3Myw1LjUgTDIuOTg4Myw1LjUgQzEuNDc3Myw1LjUgMC41MDAzLDQuMzE4IDAuNTAwMywzLjAxOSBDMC41MDAzLDEuNjkgMS41MDczLDAuNjA3IDMuMDQ3MywwLjYwNyBDNC41ODgzLDAuNjA3IDUuNTM1MywxLjcyNSA1LjU2NTMsMy4wNTQgQzUuNTY1Myw0LjM1NCA0LjU4ODMsNS41IDMuMDE3Myw1LjUgTDMuMDE3Myw1LjUgWiBNNS41MjczLDIwLjUgTDAuNTI3MywyMC41IEwwLjUyNzMsNy41IEw1LjUyNzMsNy41IEw1LjUyNzMsMjAuNSBaIj48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg=="
-                width="100%"
-              />
-            </styled.img>
-          </Image>
+                height="fit-content"
+                selectable={true}
+                viewBox="0 0 22 21"
+                width="fit-content"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="c2 c3"
+                  height="fit-content"
+                  viewBox="0 0 22 21"
+                  width="fit-content"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.5273,11.5 C13.4223,11.5 12.5273,12.396 12.5273,13.5 L12.5273,20.5 L7.5273,20.5 C7.5273,20.5 7.5863,8.5 7.5273,7.5 L12.5273,7.5 L12.5273,8.985 C12.5273,8.985 14.0753,7.542 16.4663,7.542 C19.4273,7.542 21.5273,9.685 21.5273,13.846 L21.5273,20.5 L16.5273,20.5 L16.5273,13.5 C16.5273,12.396 15.6323,11.5 14.5273,11.5 L14.5273,11.5 Z M3.0173,5.5 L2.9883,5.5 C1.4773,5.5 0.5003,4.318 0.5003,3.019 C0.5003,1.69 1.5073,0.607 3.0473,0.607 C4.5883,0.607 5.5353,1.725 5.5653,3.054 C5.5653,4.354 4.5883,5.5 3.0173,5.5 L3.0173,5.5 Z M5.5273,20.5 L0.5273,20.5 L0.5273,7.5 L5.5273,7.5 L5.5273,20.5 Z"
+                  />
+                </svg>
+              </styled.svg>
+            </BcLinkedin>
+          </Styled(BcLinkedin)>
         </a>
       </styled.a>
     </Link>
@@ -249,11 +273,13 @@ exports[`CircleBadge should render correctly with name 1`] = `
 `;
 
 exports[`CircleBadge should render correctly with size 1`] = `
-.c2 {
-  width: 100%;
-  height: 100%;
+.c3 {
+  fill: #545456;
   cursor: pointer;
-  object-fit: contain;
+}
+
+.c3:hover {
+  fill: #757679;
 }
 
 .c1 {
@@ -305,8 +331,12 @@ exports[`CircleBadge should render correctly with size 1`] = `
   background-color: #004A7C;
 }
 
-.c0 > img {
-  width: auto;
+.c2 {
+  fill: #FFF;
+}
+
+.c2:hover {
+  fill: #FFF;
 }
 
 <CircleBadge
@@ -343,28 +373,34 @@ exports[`CircleBadge should render correctly with size 1`] = `
           opacity={1}
           size="80px"
         >
-          <Image
-            height="100%"
-            name="facebook"
-            selectable={true}
-            width="100%"
-          >
-            <styled.img
-              height="100%"
-              name="facebook"
+          <Styled(BcFacebook)>
+            <BcFacebook
+              className="c2"
               selectable={true}
-              width="100%"
+              size="fit-content"
             >
-              <img
-                alt="facebook"
+              <styled.svg
                 className="c2"
-                height="100%"
-                name="facebook"
-                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTJweCIgaGVpZ2h0PSIyM3B4IiB2aWV3Qm94PSIwIDAgMTIgMjMiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUwLjIgKDU1MDQ3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5GaWxsIDI1NjwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJ3aGl0ZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iSWNvbnMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00MzkuMDAwMDAwLCAtMS4wMDAwMDApIj4KICAgICAgICAgICAgPGcgaWQ9IkZpbGwtMjU2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MzkuMDAwMDAwLCAxLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTEyLDYuODIzOTcxMjYgTDcuODI1MjM2MzksNi44MjM5NzEyNiBMNy44MjUyMzYzOSw0Ljk1NzU0NDA5IEM3LjgyNTIzNjM5LDQuMDc5Njg2NDggOC40MDYyNjAxOSwzLjg3NDkxODM1IDguODE1MTI4NzksMy44NzQ5MTgzNSBMMTEuNzM3ODU0NiwzLjg3NDkxODM1IEwxMS43Mzc4NTQ2LDAuMDEyNzM2NzczNCBMNy41MDM0MjM1NCwwIEMzLjY2MzE4ODc4LDAgMi45MzQ0NjM2NSwyLjg3OTQ5MDUzIDIuOTM0NDYzNjUsNC43MjMzODM0MSBMMi45MzQ0NjM2NSw2LjgyMzk3MTI2IEwwLDYuODIzOTcxMjYgTDAsMTAuNzQyOTc4NCBMMi45MzQ0NjM2NSwxMC43NDI5Nzg0IEwyLjkzNDQ2MzY1LDIyLjUgTDcuODI1MjM2MzksMjIuNSBMNy44MjUyMzYzOSwxMC43NDI5Nzg0IEwxMS41OTIxMDk2LDEwLjc0Mjk3ODQgTDEyLDYuODIzOTcxMjYgWiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4="
-                width="100%"
-              />
-            </styled.img>
-          </Image>
+                height="fit-content"
+                selectable={true}
+                viewBox="0 0 12 23"
+                width="fit-content"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="c2 c3"
+                  height="fit-content"
+                  viewBox="0 0 12 23"
+                  width="fit-content"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12,6.82397126 L7.82523639,6.82397126 L7.82523639,4.95754409 C7.82523639,4.07968648 8.40626019,3.87491835 8.81512879,3.87491835 L11.7378546,3.87491835 L11.7378546,0.0127367734 L7.50342354,0 C3.66318878,0 2.93446365,2.87949053 2.93446365,4.72338341 L2.93446365,6.82397126 L0,6.82397126 L0,10.7429784 L2.93446365,10.7429784 L2.93446365,22.5 L7.82523639,22.5 L7.82523639,10.7429784 L11.5921096,10.7429784 L12,6.82397126 Z"
+                  />
+                </svg>
+              </styled.svg>
+            </BcFacebook>
+          </Styled(BcFacebook)>
         </a>
       </styled.a>
     </Link>

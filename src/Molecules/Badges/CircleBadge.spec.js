@@ -12,7 +12,7 @@ describe('CircleBadge', () => {
 
   it('should render correctly with name', () => {
     const tree = mountWithTheme(
-      <CircleBadge name="linkedIn" url="http://www.blockchain.com" />,
+      <CircleBadge name="linkedin" url="http://www.blockchain.com" />,
     )
 
     expect(tree.find(CircleBadge)).toMatchSnapshot()
