@@ -20,9 +20,7 @@ const Wrapper = styled(Link)`
     background-color: ${(props) => props.theme['circleBadgeHoverColor']};
   }
 `
-const WhiteFacebook = styled(FabFacebookF).attrs({
-  selectable: true,
-})`
+const WhiteFacebook = styled(FabFacebookF)`
   fill: ${(props) => props.theme['circleBadgeColor']};
   max-height: 60%;
   max-width: 60%;
@@ -31,9 +29,7 @@ const WhiteFacebook = styled(FabFacebookF).attrs({
     fill: ${(props) => props.theme['circleBadgeColor']};
   }
 `
-const WhiteLinkedin = styled(FabLinkedinIn).attrs({
-  selectable: true,
-})`
+const WhiteLinkedin = styled(FabLinkedinIn)`
   fill: ${(props) => props.theme['circleBadgeColor']};
   max-height: 60%;
   max-width: 60%;
@@ -42,9 +38,7 @@ const WhiteLinkedin = styled(FabLinkedinIn).attrs({
     fill: ${(props) => props.theme['circleBadgeColor']};
   }
 `
-const WhiteTwitter = styled(FabTwitter).attrs({
-  selectable: true,
-})`
+const WhiteTwitter = styled(FabTwitter)`
   fill: ${(props) => props.theme['circleBadgeColor']};
   max-height: 60%;
   max-width: 60%;
@@ -56,9 +50,9 @@ const WhiteTwitter = styled(FabTwitter).attrs({
 
 const CircleBadge = ({ name, size, ...rest }) => (
   <Wrapper size={size} {...rest}>
-    {name === 'facebook' && <WhiteFacebook size={size} />}
-    {name === 'linkedin' && <WhiteLinkedin size={size} />}
-    {name === 'twitter' && <WhiteTwitter size={size} />}
+    {name === 'facebook' && <WhiteFacebook selectable size={size} />}
+    {name === 'linkedin' && <WhiteLinkedin selectable size={size} />}
+    {name === 'twitter' && <WhiteTwitter selectable size={size} />}
   </Wrapper>
 )
 

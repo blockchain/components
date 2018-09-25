@@ -13,6 +13,37 @@ exports[`TooltipHost should render correctly 1`] = `
 
 <TooltipHost
   id="storybook.test"
+>
+  <styled.div
+    data-for="storybook.test"
+    data-tip={Array []}
+    id="storybook.test"
+  >
+    <div
+      className="c0"
+      data-for="storybook.test"
+      data-tip={Array []}
+      id="storybook.test"
+    >
+      TooltipHost
+    </div>
+  </styled.div>
+</TooltipHost>
+`;
+
+exports[`TooltipHost should render correctly with tip 1`] = `
+.c0 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<TooltipHost
+  id="storybook.test"
   tip="test"
 >
   <styled.div
