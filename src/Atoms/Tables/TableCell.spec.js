@@ -9,4 +9,46 @@ describe('TableCell', () => {
 
     expect(tree.find(TableCell)).toMatchSnapshot()
   })
+
+  it('should render correctly with align left', () => {
+    const tree = mountWithTheme(<TableCell align="left">MyTableCell</TableCell>)
+
+    expect(tree.find(TableCell)).toMatchSnapshot()
+  })
+
+  it('should render correctly with align center', () => {
+    const tree = mountWithTheme(
+      <TableCell align="center">MyTableCell</TableCell>,
+    )
+
+    expect(tree.find(TableCell)).toMatchSnapshot()
+  })
+
+  it('should render correctly with align right', () => {
+    const tree = mountWithTheme(
+      <TableCell align="right">MyTableCell</TableCell>,
+    )
+
+    expect(tree.find(TableCell)).toMatchSnapshot()
+  })
+
+  it('should render correctly with shrinked true', () => {
+    const tree = mountWithTheme(<TableCell shrinked>MyTableCell</TableCell>)
+
+    expect(tree.find(TableCell)).toMatchSnapshot()
+  })
+
+  it('should render correctly with shrinked false', () => {
+    const tree = mountWithTheme(
+      <TableCell shrinked={false}>MyTableCell</TableCell>,
+    )
+
+    expect(tree.find(TableCell)).toMatchSnapshot()
+  })
+
+  it('should render correctly with width', () => {
+    const tree = mountWithTheme(<TableCell width="20%">MyTableCell</TableCell>)
+
+    expect(tree.find(TableCell)).toMatchSnapshot()
+  })
 })

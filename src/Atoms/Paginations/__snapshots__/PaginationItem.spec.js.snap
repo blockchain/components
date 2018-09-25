@@ -21,6 +21,54 @@ exports[`PaginationItem should render correctly 1`] = `
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
   font-weight: 500;
+  color: #383838;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #EEF2F5;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #383838;
+  background-color: rgba(16,173,228,0.1);
+}
+
+<PaginationItem
+  selected={false}
+>
+  <styled.a
+    selected={false}
+  >
+    <a
+      className="c0"
+      selected={false}
+    />
+  </styled.a>
+</PaginationItem>
+`;
+
+exports[`PaginationItem should render correctly with selected 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px 8px;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
   color: #FFF;
   background-color: #10ADE4;
   border: 1px solid #EEF2F5;

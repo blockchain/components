@@ -38,9 +38,9 @@ const TogglerCollapse = styled(FasBars).attrs({
 
 const NavbarToggler = ({ onToggle, toggled }) =>
   toggled ? (
-    <TogglerCollapse onClick={onToggle} />
-  ) : (
     <TogglerExpand onClick={onToggle} />
+  ) : (
+    <TogglerCollapse onClick={onToggle} />
   )
 
 NavbarToggler.propTypes = {

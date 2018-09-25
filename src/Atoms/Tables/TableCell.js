@@ -10,8 +10,6 @@ const selectAlign = (align) => {
       return 'center'
     case 'right':
       return 'flex-end'
-    default:
-      return 'flex-start'
   }
 }
 

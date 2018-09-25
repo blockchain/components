@@ -49,3 +49,303 @@ exports[`TableCell should render correctly 1`] = `
   </styled.div>
 </TableCell>
 `;
+
+exports[`TableCell should render correctly with align center 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 0;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.c0 > * {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+<TableCell
+  align="center"
+  shrinked={true}
+  width="100%"
+>
+  <styled.div
+    align="center"
+    shrinked={true}
+    width="100%"
+  >
+    <div
+      className="c0"
+      width="100%"
+    >
+      MyTableCell
+    </div>
+  </styled.div>
+</TableCell>
+`;
+
+exports[`TableCell should render correctly with align left 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 0;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.c0 > * {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+<TableCell
+  align="left"
+  shrinked={true}
+  width="100%"
+>
+  <styled.div
+    align="left"
+    shrinked={true}
+    width="100%"
+  >
+    <div
+      className="c0"
+      width="100%"
+    >
+      MyTableCell
+    </div>
+  </styled.div>
+</TableCell>
+`;
+
+exports[`TableCell should render correctly with align right 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 0;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.c0 > * {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+<TableCell
+  align="right"
+  shrinked={true}
+  width="100%"
+>
+  <styled.div
+    align="right"
+    shrinked={true}
+    width="100%"
+  >
+    <div
+      className="c0"
+      width="100%"
+    >
+      MyTableCell
+    </div>
+  </styled.div>
+</TableCell>
+`;
+
+exports[`TableCell should render correctly with shrinked false 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 0;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.c0 > * {
+  display: initial;
+  text-overflow: initial;
+  overflow: initial;
+  white-space: initial;
+}
+
+<TableCell
+  align="left"
+  shrinked={false}
+  width="100%"
+>
+  <styled.div
+    align="left"
+    shrinked={false}
+    width="100%"
+  >
+    <div
+      className="c0"
+      width="100%"
+    >
+      MyTableCell
+    </div>
+  </styled.div>
+</TableCell>
+`;
+
+exports[`TableCell should render correctly with shrinked true 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 0;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.c0 > * {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+<TableCell
+  align="left"
+  shrinked={true}
+  width="100%"
+>
+  <styled.div
+    align="left"
+    shrinked={true}
+    width="100%"
+  >
+    <div
+      className="c0"
+      width="100%"
+    >
+      MyTableCell
+    </div>
+  </styled.div>
+</TableCell>
+`;
+
+exports[`TableCell should render correctly with width 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 0;
+  -webkit-flex-basis: 20%;
+  -ms-flex-preferred-size: 20%;
+  flex-basis: 20%;
+}
+
+.c0 > * {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+<TableCell
+  align="left"
+  shrinked={true}
+  width="20%"
+>
+  <styled.div
+    align="left"
+    shrinked={true}
+    width="20%"
+  >
+    <div
+      className="c0"
+      width="20%"
+    >
+      MyTableCell
+    </div>
+  </styled.div>
+</TableCell>
+`;
