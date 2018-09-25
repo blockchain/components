@@ -12,8 +12,6 @@ const Wrapper = styled(Link)`
   align-items: center;
   height: ${(props) => props.size};
   width: ${(props) => props.size};
-  padding: calc(${(props) => props.size} / 10);
-  box-sizing: border-box;
   border-radius: 50%;
   background-color: ${(props) => props.theme['circleBadgeBackgroundColor']};
   transition: all 0.5s;
@@ -26,8 +24,8 @@ const WhiteFacebook = styled(FabFacebookF).attrs({
   selectable: true,
 })`
   fill: ${(props) => props.theme['circleBadgeColor']};
-  max-height: 70%;
-  max-width: 70%;
+  max-height: 60%;
+  max-width: 60%;
 
   &:hover {
     fill: ${(props) => props.theme['circleBadgeColor']};
@@ -37,8 +35,8 @@ const WhiteLinkedin = styled(FabLinkedinIn).attrs({
   selectable: true,
 })`
   fill: ${(props) => props.theme['circleBadgeColor']};
-  max-height: 70%;
-  max-width: 70%;
+  max-height: 60%;
+  max-width: 60%;
 
   &:hover {
     fill: ${(props) => props.theme['circleBadgeColor']};
@@ -48,8 +46,8 @@ const WhiteTwitter = styled(FabTwitter).attrs({
   selectable: true,
 })`
   fill: ${(props) => props.theme['circleBadgeColor']};
-  max-height: 70%;
-  max-width: 70%;
+  max-height: 60%;
+  max-width: 60%;
 
   &:hover {
     fill: ${(props) => props.theme['circleBadgeColor']};

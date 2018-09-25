@@ -47,8 +47,6 @@ exports[`CircleBadge should render correctly 1`] = `
   align-items: center;
   height: 2.625rem;
   width: 2.625rem;
-  padding: calc(2.625rem / 10);
-  box-sizing: border-box;
   border-radius: 50%;
   background-color: #CCC;
   -webkit-transition: all 0.5s;
@@ -61,8 +59,8 @@ exports[`CircleBadge should render correctly 1`] = `
 
 .c2 {
   fill: #FFF;
-  max-height: 70%;
-  max-width: 70%;
+  max-height: 60%;
+  max-width: 60%;
 }
 
 .c2:hover {
@@ -187,8 +185,6 @@ exports[`CircleBadge should render correctly with name 1`] = `
   align-items: center;
   height: 2.625rem;
   width: 2.625rem;
-  padding: calc(2.625rem / 10);
-  box-sizing: border-box;
   border-radius: 50%;
   background-color: #CCC;
   -webkit-transition: all 0.5s;
@@ -201,8 +197,8 @@ exports[`CircleBadge should render correctly with name 1`] = `
 
 .c2 {
   fill: #FFF;
-  max-height: 70%;
-  max-width: 70%;
+  max-height: 60%;
+  max-width: 60%;
 }
 
 .c2:hover {
@@ -327,8 +323,6 @@ exports[`CircleBadge should render correctly with size 1`] = `
   align-items: center;
   height: 80px;
   width: 80px;
-  padding: calc(80px / 10);
-  box-sizing: border-box;
   border-radius: 50%;
   background-color: #CCC;
   -webkit-transition: all 0.5s;
@@ -341,8 +335,8 @@ exports[`CircleBadge should render correctly with size 1`] = `
 
 .c2 {
   fill: #FFF;
-  max-height: 70%;
-  max-width: 70%;
+  max-height: 60%;
+  max-width: 60%;
 }
 
 .c2:hover {
