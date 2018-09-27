@@ -15,10 +15,4 @@ describe('BrandName', () => {
 
     expect(tree.find(BrandName)).toMatchSnapshot()
   })
-
-  it('should render correctly with width', () => {
-    const tree = mountWithTheme(<BrandName width="300px" />)
-
-    expect(tree.find(BrandName)).toMatchSnapshot()
-  })
 })
