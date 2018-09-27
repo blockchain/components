@@ -5,13 +5,12 @@ import PropTypes from 'prop-types'
 const Wrapper = styled.svg.attrs({
   viewBox: '0 0 397.4 43.7',
 })`
-  height: ${(props) => props.height};
-  width: ${(props) => props.width};
+  height: ${(props) => props.size};
   fill: ${(props) => props.theme.brandNameColor};
 `
 
-const BrandName = (props) => (
-  <Wrapper {...props}>
+const BrandName = ({ height, ...rest }) => (
+  <Wrapper size={height} {...rest}>
     <path
       d="M151.7,29.7c-2.1,2.2-5.1,3.6-8.3,3.6c-6.3,0-11.5-5.2-11.5-11.5s5.2-11.5,11.5-11.5c2.9,0,5.6,1.1,7.6,2.9
 	c0.6,0.5,1.7,1.6,1.7,1.6l7-7.5c-4-4.5-9.8-7.3-16.3-7.3c-12,0-21.8,9.7-21.8,21.8c0,12,9.7,21.8,21.8,21.8c6.8,0,12.9-3,16.8-8
@@ -51,12 +50,10 @@ const BrandName = (props) => (
 
 BrandName.propTypes = {
   height: PropTypes.string,
-  width: PropTypes.string,
 }
 
 BrandName.defaultProps = {
-  height: 'auto',
-  width: 'auto',
+  height: '1rem',
 }
 
 export default BrandName
