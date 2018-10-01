@@ -12,7 +12,7 @@ exports[`TabMenuToggler should render correctly 1`] = `
 
 .c0 {
   position: absolute;
-  top: 10px;
+  top: 13px;
   right: 20px;
 }
 
@@ -27,21 +27,21 @@ exports[`TabMenuToggler should render correctly 1`] = `
     <FasBars
       className="c0"
       selectable={true}
-      size="1.3rem"
+      size="20px"
     >
       <styled.svg
         className="c0"
-        height="1.3rem"
+        height="20px"
         selectable={true}
         viewBox="0 0 448 512"
-        width="1.3rem"
+        width="20px"
         xmlns="http://www.w3.org/2000/svg"
       >
         <svg
           className="c0 c1"
-          height="1.3rem"
+          height="20px"
           viewBox="0 0 448 512"
-          width="1.3rem"
+          width="20px"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
