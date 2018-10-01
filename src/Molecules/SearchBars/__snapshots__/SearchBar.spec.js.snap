@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SearchBar should render correctly 1`] = `
-.c4 {
+.c3 {
   fill: #545456;
-  cursor: pointer;
+  cursor: default;
 }
 
-.c4:hover {
-  fill: #757679;
+.c3:hover {
+  fill: #545456;
 }
 
-.c2 {
+.c5 {
   display: block;
   width: 100%;
   height: 2.7rem;
@@ -32,33 +32,34 @@ exports[`SearchBar should render correctly 1`] = `
   user-select: text;
 }
 
-.c2:disabled {
+.c5:disabled {
   color: #545456;
   background: #FFF;
   cursor: not-allowed;
 }
 
-.c2::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::-moz-placeholder {
+.c5::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2:-ms-input-placeholder {
+.c5:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::placeholder {
+.c5::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -75,15 +76,16 @@ exports[`SearchBar should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  background-color: #FFF;
+  box-shadow: 0 2px 8px 1px rgba(0,0,0,0.50);
+  border-radius: 0.125rem;
 }
 
 .c1 {
-  background-color: #FFF;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c3 {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  margin-top: -10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -99,14 +101,63 @@ exports[`SearchBar should render correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 50px;
-  height: 2.7rem;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.c2 {
+  fill: #000;
+}
+
+.c2:hover {
+  fill: #000;
+}
+
+.c4 {
+  height: 3.5rem;
+  padding-left: 3rem;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  min-width: 4rem;
+  height: 3.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #000;
   background-color: #FFCA00;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
+  white-space: nowrap;
+}
+
+.c6:hover {
+  background-color: #ffd533;
+  cursor: pointer;
 }
 
 <SearchBar
+  renderSubmit={[Function]}
   width="100%"
 >
   <styled.div
@@ -116,21 +167,55 @@ exports[`SearchBar should render correctly 1`] = `
       className="c0"
       width="100%"
     >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <Styled(FasSearch)>
+            <FasSearch
+              className="c2"
+              selectable={false}
+              size="1.3rem"
+            >
+              <styled.svg
+                className="c2"
+                height="1.3rem"
+                selectable={false}
+                viewBox="0 0 512 512"
+                width="1.3rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="c2 c3"
+                  height="1.3rem"
+                  viewBox="0 0 512 512"
+                  width="1.3rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                  />
+                </svg>
+              </styled.svg>
+            </FasSearch>
+          </Styled(FasSearch)>
+        </div>
+      </styled.div>
       <Styled(Input)>
         <Input
-          className="c1"
+          className="c4"
           disabled={false}
           type="text"
           width="100%"
         >
           <styled.input
-            className="c1"
+            className="c4"
             disabled={false}
             type="text"
             width="100%"
           >
             <input
-              className="c1 c2"
+              className="c4 c5"
               disabled={false}
               type="text"
               width="100%"
@@ -140,32 +225,9 @@ exports[`SearchBar should render correctly 1`] = `
       </Styled(Input)>
       <styled.div>
         <div
-          className="c3"
+          className="c6"
         >
-          <FasSearch
-            selectable={true}
-            size="1.3rem"
-          >
-            <styled.svg
-              height="1.3rem"
-              selectable={true}
-              viewBox="0 0 512 512"
-              width="1.3rem"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <svg
-                className="c4"
-                height="1.3rem"
-                viewBox="0 0 512 512"
-                width="1.3rem"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-                />
-              </svg>
-            </styled.svg>
-          </FasSearch>
+          Go
         </div>
       </styled.div>
     </div>
@@ -174,16 +236,16 @@ exports[`SearchBar should render correctly 1`] = `
 `;
 
 exports[`SearchBar should render correctly with onChange 1`] = `
-.c4 {
+.c3 {
   fill: #545456;
-  cursor: pointer;
+  cursor: default;
 }
 
-.c4:hover {
-  fill: #757679;
+.c3:hover {
+  fill: #545456;
 }
 
-.c2 {
+.c5 {
   display: block;
   width: 100%;
   height: 2.7rem;
@@ -205,33 +267,34 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   user-select: text;
 }
 
-.c2:disabled {
+.c5:disabled {
   color: #545456;
   background: #FFF;
   cursor: not-allowed;
 }
 
-.c2::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::-moz-placeholder {
+.c5::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2:-ms-input-placeholder {
+.c5:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::placeholder {
+.c5::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -248,15 +311,16 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  background-color: #FFF;
+  box-shadow: 0 2px 8px 1px rgba(0,0,0,0.50);
+  border-radius: 0.125rem;
 }
 
 .c1 {
-  background-color: #FFF;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c3 {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  margin-top: -10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -272,15 +336,64 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 50px;
-  height: 2.7rem;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.c2 {
+  fill: #000;
+}
+
+.c2:hover {
+  fill: #000;
+}
+
+.c4 {
+  height: 3.5rem;
+  padding-left: 3rem;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  min-width: 4rem;
+  height: 3.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #000;
   background-color: #FFCA00;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
+  white-space: nowrap;
+}
+
+.c6:hover {
+  background-color: #ffd533;
+  cursor: pointer;
 }
 
 <SearchBar
   onChange={[MockFunction]}
+  renderSubmit={[Function]}
   width="100%"
 >
   <styled.div
@@ -290,25 +403,59 @@ exports[`SearchBar should render correctly with onChange 1`] = `
       className="c0"
       width="100%"
     >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <Styled(FasSearch)>
+            <FasSearch
+              className="c2"
+              selectable={false}
+              size="1.3rem"
+            >
+              <styled.svg
+                className="c2"
+                height="1.3rem"
+                selectable={false}
+                viewBox="0 0 512 512"
+                width="1.3rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="c2 c3"
+                  height="1.3rem"
+                  viewBox="0 0 512 512"
+                  width="1.3rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                  />
+                </svg>
+              </styled.svg>
+            </FasSearch>
+          </Styled(FasSearch)>
+        </div>
+      </styled.div>
       <Styled(Input)
         onChange={[MockFunction]}
       >
         <Input
-          className="c1"
+          className="c4"
           disabled={false}
           onChange={[MockFunction]}
           type="text"
           width="100%"
         >
           <styled.input
-            className="c1"
+            className="c4"
             disabled={false}
             onChange={[MockFunction]}
             type="text"
             width="100%"
           >
             <input
-              className="c1 c2"
+              className="c4 c5"
               disabled={false}
               onChange={[MockFunction]}
               type="text"
@@ -319,32 +466,9 @@ exports[`SearchBar should render correctly with onChange 1`] = `
       </Styled(Input)>
       <styled.div>
         <div
-          className="c3"
+          className="c6"
         >
-          <FasSearch
-            selectable={true}
-            size="1.3rem"
-          >
-            <styled.svg
-              height="1.3rem"
-              selectable={true}
-              viewBox="0 0 512 512"
-              width="1.3rem"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <svg
-                className="c4"
-                height="1.3rem"
-                viewBox="0 0 512 512"
-                width="1.3rem"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-                />
-              </svg>
-            </styled.svg>
-          </FasSearch>
+          Go
         </div>
       </styled.div>
     </div>
@@ -353,16 +477,16 @@ exports[`SearchBar should render correctly with onChange 1`] = `
 `;
 
 exports[`SearchBar should render correctly with onClick 1`] = `
-.c4 {
+.c3 {
   fill: #545456;
-  cursor: pointer;
+  cursor: default;
 }
 
-.c4:hover {
-  fill: #757679;
+.c3:hover {
+  fill: #545456;
 }
 
-.c2 {
+.c5 {
   display: block;
   width: 100%;
   height: 2.7rem;
@@ -384,33 +508,34 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   user-select: text;
 }
 
-.c2:disabled {
+.c5:disabled {
   color: #545456;
   background: #FFF;
   cursor: not-allowed;
 }
 
-.c2::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::-moz-placeholder {
+.c5::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2:-ms-input-placeholder {
+.c5:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::placeholder {
+.c5::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -427,15 +552,16 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  background-color: #FFF;
+  box-shadow: 0 2px 8px 1px rgba(0,0,0,0.50);
+  border-radius: 0.125rem;
 }
 
 .c1 {
-  background-color: #FFF;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c3 {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  margin-top: -10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -451,15 +577,64 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 50px;
-  height: 2.7rem;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.c2 {
+  fill: #000;
+}
+
+.c2:hover {
+  fill: #000;
+}
+
+.c4 {
+  height: 3.5rem;
+  padding-left: 3rem;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  min-width: 4rem;
+  height: 3.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #000;
   background-color: #FFCA00;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
+  white-space: nowrap;
+}
+
+.c6:hover {
+  background-color: #ffd533;
+  cursor: pointer;
 }
 
 <SearchBar
   onClick={[MockFunction]}
+  renderSubmit={[Function]}
   width="100%"
 >
   <styled.div
@@ -469,21 +644,55 @@ exports[`SearchBar should render correctly with onClick 1`] = `
       className="c0"
       width="100%"
     >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <Styled(FasSearch)>
+            <FasSearch
+              className="c2"
+              selectable={false}
+              size="1.3rem"
+            >
+              <styled.svg
+                className="c2"
+                height="1.3rem"
+                selectable={false}
+                viewBox="0 0 512 512"
+                width="1.3rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="c2 c3"
+                  height="1.3rem"
+                  viewBox="0 0 512 512"
+                  width="1.3rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                  />
+                </svg>
+              </styled.svg>
+            </FasSearch>
+          </Styled(FasSearch)>
+        </div>
+      </styled.div>
       <Styled(Input)>
         <Input
-          className="c1"
+          className="c4"
           disabled={false}
           type="text"
           width="100%"
         >
           <styled.input
-            className="c1"
+            className="c4"
             disabled={false}
             type="text"
             width="100%"
           >
             <input
-              className="c1 c2"
+              className="c4 c5"
               disabled={false}
               type="text"
               width="100%"
@@ -491,37 +700,14 @@ exports[`SearchBar should render correctly with onClick 1`] = `
           </styled.input>
         </Input>
       </Styled(Input)>
-      <styled.div>
+      <styled.div
+        onClick={[MockFunction]}
+      >
         <div
-          className="c3"
+          className="c6"
+          onClick={[MockFunction]}
         >
-          <FasSearch
-            onClick={[MockFunction]}
-            selectable={true}
-            size="1.3rem"
-          >
-            <styled.svg
-              height="1.3rem"
-              onClick={[MockFunction]}
-              selectable={true}
-              viewBox="0 0 512 512"
-              width="1.3rem"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <svg
-                className="c4"
-                height="1.3rem"
-                onClick={[MockFunction]}
-                viewBox="0 0 512 512"
-                width="1.3rem"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-                />
-              </svg>
-            </styled.svg>
-          </FasSearch>
+          Go
         </div>
       </styled.div>
     </div>
@@ -530,16 +716,16 @@ exports[`SearchBar should render correctly with onClick 1`] = `
 `;
 
 exports[`SearchBar should render correctly with value 1`] = `
-.c4 {
+.c3 {
   fill: #545456;
-  cursor: pointer;
+  cursor: default;
 }
 
-.c4:hover {
-  fill: #757679;
+.c3:hover {
+  fill: #545456;
 }
 
-.c2 {
+.c5 {
   display: block;
   width: 100%;
   height: 2.7rem;
@@ -561,33 +747,34 @@ exports[`SearchBar should render correctly with value 1`] = `
   user-select: text;
 }
 
-.c2:disabled {
+.c5:disabled {
   color: #545456;
   background: #FFF;
   cursor: not-allowed;
 }
 
-.c2::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::-moz-placeholder {
+.c5::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2:-ms-input-placeholder {
+.c5:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::placeholder {
+.c5::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -604,15 +791,16 @@ exports[`SearchBar should render correctly with value 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  background-color: #FFF;
+  box-shadow: 0 2px 8px 1px rgba(0,0,0,0.50);
+  border-radius: 0.125rem;
 }
 
 .c1 {
-  background-color: #FFF;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c3 {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  margin-top: -10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -628,15 +816,64 @@ exports[`SearchBar should render correctly with value 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 50px;
-  height: 2.7rem;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.c2 {
+  fill: #000;
+}
+
+.c2:hover {
+  fill: #000;
+}
+
+.c4 {
+  height: 3.5rem;
+  padding-left: 3rem;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  min-width: 4rem;
+  height: 3.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #000;
   background-color: #FFCA00;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
+  white-space: nowrap;
+}
+
+.c6:hover {
+  background-color: #ffd533;
+  cursor: pointer;
 }
 
 <SearchBar
   onChange={[MockFunction]}
+  renderSubmit={[Function]}
   value="My search"
   width="100%"
 >
@@ -647,12 +884,46 @@ exports[`SearchBar should render correctly with value 1`] = `
       className="c0"
       width="100%"
     >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <Styled(FasSearch)>
+            <FasSearch
+              className="c2"
+              selectable={false}
+              size="1.3rem"
+            >
+              <styled.svg
+                className="c2"
+                height="1.3rem"
+                selectable={false}
+                viewBox="0 0 512 512"
+                width="1.3rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="c2 c3"
+                  height="1.3rem"
+                  viewBox="0 0 512 512"
+                  width="1.3rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                  />
+                </svg>
+              </styled.svg>
+            </FasSearch>
+          </Styled(FasSearch)>
+        </div>
+      </styled.div>
       <Styled(Input)
         onChange={[MockFunction]}
         value="My search"
       >
         <Input
-          className="c1"
+          className="c4"
           disabled={false}
           onChange={[MockFunction]}
           type="text"
@@ -660,7 +931,7 @@ exports[`SearchBar should render correctly with value 1`] = `
           width="100%"
         >
           <styled.input
-            className="c1"
+            className="c4"
             disabled={false}
             onChange={[MockFunction]}
             type="text"
@@ -668,7 +939,7 @@ exports[`SearchBar should render correctly with value 1`] = `
             width="100%"
           >
             <input
-              className="c1 c2"
+              className="c4 c5"
               disabled={false}
               onChange={[MockFunction]}
               type="text"
@@ -680,32 +951,9 @@ exports[`SearchBar should render correctly with value 1`] = `
       </Styled(Input)>
       <styled.div>
         <div
-          className="c3"
+          className="c6"
         >
-          <FasSearch
-            selectable={true}
-            size="1.3rem"
-          >
-            <styled.svg
-              height="1.3rem"
-              selectable={true}
-              viewBox="0 0 512 512"
-              width="1.3rem"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <svg
-                className="c4"
-                height="1.3rem"
-                viewBox="0 0 512 512"
-                width="1.3rem"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-                />
-              </svg>
-            </styled.svg>
-          </FasSearch>
+          Go
         </div>
       </styled.div>
     </div>
@@ -714,16 +962,16 @@ exports[`SearchBar should render correctly with value 1`] = `
 `;
 
 exports[`SearchBar should render correctly with width 1`] = `
-.c4 {
+.c3 {
   fill: #545456;
-  cursor: pointer;
+  cursor: default;
 }
 
-.c4:hover {
-  fill: #757679;
+.c3:hover {
+  fill: #545456;
 }
 
-.c2 {
+.c5 {
   display: block;
   width: 100%;
   height: 2.7rem;
@@ -745,33 +993,34 @@ exports[`SearchBar should render correctly with width 1`] = `
   user-select: text;
 }
 
-.c2:disabled {
+.c5:disabled {
   color: #545456;
   background: #FFF;
   cursor: not-allowed;
 }
 
-.c2::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::-moz-placeholder {
+.c5::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2:-ms-input-placeholder {
+.c5:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::placeholder {
+.c5::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -788,15 +1037,16 @@ exports[`SearchBar should render correctly with width 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 200px;
+  background-color: #FFF;
+  box-shadow: 0 2px 8px 1px rgba(0,0,0,0.50);
+  border-radius: 0.125rem;
 }
 
 .c1 {
-  background-color: #FFF;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c3 {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  margin-top: -10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -812,15 +1062,64 @@ exports[`SearchBar should render correctly with width 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 50px;
-  height: 2.7rem;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.c2 {
+  fill: #000;
+}
+
+.c2:hover {
+  fill: #000;
+}
+
+.c4 {
+  height: 3.5rem;
+  padding-left: 3rem;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  min-width: 4rem;
+  height: 3.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #000;
   background-color: #FFCA00;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
+  white-space: nowrap;
+}
+
+.c6:hover {
+  background-color: #ffd533;
+  cursor: pointer;
 }
 
 <SearchBar
   onChange={[MockFunction]}
+  renderSubmit={[Function]}
   value="My search"
   width="200px"
 >
@@ -831,12 +1130,46 @@ exports[`SearchBar should render correctly with width 1`] = `
       className="c0"
       width="200px"
     >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <Styled(FasSearch)>
+            <FasSearch
+              className="c2"
+              selectable={false}
+              size="1.3rem"
+            >
+              <styled.svg
+                className="c2"
+                height="1.3rem"
+                selectable={false}
+                viewBox="0 0 512 512"
+                width="1.3rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="c2 c3"
+                  height="1.3rem"
+                  viewBox="0 0 512 512"
+                  width="1.3rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                  />
+                </svg>
+              </styled.svg>
+            </FasSearch>
+          </Styled(FasSearch)>
+        </div>
+      </styled.div>
       <Styled(Input)
         onChange={[MockFunction]}
         value="My search"
       >
         <Input
-          className="c1"
+          className="c4"
           disabled={false}
           onChange={[MockFunction]}
           type="text"
@@ -844,7 +1177,7 @@ exports[`SearchBar should render correctly with width 1`] = `
           width="100%"
         >
           <styled.input
-            className="c1"
+            className="c4"
             disabled={false}
             onChange={[MockFunction]}
             type="text"
@@ -852,7 +1185,7 @@ exports[`SearchBar should render correctly with width 1`] = `
             width="100%"
           >
             <input
-              className="c1 c2"
+              className="c4 c5"
               disabled={false}
               onChange={[MockFunction]}
               type="text"
@@ -864,32 +1197,9 @@ exports[`SearchBar should render correctly with width 1`] = `
       </Styled(Input)>
       <styled.div>
         <div
-          className="c3"
+          className="c6"
         >
-          <FasSearch
-            selectable={true}
-            size="1.3rem"
-          >
-            <styled.svg
-              height="1.3rem"
-              selectable={true}
-              viewBox="0 0 512 512"
-              width="1.3rem"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <svg
-                className="c4"
-                height="1.3rem"
-                viewBox="0 0 512 512"
-                width="1.3rem"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-                />
-              </svg>
-            </styled.svg>
-          </FasSearch>
+          Go
         </div>
       </styled.div>
     </div>

@@ -32,6 +32,7 @@ export default {
   black: '#000',
   blackAlpha75: 'rgba(0,0,0,0.75)',
   blackAlpha25: 'rgba(0,0,0,0.25)',
+  blackAlpha50: 'rgba(0,0,0,0.50)',
   blackAlpha10: 'rgba(0,0,0,0.10)',
   blackAlpha05: 'rgba(0,0,0,0.05)',
 }
