@@ -6,10 +6,10 @@ import { FasBars } from '../../Atoms/Icons'
 
 const Toggler = styled(FasBars).attrs({
   selectable: true,
-  size: '1.3rem',
+  size: '20px',
 })`
   position: absolute;
-  top: 10px;
+  top: 13px;
   right: 20px;
 
   @media (min-width: 48rem) {

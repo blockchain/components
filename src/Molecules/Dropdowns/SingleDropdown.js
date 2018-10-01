@@ -3,18 +3,16 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: ${(props) => props.width};
-  min-width: 6rem;
-  position: relative;
   border-radius: 3px;
 
   &::after {
     content: '';
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    margin-top: -5px;
-    z-index: 1;
+    position: relative;
     text-align: center;
     width: 0;
     height: 0;
@@ -26,7 +24,7 @@ const Wrapper = styled.div`
 `
 const Select = styled.select`
   position: relative;
-  width: 100%;
+  width: calc(100% - 30px);
   color: ${(props) => props.theme['dropdownColor']};
   background-color: transparent;
   appearance: none;
@@ -41,8 +39,8 @@ const Select = styled.select`
   cursor: pointer;
   outline: none;
   text-align: left;
-  padding: 0.4rem 0;
-  box-sizing: border-box;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `
 
 const SingleDropdown = ({ items, width, ...rest }) => (
