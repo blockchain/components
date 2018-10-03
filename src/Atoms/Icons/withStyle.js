@@ -42,7 +42,7 @@ export default (path, width, height, name) => {
 
   WithStyle.defaultProps = {
     selectable: false,
-    size: '2.75rem',
+    size: '44px',
   }
 
   return WithStyle

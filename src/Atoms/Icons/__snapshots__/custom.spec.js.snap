@@ -12,20 +12,20 @@ exports[`bc should render correctly 1`] = `
 
 <BcBitcoin
   selectable={false}
-  size="2.75rem"
+  size="44px"
 >
   <styled.svg
-    height="2.75rem"
+    height="44px"
     selectable={false}
     viewBox="0 0 24 24"
-    width="2.75rem"
+    width="44px"
     xmlns="http://www.w3.org/2000/svg"
   >
     <svg
       className="c0"
-      height="2.75rem"
+      height="44px"
       viewBox="0 0 24 24"
-      width="2.75rem"
+      width="44px"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -48,20 +48,20 @@ exports[`bc should render correctly with selectable 1`] = `
 
 <BcBitcoin
   selectable={true}
-  size="2.75rem"
+  size="44px"
 >
   <styled.svg
-    height="2.75rem"
+    height="44px"
     selectable={true}
     viewBox="0 0 24 24"
-    width="2.75rem"
+    width="44px"
     xmlns="http://www.w3.org/2000/svg"
   >
     <svg
       className="c0"
-      height="2.75rem"
+      height="44px"
       viewBox="0 0 24 24"
-      width="2.75rem"
+      width="44px"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

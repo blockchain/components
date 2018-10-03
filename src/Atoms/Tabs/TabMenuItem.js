@@ -37,7 +37,7 @@ const Bar = styled.div`
   bottom: -2px;
   left: 0;
   width: 100%;
-  height: 0.325rem;
+  height: 0.2rem;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   background-color: ${(props) => props.theme['tabMenuBarColor']};

@@ -27,7 +27,7 @@ exports[`TabMenuItem should render correctly 1`] = `
   bottom: -2px;
   left: 0;
   width: 100%;
-  height: 0.325rem;
+  height: 0.2rem;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
@@ -120,7 +120,7 @@ exports[`TabMenuItem should render correctly when selected 1`] = `
   bottom: -2px;
   left: 0;
   width: 100%;
-  height: 0.325rem;
+  height: 0.2rem;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;

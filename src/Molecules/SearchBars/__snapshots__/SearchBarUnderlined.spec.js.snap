@@ -142,20 +142,20 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
         >
           <FasSearch
             selectable={true}
-            size="1.3rem"
+            size="20px"
           >
             <styled.svg
-              height="1.3rem"
+              height="20px"
               selectable={true}
               viewBox="0 0 512 512"
-              width="1.3rem"
+              width="20px"
               xmlns="http://www.w3.org/2000/svg"
             >
               <svg
                 className="c4"
-                height="1.3rem"
+                height="20px"
                 viewBox="0 0 512 512"
-                width="1.3rem"
+                width="20px"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -319,20 +319,20 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
         >
           <FasSearch
             selectable={true}
-            size="1.3rem"
+            size="20px"
           >
             <styled.svg
-              height="1.3rem"
+              height="20px"
               selectable={true}
               viewBox="0 0 512 512"
-              width="1.3rem"
+              width="20px"
               xmlns="http://www.w3.org/2000/svg"
             >
               <svg
                 className="c4"
-                height="1.3rem"
+                height="20px"
                 viewBox="0 0 512 512"
-                width="1.3rem"
+                width="20px"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -492,22 +492,22 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
           <FasSearch
             onClick={[MockFunction]}
             selectable={true}
-            size="1.3rem"
+            size="20px"
           >
             <styled.svg
-              height="1.3rem"
+              height="20px"
               onClick={[MockFunction]}
               selectable={true}
               viewBox="0 0 512 512"
-              width="1.3rem"
+              width="20px"
               xmlns="http://www.w3.org/2000/svg"
             >
               <svg
                 className="c4"
-                height="1.3rem"
+                height="20px"
                 onClick={[MockFunction]}
                 viewBox="0 0 512 512"
-                width="1.3rem"
+                width="20px"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -676,20 +676,20 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
         >
           <FasSearch
             selectable={true}
-            size="1.3rem"
+            size="20px"
           >
             <styled.svg
-              height="1.3rem"
+              height="20px"
               selectable={true}
               viewBox="0 0 512 512"
-              width="1.3rem"
+              width="20px"
               xmlns="http://www.w3.org/2000/svg"
             >
               <svg
                 className="c4"
-                height="1.3rem"
+                height="20px"
                 viewBox="0 0 512 512"
-                width="1.3rem"
+                width="20px"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -858,20 +858,20 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
         >
           <FasSearch
             selectable={true}
-            size="1.3rem"
+            size="20px"
           >
             <styled.svg
-              height="1.3rem"
+              height="20px"
               selectable={true}
               viewBox="0 0 512 512"
-              width="1.3rem"
+              width="20px"
               xmlns="http://www.w3.org/2000/svg"
             >
               <svg
                 className="c4"
-                height="1.3rem"
+                height="20px"
                 viewBox="0 0 512 512"
-                width="1.3rem"
+                width="20px"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
