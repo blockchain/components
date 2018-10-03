@@ -27,6 +27,6 @@ rimraf.sync('esm')
 
 const baseCmd = `${babel} src/ --config-file ${babelrc} -D --ignore "${ignoreGlobs}"`
 
-exec(`${baseCmd} -d lib/ --plugins @babel/plugin-transform-modules-commonjs`)
+exec(`${baseCmd} --env-name cjs -d lib/`)
 
-exec(`${baseCmd} -d esm/`)
+exec(`${baseCmd} --env-name esm -d esm/`)
