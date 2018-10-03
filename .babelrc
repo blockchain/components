@@ -21,10 +21,21 @@
         "@babel/env",
         "@babel/react"
       ]
+    },
+    "cjs": {
+      "plugins": [
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-proposal-export-namespace-from",
+        "@babel/plugin-transform-modules-commonjs",
+        "@babel/plugin-transform-runtime"
+      ]
+    },
+    "esm": {
+      "plugins": [
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-proposal-export-namespace-from",
+        ["@babel/plugin-transform-runtime", { useESModules: true }]
+      ]
     }
-  },
-  "plugins": [
-    "@babel/plugin-proposal-class-properties",
-    "@babel/plugin-proposal-export-namespace-from"
-  ]
+  }
 }
