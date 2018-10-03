@@ -40,7 +40,7 @@ const SearchBarUnderlined = ({
   <Wrapper width={width}>
     <SearchInput onChange={onChange} value={value} {...rest} />
     <IconContainer>
-      <FasSearch onClick={onClick} selectable size="1.3rem" />
+      <FasSearch onClick={onClick} selectable size="20px" />
     </IconContainer>
   </Wrapper>
 )

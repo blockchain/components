@@ -175,21 +175,21 @@ exports[`SearchBar should render correctly 1`] = `
             <FasSearch
               className="c2"
               selectable={false}
-              size="1.3rem"
+              size="20px"
             >
               <styled.svg
                 className="c2"
-                height="1.3rem"
+                height="20px"
                 selectable={false}
                 viewBox="0 0 512 512"
-                width="1.3rem"
+                width="20px"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <svg
                   className="c2 c3"
-                  height="1.3rem"
+                  height="20px"
                   viewBox="0 0 512 512"
-                  width="1.3rem"
+                  width="20px"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -411,21 +411,21 @@ exports[`SearchBar should render correctly with onChange 1`] = `
             <FasSearch
               className="c2"
               selectable={false}
-              size="1.3rem"
+              size="20px"
             >
               <styled.svg
                 className="c2"
-                height="1.3rem"
+                height="20px"
                 selectable={false}
                 viewBox="0 0 512 512"
-                width="1.3rem"
+                width="20px"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <svg
                   className="c2 c3"
-                  height="1.3rem"
+                  height="20px"
                   viewBox="0 0 512 512"
-                  width="1.3rem"
+                  width="20px"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -652,21 +652,21 @@ exports[`SearchBar should render correctly with onClick 1`] = `
             <FasSearch
               className="c2"
               selectable={false}
-              size="1.3rem"
+              size="20px"
             >
               <styled.svg
                 className="c2"
-                height="1.3rem"
+                height="20px"
                 selectable={false}
                 viewBox="0 0 512 512"
-                width="1.3rem"
+                width="20px"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <svg
                   className="c2 c3"
-                  height="1.3rem"
+                  height="20px"
                   viewBox="0 0 512 512"
-                  width="1.3rem"
+                  width="20px"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -892,21 +892,21 @@ exports[`SearchBar should render correctly with value 1`] = `
             <FasSearch
               className="c2"
               selectable={false}
-              size="1.3rem"
+              size="20px"
             >
               <styled.svg
                 className="c2"
-                height="1.3rem"
+                height="20px"
                 selectable={false}
                 viewBox="0 0 512 512"
-                width="1.3rem"
+                width="20px"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <svg
                   className="c2 c3"
-                  height="1.3rem"
+                  height="20px"
                   viewBox="0 0 512 512"
-                  width="1.3rem"
+                  width="20px"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -1138,21 +1138,21 @@ exports[`SearchBar should render correctly with width 1`] = `
             <FasSearch
               className="c2"
               selectable={false}
-              size="1.3rem"
+              size="20px"
             >
               <styled.svg
                 className="c2"
-                height="1.3rem"
+                height="20px"
                 selectable={false}
                 viewBox="0 0 512 512"
-                width="1.3rem"
+                width="20px"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <svg
                   className="c2 c3"
-                  height="1.3rem"
+                  height="20px"
                   viewBox="0 0 512 512"
-                  width="1.3rem"
+                  width="20px"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path

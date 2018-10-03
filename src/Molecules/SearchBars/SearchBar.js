@@ -30,7 +30,7 @@ const IconContainer = styled.div`
 `
 const SearchIcon = styled(FasSearch).attrs({
   selectable: false,
-  size: '1.3rem',
+  size: '20px',
 })`
   fill: ${(props) => props.theme['searchBarIconColor']};
 
