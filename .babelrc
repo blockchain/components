@@ -27,14 +27,26 @@
         "@babel/plugin-proposal-class-properties",
         "@babel/plugin-proposal-export-namespace-from",
         "@babel/plugin-transform-modules-commonjs",
-        "@babel/plugin-transform-runtime"
+        "@babel/plugin-transform-runtime",
+        ["styled-components", {
+          "displayName": false,
+          "minify": true,
+          "pure": true,
+          "ssr": true
+        }],
       ]
     },
     "esm": {
       "plugins": [
         "@babel/plugin-proposal-class-properties",
         "@babel/plugin-proposal-export-namespace-from",
-        ["@babel/plugin-transform-runtime", { useESModules: true }]
+        ["@babel/plugin-transform-runtime", { useESModules: true }],
+        ["styled-components", {
+          "displayName": false,
+          "minify": true,
+          "pure": true,
+          "ssr": true
+        }],
       ]
     }
   }
