@@ -21,7 +21,7 @@ exports[`NavbarDropdownContent should render correctly 1`] = `
   margin-bottom: 0 !important;
 }
 
-@media (min-width:768px) {
+@media (min-width:48rem) {
   .c0 {
     position: absolute;
     width: auto;
