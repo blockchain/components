@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   width: 100%;
   z-index: 10;
 
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
     position: absolute;
     width: auto;
     margin: 0.25rem 0;

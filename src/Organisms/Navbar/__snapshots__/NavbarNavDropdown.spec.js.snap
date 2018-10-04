@@ -26,11 +26,11 @@ exports[`NavbarNavDropdown should render correctly 1`] = `
     border-top: none;
   }
 
-  .c0 :last-child {
+  .c0 > :last-child {
     display: none;
   }
 
-  .c0:hover :last-child {
+  .c0:hover > :last-child {
     display: block;
   }
 }
