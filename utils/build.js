@@ -17,16 +17,27 @@ const exec = (command) =>
   })
 
 const ignoreGlobs = [
-  '**/*.spec.js',
-  '**/*.stories.js',
-  '**/__snapshots__',
+  '"**/*.spec.js"',
+  '"**/*.stories.js"',
+  '"**/__snapshots__"',
 ].join(',')
 
 rimraf.sync('lib')
 rimraf.sync('esm')
 
-const baseCmd = `${babel} src/ --config-file ${babelrc} -D --ignore "${ignoreGlobs}"`
+const baseCmd = `${babel} src --env-name`
 
-exec(`${baseCmd} --env-name cjs -d lib/`)
+exec(`${baseCmd} cjs --out-dir lib  --ignore ${ignoreGlobs}`)
+exec(`${baseCmd} esm --out-dir esm  --ignore ${ignoreGlobs}`)
 
-exec(`${baseCmd} --env-name esm -d esm/`)
+rimraf.sync('lib/**/*.js', {
+  glob: {
+    ignore: ['!__snapshots__', '!**/*.spec.js', '!**/*.stories.js'],
+  },
+})
+
+rimraf.sync('esm/**/*.js', {
+  glob: {
+    ignore: ['!__snapshots__', '!**/*.spec.js', '!**/*.stories.js'],
+  },
+})

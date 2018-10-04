@@ -1,5 +1,6 @@
 # Ignore unused code
 .changelogrc
+.babelrc
 .eslintignore
 .eslintrc
 .huskyrc
