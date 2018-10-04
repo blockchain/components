@@ -5,6 +5,7 @@ export default {
   biscay: '#153A62',
   blueWood: '#27324B',
   orient: '#004A7C',
+  ocean: '#0068af',
   azure: '#3558A8',
   cerulean: '#10ADE4',
   ceruleanAlpha10: 'rgba(16,173,228,0.1)',
@@ -20,6 +21,7 @@ export default {
   gray7: '#040d25',
   // Other
   gold: '#FFCA00',
+  royal: '#ffd533',
   green: '#47B881',
   red: '#F36331',
   yellow: '#F7C653',
