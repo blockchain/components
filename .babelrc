@@ -6,9 +6,11 @@
         "modules": false,
         "targets": {
           "browsers": [
+            "ie >= 11",
             "> 1%",
-            "last 2 versions",
-            "ie >= 11"
+            "last 3 Chrome versions",
+            "last 2 Edge versions",
+            "last 2 Firefox versions"
           ]
         }
       }
@@ -28,25 +30,31 @@
         "@babel/plugin-proposal-export-namespace-from",
         "@babel/plugin-transform-modules-commonjs",
         "@babel/plugin-transform-runtime",
+        ["transform-react-remove-prop-types", {
+          "mode": "wrap"
+        }],
         ["styled-components", {
           "displayName": false,
           "minify": true,
           "pure": true,
           "ssr": true
-        }],
+        }]
       ]
     },
     "esm": {
       "plugins": [
         "@babel/plugin-proposal-class-properties",
         "@babel/plugin-proposal-export-namespace-from",
-        ["@babel/plugin-transform-runtime", { useESModules: true }],
+        ["@babel/plugin-transform-runtime", { "useESModules": true }],
+        ["transform-react-remove-prop-types", {
+          "mode": "wrap"
+        }],
         ["styled-components", {
           "displayName": false,
           "minify": true,
           "pure": true,
           "ssr": true
-        }],
+        }]
       ]
     }
   }
