@@ -1,6 +1,5 @@
 /* eslint-disable sort-keys */
 import palette from './palette'
-import { lighten } from 'polished'
 
 export default {
   palette,
@@ -9,7 +8,7 @@ export default {
   buttonBackgroundColor: palette.orient,
   buttonBorderRadius: '0.125rem',
   buttonColor: palette.white,
-  buttonHoverColor: lighten(0.1, palette.orient),
+  buttonHoverColor: palette.ocean,
   cartridgeBackgroundColor: palette.cerulean,
   cartridgeColor: palette.white,
   circleBadgeColor: palette.white,
@@ -53,7 +52,7 @@ export default {
   searchBarBackgroundColor: palette.white,
   searchBarIconColor: palette.black,
   searchBarSubmitColor: palette.black,
-  searchBarSubmitHoverBackgroundColor: lighten(0.1, palette.gold),
+  searchBarSubmitHoverBackgroundColor: palette.royal,
   searchBarSubmitBackgroundColor: palette.gold,
   searchBarUnderlinedBackgroundColor: palette.transparent,
   searchBarUnderlinedBorderColor: palette.gray2,
