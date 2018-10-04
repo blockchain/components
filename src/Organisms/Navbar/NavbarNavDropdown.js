@@ -18,12 +18,12 @@ const Wrapper = styled.li`
     padding: 0.75rem 1rem;
     border-top: none;
 
-    & :last-child {
+    & > :last-child {
       display: none;
     }
 
     &:hover {
-      & :last-child {
+      & > :last-child {
         display: block;
       }
     }
