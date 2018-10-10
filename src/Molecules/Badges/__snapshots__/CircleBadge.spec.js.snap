@@ -86,6 +86,7 @@ exports[`CircleBadge should render correctly 1`] = `
       <styled.a
         capitalize={false}
         className="c0"
+        data-e2e="defaultLink"
         italic={false}
         opacity={1}
         size="2.625rem"
@@ -94,6 +95,7 @@ exports[`CircleBadge should render correctly 1`] = `
       >
         <a
           className="c0 c1"
+          data-e2e="defaultLink"
           opacity={1}
           size="2.625rem"
         >
@@ -221,6 +223,7 @@ exports[`CircleBadge should render correctly with name facebook 1`] = `
       <styled.a
         capitalize={false}
         className="c0"
+        data-e2e="defaultLink"
         italic={false}
         opacity={1}
         size="2.625rem"
@@ -229,6 +232,7 @@ exports[`CircleBadge should render correctly with name facebook 1`] = `
       >
         <a
           className="c0 c1"
+          data-e2e="defaultLink"
           opacity={1}
           size="2.625rem"
         >
@@ -356,6 +360,7 @@ exports[`CircleBadge should render correctly with name linkedin 1`] = `
       <styled.a
         capitalize={false}
         className="c0"
+        data-e2e="defaultLink"
         italic={false}
         opacity={1}
         size="2.625rem"
@@ -364,6 +369,7 @@ exports[`CircleBadge should render correctly with name linkedin 1`] = `
       >
         <a
           className="c0 c1"
+          data-e2e="defaultLink"
           opacity={1}
           size="2.625rem"
         >
@@ -491,6 +497,7 @@ exports[`CircleBadge should render correctly with name twitter 1`] = `
       <styled.a
         capitalize={false}
         className="c0"
+        data-e2e="defaultLink"
         italic={false}
         opacity={1}
         size="2.625rem"
@@ -499,6 +506,7 @@ exports[`CircleBadge should render correctly with name twitter 1`] = `
       >
         <a
           className="c0 c1"
+          data-e2e="defaultLink"
           opacity={1}
           size="2.625rem"
         >
@@ -626,6 +634,7 @@ exports[`CircleBadge should render correctly with size 1`] = `
       <styled.a
         capitalize={false}
         className="c0"
+        data-e2e="defaultLink"
         italic={false}
         opacity={1}
         size="80px"
@@ -634,6 +643,7 @@ exports[`CircleBadge should render correctly with size 1`] = `
       >
         <a
           className="c0 c1"
+          data-e2e="defaultLink"
           opacity={1}
           size="80px"
         >

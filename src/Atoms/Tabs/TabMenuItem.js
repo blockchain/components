@@ -44,8 +44,12 @@ const Bar = styled.div`
   opacity: ${(props) => (props.selected ? '1' : '0')};
 `
 
-const TabMenuItem = ({ children, className, selected, ...rest }) => (
-  <Wrapper className={selected ? className : `${className} disabled`} {...rest}>
+const TabMenuItem = ({ children, className, e2e, selected, ...rest }) => (
+  <Wrapper
+    className={selected ? className : `${className} disabled`}
+    data-e2e={e2e || 'defaultTabMenuItem'}
+    {...rest}
+  >
     {children}
     <Bar selected={selected} />
   </Wrapper>
@@ -54,6 +58,7 @@ const TabMenuItem = ({ children, className, selected, ...rest }) => (
 TabMenuItem.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  e2e: PropTypes.string.isRequired,
   selected: PropTypes.bool,
 }
 

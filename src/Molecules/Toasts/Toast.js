@@ -66,8 +66,8 @@ const IndicatorDanger = styled(IndicatorWarning)`
   }
 `
 
-const Toast = ({ description, onClose, title, type, ...rest }) => (
-  <Wrapper {...rest}>
+const Toast = ({ description, e2e, onClose, title, type, ...rest }) => (
+  <Wrapper data-e2e={e2e || 'defaultToast'} {...rest}>
     {type === 'success' && <IndicatorSuccess />}
     {type === 'warning' && <IndicatorWarning />}
     {type === 'danger' && <IndicatorDanger />}
@@ -83,6 +83,7 @@ const Toast = ({ description, onClose, title, type, ...rest }) => (
 
 Toast.propTypes = {
   description: PropTypes.string,
+  e2e: PropTypes.string.isRequired,
   onClose: PropTypes.func,
   title: PropTypes.string.isRequired,
   type: PropTypes.oneOf(['default', 'danger', 'success', 'warning']),

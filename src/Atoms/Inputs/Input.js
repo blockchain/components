@@ -35,10 +35,13 @@ const Wrapper = styled.input.attrs({
   }
 `
 
-const Input = ({ input, ...rest }) => <Wrapper {...input} {...rest} />
+const Input = ({ e2e, input, ...rest }) => (
+  <Wrapper data-e2e={e2e || 'defaultInput'} {...input} {...rest} />
+)
 
 Input.propTypes = {
   disabled: PropTypes.bool,
+  e2e: PropTypes.string.isRequired,
   input: PropTypes.object,
   name: PropTypes.string,
   type: PropTypes.oneOf([

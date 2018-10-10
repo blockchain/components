@@ -54,9 +54,12 @@ exports[`Toast should render correctly 1`] = `
   title="Hey! This is a default toast."
   type="default"
 >
-  <styled.div>
+  <styled.div
+    data-e2e="defaultToast"
+  >
     <div
       className="c0"
+      data-e2e="defaultToast"
     >
       <styled.div>
         <div
@@ -169,9 +172,12 @@ exports[`Toast should render correctly with description 1`] = `
   title="This is a default toast."
   type="default"
 >
-  <styled.div>
+  <styled.div
+    data-e2e="defaultToast"
+  >
     <div
       className="c0"
+      data-e2e="defaultToast"
     >
       <styled.div>
         <div
@@ -317,9 +323,12 @@ exports[`Toast should render correctly with type=danger 1`] = `
   title="This is a default toast."
   type="danger"
 >
-  <styled.div>
+  <styled.div
+    data-e2e="defaultToast"
+  >
     <div
       className="c0"
+      data-e2e="defaultToast"
     >
       <Styled(Styled(FasExclamationCircle))>
         <Styled(FasExclamationCircle)
@@ -489,9 +498,12 @@ exports[`Toast should render correctly with type=success 1`] = `
   title="This is a default toast."
   type="success"
 >
-  <styled.div>
+  <styled.div
+    data-e2e="defaultToast"
+  >
     <div
       className="c0"
+      data-e2e="defaultToast"
     >
       <Styled(FasCheckCircle)>
         <FasCheckCircle
@@ -657,9 +669,12 @@ exports[`Toast should render correctly with type=warning 1`] = `
   title="This is a default toast."
   type="warning"
 >
-  <styled.div>
+  <styled.div
+    data-e2e="defaultToast"
+  >
     <div
       className="c0"
+      data-e2e="defaultToast"
     >
       <Styled(FasExclamationCircle)>
         <FasExclamationCircle

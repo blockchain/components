@@ -73,6 +73,7 @@ const GoLabel = () => <React.Fragment>Go</React.Fragment>
 
 const SearchBar = ({
   children,
+  e2e,
   renderSubmit,
   width,
   onChange,
@@ -83,13 +84,23 @@ const SearchBar = ({
     <IconContainer>
       <SearchIcon />
     </IconContainer>
-    <SearchInput onChange={onChange} {...rest} />
-    <GoContainer onClick={onClick}>{renderSubmit()}</GoContainer>
+    <SearchInput
+      e2e={`${e2e || 'defaultSearchBar'}.Input`}
+      onChange={onChange}
+      {...rest}
+    />
+    <GoContainer
+      data-e2e={`${e2e || 'defaultSearchBar'}.Button`}
+      onClick={onClick}
+    >
+      {renderSubmit()}
+    </GoContainer>
   </Wrapper>
 )
 
 SearchBar.propTypes = {
   children: PropTypes.node,
+  e2e: PropTypes.string.isRequired,
   onChange: PropTypes.func,
   onClick: PropTypes.func,
   renderSubmit: PropTypes.func,

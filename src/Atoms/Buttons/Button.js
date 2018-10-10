@@ -34,14 +34,17 @@ const Wrapper = styled.button.attrs({
     transform: ${(props) => (props.bounced ? 'scale(0.95)' : 'none')};
   }
 `
-const Button = ({ children, ...rest }) => (
-  <Wrapper {...rest}>{children}</Wrapper>
+const Button = ({ children, e2e, ...rest }) => (
+  <Wrapper data-e2e={e2e || 'defaultButton'} {...rest}>
+    {children}
+  </Wrapper>
 )
 
 Button.propTypes = {
   bounced: PropTypes.bool,
   children: PropTypes.node,
   disabled: PropTypes.bool,
+  e2e: PropTypes.string.isRequired,
   type: PropTypes.oneOf(['button', 'reset', 'submit']),
 }
 

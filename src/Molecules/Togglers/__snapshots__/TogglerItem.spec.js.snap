@@ -28,20 +28,22 @@ exports[`TogglerItem should render correctly 1`] = `
   text-transform: uppercase;
 }
 
-<Toggler
+<TogglerItem
   selected={false}
 >
   <styled.div
+    data-e2e="defaultTogglerItem"
     selected={false}
   >
     <div
       className="c0"
+      data-e2e="defaultTogglerItem"
       selected={false}
     >
       TogglerItem
     </div>
   </styled.div>
-</Toggler>
+</TogglerItem>
 `;
 
 exports[`TogglerItem should render correctly with selected 1`] = `
@@ -72,18 +74,20 @@ exports[`TogglerItem should render correctly with selected 1`] = `
   text-transform: uppercase;
 }
 
-<Toggler
+<TogglerItem
   selected={true}
 >
   <styled.div
+    data-e2e="defaultTogglerItem"
     selected={true}
   >
     <div
       className="c0"
+      data-e2e="defaultTogglerItem"
       selected={true}
     >
       TogglerItem
     </div>
   </styled.div>
-</Toggler>
+</TogglerItem>
 `;

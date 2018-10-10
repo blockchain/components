@@ -31,6 +31,7 @@ const IconContainer = styled.div`
 
 const SearchBarUnderlined = ({
   children,
+  e2e,
   width,
   onChange,
   onClick,
@@ -38,15 +39,26 @@ const SearchBarUnderlined = ({
   ...rest
 }) => (
   <Wrapper width={width}>
-    <SearchInput onChange={onChange} value={value} {...rest} />
+    <SearchInput
+      e2e={`${e2e || 'defaultSearchBarUnderlined'}.Input`}
+      onChange={onChange}
+      value={value}
+      {...rest}
+    />
     <IconContainer>
-      <FasSearch onClick={onClick} selectable size="20px" />
+      <FasSearch
+        data-e2e={`${e2e || 'defaultSearchBarUnderlined'}.Button`}
+        onClick={onClick}
+        selectable
+        size="20px"
+      />
     </IconContainer>
   </Wrapper>
 )
 
 SearchBarUnderlined.propTypes = {
   children: PropTypes.node,
+  e2e: PropTypes.string.isRequired,
   onChange: PropTypes.func,
   onClick: PropTypes.func,
   value: PropTypes.any,

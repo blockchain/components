@@ -75,9 +75,11 @@ exports[`TabMenuItem should render correctly 1`] = `
 >
   <styled.div
     className="undefined disabled"
+    data-e2e="defaultTabMenuItem"
   >
     <div
       className="undefined disabled c0"
+      data-e2e="defaultTabMenuItem"
     >
       MyTabMenuItem
       <styled.div
@@ -166,9 +168,12 @@ exports[`TabMenuItem should render correctly when selected 1`] = `
 <TabMenuItem
   selected={true}
 >
-  <styled.div>
+  <styled.div
+    data-e2e="defaultTabMenuItem"
+  >
     <div
       className="c0"
+      data-e2e="defaultTabMenuItem"
     >
       MyTabMenuItem
       <styled.div

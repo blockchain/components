@@ -24,17 +24,20 @@ const Wrapper = styled.div`
   text-transform: uppercase;
 `
 
-const Toggler = ({ children, ...rest }) => (
-  <Wrapper {...rest}>{children}</Wrapper>
+const TogglerItem = ({ children, e2e, ...rest }) => (
+  <Wrapper data-e2e={e2e || 'defaultTogglerItem'} {...rest}>
+    {children}
+  </Wrapper>
 )
 
-Toggler.propTypes = {
+TogglerItem.propTypes = {
   children: PropTypes.node,
+  e2e: PropTypes.string.isRequired,
   selected: PropTypes.bool,
 }
 
-Toggler.defaultProps = {
+TogglerItem.defaultProps = {
   selected: false,
 }
 
-export default Toggler
+export default TogglerItem

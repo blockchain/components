@@ -201,21 +201,26 @@ exports[`SearchBar should render correctly 1`] = `
           </Styled(FasSearch)>
         </div>
       </styled.div>
-      <Styled(Input)>
+      <Styled(Input)
+        e2e="defaultSearchBar.Input"
+      >
         <Input
           className="c4"
           disabled={false}
+          e2e="defaultSearchBar.Input"
           type="text"
           width="100%"
         >
           <styled.input
             className="c4"
+            data-e2e="defaultSearchBar.Input"
             disabled={false}
             type="text"
             width="100%"
           >
             <input
               className="c4 c5"
+              data-e2e="defaultSearchBar.Input"
               disabled={false}
               type="text"
               width="100%"
@@ -223,9 +228,12 @@ exports[`SearchBar should render correctly 1`] = `
           </styled.input>
         </Input>
       </Styled(Input)>
-      <styled.div>
+      <styled.div
+        data-e2e="defaultSearchBar.Button"
+      >
         <div
           className="c6"
+          data-e2e="defaultSearchBar.Button"
         >
           Go
         </div>
@@ -438,17 +446,20 @@ exports[`SearchBar should render correctly with onChange 1`] = `
         </div>
       </styled.div>
       <Styled(Input)
+        e2e="defaultSearchBar.Input"
         onChange={[MockFunction]}
       >
         <Input
           className="c4"
           disabled={false}
+          e2e="defaultSearchBar.Input"
           onChange={[MockFunction]}
           type="text"
           width="100%"
         >
           <styled.input
             className="c4"
+            data-e2e="defaultSearchBar.Input"
             disabled={false}
             onChange={[MockFunction]}
             type="text"
@@ -456,6 +467,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
           >
             <input
               className="c4 c5"
+              data-e2e="defaultSearchBar.Input"
               disabled={false}
               onChange={[MockFunction]}
               type="text"
@@ -464,9 +476,12 @@ exports[`SearchBar should render correctly with onChange 1`] = `
           </styled.input>
         </Input>
       </Styled(Input)>
-      <styled.div>
+      <styled.div
+        data-e2e="defaultSearchBar.Button"
+      >
         <div
           className="c6"
+          data-e2e="defaultSearchBar.Button"
         >
           Go
         </div>
@@ -678,21 +693,26 @@ exports[`SearchBar should render correctly with onClick 1`] = `
           </Styled(FasSearch)>
         </div>
       </styled.div>
-      <Styled(Input)>
+      <Styled(Input)
+        e2e="defaultSearchBar.Input"
+      >
         <Input
           className="c4"
           disabled={false}
+          e2e="defaultSearchBar.Input"
           type="text"
           width="100%"
         >
           <styled.input
             className="c4"
+            data-e2e="defaultSearchBar.Input"
             disabled={false}
             type="text"
             width="100%"
           >
             <input
               className="c4 c5"
+              data-e2e="defaultSearchBar.Input"
               disabled={false}
               type="text"
               width="100%"
@@ -701,10 +721,12 @@ exports[`SearchBar should render correctly with onClick 1`] = `
         </Input>
       </Styled(Input)>
       <styled.div
+        data-e2e="defaultSearchBar.Button"
         onClick={[MockFunction]}
       >
         <div
           className="c6"
+          data-e2e="defaultSearchBar.Button"
           onClick={[MockFunction]}
         >
           Go
@@ -919,12 +941,14 @@ exports[`SearchBar should render correctly with value 1`] = `
         </div>
       </styled.div>
       <Styled(Input)
+        e2e="defaultSearchBar.Input"
         onChange={[MockFunction]}
         value="My search"
       >
         <Input
           className="c4"
           disabled={false}
+          e2e="defaultSearchBar.Input"
           onChange={[MockFunction]}
           type="text"
           value="My search"
@@ -932,6 +956,7 @@ exports[`SearchBar should render correctly with value 1`] = `
         >
           <styled.input
             className="c4"
+            data-e2e="defaultSearchBar.Input"
             disabled={false}
             onChange={[MockFunction]}
             type="text"
@@ -940,6 +965,7 @@ exports[`SearchBar should render correctly with value 1`] = `
           >
             <input
               className="c4 c5"
+              data-e2e="defaultSearchBar.Input"
               disabled={false}
               onChange={[MockFunction]}
               type="text"
@@ -949,9 +975,12 @@ exports[`SearchBar should render correctly with value 1`] = `
           </styled.input>
         </Input>
       </Styled(Input)>
-      <styled.div>
+      <styled.div
+        data-e2e="defaultSearchBar.Button"
+      >
         <div
           className="c6"
+          data-e2e="defaultSearchBar.Button"
         >
           Go
         </div>
@@ -1165,12 +1194,14 @@ exports[`SearchBar should render correctly with width 1`] = `
         </div>
       </styled.div>
       <Styled(Input)
+        e2e="defaultSearchBar.Input"
         onChange={[MockFunction]}
         value="My search"
       >
         <Input
           className="c4"
           disabled={false}
+          e2e="defaultSearchBar.Input"
           onChange={[MockFunction]}
           type="text"
           value="My search"
@@ -1178,6 +1209,7 @@ exports[`SearchBar should render correctly with width 1`] = `
         >
           <styled.input
             className="c4"
+            data-e2e="defaultSearchBar.Input"
             disabled={false}
             onChange={[MockFunction]}
             type="text"
@@ -1186,6 +1218,7 @@ exports[`SearchBar should render correctly with width 1`] = `
           >
             <input
               className="c4 c5"
+              data-e2e="defaultSearchBar.Input"
               disabled={false}
               onChange={[MockFunction]}
               type="text"
@@ -1195,9 +1228,12 @@ exports[`SearchBar should render correctly with width 1`] = `
           </styled.input>
         </Input>
       </Styled(Input)>
-      <styled.div>
+      <styled.div
+        data-e2e="defaultSearchBar.Button"
+      >
         <div
           className="c6"
+          data-e2e="defaultSearchBar.Button"
         >
           Go
         </div>

@@ -38,6 +38,7 @@ exports[`FooterElement should render correctly 1`] = `
       <styled.a
         capitalize={false}
         className="c0"
+        data-e2e="defaultLink"
         italic={false}
         opacity={1}
         size="1rem"
@@ -46,6 +47,7 @@ exports[`FooterElement should render correctly 1`] = `
       >
         <a
           className="c0 c1"
+          data-e2e="defaultLink"
           opacity={1}
           size="1rem"
         >

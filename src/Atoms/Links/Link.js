@@ -20,11 +20,16 @@ const Wrapper = styled.a`
   }
 `
 
-const Link = ({ children, ...rest }) => <Wrapper {...rest}>{children}</Wrapper>
+const Link = ({ children, e2e, ...rest }) => (
+  <Wrapper data-e2e={e2e || 'defaultLink'} {...rest}>
+    {children}
+  </Wrapper>
+)
 
 Link.propTypes = {
   capitalize: PropTypes.bool,
   children: PropTypes.node,
+  e2e: PropTypes.string.isRequired,
   italic: PropTypes.bool,
   opacity: PropTypes.number,
   size: PropTypes.string,

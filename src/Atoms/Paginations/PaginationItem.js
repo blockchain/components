@@ -33,14 +33,19 @@ const Wrapper = styled.a`
   }
 `
 
-const PaginationItem = ({ children, selected, ...rest }) => (
-  <Wrapper selected={selected} {...rest}>
+const PaginationItem = ({ children, e2e, selected, ...rest }) => (
+  <Wrapper
+    data-e2e={e2e || 'defaultPaginationItem'}
+    selected={selected}
+    {...rest}
+  >
     {children}
   </Wrapper>
 )
 
 PaginationItem.propTypes = {
   children: PropTypes.node,
+  e2e: PropTypes.string.isRequired,
   selected: PropTypes.bool,
 }
 
