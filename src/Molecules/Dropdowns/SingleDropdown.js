@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,7 +13,10 @@ const Wrapper = styled.div`
 
   &::after {
     content: '';
-    position: relative;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -4px;
     text-align: center;
     width: 0;
     height: 0;
@@ -24,7 +28,8 @@ const Wrapper = styled.div`
 `
 const Select = styled.select`
   position: relative;
-  width: calc(100% - 30px);
+  width: 100%;
+  padding-right: 20px;
   color: ${(props) => props.theme['dropdownColor']};
   background-color: transparent;
   appearance: none;

@@ -55,8 +55,8 @@ const GoContainer = styled.div`
   padding: 1rem;
   box-sizing: border-box;
   font-family: ${(props) => props.theme['fontPrimary']};
-  font-size: 1.75rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: ${(props) => props.theme['searchBarSubmitColor']};
   background-color: ${(props) => props.theme['searchBarSubmitBackgroundColor']};
   border-top-right-radius: 0.125rem;

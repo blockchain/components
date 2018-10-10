@@ -2,6 +2,7 @@
 
 exports[`SingleDropdown should render correctly 1`] = `
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -23,7 +24,10 @@ exports[`SingleDropdown should render correctly 1`] = `
 
 .c0::after {
   content: '';
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -4px;
   text-align: center;
   width: 0;
   height: 0;
@@ -35,7 +39,8 @@ exports[`SingleDropdown should render correctly 1`] = `
 
 .c1 {
   position: relative;
-  width: calc(100% - 30px);
+  width: 100%;
+  padding-right: 20px;
   color: #545456;
   background-color: transparent;
   -webkit-appearance: none;
@@ -187,6 +192,7 @@ exports[`SingleDropdown should render correctly 1`] = `
 
 exports[`SingleDropdown should render correctly with capitalize 1`] = `
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -208,7 +214,10 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
 
 .c0::after {
   content: '';
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -4px;
   text-align: center;
   width: 0;
   height: 0;
@@ -220,7 +229,8 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
 
 .c1 {
   position: relative;
-  width: calc(100% - 30px);
+  width: 100%;
+  padding-right: 20px;
   color: #545456;
   background-color: transparent;
   -webkit-appearance: none;
@@ -372,6 +382,7 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
 
 exports[`SingleDropdown should render correctly with italic 1`] = `
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -393,7 +404,10 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
 
 .c0::after {
   content: '';
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -4px;
   text-align: center;
   width: 0;
   height: 0;
@@ -405,7 +419,8 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
 
 .c1 {
   position: relative;
-  width: calc(100% - 30px);
+  width: 100%;
+  padding-right: 20px;
   color: #545456;
   background-color: transparent;
   -webkit-appearance: none;
@@ -557,6 +572,7 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
 
 exports[`SingleDropdown should render correctly with size 1`] = `
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -578,7 +594,10 @@ exports[`SingleDropdown should render correctly with size 1`] = `
 
 .c0::after {
   content: '';
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -4px;
   text-align: center;
   width: 0;
   height: 0;
@@ -590,7 +609,8 @@ exports[`SingleDropdown should render correctly with size 1`] = `
 
 .c1 {
   position: relative;
-  width: calc(100% - 30px);
+  width: 100%;
+  padding-right: 20px;
   color: #545456;
   background-color: transparent;
   -webkit-appearance: none;
@@ -742,6 +762,7 @@ exports[`SingleDropdown should render correctly with size 1`] = `
 
 exports[`SingleDropdown should render correctly with uppercase 1`] = `
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -763,7 +784,10 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
 
 .c0::after {
   content: '';
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -4px;
   text-align: center;
   width: 0;
   height: 0;
@@ -775,7 +799,8 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
 
 .c1 {
   position: relative;
-  width: calc(100% - 30px);
+  width: 100%;
+  padding-right: 20px;
   color: #545456;
   background-color: transparent;
   -webkit-appearance: none;
@@ -927,6 +952,7 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
 
 exports[`SingleDropdown should render correctly with weight 1`] = `
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -948,7 +974,10 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
 
 .c0::after {
   content: '';
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -4px;
   text-align: center;
   width: 0;
   height: 0;
@@ -960,7 +989,8 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
 
 .c1 {
   position: relative;
-  width: calc(100% - 30px);
+  width: 100%;
+  padding-right: 20px;
   color: #545456;
   background-color: transparent;
   -webkit-appearance: none;
