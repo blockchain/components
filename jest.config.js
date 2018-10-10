@@ -2,6 +2,7 @@ const enzyme = require.resolve('./utils/enzyme')
 const preprocessMock = require.resolve('./utils/preprocessor')
 const raf = require.resolve('./utils/raf')
 const testFramework = require.resolve('./utils/testFramework')
+const ignorePropTypeErrors = require.resolve('./utils/ignorePropTypeErrors')
 
 const assetExt = [
   'css',
@@ -41,7 +42,7 @@ module.exports = {
   coverageDirectory: './coverage',
   moduleFileExtensions: [codeExt],
   roots: ['<rootDir>/src/'],
-  setupFiles: [raf, enzyme],
+  setupFiles: [raf, enzyme, ignorePropTypeErrors],
   setupTestFrameworkScriptFile: testFramework,
   snapshotSerializers: [require.resolve('enzyme-to-json/serializer')],
   testPathIgnorePatterns: ['/node_modules/', '.*.ignore.spec.*'],
