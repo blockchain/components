@@ -2,42 +2,23 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-green.svg)](https://conventionalcommits.org)
 
-# Components
-The library Components is based on React and styled-components. It contains basic components, "atoms", and more complex "molecules" that are used on the [Blockchain.com](https://www.blockchain.com) ecosystem.
+# Description
+The library **Components** is based on React and styled-components. It contains basic components, "atoms", and more complex "molecules" that are used on the [Blockchain.com](https://www.blockchain.com) ecosystem.
 
-## Tooling
+# Tooling
 Both `yarn` and `npm` are supported.
-The commands are given using `npm` however you can use the `yarn` equivalent and it will Just Work™
 
-## Installation
-1. Just a quick `npm i @blockchain-com/components` and you are good to go!
+The commands are given using `npm` however you can use the `yarn` equivalent and it will *Just Work™*
 
-## Icons
-1. FontAwesome
-Use `<Fas... />` where "Fas" is the type ("Fab", "Far" and "Fas" are avaible, same as fontawesome.com) and "..." is the FontAwesome icon name.
-The full icon list is available [here](https://fontawesome.com/icons) (free version only)
+# Installation
 
-2. Custom
-Use `<Bc... />` where "..." is the name of the icon.
+Just a quick `npm i @blockchain-com/components` and you are good to go!
 
-3. Examples
-```javascript
-// FontAwesome
-<FasCheckCircle />
-<FarCheckCircle />
-<FabFacebook />
 
-// Custom
-<BcBitcoin />
-```
+# Development
 
-## Hacking
-1. Ensure Node version >= 8.0 is installed
-2. Install packages: `npm i`
-3. Start application in dev mode: `npm run start`
-4. The library will now be accessible at [localhost:6006](http://localhost:6006)
+## Link
 
-## Tips
 If you want to change the library and reflect your changes on your consumer app without having to push to the repo and release, just:
 
 1. `git clone git@github.com:blockchain/components.git`
@@ -50,7 +31,51 @@ You can also use the task `npm run build:watch` on `components` to automatically
 
 :zap: you need to run `npm link @blockchain-com/components` everytime you run `npm i` or `yarn`...
 
-## Architecture
+## Storybook
+
+1. Ensure Node version >= 8.0 is installed
+2. Install packages: `npm i`
+3. Start application in dev mode: `npm run start`
+4. The library will now be accessible at [localhost:6006](http://localhost:6006)
+
+# Tips
+
+## Icons usage
+
+### 1. FontAwesome icons (free version)
+
+Use `<Fas... />`
+
+* **`Fas`** is the type ("Fab", "Far" and "Fas" are avaible)
+  * `Fab` matches the brand iconset
+  * `Fas` matches the solid iconset
+  * `Far` matches the regular iconset
+
+* **`...`** is the FontAwesome icon name formatted as [PascalCase](http://wiki.c2.com/?PascalCase).
+
+The full icon list is available [here](https://fontawesome.com/icons)
+
+Examples:
+
+```javascript
+<FasCheckCircle />
+<FarCheckCircle />
+<FabFacebook />
+```
+
+### 2. Custom icons
+Use `<Bc... />`
+
+* **`...`** is the icon name formatted as [PascalCase](http://wiki.c2.com/?PascalCase).
+
+Examples:
+
+```javascript
+<BcBitcoin />
+<BcEthereum />
+```
+
+# Architecture
 This library follows the [Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/) principles.
 
 An additional attention has be taken to ensure that all components are available and fully functional accross major web browsers*, as well as responsive on any screen sizes.
@@ -60,21 +85,29 @@ Browsers with > 1% usage:
 * Safari 11+
 * Chrome / Edge / Firefox latest 2 major versions
 
-## Code Quality
-### Linting
+# Code Quality
+
+## 1. Linting
 The coding style rules are defined by [Prettier](https://prettier.io/) and enforced by [Eslint](https://eslint.org)
-The "good practices™" that we follow are defined by the [Javascript Standard Style](https://standardjs.com/rules.html)
 
-The following commands are available:
- * `npm run lint:js` Lints JS code
- * `npm run lint:css` Lints styled components
+The ```good practices™``` that we follow are defined by the [Javascript Standard Style](https://standardjs.com/rules.html)
 
-### Unit Tests
-Please execute `npm test` to run the unit tests
+Following commands are available:
+* `npm run lint:js`
+  * Lints JS code
+* `npm run lint:css`
+  * Lints styled components
+
+## 2. Unit Tests
 
 Testing is done using [Jest](https://facebook.github.io/jest/) and [Enzyme](http://airbnb.io/enzyme/).
 
-### Git Hooks
+Following commands is available:
+* `npm test`
+  * Run the unit tests
+
+
+## 3. Git Hooks
 We use [Husky](https://github.com/typicode/husky) to automatically deploy git hooks
 
 On every `git commit` and `git push` we run the unit tests and the linting tasks.
