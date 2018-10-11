@@ -51,16 +51,19 @@ exports[`Input should render correctly 1`] = `
 
 <Input
   disabled={false}
+  e2e="defaultInput"
   type="text"
   width="100%"
 >
   <styled.input
     disabled={false}
+    e2e="defaultInput"
     type="text"
     width="100%"
   >
     <input
       className="c0"
+      data-e2e="defaultInput"
       disabled={false}
       type="text"
       width="100%"
@@ -120,16 +123,19 @@ exports[`Input should render correctly with disabled 1`] = `
 
 <Input
   disabled={true}
+  e2e="defaultInput"
   type="text"
   width="100%"
 >
   <styled.input
     disabled={true}
+    e2e="defaultInput"
     type="text"
     width="100%"
   >
     <input
       className="c0"
+      data-e2e="defaultInput"
       disabled={true}
       type="text"
       width="100%"
@@ -189,16 +195,19 @@ exports[`Input should render correctly with type 1`] = `
 
 <Input
   disabled={false}
+  e2e="defaultInput"
   type="password"
   width="100%"
 >
   <styled.input
     disabled={false}
+    e2e="defaultInput"
     type="password"
     width="100%"
   >
     <input
       className="c0"
+      data-e2e="defaultInput"
       disabled={false}
       type="password"
       width="100%"
@@ -258,16 +267,19 @@ exports[`Input should render correctly with width 1`] = `
 
 <Input
   disabled={false}
+  e2e="defaultInput"
   type="text"
   width="200px"
 >
   <styled.input
     disabled={false}
+    e2e="defaultInput"
     type="text"
     width="200px"
   >
     <input
       className="c0"
+      data-e2e="defaultInput"
       disabled={false}
       type="text"
       width="200px"

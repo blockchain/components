@@ -91,15 +91,18 @@ exports[`Button should render correctly 1`] = `
         <Button
           bounced={false}
           disabled={false}
+          e2e="defaultButton"
           type="button"
         >
           <styled.button
             bounced={false}
             disabled={false}
+            e2e="defaultButton"
             type="button"
           >
             <button
               className="c1"
+              data-e2e="defaultButton"
               disabled={false}
               type="button"
             >
@@ -112,15 +115,18 @@ exports[`Button should render correctly 1`] = `
         <Button
           bounced={false}
           disabled={false}
+          e2e="defaultButton"
           type="button"
         >
           <styled.button
             bounced={false}
             disabled={false}
+            e2e="defaultButton"
             type="button"
           >
             <button
               className="c1"
+              data-e2e="defaultButton"
               disabled={false}
               type="button"
             >
@@ -133,15 +139,18 @@ exports[`Button should render correctly 1`] = `
         <Button
           bounced={false}
           disabled={false}
+          e2e="defaultButton"
           type="button"
         >
           <styled.button
             bounced={false}
             disabled={false}
+            e2e="defaultButton"
             type="button"
           >
             <button
               className="c1"
+              data-e2e="defaultButton"
               disabled={false}
               type="button"
             >

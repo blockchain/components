@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import injectE2E from '../../Tools/injectE2E'
 
 const Wrapper = styled.input.attrs({
+  'data-e2e': injectE2E,
   name: (props) => props.name,
   type: (props) => props.type,
 })`
@@ -39,6 +41,7 @@ const Input = ({ input, ...rest }) => <Wrapper {...input} {...rest} />
 
 Input.propTypes = {
   disabled: PropTypes.bool,
+  e2e: PropTypes.string,
   input: PropTypes.object,
   name: PropTypes.string,
   type: PropTypes.oneOf([
@@ -54,6 +57,7 @@ Input.propTypes = {
 
 Input.defaultProps = {
   disabled: false,
+  e2e: 'defaultInput',
   type: 'text',
   width: '100%',
 }

@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import injectE2E from '../../Tools/injectE2E'
 
 const Wrapper = styled.button.attrs({
+  'data-e2e': injectE2E,
   type: (props) => props.type,
 })`
   display: flex;
@@ -42,12 +44,14 @@ Button.propTypes = {
   bounced: PropTypes.bool,
   children: PropTypes.node,
   disabled: PropTypes.bool,
+  e2e: PropTypes.string,
   type: PropTypes.oneOf(['button', 'reset', 'submit']),
 }
 
 Button.defaultProps = {
   bounced: false,
   disabled: false,
+  e2e: 'defaultButton',
   type: 'button',
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import injectE2E from '../../Tools/injectE2E'
 
-const Wrapper = styled.a`
+const Wrapper = styled.a.attrs({
+  'data-e2e': injectE2E,
+})`
   font-family: ${(props) => props.theme['fontPrimary']};
   font-weight: ${(props) => props.weight};
   font-size: ${(props) => props.size};
@@ -25,6 +28,7 @@ const Link = ({ children, ...rest }) => <Wrapper {...rest}>{children}</Wrapper>
 Link.propTypes = {
   capitalize: PropTypes.bool,
   children: PropTypes.node,
+  e2e: PropTypes.string,
   italic: PropTypes.bool,
   opacity: PropTypes.number,
   size: PropTypes.string,
@@ -34,6 +38,7 @@ Link.propTypes = {
 
 Link.defaultProps = {
   capitalize: false,
+  e2e: 'defaultLink',
   italic: false,
   opacity: 1,
   size: '1rem',

@@ -1,8 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import injectE2E from '../../Tools/injectE2E'
 
-const Wrapper = styled.div`
+const Wrapper = styled.div.attrs({
+  'data-e2e': injectE2E,
+})`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -24,17 +27,19 @@ const Wrapper = styled.div`
   text-transform: uppercase;
 `
 
-const Toggler = ({ children, ...rest }) => (
+const TogglerItem = ({ children, ...rest }) => (
   <Wrapper {...rest}>{children}</Wrapper>
 )
 
-Toggler.propTypes = {
+TogglerItem.propTypes = {
   children: PropTypes.node,
+  e2e: PropTypes.string,
   selected: PropTypes.bool,
 }
 
-Toggler.defaultProps = {
+TogglerItem.defaultProps = {
+  e2e: 'defaultTogglerItem',
   selected: false,
 }
 
-export default Toggler
+export default TogglerItem

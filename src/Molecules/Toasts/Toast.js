@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
-
+import injectE2E from '../../Tools/injectE2E'
 import {
   FasCheckCircle,
   FasExclamationCircle,
@@ -10,7 +10,9 @@ import {
 
 const PADDING = '1.025rem'
 
-const Wrapper = styled.div`
+const Wrapper = styled.div.attrs({
+  'data-e2e': injectE2E,
+})`
   display: inline-flex;
   padding: ${PADDING};
   font-family: ${(props) => props.theme.fontPrimary};
@@ -83,12 +85,14 @@ const Toast = ({ description, onClose, title, type, ...rest }) => (
 
 Toast.propTypes = {
   description: PropTypes.string,
+  e2e: PropTypes.string,
   onClose: PropTypes.func,
   title: PropTypes.string.isRequired,
   type: PropTypes.oneOf(['default', 'danger', 'success', 'warning']),
 }
 
 Toast.defaultProps = {
+  e2e: 'defaultToast',
   type: 'default',
 }
 

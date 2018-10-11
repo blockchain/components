@@ -51,12 +51,16 @@ exports[`Toast should render correctly 1`] = `
 }
 
 <Toast
+  e2e="defaultToast"
   title="Hey! This is a default toast."
   type="default"
 >
-  <styled.div>
+  <styled.div
+    e2e="defaultToast"
+  >
     <div
       className="c0"
+      data-e2e="defaultToast"
     >
       <styled.div>
         <div
@@ -166,12 +170,16 @@ exports[`Toast should render correctly with description 1`] = `
 
 <Toast
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  e2e="defaultToast"
   title="This is a default toast."
   type="default"
 >
-  <styled.div>
+  <styled.div
+    e2e="defaultToast"
+  >
     <div
       className="c0"
+      data-e2e="defaultToast"
     >
       <styled.div>
         <div
@@ -314,12 +322,16 @@ exports[`Toast should render correctly with type=danger 1`] = `
 
 <Toast
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  e2e="defaultToast"
   title="This is a default toast."
   type="danger"
 >
-  <styled.div>
+  <styled.div
+    e2e="defaultToast"
+  >
     <div
       className="c0"
+      data-e2e="defaultToast"
     >
       <Styled(Styled(FasExclamationCircle))>
         <Styled(FasExclamationCircle)
@@ -486,12 +498,16 @@ exports[`Toast should render correctly with type=success 1`] = `
 
 <Toast
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  e2e="defaultToast"
   title="This is a default toast."
   type="success"
 >
-  <styled.div>
+  <styled.div
+    e2e="defaultToast"
+  >
     <div
       className="c0"
+      data-e2e="defaultToast"
     >
       <Styled(FasCheckCircle)>
         <FasCheckCircle
@@ -654,12 +670,16 @@ exports[`Toast should render correctly with type=warning 1`] = `
 
 <Toast
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  e2e="defaultToast"
   title="This is a default toast."
   type="warning"
 >
-  <styled.div>
+  <styled.div
+    e2e="defaultToast"
+  >
     <div
       className="c0"
+      data-e2e="defaultToast"
     >
       <Styled(FasExclamationCircle)>
         <FasExclamationCircle

@@ -46,15 +46,18 @@ exports[`Button should have a bounced state 1`] = `
 <Button
   bounced={true}
   disabled={false}
+  e2e="defaultButton"
   type="button"
 >
   <styled.button
     bounced={true}
     disabled={false}
+    e2e="defaultButton"
     type="button"
   >
     <button
       className="c0"
+      data-e2e="defaultButton"
       disabled={false}
       type="button"
     />
@@ -108,15 +111,18 @@ exports[`Button should have a disabled state 1`] = `
 <Button
   bounced={false}
   disabled={true}
+  e2e="defaultButton"
   type="button"
 >
   <styled.button
     bounced={false}
     disabled={true}
+    e2e="defaultButton"
     type="button"
   >
     <button
       className="c0"
+      data-e2e="defaultButton"
       disabled={true}
       type="button"
     />
@@ -170,15 +176,18 @@ exports[`Button should have a type property 1`] = `
 <Button
   bounced={false}
   disabled={false}
+  e2e="defaultButton"
   type="submit"
 >
   <styled.button
     bounced={false}
     disabled={false}
+    e2e="defaultButton"
     type="submit"
   >
     <button
       className="c0"
+      data-e2e="defaultButton"
       disabled={false}
       type="submit"
     />
@@ -232,15 +241,18 @@ exports[`Button should have a type property 2`] = `
 <Button
   bounced={false}
   disabled={false}
+  e2e="defaultButton"
   type="reset"
 >
   <styled.button
     bounced={false}
     disabled={false}
+    e2e="defaultButton"
     type="reset"
   >
     <button
       className="c0"
+      data-e2e="defaultButton"
       disabled={false}
       type="reset"
     />
@@ -294,15 +306,18 @@ exports[`Button should render correctly 1`] = `
 <Button
   bounced={false}
   disabled={false}
+  e2e="defaultButton"
   type="button"
 >
   <styled.button
     bounced={false}
     disabled={false}
+    e2e="defaultButton"
     type="button"
   >
     <button
       className="c0"
+      data-e2e="defaultButton"
       disabled={false}
       type="button"
     />

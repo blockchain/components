@@ -2,6 +2,7 @@
 import palette from './palette'
 
 export default {
+  e2e: true,
   palette,
   fontPrimary: "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
   brandNameColor: palette.gray3,

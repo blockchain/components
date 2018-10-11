@@ -1,8 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import injectE2E from '../../Tools/injectE2E'
 
-const Wrapper = styled.div`
+const Wrapper = styled.div.attrs({
+  'data-e2e': injectE2E,
+})`
   position: relative;
   flex: 1 auto;
   flex-direction: row;
@@ -54,10 +57,12 @@ const TabMenuItem = ({ children, className, selected, ...rest }) => (
 TabMenuItem.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  e2e: PropTypes.string,
   selected: PropTypes.bool,
 }
 
 TabMenuItem.defaultProps = {
+  e2e: 'defaultTabMenuItem',
   selected: false,
 }
 

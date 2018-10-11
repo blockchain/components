@@ -35,13 +35,16 @@ exports[`PaginationItem should render correctly 1`] = `
 }
 
 <PaginationItem
+  e2e="defaultPaginationItem"
   selected={false}
 >
   <styled.a
+    e2e="defaultPaginationItem"
     selected={false}
   >
     <a
       className="c0"
+      data-e2e="defaultPaginationItem"
       selected={false}
     />
   </styled.a>
@@ -83,13 +86,16 @@ exports[`PaginationItem should render correctly with selected 1`] = `
 }
 
 <PaginationItem
+  e2e="defaultPaginationItem"
   selected={true}
 >
   <styled.a
+    e2e="defaultPaginationItem"
     selected={true}
   >
     <a
       className="c0"
+      data-e2e="defaultPaginationItem"
       selected={true}
     />
   </styled.a>
