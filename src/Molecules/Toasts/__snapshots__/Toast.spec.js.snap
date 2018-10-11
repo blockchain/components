@@ -51,11 +51,12 @@ exports[`Toast should render correctly 1`] = `
 }
 
 <Toast
+  e2e="defaultToast"
   title="Hey! This is a default toast."
   type="default"
 >
   <styled.div
-    data-e2e="defaultToast"
+    e2e="defaultToast"
   >
     <div
       className="c0"
@@ -169,11 +170,12 @@ exports[`Toast should render correctly with description 1`] = `
 
 <Toast
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  e2e="defaultToast"
   title="This is a default toast."
   type="default"
 >
   <styled.div
-    data-e2e="defaultToast"
+    e2e="defaultToast"
   >
     <div
       className="c0"
@@ -320,11 +322,12 @@ exports[`Toast should render correctly with type=danger 1`] = `
 
 <Toast
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  e2e="defaultToast"
   title="This is a default toast."
   type="danger"
 >
   <styled.div
-    data-e2e="defaultToast"
+    e2e="defaultToast"
   >
     <div
       className="c0"
@@ -495,11 +498,12 @@ exports[`Toast should render correctly with type=success 1`] = `
 
 <Toast
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  e2e="defaultToast"
   title="This is a default toast."
   type="success"
 >
   <styled.div
-    data-e2e="defaultToast"
+    e2e="defaultToast"
   >
     <div
       className="c0"
@@ -666,11 +670,12 @@ exports[`Toast should render correctly with type=warning 1`] = `
 
 <Toast
   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  e2e="defaultToast"
   title="This is a default toast."
   type="warning"
 >
   <styled.div
-    data-e2e="defaultToast"
+    e2e="defaultToast"
   >
     <div
       className="c0"

@@ -29,10 +29,11 @@ exports[`TogglerItem should render correctly 1`] = `
 }
 
 <TogglerItem
+  e2e="defaultTogglerItem"
   selected={false}
 >
   <styled.div
-    data-e2e="defaultTogglerItem"
+    e2e="defaultTogglerItem"
     selected={false}
   >
     <div
@@ -75,10 +76,11 @@ exports[`TogglerItem should render correctly with selected 1`] = `
 }
 
 <TogglerItem
+  e2e="defaultTogglerItem"
   selected={true}
 >
   <styled.div
-    data-e2e="defaultTogglerItem"
+    e2e="defaultTogglerItem"
     selected={true}
   >
     <div

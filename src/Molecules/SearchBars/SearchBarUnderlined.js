@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-
+import injectE2E from '../../Tools/injectE2E'
 import { FasSearch } from '../../Atoms/Icons'
 import { Input } from '../../Atoms/Inputs'
 
@@ -20,7 +20,9 @@ const SearchInput = styled(Input)`
   background-color: inherit;
   border-color: transparent;
 `
-const IconContainer = styled.div`
+const IconContainer = styled.div.attrs({
+  'data-e2e': injectE2E,
+})`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -40,25 +42,20 @@ const SearchBarUnderlined = ({
 }) => (
   <Wrapper width={width}>
     <SearchInput
-      e2e={`${e2e || 'defaultSearchBarUnderlined'}.Input`}
+      e2e={`${e2e}.Input`}
       onChange={onChange}
       value={value}
       {...rest}
     />
-    <IconContainer>
-      <FasSearch
-        data-e2e={`${e2e || 'defaultSearchBarUnderlined'}.Button`}
-        onClick={onClick}
-        selectable
-        size="20px"
-      />
+    <IconContainer e2e={`${e2e}.Button`} onClick={onClick}>
+      <FasSearch selectable size="20px" />
     </IconContainer>
   </Wrapper>
 )
 
 SearchBarUnderlined.propTypes = {
   children: PropTypes.node,
-  e2e: PropTypes.string.isRequired,
+  e2e: PropTypes.string,
   onChange: PropTypes.func,
   onClick: PropTypes.func,
   value: PropTypes.any,
@@ -66,6 +63,7 @@ SearchBarUnderlined.propTypes = {
 }
 
 SearchBarUnderlined.defaultProps = {
+  e2e: 'defaultSearchBarUnderlined',
   width: '100%',
 }
 

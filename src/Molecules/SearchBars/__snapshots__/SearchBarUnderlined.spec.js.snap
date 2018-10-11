@@ -105,6 +105,7 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
 }
 
 <SearchBarUnderlined
+  e2e="defaultSearchBarUnderlined"
   width="100%"
 >
   <styled.div
@@ -126,8 +127,8 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
         >
           <styled.input
             className="c1"
-            data-e2e="defaultSearchBarUnderlined.Input"
             disabled={false}
+            e2e="defaultSearchBarUnderlined.Input"
             type="text"
             width="100%"
           >
@@ -141,17 +142,18 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
           </styled.input>
         </Input>
       </Styled(Input)>
-      <styled.div>
+      <styled.div
+        e2e="defaultSearchBarUnderlined.Button"
+      >
         <div
           className="c3"
+          data-e2e="defaultSearchBarUnderlined.Button"
         >
           <FasSearch
-            data-e2e="defaultSearchBarUnderlined.Button"
             selectable={true}
             size="20px"
           >
             <styled.svg
-              data-e2e="defaultSearchBarUnderlined.Button"
               height="20px"
               selectable={true}
               viewBox="0 0 512 512"
@@ -160,7 +162,6 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
             >
               <svg
                 className="c4"
-                data-e2e="defaultSearchBarUnderlined.Button"
                 height="20px"
                 viewBox="0 0 512 512"
                 width="20px"
@@ -284,6 +285,7 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
 }
 
 <SearchBarUnderlined
+  e2e="defaultSearchBarUnderlined"
   onChange={[MockFunction]}
   width="100%"
 >
@@ -308,8 +310,8 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
         >
           <styled.input
             className="c1"
-            data-e2e="defaultSearchBarUnderlined.Input"
             disabled={false}
+            e2e="defaultSearchBarUnderlined.Input"
             onChange={[MockFunction]}
             type="text"
             width="100%"
@@ -325,17 +327,18 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
           </styled.input>
         </Input>
       </Styled(Input)>
-      <styled.div>
+      <styled.div
+        e2e="defaultSearchBarUnderlined.Button"
+      >
         <div
           className="c3"
+          data-e2e="defaultSearchBarUnderlined.Button"
         >
           <FasSearch
-            data-e2e="defaultSearchBarUnderlined.Button"
             selectable={true}
             size="20px"
           >
             <styled.svg
-              data-e2e="defaultSearchBarUnderlined.Button"
               height="20px"
               selectable={true}
               viewBox="0 0 512 512"
@@ -344,7 +347,6 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
             >
               <svg
                 className="c4"
-                data-e2e="defaultSearchBarUnderlined.Button"
                 height="20px"
                 viewBox="0 0 512 512"
                 width="20px"
@@ -468,6 +470,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
 }
 
 <SearchBarUnderlined
+  e2e="defaultSearchBarUnderlined"
   onClick={[MockFunction]}
   width="100%"
 >
@@ -490,8 +493,8 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
         >
           <styled.input
             className="c1"
-            data-e2e="defaultSearchBarUnderlined.Input"
             disabled={false}
+            e2e="defaultSearchBarUnderlined.Input"
             type="text"
             width="100%"
           >
@@ -505,20 +508,21 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
           </styled.input>
         </Input>
       </Styled(Input)>
-      <styled.div>
+      <styled.div
+        e2e="defaultSearchBarUnderlined.Button"
+        onClick={[MockFunction]}
+      >
         <div
           className="c3"
+          data-e2e="defaultSearchBarUnderlined.Button"
+          onClick={[MockFunction]}
         >
           <FasSearch
-            data-e2e="defaultSearchBarUnderlined.Button"
-            onClick={[MockFunction]}
             selectable={true}
             size="20px"
           >
             <styled.svg
-              data-e2e="defaultSearchBarUnderlined.Button"
               height="20px"
-              onClick={[MockFunction]}
               selectable={true}
               viewBox="0 0 512 512"
               width="20px"
@@ -526,9 +530,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
             >
               <svg
                 className="c4"
-                data-e2e="defaultSearchBarUnderlined.Button"
                 height="20px"
-                onClick={[MockFunction]}
                 viewBox="0 0 512 512"
                 width="20px"
                 xmlns="http://www.w3.org/2000/svg"
@@ -651,6 +653,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
 }
 
 <SearchBarUnderlined
+  e2e="defaultSearchBarUnderlined"
   onChange={[MockFunction]}
   value="My search"
   width="100%"
@@ -678,8 +681,8 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
         >
           <styled.input
             className="c1"
-            data-e2e="defaultSearchBarUnderlined.Input"
             disabled={false}
+            e2e="defaultSearchBarUnderlined.Input"
             onChange={[MockFunction]}
             type="text"
             value="My search"
@@ -697,17 +700,18 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
           </styled.input>
         </Input>
       </Styled(Input)>
-      <styled.div>
+      <styled.div
+        e2e="defaultSearchBarUnderlined.Button"
+      >
         <div
           className="c3"
+          data-e2e="defaultSearchBarUnderlined.Button"
         >
           <FasSearch
-            data-e2e="defaultSearchBarUnderlined.Button"
             selectable={true}
             size="20px"
           >
             <styled.svg
-              data-e2e="defaultSearchBarUnderlined.Button"
               height="20px"
               selectable={true}
               viewBox="0 0 512 512"
@@ -716,7 +720,6 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
             >
               <svg
                 className="c4"
-                data-e2e="defaultSearchBarUnderlined.Button"
                 height="20px"
                 viewBox="0 0 512 512"
                 width="20px"
@@ -840,6 +843,7 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
 }
 
 <SearchBarUnderlined
+  e2e="defaultSearchBarUnderlined"
   onChange={[MockFunction]}
   value="My search"
   width="200px"
@@ -867,8 +871,8 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
         >
           <styled.input
             className="c1"
-            data-e2e="defaultSearchBarUnderlined.Input"
             disabled={false}
+            e2e="defaultSearchBarUnderlined.Input"
             onChange={[MockFunction]}
             type="text"
             value="My search"
@@ -886,17 +890,18 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
           </styled.input>
         </Input>
       </Styled(Input)>
-      <styled.div>
+      <styled.div
+        e2e="defaultSearchBarUnderlined.Button"
+      >
         <div
           className="c3"
+          data-e2e="defaultSearchBarUnderlined.Button"
         >
           <FasSearch
-            data-e2e="defaultSearchBarUnderlined.Button"
             selectable={true}
             size="20px"
           >
             <styled.svg
-              data-e2e="defaultSearchBarUnderlined.Button"
               height="20px"
               selectable={true}
               viewBox="0 0 512 512"
@@ -905,7 +910,6 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
             >
               <svg
                 className="c4"
-                data-e2e="defaultSearchBarUnderlined.Button"
                 height="20px"
                 viewBox="0 0 512 512"
                 width="20px"

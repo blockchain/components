@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import { FasSearch } from '../../Atoms/Icons'
 import { Input } from '../../Atoms/Inputs'
+import injectE2E from '../../Tools/injectE2E'
 
 const Wrapper = styled.div`
   position: relative;
@@ -44,7 +45,9 @@ const SearchInput = styled(Input)`
   background-color: inherit;
   border-color: transparent;
 `
-const GoContainer = styled.div`
+const GoContainer = styled.div.attrs({
+  'data-e2e': injectE2E,
+})`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -84,15 +87,8 @@ const SearchBar = ({
     <IconContainer>
       <SearchIcon />
     </IconContainer>
-    <SearchInput
-      e2e={`${e2e || 'defaultSearchBar'}.Input`}
-      onChange={onChange}
-      {...rest}
-    />
-    <GoContainer
-      data-e2e={`${e2e || 'defaultSearchBar'}.Button`}
-      onClick={onClick}
-    >
+    <SearchInput e2e={`${e2e}.Input`} onChange={onChange} {...rest} />
+    <GoContainer e2e={`${e2e}.Button`} onClick={onClick}>
       {renderSubmit()}
     </GoContainer>
   </Wrapper>
@@ -100,7 +96,7 @@ const SearchBar = ({
 
 SearchBar.propTypes = {
   children: PropTypes.node,
-  e2e: PropTypes.string.isRequired,
+  e2e: PropTypes.string,
   onChange: PropTypes.func,
   onClick: PropTypes.func,
   renderSubmit: PropTypes.func,
@@ -109,6 +105,7 @@ SearchBar.propTypes = {
 }
 
 SearchBar.defaultProps = {
+  e2e: 'defaultSearchBar',
   renderSubmit: GoLabel,
   width: '100%',
 }

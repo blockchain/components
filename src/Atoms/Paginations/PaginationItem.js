@@ -1,8 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import injectE2E from '../../Tools/injectE2E'
 
-const Wrapper = styled.a`
+const Wrapper = styled.a.attrs({
+  'data-e2e': injectE2E,
+})`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -33,14 +36,8 @@ const Wrapper = styled.a`
   }
 `
 
-const PaginationItem = ({ children, e2e, selected, ...rest }) => (
-  <Wrapper
-    data-e2e={e2e || 'defaultPaginationItem'}
-    selected={selected}
-    {...rest}
-  >
-    {children}
-  </Wrapper>
+const PaginationItem = ({ children, ...rest }) => (
+  <Wrapper {...rest}>{children}</Wrapper>
 )
 
 PaginationItem.propTypes = {
@@ -50,6 +47,7 @@ PaginationItem.propTypes = {
 }
 
 PaginationItem.defaultProps = {
+  e2e: 'defaultPaginationItem',
   selected: false,
 }
 

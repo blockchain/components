@@ -22,6 +22,7 @@ exports[`Link should render correctly 1`] = `
 
 <Link
   capitalize={false}
+  e2e="defaultLink"
   italic={false}
   opacity={1}
   size="1rem"
@@ -30,7 +31,7 @@ exports[`Link should render correctly 1`] = `
 >
   <styled.a
     capitalize={false}
-    data-e2e="defaultLink"
+    e2e="defaultLink"
     italic={false}
     opacity={1}
     size="1rem"
@@ -71,6 +72,7 @@ exports[`Link should render correctly with capitalize 1`] = `
 
 <Link
   capitalize={true}
+  e2e="defaultLink"
   italic={false}
   opacity={1}
   size="1rem"
@@ -79,7 +81,7 @@ exports[`Link should render correctly with capitalize 1`] = `
 >
   <styled.a
     capitalize={true}
-    data-e2e="defaultLink"
+    e2e="defaultLink"
     italic={false}
     opacity={1}
     size="1rem"
@@ -120,6 +122,7 @@ exports[`Link should render correctly with italic 1`] = `
 
 <Link
   capitalize={false}
+  e2e="defaultLink"
   italic={true}
   opacity={1}
   size="1rem"
@@ -128,7 +131,7 @@ exports[`Link should render correctly with italic 1`] = `
 >
   <styled.a
     capitalize={false}
-    data-e2e="defaultLink"
+    e2e="defaultLink"
     italic={true}
     opacity={1}
     size="1rem"
@@ -169,6 +172,7 @@ exports[`Link should render correctly with opacity 1`] = `
 
 <Link
   capitalize={false}
+  e2e="defaultLink"
   italic={false}
   opacity={0.5}
   size="1rem"
@@ -177,7 +181,7 @@ exports[`Link should render correctly with opacity 1`] = `
 >
   <styled.a
     capitalize={false}
-    data-e2e="defaultLink"
+    e2e="defaultLink"
     italic={false}
     opacity={0.5}
     size="1rem"
@@ -218,6 +222,7 @@ exports[`Link should render correctly with size 1`] = `
 
 <Link
   capitalize={false}
+  e2e="defaultLink"
   italic={false}
   opacity={1}
   size="32px"
@@ -226,7 +231,7 @@ exports[`Link should render correctly with size 1`] = `
 >
   <styled.a
     capitalize={false}
-    data-e2e="defaultLink"
+    e2e="defaultLink"
     italic={false}
     opacity={1}
     size="32px"
@@ -267,6 +272,7 @@ exports[`Link should render correctly with uppercase 1`] = `
 
 <Link
   capitalize={false}
+  e2e="defaultLink"
   italic={false}
   opacity={1}
   size="1rem"
@@ -275,7 +281,7 @@ exports[`Link should render correctly with uppercase 1`] = `
 >
   <styled.a
     capitalize={false}
-    data-e2e="defaultLink"
+    e2e="defaultLink"
     italic={false}
     opacity={1}
     size="1rem"
@@ -316,6 +322,7 @@ exports[`Link should render correctly with weight 1`] = `
 
 <Link
   capitalize={false}
+  e2e="defaultLink"
   italic={false}
   opacity={1}
   size="1rem"
@@ -324,7 +331,7 @@ exports[`Link should render correctly with weight 1`] = `
 >
   <styled.a
     capitalize={false}
-    data-e2e="defaultLink"
+    e2e="defaultLink"
     italic={false}
     opacity={1}
     size="1rem"
