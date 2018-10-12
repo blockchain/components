@@ -32,6 +32,14 @@ describe('SingleDropdown', () => {
     expect(tree.find(SingleDropdown)).toMatchSnapshot()
   })
 
+  it('should render correctly with inline', () => {
+    const tree = mountWithTheme(
+      <SingleDropdown inline items={items} onChange={jest.fn()} />,
+    )
+
+    expect(tree.find(SingleDropdown)).toMatchSnapshot()
+  })
+
   it('should render correctly with italic', () => {
     const tree = mountWithTheme(
       <SingleDropdown italic items={items} onChange={jest.fn()} />,

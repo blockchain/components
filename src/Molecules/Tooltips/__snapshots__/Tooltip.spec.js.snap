@@ -9,7 +9,7 @@ exports[`Tooltip should render correctly 1`] = `
   max-width: 350px;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: 400;
   z-index: 5;
   text-transform: none;
   text-align: left;
