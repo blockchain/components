@@ -14,13 +14,19 @@ const Wrapper = styled.svg`
   }
 `
 
-export default (path, width, height, name) => {
+const Svg = styled.svg`
+  cursor: ${(props) => (props.selectable ? 'pointer' : 'default')};
+`
+
+export default (path, width, height, name, withColor = false) => {
   /* eslint-disable react/prefer-stateless-function */
   class WithStyle extends React.PureComponent {
     render() {
       const { size, ...rest } = this.props
+      const Icon = withColor ? Svg : Wrapper
+
       return (
-        <Wrapper
+        <Icon
           height={size}
           viewBox={`0 0 ${width} ${height}`}
           width={size}
@@ -28,7 +34,7 @@ export default (path, width, height, name) => {
           {...rest}
         >
           {path}
-        </Wrapper>
+        </Icon>
       )
     }
   }
