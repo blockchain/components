@@ -130,7 +130,7 @@ const StyledTip = styled(ReactTooltip)`
   max-width: 350px;
   font-family: ${(props) => props.theme['fontPrimary']};
   font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: 400;
   z-index: 5;
   text-transform: none;
   text-align: left;

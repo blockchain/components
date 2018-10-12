@@ -9,48 +9,72 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: ${(props) => props.width};
-  border-radius: 3px;
+  height: 2.7rem;
+  box-sizing: border-box;
+  background-color: ${(props) => props.theme.inputBackgroundColor};
+  background-image: none;
+  outline-width: 0;
+  user-select: text;
 
   &::after {
     content: '';
     position: absolute;
-    right: 0;
+    right: 1.4rem;
     top: 50%;
-    margin-top: -4px;
+    margin-top: -3px;
     text-align: center;
     width: 0;
     height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid ${(props) => props.theme['dropdownArrowColor']};
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid ${(props) => props.theme.inputColor};
     pointer-events: none;
   }
+
+  &:hover {
+    background-color: ${(props) =>
+      props.inline ? props.theme.inputBackgroundColorFocus : 'inherit'};
+  }
 `
+
 const Select = styled.select`
   position: relative;
   width: 100%;
-  padding-right: 20px;
-  color: ${(props) => props.theme['dropdownColor']};
+  height: 100%;
+  padding: 0 1.4rem;
+  color: ${(props) => props.theme.inputColor};
   background-color: transparent;
   appearance: none;
-  border: none;
-  font-family: ${(props) => props.theme['fontPrimary']};
+  font-family: ${(props) => props.theme.fontPrimary};
   font-size: ${(props) => props.size};
   font-weight: ${(props) => props.weight};
   text-transform: ${(props) =>
     props.uppercase ? 'uppercase' : props.capitalize ? 'capitalize' : 'none'};
   font-style: ${(props) => (props.italic ? 'italic' : 'normal')};
-  border-radius: 0.3rem;
+  border-width: 1px;
+  border-color: ${(props) =>
+    props.inline ? 'transparent' : props.theme.inputBorderColor};
+  border-style: solid;
+  border-radius: ${(props) => props.theme.inputBorderRadius};
+  border-radius: ${(props) => props.theme.inputBorderRadius};
   cursor: pointer;
   outline: none;
   text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:focus {
+    border-color: ${(props) => props.theme.inputBorderColor};
+  }
 `
 
-const SingleDropdown = ({ items, width, ...rest }) => (
-  <Wrapper width={width}>
-    <Select {...rest}>
+const SingleDropdown = ({ className, inline, items, width, ...rest }) => (
+  <Wrapper className={className} inline={inline} width={width}>
+    <Select inline={inline} {...rest}>
       {items.map((item) => (
         <option key={item.value} value={item.value}>
           {item.text}
@@ -62,6 +86,7 @@ const SingleDropdown = ({ items, width, ...rest }) => (
 
 SingleDropdown.propTypes = {
   capitalize: PropTypes.bool,
+  inline: PropTypes.bool,
   italic: PropTypes.bool,
   items: PropTypes.arrayOf(
     PropTypes.shape({
@@ -82,7 +107,6 @@ SingleDropdown.defaultProps = {
   italic: false,
   size: '1rem',
   uppercase: false,
-  weight: 300,
   width: '100%',
 }
 
