@@ -26,6 +26,8 @@ storiesOf('Molecules/Dropdowns/SingleDropdown', module)
       items={items}
     />
   ))
+  .add('with disabled', () => <SingleDropdown disabled items={items} />)
+  .add('with inline', () => <SingleDropdown inline items={items} />)
   .add('with italic', () => (
     <SingleDropdown handleChange={action('item-click')} italic items={items} />
   ))
@@ -61,6 +63,6 @@ storiesOf('Molecules/Dropdowns/SingleDropdown', module)
     <SingleDropdown
       handleChange={action('item-click')}
       items={items}
-      width="100px"
+      width="120px"
     />
   ))
