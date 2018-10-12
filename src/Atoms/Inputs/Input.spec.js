@@ -16,6 +16,12 @@ describe('Input', () => {
     expect(tree.find(Input)).toMatchSnapshot()
   })
 
+  it('should render correctly with type="checkbox"', () => {
+    const tree = mountWithTheme(<Input type="checkbox" />)
+
+    expect(tree.find(Input)).toMatchSnapshot()
+  })
+
   it('should render correctly with width', () => {
     const tree = mountWithTheme(<Input width="200px" />)
 

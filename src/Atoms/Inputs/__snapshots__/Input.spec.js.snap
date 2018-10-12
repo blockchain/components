@@ -216,6 +216,123 @@ exports[`Input should render correctly with type 1`] = `
 </Input>
 `;
 
+exports[`Input should render correctly with type="checkbox" 1`] = `
+.c0 input:checked + label::before {
+  background-color: #10ADE4;
+  border-color: #10ADE4;
+}
+
+.c0 input:checked + label::after {
+  opacity: 1;
+  -webkit-transform: scale(1) rotate(-45deg);
+  -ms-transform: scale(1) rotate(-45deg);
+  transform: scale(1) rotate(-45deg);
+}
+
+.c1 {
+  border: 0;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  visibility: visible;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 1rem;
+  padding-left: 1.5rem;
+  cursor: pointer;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+}
+
+.c2::before {
+  background-color: #FFF;
+  border: 2px solid #CCC;
+  box-sizing: border-box;
+  content: '';
+  height: 1.125rem;
+  left: 0;
+  position: absolute;
+  top: calc(50% - 9px);
+  width: 1.125rem;
+}
+
+.c2::after {
+  background: none;
+  border-left: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  box-sizing: border-box;
+  content: '';
+  height: 5px;
+  left: 0.3125rem;
+  margin-top: -0.1875rem;
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  -webkit-transform: scale(0) rotate(-45deg);
+  -ms-transform: scale(0) rotate(-45deg);
+  transform: scale(0) rotate(-45deg);
+  width: 9px;
+}
+
+<Input
+  disabled={false}
+  e2e="defaultInput"
+  type="checkbox"
+  width="100%"
+>
+  <Checkbox
+    disabled={false}
+    e2e="defaultInput"
+    type="checkbox"
+    width="100%"
+  >
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <styled.input
+          disabled={false}
+          e2e="defaultInput"
+          type="checkbox"
+          width="100%"
+        >
+          <input
+            className="c1"
+            data-e2e="defaultInput"
+            disabled={false}
+            id="undefined-checkbox"
+            type="checkbox"
+            width="100%"
+          />
+        </styled.input>
+        <styled.label>
+          <label
+            className="c2"
+            htmlFor="undefined-checkbox"
+          />
+        </styled.label>
+      </div>
+    </styled.div>
+  </Checkbox>
+</Input>
+`;
+
 exports[`Input should render correctly with width 1`] = `
 .c0 {
   display: block;

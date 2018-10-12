@@ -25,6 +25,7 @@ export default {
   inputBackgroundColorFocus: palette.gray0,
   inputBorderColor: palette.gray2,
   inputBorderRadius: borderRadius,
+  inputCheckboxColor: palette.cerulean,
   inputColor: palette.gray5,
   inputPlaceholderColor: palette.gray3,
   linkColor: palette.gray5,
