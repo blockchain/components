@@ -1,2 +1,3 @@
 *.js.snap
 /src/Atoms/Icons/fa/**/*.js
+/src/Atoms/Icons/crypto/*.js
