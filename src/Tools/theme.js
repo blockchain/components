@@ -1,6 +1,8 @@
 /* eslint-disable sort-keys */
 import palette from './palette'
 
+const borderRadius = '0.125rem'
+
 export default {
   e2e: true,
   palette,
@@ -22,7 +24,7 @@ export default {
   inputBackgroundColor: palette.white,
   inputBackgroundColorFocus: palette.gray0,
   inputBorderColor: palette.gray2,
-  inputBorderRadius: '0.125rem',
+  inputBorderRadius: borderRadius,
   inputCheckboxColor: palette.cerulean,
   inputColor: palette.gray5,
   inputPlaceholderColor: palette.gray3,
