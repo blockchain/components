@@ -21,13 +21,13 @@ const Container = styled.div`
   width: 100%;
   min-height: 100%;
 
-  @media (max-width: 48rem) {
+  @media (max-width: ${(props) => props.theme.screenSizes.sm}) {
     & > .disabled {
       display: ${(props) => (props.toggled ? 'flex' : 'none')};
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     flex-direction: row;
     align-items: center;
   }

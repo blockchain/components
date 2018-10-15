@@ -10,7 +10,7 @@ const Wrapper = styled(Text).attrs({
 })`
   color: ${(props) => props.theme['navbarDropdownDescriptionMobileColor']};
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     color: ${(props) => props.theme['navbarDropdownDescriptionColor']};
   }
 `

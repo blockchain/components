@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   padding: 0 2rem;
   box-sizing: border-box;
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     padding: 0 3rem;
   }
 `

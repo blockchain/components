@@ -15,7 +15,7 @@ const Wrapper = styled(Link)`
   white-space: nowrap;
   text-decoration: none;
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     &:hover span:first-child {
       text-decoration: underline;
     }

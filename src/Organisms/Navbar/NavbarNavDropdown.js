@@ -10,7 +10,7 @@ const Wrapper = styled.li`
     ${(props) => props.theme['navbarDropdownContentBorderColor']};
   box-sizing: border-box;
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;

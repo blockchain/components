@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -16,7 +16,7 @@ const Wrapper = styled.div`
     width: 100%;
   }
 
-  @media (min-width: 62rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.md}) {
     flex-wrap: no-wrap;
   }
 `
