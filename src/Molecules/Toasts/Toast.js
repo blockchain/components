@@ -46,9 +46,10 @@ const Close = styled.div`
 `
 
 const IndicatorSuccess = styled(FasCheckCircle).attrs({
-  size: '16px',
+  size: '1rem',
 })`
-  padding-right: ${PADDING};
+  margin-right: ${PADDING};
+  margin-top: 2px;
   fill: ${(props) => props.theme.successColor};
 
   &:hover {
@@ -57,9 +58,10 @@ const IndicatorSuccess = styled(FasCheckCircle).attrs({
 `
 
 const IndicatorWarning = styled(FasExclamationCircle).attrs({
-  size: '16px',
+  size: '1rem',
 })`
-  padding-right: ${PADDING};
+  margin-right: ${PADDING};
+  margin-top: 2px;
   fill: ${(props) => props.theme.warningColor};
 
   &:hover {
@@ -67,7 +69,11 @@ const IndicatorWarning = styled(FasExclamationCircle).attrs({
   }
 `
 
-const IndicatorDanger = styled(IndicatorWarning)`
+const IndicatorDanger = styled(IndicatorWarning).attrs({
+  size: '1rem',
+})`
+  margin-right: ${PADDING};
+  margin-top: 2px;
   fill: ${(props) => props.theme.dangerColor};
 
   &:hover {
