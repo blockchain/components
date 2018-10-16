@@ -304,7 +304,8 @@ exports[`Toast should render correctly with type=danger 1`] = `
 }
 
 .c2 {
-  padding-right: 1.025rem;
+  margin-right: 1.025rem;
+  margin-top: 2px;
   fill: #F7C653;
 }
 
@@ -313,6 +314,8 @@ exports[`Toast should render correctly with type=danger 1`] = `
 }
 
 .c1 {
+  margin-right: 1.025rem;
+  margin-top: 2px;
   fill: #F36331;
 }
 
@@ -336,25 +339,26 @@ exports[`Toast should render correctly with type=danger 1`] = `
       <Styled(Styled(FasExclamationCircle))>
         <Styled(FasExclamationCircle)
           className="c1"
+          size="1rem"
         >
           <FasExclamationCircle
             className="c1 c2"
             selectable={false}
-            size="16px"
+            size="1rem"
           >
             <styled.svg
               className="c1 c2"
-              height="16px"
+              height="1rem"
               selectable={false}
               viewBox="0 0 512 512"
-              width="16px"
+              width="1rem"
               xmlns="http://www.w3.org/2000/svg"
             >
               <svg
                 className="c1 c2 c3"
-                height="16px"
+                height="1rem"
                 viewBox="0 0 512 512"
-                width="16px"
+                width="1rem"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -488,7 +492,8 @@ exports[`Toast should render correctly with type=success 1`] = `
 }
 
 .c1 {
-  padding-right: 1.025rem;
+  margin-right: 1.025rem;
+  margin-top: 2px;
   fill: #47B881;
 }
 
@@ -513,21 +518,21 @@ exports[`Toast should render correctly with type=success 1`] = `
         <FasCheckCircle
           className="c1"
           selectable={false}
-          size="16px"
+          size="1rem"
         >
           <styled.svg
             className="c1"
-            height="16px"
+            height="1rem"
             selectable={false}
             viewBox="0 0 512 512"
-            width="16px"
+            width="1rem"
             xmlns="http://www.w3.org/2000/svg"
           >
             <svg
               className="c1 c2"
-              height="16px"
+              height="1rem"
               viewBox="0 0 512 512"
-              width="16px"
+              width="1rem"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -660,7 +665,8 @@ exports[`Toast should render correctly with type=warning 1`] = `
 }
 
 .c1 {
-  padding-right: 1.025rem;
+  margin-right: 1.025rem;
+  margin-top: 2px;
   fill: #F7C653;
 }
 
@@ -685,21 +691,21 @@ exports[`Toast should render correctly with type=warning 1`] = `
         <FasExclamationCircle
           className="c1"
           selectable={false}
-          size="16px"
+          size="1rem"
         >
           <styled.svg
             className="c1"
-            height="16px"
+            height="1rem"
             selectable={false}
             viewBox="0 0 512 512"
-            width="16px"
+            width="1rem"
             xmlns="http://www.w3.org/2000/svg"
           >
             <svg
               className="c1 c2"
-              height="16px"
+              height="1rem"
               viewBox="0 0 512 512"
-              width="16px"
+              width="1rem"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
