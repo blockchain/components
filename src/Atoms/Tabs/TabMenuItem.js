@@ -15,7 +15,7 @@ const Wrapper = styled.div.attrs({
   box-sizing: border-box;
   cursor: pointer;
 
-  @media (max-width: 48rem) {
+  @media (max-width: ${(props) => props.theme.screenSizes.sm}) {
     order: 1;
 
     &.hidden {
@@ -23,7 +23,7 @@ const Wrapper = styled.div.attrs({
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     display: flex;
     justify-content: center;
     order: 1;

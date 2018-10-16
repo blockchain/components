@@ -15,7 +15,7 @@ const TogglerExpand = styled(FasTimes).attrs({
     fill: ${(props) => props.theme['navbarTogglerColor']} !important;
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     display: none;
   }
 `
@@ -31,7 +31,7 @@ const TogglerCollapse = styled(FasBars).attrs({
     fill: ${(props) => props.theme['navbarTogglerColor']} !important;
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     display: none;
   }
 `

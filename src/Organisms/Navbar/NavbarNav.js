@@ -13,13 +13,13 @@ const Wrapper = styled.ul`
   box-sizing: border-box;
   list-style-type: none;
 
-  @media (max-width: 48rem) {
+  @media (max-width: ${(props) => props.theme.screenSizes.sm}) {
     & > li:first-child {
       border-top: none;
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     display: ${(props) => (props.toggled ? 'flex' : 'none')};
     flex-direction: row;
     align-items: center;

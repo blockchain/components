@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   width: 100%;
   z-index: 10;
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     position: absolute;
     width: auto;
     margin: 0.25rem 0;
@@ -22,11 +22,11 @@ const Container = styled.div`
     margin-bottom: 0 !important;
   }
 
-  @media (max-width: 48rem) {
+  @media (max-width: ${(props) => props.theme.screenSizes.sm}) {
     padding: 1.1rem 0;
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     margin-top: 15px;
     padding: 1.5rem;
     border-radius: 0.25rem;

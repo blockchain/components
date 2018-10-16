@@ -7,6 +7,11 @@ export default {
   e2e: true,
   palette,
   fontPrimary: "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+  screenSizes: {
+    sm: '48rem',
+    md: '62rem',
+    lg: '75rem',
+  },
   brandNameColor: palette.gray3,
   buttonBackgroundColor: palette.orient,
   buttonBorderRadius: borderRadius,

@@ -24,22 +24,27 @@ const Wrapper = styled.div.attrs({
   min-width: 250px;
   max-width: 560px;
 `
+
 const Content = styled.div`
   display: flex;
   flex: 1 1 0%;
   flex-direction: column;
 `
+
 const Title = styled.div`
   display: flex;
   font-weight: 600;
 `
+
 const Description = styled.div`
   display: flex;
   padding-top: 0.325rem;
 `
+
 const Close = styled.div`
   padding-left: ${PADDING};
 `
+
 const IndicatorSuccess = styled(FasCheckCircle).attrs({
   size: '16px',
 })`
@@ -50,6 +55,7 @@ const IndicatorSuccess = styled(FasCheckCircle).attrs({
     fill: ${(props) => props.theme.successColor};
   }
 `
+
 const IndicatorWarning = styled(FasExclamationCircle).attrs({
   size: '16px',
 })`
@@ -60,6 +66,7 @@ const IndicatorWarning = styled(FasExclamationCircle).attrs({
     fill: ${(props) => props.theme.warningColor};
   }
 `
+
 const IndicatorDanger = styled(IndicatorWarning)`
   fill: ${(props) => props.theme.dangerColor};
 

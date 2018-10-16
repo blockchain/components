@@ -10,7 +10,7 @@ const Wrapper = styled.span`
   cursor: pointer;
   display: none;
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     display: block;
   }
 `

@@ -12,7 +12,7 @@ const Toggler = styled(FasBars).attrs({
   top: 13px;
   right: 20px;
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     display: none;
   }
 `

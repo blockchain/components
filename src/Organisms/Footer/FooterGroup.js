@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   margin-bottom: 4rem;
   margin-right: 2rem;
 
-  @media (max-width: 48rem) {
+  @media (max-width: ${(props) => props.theme.screenSizes.sm}) {
     margin-bottom: 2rem;
   }
 `

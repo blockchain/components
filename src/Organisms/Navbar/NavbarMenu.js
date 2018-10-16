@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   z-index: 10;
   transform: translate3d(0, 0, 0);
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     position: relative;
     top: initial;
     display: flex;

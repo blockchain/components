@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   height: ${(props) => props.height};
   margin: 0 auto;
 
-  @media (min-width: 75rem) {
+  @media (min-width: ${(props) => props.theme.screenSizes.lg}) {
     width: 75rem;
   }
 `
