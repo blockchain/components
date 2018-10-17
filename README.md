@@ -5,17 +5,75 @@
 # Description
 The library **Components** is based on React and styled-components. It contains basic components, "atoms", and more complex "molecules" that are used on the [Blockchain.com](https://www.blockchain.com) ecosystem.
 
-# Tooling
-Both `yarn` and `npm` are supported.
-
-The commands are given using `npm` however you can use the `yarn` equivalent and it will *Just Work™*
-
 # Installation
 
 Just a quick `npm i @blockchain-com/components` and you are good to go!
 
+# Tips
+
+## Icons usage
+
+### 1. FontAwesome icons (free version)
+Use `<Fas... />`
+
+* **`Fas`** is the type ("Fab", "Far" and "Fas" are avaible)
+  * `Fab` matches the brand iconset
+  * `Fas` matches the solid iconset
+  * `Far` matches the regular iconset
+
+* **`...`** is the FontAwesome icon name formatted as [PascalCase](http://wiki.c2.com/?PascalCase).
+
+The full icon list is available [here](https://fontawesome.com/icons)
+
+Examples:
+
+```javascript
+<FasCheckCircle />
+<FarCheckCircle />
+<FabFacebook />
+```
+
+![cryptos](https://cldup.com/Zk6b878l6f.png)
+
+### 2. Crypto icons
+Use `<Crypto.../>`
+
+* **`...`** is the icon name formatted as [PascalCase](http://wiki.c2.com/?PascalCase).
+
+The list of crypto icons is available [here](http://cryptoicons.co/)
+
+Examples:
+
+```javascript
+<CryptoBtc />
+<CryptoXlm />
+```
+
+![cryptos](https://cldup.com/zp5HYSkfv6.png)
+
+### 3. Custom (bc) icons
+Use `<Bc... />`
+
+* **`...`** is the icon name formatted as [PascalCase](http://wiki.c2.com/?PascalCase).
+
+The list of custom icons is available [here](https://github.com/blockchain/components/blob/master/src/Atoms/Icons/custom/index.js)
+
+Examples:
+
+```javascript
+<BcBlocks />
+<BcTransactions />
+```
+
+![cryptos](https://cldup.com/xMP2jL1hjW.png)
 
 # Development
+
+## Tooling
+
+Both `yarn` and `npm` are supported.
+
+The commands are given using `npm` however you can use the `yarn` equivalent and it will *Just Work™*
 
 ## Link
 
@@ -37,43 +95,6 @@ You can also use the task `npm run build:watch` on `components` to automatically
 2. Install packages: `npm i`
 3. Start application in dev mode: `npm run start`
 4. The library will now be accessible at [localhost:6006](http://localhost:6006)
-
-# Tips
-
-## Icons usage
-
-### 1. FontAwesome icons (free version)
-
-Use `<Fas... />`
-
-* **`Fas`** is the type ("Fab", "Far" and "Fas" are avaible)
-  * `Fab` matches the brand iconset
-  * `Fas` matches the solid iconset
-  * `Far` matches the regular iconset
-
-* **`...`** is the FontAwesome icon name formatted as [PascalCase](http://wiki.c2.com/?PascalCase).
-
-The full icon list is available [here](https://fontawesome.com/icons)
-
-Examples:
-
-```javascript
-<FasCheckCircle />
-<FarCheckCircle />
-<FabFacebook />
-```
-
-### 2. Custom icons
-Use `<Bc... />`
-
-* **`...`** is the icon name formatted as [PascalCase](http://wiki.c2.com/?PascalCase).
-
-Examples:
-
-```javascript
-<BcBitcoin />
-<BcEthereum />
-```
 
 # Architecture
 This library follows the [Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/) principles.
