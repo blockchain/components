@@ -53,9 +53,9 @@ const Label = styled.label.attrs({
     box-sizing: border-box;
     content: '';
     height: 1.125rem;
-    left: 0;
+    left: 0.05rem;
     position: absolute;
-    top: calc(50% - 9px);
+    top: calc(50% - 0.5rem);
     width: 1.125rem;
   }
 
