@@ -19,9 +19,10 @@ const Wrapper = styled.div`
   &::after {
     content: '';
     position: absolute;
-    right: 1.4rem;
+    right: 1rem;
     top: 50%;
     margin-top: -3px;
+    margin-left: 5px;
     text-align: center;
     width: 0;
     height: 0;
@@ -41,7 +42,7 @@ const Select = styled.select`
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 0 1.4rem;
+  padding: 0 2.4rem 0 1.4rem;
   color: ${(props) => props.theme.inputColor};
   background-color: transparent;
   appearance: none;
