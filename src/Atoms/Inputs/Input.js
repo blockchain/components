@@ -1,9 +1,20 @@
+// @flow strict
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import injectE2E from '../../Tools/injectE2E'
 import Checkbox from './Checkbox'
+
+export type PropsType = {
+  +disabled?: boolean,
+  +e2e?: string,
+  +input?: {},
+  +label?: string,
+  +name?: string,
+  +type: 'checkbox' | 'date' | 'number' | 'password' | 'search' | 'text',
+  +width?: string,
+}
 
 const Wrapper = styled.input.attrs({
   'data-e2e': injectE2E,
@@ -39,7 +50,7 @@ const Wrapper = styled.input.attrs({
   }
 `
 
-const Input = ({ input, type, ...rest }) => {
+const Input = ({ input, type, ...rest }: PropsType) => {
   if (type === 'checkbox') {
     return <Checkbox {...input} {...rest} type={type} />
   }

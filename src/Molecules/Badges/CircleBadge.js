@@ -1,5 +1,6 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import React from 'react'
 import styled from 'styled-components'
 
 import { FabFacebookF, FabLinkedinIn, FabTwitter } from '../../Atoms/Icons'
@@ -48,7 +49,12 @@ const WhiteTwitter = styled(FabTwitter)`
   }
 `
 
-const CircleBadge = ({ name, size, ...rest }) => (
+type PropsType = {
+  +name?: 'facebook' | 'linkedin' | 'twitter',
+  +size?: string,
+}
+
+const CircleBadge = ({ name, size, ...rest }: PropsType) => (
   <Wrapper size={size} {...rest}>
     {name === 'facebook' && <WhiteFacebook selectable size={size} />}
     {name === 'linkedin' && <WhiteLinkedin selectable size={size} />}

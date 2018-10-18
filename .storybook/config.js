@@ -14,7 +14,11 @@ addDecorator((story, context) =>
   })(story)(context),
 )
 
-const colors = Object.keys(palette).map((x) => ({ name: x, value: palette[x] }))
+const colors = Object.keys(palette).map((x) => ({
+  name: x,
+  value: palette[x],
+  default: x === 'gray0',
+}))
 
 addDecorator(withBackgrounds(colors))
 

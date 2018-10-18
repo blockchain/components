@@ -1,6 +1,8 @@
+// @flow strict
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
+
 import injectE2E from '../../Tools/injectE2E'
 import {
   FasCheckCircle,
@@ -81,14 +83,22 @@ const IndicatorDanger = styled(IndicatorWarning).attrs({
   }
 `
 
-const Toast = ({ description, onClose, title, type, ...rest }) => (
+type PropsType = {
+  +description?: string,
+  +e2e?: string,
+  +onClose?: (SyntheticEvent<HTMLDivElement>) => void,
+  +title?: string,
+  +type?: 'default' | 'danger' | 'success' | 'warning',
+}
+
+const Toast = ({ description, onClose, title, type, ...rest }: PropsType) => (
   <Wrapper {...rest}>
     {type === 'success' && <IndicatorSuccess />}
     {type === 'warning' && <IndicatorWarning />}
     {type === 'danger' && <IndicatorDanger />}
     <Content>
       <Title>{title}</Title>
-      {description && <Description>{description}</Description>}
+      {description != null && <Description>{description}</Description>}
     </Content>
     <Close>
       <FasTimes onClick={onClose} selectable size="16px" />

@@ -15,48 +15,38 @@
         }
       }
     ],
-    "@babel/react"
+    "@babel/react",
+    "@babel/flow"
   ],
   "env": {
+    "development": {
+      "plugins": [
+        ["styled-components", {
+          "displayName": true,
+          "minify": true,
+          "pure": true,
+          "ssr": false
+        }],
+        "@babel/plugin-transform-react-jsx-source",
+        ["@babel/plugin-transform-runtime", {
+          "useESModules": true
+        }]
+      ]
+    },
     "test": {
       "presets": [
         "@babel/env",
-        "@babel/react"
-      ]
-    },
-    "cjs": {
-      "plugins": [
-        "@babel/plugin-proposal-class-properties",
-        "@babel/plugin-proposal-export-namespace-from",
-        "@babel/plugin-transform-modules-commonjs",
-        "@babel/plugin-transform-runtime",
-        [
-          "transform-react-remove-prop-types",
-          {
-            "mode": "wrap"
-          }
-        ],
-        [
-          "styled-components",
-          {
-            "displayName": false,
-            "minify": false,
-            "pure": true,
-            "ssr": true
-          }
-        ]
+        "@babel/react",
+        "@babel/flow"
       ]
     },
     "esm": {
       "plugins": [
         "@babel/plugin-proposal-class-properties",
         "@babel/plugin-proposal-export-namespace-from",
-        [
-          "@babel/plugin-transform-runtime",
-          {
-            "useESModules": true
-          }
-        ],
+        ["@babel/plugin-transform-runtime", {
+          "useESModules": true
+        }],
         [
           "transform-react-remove-prop-types",
           {
@@ -74,5 +64,8 @@
         ]
       ]
     }
-  }
+  },
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+  ]
 }

@@ -1,21 +1,29 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import * as React from 'react'
+// $FlowFixMe
 import ReactTooltip from 'react-tooltip'
+import styled from 'styled-components'
 
 const Wrapper = styled.div`
   width: fit-content;
   display: inline-flex;
 `
 
-class TooltipHost extends React.PureComponent {
+type PropsType = {
+  +children: React.Node,
+  +id: string,
+  +tip?: string,
+}
+
+class TooltipHost extends React.PureComponent<PropsType> {
   componentDidMount() {
     ReactTooltip.rebuild()
   }
 
   render() {
     const { tip, children, id } = this.props
-    const dataTip = tip || []
+    const dataTip = tip == null ? '' : tip
 
     return (
       <Wrapper data-for={id} data-tip={dataTip} {...this.props}>

@@ -9,7 +9,9 @@ const generateClass = (
 ) => {
   const color = typeof withColor !== 'undefined' ? `, ${withColor}` : ''
 
-  return `import React from 'react'
+  return `// @flow strict
+import React from 'react'
+
 import withStyle from '${depth}withStyle'
 
 const InnerSvg = (
@@ -23,12 +25,12 @@ export const ${type}${componentName} = withStyle(InnerSvg, ${width}, ${height}, 
 }
 
 const generateExport = (componentNames, type = '') => {
-  return componentNames
-    .map(
-      ({ componentName, filename }) =>
-        `export { ${type}${componentName} } from './${filename}'\r\n`,
-    )
-    .join('')
+  const exports = componentNames.map(
+    ({ componentName, filename }) =>
+      `export { ${type}${componentName} } from './${filename}'\r\n`,
+  )
+
+  return ['// @flow strict\r\n', ...exports].join('')
 }
 
 module.exports = {

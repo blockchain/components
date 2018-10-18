@@ -1,3 +1,4 @@
+// @flow strict
 export { FasAd } from './ad'
 export { FasAddressBook } from './address-book'
 export { FasAddressCard } from './address-card'

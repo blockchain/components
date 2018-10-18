@@ -1,5 +1,6 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
 const scaleDelay = keyframes`
@@ -120,7 +121,9 @@ const Square25 = styled(SquareD)`
   animation-delay: 0.8s;
 `
 
-const BlockchainLoader = (props) => (
+type PropsType = { +size?: string }
+
+const BlockchainLoader = (props: PropsType) => (
   <Wrapper {...props}>
     <Container>
       <Square1 />

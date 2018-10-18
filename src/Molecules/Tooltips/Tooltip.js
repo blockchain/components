@@ -1,6 +1,8 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled, { injectGlobal } from 'styled-components'
+// $FlowFixMe
 import ReactTooltip from 'react-tooltip'
 
 injectGlobal`
@@ -190,7 +192,12 @@ const StyledTip = styled(ReactTooltip)`
   }
 `
 
-const Tooltip = (props) => {
+type PropsType = {
+  +children: React.Node,
+  +id: string,
+}
+
+const Tooltip = (props: PropsType) => {
   const { id, children, ...rest } = props
 
   return (

@@ -1,5 +1,6 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.span`
@@ -19,7 +20,11 @@ const Wrapper = styled.span`
   border-radius: 2px;
 `
 
-const Cartridge = ({ children, ...rest }) => (
+type PropsType = {
+  +children?: React.Node,
+}
+
+const Cartridge = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>
 )
 

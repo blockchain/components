@@ -1,5 +1,6 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
@@ -13,6 +14,7 @@ const Wrapper = styled.div`
     background-color: transparent;
   }
 `
+
 const Container = styled.div`
   position: relative;
   display: flex;
@@ -66,7 +68,11 @@ const Container = styled.div`
   }
 `
 
-const NavbarDropdownContent = ({ children, ...rest }) => (
+type PropsType = {
+  +children?: React.Node,
+}
+
+const NavbarDropdownContent = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>
     <Container>{children}</Container>
   </Wrapper>

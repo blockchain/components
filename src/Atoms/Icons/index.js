@@ -1,5 +1,6 @@
-export * from './custom'
+// @flow strict
 export * from './crypto'
+export * from './custom'
 export * from './fa/brands'
 export * from './fa/regular'
 export * from './fa/solid'

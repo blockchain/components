@@ -1,3 +1,4 @@
+// @flow strict
 import Navbar from './Navbar'
 import NavbarBrand from './NavbarBrand'
 import NavbarDropdownContent from './NavbarDropdownContent'

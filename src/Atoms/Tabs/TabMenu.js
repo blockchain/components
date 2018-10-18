@@ -1,5 +1,6 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
@@ -33,7 +34,13 @@ const Container = styled.div`
   }
 `
 
-const TabMenu = ({ children, toggled, ...rest }) => (
+type PropsType = {
+  +children?: React.Node,
+  +toggled?: boolean,
+  +width?: string,
+}
+
+const TabMenu = ({ children, toggled, ...rest }: PropsType) => (
   <Wrapper {...rest}>
     <Container toggled={toggled}>{children}</Container>
   </Wrapper>

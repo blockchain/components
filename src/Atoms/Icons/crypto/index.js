@@ -1,3 +1,4 @@
+// @flow strict
 export { Crypto$pac } from './$pac'
 export { CryptoAbt } from './abt'
 export { CryptoAct } from './act'

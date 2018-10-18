@@ -1,5 +1,7 @@
-/* eslint-disable sort-keys */
-export default {
+// @flow strict
+
+const palette = {
+  /* eslint-disable sort-keys */
   // Blue shades (Dark to Light)
   bigStone: '#152343',
   biscay: '#153A62',
@@ -37,5 +39,9 @@ export default {
   blackAlpha50: 'rgba(0,0,0,0.50)',
   blackAlpha10: 'rgba(0,0,0,0.10)',
   blackAlpha05: 'rgba(0,0,0,0.05)',
+  /* eslint-enable sort-keys */
 }
-/* eslint-enable sort-keys */
+
+export type PaletteType = typeof palette
+
+export default palette

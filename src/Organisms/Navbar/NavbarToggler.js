@@ -1,5 +1,6 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import React from 'react'
 import styled from 'styled-components'
 
 import { FasTimes, FasBars } from '../../Atoms/Icons'
@@ -36,8 +37,13 @@ const TogglerCollapse = styled(FasBars).attrs({
   }
 `
 
-const NavbarToggler = ({ onToggle, toggled }) =>
-  toggled ? (
+type PropsType = {
+  +onToggle?: (SyntheticEvent<HTMLDivElement>) => void,
+  +toggled?: boolean,
+}
+
+const NavbarToggler = ({ onToggle, toggled }: PropsType) =>
+  toggled === true ? (
     <TogglerExpand onClick={onToggle} />
   ) : (
     <TogglerCollapse onClick={onToggle} />

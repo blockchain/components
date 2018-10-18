@@ -1,3 +1,4 @@
+// @flow strict
 export { FarAddressBook } from './address-book'
 export { FarAddressCard } from './address-card'
 export { FarAngry } from './angry'

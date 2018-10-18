@@ -1,6 +1,8 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
+
 import injectE2E from '../../Tools/injectE2E'
 
 const Wrapper = styled.div.attrs({
@@ -27,7 +29,13 @@ const Wrapper = styled.div.attrs({
   text-transform: uppercase;
 `
 
-const TogglerItem = ({ children, ...rest }) => (
+type PropsType = {
+  +children: React.Node,
+  +e2e?: string,
+  +selected?: boolean,
+}
+
+const TogglerItem = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>
 )
 

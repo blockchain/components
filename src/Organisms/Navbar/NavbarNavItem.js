@@ -1,5 +1,6 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.li`
@@ -21,7 +22,11 @@ const Wrapper = styled.li`
   }
 `
 
-const NavbarNavItem = ({ children, ...rest }) => (
+type PropsType = {
+  +children?: React.Node,
+}
+
+const NavbarNavItem = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>
 )
 

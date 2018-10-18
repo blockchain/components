@@ -1,7 +1,9 @@
+// @flow strict
 import React from 'react'
 import styled from 'styled-components'
 
 import injectE2E from '../../Tools/injectE2E'
+import type { PropsType } from './Input'
 
 const toId = (name) => `${name}-checkbox`
 
@@ -76,7 +78,7 @@ const Label = styled.label.attrs({
   }
 `
 
-const Checkbox = ({ input, ...rest }) => (
+const Checkbox = ({ input, ...rest }: PropsType) => (
   <Wrapper>
     <Input {...input} {...rest} />
     <Label name={rest.name}>{rest.label}</Label>
