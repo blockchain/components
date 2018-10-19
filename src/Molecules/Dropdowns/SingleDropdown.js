@@ -1,3 +1,4 @@
+// @flow strict
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
@@ -73,7 +74,27 @@ const Select = styled.select`
   }
 `
 
-const SingleDropdown = ({ className, inline, items, width, ...rest }) => (
+type PropsType = {
+  +capitalize?: boolean,
+  +className?: string,
+  +inline?: boolean,
+  +italic?: boolean,
+  +items: Array<{| +text: string, +value: string | number |}>,
+  +onChange?: (SyntheticEvent<HTMLSelectElement>) => void,
+  +size?: string,
+  +uppercase?: boolean,
+  +value?: string | number,
+  +weight?: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900,
+  +width?: string,
+}
+
+const SingleDropdown = ({
+  className,
+  inline,
+  items,
+  width,
+  ...rest
+}: PropsType) => (
   <Wrapper className={className} inline={inline} width={width}>
     <Select inline={inline} {...rest}>
       {items.map((item) => (

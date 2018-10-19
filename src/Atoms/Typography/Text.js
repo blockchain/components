@@ -1,6 +1,17 @@
-import React from 'react'
-import styled from 'styled-components'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
+import styled from 'styled-components'
+
+type PropsType = {
+  +capitalize?: boolean,
+  +children?: React.Node,
+  +italic?: boolean,
+  +opacity?: number,
+  +size?: string,
+  +uppercase?: boolean,
+  +weight?: 100 | 200 | 300 | 400 | 500 | 600 | 700,
+}
 
 const Wrapper = styled.span`
   font-family: ${(props) => props.theme['fontPrimary']};
@@ -13,7 +24,9 @@ const Wrapper = styled.span`
   opacity: ${(props) => props.opacity};
 `
 
-const Text = ({ children, ...rest }) => <Wrapper {...rest}>{children}</Wrapper>
+const Text = ({ children, ...rest }: PropsType) => (
+  <Wrapper {...rest}>{children}</Wrapper>
+)
 
 Text.propTypes = {
   capitalize: PropTypes.bool,

@@ -1,7 +1,17 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
+
 import injectE2E from '../../Tools/injectE2E'
+
+type PropsType = {
+  +bounced?: boolean,
+  +children?: React.Node,
+  +disabled?: boolean,
+  +e2e?: string,
+  +type: 'button' | 'reset' | 'submit',
+}
 
 const Wrapper = styled.button.attrs({
   'data-e2e': injectE2E,
@@ -36,7 +46,7 @@ const Wrapper = styled.button.attrs({
     transform: ${(props) => (props.bounced ? 'scale(0.95)' : 'none')};
   }
 `
-const Button = ({ children, ...rest }) => (
+const Button = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>
 )
 

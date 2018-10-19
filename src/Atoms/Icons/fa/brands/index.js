@@ -1,3 +1,4 @@
+// @flow strict
 export { FabAccessibleIcon } from './accessible-icon'
 export { FabAccusoft } from './accusoft'
 export { FabAcquisitionsIncorporated } from './acquisitions-incorporated'

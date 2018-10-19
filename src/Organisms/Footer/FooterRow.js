@@ -1,6 +1,11 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
+
+type PropsType = {
+  +children?: React.Node,
+}
 
 const Wrapper = styled.div`
   display: flex;
@@ -21,7 +26,7 @@ const Wrapper = styled.div`
   }
 `
 
-const FooterRow = ({ children, ...rest }) => (
+const FooterRow = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>
 )
 

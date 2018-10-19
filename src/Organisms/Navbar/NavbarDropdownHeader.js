@@ -1,6 +1,11 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
+
+type PropsType = {
+  +children?: React.Node,
+}
 
 const Wrapper = styled.span`
   font-family: ${(props) => props.theme['fontPrimary']};
@@ -15,7 +20,7 @@ const Wrapper = styled.span`
   }
 `
 
-const NavbarDropdownHeader = ({ children, ...rest }) => (
+const NavbarDropdownHeader = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>
 )
 

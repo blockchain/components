@@ -1,6 +1,11 @@
+// @flow strict
+import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
+
+type PropsType = {
+  +height?: string,
+}
 
 const Wrapper = styled.svg.attrs({
   viewBox: '0 0 397.4 43.7',
@@ -9,7 +14,7 @@ const Wrapper = styled.svg.attrs({
   fill: ${(props) => props.theme.brandNameColor};
 `
 
-const BrandName = ({ height, ...rest }) => (
+const BrandName = ({ height, ...rest }: PropsType) => (
   <Wrapper size={height} {...rest}>
     <path
       d="M151.7,29.7c-2.1,2.2-5.1,3.6-8.3,3.6c-6.3,0-11.5-5.2-11.5-11.5s5.2-11.5,11.5-11.5c2.9,0,5.6,1.1,7.6,2.9
@@ -28,7 +33,7 @@ const BrandName = ({ height, ...rest }) => (
     />
     <polygon points="54.6,0.9 42.9,0.9 42.9,42.7 73.4,42.7 73.4,32.7 54.6,32.7 " />
     <polygon
-      points="273.3,16.8 258.4,16.8 258.4,1.1 246.7,1.1 246.7,43 258.4,43 258.4,27.1 273.3,27.1 273.3,43 
+      points="273.3,16.8 258.4,16.8 258.4,1.1 246.7,1.1 246.7,43 258.4,43 258.4,27.1 273.3,27.1 273.3,43
 	284.9,43 284.9,1.2 273.3,1.2 "
     />
     <path
@@ -38,7 +43,7 @@ const BrandName = ({ height, ...rest }) => (
     <rect height="41.9" width="11.6" x="339.1" y="1.2" />
     <polygon points="385.8,1.2 385.8,23.3 368.5,1.2 357.5,1.2 357.5,43 369.2,43 369.2,20.1 387.1,43 397.4,43 397.4,1.2" />
     <polygon
-      points="205.4,1 191.6,1 191.6,1 191.6,1 177.2,18 177.2,1 165.6,1 165.6,42.9 177.2,42.9 177.2,32.1 
+      points="205.4,1 191.6,1 191.6,1 191.6,1 177.2,18 177.2,1 165.6,1 165.6,42.9 177.2,42.9 177.2,32.1
 	181.5,27.4 193.2,42.9 193.2,42.9 193.2,42.9 207,42.9 189.1,19 "
     />
     <path

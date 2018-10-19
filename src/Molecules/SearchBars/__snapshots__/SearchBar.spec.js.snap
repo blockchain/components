@@ -236,7 +236,9 @@ exports[`SearchBar should render correctly 1`] = `
           className="c6"
           data-e2e="defaultSearchBar.Button"
         >
-          Go
+          <GoLabel>
+            Go
+          </GoLabel>
         </div>
       </styled.div>
     </div>
@@ -485,7 +487,9 @@ exports[`SearchBar should render correctly with onChange 1`] = `
           className="c6"
           data-e2e="defaultSearchBar.Button"
         >
-          Go
+          <GoLabel>
+            Go
+          </GoLabel>
         </div>
       </styled.div>
     </div>
@@ -732,7 +736,9 @@ exports[`SearchBar should render correctly with onClick 1`] = `
           data-e2e="defaultSearchBar.Button"
           onClick={[MockFunction]}
         >
-          Go
+          <GoLabel>
+            Go
+          </GoLabel>
         </div>
       </styled.div>
     </div>
@@ -986,7 +992,9 @@ exports[`SearchBar should render correctly with value 1`] = `
           className="c6"
           data-e2e="defaultSearchBar.Button"
         >
-          Go
+          <GoLabel>
+            Go
+          </GoLabel>
         </div>
       </styled.div>
     </div>
@@ -1240,7 +1248,9 @@ exports[`SearchBar should render correctly with width 1`] = `
           className="c6"
           data-e2e="defaultSearchBar.Button"
         >
-          Go
+          <GoLabel>
+            Go
+          </GoLabel>
         </div>
       </styled.div>
     </div>

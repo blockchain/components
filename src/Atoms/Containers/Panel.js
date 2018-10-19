@@ -1,6 +1,13 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
+
+type PropsType = {
+  +children?: React.Node,
+  +height?: string,
+  +width?: string,
+}
 
 const Wrapper = styled.div`
   display: flex;
@@ -14,7 +21,9 @@ const Wrapper = styled.div`
   background-color: ${(props) => props.theme['panelBackgroundColor']};
 `
 
-const Panel = ({ children, ...rest }) => <Wrapper {...rest}>{children}</Wrapper>
+const Panel = ({ children, ...rest }: PropsType) => (
+  <Wrapper {...rest}>{children}</Wrapper>
+)
 
 Panel.propTypes = {
   children: PropTypes.node,

@@ -1,8 +1,13 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
 
 import Text from '../../Atoms/Typography/Text'
+
+type PropsType = {
+  +children?: React.Node,
+}
 
 const Wrapper = styled(Text).attrs({
   size: '1rem',
@@ -15,7 +20,7 @@ const Wrapper = styled(Text).attrs({
   }
 `
 
-const NavbarDropdownItemTitle = ({ children, ...rest }) => (
+const NavbarDropdownItemTitle = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>
 )
 

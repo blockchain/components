@@ -1,3 +1,4 @@
+// @flow strict
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
@@ -39,7 +40,12 @@ const Rectangle5 = styled(Rectangle)`
   animation-delay: -0.7s;
 `
 
-const FlatLoader2 = (props) => (
+type PropsType = {
+  +height?: string,
+  +width?: string,
+}
+
+const FlatLoader2 = (props: PropsType) => (
   <Container {...props}>
     <Rectangle1 />
     <Rectangle2 />

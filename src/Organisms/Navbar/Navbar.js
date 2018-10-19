@@ -1,6 +1,12 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
+
+type PropsType = {
+  +children?: React.Node,
+  +height?: string,
+}
 
 const Wrapper = styled.div`
   position: relative;
@@ -18,7 +24,7 @@ const Wrapper = styled.div`
   }
 `
 
-const Navbar = ({ children, height, ...rest }) => (
+const Navbar = ({ children, height, ...rest }: PropsType) => (
   <Wrapper height={height} {...rest}>
     {children}
   </Wrapper>

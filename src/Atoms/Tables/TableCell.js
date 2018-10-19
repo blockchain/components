@@ -1,8 +1,18 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
 
-const selectAlign = (align) => {
+type AlignType = 'center' | 'left' | 'right'
+
+type PropsType = {
+  +align?: AlignType,
+  +children?: React.Node,
+  +shrinked?: boolean,
+  +width?: string,
+}
+
+const selectAlign = (align: AlignType) => {
   switch (align) {
     case 'left':
       return 'flex-start'
@@ -29,7 +39,7 @@ const Wrapper = styled.div`
   }
 `
 
-const TableCell = ({ children, ...rest }) => (
+const TableCell = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>
 )
 

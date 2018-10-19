@@ -1,6 +1,11 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
+
+type PropsType = {
+  +children?: React.Node,
+}
 
 const Wrapper = styled.div`
   display: flex;
@@ -19,7 +24,9 @@ const Wrapper = styled.div`
   }
 `
 
-const Table = ({ children, ...rest }) => <Wrapper {...rest}>{children}</Wrapper>
+const Table = ({ children, ...rest }: PropsType) => (
+  <Wrapper {...rest}>{children}</Wrapper>
+)
 
 Table.propTypes = {
   children: PropTypes.node,

@@ -1,5 +1,6 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
 
 import { FasSearch } from '../../Atoms/Icons'
@@ -74,6 +75,16 @@ const GoContainer = styled.div.attrs({
 `
 const GoLabel = () => <React.Fragment>Go</React.Fragment>
 
+type PropsType = {
+  +children?: React.Node,
+  +e2e?: string,
+  +onChange?: (SyntheticEvent<HTMLInputElement>) => void,
+  +onClick?: (SyntheticEvent<HTMLInputElement>) => void,
+  +renderSubmit: React.ComponentType<*>,
+  +value?: string | number,
+  +width?: string,
+}
+
 const SearchBar = ({
   children,
   e2e,
@@ -82,17 +93,21 @@ const SearchBar = ({
   onChange,
   onClick,
   ...rest
-}) => (
-  <Wrapper width={width}>
-    <IconContainer>
-      <SearchIcon />
-    </IconContainer>
-    <SearchInput e2e={`${e2e}.Input`} onChange={onChange} {...rest} />
-    <GoContainer e2e={`${e2e}.Button`} onClick={onClick}>
-      {renderSubmit()}
-    </GoContainer>
-  </Wrapper>
-)
+}: PropsType) => {
+  const Submit = renderSubmit
+
+  return (
+    <Wrapper width={width}>
+      <IconContainer>
+        <SearchIcon />
+      </IconContainer>
+      <SearchInput e2e={`${e2e || ''}.Input`} onChange={onChange} {...rest} />
+      <GoContainer e2e={`${e2e || ''}.Button`} onClick={onClick}>
+        <Submit />
+      </GoContainer>
+    </Wrapper>
+  )
+}
 
 SearchBar.propTypes = {
   children: PropTypes.node,

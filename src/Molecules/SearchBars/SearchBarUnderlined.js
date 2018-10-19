@@ -1,9 +1,11 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
-import injectE2E from '../../Tools/injectE2E'
+
 import { FasSearch } from '../../Atoms/Icons'
 import { Input } from '../../Atoms/Inputs'
+import injectE2E from '../../Tools/injectE2E'
 
 const Wrapper = styled.div`
   display: flex;
@@ -31,23 +33,32 @@ const IconContainer = styled.div.attrs({
   height: 40px;
 `
 
+type PropsType = {
+  +children?: React.Node,
+  +e2e?: string,
+  +onChange?: (SyntheticEvent<HTMLInputElement>) => void,
+  +onClick?: (SyntheticEvent<HTMLInputElement>) => void,
+  +value?: string | number,
+  +width?: string,
+}
+
 const SearchBarUnderlined = ({
   children,
   e2e,
-  width,
   onChange,
   onClick,
   value,
+  width,
   ...rest
-}) => (
+}: PropsType) => (
   <Wrapper width={width}>
     <SearchInput
-      e2e={`${e2e}.Input`}
+      e2e={`${e2e || ''}.Input`}
       onChange={onChange}
       value={value}
       {...rest}
     />
-    <IconContainer e2e={`${e2e}.Button`} onClick={onClick}>
+    <IconContainer e2e={`${e2e || ''}.Button`} onClick={onClick}>
       <FasSearch selectable size="20px" />
     </IconContainer>
   </Wrapper>

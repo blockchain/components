@@ -1,5 +1,7 @@
-import React from 'react'
+// @flow strict
+//
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
@@ -10,7 +12,11 @@ const Wrapper = styled.div`
   margin: 10px 0;
 `
 
-const Pagination = ({ children, ...rest }) => {
+type PropsType = {
+  +children?: React.Node,
+}
+
+const Pagination = ({ children, ...rest }: PropsType) => {
   return <Wrapper {...rest}>{children}</Wrapper>
 }
 

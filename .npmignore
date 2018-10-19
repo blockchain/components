@@ -19,6 +19,7 @@ coverage/
 node_modules/
 src/
 utils/
+storybook-static/
 
 __fixtures__
 __snapshots__

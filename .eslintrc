@@ -5,11 +5,13 @@ plugins:
   - babel
   - react
   - prettier
+  - flowtype
 
 extends:
   - standard
   - plugin:react/recommended
   - plugin:prettier/recommended
+  - plugin:flowtype/recommended
 
 env:
   es6: true
@@ -19,8 +21,11 @@ globals:
   Event: true
 
 settings:
+  flowtype:
+    onlyFilesWithFlowAnnotation: true
   react:
-    version: 16.4.2
+    version: 16.5.2
+    flowVersion: 0.83.0
 
 rules:
   react/jsx-no-bind: warn
@@ -95,3 +100,19 @@ rules:
     - warn
   prettier/prettier:
     - error
+  flowtype/delimiter-dangle:
+    - error
+    - always-multiline
+  flowtype/no-weak-types:
+    - warn
+  flowtype/semi:
+    - error
+    - never
+  flowtype/type-id-match:
+    - warn
+    - ^([A-Z][a-z0-9]*)+Type$
+  flowtype/sort-keys:
+    - error
+    - asc
+    - caseSensitive: false
+      natural: true

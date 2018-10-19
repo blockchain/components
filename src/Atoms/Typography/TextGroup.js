@@ -1,6 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
+import styled from 'styled-components'
+
+type PropsType = {
+  +align?: 'center' | 'justify' | 'left' | 'right',
+  +capitalize?: boolean,
+  +children?: React.Node,
+  +inline?: boolean,
+}
 
 const Wrapper = styled.div`
   text-align: ${(props) => props.align};
@@ -11,7 +19,7 @@ const Wrapper = styled.div`
   }
 `
 
-const TextGroup = ({ children, ...rest }) => (
+const TextGroup = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>
 )
 

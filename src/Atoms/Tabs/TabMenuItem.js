@@ -1,4 +1,5 @@
-import React from 'react'
+// @flow strict
+import * as React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import injectE2E from '../../Tools/injectE2E'
@@ -47,8 +48,18 @@ const Bar = styled.div`
   opacity: ${(props) => (props.selected ? '1' : '0')};
 `
 
-const TabMenuItem = ({ children, className, selected, ...rest }) => (
-  <Wrapper className={selected ? className : `${className} disabled`} {...rest}>
+type PropsType = {
+  +children?: React.Node,
+  +className?: string,
+  +e2e?: string,
+  +selected?: boolean,
+}
+
+const TabMenuItem = ({ children, className, selected, ...rest }: PropsType) => (
+  <Wrapper
+    className={selected === true ? className : `${className || ''} disabled`}
+    {...rest}
+  >
     {children}
     <Bar selected={selected} />
   </Wrapper>

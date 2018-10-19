@@ -1,8 +1,15 @@
-import React from 'react'
+// @flow strict
+//
+//
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
 
 import Link from '../../Atoms/Links/Link'
+
+type PropsType = {
+  +children?: React.Node,
+}
 
 const Wrapper = styled(Link).attrs({
   size: '1rem',
@@ -11,7 +18,7 @@ const Wrapper = styled(Link).attrs({
   position: relative;
 `
 
-const FooterLink = ({ children, ...rest }) => (
+const FooterLink = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>
 )
 

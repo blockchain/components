@@ -1,3 +1,4 @@
+// @flow strict
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
@@ -27,7 +28,9 @@ const Circle2 = styled(Circle1)`
   animation-delay: -1s;
 `
 
-const HeartbeatLoader = (props) => (
+type PropsType = { +size?: string }
+
+const HeartbeatLoader = (props: PropsType) => (
   <Container {...props}>
     <Circle1 />
     <Circle2 />

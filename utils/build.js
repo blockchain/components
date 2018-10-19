@@ -1,14 +1,12 @@
+// @flow
 const { execSync } = require('child_process')
+const flowCopySource = require('flow-copy-source')
 const path = require('path')
-const fs = require('fs')
 const rimraf = require('rimraf')
-const ncp = require('ncp')
 
 const babel = path
   .resolve(__dirname, '../node_modules/.bin/babel')
   .replace(/ /g, '\\ ')
-
-const babelrc = path.resolve(__dirname, '../.babelrc').replace(/ /g, '\\ ')
 
 const exec = (command) =>
   execSync(command, {
@@ -22,22 +20,14 @@ const ignoreGlobs = [
   '"**/__snapshots__"',
 ].join(',')
 
-rimraf.sync('lib')
 rimraf.sync('esm')
 
-const baseCmd = `${babel} src --env-name`
-
-exec(`${baseCmd} cjs --out-dir lib  --ignore ${ignoreGlobs}`)
-exec(`${baseCmd} esm --out-dir esm  --ignore ${ignoreGlobs}`)
-
-rimraf.sync('lib/**/*.js', {
-  glob: {
-    ignore: ['!__snapshots__', '!**/*.spec.js', '!**/*.stories.js'],
-  },
-})
+exec(`${babel} src --env-name esm --out-dir esm  --ignore ${ignoreGlobs}`)
 
 rimraf.sync('esm/**/*.js', {
   glob: {
     ignore: ['!__snapshots__', '!**/*.spec.js', '!**/*.stories.js'],
   },
 })
+
+flowCopySource(['src'], 'esm')

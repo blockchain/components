@@ -1,6 +1,11 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
+
+type PropsType = {
+  +children?: React.Node,
+}
 
 const Wrapper = styled.div`
   display: flex;
@@ -30,7 +35,7 @@ const Wrapper = styled.div`
   }
 `
 
-const ButtonGroup = ({ children, ...rest }) => (
+const ButtonGroup = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>
 )
 

@@ -1,8 +1,14 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
 
 import { FasBars } from '../../Atoms/Icons'
+
+type PropsType = {
+  +children?: React.Node,
+  +onToggle?: (SyntheticEvent<HTMLDivElement>) => void,
+}
 
 const Toggler = styled(FasBars).attrs({
   selectable: true,
@@ -17,7 +23,7 @@ const Toggler = styled(FasBars).attrs({
   }
 `
 
-const TabMenuToggler = ({ onToggle, ...rest }) => (
+const TabMenuToggler = ({ onToggle, ...rest }: PropsType) => (
   <Toggler onClick={onToggle} {...rest} />
 )
 

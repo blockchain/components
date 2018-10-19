@@ -1,5 +1,6 @@
-import React from 'react'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.ul`
@@ -28,7 +29,13 @@ const Wrapper = styled.ul`
   }
 `
 
-const NavbarNav = ({ children, ...rest }) => (
+type PropsType = {
+  +children?: React.Node,
+  +toggled?: boolean,
+  +width?: string,
+}
+
+const NavbarNav = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>
 )
 

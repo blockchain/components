@@ -16,13 +16,13 @@ exports[`TooltipHost should render correctly 1`] = `
 >
   <styled.div
     data-for="storybook.test"
-    data-tip={Array []}
+    data-tip=""
     id="storybook.test"
   >
     <div
       className="c0"
       data-for="storybook.test"
-      data-tip={Array []}
+      data-tip=""
       id="storybook.test"
     >
       TooltipHost

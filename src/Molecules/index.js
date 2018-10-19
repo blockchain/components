@@ -1,3 +1,4 @@
+// @flow strict
 export * from './Badges'
 export * from './Cartridges'
 export * from './Dropdowns'

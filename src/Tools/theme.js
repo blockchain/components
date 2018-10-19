@@ -1,12 +1,13 @@
-/* eslint-disable sort-keys */
+// @flow strict
 import palette from './palette'
 
 const borderRadius = '0.125rem'
 
-export default {
+const theme = {
+  /* eslint-disable sort-keys */
   e2e: true,
-  palette,
   fontPrimary: "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;",
+  palette,
   screenSizes: {
     sm: '48rem',
     md: '62rem',
@@ -84,5 +85,9 @@ export default {
   tooltipBorderColor: palette.gray6,
   tooltipColor: palette.white,
   warningColor: palette.yellow,
+  /* eslint-enable sort-keys */
 }
-/* eslint-enable sort-keys */
+
+export type ThemeType = typeof theme
+
+export default theme

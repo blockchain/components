@@ -1,7 +1,20 @@
-import React from 'react'
-import styled from 'styled-components'
+// @flow strict
 import PropTypes from 'prop-types'
+import * as React from 'react'
+import styled from 'styled-components'
+
 import injectE2E from '../../Tools/injectE2E'
+
+type PropsType = {
+  +capitalize?: boolean,
+  +children?: React.Node,
+  +e2e?: string,
+  +italic?: boolean,
+  +opacity?: number,
+  +size?: string,
+  +uppercase?: boolean,
+  +weight?: 100 | 200 | 300 | 400 | 500 | 600 | 700,
+}
 
 const Wrapper = styled.a.attrs({
   'data-e2e': injectE2E,
@@ -23,7 +36,9 @@ const Wrapper = styled.a.attrs({
   }
 `
 
-const Link = ({ children, ...rest }) => <Wrapper {...rest}>{children}</Wrapper>
+const Link = ({ children, ...rest }: PropsType) => (
+  <Wrapper {...rest}>{children}</Wrapper>
+)
 
 Link.propTypes = {
   capitalize: PropTypes.bool,
