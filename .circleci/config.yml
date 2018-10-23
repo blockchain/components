@@ -21,7 +21,7 @@ jobs:
 
       - run:
           name: install deps
-          command: npm ci
+          command: npm i
 
       - save_cache:
           paths:
