@@ -37,7 +37,7 @@ const Input = styled.input.attrs({
   width: 1px;
 `
 
-const Label = styled.label.attrs({
+export const CheckboxLabel = styled.label.attrs({
   htmlFor: (props) => toId(props.name),
 })`
   position: relative;
@@ -46,7 +46,7 @@ const Label = styled.label.attrs({
   min-height: 1rem;
   padding-left: 1.5rem;
   cursor: pointer;
-  font-family: ${(props) => props.theme['fontPrimary']};
+  font-family: ${(props) => props.theme.fontPrimary};
   font-size: 1rem;
 
   &::before {
@@ -54,11 +54,11 @@ const Label = styled.label.attrs({
     border: 2px solid ${(props) => props.theme.inputBorderColor};
     box-sizing: border-box;
     content: '';
-    height: 1.125rem;
+    height: 16px;
     left: 0.05rem;
     position: absolute;
     top: calc(50% - 0.5rem);
-    width: 1.125rem;
+    width: 16px;
   }
 
   &::after {
@@ -81,7 +81,7 @@ const Label = styled.label.attrs({
 const Checkbox = ({ input, ...rest }: PropsType) => (
   <Wrapper>
     <Input {...input} {...rest} />
-    <Label name={rest.name}>{rest.label}</Label>
+    <CheckboxLabel name={rest.name}>{rest.label}</CheckboxLabel>
   </Wrapper>
 )
 

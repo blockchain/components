@@ -265,11 +265,11 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
   border: 2px solid #CCC;
   box-sizing: border-box;
   content: '';
-  height: 1.125rem;
+  height: 16px;
   left: 0.05rem;
   position: absolute;
   top: calc(50% - 0.5rem);
-  width: 1.125rem;
+  width: 16px;
 }
 
 .c2::after {
