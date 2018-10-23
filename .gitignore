@@ -16,6 +16,7 @@ yarn-error.log
 
 # Coverage directory used by tools like Istanbul
 coverage
+flow-coverage
 
 # a11y files
 a11y/results
