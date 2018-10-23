@@ -1,28 +1,6 @@
 const enzyme = require.resolve('./utils/enzyme')
-const preprocessMock = require.resolve('./utils/preprocessor')
 const raf = require.resolve('./utils/raf')
 const testFramework = require.resolve('./utils/testFramework')
-
-const assetExt = [
-  'css',
-  'eot',
-  'gif',
-  'jpeg',
-  'jpg',
-  'png',
-  'svg',
-  'ttf',
-  'otf',
-  'woff',
-  'woff2',
-]
-
-const codeExt = ['js']
-
-const getTransformString = (extensions) =>
-  extensions
-    .reduce((acc, val) => `${acc}^.+\\\\*${val}|`, '')
-    .replace(/.$/, '$')
 
 const coverageEnabled = process.argv.indexOf('--coverage') !== -1
 
@@ -39,16 +17,18 @@ module.exports = {
     '!**/index.js',
   ],
   coverageDirectory: './coverage',
-  moduleFileExtensions: [codeExt],
-  roots: ['<rootDir>/src/'],
+  coverageReporters: ['json-summary', 'lcov'],
+  coverageThreshold: {
+    global: {
+      branches: 90,
+      functions: 95,
+      lines: 95,
+      statements: 95,
+    },
+  },
   setupFiles: [raf, enzyme],
   setupTestFrameworkScriptFile: testFramework,
   snapshotSerializers: [require.resolve('enzyme-to-json/serializer')],
-  testPathIgnorePatterns: ['/node_modules/', '.*.ignore.spec.*'],
   testURL: 'http://localhost/',
-  transform: {
-    [getTransformString(codeExt)]: 'babel-jest',
-    [getTransformString(assetExt)]: preprocessMock,
-  },
-  transformIgnorePatterns: ['node_modules/'],
+  transform: { '^.+\\.(js|jsx|mjs)$': '<rootDir>/node_modules/babel-jest' },
 }

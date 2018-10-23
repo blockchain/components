@@ -15,7 +15,9 @@ package-lock.json
 yarn.lock
 yarn-error.log
 
+artifacts/
 coverage/
+flow-coverage/
 node_modules/
 src/
 utils/
