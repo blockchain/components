@@ -3,10 +3,10 @@ import React from 'react'
 
 import withStyle from '../../withStyle'
 
-const InnerSvg = (
-  <>
-    <path d="M512 512H0V0h512v512z"/>
-  </>
+const SvgFasSquareFull = (props) => (
+  <svg viewBox="0 0 512 512" {...props}>
+    <path d="M512 512H0V0h512v512z" />
+  </svg>
 )
 
-export const FasSquareFull = withStyle(InnerSvg, 512, 512, 'FasSquareFull')
+export const FasSquareFull = withStyle(SvgFasSquareFull, 'FasSquareFull', false)

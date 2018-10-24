@@ -1,36 +1,37 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 type PropsType = {
   +selectable?: boolean,
   +size?: string,
 }
 
-const Wrapper = styled.svg`
-  fill: ${(props) => props.theme['iconColor']};
+const themeColorTemplate = css`
+  fill: ${(props) => props.theme.iconColor};
   cursor: ${(props) => (props.selectable ? 'pointer' : 'default')};
 
   &:hover {
     fill: ${(props) =>
-      props.selectable
-        ? props.theme['iconHoverColor']
-        : props.theme['iconColor']};
+      props.selectable ? props.theme.iconHoverColor : props.theme.iconColor};
   }
 `
 
-const Svg = styled.svg`
+const svgColorTemplate = css`
   cursor: ${(props) => (props.selectable ? 'pointer' : 'default')};
 `
 
 export default (
-  path: React.Element<*>,
-  width: number,
-  height: number,
+  Svg: React.ComponentType<*>,
   name: string,
-  withColor: boolean = false,
+  keepSvgColor: boolean = false,
 ) => {
+  const template = keepSvgColor ? svgColorTemplate : themeColorTemplate
+  const Icon = styled(Svg)`
+    ${template};
+  `
+
   /* eslint-disable react/prefer-stateless-function */
   class WithStyle extends React.PureComponent<PropsType> {
     static propTypes = {
@@ -44,19 +45,15 @@ export default (
     }
 
     render() {
-      const { size, ...rest } = this.props
-      const Icon = withColor ? Svg : Wrapper
+      const { selectable, size, ...rest } = this.props
 
       return (
         <Icon
-          height={size}
-          viewBox={`0 0 ${width} ${height}`}
-          width={size}
-          xmlns="http://www.w3.org/2000/svg"
           {...rest}
-        >
-          {path}
-        </Icon>
+          height={size}
+          selectable={selectable === true ? 1 : 0}
+          width={size}
+        />
       )
     }
   }
