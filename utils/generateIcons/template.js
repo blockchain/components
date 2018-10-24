@@ -1,27 +1,16 @@
-const generateClass = (
-  componentName,
-  svg,
-  width,
-  height,
-  type = '',
-  depth,
-  withColor,
-) => {
-  const color = typeof withColor !== 'undefined' ? `, ${withColor}` : ''
+const svgr = require('@svgr/core')
 
-  return `// @flow strict
+const generateClass = (depth, withColor = false) => (code, config, state) => {
+  const props = svgr.getProps(config)
+  let result = `// @flow strict
 import React from 'react'
 
-import withStyle from '${depth}withStyle'
-
-const InnerSvg = (
-  <>
-    ${svg}
-  </>
-)
-
-export const ${type}${componentName} = withStyle(InnerSvg, ${width}, ${height}, '${type}${componentName}'${color})
-`
+import withStyle from '${depth}withStyle'\n\n`
+  result += `const Svg${state.componentName} = (${props}) => ${code}\n\n`
+  result += `export const ${state.componentName} = withStyle(Svg${
+    state.componentName
+  }, '${state.componentName}', ${withColor})`
+  return result
 }
 
 const generateExport = (componentNames, type = '') => {

@@ -4,13 +4,11 @@ const path = require('path')
 const fs = require('fs')
 const request = require('request')
 const rimraf = require('rimraf')
-const SVGO = require('svgo')
+const svgr = require('@svgr/core')
 
 const { generateClass, generateExport } = require('./template')
 const svgoConfig = require('./svgo.config')
 
-const svgo = new SVGO(svgoConfig)
-const pathRegex = /<svg[^>]*>(.*?)<\/svg>/
 const iconDirectory = path.resolve(__dirname, '../../src/Atoms/Icons')
 const sourceDirectory = `${iconDirectory}/assets`
 const destinationDirectory = `${iconDirectory}/crypto`
@@ -94,10 +92,10 @@ const processFile = (p) => {
     })
 
     return {
+      componentName,
       contents,
       filename,
       filepath,
-      componentName,
     }
   })
 }
@@ -107,26 +105,24 @@ const createClassFile = (p) => {
     const classFilename = filename + '.js'
     const classFullpath = path.join(destinationDirectory, classFilename)
     const classOutput = fs.createWriteStream(classFullpath)
+    const name = `Crypto${componentName}`
 
-    return svgo.optimize(contents).then((results) => {
-      const width = '32'
-      const height = '32'
-      const paths = results.data.match(pathRegex)
-
-      const classMarkup = generateClass(
-        componentName,
-        paths[1],
-        width,
-        height,
-        'Crypto',
-        '../',
-        true,
+    return svgr
+      .default(
+        contents,
+        {
+          dimensions: false,
+          svgoConfig,
+          svgProps: { viewBox: '0 0 32 32' },
+          template: generateClass('../', true),
+        },
+        { componentName: name },
       )
+      .then((jsCode) => {
+        classOutput.end(jsCode)
 
-      classOutput.end(classMarkup)
-
-      return { componentName, filename }
-    })
+        return { componentName, filename }
+      })
   })
 }
 

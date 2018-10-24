@@ -3,6 +3,7 @@ node_modules
 storybook-static
 esm
 lib
+.cache
 
 # Lock files
 # https://github.com/sindresorhus/ama/issues/479#issuecomment-310661514

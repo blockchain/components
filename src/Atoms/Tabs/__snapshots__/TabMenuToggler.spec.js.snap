@@ -29,26 +29,31 @@ exports[`TabMenuToggler should render correctly 1`] = `
       selectable={true}
       size="20px"
     >
-      <styled.svg
+      <Styled(SvgFasBars)
         className="c0"
         height="20px"
-        selectable={true}
-        viewBox="0 0 448 512"
+        selectable={1}
         width="20px"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
+        <SvgFasBars
           className="c0 c1"
           height="20px"
-          viewBox="0 0 448 512"
+          selectable={1}
           width="20px"
-          xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-          />
-        </svg>
-      </styled.svg>
+          <svg
+            className="c0 c1"
+            height="20px"
+            selectable={1}
+            viewBox="0 0 448 512"
+            width="20px"
+          >
+            <path
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            />
+          </svg>
+        </SvgFasBars>
+      </Styled(SvgFasBars)>
     </FasBars>
   </Styled(FasBars)>
 </TabMenuToggler>
