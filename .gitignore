@@ -4,6 +4,11 @@ storybook-static
 esm
 lib
 
+# Lock files
+# https://github.com/sindresorhus/ama/issues/479#issuecomment-310661514
+yarn.lock
+package-lock.json
+
 # Logs
 *.log
 yarn-error.log
