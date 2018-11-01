@@ -1,10 +1,11 @@
 // @flow strict
 import * as React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import injectE2E from '../../Tools/injectE2E'
+import styled, { type ReactComponentFunctional } from 'styled-components'
 
-const Wrapper = styled.div.attrs({
+import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
+
+const Wrapper: ReactComponentFunctional<E2ePropType> = styled.div.attrs({
   'data-e2e': injectE2E,
 })`
   position: relative;

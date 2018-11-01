@@ -1,10 +1,15 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
-import styled, { css } from 'styled-components'
+import styled, { css, type ReactComponentFunctional } from 'styled-components'
 
-type PropsType = {
+export type PropsType = {
   +selectable?: boolean,
+  +size?: string,
+}
+
+type SvgPropsType = {
+  +selectable: number,
   +size?: string,
 }
 
@@ -28,7 +33,7 @@ export default (
   keepSvgColor: boolean = false,
 ) => {
   const template = keepSvgColor ? svgColorTemplate : themeColorTemplate
-  const Icon = styled(Svg)`
+  const Icon: ReactComponentFunctional<SvgPropsType> = styled(Svg)`
     ${template};
   `
 

@@ -1,10 +1,18 @@
 // @flow strict
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { type ReactComponentFunctional } from 'styled-components'
 
-import injectE2E from '../../Tools/injectE2E'
+import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
 import Checkbox from './Checkbox'
+
+export type HtmlInputType =
+  | 'checkbox'
+  | 'date'
+  | 'number'
+  | 'password'
+  | 'search'
+  | 'text'
 
 export type PropsType = {
   +disabled?: boolean,
@@ -12,11 +20,13 @@ export type PropsType = {
   +input?: {},
   +label?: string,
   +name?: string,
-  +type: 'checkbox' | 'date' | 'number' | 'password' | 'search' | 'text',
+  +type: HtmlInputType,
   +width?: string,
 }
 
-const Wrapper = styled.input.attrs({
+type WrapperPropsType = { +name?: string, +type: HtmlInputType } & E2ePropType
+
+const Wrapper: ReactComponentFunctional<WrapperPropsType> = styled.input.attrs({
   'data-e2e': injectE2E,
   name: (props) => props.name,
   type: (props) => props.type,

@@ -1,12 +1,17 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import React from 'react'
-import styled from 'styled-components'
+import styled, { type ReactComponentFunctional } from 'styled-components'
 
-import { FabFacebookF, FabLinkedinIn, FabTwitter } from '../../Atoms/Icons'
-import Link from '../../Atoms/Links/Link'
+import {
+  FabFacebookF,
+  FabLinkedinIn,
+  FabTwitter,
+  type IconPropsType,
+} from '../../Atoms/Icons'
+import Link, { type PropsType as LinkPropsType } from '../../Atoms/Links/Link'
 
-const Wrapper = styled(Link)`
+const Wrapper: ReactComponentFunctional<LinkPropsType> = styled(Link)`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -21,7 +26,10 @@ const Wrapper = styled(Link)`
     background-color: ${(props) => props.theme['circleBadgeHoverColor']};
   }
 `
-const WhiteFacebook = styled(FabFacebookF)`
+
+const WhiteFacebook: ReactComponentFunctional<IconPropsType> = styled(
+  FabFacebookF,
+)`
   fill: ${(props) => props.theme['circleBadgeColor']};
   max-height: 60%;
   max-width: 60%;
@@ -30,7 +38,9 @@ const WhiteFacebook = styled(FabFacebookF)`
     fill: ${(props) => props.theme['circleBadgeColor']};
   }
 `
-const WhiteLinkedin = styled(FabLinkedinIn)`
+const WhiteLinkedin: ReactComponentFunctional<IconPropsType> = styled(
+  FabLinkedinIn,
+)`
   fill: ${(props) => props.theme['circleBadgeColor']};
   max-height: 60%;
   max-width: 60%;
@@ -39,7 +49,9 @@ const WhiteLinkedin = styled(FabLinkedinIn)`
     fill: ${(props) => props.theme['circleBadgeColor']};
   }
 `
-const WhiteTwitter = styled(FabTwitter)`
+const WhiteTwitter: ReactComponentFunctional<IconPropsType> = styled(
+  FabTwitter,
+)`
   fill: ${(props) => props.theme['circleBadgeColor']};
   max-height: 60%;
   max-width: 60%;

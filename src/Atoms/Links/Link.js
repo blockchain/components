@@ -1,11 +1,11 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
-import styled from 'styled-components'
+import styled, { type ReactComponentFunctional } from 'styled-components'
 
-import injectE2E from '../../Tools/injectE2E'
+import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
 
-type PropsType = {
+export type PropsType = {
   +capitalize?: boolean,
   +children?: React.Node,
   +e2e?: string,
@@ -16,7 +16,7 @@ type PropsType = {
   +weight?: 100 | 200 | 300 | 400 | 500 | 600 | 700,
 }
 
-const Wrapper = styled.a.attrs({
+const Wrapper: ReactComponentFunctional<E2ePropType> = styled.a.attrs({
   'data-e2e': injectE2E,
 })`
   font-family: ${(props) => props.theme['fontPrimary']};

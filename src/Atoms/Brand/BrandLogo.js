@@ -1,13 +1,13 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import React from 'react'
-import styled from 'styled-components'
+import styled, { type ReactComponentFunctional } from 'styled-components'
 
 type PropsType = {
   +size?: string,
 }
 
-const Wrapper = styled.svg.attrs({
+const Wrapper: ReactComponentFunctional<*> = styled.svg.attrs({
   viewBox: '0 0 103.9 103.9',
 })`
   height: ${(props) => props.size};

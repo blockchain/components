@@ -1,19 +1,23 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
-import styled from 'styled-components'
+import styled, { type ReactComponentFunctional } from 'styled-components'
 
-import injectE2E from '../../Tools/injectE2E'
+import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
+
+type HtmlButtonType = 'button' | 'reset' | 'submit'
 
 type PropsType = {
   +bounced?: boolean,
   +children?: React.Node,
   +disabled?: boolean,
   +e2e?: string,
-  +type: 'button' | 'reset' | 'submit',
+  +type: HtmlButtonType,
 }
 
-const Wrapper = styled.button.attrs({
+type ButtonPropsType = { +type: HtmlButtonType } & E2ePropType
+
+const Wrapper: ReactComponentFunctional<ButtonPropsType> = styled.button.attrs({
   'data-e2e': injectE2E,
   type: (props) => props.type,
 })`
