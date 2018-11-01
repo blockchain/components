@@ -1,16 +1,16 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
-import styled from 'styled-components'
+import styled, { type ReactComponentFunctional } from 'styled-components'
 
-import { FasBars } from '../../Atoms/Icons'
+import { FasBars, type IconPropsType } from '../../Atoms/Icons'
 
 type PropsType = {
   +children?: React.Node,
   +onToggle?: (SyntheticEvent<HTMLDivElement>) => void,
 }
 
-const Toggler = styled(FasBars).attrs({
+const Toggler: ReactComponentFunctional<IconPropsType> = styled(FasBars).attrs({
   selectable: true,
   size: '20px',
 })`

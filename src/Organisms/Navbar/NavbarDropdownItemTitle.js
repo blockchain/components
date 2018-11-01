@@ -1,15 +1,17 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
-import styled from 'styled-components'
+import styled, { type ReactComponentFunctional } from 'styled-components'
 
-import Text from '../../Atoms/Typography/Text'
+import Text, {
+  type PropsType as TextPropsType,
+} from '../../Atoms/Typography/Text'
 
 type PropsType = {
   +children?: React.Node,
 }
 
-const Wrapper = styled(Text).attrs({
+const Wrapper: ReactComponentFunctional<TextPropsType> = styled(Text).attrs({
   size: '1rem',
   weight: 600,
 })`

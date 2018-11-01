@@ -1,9 +1,9 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import React from 'react'
-import styled from 'styled-components'
+import styled, { type ReactComponentFunctional } from 'styled-components'
 
-import injectE2E from '../../Tools/injectE2E'
+import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
 import {
   FasCheckCircle,
   FasExclamationCircle,
@@ -12,7 +12,7 @@ import {
 
 const PADDING = '1.025rem'
 
-const Wrapper = styled.div.attrs({
+const Wrapper: ReactComponentFunctional<E2ePropType> = styled.div.attrs({
   'data-e2e': injectE2E,
 })`
   display: inline-flex;

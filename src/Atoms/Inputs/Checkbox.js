@@ -1,9 +1,9 @@
 // @flow strict
 import React from 'react'
-import styled from 'styled-components'
+import styled, { type ReactComponentFunctional } from 'styled-components'
 
-import injectE2E from '../../Tools/injectE2E'
-import type { PropsType } from './Input'
+import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
+import type { PropsType, HtmlInputType } from './Input'
 
 const toId = (name) => `${name}-checkbox`
 
@@ -19,7 +19,9 @@ const Wrapper = styled.div`
   }
 `
 
-const Input = styled.input.attrs({
+type InputPropsType = { +name?: string, +type: HtmlInputType } & E2ePropType
+
+const Input: ReactComponentFunctional<InputPropsType> = styled.input.attrs({
   'data-e2e': injectE2E,
   id: (props) => toId(props.name),
   name: (props) => props.name,
@@ -37,7 +39,9 @@ const Input = styled.input.attrs({
   width: 1px;
 `
 
-export const CheckboxLabel = styled.label.attrs({
+export const CheckboxLabel: ReactComponentFunctional<{
+  +name?: string,
+}> = styled.label.attrs({
   htmlFor: (props) => toId(props.name),
 })`
   position: relative;

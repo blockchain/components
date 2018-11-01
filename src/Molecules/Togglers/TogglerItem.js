@@ -1,11 +1,11 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
-import styled from 'styled-components'
+import styled, { type ReactComponentFunctional } from 'styled-components'
 
-import injectE2E from '../../Tools/injectE2E'
+import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
 
-const Wrapper = styled.div.attrs({
+const Wrapper: ReactComponentFunctional<E2ePropType> = styled.div.attrs({
   'data-e2e': injectE2E,
 })`
   display: flex;
@@ -14,17 +14,17 @@ const Wrapper = styled.div.attrs({
   align-items: center;
   padding: 0.2rem 0.5rem;
   box-sizing: border-box;
-  font-family: ${(props) => props.theme['fontPrimary']};
+  font-family: ${(props) => props.theme.fontPrimary};
   font-size: 0.9rem;
   font-weight: 500;
   color: ${(props) =>
     props.selected
-      ? props.theme['togglerSelectedColor']
-      : props.theme['togglerColor']};
+      ? props.theme.togglerSelectedColor
+      : props.theme.togglerColor};
   background-color: ${(props) =>
     props.selected
-      ? props.theme['togglerSelectedBackgroundColor']
-      : props.theme['togglerBackgroundColor']};
+      ? props.theme.togglerSelectedBackgroundColor
+      : props.theme.togglerBackgroundColor};
   cursor: pointer;
   text-transform: uppercase;
 `
