@@ -22,6 +22,12 @@ describe('Input', () => {
     expect(tree.find(Input)).toMatchSnapshot()
   })
 
+  it('should render correctly with type="radio"', () => {
+    const tree = mountWithTheme(<Input type="radio" />)
+
+    expect(tree.find(Input)).toMatchSnapshot()
+  })
+
   it('should render correctly with width', () => {
     const tree = mountWithTheme(<Input width="200px" />)
 

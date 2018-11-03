@@ -333,6 +333,121 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
 </Input>
 `;
 
+exports[`Input should render correctly with type="radio" 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  margin-right: 0.5rem;
+  background: #FFF;
+  border: 2px solid #999B9E;
+  border-radius: 50%;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.c1 {
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  position: absolute;
+}
+
+.c1:checked ~ label .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-color: #10ADE4;
+}
+
+.c1:checked ~ label .c3::before {
+  border-radius: 51%;
+  content: '';
+  display: inline-block;
+  height: 0.25rem;
+  width: 0.25rem;
+  position: relative;
+  background: #10ADE4;
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 1rem;
+  padding-left: 0.5rem;
+  cursor: pointer;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+}
+
+<Input
+  disabled={false}
+  e2e="defaultInput"
+  type="radio"
+  width="100%"
+>
+  <Radio
+    disabled={false}
+    e2e="defaultInput"
+    type="radio"
+    width="100%"
+  >
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <styled.input
+          disabled={false}
+          e2e="defaultInput"
+          type="radio"
+          width="100%"
+        >
+          <input
+            className="c1"
+            data-e2e="defaultInput"
+            disabled={false}
+            id="undefined-radio"
+            type="radio"
+            width="100%"
+          />
+        </styled.input>
+        <styled.label>
+          <label
+            className="c2"
+            htmlFor="undefined-radio"
+          >
+            <styled.span>
+              <span
+                className="c3 c4"
+              />
+            </styled.span>
+          </label>
+        </styled.label>
+      </div>
+    </styled.div>
+  </Radio>
+</Input>
+`;
+
 exports[`Input should render correctly with width 1`] = `
 .c0 {
   display: block;

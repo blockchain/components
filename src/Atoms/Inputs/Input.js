@@ -5,12 +5,14 @@ import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
 import Checkbox from './Checkbox'
+import Radio from './Radio'
 
 export type HtmlInputType =
   | 'checkbox'
   | 'date'
   | 'number'
   | 'password'
+  | 'radio'
   | 'search'
   | 'text'
 
@@ -21,6 +23,7 @@ export type PropsType = {
   +label?: string,
   +name?: string,
   +type: HtmlInputType,
+  +value?: string,
   +width?: string,
 }
 
@@ -65,6 +68,10 @@ const Input = ({ input, type, ...rest }: PropsType) => {
     return <Checkbox {...input} {...rest} type={type} />
   }
 
+  if (type === 'radio') {
+    return <Radio {...input} {...rest} type={type} />
+  }
+
   return <Wrapper {...input} {...rest} type={type} />
 }
 
@@ -79,9 +86,11 @@ Input.propTypes = {
     'date',
     'number',
     'password',
+    'radio',
     'search',
     'text',
   ]),
+  value: PropTypes.string,
   width: PropTypes.string,
 }
 

@@ -34,6 +34,8 @@ const theme = {
   inputCheckboxColor: palette.cerulean,
   inputColor: palette.gray5,
   inputPlaceholderColor: palette.gray3,
+  inputRadioCheckedColor: palette.cerulean,
+  inputRadioColor: palette.gray3,
   linkColor: palette.gray5,
   linkHoverColor: palette.orient,
   loaderColor: palette.cerulean,
