@@ -12,7 +12,7 @@ const svgoConfig = require('./svgo.config')
 const iconDirectory = path.resolve(__dirname, '../../src/Atoms/Icons')
 const sourceDirectory = `${iconDirectory}/assets`
 const destinationDirectory = `${iconDirectory}/fa`
-const faVersion = '5.4.1'
+const faVersion = '5.5.0'
 const faName = `fontawesome-free-${faVersion}-desktop`
 
 const url = `https://github.com/FortAwesome/Font-Awesome/releases/download/${faVersion}/${faName}.zip`
