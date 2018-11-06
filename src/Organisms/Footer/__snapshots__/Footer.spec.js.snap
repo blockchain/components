@@ -18,13 +18,13 @@ exports[`Footer should render correctly 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   width: 100%;
-  padding: 2rem;
+  padding: 1.25rem 2rem;
   box-sizing: border-box;
 }
 
 @media (min-width:48rem) {
   .c0 {
-    padding: 4rem 3rem;
+    padding: 1.25rem 3rem;
   }
 }
 
