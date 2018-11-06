@@ -41,9 +41,9 @@ exports[`FooterRow should render correctly 1`] = `
 
 @media (min-width:62rem) {
   .c0 {
-    -webkit-flex-wrap: no-wrap;
-    -ms-flex-wrap: no-wrap;
-    flex-wrap: no-wrap;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 }
 

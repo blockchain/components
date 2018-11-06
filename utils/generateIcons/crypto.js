@@ -12,7 +12,7 @@ const svgoConfig = require('./svgo.config')
 const iconDirectory = path.resolve(__dirname, '../../src/Atoms/Icons')
 const sourceDirectory = `${iconDirectory}/assets`
 const destinationDirectory = `${iconDirectory}/crypto`
-const version = '0.8.1'
+const version = '0.9.0'
 const name = `cryptocurrency-icons-${version}`
 
 const url = `https://github.com/atomiclabs/cryptocurrency-icons/archive/v${version}.zip`

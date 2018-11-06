@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: ${(props) => props.theme.screenSizes.md}) {
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
   }
 `
 

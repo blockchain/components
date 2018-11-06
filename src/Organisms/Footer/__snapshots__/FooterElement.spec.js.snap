@@ -2,27 +2,10 @@
 
 exports[`FooterElement should render correctly 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  width: 100%;
+  display: block;
   margin-top: 1.25rem;
-}
-
-.c0 > :first-child {
-  margin-right: 0.75rem;
+  line-height: 1.4;
+  overflow-wrap: break-word;
 }
 
 <FooterElement>

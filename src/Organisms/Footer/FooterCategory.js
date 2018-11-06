@@ -13,7 +13,7 @@ const Wrapper = styled.h5`
   font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   letter-spacing: 1px;
 `
 

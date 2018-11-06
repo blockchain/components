@@ -9,11 +9,11 @@ const Wrapper = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  padding: 2rem;
+  padding: 1.25rem 2rem;
   box-sizing: border-box;
 
   @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
-    padding: 4rem 3rem;
+    padding: 1.25rem 3rem;
   }
 `
 
