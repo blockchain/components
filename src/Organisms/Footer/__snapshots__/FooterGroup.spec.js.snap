@@ -5,14 +5,15 @@ exports[`FooterGroup should render correctly 1`] = `
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
-  width: 8rem;
+  width: 12rem;
   margin-bottom: 4rem;
   margin-right: 2rem;
+  line-height: 2.5rem;
 }
 
 @media (max-width:48rem) {
   .c0 {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 }
 

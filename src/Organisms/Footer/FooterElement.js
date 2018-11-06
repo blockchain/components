@@ -8,16 +8,10 @@ type PropsType = {
 }
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
+  display: block;
   margin-top: 1.25rem;
-
-  & > :first-child {
-    margin-right: 0.75rem;
-  }
+  line-height: 1.4;
+  overflow-wrap: break-word;
 `
 
 const FooterElement = ({ children, ...rest }: PropsType) => (

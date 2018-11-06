@@ -9,12 +9,13 @@ type PropsType = {
 
 const Wrapper = styled.div`
   flex: 0 1 auto;
-  width: 8rem;
+  width: 12rem;
   margin-bottom: 4rem;
   margin-right: 2rem;
+  line-height: 2.5rem;
 
   @media (max-width: ${(props) => props.theme.screenSizes.sm}) {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 `
 
