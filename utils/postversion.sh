@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git checkout -b $npm_package_version
-git add package.json package-lock.json
+git add package.json
 git commit -m "chore(version): bump to v$npm_package_version"
 git push --no-verify origin $npm_package_version
 git checkout master
