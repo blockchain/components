@@ -20,9 +20,17 @@ const ignoreGlobs = [
   '"**/__snapshots__"',
 ].join(',')
 
+rimraf.sync('lib')
 rimraf.sync('esm')
 
-exec(`${babel} src --env-name esm --out-dir esm  --ignore ${ignoreGlobs}`)
+exec(`${babel} src --env-name cjs --out-dir lib --ignore ${ignoreGlobs}`)
+exec(`${babel} src --env-name esm --out-dir esm --ignore ${ignoreGlobs}`)
+
+rimraf.sync('lib/**/*.js', {
+  glob: {
+    ignore: ['!__snapshots__', '!**/*.spec.js', '!**/*.stories.js'],
+  },
+})
 
 rimraf.sync('esm/**/*.js', {
   glob: {
@@ -30,4 +38,5 @@ rimraf.sync('esm/**/*.js', {
   },
 })
 
+flowCopySource(['src'], 'lib')
 flowCopySource(['src'], 'esm')
