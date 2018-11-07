@@ -18,8 +18,8 @@ const RadioButton = styled.span`
   background: ${({ theme }) => theme.palette.white};
   border: 2px solid ${({ theme }) => theme.inputRadioColor};
   border-radius: 50%;
-  height: 0.75rem;
-  width: 0.75rem;
+  height: 1.25rem;
+  width: 1.25rem;
 `
 
 const Input: ReactComponentFunctional<InputPropsType> = styled.input.attrs({
@@ -41,8 +41,8 @@ const Input: ReactComponentFunctional<InputPropsType> = styled.input.attrs({
       border-radius: 51%;
       content: '';
       display: inline-block;
-      height: 0.25rem;
-      width: 0.25rem;
+      height: 0.75rem;
+      width: 0.75rem;
       position: relative;
       background: ${({ theme }) => theme.inputRadioCheckedColor};
     }

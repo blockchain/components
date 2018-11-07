@@ -346,8 +346,8 @@ exports[`Input should render correctly with type="radio" 1`] = `
   background: #FFF;
   border: 2px solid #999B9E;
   border-radius: 50%;
-  height: 0.75rem;
-  width: 0.75rem;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
 .c1 {
@@ -376,8 +376,8 @@ exports[`Input should render correctly with type="radio" 1`] = `
   border-radius: 51%;
   content: '';
   display: inline-block;
-  height: 0.25rem;
-  width: 0.25rem;
+  height: 0.75rem;
+  width: 0.75rem;
   position: relative;
   background: #10ADE4;
 }
