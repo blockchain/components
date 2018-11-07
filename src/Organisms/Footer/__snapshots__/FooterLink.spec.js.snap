@@ -22,6 +22,7 @@ exports[`FooterElement should render correctly 1`] = `
 
 .c0 {
   position: relative;
+  white-space: nowrap;
 }
 
 <FooterLink>

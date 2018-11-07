@@ -14,6 +14,7 @@ const Wrapper: ReactComponentFunctional<LinkPropsType> = styled(Link).attrs({
   weight: 500,
 })`
   position: relative;
+  white-space: nowrap;
 `
 
 const FooterLink = ({ children, ...rest }: PropsType) => (
