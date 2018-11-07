@@ -2,7 +2,7 @@
   "name": "@blockchain-com/components",
   "version": "2.5.1",
   "description": "Blockchain.com components library",
-  "main": "esm/index.js",
+  "main": "lib/index.js",
   "module": "esm/index.js",
   "scripts": {
     "start": "start-storybook -p 6006",
