@@ -9,7 +9,7 @@ type PropsType = {
 
 const Wrapper = styled.div`
   display: block;
-  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   line-height: 1.4;
   overflow-wrap: break-word;
 `
