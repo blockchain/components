@@ -9,8 +9,8 @@ const toId = (name) => `${name}-checkbox`
 
 const Wrapper = styled.div`
   input:checked + label::before {
-    background-color: ${(props) => props.theme.inputCheckboxColor};
-    border-color: ${(props) => props.theme.inputCheckboxColor};
+    background-color: ${(props) => props.theme.inputCheckedColor};
+    border-color: ${(props) => props.theme.inputCheckedColor};
   }
 
   input:checked + label::after {
@@ -59,7 +59,7 @@ export const CheckboxLabel: ReactComponentFunctional<{
     box-sizing: border-box;
     content: '';
     height: 16px;
-    left: 0.05rem;
+    left: 1px;
     position: absolute;
     top: calc(50% - 0.5rem);
     width: 16px;

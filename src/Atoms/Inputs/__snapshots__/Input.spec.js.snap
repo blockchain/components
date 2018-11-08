@@ -266,7 +266,7 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
   box-sizing: border-box;
   content: '';
   height: 16px;
-  left: 0.05rem;
+  left: 1px;
   position: absolute;
   top: calc(50% - 0.5rem);
   width: 16px;
@@ -344,16 +344,25 @@ exports[`Input should render correctly with type="radio" 1`] = `
 .c4 {
   margin-right: 0.5rem;
   background: #FFF;
-  border: 2px solid #999B9E;
+  border: 2px solid #CCC;
+  box-sizing: border-box;
   border-radius: 50%;
-  height: 1.25rem;
-  width: 1.25rem;
+  height: 16px;
+  width: 16px;
 }
 
 .c1 {
+  position: absolute;
+  border: 0;
   -webkit-clip: rect(0,0,0,0);
   clip: rect(0,0,0,0);
-  position: absolute;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  visibility: visible;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .c1:checked ~ label .c3 {
@@ -376,14 +385,15 @@ exports[`Input should render correctly with type="radio" 1`] = `
   border-radius: 51%;
   content: '';
   display: inline-block;
-  height: 0.75rem;
-  width: 0.75rem;
+  height: 8px;
+  width: 8px;
   position: relative;
   background: #10ADE4;
 }
 
 .c2 {
   position: relative;
+  left: 1px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -393,7 +403,6 @@ exports[`Input should render correctly with type="radio" 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 1rem;
-  padding-left: 0.5rem;
   cursor: pointer;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
