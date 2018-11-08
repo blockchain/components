@@ -31,7 +31,7 @@ const theme = {
   inputBackgroundColorFocus: palette.gray0,
   inputBorderColor: palette.gray2,
   inputBorderRadius: borderRadius,
-  inputCheckboxColor: palette.cerulean,
+  inputCheckedColor: palette.cerulean,
   inputColor: palette.gray5,
   inputPlaceholderColor: palette.gray3,
   inputRadioCheckedColor: palette.cerulean,
