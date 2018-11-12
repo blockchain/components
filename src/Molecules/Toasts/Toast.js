@@ -1,7 +1,7 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import React from 'react'
-import styled, { type ReactComponentFunctional } from 'styled-components'
+import styled, { css, type ReactComponentFunctional } from 'styled-components'
 
 import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
 import {
@@ -47,11 +47,13 @@ const Close = styled.div`
   padding-left: ${PADDING};
 `
 
-const IndicatorSuccess = styled(FasCheckCircle).attrs({
-  size: '1rem',
-})`
+const IndicatorCss = css`
   margin-right: ${PADDING};
   margin-top: 2px;
+`
+
+const IndicatorSuccess = styled(FasCheckCircle)`
+  ${IndicatorCss};
   fill: ${(props) => props.theme.successColor};
 
   &:hover {
@@ -59,11 +61,8 @@ const IndicatorSuccess = styled(FasCheckCircle).attrs({
   }
 `
 
-const IndicatorWarning = styled(FasExclamationCircle).attrs({
-  size: '1rem',
-})`
-  margin-right: ${PADDING};
-  margin-top: 2px;
+const IndicatorWarning = styled(FasExclamationCircle)`
+  ${IndicatorCss};
   fill: ${(props) => props.theme.warningColor};
 
   &:hover {
@@ -71,11 +70,8 @@ const IndicatorWarning = styled(FasExclamationCircle).attrs({
   }
 `
 
-const IndicatorDanger = styled(IndicatorWarning).attrs({
-  size: '1rem',
-})`
-  margin-right: ${PADDING};
-  margin-top: 2px;
+const IndicatorDanger = styled(IndicatorWarning)`
+  ${IndicatorCss};
   fill: ${(props) => props.theme.dangerColor};
 
   &:hover {
@@ -93,9 +89,9 @@ type PropsType = {
 
 const Toast = ({ description, onClose, title, type, ...rest }: PropsType) => (
   <Wrapper {...rest}>
-    {type === 'success' && <IndicatorSuccess />}
-    {type === 'warning' && <IndicatorWarning />}
-    {type === 'danger' && <IndicatorDanger />}
+    {type === 'success' && <IndicatorSuccess size="16px" />}
+    {type === 'warning' && <IndicatorWarning size="16px" />}
+    {type === 'danger' && <IndicatorDanger size="16px" />}
     <Content>
       <Title>{title}</Title>
       {description != null && <Description>{description}</Description>}
