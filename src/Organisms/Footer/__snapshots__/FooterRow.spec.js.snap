@@ -19,6 +19,10 @@ exports[`FooterRow should render correctly 1`] = `
   align-items: flex-start;
 }
 
+.c0 > :last-child {
+  margin-right: 0;
+}
+
 @media (min-width:48rem) {
   .c0 {
     -webkit-flex-direction: row;

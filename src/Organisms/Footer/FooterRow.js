@@ -13,6 +13,10 @@ const Wrapper = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
 
+  & > :last-child {
+    margin-right: 0;
+  }
+
   @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
     flex-direction: row;
     justify-content: space-between;
