@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
+import { prop, theme } from '../../Tools/interpolation'
+
 export type PropsType = {
   +capitalize?: boolean,
   +children?: React.Node,
@@ -13,15 +15,27 @@ export type PropsType = {
   +weight?: 100 | 200 | 300 | 400 | 500 | 600 | 700,
 }
 
+const getTextTransform = (props: PropsType) => {
+  if (props.capitalize === true) {
+    return 'capitalize'
+  }
+
+  if (props.uppercase === true) {
+    return 'uppercase'
+  }
+
+  return 'none'
+}
+
 const Wrapper = styled.span`
-  font-family: ${(props) => props.theme['fontPrimary']};
-  font-weight: ${(props) => props.weight};
-  font-size: ${(props) => props.size};
-  text-transform: ${(props) =>
-    props.uppercase ? 'uppercase' : props.capitalize ? 'capitalize' : 'none'};
-  font-style: ${(props) => (props.italic ? 'italic' : 'normal')};
-  color: ${(props) => props.theme['textColor']};
-  opacity: ${(props) => props.opacity};
+  font-family: ${theme('fontPrimary')};
+  font-weight: ${prop<PropsType>('weight')};
+  font-size: ${prop<PropsType>('size')};
+  text-transform: ${getTextTransform};
+  font-style: ${(props: PropsType) =>
+    props.italic === true ? 'italic' : 'normal'};
+  color: ${theme('textColor')};
+  opacity: ${prop<PropsType>('opacity')};
 `
 
 const Text = ({ children, ...rest }: PropsType) => (

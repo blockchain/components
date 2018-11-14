@@ -3,15 +3,17 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
+import { prop, theme } from '../../Tools/interpolation'
+
 type PropsType = {
   +height?: string,
 }
 
-const Wrapper: ReactComponentFunctional<*> = styled.svg.attrs({
+const Wrapper: ReactComponentFunctional<PropsType> = styled.svg.attrs({
   viewBox: '0 0 397.4 43.7',
 })`
-  height: ${(props) => props.size};
-  fill: ${(props) => props.theme.brandNameColor};
+  height: ${prop<{ size: string }>('size')};
+  fill: ${theme('brandNameColor')};
 `
 
 const BrandName = ({ height, ...rest }: PropsType) => (

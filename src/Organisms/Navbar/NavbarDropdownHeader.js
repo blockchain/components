@@ -3,19 +3,21 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
+import { screenSize, theme } from '../../Tools/interpolation'
+
 type PropsType = {
   +children?: React.Node,
 }
 
 const Wrapper = styled.span`
-  font-family: ${(props) => props.theme['fontPrimary']};
+  font-family: ${theme('fontPrimary')};
   font-size: 1rem;
   font-weight: 600;
-  color: ${(props) => props.theme['navbarDropdownHeaderColor']};
+  color: ${theme('navbarDropdownHeaderColor')};
   cursor: pointer;
   display: none;
 
-  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
+  @media (min-width: ${screenSize('sm')}) {
     display: block;
   }
 `

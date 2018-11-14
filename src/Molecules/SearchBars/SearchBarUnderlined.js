@@ -6,17 +6,25 @@ import styled from 'styled-components'
 import { FasSearch } from '../../Atoms/Icons'
 import { Input } from '../../Atoms/Inputs'
 import injectE2E from '../../Tools/injectE2E'
+import { prop, theme } from '../../Tools/interpolation'
+
+type PropsType = {
+  +children?: React.Node,
+  +e2e?: string,
+  +onChange?: (SyntheticEvent<HTMLInputElement>) => void,
+  +onClick?: (SyntheticEvent<HTMLInputElement>) => void,
+  +value?: string | number,
+  +width?: string,
+}
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: ${(props) => props.width};
-  border-bottom: 1px solid
-    ${(props) => props.theme['searchBarUnderlinedBorderColor']};
-  background-color: ${(props) =>
-    props.theme['searchBarUnderlinedBackgroundColor']};
+  width: ${prop<PropsType>('width')};
+  border-bottom: 1px solid ${theme('searchBarUnderlinedBorderColor')};
+  background-color: ${theme('searchBarUnderlinedBackgroundColor')};
 `
 const SearchInput = styled(Input)`
   background-color: inherit;
@@ -32,15 +40,6 @@ const IconContainer = styled.div.attrs({
   width: 60px;
   height: 40px;
 `
-
-type PropsType = {
-  +children?: React.Node,
-  +e2e?: string,
-  +onChange?: (SyntheticEvent<HTMLInputElement>) => void,
-  +onClick?: (SyntheticEvent<HTMLInputElement>) => void,
-  +value?: string | number,
-  +width?: string,
-}
 
 const SearchBarUnderlined = ({
   children,

@@ -3,16 +3,44 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import { prop, theme, type ThemePropType } from '../../Tools/interpolation'
+
+type PropsType = {
+  +capitalize?: boolean,
+  +className?: string,
+  +inline?: boolean,
+  +italic?: boolean,
+  +items: Array<{| +text: string, +value: string | number |}>,
+  +onChange?: (SyntheticEvent<HTMLSelectElement>) => void,
+  +size?: string,
+  +uppercase?: boolean,
+  +value?: string | number,
+  +weight?: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900,
+  +width?: string,
+}
+
+const getTextTransform = (props: PropsType) => {
+  if (props.capitalize === true) {
+    return 'capitalize'
+  }
+
+  if (props.uppercase === true) {
+    return 'uppercase'
+  }
+
+  return 'none'
+}
+
 const Wrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: ${(props) => props.width};
+  width: ${prop<PropsType>('width')};
   height: 2.7rem;
   box-sizing: border-box;
-  background-color: ${(props) => props.theme.inputBackgroundColor};
+  background-color: ${theme('inputBackgroundColor')};
   background-image: none;
   outline-width: 0;
   user-select: text;
@@ -29,13 +57,15 @@ const Wrapper = styled.div`
     height: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-top: 6px solid ${(props) => props.theme.inputColor};
+    border-top: 6px solid ${theme('inputColor')};
     pointer-events: none;
   }
 
   &:hover {
-    background-color: ${(props) =>
-      props.inline ? props.theme.inputBackgroundColorFocus : 'inherit'};
+    background-color: ${(props: PropsType & ThemePropType) =>
+      props.inline === true
+        ? theme('inputBackgroundColorFocus')(props)
+        : 'inherit'};
   }
 `
 
@@ -44,21 +74,21 @@ const Select = styled.select`
   width: 100%;
   height: 100%;
   padding: 0 2.4rem 0 1.4rem;
-  color: ${(props) => props.theme.inputColor};
+  color: ${theme('inputColor')};
   background-color: transparent;
   appearance: none;
-  font-family: ${(props) => props.theme.fontPrimary};
-  font-size: ${(props) => props.size};
-  font-weight: ${(props) => props.weight};
-  text-transform: ${(props) =>
-    props.uppercase ? 'uppercase' : props.capitalize ? 'capitalize' : 'none'};
-  font-style: ${(props) => (props.italic ? 'italic' : 'normal')};
+  font-family: ${theme('fontPrimary')};
+  font-size: ${prop<PropsType>('size')};
+  font-weight: ${prop<PropsType>('weight')};
+  text-transform: ${getTextTransform};
+  font-style: ${(props: PropsType) =>
+    props.italic === true ? 'italic' : 'normal'};
   border-width: 1px;
-  border-color: ${(props) =>
-    props.inline ? 'transparent' : props.theme.inputBorderColor};
+  border-color: ${(props: PropsType & ThemePropType) =>
+    props.inline === true ? 'transparent' : theme('inputBorderColor')(props)};
   border-style: solid;
-  border-radius: ${(props) => props.theme.inputBorderRadius};
-  border-radius: ${(props) => props.theme.inputBorderRadius};
+  border-radius: ${theme('inputBorderRadius')};
+  border-radius: ${theme('inputBorderRadius')};
   cursor: pointer;
   outline: none;
   text-align: left;
@@ -70,23 +100,9 @@ const Select = styled.select`
   }
 
   &:focus {
-    border-color: ${(props) => props.theme.inputBorderColor};
+    border-color: ${theme('inputBorderColor')};
   }
 `
-
-type PropsType = {
-  +capitalize?: boolean,
-  +className?: string,
-  +inline?: boolean,
-  +italic?: boolean,
-  +items: Array<{| +text: string, +value: string | number |}>,
-  +onChange?: (SyntheticEvent<HTMLSelectElement>) => void,
-  +size?: string,
-  +uppercase?: boolean,
-  +value?: string | number,
-  +weight?: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900,
-  +width?: string,
-}
 
 const SingleDropdown = ({
   className,

@@ -4,6 +4,7 @@ import * as React from 'react'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
+import { theme, type ThemePropType } from '../../Tools/interpolation'
 
 const Wrapper: ReactComponentFunctional<E2ePropType> = styled.a.attrs({
   'data-e2e': injectE2E,
@@ -13,28 +14,28 @@ const Wrapper: ReactComponentFunctional<E2ePropType> = styled.a.attrs({
   justify-content: center;
   align-items: center;
   padding: 5px 8px;
-  font-family: ${(props) => props.theme['fontPrimary']};
+  font-family: ${theme('fontPrimary')};
   font-size: 1rem;
   font-weight: 500;
-  color: ${(props) =>
-    props.selected
-      ? props.theme['paginationSelectedColor']
-      : props.theme['paginationColor']};
-  background-color: ${(props) =>
-    props.selected
-      ? props.theme['paginationSelectedBackgroundColor']
-      : props.theme['paginationBackgroundColor']};
-  border: 1px solid ${(props) => props.theme['paginationBorderColor']};
+  color: ${(props: PropsType & ThemePropType) =>
+    props.selected === true
+      ? theme('paginationSelectedColor')(props)
+      : theme('paginationColor')(props)};
+  background-color: ${(props: PropsType & ThemePropType) =>
+    props.selected === true
+      ? theme('paginationSelectedBackgroundColor')(props)
+      : theme('paginationBackgroundColor')(props)};
+  border: 1px solid ${theme('paginationBorderColor')};
   border-radius: 5px;
   margin-right: 5px;
   cursor: pointer;
 
   &:hover {
-    color: ${(props) => props.theme['paginationHoverColor']};
-    background-color: ${(props) =>
-      props.selected
-        ? props.theme['paginationSelectedBackgroundColor']
-        : props.theme['paginationHoverBackgroundColor']};
+    color: ${theme('paginationHoverColor')};
+    background-color: ${(props: PropsType & ThemePropType) =>
+      props.selected === true
+        ? theme('paginationSelectedBackgroundColor')(props)
+        : theme('paginationHoverBackgroundColor')(props)};
   }
 `
 

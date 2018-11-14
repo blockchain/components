@@ -3,22 +3,29 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
+import { screenSize, theme } from '../../Tools/interpolation'
+
+type PropsType = {
+  +children?: React.Node,
+  +toggled?: boolean,
+}
+
 const Wrapper = styled.div`
   position: absolute;
   top: 0;
   right: 0;
-  display: ${(props) => (props.toggled ? 'flex' : 'none')};
+  display: ${(props: PropsType) => (props.toggled === true ? 'flex' : 'none')};
   flex-direction: column-reverse;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
   padding: 4.5rem 1.5rem 1.5rem 1.5rem;
   box-sizing: border-box;
-  background-color: ${(props) => props.theme['navbarMenuBagroundColor']};
+  background-color: ${theme('navbarMenuBagroundColor')};
   z-index: 10;
   transform: translate3d(0, 0, 0);
 
-  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
+  @media (min-width: ${screenSize('sm')}) {
     position: relative;
     top: initial;
     display: flex;
@@ -29,11 +36,6 @@ const Wrapper = styled.div`
     background-color: transparent;
   }
 `
-
-type PropsType = {
-  +children?: React.Node,
-  +toggled?: boolean,
-}
 
 const NavbarMenu = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>

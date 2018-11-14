@@ -3,14 +3,15 @@ import React from 'react'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
+import { theme } from '../../Tools/interpolation'
 import type { PropsType, HtmlInputType } from './Input'
 
-const toId = (name) => `${name}-checkbox`
+const toId = (name?: string) => `${name || ''}-checkbox`
 
 const Wrapper = styled.div`
   input:checked + label::before {
-    background-color: ${(props) => props.theme.inputCheckedColor};
-    border-color: ${(props) => props.theme.inputCheckedColor};
+    background-color: ${theme('inputCheckedColor')};
+    border-color: ${theme('inputCheckedColor')};
   }
 
   input:checked + label::after {
@@ -23,8 +24,8 @@ type InputPropsType = { +name?: string, +type: HtmlInputType } & E2ePropType
 
 const Input: ReactComponentFunctional<InputPropsType> = styled.input.attrs({
   'data-e2e': injectE2E,
-  id: (props) => toId(props.name),
-  name: (props) => props.name,
+  id: (props: InputPropsType) => toId(props.name),
+  name: (props: InputPropsType) => props.name,
   type: 'checkbox',
 })`
   border: 0;
@@ -42,7 +43,7 @@ const Input: ReactComponentFunctional<InputPropsType> = styled.input.attrs({
 export const CheckboxLabel: ReactComponentFunctional<{
   +name?: string,
 }> = styled.label.attrs({
-  htmlFor: (props) => toId(props.name),
+  htmlFor: (props: InputPropsType) => toId(props.name),
 })`
   position: relative;
   display: flex;
@@ -50,12 +51,12 @@ export const CheckboxLabel: ReactComponentFunctional<{
   min-height: 1rem;
   padding-left: 1.5rem;
   cursor: pointer;
-  font-family: ${(props) => props.theme.fontPrimary};
+  font-family: ${theme('fontPrimary')};
   font-size: 1rem;
 
   &::before {
-    background-color: ${(props) => props.theme.palette.white};
-    border: 2px solid ${(props) => props.theme.inputBorderColor};
+    background-color: ${theme('inputBackgroundColor')};
+    border: 2px solid ${theme('inputBorderColor')};
     box-sizing: border-box;
     content: '';
     height: 16px;
@@ -67,8 +68,8 @@ export const CheckboxLabel: ReactComponentFunctional<{
 
   &::after {
     background: none;
-    border-left: 1px solid ${(props) => props.theme.palette.white};
-    border-bottom: 1px solid ${(props) => props.theme.palette.white};
+    border-left: 1px solid ${theme('inputBackgroundColor')};
+    border-bottom: 1px solid ${theme('inputBackgroundColor')};
     box-sizing: border-box;
     content: '';
     height: 5px;

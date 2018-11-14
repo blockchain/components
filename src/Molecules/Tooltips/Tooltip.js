@@ -5,6 +5,8 @@ import styled, { injectGlobal } from 'styled-components'
 // $FlowFixMe
 import ReactTooltip from 'react-tooltip'
 
+import { theme, type ThemePropType } from '../../Tools/interpolation'
+
 injectGlobal`
   .__react_component_tooltip {
     border-radius: 3px;
@@ -124,13 +126,13 @@ injectGlobal`
 `
 
 const StyledTip = styled(ReactTooltip)`
-  color: ${(props) => props.theme['tooltipColor']} !important;
-  border: 1px solid ${(props) => props.theme['tooltipBorderColor']} !important;
-  background-color: ${(props) =>
-    props.theme['tooltipBackgroundColor']} !important;
+  color: ${theme('tooltipColor')} !important;
+  border: 1px solid ${theme('tooltipBorderColor')} !important;
+  background-color: ${(props: ThemePropType) =>
+    props.theme.tooltipBackgroundColor} !important;
   cursor: pointer;
   max-width: 350px;
-  font-family: ${(props) => props.theme['fontPrimary']};
+  font-family: ${theme('fontPrimary')};
   font-size: 0.8rem;
   font-weight: 400;
   z-index: 5;
@@ -145,49 +147,49 @@ const StyledTip = styled(ReactTooltip)`
 
   &.place-top {
     &::before {
-      border-top-color: ${(props) =>
-        props.theme['tooltipBorderColor']} !important;
+      border-top-color: ${(props: ThemePropType) =>
+        props.theme.tooltipBorderColor} !important;
     }
 
     &::after {
-      border-top-color: ${(props) =>
-        props.theme['tooltipBackgroundColor']} !important;
+      border-top-color: ${(props: ThemePropType) =>
+        props.theme.tooltipBackgroundColor} !important;
     }
   }
 
   &.place-left {
     &::before {
-      border-left-color: ${(props) =>
-        props.theme['tooltipBorderColor']} !important;
+      border-left-color: ${(props: ThemePropType) =>
+        props.theme.tooltipBorderColor} !important;
     }
 
     &::after {
-      border-left-color: ${(props) =>
-        props.theme['tooltipBackgroundColor']} !important;
+      border-left-color: ${(props: ThemePropType) =>
+        props.theme.tooltipBackgroundColor} !important;
     }
   }
 
   &.place-bottom {
     &::before {
-      border-bottom-color: ${(props) =>
-        props.theme['tooltipBorderColor']} !important;
+      border-bottom-color: ${(props: ThemePropType) =>
+        props.theme.tooltipBorderColor} !important;
     }
 
     &::after {
-      border-bottom-color: ${(props) =>
-        props.theme['tooltipBackgroundColor']} !important;
+      border-bottom-color: ${(props: ThemePropType) =>
+        props.theme.tooltipBackgroundColor} !important;
     }
   }
 
   &.place-right {
     &::before {
-      border-right-color: ${(props) =>
-        props.theme['tooltipBorderColor']} !important;
+      border-right-color: ${(props: ThemePropType) =>
+        props.theme.tooltipBorderColor} !important;
     }
 
     &::after {
-      border-right-color: ${(props) =>
-        props.theme['tooltipBackgroundColor']} !important;
+      border-right-color: ${(props: ThemePropType) =>
+        props.theme.tooltipBackgroundColor} !important;
     }
   }
 `

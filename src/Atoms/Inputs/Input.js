@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
+import { prop, theme } from '../../Tools/interpolation'
 import Checkbox from './Checkbox'
 import Radio from './Radio'
 
@@ -31,34 +32,34 @@ type WrapperPropsType = { +name?: string, +type: HtmlInputType } & E2ePropType
 
 const Wrapper: ReactComponentFunctional<WrapperPropsType> = styled.input.attrs({
   'data-e2e': injectE2E,
-  name: (props) => props.name,
-  type: (props) => props.type,
+  name: (props: PropsType) => props.name,
+  type: (props: PropsType) => props.type,
 })`
   display: block;
-  width: ${(props) => props.width};
+  width: ${prop<PropsType>('width')};
   height: 2.7rem;
   padding: 0 1.4rem;
   box-sizing: border-box;
-  font-family: ${(props) => props.theme['fontPrimary']};
+  font-family: ${theme('fontPrimary')};
   font-size: 1rem;
-  color: ${(props) => props.theme['inputColor']};
+  color: ${theme('inputColor')};
   border-width: 1px;
-  border-color: ${(props) => props.theme['inputBorderColor']};
+  border-color: ${theme('inputBorderColor')};
   border-style: solid;
-  border-radius: ${(props) => props.theme.inputBorderRadius};
-  background-color: ${(props) => props.theme['inputBackgroundColor']};
+  border-radius: ${theme('inputBorderRadius')};
+  background-color: ${theme('inputBackgroundColor')};
   background-image: none;
   outline-width: 0;
   user-select: text;
 
   &:disabled {
-    color: ${(props) => props.theme['inputColor']};
-    background: ${(props) => props.theme['inputBackgroundColor']};
+    color: ${theme('inputColor')};
+    background: ${theme('inputBackgroundColor')};
     cursor: not-allowed;
   }
 
   &::placeholder {
-    color: ${(props) => props.theme['inputPlaceholderColor']};
+    color: ${theme('inputPlaceholderColor')};
     font-size: 0.875rem;
   }
 `

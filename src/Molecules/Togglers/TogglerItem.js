@@ -4,6 +4,13 @@ import * as React from 'react'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
+import { theme, type ThemePropType } from '../../Tools/interpolation'
+
+type PropsType = {
+  +children: React.Node,
+  +e2e?: string,
+  +selected?: boolean,
+}
 
 const Wrapper: ReactComponentFunctional<E2ePropType> = styled.div.attrs({
   'data-e2e': injectE2E,
@@ -14,26 +21,20 @@ const Wrapper: ReactComponentFunctional<E2ePropType> = styled.div.attrs({
   align-items: center;
   padding: 0.2rem 0.5rem;
   box-sizing: border-box;
-  font-family: ${(props) => props.theme.fontPrimary};
+  font-family: ${theme('fontPrimary')};
   font-size: 0.9rem;
   font-weight: 500;
-  color: ${(props) =>
-    props.selected
-      ? props.theme.togglerSelectedColor
-      : props.theme.togglerColor};
-  background-color: ${(props) =>
-    props.selected
-      ? props.theme.togglerSelectedBackgroundColor
-      : props.theme.togglerBackgroundColor};
+  color: ${(props: PropsType & ThemePropType) =>
+    props.selected === true
+      ? theme('togglerSelectedColor')(props)
+      : theme('togglerColor')(props)};
+  background-color: ${(props: PropsType & ThemePropType) =>
+    props.selected === true
+      ? theme('togglerSelectedBackgroundColor')(props)
+      : theme('togglerBackgroundColor')(props)};
   cursor: pointer;
   text-transform: uppercase;
 `
-
-type PropsType = {
-  +children: React.Node,
-  +e2e?: string,
-  +selected?: boolean,
-}
 
 const TogglerItem = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>

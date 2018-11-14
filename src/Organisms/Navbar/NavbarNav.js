@@ -3,6 +3,14 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
+import { prop, screenSize } from '../../Tools/interpolation'
+
+type PropsType = {
+  +children?: React.Node,
+  +toggled?: boolean,
+  +width?: string,
+}
+
 const Wrapper = styled.ul`
   display: flex;
   flex-direction: column;
@@ -14,26 +22,21 @@ const Wrapper = styled.ul`
   box-sizing: border-box;
   list-style-type: none;
 
-  @media (max-width: ${(props) => props.theme.screenSizes.sm}) {
+  @media (max-width: ${screenSize('sm')}) {
     & > li:first-child {
       border-top: none;
     }
   }
 
-  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
-    display: ${(props) => (props.toggled ? 'flex' : 'none')};
+  @media (min-width: ${screenSize('sm')}) {
+    display: ${(props: PropsType) =>
+      props.toggled === true ? 'flex' : 'none'};
     flex-direction: row;
     align-items: center;
     height: auto;
-    width: ${(props) => props.width};
+    width: ${prop<PropsType>('width')};
   }
 `
-
-type PropsType = {
-  +children?: React.Node,
-  +toggled?: boolean,
-  +width?: string,
-}
 
 const NavbarNav = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>

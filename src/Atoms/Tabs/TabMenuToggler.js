@@ -4,6 +4,7 @@ import * as React from 'react'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import { FasBars, type IconPropsType } from '../../Atoms/Icons'
+import { screenSize } from '../../Tools/interpolation'
 
 type PropsType = {
   +children?: React.Node,
@@ -18,7 +19,7 @@ const Toggler: ReactComponentFunctional<IconPropsType> = styled(FasBars).attrs({
   top: 13px;
   right: 20px;
 
-  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
+  @media (min-width: ${screenSize('sm')}) {
     display: none;
   }
 `

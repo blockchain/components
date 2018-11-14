@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled, { css, type ReactComponentFunctional } from 'styled-components'
 
+import { theme, type ThemePropType } from '../../Tools/interpolation'
+
 export type PropsType = {
   +selectable?: boolean,
   +size?: string,
@@ -14,17 +16,21 @@ type SvgPropsType = {
 }
 
 const themeColorTemplate = css`
-  fill: ${(props) => props.theme.iconColor};
-  cursor: ${(props) => (props.selectable ? 'pointer' : 'default')};
+  fill: ${theme('iconColor')};
+  cursor: ${(props: SvgPropsType) =>
+    props.selectable === 1 ? 'pointer' : 'default'};
 
   &:hover {
-    fill: ${(props) =>
-      props.selectable ? props.theme.iconHoverColor : props.theme.iconColor};
+    fill: ${(props: SvgPropsType & ThemePropType) =>
+      props.selectable === 1
+        ? theme('iconHoverColor')(props)
+        : theme('iconColor')(props)};
   }
 `
 
 const svgColorTemplate = css`
-  cursor: ${(props) => (props.selectable ? 'pointer' : 'default')};
+  cursor: ${(props: SvgPropsType) =>
+    props.selectable === 1 ? 'pointer' : 'default'};
 `
 
 export default (

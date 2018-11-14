@@ -3,14 +3,16 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
+import { theme } from '../../Tools/interpolation'
+
 const Wrapper = styled.span`
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: ${(props) => props.theme['cartridgeColor']};
-  background-color: ${(props) => props.theme['cartridgeBackgroundColor']};
-  font-family: ${(props) => props.theme['fontPrimary']};
+  color: ${theme('cartridgeColor')};
+  background-color: ${theme('cartridgeBackgroundColor')};
+  font-family: ${theme('fontPrimary')};
   font-size: 0.625rem;
   font-weight: 700;
   word-wrap: normal;

@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
-import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
+import injectE2E from '../../Tools/injectE2E'
+import { prop, theme } from '../../Tools/interpolation'
 
 export type PropsType = {
   +capitalize?: boolean,
@@ -16,22 +17,34 @@ export type PropsType = {
   +weight?: 100 | 200 | 300 | 400 | 500 | 600 | 700,
 }
 
-const Wrapper: ReactComponentFunctional<E2ePropType> = styled.a.attrs({
+const getTextTransform = (props: PropsType) => {
+  if (props.capitalize === true) {
+    return 'capitalize'
+  }
+
+  if (props.uppercase === true) {
+    return 'uppercase'
+  }
+
+  return 'none'
+}
+
+const Wrapper: ReactComponentFunctional<PropsType> = styled.a.attrs({
   'data-e2e': injectE2E,
 })`
-  font-family: ${(props) => props.theme['fontPrimary']};
-  font-weight: ${(props) => props.weight};
-  font-size: ${(props) => props.size};
-  text-transform: ${(props) =>
-    props.uppercase ? 'uppercase' : props.capitalize ? 'capitalize' : 'none'};
-  font-style: ${(props) => (props.italic ? 'italic' : 'normal')};
-  color: ${(props) => props.theme['linkColor']};
-  opacity: ${(props) => props.opacity};
+  font-family: ${theme('fontPrimary')};
+  font-weight: ${prop<PropsType>('weight')};
+  font-size: ${prop<PropsType>('size')};
+  text-transform: ${getTextTransform};
+  font-style: ${(props: PropsType) =>
+    props.italic === true ? 'italic' : 'normal'};
+  color: ${theme('linkColor')};
+  opacity: ${prop<PropsType>('opacity')};
   cursor: pointer;
   text-decoration: none;
 
   &:hover {
-    color: ${(props) => props.theme['linkHoverColor']};
+    color: ${theme('linkHoverColor')};
     text-decoration: none;
   }
 `

@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
+import { prop, screenSize } from '../../Tools/interpolation'
+
 type PropsType = {
   +children?: React.Node,
   +height?: string,
@@ -14,10 +16,10 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: ${(props) => props.height};
+  height: ${prop<PropsType>('height')};
   margin: 0 auto;
 
-  @media (min-width: ${(props) => props.theme.screenSizes.lg}) {
+  @media (min-width: ${screenSize('lg')}) {
     width: 75rem;
   }
 `

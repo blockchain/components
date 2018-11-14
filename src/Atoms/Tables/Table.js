@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
+import { theme } from '../../Tools/interpolation'
+
 type PropsType = {
   +children?: React.Node,
 }
@@ -13,14 +15,14 @@ const Wrapper = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  box-shadow: 0 0 1.5rem 0.4rem ${(props) => props.theme['tableShadowColor']};
+  box-shadow: 0 0 1.5rem 0.4rem ${theme('tableShadowColor')};
 
   & > :nth-child(even) {
-    background-color: ${(props) => props.theme['tableCellEvenBackgroundColor']};
+    background-color: ${theme('tableCellEvenBackgroundColor')};
   }
 
   & > :nth-child(odd) {
-    background-color: ${(props) => props.theme['tableCellOddBackgroundColor']};
+    background-color: ${theme('tableCellOddBackgroundColor')};
   }
 `
 

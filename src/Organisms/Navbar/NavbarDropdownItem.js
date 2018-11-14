@@ -4,6 +4,7 @@ import * as React from 'react'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import Link, { type PropsType as LinkPropsType } from '../../Atoms/Links/Link'
+import { screenSize } from '../../Tools/interpolation'
 
 type PropsType = {
   +children?: React.Node,
@@ -20,7 +21,7 @@ const Wrapper: ReactComponentFunctional<LinkPropsType> = styled(Link)`
   white-space: nowrap;
   text-decoration: none;
 
-  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
+  @media (min-width: ${screenSize('sm')}) {
     &:hover span:first-child {
       text-decoration: underline;
     }
