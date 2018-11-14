@@ -1,7 +1,3 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
 version: 2
 jobs:
   build:
@@ -20,8 +16,8 @@ jobs:
           - v1-dependencies-
 
       - run:
-          name: install deps
-          command: npm i
+          name: Install dependencies
+          command: npm install
 
       - save_cache:
           paths:
@@ -29,21 +25,21 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
-          name: lint css
-          command: npm run lint:css
+          name: Lint .css
+          command: npm run ci:lint:css
 
       - run:
-          name: lint js
-          command: npm run lint:js
+          name: Lint .js
+          command: npm run ci:lint:js
 
       - run:
-          name: type checking
-          command: npm run flow:check
+          name: Type checking
+          command: npm run ci:flow:check
 
       - run:
-          name: type coverage
-          command: npm run flow:coverage
+          name: Type coverage
+          command: npm run ci:flow:coverage
 
       - run:
-          name: unit tests + coverage
+          name: Unit tests and coverage
           command: npm run ci:test:coverage

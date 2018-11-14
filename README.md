@@ -1,6 +1,6 @@
 [![test-coverage](artifacts/test-coverage-badge.svg)](https://jestjs.io)
 [![flow-coverage](artifacts/flow-coverage-badge.svg)](http://flow.org)
-[![CircleCI](https://circleci.internal.blockchain.info/gh/blockchain/components/tree/master.svg?style=svg&circle-token=5f52f6f882c4e3b5bb9f86702f3deca45f53a57f)](https://circleci.internal.blockchain.info/gh/blockchain/components/tree/master)
+[![CircleCI](https://circleci.com/gh/blockchain/components/tree/master.svg?style=svg)](https://circleci.com/gh/blockchain/components/tree/master)
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)

@@ -1,5 +1,5 @@
 {
-  "concurrentFiles": 8,
+  "concurrentFiles": 10,
   "excludeNonFlow": true,
   "globExcludePatterns": [
     "node_modules/**",
@@ -12,6 +12,5 @@
   "globIncludePatterns": [
     "src/**/*.js"
   ],
-  "threshold": 70,
-  "reportTypes": ["text", "json", "html" ]
+  "threshold": 74
 }
