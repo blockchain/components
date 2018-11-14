@@ -4,6 +4,7 @@ import React from 'react'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import { FasTimes, FasBars, type IconPropsType } from '../../Atoms/Icons'
+import { screenSize, theme } from '../../Tools/interpolation'
 
 type PropsType = {
   +onToggle?: (SyntheticEvent<HTMLDivElement>) => void,
@@ -17,13 +18,13 @@ const TogglerExpand: ReactComponentFunctional<IconPropsType> = styled(
   size: '20px',
 })`
   z-index: 15;
-  fill: ${(props) => props.theme.navbarTogglerColor} !important;
+  fill: ${theme('navbarTogglerColor')} !important;
 
   &:hover {
-    fill: ${(props) => props.theme.navbarTogglerColor} !important;
+    fill: ${theme('navbarTogglerColor')} !important;
   }
 
-  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
+  @media (min-width: ${screenSize('sm')}) {
     display: none;
   }
 `
@@ -35,13 +36,13 @@ const TogglerCollapse: ReactComponentFunctional<IconPropsType> = styled(
   size: '25px',
 })`
   z-index: 15;
-  fill: ${(props) => props.theme.navbarTogglerColor} !important;
+  fill: ${theme('navbarTogglerColor')} !important;
 
   &:hover {
-    fill: ${(props) => props.theme.navbarTogglerColor} !important;
+    fill: ${theme('navbarTogglerColor')} !important;
   }
 
-  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
+  @media (min-width: ${screenSize('sm')}) {
     display: none;
   }
 `

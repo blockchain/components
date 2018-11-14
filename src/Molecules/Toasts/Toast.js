@@ -4,6 +4,7 @@ import React from 'react'
 import styled, { css, type ReactComponentFunctional } from 'styled-components'
 
 import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
+import { theme } from '../../Tools/interpolation'
 import {
   FasCheckCircle,
   FasExclamationCircle,
@@ -17,10 +18,10 @@ const Wrapper: ReactComponentFunctional<E2ePropType> = styled.div.attrs({
 })`
   display: inline-flex;
   padding: ${PADDING};
-  font-family: ${(props) => props.theme.fontPrimary};
-  background-color: ${(props) => props.theme.toastBackgroundColor};
-  border-radius: ${(props) => props.theme.toastBorderRadius};
-  color: ${(props) => props.theme.toastTextColor};
+  font-family: ${theme('fontPrimary')};
+  background-color: ${theme('toastBackgroundColor')};
+  border-radius: ${theme('toastBorderRadius')};
+  color: ${theme('toastTextColor')};
   box-shadow: rgba(67, 90, 111, 0.416) 0 0 1px,
     rgba(67, 90, 111, 0.3) 0 8px 10px -4px;
   min-width: 250px;
@@ -54,28 +55,28 @@ const IndicatorCss = css`
 
 const IndicatorSuccess = styled(FasCheckCircle)`
   ${IndicatorCss};
-  fill: ${(props) => props.theme.successColor};
+  fill: ${theme('successColor')};
 
   &:hover {
-    fill: ${(props) => props.theme.successColor};
+    fill: ${theme('successColor')};
   }
 `
 
 const IndicatorWarning = styled(FasExclamationCircle)`
   ${IndicatorCss};
-  fill: ${(props) => props.theme.warningColor};
+  fill: ${theme('warningColor')};
 
   &:hover {
-    fill: ${(props) => props.theme.warningColor};
+    fill: ${theme('warningColor')};
   }
 `
 
 const IndicatorDanger = styled(IndicatorWarning)`
   ${IndicatorCss};
-  fill: ${(props) => props.theme.dangerColor};
+  fill: ${theme('dangerColor')};
 
   &:hover {
-    fill: ${(props) => props.theme.dangerColor};
+    fill: ${theme('dangerColor')};
   }
 `
 

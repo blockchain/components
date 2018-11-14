@@ -4,6 +4,7 @@ import * as React from 'react'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
+import { theme, type ThemePropType } from '../../Tools/interpolation'
 
 type HtmlButtonType = 'button' | 'reset' | 'submit'
 
@@ -19,7 +20,7 @@ type ButtonPropsType = { +type: HtmlButtonType } & E2ePropType
 
 const Wrapper: ReactComponentFunctional<ButtonPropsType> = styled.button.attrs({
   'data-e2e': injectE2E,
-  type: (props) => props.type,
+  type: (props: PropsType) => props.type,
 })`
   display: flex;
   flex-direction: row;
@@ -30,24 +31,26 @@ const Wrapper: ReactComponentFunctional<ButtonPropsType> = styled.button.attrs({
   width: 100%;
   padding: 0 1rem;
   box-sizing: border-box;
-  color: ${(props) => props.theme['buttonColor']};
-  background-color: ${(props) => props.theme['buttonBackgroundColor']};
+  color: ${theme('buttonColor')};
+  background-color: ${theme('buttonBackgroundColor')};
   border: none;
-  border-radius: ${(props) => props.theme.buttonBorderRadius};
-  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
+  border-radius: ${theme('buttonBorderRadius')};
+  cursor: ${(props: PropsType) =>
+    props.disabled === true ? 'not-allowed' : 'pointer'};
   outline: none;
   transition: all 0.3s ease 0s;
-  opacity: ${(props) => (props.disabled ? 0.5 : 1)};
-  font-family: ${(props) => props.theme['fontPrimary']};
+  opacity: ${(props: PropsType) => (props.disabled === true ? 0.5 : 1)};
+  font-family: ${theme('fontPrimary')};
   font-size: 1rem;
   font-weight: 600;
 
   &:hover {
-    background-color: ${(props) =>
-      props.disabled
-        ? props.theme['buttonBackgroundColor']
-        : props.theme['buttonHoverColor']};
-    transform: ${(props) => (props.bounced ? 'scale(0.95)' : 'none')};
+    background-color: ${(props: PropsType & ThemePropType) =>
+      props.disabled === true
+        ? theme('buttonBackgroundColor')(props)
+        : theme('buttonHoverColor')(props)};
+    transform: ${(props: PropsType) =>
+      props.bounced === true ? 'scale(0.95)' : 'none'};
   }
 `
 const Button = ({ children, ...rest }: PropsType) => (

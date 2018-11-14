@@ -3,6 +3,10 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
+import { prop } from '../../Tools/interpolation'
+
+type PropsType = { +size?: string }
+
 const scaleDelay = keyframes`
   0%,
   50%,
@@ -11,8 +15,8 @@ const scaleDelay = keyframes`
 `
 const Wrapper = styled.div`
   position: relative;
-  width: ${(props) => props.size};
-  height: ${(props) => props.size};
+  width: ${prop<PropsType>('size')};
+  height: ${prop<PropsType>('size')};
 `
 const Container = styled.div`
   width: 70%;
@@ -120,8 +124,6 @@ const Square24 = styled(SquareD)`
 const Square25 = styled(SquareD)`
   animation-delay: 0.8s;
 `
-
-type PropsType = { +size?: string }
 
 const BlockchainLoader = (props: PropsType) => (
   <Wrapper {...props}>

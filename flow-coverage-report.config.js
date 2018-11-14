@@ -12,5 +12,6 @@
   "globIncludePatterns": [
     "src/**/*.js"
   ],
-  "threshold": 74
+  "percentDecimals": 2,
+  "threshold": 99.8
 }

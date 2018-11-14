@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
+import { prop } from '../../Tools/interpolation'
+
 type PropsType = {
   +align?: 'center' | 'justify' | 'left' | 'right',
   +capitalize?: boolean,
@@ -11,11 +13,13 @@ type PropsType = {
 }
 
 const Wrapper = styled.div`
-  text-align: ${(props) => props.align};
+  text-align: ${prop<PropsType>('align')};
 
   & > * {
-    display: ${(props) => (props.inline ? 'inline' : 'block')};
-    margin-right: ${(props) => (props.inline ? '0.4rem' : '0')};
+    display: ${(props: PropsType) =>
+      props.inline === true ? 'inline' : 'block'};
+    margin-right: ${(props: PropsType) =>
+      props.inline === true ? '0.4rem' : '0'};
   }
 `
 

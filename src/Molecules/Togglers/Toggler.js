@@ -3,18 +3,20 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
+import { theme } from '../../Tools/interpolation'
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   width: fit-content;
-  border: 1px solid ${(props) => props.theme['togglerBorderColor']};
+  border: 1px solid ${theme('togglerBorderColor')};
   border-radius: 0.2rem;
   box-sizing: border-box;
 
   & > *:not(:last-child) {
-    border-right: 1px solid ${(props) => props.theme['togglerBorderColor']};
+    border-right: 1px solid ${theme('togglerBorderColor')};
   }
 `
 

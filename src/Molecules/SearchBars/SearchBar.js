@@ -6,6 +6,17 @@ import styled from 'styled-components'
 import { FasSearch } from '../../Atoms/Icons'
 import { Input } from '../../Atoms/Inputs'
 import injectE2E from '../../Tools/injectE2E'
+import { prop, theme } from '../../Tools/interpolation'
+
+type PropsType = {
+  +children?: React.Node,
+  +e2e?: string,
+  +onChange?: (SyntheticEvent<HTMLInputElement>) => void,
+  +onClick?: (SyntheticEvent<HTMLInputElement>) => void,
+  +renderSubmit: React.ComponentType<*>,
+  +value?: string | number,
+  +width?: string,
+}
 
 const Wrapper = styled.div`
   position: relative;
@@ -13,9 +24,9 @@ const Wrapper = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: ${(props) => props.width};
-  background-color: ${(props) => props.theme['searchBarBackgroundColor']};
-  box-shadow: 0 2px 8px 1px ${(props) => props.theme['searchBarShadowColor']};
+  width: ${prop<PropsType>('width')};
+  background-color: ${theme('searchBarBackgroundColor')};
+  box-shadow: 0 2px 8px 1px ${theme('searchBarShadowColor')};
   border-radius: 0.125rem;
 `
 const IconContainer = styled.div`
@@ -34,10 +45,10 @@ const SearchIcon = styled(FasSearch).attrs({
   selectable: false,
   size: '20px',
 })`
-  fill: ${(props) => props.theme['searchBarIconColor']};
+  fill: ${theme('searchBarIconColor')};
 
   &:hover {
-    fill: ${(props) => props.theme['searchBarIconColor']};
+    fill: ${theme('searchBarIconColor')};
   }
 `
 const SearchInput = styled(Input)`
@@ -58,32 +69,21 @@ const GoContainer = styled.div.attrs({
   height: 3.5rem;
   padding: 1rem;
   box-sizing: border-box;
-  font-family: ${(props) => props.theme['fontPrimary']};
+  font-family: ${theme('fontPrimary')};
   font-size: 1.5rem;
   font-weight: 600;
-  color: ${(props) => props.theme['searchBarSubmitColor']};
-  background-color: ${(props) => props.theme['searchBarSubmitBackgroundColor']};
+  color: ${theme('searchBarSubmitColor')};
+  background-color: ${theme('searchBarSubmitBackgroundColor')};
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
   white-space: nowrap;
 
   &:hover {
-    background-color: ${(props) =>
-      props.theme['searchBarSubmitHoverBackgroundColor']};
+    background-color: ${theme('searchBarSubmitHoverBackgroundColor')};
     cursor: pointer;
   }
 `
 const GoLabel = () => <React.Fragment>Go</React.Fragment>
-
-type PropsType = {
-  +children?: React.Node,
-  +e2e?: string,
-  +onChange?: (SyntheticEvent<HTMLInputElement>) => void,
-  +onClick?: (SyntheticEvent<HTMLInputElement>) => void,
-  +renderSubmit: React.ComponentType<*>,
-  +value?: string | number,
-  +width?: string,
-}
 
 const SearchBar = ({
   children,

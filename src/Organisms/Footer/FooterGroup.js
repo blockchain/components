@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
+import { screenSize } from '../../Tools/interpolation'
+
 type PropsType = {
   +children?: React.Node,
 }
@@ -14,7 +16,7 @@ const Wrapper = styled.div`
   margin-right: 2rem;
   line-height: 2.5rem;
 
-  @media (max-width: ${(props) => props.theme.screenSizes.sm}) {
+  @media (max-width: ${screenSize('sm')}) {
     margin-bottom: 4rem;
   }
 `

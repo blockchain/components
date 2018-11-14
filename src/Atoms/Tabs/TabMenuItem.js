@@ -4,6 +4,14 @@ import PropTypes from 'prop-types'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
+import { screenSize, theme } from '../../Tools/interpolation'
+
+type PropsType = {
+  +children?: React.Node,
+  +className?: string,
+  +e2e?: string,
+  +selected?: boolean,
+}
 
 const Wrapper: ReactComponentFunctional<E2ePropType> = styled.div.attrs({
   'data-e2e': injectE2E,
@@ -17,7 +25,7 @@ const Wrapper: ReactComponentFunctional<E2ePropType> = styled.div.attrs({
   box-sizing: border-box;
   cursor: pointer;
 
-  @media (max-width: ${(props) => props.theme.screenSizes.sm}) {
+  @media (max-width: ${screenSize('sm')}) {
     order: 1;
 
     &.hidden {
@@ -25,7 +33,7 @@ const Wrapper: ReactComponentFunctional<E2ePropType> = styled.div.attrs({
     }
   }
 
-  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
+  @media (min-width: ${screenSize('sm')}) {
     display: flex;
     justify-content: center;
     order: 1;
@@ -45,16 +53,9 @@ const Bar = styled.div`
   height: 0.2rem;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
-  background-color: ${(props) => props.theme['tabMenuBarColor']};
-  opacity: ${(props) => (props.selected ? '1' : '0')};
+  background-color: ${theme('tabMenuBarColor')};
+  opacity: ${(props: PropsType) => (props.selected === true ? '1' : '0')};
 `
-
-type PropsType = {
-  +children?: React.Node,
-  +className?: string,
-  +e2e?: string,
-  +selected?: boolean,
-}
 
 const TabMenuItem = ({ children, className, selected, ...rest }: PropsType) => (
   <Wrapper

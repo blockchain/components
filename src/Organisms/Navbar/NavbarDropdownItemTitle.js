@@ -6,6 +6,7 @@ import styled, { type ReactComponentFunctional } from 'styled-components'
 import Text, {
   type PropsType as TextPropsType,
 } from '../../Atoms/Typography/Text'
+import { screenSize, theme } from '../../Tools/interpolation'
 
 type PropsType = {
   +children?: React.Node,
@@ -15,10 +16,10 @@ const Wrapper: ReactComponentFunctional<TextPropsType> = styled(Text).attrs({
   size: '1rem',
   weight: 600,
 })`
-  color: ${(props) => props.theme['navbarDropdownTitleMobileColor']};
+  color: ${theme('navbarDropdownTitleMobileColor')};
 
-  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
-    color: ${(props) => props.theme['navbarDropdownTitleColor']};
+  @media (min-width: ${screenSize('sm')}) {
+    color: ${theme('navbarDropdownTitleColor')};
   }
 `
 

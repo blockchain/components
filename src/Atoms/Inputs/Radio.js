@@ -3,9 +3,10 @@ import React from 'react'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
+import { theme } from '../../Tools/interpolation'
 import type { PropsType, HtmlInputType } from './Input'
 
-const toId = (value) => `${value}-radio`
+const toId = (value?: string) => `${value || ''}-radio`
 
 const Wrapper = styled.div`
   display: flex;
@@ -15,8 +16,8 @@ type InputPropsType = { +name?: string, +type: HtmlInputType } & E2ePropType
 
 const RadioButton = styled.span`
   margin-right: 0.5rem;
-  background: ${({ theme }) => theme.palette.white};
-  border: 2px solid ${(props) => props.theme.inputBorderColor};
+  background: ${theme('inputBackgroundColor')};
+  border: 2px solid ${theme('inputBorderColor')};
   box-sizing: border-box;
   border-radius: 50%;
   height: 16px;
@@ -25,8 +26,8 @@ const RadioButton = styled.span`
 
 const Input: ReactComponentFunctional<InputPropsType> = styled.input.attrs({
   'data-e2e': injectE2E,
-  id: (props) => toId(props.value),
-  name: (props) => props.name,
+  id: (props: PropsType) => toId(props.value),
+  name: (props: PropsType) => props.name,
   type: 'radio',
 })`
   position: absolute;
@@ -44,7 +45,7 @@ const Input: ReactComponentFunctional<InputPropsType> = styled.input.attrs({
     display: flex;
     align-items: center;
     justify-content: center;
-    border-color: ${(props) => props.theme.inputCheckedColor};
+    border-color: ${theme('inputCheckedColor')};
 
     &::before {
       border-radius: 51%;
@@ -53,7 +54,7 @@ const Input: ReactComponentFunctional<InputPropsType> = styled.input.attrs({
       height: 8px;
       width: 8px;
       position: relative;
-      background: ${(props) => props.theme.inputCheckedColor};
+      background: ${theme('inputCheckedColor')};
     }
   }
 `
@@ -61,7 +62,7 @@ const Input: ReactComponentFunctional<InputPropsType> = styled.input.attrs({
 export const RadioLabel: ReactComponentFunctional<{
   +name?: string,
 }> = styled.label.attrs({
-  htmlFor: (props) => toId(props.value),
+  htmlFor: (props: PropsType) => toId(props.value),
 })`
   position: relative;
   left: 1px;
@@ -69,7 +70,7 @@ export const RadioLabel: ReactComponentFunctional<{
   align-items: center;
   min-height: 1rem;
   cursor: pointer;
-  font-family: ${(props) => props.theme.fontPrimary};
+  font-family: ${theme('fontPrimary')};
   font-size: 1rem;
 `
 

@@ -2,6 +2,8 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
+import { theme } from '../../Tools/interpolation'
+
 const Wrapper = styled.div`
   height: 40px;
   width: 40px;
@@ -99,7 +101,7 @@ const Animation = styled.div`
     width: 16px;
     height: 16px;
     border-radius: 100%;
-    background-color: ${(props) => props.theme['loaderColor']};
+    background-color: ${theme('loaderColor')};
     transform: translate(-50%, -50%);
   }
 

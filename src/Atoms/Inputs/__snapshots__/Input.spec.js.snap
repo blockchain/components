@@ -316,7 +316,7 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
             className="c1"
             data-e2e="defaultInput"
             disabled={false}
-            id="undefined-checkbox"
+            id="-checkbox"
             type="checkbox"
             width="100%"
           />
@@ -324,7 +324,7 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
         <styled.label>
           <label
             className="c2"
-            htmlFor="undefined-checkbox"
+            htmlFor="-checkbox"
           />
         </styled.label>
       </div>
@@ -434,7 +434,7 @@ exports[`Input should render correctly with type="radio" 1`] = `
             className="c1"
             data-e2e="defaultInput"
             disabled={false}
-            id="undefined-radio"
+            id="-radio"
             type="radio"
             width="100%"
           />
@@ -442,7 +442,7 @@ exports[`Input should render correctly with type="radio" 1`] = `
         <styled.label>
           <label
             className="c2"
-            htmlFor="undefined-radio"
+            htmlFor="-radio"
           >
             <styled.span>
               <span

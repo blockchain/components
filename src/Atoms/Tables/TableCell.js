@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
+import { prop } from '../../Tools/interpolation'
+
 type AlignType = 'center' | 'left' | 'right'
 
 type PropsType = {
@@ -12,7 +14,7 @@ type PropsType = {
   +width?: string,
 }
 
-const selectAlign = (align: AlignType) => {
+const selectAlign = (align?: AlignType) => {
   switch (align) {
     case 'left':
       return 'flex-start'
@@ -26,16 +28,20 @@ const selectAlign = (align: AlignType) => {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: ${(props) => selectAlign(props.align)};
+  justify-content: ${(props: PropsType) => selectAlign(props.align)};
   align-items: center;
   min-width: 0;
-  flex-basis: ${(props) => props.width};
+  flex-basis: ${prop<PropsType>('width')};
 
   & > * {
-    display: ${(props) => (props.shrinked ? 'block' : 'initial')};
-    text-overflow: ${(props) => (props.shrinked ? 'ellipsis' : 'initial')};
-    overflow: ${(props) => (props.shrinked ? 'hidden' : 'initial')};
-    white-space: ${(props) => (props.shrinked ? 'nowrap' : 'initial')};
+    display: ${(props: PropsType) =>
+      props.shrinked === true ? 'block' : 'initial'};
+    text-overflow: ${(props: PropsType) =>
+      props.shrinked === true ? 'ellipsis' : 'initial'};
+    overflow: ${(props: PropsType) =>
+      props.shrinked === true ? 'hidden' : 'initial'};
+    white-space: ${(props: PropsType) =>
+      props.shrinked === true ? 'nowrap' : 'initial'};
   }
 `
 

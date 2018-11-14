@@ -7,11 +7,11 @@ type PropsType = {
   +size?: string,
 }
 
-const Wrapper: ReactComponentFunctional<*> = styled.svg.attrs({
+const Wrapper: ReactComponentFunctional<PropsType> = styled.svg.attrs({
   viewBox: '0 0 103.9 103.9',
 })`
-  height: ${(props) => props.size};
-  width: ${(props) => props.size};
+  height: ${(props: PropsType) => props.size};
+  width: ${(props: PropsType) => props.size};
 `
 const Path1 = styled.path`
   fill: #00aee6;

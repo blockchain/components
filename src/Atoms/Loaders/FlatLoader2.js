@@ -3,6 +3,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
 
+import { prop, theme } from '../../Tools/interpolation'
+
+type PropsType = {
+  +height?: string,
+  +width?: string,
+}
+
 const stretchAnimation = keyframes`
   0%,
   40%,
@@ -12,8 +19,8 @@ const stretchAnimation = keyframes`
 const Container = styled.div`
   display: flex;
   justify-content: space-around;
-  width: ${(props) => props.width};
-  height: ${(props) => props.height};
+  width: ${prop<PropsType>('width')};
+  height: ${prop<PropsType>('height')};
   text-align: center;
   font-size: 10px;
 `
@@ -21,7 +28,7 @@ const Rectangle = styled.div`
   display: inline-block;
   width: 15%;
   height: 100%;
-  background-color: ${(props) => props.theme['loaderColor']};
+  background-color: ${theme('loaderColor')};
   animation: ${stretchAnimation} 1.2s infinite ease-in-out;
 `
 const Rectangle1 = styled(Rectangle)`
@@ -39,11 +46,6 @@ const Rectangle4 = styled(Rectangle)`
 const Rectangle5 = styled(Rectangle)`
   animation-delay: -0.7s;
 `
-
-type PropsType = {
-  +height?: string,
-  +width?: string,
-}
 
 const FlatLoader2 = (props: PropsType) => (
   <Container {...props}>

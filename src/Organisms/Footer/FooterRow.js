@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
+import { screenSize } from '../../Tools/interpolation'
+
 type PropsType = {
   +children?: React.Node,
 }
@@ -17,7 +19,7 @@ const Wrapper = styled.div`
     margin-right: 0;
   }
 
-  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
+  @media (min-width: ${screenSize('sm')}) {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -25,7 +27,7 @@ const Wrapper = styled.div`
     width: 100%;
   }
 
-  @media (min-width: ${(props) => props.theme.screenSizes.md}) {
+  @media (min-width: ${screenSize('md')}) {
     flex-wrap: nowrap;
   }
 `

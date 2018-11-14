@@ -3,11 +3,13 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
+import { screenSize, theme } from '../../Tools/interpolation'
+
 const Wrapper = styled.div`
   width: 100%;
   z-index: 10;
 
-  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
+  @media (min-width: ${screenSize('sm')}) {
     position: absolute;
     width: auto;
     margin: 0.25rem 0;
@@ -24,19 +26,18 @@ const Container = styled.div`
     margin-bottom: 0 !important;
   }
 
-  @media (max-width: ${(props) => props.theme.screenSizes.sm}) {
+  @media (max-width: ${screenSize('sm')}) {
     padding: 1.1rem 0;
   }
 
-  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
+  @media (min-width: ${screenSize('sm')}) {
     margin-top: 15px;
     padding: 1.5rem;
     border-radius: 0.25rem;
     box-sizing: border-box;
-    background-color: ${(props) =>
-      props.theme['navbarDropdownContentBackgroundColor']};
-    box-shadow: 0 10px 60px -10px ${(props) => props.theme['navbarDropdownContentShadowColor']},
-      0 8px 16px ${(props) => props.theme['navbarDropdownContentShadowColor2']};
+    background-color: ${theme('navbarDropdownContentBackgroundColor')};
+    box-shadow: 0 10px 60px -10px ${theme('navbarDropdownContentShadowColor')},
+      0 8px 16px ${theme('navbarDropdownContentShadowColor2')};
 
     &::after,
     &::before {
@@ -52,16 +53,14 @@ const Container = styled.div`
 
     &::after {
       border-color: transparent;
-      border-bottom-color: ${(props) =>
-        props.theme['navbarDropdownContentBackgroundColor']};
+      border-bottom-color: ${theme('navbarDropdownContentBackgroundColor')};
       border-width: 10px;
       margin-left: -10px;
     }
 
     &::before {
       border-color: transparent;
-      border-bottom-color: ${(props) =>
-        props.theme['navbarDropdownContentBackgroundColor']};
+      border-bottom-color: ${theme('navbarDropdownContentBackgroundColor')};
       border-width: 12px;
       margin-left: -12px;
     }

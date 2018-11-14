@@ -3,15 +3,16 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
+import { screenSize, theme } from '../../Tools/interpolation'
+
 const Wrapper = styled.li`
   position: relative;
   width: 100%;
   padding: 0.5rem 0;
   box-sizing: border-box;
-  border-top: 0.5px solid
-    ${(props) => props.theme['navbarDropdownContentBorderColor']};
+  border-top: 0.5px solid ${theme('navbarDropdownContentBorderColor')};
 
-  @media (min-width: ${(props) => props.theme.screenSizes.sm}) {
+  @media (min-width: ${screenSize('sm')}) {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
