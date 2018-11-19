@@ -7,6 +7,12 @@ import {
   BcBitcoinCash,
   BcBlocks,
   BcEthereum,
+  BcReceivedConfirmed,
+  BcReceivedUnconfirmed,
+  BcSelfConfirmed,
+  BcSelfUnconfirmed,
+  BcSentConfirmed,
+  BcSentUnconfirmed,
   BcTransactions,
 } from '.'
 
@@ -56,6 +62,30 @@ storiesOf('Atoms/Icons/custom', module)
       <IconContainer>
         <BcEthereum size="40px" />
         <IconName>Ethereum</IconName>
+      </IconContainer>
+      <IconContainer>
+        <BcReceivedConfirmed size="40px" />
+        <IconName>ReceivedConfirmed</IconName>
+      </IconContainer>
+      <IconContainer>
+        <BcReceivedUnconfirmed size="40px" />
+        <IconName>ReceivedUnconfirmed</IconName>
+      </IconContainer>
+      <IconContainer>
+        <BcSelfConfirmed size="40px" />
+        <IconName>SelfConfirmed</IconName>
+      </IconContainer>
+      <IconContainer>
+        <BcSelfUnconfirmed size="40px" />
+        <IconName>SelfUnconfirmed</IconName>
+      </IconContainer>
+      <IconContainer>
+        <BcSentConfirmed size="40px" />
+        <IconName>SentConfirmed</IconName>
+      </IconContainer>
+      <IconContainer>
+        <BcSentUnconfirmed size="40px" />
+        <IconName>SentUnconfirmed</IconName>
       </IconContainer>
       <IconContainer>
         <BcTransactions size="40px" />
