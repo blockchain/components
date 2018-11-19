@@ -2,6 +2,11 @@
 import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
+import { theme } from '../../Tools/interpolation'
+
+type PropsType = {
+  +children?: React.Node,
+}
 
 const Wrapper = styled.div`
   display: flex;
@@ -11,12 +16,8 @@ const Wrapper = styled.div`
   width: 100%;
   padding: 1.5rem;
   box-sizing: border-box;
-  border-bottom: 1px solid ${(props) => props.theme['modalBorderColor']};
+  border-bottom: 1px solid ${theme('modalBorderColor')};
 `
-
-type PropsType = {
-  +children?: React.Node,
-}
 
 const ModalHeader = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>

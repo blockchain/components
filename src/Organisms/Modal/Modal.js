@@ -2,6 +2,12 @@
 import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
+import { screenSize, theme } from '../../Tools/interpolation'
+
+type PropsType = {
+  +children?: React.Node,
+  +width?: string,
+}
 
 const Wrapper = styled.div`
   display: flex;
@@ -10,18 +16,14 @@ const Wrapper = styled.div`
   align-items: flex-start;
   width: 100%;
   height: 100%;
-  background-color: ${(props) => props.theme['modalForegroundColor']};
+  background-color: ${theme('modalForegroundColor')};
 
-  @media (min-width: 48rem) {
-    width: ${(props) => props.width};
+  @media (min-width: ${screenSize('sm')}) {
+    width: ${(props: PropsType) => props.width};
     height: auto;
     border-radius: 5px;
   }
 `
-
-type PropsType = {
-  +children?: React.Node,
-}
 
 const Modal = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>

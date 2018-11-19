@@ -7,7 +7,6 @@ import { screenSize, theme } from '../../Tools/interpolation'
 
 const Wrapper = styled.div`
   width: 100%;
-  z-index: 10;
 
   @media (min-width: ${screenSize('sm')}) {
     position: absolute;

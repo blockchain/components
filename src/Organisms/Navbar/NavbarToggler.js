@@ -17,7 +17,6 @@ const TogglerExpand: ReactComponentFunctional<IconPropsType> = styled(
   selectable: true,
   size: '20px',
 })`
-  z-index: 15;
   fill: ${theme('navbarTogglerColor')} !important;
 
   &:hover {
@@ -35,7 +34,6 @@ const TogglerCollapse: ReactComponentFunctional<IconPropsType> = styled(
   selectable: true,
   size: '25px',
 })`
-  z-index: 15;
   fill: ${theme('navbarTogglerColor')} !important;
 
   &:hover {

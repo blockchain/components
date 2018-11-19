@@ -2,6 +2,11 @@
 import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
+import { theme } from '../../Tools/interpolation'
+
+type PropsType = {
+  +children?: React.Node,
+}
 
 const Wrapper = styled.div`
   position: fixed;
@@ -13,14 +18,9 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${(props) => props.theme['modalBackgroundColor']};
-  z-index: 2000;
+  background-color: ${theme('modalBackgroundColor')};
   transform: translateZ(0);
 `
-
-type PropsType = {
-  +children?: React.Node,
-}
 
 const ModalBackground = ({ children, ...rest }: PropsType) => (
   <Wrapper {...rest}>{children}</Wrapper>

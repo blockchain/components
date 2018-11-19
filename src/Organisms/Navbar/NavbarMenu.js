@@ -22,7 +22,6 @@ const Wrapper = styled.div`
   padding: 4.5rem 1.5rem 1.5rem 1.5rem;
   box-sizing: border-box;
   background-color: ${theme('navbarMenuBagroundColor')};
-  z-index: 10;
   transform: translate3d(0, 0, 0);
 
   @media (min-width: ${screenSize('sm')}) {

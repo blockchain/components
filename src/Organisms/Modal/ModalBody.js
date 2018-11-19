@@ -2,15 +2,16 @@
 import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
+import { screenSize } from '../../Tools/interpolation'
 
 const Wrapper = styled.div`
   width: 100%;
   height: 100%;
-  overflow: scroll;
+  overflow: auto;
   padding: 1.5rem;
   box-sizing: border-box;
 
-  @media (min-width: 48rem) {
+  @media (min-width: ${screenSize('sm')}) {
     height: auto;
     overflow-y: none;
   }

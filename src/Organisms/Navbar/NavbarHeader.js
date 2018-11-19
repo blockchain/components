@@ -8,7 +8,6 @@ type PropsType = {
 }
 
 const Wrapper = styled.div`
-  z-index: 15;
   margin-right: 25px;
 `
 
