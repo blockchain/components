@@ -3,7 +3,6 @@
 exports[`NavbarDropdownContent should render correctly 1`] = `
 .c0 {
   width: 100%;
-  z-index: 10;
 }
 
 .c1 {

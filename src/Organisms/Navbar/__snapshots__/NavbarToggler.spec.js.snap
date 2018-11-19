@@ -11,7 +11,6 @@ exports[`NavbarToggler should render correctly 1`] = `
 }
 
 .c0 {
-  z-index: 15;
   fill: #FFF !important;
 }
 
@@ -82,7 +81,6 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
 }
 
 .c0 {
-  z-index: 15;
   fill: #FFF !important;
 }
 
