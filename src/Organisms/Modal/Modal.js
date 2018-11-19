@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
-import { screenSize, theme } from '../../Tools/interpolation'
+import { prop, screenSize, theme } from '../../Tools/interpolation'
 
 type PropsType = {
   +children?: React.Node,
@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   background-color: ${theme('modalForegroundColor')};
 
   @media (min-width: ${screenSize('sm')}) {
-    width: ${(props: PropsType) => props.width};
+    width: ${prop('width')};
     height: auto;
     border-radius: 5px;
   }
