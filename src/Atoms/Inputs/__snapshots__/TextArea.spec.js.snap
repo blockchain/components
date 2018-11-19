@@ -1,0 +1,518 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextArea should render correctly 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 0.7rem 1.4rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  color: #545456;
+  border-width: 1px;
+  border-color: #CCC;
+  border-style: solid;
+  border-radius: 0.125rem;
+  background-color: #FFF;
+  background-image: none;
+  outline-width: 0;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  resize: none;
+}
+
+.c0:disabled {
+  color: #545456;
+  background: #FFF;
+  cursor: not-allowed;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+<TextArea
+  disabled={false}
+  e2e="defaultTextArea"
+  height="100px"
+  width="100%"
+>
+  <styled.textarea
+    disabled={false}
+    e2e="defaultTextArea"
+    height="100px"
+    width="100%"
+  >
+    <textarea
+      className="c0"
+      data-e2e="defaultTextArea"
+      disabled={false}
+      height="100px"
+      width="100%"
+    />
+  </styled.textarea>
+</TextArea>
+`;
+
+exports[`TextArea should render correctly with disabled 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 0.7rem 1.4rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  color: #545456;
+  border-width: 1px;
+  border-color: #CCC;
+  border-style: solid;
+  border-radius: 0.125rem;
+  background-color: #FFF;
+  background-image: none;
+  outline-width: 0;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  resize: none;
+}
+
+.c0:disabled {
+  color: #545456;
+  background: #FFF;
+  cursor: not-allowed;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+<TextArea
+  disabled={true}
+  e2e="defaultTextArea"
+  height="100px"
+  width="100%"
+>
+  <styled.textarea
+    disabled={true}
+    e2e="defaultTextArea"
+    height="100px"
+    width="100%"
+  >
+    <textarea
+      className="c0"
+      data-e2e="defaultTextArea"
+      disabled={true}
+      height="100px"
+      width="100%"
+    />
+  </styled.textarea>
+</TextArea>
+`;
+
+exports[`TextArea should render correctly with e2e 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 0.7rem 1.4rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  color: #545456;
+  border-width: 1px;
+  border-color: #CCC;
+  border-style: solid;
+  border-radius: 0.125rem;
+  background-color: #FFF;
+  background-image: none;
+  outline-width: 0;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  resize: none;
+}
+
+.c0:disabled {
+  color: #545456;
+  background: #FFF;
+  cursor: not-allowed;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+<TextArea
+  disabled={false}
+  e2e="E2ELabel"
+  height="100px"
+  width="100%"
+>
+  <styled.textarea
+    disabled={false}
+    e2e="E2ELabel"
+    height="100px"
+    width="100%"
+  >
+    <textarea
+      className="c0"
+      data-e2e="E2ELabel"
+      disabled={false}
+      height="100px"
+      width="100%"
+    />
+  </styled.textarea>
+</TextArea>
+`;
+
+exports[`TextArea should render correctly with height 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding: 0.7rem 1.4rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  color: #545456;
+  border-width: 1px;
+  border-color: #CCC;
+  border-style: solid;
+  border-radius: 0.125rem;
+  background-color: #FFF;
+  background-image: none;
+  outline-width: 0;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  resize: none;
+}
+
+.c0:disabled {
+  color: #545456;
+  background: #FFF;
+  cursor: not-allowed;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+<TextArea
+  disabled={false}
+  e2e="defaultTextArea"
+  height="200px"
+  width="100%"
+>
+  <styled.textarea
+    disabled={false}
+    e2e="defaultTextArea"
+    height="200px"
+    width="100%"
+  >
+    <textarea
+      className="c0"
+      data-e2e="defaultTextArea"
+      disabled={false}
+      height="200px"
+      width="100%"
+    />
+  </styled.textarea>
+</TextArea>
+`;
+
+exports[`TextArea should render correctly with name 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 0.7rem 1.4rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  color: #545456;
+  border-width: 1px;
+  border-color: #CCC;
+  border-style: solid;
+  border-radius: 0.125rem;
+  background-color: #FFF;
+  background-image: none;
+  outline-width: 0;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  resize: none;
+}
+
+.c0:disabled {
+  color: #545456;
+  background: #FFF;
+  cursor: not-allowed;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+<TextArea
+  disabled={false}
+  e2e="defaultTextArea"
+  height="100px"
+  name="mytextarea"
+  width="100%"
+>
+  <styled.textarea
+    disabled={false}
+    e2e="defaultTextArea"
+    height="100px"
+    name="mytextarea"
+    width="100%"
+  >
+    <textarea
+      className="c0"
+      data-e2e="defaultTextArea"
+      disabled={false}
+      height="100px"
+      name="mytextarea"
+      width="100%"
+    />
+  </styled.textarea>
+</TextArea>
+`;
+
+exports[`TextArea should render correctly with value 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 0.7rem 1.4rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  color: #545456;
+  border-width: 1px;
+  border-color: #CCC;
+  border-style: solid;
+  border-radius: 0.125rem;
+  background-color: #FFF;
+  background-image: none;
+  outline-width: 0;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  resize: none;
+}
+
+.c0:disabled {
+  color: #545456;
+  background: #FFF;
+  cursor: not-allowed;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+<TextArea
+  disabled={false}
+  e2e="defaultTextArea"
+  height="100px"
+  value="Hello dear friend"
+  width="100%"
+>
+  <styled.textarea
+    disabled={false}
+    e2e="defaultTextArea"
+    height="100px"
+    value="Hello dear friend"
+    width="100%"
+  >
+    <textarea
+      className="c0"
+      data-e2e="defaultTextArea"
+      disabled={false}
+      height="100px"
+      value="Hello dear friend"
+      width="100%"
+    />
+  </styled.textarea>
+</TextArea>
+`;
+
+exports[`TextArea should render correctly with width 1`] = `
+.c0 {
+  display: block;
+  width: 200px;
+  height: 100px;
+  padding: 0.7rem 1.4rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  color: #545456;
+  border-width: 1px;
+  border-color: #CCC;
+  border-style: solid;
+  border-radius: 0.125rem;
+  background-color: #FFF;
+  background-image: none;
+  outline-width: 0;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  resize: none;
+}
+
+.c0:disabled {
+  color: #545456;
+  background: #FFF;
+  cursor: not-allowed;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+<TextArea
+  disabled={false}
+  e2e="defaultTextArea"
+  height="100px"
+  width="200px"
+>
+  <styled.textarea
+    disabled={false}
+    e2e="defaultTextArea"
+    height="100px"
+    width="200px"
+  >
+    <textarea
+      className="c0"
+      data-e2e="defaultTextArea"
+      disabled={false}
+      height="100px"
+      width="200px"
+    />
+  </styled.textarea>
+</TextArea>
+`;
