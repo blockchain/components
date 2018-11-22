@@ -33,16 +33,16 @@ exports[`SingleDropdown should render correctly 1`] = `
 .c0::after {
   content: '';
   position: absolute;
-  right: 0.3rem;
+  right: 1rem;
   top: 50%;
   margin-top: -3px;
   margin-left: 5px;
   text-align: center;
   width: 0;
   height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid #545456;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
   pointer-events: none;
 }
 
@@ -54,7 +54,7 @@ exports[`SingleDropdown should render correctly 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 0 1.6rem 0 1.4rem;
+  padding: 0 2.4rem 0 1.4rem;
   color: #545456;
   background-color: transparent;
   -webkit-appearance: none;
@@ -245,16 +245,16 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
 .c0::after {
   content: '';
   position: absolute;
-  right: 0.3rem;
+  right: 1rem;
   top: 50%;
   margin-top: -3px;
   margin-left: 5px;
   text-align: center;
   width: 0;
   height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid #545456;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
   pointer-events: none;
 }
 
@@ -266,7 +266,7 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 0 1.6rem 0 1.4rem;
+  padding: 0 2.4rem 0 1.4rem;
   color: #545456;
   background-color: transparent;
   -webkit-appearance: none;
@@ -457,16 +457,16 @@ exports[`SingleDropdown should render correctly with inline 1`] = `
 .c0::after {
   content: '';
   position: absolute;
-  right: 0.3rem;
+  right: 1rem;
   top: 50%;
   margin-top: -3px;
   margin-left: 5px;
   text-align: center;
   width: 0;
   height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid #545456;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
   pointer-events: none;
 }
 
@@ -478,7 +478,7 @@ exports[`SingleDropdown should render correctly with inline 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 0 1.6rem 0 1.4rem;
+  padding: 0 2.4rem 0 1.4rem;
   color: #545456;
   background-color: transparent;
   -webkit-appearance: none;
@@ -672,16 +672,16 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
 .c0::after {
   content: '';
   position: absolute;
-  right: 0.3rem;
+  right: 1rem;
   top: 50%;
   margin-top: -3px;
   margin-left: 5px;
   text-align: center;
   width: 0;
   height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid #545456;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
   pointer-events: none;
 }
 
@@ -693,7 +693,7 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 0 1.6rem 0 1.4rem;
+  padding: 0 2.4rem 0 1.4rem;
   color: #545456;
   background-color: transparent;
   -webkit-appearance: none;
@@ -884,16 +884,16 @@ exports[`SingleDropdown should render correctly with size 1`] = `
 .c0::after {
   content: '';
   position: absolute;
-  right: 0.3rem;
+  right: 1rem;
   top: 50%;
   margin-top: -3px;
   margin-left: 5px;
   text-align: center;
   width: 0;
   height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid #545456;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
   pointer-events: none;
 }
 
@@ -905,7 +905,7 @@ exports[`SingleDropdown should render correctly with size 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 0 1.6rem 0 1.4rem;
+  padding: 0 2.4rem 0 1.4rem;
   color: #545456;
   background-color: transparent;
   -webkit-appearance: none;
@@ -1096,16 +1096,16 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
 .c0::after {
   content: '';
   position: absolute;
-  right: 0.3rem;
+  right: 1rem;
   top: 50%;
   margin-top: -3px;
   margin-left: 5px;
   text-align: center;
   width: 0;
   height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid #545456;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
   pointer-events: none;
 }
 
@@ -1117,7 +1117,7 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 0 1.6rem 0 1.4rem;
+  padding: 0 2.4rem 0 1.4rem;
   color: #545456;
   background-color: transparent;
   -webkit-appearance: none;
@@ -1308,16 +1308,16 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
 .c0::after {
   content: '';
   position: absolute;
-  right: 0.3rem;
+  right: 1rem;
   top: 50%;
   margin-top: -3px;
   margin-left: 5px;
   text-align: center;
   width: 0;
   height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid #545456;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
   pointer-events: none;
 }
 
@@ -1329,7 +1329,7 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 0 1.6rem 0 1.4rem;
+  padding: 0 2.4rem 0 1.4rem;
   color: #545456;
   background-color: transparent;
   -webkit-appearance: none;
