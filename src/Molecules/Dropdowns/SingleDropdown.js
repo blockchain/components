@@ -48,16 +48,16 @@ const Wrapper = styled.div`
   &::after {
     content: '';
     position: absolute;
-    right: 1rem;
+    right: 0.3rem;
     top: 50%;
     margin-top: -3px;
     margin-left: 5px;
     text-align: center;
     width: 0;
     height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 6px solid ${theme('inputColor')};
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid ${theme('inputColor')};
     pointer-events: none;
   }
 
@@ -73,7 +73,7 @@ const Select = styled.select`
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 0 2.4rem 0 1.4rem;
+  padding: 0 1.6rem 0 1.4rem;
   color: ${theme('inputColor')};
   background-color: transparent;
   appearance: none;
