@@ -12,7 +12,6 @@ exports[`TabMenuToggler should render correctly 1`] = `
 
 .c0 {
   position: absolute;
-  top: 13px;
   right: 20px;
 }
 

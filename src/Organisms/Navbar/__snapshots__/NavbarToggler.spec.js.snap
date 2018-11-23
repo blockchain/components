@@ -81,11 +81,12 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
 }
 
 .c0 {
-  fill: #FFF !important;
+  fill: #FFF;
+  z-index: 1001;
 }
 
 .c0:hover {
-  fill: #FFF !important;
+  fill: #FFF;
 }
 
 @media (min-width:48rem) {

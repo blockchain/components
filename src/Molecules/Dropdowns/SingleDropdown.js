@@ -55,9 +55,9 @@ const Wrapper = styled.div`
     text-align: center;
     width: 0;
     height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 6px solid ${theme('inputColor')};
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    border-top: 0.4rem solid ${theme('inputColor')};
     pointer-events: none;
   }
 

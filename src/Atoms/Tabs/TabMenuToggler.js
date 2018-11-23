@@ -16,7 +16,6 @@ const Toggler: ReactComponentFunctional<IconPropsType> = styled(FasBars).attrs({
   size: '20px',
 })`
   position: absolute;
-  top: 13px;
   right: 20px;
 
   @media (min-width: ${screenSize('sm')}) {

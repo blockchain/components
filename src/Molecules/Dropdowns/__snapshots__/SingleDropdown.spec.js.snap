@@ -40,9 +40,9 @@ exports[`SingleDropdown should render correctly 1`] = `
   text-align: center;
   width: 0;
   height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #545456;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
   pointer-events: none;
 }
 
@@ -252,9 +252,9 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
   text-align: center;
   width: 0;
   height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #545456;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
   pointer-events: none;
 }
 
@@ -464,9 +464,9 @@ exports[`SingleDropdown should render correctly with inline 1`] = `
   text-align: center;
   width: 0;
   height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #545456;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
   pointer-events: none;
 }
 
@@ -679,9 +679,9 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
   text-align: center;
   width: 0;
   height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #545456;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
   pointer-events: none;
 }
 
@@ -891,9 +891,9 @@ exports[`SingleDropdown should render correctly with size 1`] = `
   text-align: center;
   width: 0;
   height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #545456;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
   pointer-events: none;
 }
 
@@ -1103,9 +1103,9 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
   text-align: center;
   width: 0;
   height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #545456;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
   pointer-events: none;
 }
 
@@ -1315,9 +1315,9 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
   text-align: center;
   width: 0;
   height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #545456;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
   pointer-events: none;
 }
 

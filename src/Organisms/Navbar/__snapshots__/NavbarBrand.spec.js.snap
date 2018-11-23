@@ -2,7 +2,8 @@
 
 exports[`NavbarBrand should render correctly 1`] = `
 .c0 {
-  display: relative;
+  position: relative;
+  z-index: 1001;
 }
 
 <NavbarBrand
@@ -21,7 +22,8 @@ exports[`NavbarBrand should render correctly 1`] = `
 
 exports[`NavbarBrand should render correctly with height 1`] = `
 .c0 {
-  display: relative;
+  position: relative;
+  z-index: 1001;
 }
 
 <NavbarBrand

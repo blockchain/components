@@ -17,10 +17,11 @@ const TogglerExpand: ReactComponentFunctional<IconPropsType> = styled(
   selectable: true,
   size: '20px',
 })`
-  fill: ${theme('navbarTogglerColor')} !important;
+  fill: ${theme('navbarTogglerColor')};
+  z-index: ${theme('navbarTogglerZIndex')};
 
   &:hover {
-    fill: ${theme('navbarTogglerColor')} !important;
+    fill: ${theme('navbarTogglerColor')};
   }
 
   @media (min-width: ${screenSize('sm')}) {
