@@ -21,8 +21,9 @@ const Wrapper = styled.div`
   width: 100%;
   padding: 4.5rem 1.5rem 1.5rem 1.5rem;
   box-sizing: border-box;
-  background-color: ${theme('navbarMenuBagroundColor')};
+  background-color: ${theme('navbarMenuBackgroundColor')};
   transform: translate3d(0, 0, 0);
+  z-index: ${theme('navbarMenuIndex')};
 
   @media (min-width: ${screenSize('sm')}) {
     position: relative;

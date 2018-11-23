@@ -2,6 +2,7 @@
 import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
+import { theme } from '../../Tools/interpolation'
 
 type PropsType = {
   +children?: React.Node,
@@ -9,7 +10,8 @@ type PropsType = {
 }
 
 const Wrapper = styled.div`
-  display: relative;
+  position: relative;
+  z-index: ${theme('navbarBrandIndex')};
 `
 
 const NavbarBrand = ({ children, ...rest }: PropsType) => (
