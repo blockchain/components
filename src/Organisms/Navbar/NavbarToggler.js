@@ -18,7 +18,7 @@ const TogglerExpand: ReactComponentFunctional<IconPropsType> = styled(
   size: '20px',
 })`
   fill: ${theme('navbarTogglerColor')};
-  z-index: ${theme('navbarTogglerIndex')};
+  z-index: ${theme('navbarTogglerZIndex')};
 
   &:hover {
     fill: ${theme('navbarTogglerColor')};

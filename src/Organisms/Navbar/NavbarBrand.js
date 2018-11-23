@@ -11,7 +11,7 @@ type PropsType = {
 
 const Wrapper = styled.div`
   position: relative;
-  z-index: ${theme('navbarBrandIndex')};
+  z-index: ${theme('navbarBrandZIndex')};
 `
 
 const NavbarBrand = ({ children, ...rest }: PropsType) => (

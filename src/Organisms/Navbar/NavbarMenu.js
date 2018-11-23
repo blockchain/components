@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   box-sizing: border-box;
   background-color: ${theme('navbarMenuBackgroundColor')};
   transform: translate3d(0, 0, 0);
-  z-index: ${theme('navbarMenuIndex')};
+  z-index: ${theme('navbarMenuZIndex')};
 
   @media (min-width: ${screenSize('sm')}) {
     position: relative;
