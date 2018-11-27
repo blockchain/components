@@ -422,6 +422,7 @@ exports[`TextArea should render correctly with value 1`] = `
   disabled={false}
   e2e="defaultTextArea"
   height="100px"
+  onChange={[Function]}
   value="Hello dear friend"
   width="100%"
 >
@@ -429,6 +430,7 @@ exports[`TextArea should render correctly with value 1`] = `
     disabled={false}
     e2e="defaultTextArea"
     height="100px"
+    onChange={[Function]}
     value="Hello dear friend"
     width="100%"
   >
@@ -437,6 +439,7 @@ exports[`TextArea should render correctly with value 1`] = `
       data-e2e="defaultTextArea"
       disabled={false}
       height="100px"
+      onChange={[Function]}
       value="Hello dear friend"
       width="100%"
     />

@@ -28,7 +28,6 @@ settings:
     flowVersion: 0.86.0
 
 rules:
-  react/jsx-no-bind: warn
   react/sort-comp:
     - error
     - order:

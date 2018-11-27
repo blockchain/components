@@ -30,7 +30,9 @@ describe('TextArea', () => {
   })
 
   it('should render correctly with value', () => {
-    const tree = mountWithTheme(<TextArea value="Hello dear friend" />)
+    const tree = mountWithTheme(
+      <TextArea onChange={(n) => n} value="Hello dear friend" />,
+    )
     expect(tree.find(TextArea)).toMatchSnapshot()
   })
 
