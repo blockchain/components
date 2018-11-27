@@ -89,8 +89,6 @@ If you want to change the library and reflect your changes on your consumer app 
 4. `cd path-to/my-app`
 5. `npm link @blockchain-com/components`
 
-You can also use the task `npm run build:watch` on `components` to automatically recompile the library and trigger a refresh on your app :fire:.
-
 :zap: you need to run `npm link @blockchain-com/components` everytime you run `npm i` or `yarn`...
 
 ## Storybook
