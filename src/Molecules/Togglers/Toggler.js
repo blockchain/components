@@ -1,6 +1,6 @@
 // @flow strict
 import PropTypes from 'prop-types'
-import React from 'react'
+import * as React from 'react'
 import styled from 'styled-components'
 
 import { theme } from '../../Tools/interpolation'
@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   }
 `
 
-type PropsType = { +children: Node }
+type PropsType = { +children: React.Node }
 
 const Toggler = ({ children }: PropsType) => <Wrapper>{children}</Wrapper>
 
