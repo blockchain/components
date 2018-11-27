@@ -1,3 +1,5 @@
 // @flow strict
-export { default as Tooltip } from './Tooltip'
+import Tooltip, { TooltipCss } from './Tooltip'
+
+export { Tooltip, TooltipCss }
 export { default as TooltipHost } from './TooltipHost'

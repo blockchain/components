@@ -1,13 +1,13 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
-import styled, { injectGlobal } from 'styled-components'
+import styled from 'styled-components'
 // $FlowFixMe
 import ReactTooltip from 'react-tooltip'
 
 import { theme, type ThemePropType } from '../../Tools/interpolation'
 
-injectGlobal`
+export const TooltipCss = `
   .__react_component_tooltip {
     border-radius: 3px;
     display: inline-block;
