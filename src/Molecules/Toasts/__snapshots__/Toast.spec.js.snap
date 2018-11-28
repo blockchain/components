@@ -18,7 +18,7 @@ exports[`Toast should render correctly 1`] = `
   padding: 1.025rem;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   background-color: #FFF;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   color: #000;
   box-shadow: rgba(67,90,111,0.416) 0 0 1px, rgba(67,90,111,0.3) 0 8px 10px -4px;
   min-width: 250px;
@@ -133,7 +133,7 @@ exports[`Toast should render correctly with description 1`] = `
   padding: 1.025rem;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   background-color: #FFF;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   color: #000;
   box-shadow: rgba(67,90,111,0.416) 0 0 1px, rgba(67,90,111,0.3) 0 8px 10px -4px;
   min-width: 250px;
@@ -273,7 +273,7 @@ exports[`Toast should render correctly with type=danger 1`] = `
   padding: 1.025rem;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   background-color: #FFF;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   color: #000;
   box-shadow: rgba(67,90,111,0.416) 0 0 1px, rgba(67,90,111,0.3) 0 8px 10px -4px;
   min-width: 250px;
@@ -473,7 +473,7 @@ exports[`Toast should render correctly with type=success 1`] = `
   padding: 1.025rem;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   background-color: #FFF;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   color: #000;
   box-shadow: rgba(67,90,111,0.416) 0 0 1px, rgba(67,90,111,0.3) 0 8px 10px -4px;
   min-width: 250px;
@@ -658,7 +658,7 @@ exports[`Toast should render correctly with type=warning 1`] = `
   padding: 1.025rem;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   background-color: #FFF;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   color: #000;
   box-shadow: rgba(67,90,111,0.416) 0 0 1px, rgba(67,90,111,0.3) 0 8px 10px -4px;
   min-width: 250px;

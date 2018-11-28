@@ -1,7 +1,7 @@
 // @flow strict
 import palette from './palette'
 
-const borderRadius = '0.125rem'
+const borderRadius = '0.25rem'
 
 const theme = {
   /* eslint-disable sort-keys */
@@ -27,15 +27,15 @@ const theme = {
   footerCategoryColor: palette.gray7,
   iconColor: palette.gray5,
   iconHoverColor: palette.gray4,
+  inputActiveColor: palette.cerulean,
   inputBackgroundColor: palette.white,
-  inputBackgroundColorFocus: palette.gray0,
+  inputBackgroundColorDisabled: palette.gray0,
   inputBorderColor: palette.gray2,
   inputBorderRadius: borderRadius,
-  inputCheckedColor: palette.cerulean,
+  inputCheckedColor: palette.orient,
   inputColor: palette.gray5,
+  inputLabelColor: palette.gray4,
   inputPlaceholderColor: palette.gray3,
-  inputRadioCheckedColor: palette.cerulean,
-  inputRadioColor: palette.gray3,
   linkColor: palette.gray5,
   linkHoverColor: palette.orient,
   loaderColor: palette.cerulean,

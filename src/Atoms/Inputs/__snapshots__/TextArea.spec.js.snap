@@ -5,7 +5,7 @@ exports[`TextArea should render correctly 1`] = `
   display: block;
   width: 100%;
   height: 100px;
-  padding: 0.7rem 1.4rem;
+  padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
@@ -13,21 +13,28 @@ exports[`TextArea should render correctly 1`] = `
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   background-color: #FFF;
-  background-image: none;
   outline-width: 0;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
   resize: none;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c0:disabled {
   color: #545456;
-  background: #FFF;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 .c0::-webkit-input-placeholder {
@@ -78,7 +85,7 @@ exports[`TextArea should render correctly with disabled 1`] = `
   display: block;
   width: 100%;
   height: 100px;
-  padding: 0.7rem 1.4rem;
+  padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
@@ -86,21 +93,28 @@ exports[`TextArea should render correctly with disabled 1`] = `
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   background-color: #FFF;
-  background-image: none;
   outline-width: 0;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
   resize: none;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c0:disabled {
   color: #545456;
-  background: #FFF;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 .c0::-webkit-input-placeholder {
@@ -151,7 +165,7 @@ exports[`TextArea should render correctly with e2e 1`] = `
   display: block;
   width: 100%;
   height: 100px;
-  padding: 0.7rem 1.4rem;
+  padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
@@ -159,21 +173,28 @@ exports[`TextArea should render correctly with e2e 1`] = `
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   background-color: #FFF;
-  background-image: none;
   outline-width: 0;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
   resize: none;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c0:disabled {
   color: #545456;
-  background: #FFF;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 .c0::-webkit-input-placeholder {
@@ -219,12 +240,132 @@ exports[`TextArea should render correctly with e2e 1`] = `
 </TextArea>
 `;
 
+exports[`TextArea should render correctly with error="error" 1`] = `
+.c1 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 0.875rem;
+  padding-bottom: 0.5rem;
+  color: #F36331;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c2 {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 0.7rem 1rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  color: #545456;
+  border-width: 1px;
+  border-color: #F36331;
+  border-style: solid;
+  border-radius: 0.25rem;
+  background-color: #FFF;
+  outline-width: 0;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  resize: none;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.c2:disabled {
+  color: #545456;
+  border-color: #CCC;
+  background: #F8F8F8;
+  cursor: not-allowed;
+}
+
+.c2:active:not(:disabled),
+.c2:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px transparent;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c2::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c2:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c2::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+<TextArea
+  disabled={false}
+  e2e="defaultTextArea"
+  error="error"
+  height="100px"
+  width="100%"
+>
+  <styled.div
+    width="100%"
+  >
+    <div
+      className="c0"
+      width="100%"
+    >
+      <styled.label
+        disabled={false}
+        error={true}
+      >
+        <label
+          className="c1"
+          disabled={false}
+        >
+          error
+        </label>
+      </styled.label>
+      <styled.textarea
+        disabled={false}
+        e2e="defaultTextArea"
+        error="error"
+        height="100px"
+        width="100%"
+      >
+        <textarea
+          className="c2"
+          data-e2e="defaultTextArea"
+          disabled={false}
+          height="100px"
+          width="100%"
+        />
+      </styled.textarea>
+    </div>
+  </styled.div>
+</TextArea>
+`;
+
 exports[`TextArea should render correctly with height 1`] = `
 .c0 {
   display: block;
   width: 100%;
   height: 200px;
-  padding: 0.7rem 1.4rem;
+  padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
@@ -232,21 +373,28 @@ exports[`TextArea should render correctly with height 1`] = `
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   background-color: #FFF;
-  background-image: none;
   outline-width: 0;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
   resize: none;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c0:disabled {
   color: #545456;
-  background: #FFF;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 .c0::-webkit-input-placeholder {
@@ -292,12 +440,30 @@ exports[`TextArea should render correctly with height 1`] = `
 </TextArea>
 `;
 
-exports[`TextArea should render correctly with name 1`] = `
+exports[`TextArea should render correctly with label="label" 1`] = `
+.c1 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 0.875rem;
+  padding-bottom: 0.5rem;
+  color: #757679;
+}
+
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c2 {
   display: block;
   width: 100%;
   height: 100px;
-  padding: 0.7rem 1.4rem;
+  padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
@@ -305,21 +471,254 @@ exports[`TextArea should render correctly with name 1`] = `
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   background-color: #FFF;
-  background-image: none;
   outline-width: 0;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
   resize: none;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.c2:disabled {
+  color: #545456;
+  border-color: #CCC;
+  background: #F8F8F8;
+  cursor: not-allowed;
+}
+
+.c2:active:not(:disabled),
+.c2:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c2::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c2:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c2::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+<TextArea
+  disabled={false}
+  e2e="defaultTextArea"
+  height="100px"
+  label="label"
+  width="100%"
+>
+  <styled.div
+    width="100%"
+  >
+    <div
+      className="c0"
+      width="100%"
+    >
+      <styled.label
+        disabled={false}
+        error={false}
+      >
+        <label
+          className="c1"
+          disabled={false}
+        >
+          label
+        </label>
+      </styled.label>
+      <styled.textarea
+        disabled={false}
+        e2e="defaultTextArea"
+        height="100px"
+        label="label"
+        width="100%"
+      >
+        <textarea
+          className="c2"
+          data-e2e="defaultTextArea"
+          disabled={false}
+          height="100px"
+          label="label"
+          width="100%"
+        />
+      </styled.textarea>
+    </div>
+  </styled.div>
+</TextArea>
+`;
+
+exports[`TextArea should render correctly with label="label" and error="error" 1`] = `
+.c1 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 0.875rem;
+  padding-bottom: 0.5rem;
+  color: #F36331;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c2 {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 0.7rem 1rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  color: #545456;
+  border-width: 1px;
+  border-color: #F36331;
+  border-style: solid;
+  border-radius: 0.25rem;
+  background-color: #FFF;
+  outline-width: 0;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  resize: none;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.c2:disabled {
+  color: #545456;
+  border-color: #CCC;
+  background: #F8F8F8;
+  cursor: not-allowed;
+}
+
+.c2:active:not(:disabled),
+.c2:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px transparent;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c2::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c2:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c2::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+<TextArea
+  disabled={false}
+  e2e="defaultTextArea"
+  error="error"
+  height="100px"
+  label="label"
+  width="100%"
+>
+  <styled.div
+    width="100%"
+  >
+    <div
+      className="c0"
+      width="100%"
+    >
+      <styled.label
+        disabled={false}
+        error={true}
+      >
+        <label
+          className="c1"
+          disabled={false}
+        >
+          label - error
+        </label>
+      </styled.label>
+      <styled.textarea
+        disabled={false}
+        e2e="defaultTextArea"
+        error="error"
+        height="100px"
+        label="label"
+        width="100%"
+      >
+        <textarea
+          className="c2"
+          data-e2e="defaultTextArea"
+          disabled={false}
+          height="100px"
+          label="label"
+          width="100%"
+        />
+      </styled.textarea>
+    </div>
+  </styled.div>
+</TextArea>
+`;
+
+exports[`TextArea should render correctly with name 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 0.7rem 1rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  color: #545456;
+  border-width: 1px;
+  border-color: #CCC;
+  border-style: solid;
+  border-radius: 0.25rem;
+  background-color: #FFF;
+  outline-width: 0;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  resize: none;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c0:disabled {
   color: #545456;
-  background: #FFF;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 .c0::-webkit-input-placeholder {
@@ -373,7 +772,7 @@ exports[`TextArea should render correctly with value 1`] = `
   display: block;
   width: 100%;
   height: 100px;
-  padding: 0.7rem 1.4rem;
+  padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
@@ -381,21 +780,28 @@ exports[`TextArea should render correctly with value 1`] = `
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   background-color: #FFF;
-  background-image: none;
   outline-width: 0;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
   resize: none;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c0:disabled {
   color: #545456;
-  background: #FFF;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 .c0::-webkit-input-placeholder {
@@ -452,7 +858,7 @@ exports[`TextArea should render correctly with width 1`] = `
   display: block;
   width: 200px;
   height: 100px;
-  padding: 0.7rem 1.4rem;
+  padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
@@ -460,21 +866,28 @@ exports[`TextArea should render correctly with width 1`] = `
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   background-color: #FFF;
-  background-image: none;
   outline-width: 0;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
   resize: none;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c0:disabled {
   color: #545456;
-  background: #FFF;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 .c0::-webkit-input-placeholder {

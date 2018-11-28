@@ -41,6 +41,11 @@ const Input: ReactComponentFunctional<InputPropsType> = styled.input.attrs({
   white-space: nowrap;
   width: 1px;
 
+  &:focus ~ label ${RadioButton} {
+    box-shadow: 0 0 0 2px ${theme('inputActiveColor')};
+    outline: 1px solid transparent;
+  }
+
   &:checked ~ label ${RadioButton} {
     display: flex;
     align-items: center;

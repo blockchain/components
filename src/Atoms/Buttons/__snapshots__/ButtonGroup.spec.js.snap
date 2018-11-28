@@ -25,7 +25,7 @@ exports[`Button should render correctly 1`] = `
   color: #FFF;
   background-color: #004A7C;
   border: none;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   cursor: pointer;
   outline: none;
   -webkit-transition: all 0.3s ease 0s;

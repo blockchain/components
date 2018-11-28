@@ -1,31 +1,50 @@
 import React from 'react'
-import { configure, addDecorator } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
 import withBackgrounds from '@storybook/addon-backgrounds'
-import { palette, ThemeProvider } from '../src'
+import { withInfo } from '@storybook/addon-info'
+import { configure, addDecorator } from '@storybook/react'
 
+import { palette, ThemeProvider } from '../src'
 const req = require.context('../src', true, /stories\.js$/)
 
-addDecorator((story, context) =>
-  withInfo({
-    text: 'Documentation',
-    inline: true,
-    header: true,
-  })(story)(context),
-)
+export const infoStory = {
+  alignItems: 'center',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  minHeight: '100px',
+  padding: '40px 60px',
+}
 
-const colors = Object.keys(palette).map((x) => ({
-  name: x,
-  value: palette[x],
-  default: x === 'gray0',
+export const Spacer = () => <div style={{ height: '40px' }} />
+
+const info = {
+  text: 'Documentation',
+  inline: true,
+  header: true,
+  styles: {
+    infoStory,
+  },
+}
+
+const colors = Object.keys(palette).map((name) => ({
+  name,
+  value: palette[name],
+  default: name === 'gray0',
 }))
-
-addDecorator(withBackgrounds(colors))
-
-addDecorator((story) => <ThemeProvider>{story()}</ThemeProvider>)
 
 function loadStories() {
   req.keys().forEach((filename) => req(filename))
 }
+
+addDecorator(withInfo(info))
+addDecorator(withBackgrounds(colors))
+addDecorator(
+  (Story) => (
+    <ThemeProvider>
+      <Story />
+    </ThemeProvider>
+  ),
+  { info },
+)
 
 configure(loadStories, module)

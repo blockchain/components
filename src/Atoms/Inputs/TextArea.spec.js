@@ -14,6 +14,24 @@ describe('TextArea', () => {
     expect(tree.find(TextArea)).toMatchSnapshot()
   })
 
+  it('should render correctly with error="error"', () => {
+    const tree = mountWithTheme(<TextArea error="error" />)
+
+    expect(tree.find(TextArea)).toMatchSnapshot()
+  })
+
+  it('should render correctly with label="label"', () => {
+    const tree = mountWithTheme(<TextArea label="label" />)
+
+    expect(tree.find(TextArea)).toMatchSnapshot()
+  })
+
+  it('should render correctly with label="label" and error="error"', () => {
+    const tree = mountWithTheme(<TextArea error="error" label="label" />)
+
+    expect(tree.find(TextArea)).toMatchSnapshot()
+  })
+
   it('should render correctly with e2e', () => {
     const tree = mountWithTheme(<TextArea e2e="E2ELabel" />)
     expect(tree.find(TextArea)).toMatchSnapshot()

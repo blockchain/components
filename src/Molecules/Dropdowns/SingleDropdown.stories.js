@@ -1,6 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
+
+import { Spacer } from '../../../.storybook/config'
 import SingleDropdown from './SingleDropdown'
 
 const items = [
@@ -26,17 +28,22 @@ storiesOf('Molecules/Dropdowns/SingleDropdown', module)
       items={items}
     />
   ))
+  .add('with error', () => (
+    <>
+      <SingleDropdown error="Error 1" items={items} name="test" />
+      <Spacer />
+      <SingleDropdown
+        error="Error 1"
+        items={items}
+        label="Label 1"
+        name="test2"
+      />
+    </>
+  ))
+  .add('with label', () => <SingleDropdown items={items} label="Select 1" />)
   .add('with disabled', () => <SingleDropdown disabled items={items} />)
-  .add('with inline', () => <SingleDropdown inline items={items} />)
   .add('with italic', () => (
     <SingleDropdown handleChange={action('item-click')} italic items={items} />
-  ))
-  .add('with size', () => (
-    <SingleDropdown
-      handleChange={action('item-click')}
-      items={items}
-      size="32px"
-    />
   ))
   .add('with uppercase', () => (
     <SingleDropdown
@@ -65,4 +72,19 @@ storiesOf('Molecules/Dropdowns/SingleDropdown', module)
       items={items}
       width="120px"
     />
+  ))
+  .add('with disabled', () => (
+    <>
+      <SingleDropdown disabled items={items} name="test" />
+      <Spacer />
+      <SingleDropdown disabled error="Error 1" items={items} name="test" />
+      <Spacer />
+      <SingleDropdown
+        disabled
+        error="Error 1"
+        items={items}
+        label="Label 1"
+        name="test"
+      />
+    </>
   ))

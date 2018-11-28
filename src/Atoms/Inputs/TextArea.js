@@ -3,47 +3,55 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
-import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
-import { prop, theme } from '../../Tools/interpolation'
+import injectE2E from '../../Tools/injectE2E'
+import { prop, theme, type ThemePropType } from '../../Tools/interpolation'
+import { Label, type PropsType as InputPropsType } from './Input'
 
-export type PropsType = {
-  +disabled?: boolean,
-  +e2e?: string,
-  +height?: string,
-  +input?: {},
-  +name?: string,
-  +value?: string,
-  +width?: string,
-}
+type PropsType = InputPropsType & { +height?: string }
 
-type WPropsType = { +name?: string } & E2ePropType
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: ${prop<PropsType>('width')};
+`
 
-const Wrapper: ReactComponentFunctional<WPropsType> = styled.textarea.attrs({
+const Wrapper: ReactComponentFunctional<PropsType> = styled.textarea.attrs({
   'data-e2e': injectE2E,
   name: (props: PropsType) => props.name,
 })`
   display: block;
   width: ${prop<PropsType>('width')};
   height: ${prop<PropsType>('height')};
-  padding: 0.7rem 1.4rem;
+  padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: ${theme('fontPrimary')};
   font-size: 1rem;
   color: ${theme('inputColor')};
   border-width: 1px;
-  border-color: ${theme('inputBorderColor')};
+  border-color: ${(props: PropsType & ThemePropType) =>
+    props.error != null
+      ? theme('dangerColor')(props)
+      : theme('inputBorderColor')(props)};
   border-style: solid;
   border-radius: ${theme('inputBorderRadius')};
   background-color: ${theme('inputBackgroundColor')};
-  background-image: none;
   outline-width: 0;
   user-select: text;
   resize: none;
+  transition: all 0.25s ease-out;
 
   &:disabled {
     color: ${theme('inputColor')};
-    background: ${theme('inputBackgroundColor')};
+    border-color: ${theme('inputBorderColor')};
+    background: ${theme('inputBackgroundColorDisabled')};
     cursor: not-allowed;
+  }
+
+  &:active:not(:disabled),
+  &:focus:not(:disabled) {
+    box-shadow: 0 0 0 1px
+      ${(props: PropsType & ThemePropType) =>
+        props.error != null ? 'transparent' : theme('inputActiveColor')};
   }
 
   &::placeholder {
@@ -53,6 +61,22 @@ const Wrapper: ReactComponentFunctional<WPropsType> = styled.textarea.attrs({
 `
 
 const TextArea = ({ input, ...rest }: PropsType) => {
+  const hasLabel = rest.label != null
+  const hasError = rest.error != null
+
+  if (hasLabel || hasError) {
+    return (
+      <Container width={rest.width}>
+        <Label disabled={rest.disabled} error={hasError} name={rest.name}>
+          {`${rest.label || ''}${
+            hasLabel && hasError ? ' - ' : ''
+          }${rest.error || ''}`}
+        </Label>
+        <Wrapper {...input} {...rest} />
+      </Container>
+    )
+  }
+
   return <Wrapper {...input} {...rest} />
 }
 
