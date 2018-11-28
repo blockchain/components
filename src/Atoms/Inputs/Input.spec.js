@@ -16,6 +16,30 @@ describe('Input', () => {
     expect(tree.find(Input)).toMatchSnapshot()
   })
 
+  it('should render correctly with error="error"', () => {
+    const tree = mountWithTheme(<Input error="error" />)
+
+    expect(tree.find(Input)).toMatchSnapshot()
+  })
+
+  it('should render correctly with label="label"', () => {
+    const tree = mountWithTheme(<Input label="label" />)
+
+    expect(tree.find(Input)).toMatchSnapshot()
+  })
+
+  it('should render correctly with label="label" and disabled', () => {
+    const tree = mountWithTheme(<Input disabled label="label" />)
+
+    expect(tree.find(Input)).toMatchSnapshot()
+  })
+
+  it('should render correctly with label="label" and error="error"', () => {
+    const tree = mountWithTheme(<Input error="error" label="label" />)
+
+    expect(tree.find(Input)).toMatchSnapshot()
+  })
+
   it('should render correctly with type="checkbox"', () => {
     const tree = mountWithTheme(<Input type="checkbox" />)
 

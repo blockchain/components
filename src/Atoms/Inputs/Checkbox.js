@@ -14,6 +14,11 @@ const Wrapper = styled.div`
     border-color: ${theme('inputCheckedColor')};
   }
 
+  input:focus + label::before {
+    box-shadow: 0 0 0 2px ${theme('inputActiveColor')};
+    outline: 1px solid transparent;
+  }
+
   input:checked + label::after {
     opacity: 1;
     transform: scale(1) rotate(-45deg);

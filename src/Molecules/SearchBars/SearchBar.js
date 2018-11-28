@@ -29,6 +29,7 @@ const Wrapper = styled.div`
   box-shadow: 0 2px 8px 1px ${theme('searchBarShadowColor')};
   border-radius: 0.125rem;
 `
+
 const IconContainer = styled.div`
   position: absolute;
   top: 50%;
@@ -41,6 +42,7 @@ const IconContainer = styled.div`
   background-color: inherit;
   border-color: transparent;
 `
+
 const SearchIcon = styled(FasSearch).attrs({
   selectable: false,
   size: '20px',
@@ -51,12 +53,19 @@ const SearchIcon = styled(FasSearch).attrs({
     fill: ${theme('searchBarIconColor')};
   }
 `
+
 const SearchInput = styled(Input)`
   height: 3.5rem;
   padding-left: 3rem;
   background-color: inherit;
   border-color: transparent;
+
+  &:focus,
+  &:active {
+    box-shadow: none !important;
+  }
 `
+
 const GoContainer = styled.div.attrs({
   'data-e2e': injectE2E,
 })`

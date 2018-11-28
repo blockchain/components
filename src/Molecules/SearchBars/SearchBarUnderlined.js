@@ -26,10 +26,17 @@ const Wrapper = styled.div`
   border-bottom: 1px solid ${theme('searchBarUnderlinedBorderColor')};
   background-color: ${theme('searchBarUnderlinedBackgroundColor')};
 `
+
 const SearchInput = styled(Input)`
   background-color: inherit;
   border-color: transparent;
+
+  &:focus,
+  &:active {
+    box-shadow: none !important;
+  }
 `
+
 const IconContainer = styled.div.attrs({
   'data-e2e': injectE2E,
 })`

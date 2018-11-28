@@ -27,6 +27,12 @@ describe('SearchBar', () => {
     expect(tree.find(SearchBar)).toMatchSnapshot()
   })
 
+  it('should render correctly with e2e', () => {
+    const tree = mountWithTheme(<SearchBar e2e={null} />)
+
+    expect(tree.find(SearchBar)).toMatchSnapshot()
+  })
+
   it('should render correctly with onChange', () => {
     const tree = mountWithTheme(<SearchBar onChange={jest.fn()} />)
 

@@ -32,9 +32,21 @@ describe('SingleDropdown', () => {
     expect(tree.find(SingleDropdown)).toMatchSnapshot()
   })
 
-  it('should render correctly with inline', () => {
+  it('should render correctly with error="error"', () => {
+    const tree = mountWithTheme(<SingleDropdown error="error" items={items} />)
+
+    expect(tree.find(SingleDropdown)).toMatchSnapshot()
+  })
+
+  it('should render correctly with label="label"', () => {
+    const tree = mountWithTheme(<SingleDropdown items={items} label="label" />)
+
+    expect(tree.find(SingleDropdown)).toMatchSnapshot()
+  })
+
+  it('should render correctly with label="label" and error="error"', () => {
     const tree = mountWithTheme(
-      <SingleDropdown inline items={items} onChange={jest.fn()} />,
+      <SingleDropdown error="error" items={items} label="label" />,
     )
 
     expect(tree.find(SingleDropdown)).toMatchSnapshot()

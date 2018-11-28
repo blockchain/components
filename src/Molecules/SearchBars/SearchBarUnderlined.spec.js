@@ -31,6 +31,12 @@ describe('SearchBarUnderlined', () => {
     expect(tree.find(SearchBarUnderlined)).toMatchSnapshot()
   })
 
+  it('should render correctly with e2e', () => {
+    const tree = mountWithTheme(<SearchBarUnderlined e2e={null} />)
+
+    expect(tree.find(SearchBarUnderlined)).toMatchSnapshot()
+  })
+
   it('should render correctly with onChange', () => {
     const tree = mountWithTheme(<SearchBarUnderlined onChange={jest.fn()} />)
 

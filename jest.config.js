@@ -10,10 +10,12 @@ module.exports = {
   collectCoverageFrom: [
     'src/Atoms/**/**.js',
     'src/Molecules/**/**.js',
+    'src/Organims/**/**.js',
     '!src/Tools/**',
     '!src/Atoms/Icons/crypto/**',
     '!src/Atoms/Icons/custom/**',
     '!src/Atoms/Icons/fa/**',
+    '!src/Atoms/Icons/withStyle.js',
     '!**/__snapshots__/**',
     '!**/**.stories.js',
     '!**/**Map.js',

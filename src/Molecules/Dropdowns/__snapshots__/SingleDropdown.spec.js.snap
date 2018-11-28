@@ -7,37 +7,19 @@ exports[`SingleDropdown should render correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
-  height: 2.7rem;
   box-sizing: border-box;
-  background-color: #FFF;
-  background-image: none;
-  outline-width: 0;
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
 }
 
 .c0::after {
   content: '';
   position: absolute;
   right: 1rem;
-  top: 50%;
-  margin-top: -3px;
-  margin-left: 5px;
-  text-align: center;
+  bottom: 1.15rem;
   width: 0;
   height: 0;
   border-left: 0.4rem solid transparent;
@@ -46,42 +28,40 @@ exports[`SingleDropdown should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c0:hover {
-  background-color: inherit;
-}
-
 .c1 {
-  position: relative;
   width: 100%;
-  height: 100%;
-  padding: 0 2.4rem 0 1.4rem;
+  height: 2.7rem;
+  padding: 0 2.4rem 0 1rem;
   color: #545456;
-  background-color: transparent;
+  background-color: #FFF;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  text-transform: none;
   font-style: normal;
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   cursor: pointer;
   outline: none;
-  text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c1:disabled {
+  color: #545456;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c1:focus {
-  border-color: #CCC;
+.c1:active:not(:disabled),
+.c1:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 <SingleDropdown
@@ -128,7 +108,6 @@ exports[`SingleDropdown should render correctly 1`] = `
     ]
   }
   onChange={[MockFunction]}
-  size="1rem"
   uppercase={false}
   width="100%"
 >
@@ -143,13 +122,11 @@ exports[`SingleDropdown should render correctly 1`] = `
         capitalize={false}
         italic={false}
         onChange={[MockFunction]}
-        size="1rem"
         uppercase={false}
       >
         <select
           className="c1"
           onChange={[MockFunction]}
-          size="1rem"
         >
           <option
             key="1"
@@ -219,37 +196,19 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
-  height: 2.7rem;
   box-sizing: border-box;
-  background-color: #FFF;
-  background-image: none;
-  outline-width: 0;
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
 }
 
 .c0::after {
   content: '';
   position: absolute;
   right: 1rem;
-  top: 50%;
-  margin-top: -3px;
-  margin-left: 5px;
-  text-align: center;
+  bottom: 1.15rem;
   width: 0;
   height: 0;
   border-left: 0.4rem solid transparent;
@@ -258,42 +217,40 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
   pointer-events: none;
 }
 
-.c0:hover {
-  background-color: inherit;
-}
-
 .c1 {
-  position: relative;
   width: 100%;
-  height: 100%;
-  padding: 0 2.4rem 0 1.4rem;
+  height: 2.7rem;
+  padding: 0 2.4rem 0 1rem;
   color: #545456;
-  background-color: transparent;
+  background-color: #FFF;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  text-transform: capitalize;
   font-style: normal;
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   cursor: pointer;
   outline: none;
-  text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c1:disabled {
+  color: #545456;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c1:focus {
-  border-color: #CCC;
+.c1:active:not(:disabled),
+.c1:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 <SingleDropdown
@@ -340,7 +297,6 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
     ]
   }
   onChange={[MockFunction]}
-  size="1rem"
   uppercase={false}
   width="100%"
 >
@@ -355,13 +311,11 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
         capitalize={true}
         italic={false}
         onChange={[MockFunction]}
-        size="1rem"
         uppercase={false}
       >
         <select
           className="c1"
           onChange={[MockFunction]}
-          size="1rem"
         >
           <option
             key="1"
@@ -424,44 +378,33 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
 </SingleDropdown>
 `;
 
-exports[`SingleDropdown should render correctly with inline 1`] = `
+exports[`SingleDropdown should render correctly with error="error" 1`] = `
+.c1 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 0.875rem;
+  padding-bottom: 0.5rem;
+  color: #F36331;
+}
+
 .c0 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
-  height: 2.7rem;
   box-sizing: border-box;
-  background-color: #FFF;
-  background-image: none;
-  outline-width: 0;
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
 }
 
 .c0::after {
   content: '';
   position: absolute;
   right: 1rem;
-  top: 50%;
-  margin-top: -3px;
-  margin-left: 5px;
-  text-align: center;
+  bottom: 1.15rem;
   width: 0;
   height: 0;
   border-left: 0.4rem solid transparent;
@@ -470,47 +413,45 @@ exports[`SingleDropdown should render correctly with inline 1`] = `
   pointer-events: none;
 }
 
-.c0:hover {
-  background-color: #F8F8F8;
-}
-
-.c1 {
-  position: relative;
+.c2 {
   width: 100%;
-  height: 100%;
-  padding: 0 2.4rem 0 1.4rem;
+  height: 2.7rem;
+  padding: 0 2.4rem 0 1rem;
   color: #545456;
-  background-color: transparent;
+  background-color: #FFF;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  text-transform: none;
   font-style: normal;
   border-width: 1px;
-  border-color: transparent;
+  border-color: #F36331;
   border-style: solid;
-  border-radius: 0.125rem;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   cursor: pointer;
   outline: none;
-  text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
-.c1:disabled {
+.c2:disabled {
+  color: #545456;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c1:focus {
-  border-color: #CCC;
+.c2:active:not(:disabled),
+.c2:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px transparent;
 }
 
 <SingleDropdown
   capitalize={false}
-  inline={true}
+  error="error"
   italic={false}
   items={
     Array [
@@ -552,31 +493,33 @@ exports[`SingleDropdown should render correctly with inline 1`] = `
       },
     ]
   }
-  onChange={[MockFunction]}
-  size="1rem"
   uppercase={false}
   width="100%"
 >
   <styled.div
-    inline={true}
     width="100%"
   >
     <div
       className="c0"
       width="100%"
     >
+      <styled.label
+        error={true}
+      >
+        <label
+          className="c1"
+        >
+          error
+        </label>
+      </styled.label>
       <styled.select
         capitalize={false}
-        inline={true}
+        error="error"
         italic={false}
-        onChange={[MockFunction]}
-        size="1rem"
         uppercase={false}
       >
         <select
-          className="c1"
-          onChange={[MockFunction]}
-          size="1rem"
+          className="c2"
         >
           <option
             key="1"
@@ -646,37 +589,19 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
-  height: 2.7rem;
   box-sizing: border-box;
-  background-color: #FFF;
-  background-image: none;
-  outline-width: 0;
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
 }
 
 .c0::after {
   content: '';
   position: absolute;
   right: 1rem;
-  top: 50%;
-  margin-top: -3px;
-  margin-left: 5px;
-  text-align: center;
+  bottom: 1.15rem;
   width: 0;
   height: 0;
   border-left: 0.4rem solid transparent;
@@ -685,42 +610,40 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
   pointer-events: none;
 }
 
-.c0:hover {
-  background-color: inherit;
-}
-
 .c1 {
-  position: relative;
   width: 100%;
-  height: 100%;
-  padding: 0 2.4rem 0 1.4rem;
+  height: 2.7rem;
+  padding: 0 2.4rem 0 1rem;
   color: #545456;
-  background-color: transparent;
+  background-color: #FFF;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  text-transform: none;
   font-style: italic;
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   cursor: pointer;
   outline: none;
-  text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c1:disabled {
+  color: #545456;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c1:focus {
-  border-color: #CCC;
+.c1:active:not(:disabled),
+.c1:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 <SingleDropdown
@@ -767,7 +690,6 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
     ]
   }
   onChange={[MockFunction]}
-  size="1rem"
   uppercase={false}
   width="100%"
 >
@@ -782,13 +704,423 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
         capitalize={false}
         italic={true}
         onChange={[MockFunction]}
-        size="1rem"
         uppercase={false}
       >
         <select
           className="c1"
           onChange={[MockFunction]}
-          size="1rem"
+        >
+          <option
+            key="1"
+            value={1}
+          >
+            Item1
+          </option>
+          <option
+            key="2"
+            value={2}
+          >
+            Item2
+          </option>
+          <option
+            key="3"
+            value={3}
+          >
+            Item3
+          </option>
+          <option
+            key="4"
+            value={4}
+          >
+            Item4
+          </option>
+          <option
+            key="5"
+            value={5}
+          >
+            Item5
+          </option>
+          <option
+            key="6"
+            value={6}
+          >
+            Item6
+          </option>
+          <option
+            key="7"
+            value={7}
+          >
+            Item7
+          </option>
+          <option
+            key="8"
+            value={8}
+          >
+            Item8
+          </option>
+          <option
+            key="9"
+            value={9}
+          >
+            Item9
+          </option>
+        </select>
+      </styled.select>
+    </div>
+  </styled.div>
+</SingleDropdown>
+`;
+
+exports[`SingleDropdown should render correctly with label="label" 1`] = `
+.c1 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 0.875rem;
+  padding-bottom: 0.5rem;
+  color: #757679;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c0::after {
+  content: '';
+  position: absolute;
+  right: 1rem;
+  bottom: 1.15rem;
+  width: 0;
+  height: 0;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
+  pointer-events: none;
+}
+
+.c2 {
+  width: 100%;
+  height: 2.7rem;
+  padding: 0 2.4rem 0 1rem;
+  color: #545456;
+  background-color: #FFF;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  border-width: 1px;
+  border-color: #CCC;
+  border-style: solid;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  outline: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.c2:disabled {
+  color: #545456;
+  border-color: #CCC;
+  background: #F8F8F8;
+  cursor: not-allowed;
+}
+
+.c2:active:not(:disabled),
+.c2:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
+}
+
+<SingleDropdown
+  capitalize={false}
+  italic={false}
+  items={
+    Array [
+      Object {
+        "text": "Item1",
+        "value": 1,
+      },
+      Object {
+        "text": "Item2",
+        "value": 2,
+      },
+      Object {
+        "text": "Item3",
+        "value": 3,
+      },
+      Object {
+        "text": "Item4",
+        "value": 4,
+      },
+      Object {
+        "text": "Item5",
+        "value": 5,
+      },
+      Object {
+        "text": "Item6",
+        "value": 6,
+      },
+      Object {
+        "text": "Item7",
+        "value": 7,
+      },
+      Object {
+        "text": "Item8",
+        "value": 8,
+      },
+      Object {
+        "text": "Item9",
+        "value": 9,
+      },
+    ]
+  }
+  label="label"
+  uppercase={false}
+  width="100%"
+>
+  <styled.div
+    width="100%"
+  >
+    <div
+      className="c0"
+      width="100%"
+    >
+      <styled.label
+        error={false}
+      >
+        <label
+          className="c1"
+        >
+          label
+        </label>
+      </styled.label>
+      <styled.select
+        capitalize={false}
+        italic={false}
+        label="label"
+        uppercase={false}
+      >
+        <select
+          className="c2"
+          label="label"
+        >
+          <option
+            key="1"
+            value={1}
+          >
+            Item1
+          </option>
+          <option
+            key="2"
+            value={2}
+          >
+            Item2
+          </option>
+          <option
+            key="3"
+            value={3}
+          >
+            Item3
+          </option>
+          <option
+            key="4"
+            value={4}
+          >
+            Item4
+          </option>
+          <option
+            key="5"
+            value={5}
+          >
+            Item5
+          </option>
+          <option
+            key="6"
+            value={6}
+          >
+            Item6
+          </option>
+          <option
+            key="7"
+            value={7}
+          >
+            Item7
+          </option>
+          <option
+            key="8"
+            value={8}
+          >
+            Item8
+          </option>
+          <option
+            key="9"
+            value={9}
+          >
+            Item9
+          </option>
+        </select>
+      </styled.select>
+    </div>
+  </styled.div>
+</SingleDropdown>
+`;
+
+exports[`SingleDropdown should render correctly with label="label" and error="error" 1`] = `
+.c1 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 0.875rem;
+  padding-bottom: 0.5rem;
+  color: #F36331;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c0::after {
+  content: '';
+  position: absolute;
+  right: 1rem;
+  bottom: 1.15rem;
+  width: 0;
+  height: 0;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #545456;
+  pointer-events: none;
+}
+
+.c2 {
+  width: 100%;
+  height: 2.7rem;
+  padding: 0 2.4rem 0 1rem;
+  color: #545456;
+  background-color: #FFF;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  border-width: 1px;
+  border-color: #F36331;
+  border-style: solid;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  outline: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.c2:disabled {
+  color: #545456;
+  border-color: #CCC;
+  background: #F8F8F8;
+  cursor: not-allowed;
+}
+
+.c2:active:not(:disabled),
+.c2:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px transparent;
+}
+
+<SingleDropdown
+  capitalize={false}
+  error="error"
+  italic={false}
+  items={
+    Array [
+      Object {
+        "text": "Item1",
+        "value": 1,
+      },
+      Object {
+        "text": "Item2",
+        "value": 2,
+      },
+      Object {
+        "text": "Item3",
+        "value": 3,
+      },
+      Object {
+        "text": "Item4",
+        "value": 4,
+      },
+      Object {
+        "text": "Item5",
+        "value": 5,
+      },
+      Object {
+        "text": "Item6",
+        "value": 6,
+      },
+      Object {
+        "text": "Item7",
+        "value": 7,
+      },
+      Object {
+        "text": "Item8",
+        "value": 8,
+      },
+      Object {
+        "text": "Item9",
+        "value": 9,
+      },
+    ]
+  }
+  label="label"
+  uppercase={false}
+  width="100%"
+>
+  <styled.div
+    width="100%"
+  >
+    <div
+      className="c0"
+      width="100%"
+    >
+      <styled.label
+        error={true}
+      >
+        <label
+          className="c1"
+        >
+          label - error
+        </label>
+      </styled.label>
+      <styled.select
+        capitalize={false}
+        error="error"
+        italic={false}
+        label="label"
+        uppercase={false}
+      >
+        <select
+          className="c2"
+          label="label"
         >
           <option
             key="1"
@@ -858,37 +1190,19 @@ exports[`SingleDropdown should render correctly with size 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
-  height: 2.7rem;
   box-sizing: border-box;
-  background-color: #FFF;
-  background-image: none;
-  outline-width: 0;
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
 }
 
 .c0::after {
   content: '';
   position: absolute;
   right: 1rem;
-  top: 50%;
-  margin-top: -3px;
-  margin-left: 5px;
-  text-align: center;
+  bottom: 1.15rem;
   width: 0;
   height: 0;
   border-left: 0.4rem solid transparent;
@@ -897,42 +1211,40 @@ exports[`SingleDropdown should render correctly with size 1`] = `
   pointer-events: none;
 }
 
-.c0:hover {
-  background-color: inherit;
-}
-
 .c1 {
-  position: relative;
   width: 100%;
-  height: 100%;
-  padding: 0 2.4rem 0 1.4rem;
+  height: 2.7rem;
+  padding: 0 2.4rem 0 1rem;
   color: #545456;
-  background-color: transparent;
+  background-color: #FFF;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 32px;
-  text-transform: none;
+  font-size: 1rem;
   font-style: normal;
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   cursor: pointer;
   outline: none;
-  text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c1:disabled {
+  color: #545456;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c1:focus {
-  border-color: #CCC;
+.c1:active:not(:disabled),
+.c1:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 <SingleDropdown
@@ -1070,37 +1382,19 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
-  height: 2.7rem;
   box-sizing: border-box;
-  background-color: #FFF;
-  background-image: none;
-  outline-width: 0;
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
 }
 
 .c0::after {
   content: '';
   position: absolute;
   right: 1rem;
-  top: 50%;
-  margin-top: -3px;
-  margin-left: 5px;
-  text-align: center;
+  bottom: 1.15rem;
   width: 0;
   height: 0;
   border-left: 0.4rem solid transparent;
@@ -1109,42 +1403,40 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
   pointer-events: none;
 }
 
-.c0:hover {
-  background-color: inherit;
-}
-
 .c1 {
-  position: relative;
   width: 100%;
-  height: 100%;
-  padding: 0 2.4rem 0 1.4rem;
+  height: 2.7rem;
+  padding: 0 2.4rem 0 1rem;
   color: #545456;
-  background-color: transparent;
+  background-color: #FFF;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  text-transform: uppercase;
   font-style: normal;
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   cursor: pointer;
   outline: none;
-  text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c1:disabled {
+  color: #545456;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c1:focus {
-  border-color: #CCC;
+.c1:active:not(:disabled),
+.c1:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 <SingleDropdown
@@ -1191,7 +1483,6 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
     ]
   }
   onChange={[MockFunction]}
-  size="1rem"
   uppercase={true}
   width="100%"
 >
@@ -1206,13 +1497,11 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
         capitalize={false}
         italic={false}
         onChange={[MockFunction]}
-        size="1rem"
         uppercase={true}
       >
         <select
           className="c1"
           onChange={[MockFunction]}
-          size="1rem"
         >
           <option
             key="1"
@@ -1282,37 +1571,19 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
-  height: 2.7rem;
   box-sizing: border-box;
-  background-color: #FFF;
-  background-image: none;
-  outline-width: 0;
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
 }
 
 .c0::after {
   content: '';
   position: absolute;
   right: 1rem;
-  top: 50%;
-  margin-top: -3px;
-  margin-left: 5px;
-  text-align: center;
+  bottom: 1.15rem;
   width: 0;
   height: 0;
   border-left: 0.4rem solid transparent;
@@ -1321,43 +1592,41 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
   pointer-events: none;
 }
 
-.c0:hover {
-  background-color: inherit;
-}
-
 .c1 {
-  position: relative;
   width: 100%;
-  height: 100%;
-  padding: 0 2.4rem 0 1.4rem;
+  height: 2.7rem;
+  padding: 0 2.4rem 0 1rem;
   color: #545456;
-  background-color: transparent;
+  background-color: #FFF;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 1rem;
   font-weight: 500;
-  text-transform: none;
+  font-size: 1rem;
   font-style: normal;
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   cursor: pointer;
   outline: none;
-  text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c1:disabled {
+  color: #545456;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c1:focus {
-  border-color: #CCC;
+.c1:active:not(:disabled),
+.c1:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 <SingleDropdown
@@ -1404,7 +1673,6 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
     ]
   }
   onChange={[MockFunction]}
-  size="1rem"
   uppercase={false}
   weight={500}
   width="100%"
@@ -1420,14 +1688,12 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
         capitalize={false}
         italic={false}
         onChange={[MockFunction]}
-        size="1rem"
         uppercase={false}
         weight={500}
       >
         <select
           className="c1"
           onChange={[MockFunction]}
-          size="1rem"
         >
           <option
             key="1"

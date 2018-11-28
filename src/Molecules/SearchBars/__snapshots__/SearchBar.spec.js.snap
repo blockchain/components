@@ -12,9 +12,9 @@ exports[`SearchBar should render correctly 1`] = `
 
 .c5 {
   display: block;
-  width: 100%;
   height: 2.7rem;
-  padding: 0 1.4rem;
+  width: 100%;
+  padding: 0 1rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
@@ -22,7 +22,7 @@ exports[`SearchBar should render correctly 1`] = `
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -30,12 +30,20 @@ exports[`SearchBar should render correctly 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c5:disabled {
   color: #545456;
-  background: #FFF;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c5:active:not(:disabled),
+.c5:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 .c5::-webkit-input-placeholder {
@@ -118,6 +126,11 @@ exports[`SearchBar should render correctly 1`] = `
   padding-left: 3rem;
   background-color: inherit;
   border-color: transparent;
+}
+
+.c4:focus,
+.c4:active {
+  box-shadow: none !important;
 }
 
 .c6 {
@@ -251,7 +264,7 @@ exports[`SearchBar should render correctly 1`] = `
 </SearchBar>
 `;
 
-exports[`SearchBar should render correctly with onChange 1`] = `
+exports[`SearchBar should render correctly with e2e 1`] = `
 .c3 {
   fill: #545456;
   cursor: default;
@@ -263,9 +276,9 @@ exports[`SearchBar should render correctly with onChange 1`] = `
 
 .c5 {
   display: block;
-  width: 100%;
   height: 2.7rem;
-  padding: 0 1.4rem;
+  width: 100%;
+  padding: 0 1rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
@@ -273,7 +286,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -281,12 +294,20 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c5:disabled {
   color: #545456;
-  background: #FFF;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c5:active:not(:disabled),
+.c5:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 .c5::-webkit-input-placeholder {
@@ -369,6 +390,275 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   padding-left: 3rem;
   background-color: inherit;
   border-color: transparent;
+}
+
+.c4:focus,
+.c4:active {
+  box-shadow: none !important;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  min-width: 4rem;
+  height: 3.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  background-color: #FFCA00;
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+  white-space: nowrap;
+}
+
+.c6:hover {
+  background-color: #ffd533;
+  cursor: pointer;
+}
+
+<SearchBar
+  e2e={null}
+  renderSubmit={[Function]}
+  width="100%"
+>
+  <styled.div
+    width="100%"
+  >
+    <div
+      className="c0"
+      width="100%"
+    >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <Styled(FasSearch)>
+            <FasSearch
+              className="c2"
+              selectable={false}
+              size="20px"
+            >
+              <Styled(SvgFasSearch)
+                className="c2"
+                height="20px"
+                selectable={0}
+                width="20px"
+              >
+                <SvgFasSearch
+                  className="c2 c3"
+                  height="20px"
+                  selectable={0}
+                  width="20px"
+                >
+                  <svg
+                    className="c2 c3"
+                    height="20px"
+                    selectable={0}
+                    viewBox="0 0 512 512"
+                    width="20px"
+                  >
+                    <path
+                      d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                    />
+                  </svg>
+                </SvgFasSearch>
+              </Styled(SvgFasSearch)>
+            </FasSearch>
+          </Styled(FasSearch)>
+        </div>
+      </styled.div>
+      <Styled(Input)
+        e2e=".Input"
+      >
+        <Input
+          className="c4"
+          disabled={false}
+          e2e=".Input"
+          type="text"
+          width="100%"
+        >
+          <styled.input
+            className="c4"
+            disabled={false}
+            e2e=".Input"
+            type="text"
+            width="100%"
+          >
+            <input
+              className="c4 c5"
+              data-e2e=".Input"
+              disabled={false}
+              type="text"
+              width="100%"
+            />
+          </styled.input>
+        </Input>
+      </Styled(Input)>
+      <styled.div
+        e2e=".Button"
+      >
+        <div
+          className="c6"
+          data-e2e=".Button"
+        >
+          <GoLabel>
+            Go
+          </GoLabel>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</SearchBar>
+`;
+
+exports[`SearchBar should render correctly with onChange 1`] = `
+.c3 {
+  fill: #545456;
+  cursor: default;
+}
+
+.c3:hover {
+  fill: #545456;
+}
+
+.c5 {
+  display: block;
+  height: 2.7rem;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 1rem;
+  color: #545456;
+  border-width: 1px;
+  border-color: #CCC;
+  border-style: solid;
+  border-radius: 0.25rem;
+  background-color: #FFF;
+  background-image: none;
+  outline-width: 0;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.c5:disabled {
+  color: #545456;
+  border-color: #CCC;
+  background: #F8F8F8;
+  cursor: not-allowed;
+}
+
+.c5:active:not(:disabled),
+.c5:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
+}
+
+.c5::-webkit-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c5::-moz-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c5:-ms-input-placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c5::placeholder {
+  color: #999B9E;
+  font-size: 0.875rem;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  background-color: #FFF;
+  box-shadow: 0 2px 8px 1px rgba(0,0,0,0.50);
+  border-radius: 0.125rem;
+}
+
+.c1 {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  margin-top: -10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.c2 {
+  fill: #000;
+}
+
+.c2:hover {
+  fill: #000;
+}
+
+.c4 {
+  height: 3.5rem;
+  padding-left: 3rem;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.c4:focus,
+.c4:active {
+  box-shadow: none !important;
 }
 
 .c6 {
@@ -519,9 +809,9 @@ exports[`SearchBar should render correctly with onClick 1`] = `
 
 .c5 {
   display: block;
-  width: 100%;
   height: 2.7rem;
-  padding: 0 1.4rem;
+  width: 100%;
+  padding: 0 1rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
@@ -529,7 +819,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -537,12 +827,20 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c5:disabled {
   color: #545456;
-  background: #FFF;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c5:active:not(:disabled),
+.c5:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 .c5::-webkit-input-placeholder {
@@ -625,6 +923,11 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   padding-left: 3rem;
   background-color: inherit;
   border-color: transparent;
+}
+
+.c4:focus,
+.c4:active {
+  box-shadow: none !important;
 }
 
 .c6 {
@@ -773,9 +1076,9 @@ exports[`SearchBar should render correctly with value 1`] = `
 
 .c5 {
   display: block;
-  width: 100%;
   height: 2.7rem;
-  padding: 0 1.4rem;
+  width: 100%;
+  padding: 0 1rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
@@ -783,7 +1086,7 @@ exports[`SearchBar should render correctly with value 1`] = `
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -791,12 +1094,20 @@ exports[`SearchBar should render correctly with value 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c5:disabled {
   color: #545456;
-  background: #FFF;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c5:active:not(:disabled),
+.c5:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 .c5::-webkit-input-placeholder {
@@ -879,6 +1190,11 @@ exports[`SearchBar should render correctly with value 1`] = `
   padding-left: 3rem;
   background-color: inherit;
   border-color: transparent;
+}
+
+.c4:focus,
+.c4:active {
+  box-shadow: none !important;
 }
 
 .c6 {
@@ -1034,9 +1350,9 @@ exports[`SearchBar should render correctly with width 1`] = `
 
 .c5 {
   display: block;
-  width: 100%;
   height: 2.7rem;
-  padding: 0 1.4rem;
+  width: 100%;
+  padding: 0 1rem;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
@@ -1044,7 +1360,7 @@ exports[`SearchBar should render correctly with width 1`] = `
   border-width: 1px;
   border-color: #CCC;
   border-style: solid;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -1052,12 +1368,20 @@ exports[`SearchBar should render correctly with width 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .c5:disabled {
   color: #545456;
-  background: #FFF;
+  border-color: #CCC;
+  background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c5:active:not(:disabled),
+.c5:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px #10ADE4;
 }
 
 .c5::-webkit-input-placeholder {
@@ -1140,6 +1464,11 @@ exports[`SearchBar should render correctly with width 1`] = `
   padding-left: 3rem;
   background-color: inherit;
   border-color: transparent;
+}
+
+.c4:focus,
+.c4:active {
+  box-shadow: none !important;
 }
 
 .c6 {
