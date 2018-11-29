@@ -1,9 +1,9 @@
-[![codecov](https://codecov.io/gh/blockchain/components/branch/master/graph/badge.svg)](https://codecov.io/gh/blockchain/components)
-[![flow-coverage](artifacts/flow-coverage-badge.svg)](http://flow.org)
+[![Coverage Status](https://coveralls.io/repos/github/blockchain/components/badge.svg?branch=master)](https://coveralls.io/github/blockchain/components?branch=master)
+[![Flow Coverage](artifacts/flow-coverage-badge.svg)](http://flow.org)
 [![CircleCI](https://circleci.com/gh/blockchain/components/tree/master.svg?style=svg)](https://circleci.com/gh/blockchain/components/tree/master)
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Code Style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-green.svg)](https://conventionalcommits.org)
 
 # Description
