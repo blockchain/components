@@ -22,7 +22,7 @@ module.exports = {
     '!**/index.js',
   ],
   coverageDirectory: './coverage',
-  coverageReporters: ['json-summary', 'lcov'],
+  coverageReporters: ['json-summary', 'text-lcov', 'lcov'],
   coverageThreshold: {
     global: {
       branches: 90,
