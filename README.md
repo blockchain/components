@@ -1,4 +1,4 @@
-[![test-coverage](artifacts/test-coverage-badge.svg)](https://jestjs.io)
+[![codecov](https://codecov.io/gh/blockchain/components/branch/master/graph/badge.svg)](https://codecov.io/gh/blockchain/components)
 [![flow-coverage](artifacts/flow-coverage-badge.svg)](http://flow.org)
 [![CircleCI](https://circleci.com/gh/blockchain/components/tree/master.svg?style=svg)](https://circleci.com/gh/blockchain/components/tree/master)
 

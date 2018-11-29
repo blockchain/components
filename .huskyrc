@@ -1,5 +1,4 @@
 ---
 hooks:
   commit-msg: commitlint -E HUSKY_GIT_PARAMS
-  pre-commit: npm run ci:flow:check && npm run test:coverage && npm run lint
-  pre-push: npm run ci:flow:check && npm run test:coverage && npm run lint
+  pre-commit: npm run ci:flow:check && npm run lint && npm run ci:test
