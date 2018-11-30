@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { theme } from '../../Tools/interpolation'
+import { fontSize, theme } from '../../Tools/interpolation'
 
 type PropsType = {
   +children?: React.Node,
@@ -12,7 +12,7 @@ type PropsType = {
 const Wrapper = styled.h5`
   color: ${theme('footerCategoryColor')};
   font-family: ${theme('fontPrimary')};
-  font-size: 0.875rem;
+  font-size: ${fontSize('sm')};
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 1rem;

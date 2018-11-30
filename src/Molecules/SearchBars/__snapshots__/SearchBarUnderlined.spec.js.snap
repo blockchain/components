@@ -1,16 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SearchBarUnderlined should render correctly 1`] = `
-.c4 {
+.c5 {
   fill: #545456;
   cursor: pointer;
 }
 
-.c4:hover {
+.c5:hover {
   fill: #757679;
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c3 {
   display: block;
   height: 2.7rem;
   width: 100%;
@@ -30,38 +41,38 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c2:disabled {
+.c3:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c2:active:not(:disabled),
-.c2:focus:not(:disabled) {
+.c3:active:not(:disabled),
+.c3:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c2::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::placeholder {
+.c3::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -97,7 +108,7 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
   box-shadow: none !important;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -138,28 +149,37 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
           type="text"
           width="100%"
         >
-          <styled.input
+          <styled.div
             className="c1"
-            disabled={false}
-            e2e="defaultSearchBarUnderlined.Input"
-            type="text"
             width="100%"
           >
-            <input
+            <div
               className="c1 c2"
-              data-e2e="defaultSearchBarUnderlined.Input"
-              disabled={false}
-              type="text"
               width="100%"
-            />
-          </styled.input>
+            >
+              <styled.input
+                disabled={false}
+                e2e="defaultSearchBarUnderlined.Input"
+                type="text"
+                width="100%"
+              >
+                <input
+                  className="c3"
+                  data-e2e="defaultSearchBarUnderlined.Input"
+                  disabled={false}
+                  type="text"
+                  width="100%"
+                />
+              </styled.input>
+            </div>
+          </styled.div>
         </Input>
       </Styled(Input)>
       <styled.div
         e2e="defaultSearchBarUnderlined.Button"
       >
         <div
-          className="c3"
+          className="c4"
           data-e2e="defaultSearchBarUnderlined.Button"
         >
           <FasSearch
@@ -172,13 +192,13 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
               width="20px"
             >
               <SvgFasSearch
-                className="c4"
+                className="c5"
                 height="20px"
                 selectable={1}
                 width="20px"
               >
                 <svg
-                  className="c4"
+                  className="c5"
                   height="20px"
                   selectable={1}
                   viewBox="0 0 512 512"
@@ -199,16 +219,27 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
 `;
 
 exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
-.c4 {
+.c5 {
   fill: #545456;
   cursor: pointer;
 }
 
-.c4:hover {
+.c5:hover {
   fill: #757679;
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c3 {
   display: block;
   height: 2.7rem;
   width: 100%;
@@ -228,38 +259,38 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c2:disabled {
+.c3:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c2:active:not(:disabled),
-.c2:focus:not(:disabled) {
+.c3:active:not(:disabled),
+.c3:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c2::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::placeholder {
+.c3::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -295,7 +326,7 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
   box-shadow: none !important;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -336,28 +367,37 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
           type="text"
           width="100%"
         >
-          <styled.input
+          <styled.div
             className="c1"
-            disabled={false}
-            e2e=".Input"
-            type="text"
             width="100%"
           >
-            <input
+            <div
               className="c1 c2"
-              data-e2e=".Input"
-              disabled={false}
-              type="text"
               width="100%"
-            />
-          </styled.input>
+            >
+              <styled.input
+                disabled={false}
+                e2e=".Input"
+                type="text"
+                width="100%"
+              >
+                <input
+                  className="c3"
+                  data-e2e=".Input"
+                  disabled={false}
+                  type="text"
+                  width="100%"
+                />
+              </styled.input>
+            </div>
+          </styled.div>
         </Input>
       </Styled(Input)>
       <styled.div
         e2e=".Button"
       >
         <div
-          className="c3"
+          className="c4"
           data-e2e=".Button"
         >
           <FasSearch
@@ -370,13 +410,13 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
               width="20px"
             >
               <SvgFasSearch
-                className="c4"
+                className="c5"
                 height="20px"
                 selectable={1}
                 width="20px"
               >
                 <svg
-                  className="c4"
+                  className="c5"
                   height="20px"
                   selectable={1}
                   viewBox="0 0 512 512"
@@ -397,16 +437,27 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
 `;
 
 exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
-.c4 {
+.c5 {
   fill: #545456;
   cursor: pointer;
 }
 
-.c4:hover {
+.c5:hover {
   fill: #757679;
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c3 {
   display: block;
   height: 2.7rem;
   width: 100%;
@@ -426,38 +477,38 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c2:disabled {
+.c3:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c2:active:not(:disabled),
-.c2:focus:not(:disabled) {
+.c3:active:not(:disabled),
+.c3:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c2::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::placeholder {
+.c3::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -493,7 +544,7 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
   box-shadow: none !important;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -537,30 +588,39 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
           type="text"
           width="100%"
         >
-          <styled.input
+          <styled.div
             className="c1"
-            disabled={false}
-            e2e="defaultSearchBarUnderlined.Input"
-            onChange={[MockFunction]}
-            type="text"
             width="100%"
           >
-            <input
+            <div
               className="c1 c2"
-              data-e2e="defaultSearchBarUnderlined.Input"
-              disabled={false}
-              onChange={[MockFunction]}
-              type="text"
               width="100%"
-            />
-          </styled.input>
+            >
+              <styled.input
+                disabled={false}
+                e2e="defaultSearchBarUnderlined.Input"
+                onChange={[MockFunction]}
+                type="text"
+                width="100%"
+              >
+                <input
+                  className="c3"
+                  data-e2e="defaultSearchBarUnderlined.Input"
+                  disabled={false}
+                  onChange={[MockFunction]}
+                  type="text"
+                  width="100%"
+                />
+              </styled.input>
+            </div>
+          </styled.div>
         </Input>
       </Styled(Input)>
       <styled.div
         e2e="defaultSearchBarUnderlined.Button"
       >
         <div
-          className="c3"
+          className="c4"
           data-e2e="defaultSearchBarUnderlined.Button"
         >
           <FasSearch
@@ -573,13 +633,13 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
               width="20px"
             >
               <SvgFasSearch
-                className="c4"
+                className="c5"
                 height="20px"
                 selectable={1}
                 width="20px"
               >
                 <svg
-                  className="c4"
+                  className="c5"
                   height="20px"
                   selectable={1}
                   viewBox="0 0 512 512"
@@ -600,16 +660,27 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
 `;
 
 exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
-.c4 {
+.c5 {
   fill: #545456;
   cursor: pointer;
 }
 
-.c4:hover {
+.c5:hover {
   fill: #757679;
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c3 {
   display: block;
   height: 2.7rem;
   width: 100%;
@@ -629,38 +700,38 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c2:disabled {
+.c3:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c2:active:not(:disabled),
-.c2:focus:not(:disabled) {
+.c3:active:not(:disabled),
+.c3:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c2::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::placeholder {
+.c3::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -696,7 +767,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
   box-shadow: none !important;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -738,21 +809,30 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
           type="text"
           width="100%"
         >
-          <styled.input
+          <styled.div
             className="c1"
-            disabled={false}
-            e2e="defaultSearchBarUnderlined.Input"
-            type="text"
             width="100%"
           >
-            <input
+            <div
               className="c1 c2"
-              data-e2e="defaultSearchBarUnderlined.Input"
-              disabled={false}
-              type="text"
               width="100%"
-            />
-          </styled.input>
+            >
+              <styled.input
+                disabled={false}
+                e2e="defaultSearchBarUnderlined.Input"
+                type="text"
+                width="100%"
+              >
+                <input
+                  className="c3"
+                  data-e2e="defaultSearchBarUnderlined.Input"
+                  disabled={false}
+                  type="text"
+                  width="100%"
+                />
+              </styled.input>
+            </div>
+          </styled.div>
         </Input>
       </Styled(Input)>
       <styled.div
@@ -760,7 +840,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
         onClick={[MockFunction]}
       >
         <div
-          className="c3"
+          className="c4"
           data-e2e="defaultSearchBarUnderlined.Button"
           onClick={[MockFunction]}
         >
@@ -774,13 +854,13 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
               width="20px"
             >
               <SvgFasSearch
-                className="c4"
+                className="c5"
                 height="20px"
                 selectable={1}
                 width="20px"
               >
                 <svg
-                  className="c4"
+                  className="c5"
                   height="20px"
                   selectable={1}
                   viewBox="0 0 512 512"
@@ -801,16 +881,27 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
 `;
 
 exports[`SearchBarUnderlined should render correctly with value 1`] = `
-.c4 {
+.c5 {
   fill: #545456;
   cursor: pointer;
 }
 
-.c4:hover {
+.c5:hover {
   fill: #757679;
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c3 {
   display: block;
   height: 2.7rem;
   width: 100%;
@@ -830,38 +921,38 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c2:disabled {
+.c3:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c2:active:not(:disabled),
-.c2:focus:not(:disabled) {
+.c3:active:not(:disabled),
+.c3:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c2::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::placeholder {
+.c3::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -897,7 +988,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
   box-shadow: none !important;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -944,32 +1035,41 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
           value="My search"
           width="100%"
         >
-          <styled.input
+          <styled.div
             className="c1"
-            disabled={false}
-            e2e="defaultSearchBarUnderlined.Input"
-            onChange={[MockFunction]}
-            type="text"
-            value="My search"
             width="100%"
           >
-            <input
+            <div
               className="c1 c2"
-              data-e2e="defaultSearchBarUnderlined.Input"
-              disabled={false}
-              onChange={[MockFunction]}
-              type="text"
-              value="My search"
               width="100%"
-            />
-          </styled.input>
+            >
+              <styled.input
+                disabled={false}
+                e2e="defaultSearchBarUnderlined.Input"
+                onChange={[MockFunction]}
+                type="text"
+                value="My search"
+                width="100%"
+              >
+                <input
+                  className="c3"
+                  data-e2e="defaultSearchBarUnderlined.Input"
+                  disabled={false}
+                  onChange={[MockFunction]}
+                  type="text"
+                  value="My search"
+                  width="100%"
+                />
+              </styled.input>
+            </div>
+          </styled.div>
         </Input>
       </Styled(Input)>
       <styled.div
         e2e="defaultSearchBarUnderlined.Button"
       >
         <div
-          className="c3"
+          className="c4"
           data-e2e="defaultSearchBarUnderlined.Button"
         >
           <FasSearch
@@ -982,13 +1082,13 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
               width="20px"
             >
               <SvgFasSearch
-                className="c4"
+                className="c5"
                 height="20px"
                 selectable={1}
                 width="20px"
               >
                 <svg
-                  className="c4"
+                  className="c5"
                   height="20px"
                   selectable={1}
                   viewBox="0 0 512 512"
@@ -1009,16 +1109,27 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
 `;
 
 exports[`SearchBarUnderlined should render correctly with width 1`] = `
-.c4 {
+.c5 {
   fill: #545456;
   cursor: pointer;
 }
 
-.c4:hover {
+.c5:hover {
   fill: #757679;
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c3 {
   display: block;
   height: 2.7rem;
   width: 100%;
@@ -1038,38 +1149,38 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c2:disabled {
+.c3:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c2:active:not(:disabled),
-.c2:focus:not(:disabled) {
+.c3:active:not(:disabled),
+.c3:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c2::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c2::placeholder {
+.c3::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -1105,7 +1216,7 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
   box-shadow: none !important;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1152,32 +1263,41 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
           value="My search"
           width="100%"
         >
-          <styled.input
+          <styled.div
             className="c1"
-            disabled={false}
-            e2e="defaultSearchBarUnderlined.Input"
-            onChange={[MockFunction]}
-            type="text"
-            value="My search"
             width="100%"
           >
-            <input
+            <div
               className="c1 c2"
-              data-e2e="defaultSearchBarUnderlined.Input"
-              disabled={false}
-              onChange={[MockFunction]}
-              type="text"
-              value="My search"
               width="100%"
-            />
-          </styled.input>
+            >
+              <styled.input
+                disabled={false}
+                e2e="defaultSearchBarUnderlined.Input"
+                onChange={[MockFunction]}
+                type="text"
+                value="My search"
+                width="100%"
+              >
+                <input
+                  className="c3"
+                  data-e2e="defaultSearchBarUnderlined.Input"
+                  disabled={false}
+                  onChange={[MockFunction]}
+                  type="text"
+                  value="My search"
+                  width="100%"
+                />
+              </styled.input>
+            </div>
+          </styled.div>
         </Input>
       </Styled(Input)>
       <styled.div
         e2e="defaultSearchBarUnderlined.Button"
       >
         <div
-          className="c3"
+          className="c4"
           data-e2e="defaultSearchBarUnderlined.Button"
         >
           <FasSearch
@@ -1190,13 +1310,13 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
               width="20px"
             >
               <SvgFasSearch
-                className="c4"
+                className="c5"
                 height="20px"
                 selectable={1}
                 width="20px"
               >
                 <svg
-                  className="c4"
+                  className="c5"
                   height="20px"
                   selectable={1}
                   viewBox="0 0 512 512"

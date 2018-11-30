@@ -11,6 +11,10 @@
 [lints]
 
 [options]
+suppress_comment= \\(.\\|\n\\)*\\$IgnoreStrictImport
+suppress_comment= \\(.\\|\n\\)*\\$IgnoreUnitTest
+suppress_comment= \\(.\\|\n\\)*\\$IgnoreLibDef
+suppress_comment= \\(.\\|\n\\)*\\$WeakTypeNeeded
 
 [strict]
 unclear-type

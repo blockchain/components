@@ -1,7 +1,7 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
-// $FlowFixMe
+// $IgnoreStrictImport
 import ReactTooltip from 'react-tooltip'
 import styled from 'styled-components'
 

@@ -4,8 +4,13 @@ import PropTypes from 'prop-types'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import injectE2E from '../../Tools/injectE2E'
-import { prop, theme, type ThemePropType } from '../../Tools/interpolation'
-import { Label, type PropsType as InputPropsType } from './Input'
+import {
+  fontSize,
+  prop,
+  theme,
+  type ThemePropType,
+} from '../../Tools/interpolation'
+import { InputLabel, type PropsType as InputPropsType } from './Input'
 
 type PropsType = InputPropsType & { +height?: string }
 
@@ -25,7 +30,7 @@ const Wrapper: ReactComponentFunctional<PropsType> = styled.textarea.attrs({
   padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: ${theme('fontPrimary')};
-  font-size: 1rem;
+  font-size: ${fontSize('md')};
   color: ${theme('inputColor')};
   border-width: 1px;
   border-color: ${(props: PropsType & ThemePropType) =>
@@ -38,7 +43,7 @@ const Wrapper: ReactComponentFunctional<PropsType> = styled.textarea.attrs({
   outline-width: 0;
   user-select: text;
   resize: none;
-  transition: all 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 
   &:disabled {
     color: ${theme('inputColor')};
@@ -56,7 +61,7 @@ const Wrapper: ReactComponentFunctional<PropsType> = styled.textarea.attrs({
 
   &::placeholder {
     color: ${theme('inputPlaceholderColor')};
-    font-size: 0.875rem;
+    font-size: ${fontSize('sm')};
   }
 `
 
@@ -67,11 +72,11 @@ const TextArea = ({ input, ...rest }: PropsType) => {
   if (hasLabel || hasError) {
     return (
       <Container width={rest.width}>
-        <Label disabled={rest.disabled} error={hasError} name={rest.name}>
+        <InputLabel disabled={rest.disabled} error={hasError} name={rest.name}>
           {`${rest.label || ''}${
             hasLabel && hasError ? ' - ' : ''
           }${rest.error || ''}`}
-        </Label>
+        </InputLabel>
         <Wrapper {...input} {...rest} />
       </Container>
     )

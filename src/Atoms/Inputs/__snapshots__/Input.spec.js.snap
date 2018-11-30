@@ -2,6 +2,17 @@
 
 exports[`Input should render correctly 1`] = `
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c1 {
   display: block;
   height: 2.7rem;
   width: 100%;
@@ -21,38 +32,38 @@ exports[`Input should render correctly 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c0:disabled {
+.c1:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
+.c1:active:not(:disabled),
+.c1:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -63,25 +74,45 @@ exports[`Input should render correctly 1`] = `
   type="text"
   width="100%"
 >
-  <styled.input
-    disabled={false}
-    e2e="defaultInput"
-    type="text"
+  <styled.div
     width="100%"
   >
-    <input
+    <div
       className="c0"
-      data-e2e="defaultInput"
-      disabled={false}
-      type="text"
       width="100%"
-    />
-  </styled.input>
+    >
+      <styled.input
+        disabled={false}
+        e2e="defaultInput"
+        type="text"
+        width="100%"
+      >
+        <input
+          className="c1"
+          data-e2e="defaultInput"
+          disabled={false}
+          type="text"
+          width="100%"
+        />
+      </styled.input>
+    </div>
+  </styled.div>
 </Input>
 `;
 
 exports[`Input should render correctly with disabled 1`] = `
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c1 {
   display: block;
   height: 2.7rem;
   width: 100%;
@@ -101,38 +132,38 @@ exports[`Input should render correctly with disabled 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c0:disabled {
+.c1:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
+.c1:active:not(:disabled),
+.c1:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -143,20 +174,29 @@ exports[`Input should render correctly with disabled 1`] = `
   type="text"
   width="100%"
 >
-  <styled.input
-    disabled={true}
-    e2e="defaultInput"
-    type="text"
+  <styled.div
     width="100%"
   >
-    <input
+    <div
       className="c0"
-      data-e2e="defaultInput"
-      disabled={true}
-      type="text"
       width="100%"
-    />
-  </styled.input>
+    >
+      <styled.input
+        disabled={true}
+        e2e="defaultInput"
+        type="text"
+        width="100%"
+      >
+        <input
+          className="c1"
+          data-e2e="defaultInput"
+          disabled={true}
+          type="text"
+          width="100%"
+        />
+      </styled.input>
+    </div>
+  </styled.div>
 </Input>
 `;
 
@@ -192,8 +232,8 @@ exports[`Input should render correctly with error="error" 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c2:disabled {
@@ -312,8 +352,8 @@ exports[`Input should render correctly with label="label" 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c2:disabled {
@@ -433,8 +473,8 @@ exports[`Input should render correctly with label="label" and disabled 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c2:disabled {
@@ -555,8 +595,8 @@ exports[`Input should render correctly with label="label" and error="error" 1`] 
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c2:disabled {
@@ -648,6 +688,17 @@ exports[`Input should render correctly with label="label" and error="error" 1`] 
 
 exports[`Input should render correctly with type 1`] = `
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c1 {
   display: block;
   height: 2.7rem;
   width: 100%;
@@ -667,38 +718,38 @@ exports[`Input should render correctly with type 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c0:disabled {
+.c1:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
+.c1:active:not(:disabled),
+.c1:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -709,20 +760,29 @@ exports[`Input should render correctly with type 1`] = `
   type="password"
   width="100%"
 >
-  <styled.input
-    disabled={false}
-    e2e="defaultInput"
-    type="password"
+  <styled.div
     width="100%"
   >
-    <input
+    <div
       className="c0"
-      data-e2e="defaultInput"
-      disabled={false}
-      type="password"
       width="100%"
-    />
-  </styled.input>
+    >
+      <styled.input
+        disabled={false}
+        e2e="defaultInput"
+        type="password"
+        width="100%"
+      >
+        <input
+          className="c1"
+          data-e2e="defaultInput"
+          disabled={false}
+          type="password"
+          width="100%"
+        />
+      </styled.input>
+    </div>
+  </styled.div>
 </Input>
 `;
 
@@ -979,6 +1039,17 @@ exports[`Input should render correctly with type="radio" 1`] = `
 
 exports[`Input should render correctly with width 1`] = `
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 200px;
+}
+
+.c1 {
   display: block;
   height: 2.7rem;
   width: 200px;
@@ -998,38 +1069,38 @@ exports[`Input should render correctly with width 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c0:disabled {
+.c1:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
+.c1:active:not(:disabled),
+.c1:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -1040,19 +1111,28 @@ exports[`Input should render correctly with width 1`] = `
   type="text"
   width="200px"
 >
-  <styled.input
-    disabled={false}
-    e2e="defaultInput"
-    type="text"
+  <styled.div
     width="200px"
   >
-    <input
+    <div
       className="c0"
-      data-e2e="defaultInput"
-      disabled={false}
-      type="text"
       width="200px"
-    />
-  </styled.input>
+    >
+      <styled.input
+        disabled={false}
+        e2e="defaultInput"
+        type="text"
+        width="200px"
+      >
+        <input
+          className="c1"
+          data-e2e="defaultInput"
+          disabled={false}
+          type="text"
+          width="200px"
+        />
+      </styled.input>
+    </div>
+  </styled.div>
 </Input>
 `;

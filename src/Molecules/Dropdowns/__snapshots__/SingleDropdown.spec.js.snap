@@ -48,8 +48,8 @@ exports[`SingleDropdown should render correctly 1`] = `
   outline: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c1:disabled {
@@ -237,8 +237,8 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
   outline: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c1:disabled {
@@ -433,8 +433,8 @@ exports[`SingleDropdown should render correctly with error="error" 1`] = `
   outline: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c2:disabled {
@@ -630,8 +630,8 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
   outline: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c1:disabled {
@@ -826,8 +826,8 @@ exports[`SingleDropdown should render correctly with label="label" 1`] = `
   outline: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c2:disabled {
@@ -1031,8 +1031,8 @@ exports[`SingleDropdown should render correctly with label="label" and error="er
   outline: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c2:disabled {
@@ -1231,8 +1231,8 @@ exports[`SingleDropdown should render correctly with size 1`] = `
   outline: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c1:disabled {
@@ -1423,8 +1423,8 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
   outline: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c1:disabled {
@@ -1613,8 +1613,8 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
   outline: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c1:disabled {

@@ -21,8 +21,8 @@ exports[`TextArea should render correctly 1`] = `
   -ms-user-select: text;
   user-select: text;
   resize: none;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c0:disabled {
@@ -101,8 +101,8 @@ exports[`TextArea should render correctly with disabled 1`] = `
   -ms-user-select: text;
   user-select: text;
   resize: none;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c0:disabled {
@@ -181,8 +181,8 @@ exports[`TextArea should render correctly with e2e 1`] = `
   -ms-user-select: text;
   user-select: text;
   resize: none;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c0:disabled {
@@ -279,8 +279,8 @@ exports[`TextArea should render correctly with error="error" 1`] = `
   -ms-user-select: text;
   user-select: text;
   resize: none;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c2:disabled {
@@ -381,8 +381,8 @@ exports[`TextArea should render correctly with height 1`] = `
   -ms-user-select: text;
   user-select: text;
   resize: none;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c0:disabled {
@@ -479,8 +479,8 @@ exports[`TextArea should render correctly with label="label" 1`] = `
   -ms-user-select: text;
   user-select: text;
   resize: none;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c2:disabled {
@@ -600,8 +600,8 @@ exports[`TextArea should render correctly with label="label" and error="error" 1
   -ms-user-select: text;
   user-select: text;
   resize: none;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c2:disabled {
@@ -705,8 +705,8 @@ exports[`TextArea should render correctly with name 1`] = `
   -ms-user-select: text;
   user-select: text;
   resize: none;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c0:disabled {
@@ -788,8 +788,8 @@ exports[`TextArea should render correctly with value 1`] = `
   -ms-user-select: text;
   user-select: text;
   resize: none;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c0:disabled {
@@ -874,8 +874,8 @@ exports[`TextArea should render correctly with width 1`] = `
   -ms-user-select: text;
   user-select: text;
   resize: none;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
 .c0:disabled {

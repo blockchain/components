@@ -4,7 +4,7 @@ import * as React from 'react'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
-import { theme, type ThemePropType } from '../../Tools/interpolation'
+import { fontSize, theme, type ThemePropType } from '../../Tools/interpolation'
 
 type HtmlButtonType = 'button' | 'reset' | 'submit'
 
@@ -41,7 +41,7 @@ const Wrapper: ReactComponentFunctional<ButtonPropsType> = styled.button.attrs({
   transition: all 0.3s ease 0s;
   opacity: ${(props: PropsType) => (props.disabled === true ? 0.5 : 1)};
   font-family: ${theme('fontPrimary')};
-  font-size: 1rem;
+  font-size: ${fontSize('md')};
   font-weight: 600;
 
   &:hover {

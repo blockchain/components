@@ -3,8 +3,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { Label } from '../../Atoms/Inputs/Input'
-import { prop, theme, type ThemePropType } from '../../Tools/interpolation'
+import { InputLabel } from '../../Atoms/Inputs/Input'
+import {
+  fontSize,
+  prop,
+  theme,
+  type ThemePropType,
+} from '../../Tools/interpolation'
 
 type PropsType = {
   +capitalize?: boolean,
@@ -54,7 +59,7 @@ const Select = styled.select`
   appearance: none;
   font-family: ${theme('fontPrimary')};
   font-weight: ${prop<PropsType>('weight')};
-  font-size: 1rem;
+  font-size: ${fontSize('md')};
   font-style: ${(props: PropsType) =>
     props.italic === true ? 'italic' : 'normal'};
   border-width: 1px;
@@ -68,7 +73,7 @@ const Select = styled.select`
   outline: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: all 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 
   &:disabled {
     color: ${theme('inputColor')};
@@ -98,11 +103,11 @@ const SingleDropdown = ({
   return (
     <Wrapper className={className} width={width}>
       {(hasLabel || hasError) && (
-        <Label disabled={rest.disabled} error={hasError} name={rest.name}>
+        <InputLabel disabled={rest.disabled} error={hasError} name={rest.name}>
           {`${rest.label || ''}${
             hasLabel && hasError ? ' - ' : ''
           }${rest.error || ''}`}
-        </Label>
+        </InputLabel>
       )}
       <Select {...input} {...rest}>
         {items.map((item) => (

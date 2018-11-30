@@ -1,4 +1,3 @@
-// @flow
 const { execSync } = require('child_process')
 const flowCopySource = require('flow-copy-source')
 const path = require('path')

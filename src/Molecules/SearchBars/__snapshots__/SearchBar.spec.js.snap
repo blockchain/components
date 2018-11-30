@@ -11,6 +11,17 @@ exports[`SearchBar should render correctly 1`] = `
 }
 
 .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c6 {
   display: block;
   height: 2.7rem;
   width: 100%;
@@ -30,38 +41,38 @@ exports[`SearchBar should render correctly 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c5:disabled {
+.c6:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c5:active:not(:disabled),
-.c5:focus:not(:disabled) {
+.c6:active:not(:disabled),
+.c6:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c5::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5::placeholder {
+.c6::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -133,7 +144,7 @@ exports[`SearchBar should render correctly 1`] = `
   box-shadow: none !important;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -164,8 +175,8 @@ exports[`SearchBar should render correctly 1`] = `
   white-space: nowrap;
 }
 
-.c6:hover {
-  background-color: #ffd533;
+.c7:hover {
+  background-color: #FFD533;
   cursor: pointer;
 }
 
@@ -230,28 +241,37 @@ exports[`SearchBar should render correctly 1`] = `
           type="text"
           width="100%"
         >
-          <styled.input
+          <styled.div
             className="c4"
-            disabled={false}
-            e2e="defaultSearchBar.Input"
-            type="text"
             width="100%"
           >
-            <input
+            <div
               className="c4 c5"
-              data-e2e="defaultSearchBar.Input"
-              disabled={false}
-              type="text"
               width="100%"
-            />
-          </styled.input>
+            >
+              <styled.input
+                disabled={false}
+                e2e="defaultSearchBar.Input"
+                type="text"
+                width="100%"
+              >
+                <input
+                  className="c6"
+                  data-e2e="defaultSearchBar.Input"
+                  disabled={false}
+                  type="text"
+                  width="100%"
+                />
+              </styled.input>
+            </div>
+          </styled.div>
         </Input>
       </Styled(Input)>
       <styled.div
         e2e="defaultSearchBar.Button"
       >
         <div
-          className="c6"
+          className="c7"
           data-e2e="defaultSearchBar.Button"
         >
           <GoLabel>
@@ -275,6 +295,17 @@ exports[`SearchBar should render correctly with e2e 1`] = `
 }
 
 .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c6 {
   display: block;
   height: 2.7rem;
   width: 100%;
@@ -294,38 +325,38 @@ exports[`SearchBar should render correctly with e2e 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c5:disabled {
+.c6:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c5:active:not(:disabled),
-.c5:focus:not(:disabled) {
+.c6:active:not(:disabled),
+.c6:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c5::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5::placeholder {
+.c6::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -397,7 +428,7 @@ exports[`SearchBar should render correctly with e2e 1`] = `
   box-shadow: none !important;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -428,8 +459,8 @@ exports[`SearchBar should render correctly with e2e 1`] = `
   white-space: nowrap;
 }
 
-.c6:hover {
-  background-color: #ffd533;
+.c7:hover {
+  background-color: #FFD533;
   cursor: pointer;
 }
 
@@ -494,28 +525,37 @@ exports[`SearchBar should render correctly with e2e 1`] = `
           type="text"
           width="100%"
         >
-          <styled.input
+          <styled.div
             className="c4"
-            disabled={false}
-            e2e=".Input"
-            type="text"
             width="100%"
           >
-            <input
+            <div
               className="c4 c5"
-              data-e2e=".Input"
-              disabled={false}
-              type="text"
               width="100%"
-            />
-          </styled.input>
+            >
+              <styled.input
+                disabled={false}
+                e2e=".Input"
+                type="text"
+                width="100%"
+              >
+                <input
+                  className="c6"
+                  data-e2e=".Input"
+                  disabled={false}
+                  type="text"
+                  width="100%"
+                />
+              </styled.input>
+            </div>
+          </styled.div>
         </Input>
       </Styled(Input)>
       <styled.div
         e2e=".Button"
       >
         <div
-          className="c6"
+          className="c7"
           data-e2e=".Button"
         >
           <GoLabel>
@@ -539,6 +579,17 @@ exports[`SearchBar should render correctly with onChange 1`] = `
 }
 
 .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c6 {
   display: block;
   height: 2.7rem;
   width: 100%;
@@ -558,38 +609,38 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c5:disabled {
+.c6:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c5:active:not(:disabled),
-.c5:focus:not(:disabled) {
+.c6:active:not(:disabled),
+.c6:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c5::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5::placeholder {
+.c6::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -661,7 +712,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   box-shadow: none !important;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -692,8 +743,8 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   white-space: nowrap;
 }
 
-.c6:hover {
-  background-color: #ffd533;
+.c7:hover {
+  background-color: #FFD533;
   cursor: pointer;
 }
 
@@ -761,30 +812,39 @@ exports[`SearchBar should render correctly with onChange 1`] = `
           type="text"
           width="100%"
         >
-          <styled.input
+          <styled.div
             className="c4"
-            disabled={false}
-            e2e="defaultSearchBar.Input"
-            onChange={[MockFunction]}
-            type="text"
             width="100%"
           >
-            <input
+            <div
               className="c4 c5"
-              data-e2e="defaultSearchBar.Input"
-              disabled={false}
-              onChange={[MockFunction]}
-              type="text"
               width="100%"
-            />
-          </styled.input>
+            >
+              <styled.input
+                disabled={false}
+                e2e="defaultSearchBar.Input"
+                onChange={[MockFunction]}
+                type="text"
+                width="100%"
+              >
+                <input
+                  className="c6"
+                  data-e2e="defaultSearchBar.Input"
+                  disabled={false}
+                  onChange={[MockFunction]}
+                  type="text"
+                  width="100%"
+                />
+              </styled.input>
+            </div>
+          </styled.div>
         </Input>
       </Styled(Input)>
       <styled.div
         e2e="defaultSearchBar.Button"
       >
         <div
-          className="c6"
+          className="c7"
           data-e2e="defaultSearchBar.Button"
         >
           <GoLabel>
@@ -808,6 +868,17 @@ exports[`SearchBar should render correctly with onClick 1`] = `
 }
 
 .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c6 {
   display: block;
   height: 2.7rem;
   width: 100%;
@@ -827,38 +898,38 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c5:disabled {
+.c6:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c5:active:not(:disabled),
-.c5:focus:not(:disabled) {
+.c6:active:not(:disabled),
+.c6:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c5::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5::placeholder {
+.c6::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -930,7 +1001,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   box-shadow: none !important;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -961,8 +1032,8 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   white-space: nowrap;
 }
 
-.c6:hover {
-  background-color: #ffd533;
+.c7:hover {
+  background-color: #FFD533;
   cursor: pointer;
 }
 
@@ -1028,21 +1099,30 @@ exports[`SearchBar should render correctly with onClick 1`] = `
           type="text"
           width="100%"
         >
-          <styled.input
+          <styled.div
             className="c4"
-            disabled={false}
-            e2e="defaultSearchBar.Input"
-            type="text"
             width="100%"
           >
-            <input
+            <div
               className="c4 c5"
-              data-e2e="defaultSearchBar.Input"
-              disabled={false}
-              type="text"
               width="100%"
-            />
-          </styled.input>
+            >
+              <styled.input
+                disabled={false}
+                e2e="defaultSearchBar.Input"
+                type="text"
+                width="100%"
+              >
+                <input
+                  className="c6"
+                  data-e2e="defaultSearchBar.Input"
+                  disabled={false}
+                  type="text"
+                  width="100%"
+                />
+              </styled.input>
+            </div>
+          </styled.div>
         </Input>
       </Styled(Input)>
       <styled.div
@@ -1050,7 +1130,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
         onClick={[MockFunction]}
       >
         <div
-          className="c6"
+          className="c7"
           data-e2e="defaultSearchBar.Button"
           onClick={[MockFunction]}
         >
@@ -1075,6 +1155,17 @@ exports[`SearchBar should render correctly with value 1`] = `
 }
 
 .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c6 {
   display: block;
   height: 2.7rem;
   width: 100%;
@@ -1094,38 +1185,38 @@ exports[`SearchBar should render correctly with value 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c5:disabled {
+.c6:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c5:active:not(:disabled),
-.c5:focus:not(:disabled) {
+.c6:active:not(:disabled),
+.c6:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c5::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5::placeholder {
+.c6::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -1197,7 +1288,7 @@ exports[`SearchBar should render correctly with value 1`] = `
   box-shadow: none !important;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1228,8 +1319,8 @@ exports[`SearchBar should render correctly with value 1`] = `
   white-space: nowrap;
 }
 
-.c6:hover {
-  background-color: #ffd533;
+.c7:hover {
+  background-color: #FFD533;
   cursor: pointer;
 }
 
@@ -1300,32 +1391,41 @@ exports[`SearchBar should render correctly with value 1`] = `
           value="My search"
           width="100%"
         >
-          <styled.input
+          <styled.div
             className="c4"
-            disabled={false}
-            e2e="defaultSearchBar.Input"
-            onChange={[MockFunction]}
-            type="text"
-            value="My search"
             width="100%"
           >
-            <input
+            <div
               className="c4 c5"
-              data-e2e="defaultSearchBar.Input"
-              disabled={false}
-              onChange={[MockFunction]}
-              type="text"
-              value="My search"
               width="100%"
-            />
-          </styled.input>
+            >
+              <styled.input
+                disabled={false}
+                e2e="defaultSearchBar.Input"
+                onChange={[MockFunction]}
+                type="text"
+                value="My search"
+                width="100%"
+              >
+                <input
+                  className="c6"
+                  data-e2e="defaultSearchBar.Input"
+                  disabled={false}
+                  onChange={[MockFunction]}
+                  type="text"
+                  value="My search"
+                  width="100%"
+                />
+              </styled.input>
+            </div>
+          </styled.div>
         </Input>
       </Styled(Input)>
       <styled.div
         e2e="defaultSearchBar.Button"
       >
         <div
-          className="c6"
+          className="c7"
           data-e2e="defaultSearchBar.Button"
         >
           <GoLabel>
@@ -1349,6 +1449,17 @@ exports[`SearchBar should render correctly with width 1`] = `
 }
 
 .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c6 {
   display: block;
   height: 2.7rem;
   width: 100%;
@@ -1368,38 +1479,38 @@ exports[`SearchBar should render correctly with width 1`] = `
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 
-.c5:disabled {
+.c6:disabled {
   color: #545456;
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
 }
 
-.c5:active:not(:disabled),
-.c5:focus:not(:disabled) {
+.c6:active:not(:disabled),
+.c6:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-.c5::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
 
-.c5::placeholder {
+.c6::placeholder {
   color: #999B9E;
   font-size: 0.875rem;
 }
@@ -1471,7 +1582,7 @@ exports[`SearchBar should render correctly with width 1`] = `
   box-shadow: none !important;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1502,8 +1613,8 @@ exports[`SearchBar should render correctly with width 1`] = `
   white-space: nowrap;
 }
 
-.c6:hover {
-  background-color: #ffd533;
+.c7:hover {
+  background-color: #FFD533;
   cursor: pointer;
 }
 
@@ -1574,32 +1685,41 @@ exports[`SearchBar should render correctly with width 1`] = `
           value="My search"
           width="100%"
         >
-          <styled.input
+          <styled.div
             className="c4"
-            disabled={false}
-            e2e="defaultSearchBar.Input"
-            onChange={[MockFunction]}
-            type="text"
-            value="My search"
             width="100%"
           >
-            <input
+            <div
               className="c4 c5"
-              data-e2e="defaultSearchBar.Input"
-              disabled={false}
-              onChange={[MockFunction]}
-              type="text"
-              value="My search"
               width="100%"
-            />
-          </styled.input>
+            >
+              <styled.input
+                disabled={false}
+                e2e="defaultSearchBar.Input"
+                onChange={[MockFunction]}
+                type="text"
+                value="My search"
+                width="100%"
+              >
+                <input
+                  className="c6"
+                  data-e2e="defaultSearchBar.Input"
+                  disabled={false}
+                  onChange={[MockFunction]}
+                  type="text"
+                  value="My search"
+                  width="100%"
+                />
+              </styled.input>
+            </div>
+          </styled.div>
         </Input>
       </Styled(Input)>
       <styled.div
         e2e="defaultSearchBar.Button"
       >
         <div
-          className="c6"
+          className="c7"
           data-e2e="defaultSearchBar.Button"
         >
           <GoLabel>

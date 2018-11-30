@@ -37,7 +37,7 @@ exports[`Button should have a bounced state 1`] = `
 }
 
 .c0:hover {
-  background-color: #0068af;
+  background-color: #0068AF;
   -webkit-transform: scale(0.95);
   -ms-transform: scale(0.95);
   transform: scale(0.95);
@@ -167,7 +167,7 @@ exports[`Button should have a type property 1`] = `
 }
 
 .c0:hover {
-  background-color: #0068af;
+  background-color: #0068AF;
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -232,7 +232,7 @@ exports[`Button should have a type property 2`] = `
 }
 
 .c0:hover {
-  background-color: #0068af;
+  background-color: #0068AF;
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -297,7 +297,7 @@ exports[`Button should render correctly 1`] = `
 }
 
 .c0:hover {
-  background-color: #0068af;
+  background-color: #0068AF;
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;

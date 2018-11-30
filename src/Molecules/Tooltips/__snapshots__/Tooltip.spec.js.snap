@@ -8,7 +8,7 @@ exports[`Tooltip should render correctly 1`] = `
   cursor: pointer;
   max-width: 350px;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-weight: 400;
   z-index: 5;
   text-transform: none;
