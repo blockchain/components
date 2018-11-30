@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { screenSize, theme } from '../../Tools/interpolation'
+import { fontSize, screenSize, theme } from '../../Tools/interpolation'
 
 type PropsType = {
   +children?: React.Node,
@@ -11,7 +11,7 @@ type PropsType = {
 
 const Wrapper = styled.span`
   font-family: ${theme('fontPrimary')};
-  font-size: 1rem;
+  font-size: ${fontSize('md')};
   font-weight: 600;
   color: ${theme('navbarDropdownHeaderColor')};
   cursor: pointer;

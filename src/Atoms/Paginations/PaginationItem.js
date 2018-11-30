@@ -4,7 +4,7 @@ import * as React from 'react'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
-import { theme, type ThemePropType } from '../../Tools/interpolation'
+import { fontSize, theme, type ThemePropType } from '../../Tools/interpolation'
 
 const Wrapper: ReactComponentFunctional<E2ePropType> = styled.a.attrs({
   'data-e2e': injectE2E,
@@ -15,7 +15,7 @@ const Wrapper: ReactComponentFunctional<E2ePropType> = styled.a.attrs({
   align-items: center;
   padding: 5px 8px;
   font-family: ${theme('fontPrimary')};
-  font-size: 1rem;
+  font-size: ${fontSize('md')};
   font-weight: 500;
   color: ${(props: PropsType & ThemePropType) =>
     props.selected === true

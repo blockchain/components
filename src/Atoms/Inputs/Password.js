@@ -2,7 +2,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { theme } from '../../Tools/interpolation'
+import { fontSize, theme } from '../../Tools/interpolation'
 import Input, { type PropsType } from './Input'
 
 const Wrapper = styled.div`
@@ -15,7 +15,7 @@ const Switch = styled.span`
   bottom: 0.875rem;
   cursor: pointer;
   font-family: ${theme('fontPrimary')};
-  font-size: 0.65rem;
+  font-size: ${fontSize('xs')};
   font-weight: 500;
   text-transform: uppercase;
   user-select: none;

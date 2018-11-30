@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import { FasSearch } from '../../Atoms/Icons'
 import { Input } from '../../Atoms/Inputs'
 import injectE2E from '../../Tools/injectE2E'
-import { prop, theme } from '../../Tools/interpolation'
+import { fontSize, prop, theme } from '../../Tools/interpolation'
 
 type PropsType = {
   +children?: React.Node,
@@ -79,7 +79,7 @@ const GoContainer = styled.div.attrs({
   padding: 1rem;
   box-sizing: border-box;
   font-family: ${theme('fontPrimary')};
-  font-size: 1.5rem;
+  font-size: ${fontSize('xl')};
   font-weight: 600;
   color: ${theme('searchBarSubmitColor')};
   background-color: ${theme('searchBarSubmitBackgroundColor')};

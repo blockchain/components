@@ -25,6 +25,13 @@ const theme = {
   circleBadgeHoverColor: palette.orient,
   dangerColor: palette.red,
   footerCategoryColor: palette.gray7,
+  fontSizes: {
+    xs: '0.625rem',
+    sm: '0.875rem',
+    md: '1rem',
+    lg: '1.25rem',
+    xl: '1.5rem',
+  },
   iconColor: palette.gray5,
   iconHoverColor: palette.gray4,
   inputActiveColor: palette.cerulean,

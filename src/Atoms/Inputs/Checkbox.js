@@ -3,7 +3,7 @@ import React from 'react'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
-import { theme } from '../../Tools/interpolation'
+import { fontSize, theme } from '../../Tools/interpolation'
 import type { PropsType, HtmlInputType } from './Input'
 
 const toId = (name?: string) => `${name || ''}-checkbox`
@@ -57,7 +57,7 @@ export const CheckboxLabel: ReactComponentFunctional<{
   padding-left: 1.5rem;
   cursor: pointer;
   font-family: ${theme('fontPrimary')};
-  font-size: 1rem;
+  font-size: ${fontSize('md')};
 
   &::before {
     background-color: ${theme('inputBackgroundColor')};

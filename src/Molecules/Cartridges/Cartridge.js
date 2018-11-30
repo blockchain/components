@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { theme } from '../../Tools/interpolation'
+import { fontSize, theme } from '../../Tools/interpolation'
 
 const Wrapper = styled.span`
   display: inline-flex;
@@ -13,7 +13,7 @@ const Wrapper = styled.span`
   color: ${theme('cartridgeColor')};
   background-color: ${theme('cartridgeBackgroundColor')};
   font-family: ${theme('fontPrimary')};
-  font-size: 0.625rem;
+  font-size: ${fontSize('xs')};
   font-weight: 700;
   word-wrap: normal;
   text-transform: uppercase;

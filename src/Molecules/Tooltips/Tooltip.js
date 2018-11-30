@@ -2,16 +2,16 @@
 import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
-// $FlowFixMe
+// $IgnoreStrictImport
 import ReactTooltip from 'react-tooltip'
 
-import { theme, type ThemePropType } from '../../Tools/interpolation'
+import { fontSize, theme, type ThemePropType } from '../../Tools/interpolation'
 
 export const TooltipCss = `
   .__react_component_tooltip {
     border-radius: 3px;
     display: inline-block;
-    font-size: 13px;
+    font-size: 0.875rem;
     left: -999em;
     opacity: 0;
     padding: 8px 21px;
@@ -133,7 +133,7 @@ const StyledTip = styled(ReactTooltip)`
   cursor: pointer;
   max-width: 350px;
   font-family: ${theme('fontPrimary')};
-  font-size: 0.8rem;
+  font-size: ${fontSize('sm')};
   font-weight: 400;
   z-index: 5;
   text-transform: none;
