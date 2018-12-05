@@ -2,11 +2,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { fontSize, theme } from '../../Tools/interpolation'
+import { fontSize, prop, theme } from '../../Tools/interpolation'
 import Input, { type PropsType } from './Input'
 
 const Wrapper = styled.div`
   position: relative;
+  width: ${prop<PropsType>('width')};
 `
 
 const Switch = styled.span`
@@ -22,7 +23,9 @@ const Switch = styled.span`
 `
 
 const PasswordInput = styled(Input)`
-  padding-right: 2.8rem;
+  input {
+    padding-right: 2.8rem;
+  }
 `
 
 type StateType = {| type: string |}
@@ -46,10 +49,10 @@ class Password extends React.Component<PropsType, StateType> {
 
   render() {
     const { type } = this.state
-    const { disabled } = this.props
+    const { disabled, width } = this.props
 
     return (
-      <Wrapper>
+      <Wrapper width={width}>
         <PasswordInput {...this.props} type={type} />
         {disabled !== true && (
           <Switch onClick={this.handleSwitchClick}>
