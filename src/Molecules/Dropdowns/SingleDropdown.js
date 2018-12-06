@@ -21,6 +21,7 @@ type PropsType = {
   +items: Array<{| +text: string, +value: string | number |}>,
   +label?: string,
   +name?: string,
+  +placeholder?: string,
   +size?: string,
   +uppercase?: boolean,
   +value?: string | number,
@@ -82,6 +83,18 @@ const Select = styled.select`
     cursor: not-allowed;
   }
 
+  &:required:invalid {
+    color: ${theme('inputPlaceholderColor')};
+  }
+
+  option[value=''][disabled] {
+    display: none;
+  }
+
+  option {
+    color: ${theme('inputColor')};
+  }
+
   &:active:not(:disabled),
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
@@ -94,6 +107,7 @@ const SingleDropdown = ({
   className,
   input,
   items,
+  placeholder,
   width,
   ...rest
 }: PropsType) => {
@@ -109,7 +123,16 @@ const SingleDropdown = ({
           }${rest.error || ''}`}
         </InputLabel>
       )}
-      <Select {...input} {...rest}>
+      <Select
+        {...{
+          defaultValue: placeholder != null ? '' : undefined,
+          ...input,
+          ...rest,
+        }}
+      >
+        {placeholder != null && (
+          <option disabled hidden label={placeholder} value="" />
+        )}
         {items.map((item) => (
           <option key={item.value} value={item.value}>
             {item.text}
@@ -129,6 +152,7 @@ SingleDropdown.propTypes = {
       value: PropTypes.any,
     }),
   ).isRequired,
+  placeholder: PropTypes.string,
   uppercase: PropTypes.bool,
   value: PropTypes.any,
   weight: PropTypes.oneOf([100, 200, 300, 400, 500, 600, 700, 800, 900]),

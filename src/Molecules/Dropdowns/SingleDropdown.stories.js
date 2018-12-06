@@ -38,12 +38,28 @@ storiesOf('Molecules/Dropdowns/SingleDropdown', module)
         label="Label 1"
         name="test2"
       />
+      <Spacer />
+      <SingleDropdown
+        error="Error 1"
+        handleChange={action('item-click')}
+        items={items}
+        placeholder="Select"
+        required
+      />
     </>
   ))
   .add('with label', () => <SingleDropdown items={items} label="Select 1" />)
   .add('with disabled', () => <SingleDropdown disabled items={items} />)
   .add('with italic', () => (
     <SingleDropdown handleChange={action('item-click')} italic items={items} />
+  ))
+  .add('with placeholder', () => (
+    <SingleDropdown
+      handleChange={action('item-click')}
+      items={items}
+      placeholder="Select"
+      required
+    />
   ))
   .add('with uppercase', () => (
     <SingleDropdown

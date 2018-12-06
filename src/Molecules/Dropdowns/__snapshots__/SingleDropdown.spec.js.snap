@@ -59,6 +59,18 @@ exports[`SingleDropdown should render correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1:required:invalid {
+  color: #999B9E;
+}
+
+.c1 option[value=''][disabled] {
+  display: none;
+}
+
+.c1 option {
+  color: #545456;
+}
+
 .c1:active:not(:disabled),
 .c1:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
@@ -246,6 +258,18 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c1:required:invalid {
+  color: #999B9E;
+}
+
+.c1 option[value=''][disabled] {
+  display: none;
+}
+
+.c1 option {
+  color: #545456;
 }
 
 .c1:active:not(:disabled),
@@ -442,6 +466,18 @@ exports[`SingleDropdown should render correctly with error="error" 1`] = `
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c2:required:invalid {
+  color: #999B9E;
+}
+
+.c2 option[value=''][disabled] {
+  display: none;
+}
+
+.c2 option {
+  color: #545456;
 }
 
 .c2:active:not(:disabled),
@@ -641,6 +677,18 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
   cursor: not-allowed;
 }
 
+.c1:required:invalid {
+  color: #999B9E;
+}
+
+.c1 option[value=''][disabled] {
+  display: none;
+}
+
+.c1 option {
+  color: #545456;
+}
+
 .c1:active:not(:disabled),
 .c1:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
@@ -835,6 +883,18 @@ exports[`SingleDropdown should render correctly with label="label" 1`] = `
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c2:required:invalid {
+  color: #999B9E;
+}
+
+.c2 option[value=''][disabled] {
+  display: none;
+}
+
+.c2 option {
+  color: #545456;
 }
 
 .c2:active:not(:disabled),
@@ -1042,6 +1102,18 @@ exports[`SingleDropdown should render correctly with label="label" and error="er
   cursor: not-allowed;
 }
 
+.c2:required:invalid {
+  color: #999B9E;
+}
+
+.c2 option[value=''][disabled] {
+  display: none;
+}
+
+.c2 option {
+  color: #545456;
+}
+
 .c2:active:not(:disabled),
 .c2:focus:not(:disabled) {
   box-shadow: 0 0 0 1px transparent;
@@ -1183,7 +1255,7 @@ exports[`SingleDropdown should render correctly with label="label" and error="er
 </SingleDropdown>
 `;
 
-exports[`SingleDropdown should render correctly with size 1`] = `
+exports[`SingleDropdown should render correctly with placeholder 1`] = `
 .c0 {
   position: relative;
   display: -webkit-box;
@@ -1242,6 +1314,18 @@ exports[`SingleDropdown should render correctly with size 1`] = `
   cursor: not-allowed;
 }
 
+.c1:required:invalid {
+  color: #999B9E;
+}
+
+.c1 option[value=''][disabled] {
+  display: none;
+}
+
+.c1 option {
+  color: #545456;
+}
+
 .c1:active:not(:disabled),
 .c1:focus:not(:disabled) {
   box-shadow: 0 0 0 1px #10ADE4;
@@ -1291,7 +1375,7 @@ exports[`SingleDropdown should render correctly with size 1`] = `
     ]
   }
   onChange={[MockFunction]}
-  size="32px"
+  placeholder="Select"
   uppercase={false}
   width="100%"
 >
@@ -1304,16 +1388,22 @@ exports[`SingleDropdown should render correctly with size 1`] = `
     >
       <styled.select
         capitalize={false}
+        defaultValue=""
         italic={false}
         onChange={[MockFunction]}
-        size="32px"
         uppercase={false}
       >
         <select
           className="c1"
+          defaultValue=""
           onChange={[MockFunction]}
-          size="32px"
         >
+          <option
+            disabled={true}
+            hidden={true}
+            label="Select"
+            value=""
+          />
           <option
             key="1"
             value={1}
@@ -1432,6 +1522,18 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c1:required:invalid {
+  color: #999B9E;
+}
+
+.c1 option[value=''][disabled] {
+  display: none;
+}
+
+.c1 option {
+  color: #545456;
 }
 
 .c1:active:not(:disabled),
@@ -1622,6 +1724,18 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
   border-color: #CCC;
   background: #F8F8F8;
   cursor: not-allowed;
+}
+
+.c1:required:invalid {
+  color: #999B9E;
+}
+
+.c1 option[value=''][disabled] {
+  display: none;
+}
+
+.c1 option {
+  color: #545456;
 }
 
 .c1:active:not(:disabled),

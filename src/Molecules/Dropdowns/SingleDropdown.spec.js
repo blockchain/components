@@ -60,9 +60,13 @@ describe('SingleDropdown', () => {
     expect(tree.find(SingleDropdown)).toMatchSnapshot()
   })
 
-  it('should render correctly with size', () => {
+  it('should render correctly with placeholder', () => {
     const tree = mountWithTheme(
-      <SingleDropdown items={items} onChange={jest.fn()} size="32px" />,
+      <SingleDropdown
+        items={items}
+        onChange={jest.fn()}
+        placeholder="Select"
+      />,
     )
 
     expect(tree.find(SingleDropdown)).toMatchSnapshot()
