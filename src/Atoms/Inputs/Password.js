@@ -12,14 +12,17 @@ const Wrapper = styled.div`
 
 const Switch = styled.span`
   position: absolute;
-  right: 0.5rem;
+  right: 1.25rem;
   bottom: 0.875rem;
   cursor: pointer;
   font-family: ${theme('fontPrimary')};
   font-size: ${fontSize('xs')};
   font-weight: 500;
-  text-transform: uppercase;
   user-select: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `
 
 const PasswordInput = styled(Input)`
