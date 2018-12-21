@@ -6,7 +6,7 @@ import Input from './Input'
 
 storiesOf('Atoms/Inputs/Input', module)
   .add('default', () => <Input />)
-  .add('with type', () => <Input type="password" />)
+  .add('with type', () => <Input type="number" />)
   .add('with label', () => <Input label="Input 1" />)
   .add('with error', () => (
     <>
