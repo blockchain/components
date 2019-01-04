@@ -57,14 +57,13 @@ class Password extends React.Component<PropsType, StateType> {
 
   render() {
     const { type } = this.state
-    const { width } = this.props
+    const { renderSuffix } = this.props
 
     return (
       <PasswordInput
         {...this.props}
-        renderSuffix={this.renderToggle}
+        renderSuffix={renderSuffix || this.renderToggle}
         type={type}
-        width={width}
       />
     )
   }
