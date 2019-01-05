@@ -19,6 +19,7 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 .c3 {
@@ -237,6 +238,7 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 .c3 {
@@ -455,6 +457,7 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 .c3 {
@@ -678,6 +681,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 .c3 {
@@ -899,6 +903,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 .c3 {
@@ -1127,6 +1132,7 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 .c3 {

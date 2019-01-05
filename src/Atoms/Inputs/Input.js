@@ -1,6 +1,6 @@
 // @flow strict
-import React from 'react'
 import PropTypes from 'prop-types'
+import * as React from 'react'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
@@ -30,6 +30,7 @@ export type PropsType = {
   +input?: {},
   +label?: string,
   +name?: string,
+  +renderSuffix?: (disabled?: boolean) => React.Node,
   +type: HtmlInputType,
   +value?: string,
   +width?: string,
@@ -41,6 +42,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: ${prop<PropsType>('width')};
+  position: relative;
 `
 
 const InputWrapper: ReactComponentFunctional<WrapperPropsType> = styled.input.attrs(
@@ -113,7 +115,13 @@ export const InputLabel: ReactComponentFunctional<LabelPropsType> = styled.label
     props.disabled === true ? 'cursor: not-allowed' : ''};
 `
 
-const Input = ({ className, input, type, ...rest }: PropsType) => {
+const Input = ({
+  className,
+  input,
+  type,
+  renderSuffix,
+  ...rest
+}: PropsType) => {
   const hasLabel = rest.label != null
   const hasError = rest.error != null
 
@@ -134,6 +142,7 @@ const Input = ({ className, input, type, ...rest }: PropsType) => {
           }${rest.error || ''}`}
         </InputLabel>
         <InputWrapper {...input} {...rest} type={type} />
+        {renderSuffix && renderSuffix(rest.disabled)}
       </Container>
     )
   }
@@ -141,6 +150,7 @@ const Input = ({ className, input, type, ...rest }: PropsType) => {
   return (
     <Container className={className} width={rest.width}>
       <InputWrapper {...input} {...rest} type={type} />
+      {renderSuffix && renderSuffix(rest.disabled)}
     </Container>
   )
 }
@@ -153,6 +163,7 @@ Input.propTypes = {
   input: PropTypes.object,
   label: PropTypes.string,
   name: PropTypes.string,
+  renderSuffix: PropTypes.func,
   type: PropTypes.oneOf([
     'checkbox',
     'date',
