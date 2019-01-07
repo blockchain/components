@@ -804,11 +804,22 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
   outline: 1px solid transparent;
 }
 
+.c0 input:disabled + label::after,
 .c0 input:checked + label::after {
   opacity: 1;
   -webkit-transform: scale(1) rotate(-45deg);
   -ms-transform: scale(1) rotate(-45deg);
   transform: scale(1) rotate(-45deg);
+}
+
+.c0 input:disabled + label::before {
+  background-color: rgba(0,0,0,0.10);
+  border: none;
+}
+
+.c0 input:disabled + label::after {
+  border-left: 2px solid #757679;
+  border-bottom: 2px solid #757679;
 }
 
 .c1 {
@@ -844,7 +855,7 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
 
 .c2::before {
   background-color: #FFF;
-  border: 2px solid #CCC;
+  border: 1px solid #CCC;
   box-sizing: border-box;
   content: '';
   height: 16px;
@@ -852,17 +863,18 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
   position: absolute;
   top: calc(50% - 0.5rem);
   width: 16px;
+  border-radius: 2px;
 }
 
 .c2::after {
   background: none;
-  border-left: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
+  border-left: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
   box-sizing: border-box;
   content: '';
   height: 5px;
-  left: 0.3125rem;
-  margin-top: -0.1875rem;
+  left: 5px;
+  margin-top: -3px;
   position: absolute;
   opacity: 0;
   top: 50%;

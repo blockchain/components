@@ -19,9 +19,20 @@ const Wrapper = styled.div`
     outline: 1px solid transparent;
   }
 
+  input:disabled + label::after,
   input:checked + label::after {
     opacity: 1;
     transform: scale(1) rotate(-45deg);
+  }
+
+  input:disabled + label::before {
+    background-color: ${theme('inputCheckboxColorDisabled')};
+    border: none;
+  }
+
+  input:disabled + label::after {
+    border-left: 2px solid ${theme('inputCheckboxCheckColorDisabled')};
+    border-bottom: 2px solid ${theme('inputCheckboxCheckColorDisabled')};
   }
 `
 
@@ -61,7 +72,7 @@ export const CheckboxLabel: ReactComponentFunctional<{
 
   &::before {
     background-color: ${theme('inputBackgroundColor')};
-    border: 2px solid ${theme('inputBorderColor')};
+    border: 1px solid ${theme('inputBorderColor')};
     box-sizing: border-box;
     content: '';
     height: 16px;
@@ -69,17 +80,18 @@ export const CheckboxLabel: ReactComponentFunctional<{
     position: absolute;
     top: calc(50% - 0.5rem);
     width: 16px;
+    border-radius: 2px;
   }
 
   &::after {
     background: none;
-    border-left: 1px solid ${theme('inputBackgroundColor')};
-    border-bottom: 1px solid ${theme('inputBackgroundColor')};
+    border-left: 2px solid ${theme('inputBackgroundColor')};
+    border-bottom: 2px solid ${theme('inputBackgroundColor')};
     box-sizing: border-box;
     content: '';
     height: 5px;
-    left: 0.3125rem;
-    margin-top: -0.1875rem;
+    left: 5px;
+    margin-top: -3px;
     position: absolute;
     opacity: 0;
     top: 50%;
