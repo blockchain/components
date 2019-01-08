@@ -1,7 +1,7 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
-import styled, { css, type ReactComponentFunctional } from 'styled-components'
+import styled, { css, type ReactComponentStyled } from 'styled-components'
 
 import { theme, type ThemePropType } from '../../Tools/interpolation'
 
@@ -34,12 +34,12 @@ const svgColorTemplate = css`
 `
 
 export default (
-  Svg: React.ComponentType<*>,
+  Svg: (props: SvgPropsType) => React.Node,
   name: string,
   keepSvgColor: boolean = false,
 ) => {
   const template = keepSvgColor ? svgColorTemplate : themeColorTemplate
-  const Icon: ReactComponentFunctional<SvgPropsType> = styled(Svg)`
+  const Icon: ReactComponentStyled<SvgPropsType> = styled(Svg)`
     ${template};
   `
 
