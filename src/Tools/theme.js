@@ -39,6 +39,8 @@ const theme = {
   inputBackgroundColorDisabled: palette.gray0,
   inputBorderColor: palette.gray2,
   inputBorderRadius: borderRadius,
+  inputCheckboxCheckColorDisabled: palette.gray4,
+  inputCheckboxColorDisabled: palette.blackAlpha10,
   inputCheckedColor: palette.orient,
   inputColor: palette.gray5,
   inputLabelColor: palette.gray4,

@@ -16,7 +16,10 @@ storiesOf('Atoms/Inputs/Input', module)
     </>
   ))
   .add('with checkbox', () => (
-    <Input label="Checkbox" name="test" type="checkbox" />
+    <div>
+      <Input disabled label="Disabled Checkbox" name="test" type="checkbox" />
+      <Input label="Checkbox" name="test2" type="checkbox" />
+    </div>
   ))
   .add('with radio', () => (
     <div>
