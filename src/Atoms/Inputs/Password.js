@@ -24,13 +24,6 @@ const PasswordInput: ReactComponentFunctional<PropsType> = styled(Input)`
     padding-right: 3rem;
   }
 `
-const ShowButton = styled(FarEye).attrs({ size: '20px' })`
-  cursor: pointer;
-`
-const HideButton = styled(FarEyeSlash).attrs({ size: '20px' })`
-  cursor: pointer;
-`
-
 type StateType = {| type: HtmlInputType |}
 
 class Password extends React.Component<PropsType, StateType> {
@@ -55,7 +48,11 @@ class Password extends React.Component<PropsType, StateType> {
 
     return (
       <Switch onClick={this.handleSwitchClick}>
-        {this.state.type === 'password' ? <ShowButton /> : <HideButton />}
+        {this.state.type === 'password' ? (
+          <FarEye selectable size="20px" />
+        ) : (
+          <FarEyeSlash selectable size="20px" />
+        )}
       </Switch>
     )
   }
@@ -67,7 +64,6 @@ class Password extends React.Component<PropsType, StateType> {
     return (
       <PasswordInput
         {...this.props}
-        {...{ 'data-lpignore': 'true' }}
         renderSuffix={renderSuffix || this.renderToggle}
         type={type}
       />
