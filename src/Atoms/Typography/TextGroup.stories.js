@@ -5,7 +5,7 @@ import Text from './Text'
 import TextGroup from './TextGroup'
 
 const Texts = () => (
-  <React.Fragment>
+  <>
     <Text>
       This is my first text. This is my first text. This is my first text. This
       is my first text.
@@ -34,7 +34,7 @@ const Texts = () => (
       This is my seventh text. This is my seventh text. This is my seventh text.
       This is my seventh text.
     </Text>
-  </React.Fragment>
+  </>
 )
 
 storiesOf('Atoms/Typography/TextGroup', module)

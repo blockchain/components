@@ -32,15 +32,15 @@ describe('TableCell', () => {
     expect(tree.find(TableCell)).toMatchSnapshot()
   })
 
-  it('should render correctly with shrinked true', () => {
-    const tree = mountWithTheme(<TableCell shrinked>MyTableCell</TableCell>)
+  it('should render correctly with shrunk true', () => {
+    const tree = mountWithTheme(<TableCell shrunk>MyTableCell</TableCell>)
 
     expect(tree.find(TableCell)).toMatchSnapshot()
   })
 
-  it('should render correctly with shrinked false', () => {
+  it('should render correctly with shrunk false', () => {
     const tree = mountWithTheme(
-      <TableCell shrinked={false}>MyTableCell</TableCell>,
+      <TableCell shrunk={false}>MyTableCell</TableCell>,
     )
 
     expect(tree.find(TableCell)).toMatchSnapshot()

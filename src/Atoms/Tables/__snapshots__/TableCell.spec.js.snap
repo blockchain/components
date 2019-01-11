@@ -32,12 +32,12 @@ exports[`TableCell should render correctly 1`] = `
 
 <TableCell
   align="left"
-  shrinked={true}
+  shrunk={true}
   width="100%"
 >
   <styled.div
     align="left"
-    shrinked={true}
+    shrunk={true}
     width="100%"
   >
     <div
@@ -82,12 +82,12 @@ exports[`TableCell should render correctly with align center 1`] = `
 
 <TableCell
   align="center"
-  shrinked={true}
+  shrunk={true}
   width="100%"
 >
   <styled.div
     align="center"
-    shrinked={true}
+    shrunk={true}
     width="100%"
   >
     <div
@@ -132,12 +132,12 @@ exports[`TableCell should render correctly with align left 1`] = `
 
 <TableCell
   align="left"
-  shrinked={true}
+  shrunk={true}
   width="100%"
 >
   <styled.div
     align="left"
-    shrinked={true}
+    shrunk={true}
     width="100%"
   >
     <div
@@ -182,12 +182,12 @@ exports[`TableCell should render correctly with align right 1`] = `
 
 <TableCell
   align="right"
-  shrinked={true}
+  shrunk={true}
   width="100%"
 >
   <styled.div
     align="right"
-    shrinked={true}
+    shrunk={true}
     width="100%"
   >
     <div
@@ -200,7 +200,7 @@ exports[`TableCell should render correctly with align right 1`] = `
 </TableCell>
 `;
 
-exports[`TableCell should render correctly with shrinked false 1`] = `
+exports[`TableCell should render correctly with shrunk false 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -232,12 +232,12 @@ exports[`TableCell should render correctly with shrinked false 1`] = `
 
 <TableCell
   align="left"
-  shrinked={false}
+  shrunk={false}
   width="100%"
 >
   <styled.div
     align="left"
-    shrinked={false}
+    shrunk={false}
     width="100%"
   >
     <div
@@ -250,7 +250,7 @@ exports[`TableCell should render correctly with shrinked false 1`] = `
 </TableCell>
 `;
 
-exports[`TableCell should render correctly with shrinked true 1`] = `
+exports[`TableCell should render correctly with shrunk true 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -282,12 +282,12 @@ exports[`TableCell should render correctly with shrinked true 1`] = `
 
 <TableCell
   align="left"
-  shrinked={true}
+  shrunk={true}
   width="100%"
 >
   <styled.div
     align="left"
-    shrinked={true}
+    shrunk={true}
     width="100%"
   >
     <div
@@ -332,12 +332,12 @@ exports[`TableCell should render correctly with width 1`] = `
 
 <TableCell
   align="left"
-  shrinked={true}
+  shrunk={true}
   width="20%"
 >
   <styled.div
     align="left"
-    shrinked={true}
+    shrunk={true}
     width="20%"
   >
     <div

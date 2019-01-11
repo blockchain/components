@@ -1,87 +1,210 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip should render correctly 1`] = `
+<Tooltip
+  duration={150}
+  placement="top"
+  text="My Tooltip"
+>
+  <Manager>
+    <Reference>
+      <InnerReference
+        getReferenceRef={[Function]}
+      >
+        <div
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+        >
+          My Tooltip
+        </div>
+      </InnerReference>
+    </Reference>
+    <Popper
+      placement="top"
+    >
+      <InnerPopper
+        eventsEnabled={true}
+        placement="top"
+        positionFixed={false}
+        referenceElement={
+          <div>
+            My Tooltip
+          </div>
+        }
+      >
+        <CSSTransition
+          classNames="fade"
+          in={false}
+          onExited={[Function]}
+          timeout={150}
+          unmountOnExit={true}
+        >
+          <Transition
+            appear={false}
+            enter={true}
+            exit={true}
+            in={false}
+            mountOnEnter={false}
+            onEnter={[Function]}
+            onEntered={[Function]}
+            onEntering={[Function]}
+            onExit={[Function]}
+            onExited={[Function]}
+            onExiting={[Function]}
+            timeout={150}
+            unmountOnExit={true}
+          />
+        </CSSTransition>
+      </InnerPopper>
+    </Popper>
+  </Manager>
+</Tooltip>
+`;
+
+exports[`Tooltip should render correctly with placement 1`] = `
+<Tooltip
+  duration={150}
+  placement="left"
+  text="My Tooltip"
+>
+  <Manager>
+    <Reference>
+      <InnerReference
+        getReferenceRef={[Function]}
+      >
+        <div
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+        >
+          My Tooltip
+        </div>
+      </InnerReference>
+    </Reference>
+    <Popper
+      placement="left"
+    >
+      <InnerPopper
+        eventsEnabled={true}
+        placement="left"
+        positionFixed={false}
+        referenceElement={
+          <div>
+            My Tooltip
+          </div>
+        }
+      >
+        <CSSTransition
+          classNames="fade"
+          in={false}
+          onExited={[Function]}
+          timeout={150}
+          unmountOnExit={true}
+        >
+          <Transition
+            appear={false}
+            enter={true}
+            exit={true}
+            in={false}
+            mountOnEnter={false}
+            onEnter={[Function]}
+            onEntered={[Function]}
+            onEntering={[Function]}
+            onExit={[Function]}
+            onExited={[Function]}
+            onExiting={[Function]}
+            timeout={150}
+            unmountOnExit={true}
+          />
+        </CSSTransition>
+      </InnerPopper>
+    </Popper>
+  </Manager>
+</Tooltip>
+`;
+
+exports[`Tooltip should render correctly with renderTrigger 1`] = `
 .c0 {
-  color: #FFF !important;
-  border: 1px solid #383838 !important;
-  background-color: #383838 !important;
-  cursor: pointer;
-  max-width: 350px;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
-  font-size: 0.875rem;
-  font-weight: 400;
-  z-index: 5;
-  text-transform: none;
-  text-align: left;
-  pointer-events: auto !important;
-}
-
-.c0:hover {
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-.c0.place-top::before {
-  border-top-color: #383838 !important;
-}
-
-.c0.place-top::after {
-  border-top-color: #383838 !important;
-}
-
-.c0.place-left::before {
-  border-left-color: #383838 !important;
-}
-
-.c0.place-left::after {
-  border-left-color: #383838 !important;
-}
-
-.c0.place-bottom::before {
-  border-bottom-color: #383838 !important;
-}
-
-.c0.place-bottom::after {
-  border-bottom-color: #383838 !important;
-}
-
-.c0.place-right::before {
-  border-right-color: #383838 !important;
-}
-
-.c0.place-right::after {
-  border-right-color: #383838 !important;
+  color: black;
+  padding: 1rem;
+  font-weight: 600;
 }
 
 <Tooltip
-  id="storybook.test"
+  duration={150}
+  placement="bottom"
+  renderTrigger={[Function]}
 >
-  <Styled(ReactTooltip)
-    border={true}
-    delayHide={250}
-    effect="solid"
-    id="storybook.test"
-    type="light"
-  >
-    <ReactTooltip
-      border={true}
-      className="c0"
-      delayHide={250}
-      effect="solid"
-      id="storybook.test"
-      insecure={true}
-      resizeHide={true}
-      type="light"
-      wrapper="div"
-    >
-      <div
-        className="__react_component_tooltip place-top type-dark "
-        data-id="tooltip"
-        id="storybook.test"
+  <Manager>
+    <Reference>
+      <InnerReference
+        getReferenceRef={[Function]}
       >
-        Tooltip
-      </div>
-    </ReactTooltip>
-  </Styled(ReactTooltip)>
+        <div
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+        >
+          <styled.div
+            active={false}
+          >
+            <div
+              className="c0"
+            >
+              Custom trigger!
+            </div>
+          </styled.div>
+        </div>
+      </InnerReference>
+    </Reference>
+    <Popper
+      placement="bottom"
+    >
+      <InnerPopper
+        eventsEnabled={true}
+        placement="bottom"
+        positionFixed={false}
+        referenceElement={
+          .c0 {
+  font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  color: black;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+<div>
+            <div
+              class="c0"
+            >
+              Custom trigger!
+            </div>
+          </div>
+        }
+      >
+        <CSSTransition
+          classNames="fade"
+          in={false}
+          onExited={[Function]}
+          timeout={150}
+          unmountOnExit={true}
+        >
+          <Transition
+            appear={false}
+            enter={true}
+            exit={true}
+            in={false}
+            mountOnEnter={false}
+            onEnter={[Function]}
+            onEntered={[Function]}
+            onEntering={[Function]}
+            onExit={[Function]}
+            onExited={[Function]}
+            onExiting={[Function]}
+            timeout={150}
+            unmountOnExit={true}
+          />
+        </CSSTransition>
+      </InnerPopper>
+    </Popper>
+  </Manager>
 </Tooltip>
 `;

@@ -1,13 +1,15 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
-import styled from 'styled-components'
+import styled, { type ReactComponentFunctional } from 'styled-components'
 
+import injectE2E from '../../Tools/injectE2E'
 import { prop, theme } from '../../Tools/interpolation'
 
 export type PropsType = {
   +capitalize?: boolean,
   +children?: React.Node,
+  +e2e?: string,
   +italic?: boolean,
   +opacity?: number,
   +size?: string,
@@ -27,7 +29,9 @@ const getTextTransform = (props: PropsType) => {
   return 'none'
 }
 
-const Wrapper = styled.span`
+const Wrapper: ReactComponentFunctional<PropsType> = styled.span.attrs({
+  'data-e2e': injectE2E,
+})`
   font-family: ${theme('fontPrimary')};
   font-weight: ${prop<PropsType>('weight')};
   font-size: ${prop<PropsType>('size')};
