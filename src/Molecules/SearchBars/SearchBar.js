@@ -92,7 +92,7 @@ const GoContainer = styled.div.attrs({
     cursor: pointer;
   }
 `
-const GoLabel = () => <React.Fragment>Go</React.Fragment>
+const GoLabel = () => <>Go</>
 
 const SearchBar = ({
   children,

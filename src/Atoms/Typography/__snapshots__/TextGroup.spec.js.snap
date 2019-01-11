@@ -50,6 +50,7 @@ exports[`TextGroup mount render correctly 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -75,6 +76,7 @@ exports[`TextGroup mount render correctly 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -100,6 +102,7 @@ exports[`TextGroup mount render correctly 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -125,6 +128,7 @@ exports[`TextGroup mount render correctly 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -150,6 +154,7 @@ exports[`TextGroup mount render correctly 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -175,6 +180,7 @@ exports[`TextGroup mount render correctly 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -200,6 +206,7 @@ exports[`TextGroup mount render correctly 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -263,6 +270,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -288,6 +296,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -313,6 +322,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -338,6 +348,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -363,6 +374,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -388,6 +400,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -413,6 +426,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -476,6 +490,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -501,6 +516,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -526,6 +542,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -551,6 +568,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -576,6 +594,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -601,6 +620,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >
@@ -626,6 +646,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
           >
             <span
               className="c1"
+              data-e2e=""
               opacity={1}
               size="1rem"
             >

@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions'
 
 import SearchBar from './SearchBar'
 
-const CustomLabel = () => <React.Fragment>Search !</React.Fragment>
+const CustomLabel = () => <>Search !</>
 
 storiesOf('Molecules/SearchBars/SearchBar', module)
   .add('default', () => <SearchBar />)

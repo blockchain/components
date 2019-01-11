@@ -26,7 +26,7 @@ const Wrapper = (props) => <OrientSection {...props} />
 const ButtonLogin = () => <Button>Login</Button>
 
 const Content = () => (
-  <React.Fragment>
+  <>
     <NavbarDropdownItem>
       <NavbarDropdownItemTitle>Link 1</NavbarDropdownItemTitle>
       <NavbarDropdownItemDescription>
@@ -45,7 +45,7 @@ const Content = () => (
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </NavbarDropdownItemDescription>
     </NavbarDropdownItem>
-  </React.Fragment>
+  </>
 )
 
 storiesOf('Organisms/Navbar', module)

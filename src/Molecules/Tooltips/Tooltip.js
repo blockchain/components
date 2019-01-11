@@ -1,224 +1,230 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
+import ReactDOM from 'react-dom'
+import { Manager, Reference, Popper } from 'react-popper'
+import { CSSTransition } from 'react-transition-group'
 import styled from 'styled-components'
-// $IgnoreStrictImport
-import ReactTooltip from 'react-tooltip'
 
-import { fontSize, theme, type ThemePropType } from '../../Tools/interpolation'
+import { fontSize, prop, theme } from '../../Tools/interpolation'
 
-export const TooltipCss = `
-  .__react_component_tooltip {
-    border-radius: 3px;
-    display: inline-block;
-    font-size: 0.875rem;
-    left: -999em;
-    opacity: 0;
-    padding: 8px 21px;
-    position: fixed;
-    pointer-events: none;
-    transition: opacity 0.3s ease-out;
-    top: -999em;
-    visibility: hidden;
-    z-index: 999;
+type PlacementType =
+  | 'auto-start'
+  | 'auto'
+  | 'auto-end'
+  | 'top-start'
+  | 'top'
+  | 'top-end'
+  | 'right-start'
+  | 'right'
+  | 'right-end'
+  | 'bottom-end'
+  | 'bottom'
+  | 'bottom-start'
+  | 'left-end'
+  | 'left'
+  | 'left-start'
 
-    &::before,
-    &::after {
-      content: "";
-      width: 0;
-      height: 0;
-      position: absolute;
-    }
+type RenderTriggerType = (active: boolean, e2e: void | string) => React.Node
 
-    &.show {
-      opacity: 0.9;
-      margin-top: 0;
-      margin-left: 0;
-      visibility: visible;
-    }
-
-    &.place-top {
-      margin-top: -10px;
-
-      &::before {
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        bottom: -8px;
-        left: 50%;
-        margin-left: -10px;
-      }
-
-      &::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        bottom: -6px;
-        left: 50%;
-        margin-left: -8px;
-      }
-    }
-
-    &.place-bottom {
-      margin-top: 10px;
-
-      &::before {
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        top: -8px;
-        left: 50%;
-        margin-left: -10px;
-      }
-
-      &::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        top: -6px;
-        left: 50%;
-        margin-left: -8px;
-      }
-    }
-
-    &.place-left {
-      margin-left: -10px;
-
-      &::before {
-        border-top: 6px solid transparent;
-        border-bottom: 6px solid transparent;
-        right: -8px;
-        top: 50%;
-        margin-top: -5px;
-      }
-
-      &::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        right: -6px;
-        top: 50%;
-        margin-top: -4px;
-      }
-    }
-
-    &.place-right {
-      margin-left: 10px;
-
-      &::before {
-        border-top: 6px solid transparent;
-        border-bottom: 6px solid transparent;
-        left: -8px;
-        top: 50%;
-        margin-top: -5px;
-      }
-
-      &::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        left: -6px;
-        top: 50%;
-        margin-top: -4px;
-      }
-    }
-
-    .multi-line {
-      display: block;
-      padding: 2px 0;
-      text-align: center;
-    }
-  }
-`
-
-const StyledTip = styled(ReactTooltip)`
-  color: ${theme('tooltipColor')} !important;
-  border: 1px solid ${theme('tooltipBorderColor')} !important;
-  background-color: ${(props: ThemePropType) =>
-    props.theme.tooltipBackgroundColor} !important;
-  cursor: pointer;
-  max-width: 350px;
-  font-family: ${theme('fontPrimary')};
-  font-size: ${fontSize('sm')};
-  font-weight: 400;
-  z-index: 5;
-  text-transform: none;
-  text-align: left;
-  pointer-events: auto !important;
-
-  &:hover {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-
-  &.place-top {
-    &::before {
-      border-top-color: ${(props: ThemePropType) =>
-        props.theme.tooltipBorderColor} !important;
-    }
-
-    &::after {
-      border-top-color: ${(props: ThemePropType) =>
-        props.theme.tooltipBackgroundColor} !important;
-    }
-  }
-
-  &.place-left {
-    &::before {
-      border-left-color: ${(props: ThemePropType) =>
-        props.theme.tooltipBorderColor} !important;
-    }
-
-    &::after {
-      border-left-color: ${(props: ThemePropType) =>
-        props.theme.tooltipBackgroundColor} !important;
-    }
-  }
-
-  &.place-bottom {
-    &::before {
-      border-bottom-color: ${(props: ThemePropType) =>
-        props.theme.tooltipBorderColor} !important;
-    }
-
-    &::after {
-      border-bottom-color: ${(props: ThemePropType) =>
-        props.theme.tooltipBackgroundColor} !important;
-    }
-  }
-
-  &.place-right {
-    &::before {
-      border-right-color: ${(props: ThemePropType) =>
-        props.theme.tooltipBorderColor} !important;
-    }
-
-    &::after {
-      border-right-color: ${(props: ThemePropType) =>
-        props.theme.tooltipBackgroundColor} !important;
-    }
-  }
-`
+type StateType = {
+  active: boolean,
+}
 
 type PropsType = {
   +children: React.Node,
-  +id: string,
+  +className?: string,
+  +duration: number,
+  +e2e?: string,
+  +placement?: PlacementType,
+  +renderTrigger?: RenderTriggerType,
+  +text?: string,
 }
 
-const Tooltip = (props: PropsType) => {
-  const { id, children, ...rest } = props
+const StyledTooltip = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0 0.5rem;
+  color: ${theme('tooltipColor')};
+  border: 1px solid ${theme('tooltipBorderColor')};
+  background-color: ${theme('tooltipBackgroundColor')};
+  font-family: ${theme('fontPrimary')};
+  font-size: ${fontSize('sm')};
+  font-weight: 500;
+  border-radius: 0.25rem;
+`
 
-  return (
-    <StyledTip
-      border
-      delayHide={250}
-      effect="solid"
-      id={id}
-      type="light"
-      {...rest}
-    >
-      {children}
-    </StyledTip>
-  )
+const Transition = styled.div`
+  opacity: 1;
+
+  &.fade-enter {
+    opacity: 0.01;
+  }
+
+  &.fade-enter-active {
+    opacity: 1;
+    transition: opacity ${prop<PropsType>('duration')}ms ease-out;
+  }
+
+  &.fade-exit {
+    opacity: 1;
+  }
+
+  &.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity ${prop<PropsType>('duration')}ms ease-out;
+  }
+`
+
+class Tooltip extends React.Component<PropsType, StateType> {
+  static defaultProps = {
+    duration: 150,
+    placement: 'top',
+  }
+
+  constructor(props: PropsType) {
+    super(props)
+    this.container = document.createElement('div')
+  }
+
+  state = {
+    active: false,
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timeout)
+    this.setState({ active: false })
+
+    if (document.body && document.body.contains(this.container)) {
+      document.body.removeChild(this.container)
+      delete this.container
+    }
+  }
+
+  timeout: TimeoutID
+  container: Element
+
+  handleExited = () => {
+    if (document.body && document.body.contains(this.container)) {
+      document.body.removeChild(this.container)
+    }
+  }
+
+  handleMouseMove = (event: SyntheticEvent<HTMLElement>) => {
+    clearTimeout(this.timeout)
+
+    if (!this.state.active) {
+      if (document.body != null) {
+        document.body.appendChild(this.container)
+      }
+
+      this.setState({ active: true })
+    }
+  }
+
+  handleMouseLeave = (event: SyntheticEvent<HTMLElement>) => {
+    this.timeout = setTimeout(() => {
+      if (this.state.active) {
+        this.setState({ active: false })
+      }
+    }, 50)
+  }
+
+  render() {
+    const {
+      children,
+      className,
+      duration,
+      e2e,
+      placement,
+      renderTrigger,
+      text,
+    } = this.props
+    const { active } = this.state
+
+    return (
+      <Manager>
+        <Reference>
+          {({ ref }) => (
+            <div
+              onMouseLeave={this.handleMouseLeave}
+              onMouseMove={this.handleMouseMove}
+              ref={ref}
+            >
+              {renderTrigger && renderTrigger(active, e2e)}
+              {!renderTrigger && text}
+            </div>
+          )}
+        </Reference>
+        <Popper placement={placement}>
+          {({
+            ref,
+            style,
+            placement,
+          }: {
+            +placement: PlacementType,
+            +ref: React.ElementRef<*>, // eslint-disable-line react/no-unused-prop-types
+            +style: {},
+          }) => (
+            <CSSTransition
+              classNames="fade"
+              in={active}
+              onExited={this.handleExited}
+              timeout={duration}
+              unmountOnExit
+            >
+              <>
+                {this.container &&
+                  ReactDOM.createPortal(
+                    <Transition
+                      duration={duration}
+                      innerRef={ref}
+                      onMouseLeave={this.handleMouseLeave}
+                      onMouseMove={this.handleMouseMove}
+                      style={style}
+                    >
+                      <StyledTooltip className={className || ''}>
+                        {children}
+                      </StyledTooltip>
+                    </Transition>,
+                    this.container,
+                  )}
+              </>
+            </CSSTransition>
+          )}
+        </Popper>
+      </Manager>
+    )
+  }
 }
 
 Tooltip.propTypes = {
   children: PropTypes.node.isRequired,
-  id: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  duration: PropTypes.number.isRequired,
+  e2e: PropTypes.string,
+  placement: PropTypes.oneOf([
+    'auto-start',
+    'auto',
+    'auto-end',
+    'top-start',
+    'top',
+    'top-end',
+    'right-start',
+    'right',
+    'right-end',
+    'bottom-end',
+    'bottom',
+    'bottom-start',
+    'left-end',
+    'left',
+    'left-start',
+  ]),
+  renderTrigger: PropTypes.func,
+  text: PropTypes.string,
 }
 
 export default Tooltip

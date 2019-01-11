@@ -10,7 +10,7 @@ type AlignType = 'center' | 'left' | 'right'
 type PropsType = {
   +align?: AlignType,
   +children?: React.Node,
-  +shrinked?: boolean,
+  +shrunk?: boolean,
   +width?: string,
 }
 
@@ -35,13 +35,13 @@ const Wrapper = styled.div`
 
   & > * {
     display: ${(props: PropsType) =>
-      props.shrinked === true ? 'block' : 'initial'};
+      props.shrunk === true ? 'block' : 'initial'};
     text-overflow: ${(props: PropsType) =>
-      props.shrinked === true ? 'ellipsis' : 'initial'};
+      props.shrunk === true ? 'ellipsis' : 'initial'};
     overflow: ${(props: PropsType) =>
-      props.shrinked === true ? 'hidden' : 'initial'};
+      props.shrunk === true ? 'hidden' : 'initial'};
     white-space: ${(props: PropsType) =>
-      props.shrinked === true ? 'nowrap' : 'initial'};
+      props.shrunk === true ? 'nowrap' : 'initial'};
   }
 `
 
@@ -52,13 +52,13 @@ const TableCell = ({ children, ...rest }: PropsType) => (
 TableCell.propTypes = {
   align: PropTypes.oneOf(['left', 'center', 'right']),
   children: PropTypes.node,
-  shrinked: PropTypes.bool,
+  shrunk: PropTypes.bool,
   width: PropTypes.string,
 }
 
 TableCell.defaultProps = {
   align: 'left',
-  shrinked: true,
+  shrunk: true,
   width: '100%',
 }
 

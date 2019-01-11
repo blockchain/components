@@ -29,6 +29,7 @@ exports[`Text should render correctly 1`] = `
   >
     <span
       className="c0"
+      data-e2e=""
       opacity={1}
       size="1rem"
     >
@@ -67,6 +68,7 @@ exports[`Text should render correctly with capitalize 1`] = `
   >
     <span
       className="c0"
+      data-e2e=""
       opacity={1}
       size="1rem"
     >
@@ -105,6 +107,7 @@ exports[`Text should render correctly with italic 1`] = `
   >
     <span
       className="c0"
+      data-e2e=""
       opacity={1}
       size="1rem"
     >
@@ -143,6 +146,7 @@ exports[`Text should render correctly with opacity 1`] = `
   >
     <span
       className="c0"
+      data-e2e=""
       opacity={0.5}
       size="1rem"
     >
@@ -181,6 +185,7 @@ exports[`Text should render correctly with size 1`] = `
   >
     <span
       className="c0"
+      data-e2e=""
       opacity={1}
       size="32px"
     >
@@ -219,6 +224,7 @@ exports[`Text should render correctly with uppercase 1`] = `
   >
     <span
       className="c0"
+      data-e2e=""
       opacity={1}
       size="1rem"
     >
@@ -257,6 +263,7 @@ exports[`Text should render correctly with weight 1`] = `
   >
     <span
       className="c0"
+      data-e2e=""
       opacity={1}
       size="1rem"
     >
