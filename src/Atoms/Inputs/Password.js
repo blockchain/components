@@ -4,12 +4,12 @@ import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import { fontSize, theme } from '../../Tools/interpolation'
 import Input, { type PropsType, type HtmlInputType } from './Input'
+import { FarEye, FarEyeSlash } from '../Icons'
 
 const Switch = styled.span`
   position: absolute;
-  right: 1.25rem;
-  bottom: 0.875rem;
-  cursor: pointer;
+  right: 1rem;
+  bottom: 0.5rem;
   font-family: ${theme('fontPrimary')};
   font-size: ${fontSize('xs')};
   font-weight: 600;
@@ -19,11 +19,16 @@ const Switch = styled.span`
     text-decoration: underline;
   }
 `
-
 const PasswordInput: ReactComponentFunctional<PropsType> = styled(Input)`
   input {
-    padding-right: 3.5rem;
+    padding-right: 3rem;
   }
+`
+const ShowButton = styled(FarEye).attrs({ size: '20px' })`
+  cursor: pointer;
+`
+const HideButton = styled(FarEyeSlash).attrs({ size: '20px' })`
+  cursor: pointer;
 `
 
 type StateType = {| type: HtmlInputType |}
@@ -50,7 +55,7 @@ class Password extends React.Component<PropsType, StateType> {
 
     return (
       <Switch onClick={this.handleSwitchClick}>
-        {this.state.type === 'password' ? 'Show' : 'Hide'}
+        {this.state.type === 'password' ? <ShowButton /> : <HideButton />}
       </Switch>
     )
   }
@@ -62,6 +67,7 @@ class Password extends React.Component<PropsType, StateType> {
     return (
       <PasswordInput
         {...this.props}
+        {...{ 'data-lpignore': 'true' }}
         renderSuffix={renderSuffix || this.renderToggle}
         type={type}
       />
