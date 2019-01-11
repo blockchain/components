@@ -4,12 +4,12 @@ import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import { fontSize, theme } from '../../Tools/interpolation'
 import Input, { type PropsType, type HtmlInputType } from './Input'
+import { FarEye, FarEyeSlash } from '../Icons'
 
 const Switch = styled.span`
   position: absolute;
-  right: 1.25rem;
-  bottom: 0.875rem;
-  cursor: pointer;
+  right: 1rem;
+  bottom: 0.5rem;
   font-family: ${theme('fontPrimary')};
   font-size: ${fontSize('xs')};
   font-weight: 600;
@@ -19,13 +19,11 @@ const Switch = styled.span`
     text-decoration: underline;
   }
 `
-
 const PasswordInput: ReactComponentFunctional<PropsType> = styled(Input)`
   input {
-    padding-right: 3.5rem;
+    padding-right: 3rem;
   }
 `
-
 type StateType = {| type: HtmlInputType |}
 
 class Password extends React.Component<PropsType, StateType> {
@@ -50,7 +48,11 @@ class Password extends React.Component<PropsType, StateType> {
 
     return (
       <Switch onClick={this.handleSwitchClick}>
-        {this.state.type === 'password' ? 'Show' : 'Hide'}
+        {this.state.type === 'password' ? (
+          <FarEye selectable size="20px" />
+        ) : (
+          <FarEyeSlash selectable size="20px" />
+        )}
       </Switch>
     )
   }
