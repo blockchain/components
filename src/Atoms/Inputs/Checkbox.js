@@ -100,8 +100,8 @@ export const CheckboxLabel: ReactComponentFunctional<{
   }
 `
 
-const Checkbox = ({ input, ...rest }: PropsType) => (
-  <Wrapper>
+const Checkbox = ({ className, input, ...rest }: PropsType) => (
+  <Wrapper className={className}>
     <Input {...input} {...rest} />
     <CheckboxLabel name={rest.name}>{rest.label}</CheckboxLabel>
   </Wrapper>
