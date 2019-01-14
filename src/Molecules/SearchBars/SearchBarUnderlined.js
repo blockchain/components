@@ -28,12 +28,14 @@ const Wrapper = styled.div`
 `
 
 const SearchInput = styled(Input)`
-  background-color: inherit;
-  border-color: transparent;
+  & > input {
+    background-color: inherit;
+    border-color: transparent;
 
-  &:focus,
-  &:active {
-    box-shadow: none !important;
+    &:focus,
+    &:active {
+      box-shadow: none !important;
+    }
   }
 `
 
