@@ -147,11 +147,45 @@ exports[`Tooltip should render correctly with renderTrigger 1`] = `
           <styled.div
             active={false}
           >
-            <div
-              className="c0"
+            <StyledComponent
+              active={false}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htpNat",
+                    "isStatic": false,
+                    "lastClassName": "c0",
+                    "rules": Array [
+                      "
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  ",
+                      [Function],
+                      ";
+  padding: 1rem;
+  font-weight: 600;
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htpNat",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
             >
-              Custom trigger!
-            </div>
+              <div
+                className="c0"
+              >
+                Custom trigger!
+              </div>
+            </StyledComponent>
           </styled.div>
         </div>
       </InnerReference>

@@ -1,5 +1,5 @@
 // @flow strict
-import React from 'react'
+import * as React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -18,7 +18,7 @@ export type PropsType = {
   +error?: string,
   +input?: {},
   +italic?: boolean,
-  +items: Array<{| +text: string, +value: string | number |}>,
+  +items: Array<{ +text: string, +value: string | number }>,
   +label?: string,
   +name?: string,
   +placeholder?: string,

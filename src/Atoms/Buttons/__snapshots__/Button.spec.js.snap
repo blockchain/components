@@ -55,12 +55,88 @@ exports[`Button should have a bounced state 1`] = `
     e2e="defaultButton"
     type="button"
   >
-    <button
-      className="c0"
-      data-e2e="defaultButton"
+    <StyledComponent
+      bounced={true}
       disabled={false}
+      e2e="defaultButton"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  color: ",
+              [Function],
+              ";
+  background-color: ",
+              [Function],
+              ";
+  border: none;
+  border-radius: ",
+              [Function],
+              ";
+  cursor: ",
+              [Function],
+              ";
+  outline: none;
+  transition: all 0.3s ease 0s;
+  opacity: ",
+              [Function],
+              ";
+  font-family: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  font-weight: 600;
+
+  &:hover {
+    background-color: ",
+              [Function],
+              ";
+    transform: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       type="button"
-    />
+    >
+      <button
+        className="c0"
+        data-e2e="defaultButton"
+        disabled={false}
+        type="button"
+      />
+    </StyledComponent>
   </styled.button>
 </Button>
 `;
@@ -120,12 +196,88 @@ exports[`Button should have a disabled state 1`] = `
     e2e="defaultButton"
     type="button"
   >
-    <button
-      className="c0"
-      data-e2e="defaultButton"
+    <StyledComponent
+      bounced={false}
       disabled={true}
+      e2e="defaultButton"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  color: ",
+              [Function],
+              ";
+  background-color: ",
+              [Function],
+              ";
+  border: none;
+  border-radius: ",
+              [Function],
+              ";
+  cursor: ",
+              [Function],
+              ";
+  outline: none;
+  transition: all 0.3s ease 0s;
+  opacity: ",
+              [Function],
+              ";
+  font-family: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  font-weight: 600;
+
+  &:hover {
+    background-color: ",
+              [Function],
+              ";
+    transform: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       type="button"
-    />
+    >
+      <button
+        className="c0"
+        data-e2e="defaultButton"
+        disabled={true}
+        type="button"
+      />
+    </StyledComponent>
   </styled.button>
 </Button>
 `;
@@ -185,12 +337,88 @@ exports[`Button should have a type property 1`] = `
     e2e="defaultButton"
     type="submit"
   >
-    <button
-      className="c0"
-      data-e2e="defaultButton"
+    <StyledComponent
+      bounced={false}
       disabled={false}
+      e2e="defaultButton"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  color: ",
+              [Function],
+              ";
+  background-color: ",
+              [Function],
+              ";
+  border: none;
+  border-radius: ",
+              [Function],
+              ";
+  cursor: ",
+              [Function],
+              ";
+  outline: none;
+  transition: all 0.3s ease 0s;
+  opacity: ",
+              [Function],
+              ";
+  font-family: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  font-weight: 600;
+
+  &:hover {
+    background-color: ",
+              [Function],
+              ";
+    transform: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       type="submit"
-    />
+    >
+      <button
+        className="c0"
+        data-e2e="defaultButton"
+        disabled={false}
+        type="submit"
+      />
+    </StyledComponent>
   </styled.button>
 </Button>
 `;
@@ -250,12 +478,88 @@ exports[`Button should have a type property 2`] = `
     e2e="defaultButton"
     type="reset"
   >
-    <button
-      className="c0"
-      data-e2e="defaultButton"
+    <StyledComponent
+      bounced={false}
       disabled={false}
+      e2e="defaultButton"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  color: ",
+              [Function],
+              ";
+  background-color: ",
+              [Function],
+              ";
+  border: none;
+  border-radius: ",
+              [Function],
+              ";
+  cursor: ",
+              [Function],
+              ";
+  outline: none;
+  transition: all 0.3s ease 0s;
+  opacity: ",
+              [Function],
+              ";
+  font-family: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  font-weight: 600;
+
+  &:hover {
+    background-color: ",
+              [Function],
+              ";
+    transform: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       type="reset"
-    />
+    >
+      <button
+        className="c0"
+        data-e2e="defaultButton"
+        disabled={false}
+        type="reset"
+      />
+    </StyledComponent>
   </styled.button>
 </Button>
 `;
@@ -315,12 +619,88 @@ exports[`Button should render correctly 1`] = `
     e2e="defaultButton"
     type="button"
   >
-    <button
-      className="c0"
-      data-e2e="defaultButton"
+    <StyledComponent
+      bounced={false}
       disabled={false}
+      e2e="defaultButton"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  color: ",
+              [Function],
+              ";
+  background-color: ",
+              [Function],
+              ";
+  border: none;
+  border-radius: ",
+              [Function],
+              ";
+  cursor: ",
+              [Function],
+              ";
+  outline: none;
+  transition: all 0.3s ease 0s;
+  opacity: ",
+              [Function],
+              ";
+  font-family: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  font-weight: 600;
+
+  &:hover {
+    background-color: ",
+              [Function],
+              ";
+    transform: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       type="button"
-    />
+    >
+      <button
+        className="c0"
+        data-e2e="defaultButton"
+        disabled={false}
+        type="button"
+      />
+    </StyledComponent>
   </styled.button>
 </Button>
 `;

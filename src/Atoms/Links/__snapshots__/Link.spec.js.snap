@@ -38,14 +38,80 @@ exports[`Link should render correctly 1`] = `
     uppercase={false}
     weight={400}
   >
-    <a
-      className="c0"
-      data-e2e="defaultLink"
+    <StyledComponent
+      capitalize={false}
+      e2e="defaultLink"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  font-family: ",
+              [Function],
+              ";
+  font-weight: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  text-transform: ",
+              [Function],
+              ";
+  font-style: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  opacity: ",
+              [Function],
+              ";
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: ",
+              [Function],
+              ";
+    text-decoration: none;
+  }
+",
+            ],
+          },
+          "displayName": "styled.a",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      italic={false}
       opacity={1}
       size="1rem"
+      uppercase={false}
+      weight={400}
     >
-      MyLink
-    </a>
+      <a
+        className="c0"
+        data-e2e="defaultLink"
+        opacity={1}
+        size="1rem"
+      >
+        MyLink
+      </a>
+    </StyledComponent>
   </styled.a>
 </Link>
 `;
@@ -88,14 +154,80 @@ exports[`Link should render correctly with capitalize 1`] = `
     uppercase={false}
     weight={400}
   >
-    <a
-      className="c0"
-      data-e2e="defaultLink"
+    <StyledComponent
+      capitalize={true}
+      e2e="defaultLink"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  font-family: ",
+              [Function],
+              ";
+  font-weight: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  text-transform: ",
+              [Function],
+              ";
+  font-style: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  opacity: ",
+              [Function],
+              ";
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: ",
+              [Function],
+              ";
+    text-decoration: none;
+  }
+",
+            ],
+          },
+          "displayName": "styled.a",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      italic={false}
       opacity={1}
       size="1rem"
+      uppercase={false}
+      weight={400}
     >
-      MyLink
-    </a>
+      <a
+        className="c0"
+        data-e2e="defaultLink"
+        opacity={1}
+        size="1rem"
+      >
+        MyLink
+      </a>
+    </StyledComponent>
   </styled.a>
 </Link>
 `;
@@ -138,14 +270,80 @@ exports[`Link should render correctly with italic 1`] = `
     uppercase={false}
     weight={400}
   >
-    <a
-      className="c0"
-      data-e2e="defaultLink"
+    <StyledComponent
+      capitalize={false}
+      e2e="defaultLink"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  font-family: ",
+              [Function],
+              ";
+  font-weight: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  text-transform: ",
+              [Function],
+              ";
+  font-style: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  opacity: ",
+              [Function],
+              ";
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: ",
+              [Function],
+              ";
+    text-decoration: none;
+  }
+",
+            ],
+          },
+          "displayName": "styled.a",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      italic={true}
       opacity={1}
       size="1rem"
+      uppercase={false}
+      weight={400}
     >
-      MyLink
-    </a>
+      <a
+        className="c0"
+        data-e2e="defaultLink"
+        opacity={1}
+        size="1rem"
+      >
+        MyLink
+      </a>
+    </StyledComponent>
   </styled.a>
 </Link>
 `;
@@ -188,14 +386,80 @@ exports[`Link should render correctly with opacity 1`] = `
     uppercase={false}
     weight={400}
   >
-    <a
-      className="c0"
-      data-e2e="defaultLink"
+    <StyledComponent
+      capitalize={false}
+      e2e="defaultLink"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  font-family: ",
+              [Function],
+              ";
+  font-weight: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  text-transform: ",
+              [Function],
+              ";
+  font-style: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  opacity: ",
+              [Function],
+              ";
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: ",
+              [Function],
+              ";
+    text-decoration: none;
+  }
+",
+            ],
+          },
+          "displayName": "styled.a",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      italic={false}
       opacity={0.5}
       size="1rem"
+      uppercase={false}
+      weight={400}
     >
-      MyLink
-    </a>
+      <a
+        className="c0"
+        data-e2e="defaultLink"
+        opacity={0.5}
+        size="1rem"
+      >
+        MyLink
+      </a>
+    </StyledComponent>
   </styled.a>
 </Link>
 `;
@@ -238,14 +502,80 @@ exports[`Link should render correctly with size 1`] = `
     uppercase={false}
     weight={400}
   >
-    <a
-      className="c0"
-      data-e2e="defaultLink"
+    <StyledComponent
+      capitalize={false}
+      e2e="defaultLink"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  font-family: ",
+              [Function],
+              ";
+  font-weight: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  text-transform: ",
+              [Function],
+              ";
+  font-style: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  opacity: ",
+              [Function],
+              ";
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: ",
+              [Function],
+              ";
+    text-decoration: none;
+  }
+",
+            ],
+          },
+          "displayName": "styled.a",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      italic={false}
       opacity={1}
       size="32px"
+      uppercase={false}
+      weight={400}
     >
-      MyLink
-    </a>
+      <a
+        className="c0"
+        data-e2e="defaultLink"
+        opacity={1}
+        size="32px"
+      >
+        MyLink
+      </a>
+    </StyledComponent>
   </styled.a>
 </Link>
 `;
@@ -288,14 +618,80 @@ exports[`Link should render correctly with uppercase 1`] = `
     uppercase={true}
     weight={400}
   >
-    <a
-      className="c0"
-      data-e2e="defaultLink"
+    <StyledComponent
+      capitalize={false}
+      e2e="defaultLink"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  font-family: ",
+              [Function],
+              ";
+  font-weight: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  text-transform: ",
+              [Function],
+              ";
+  font-style: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  opacity: ",
+              [Function],
+              ";
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: ",
+              [Function],
+              ";
+    text-decoration: none;
+  }
+",
+            ],
+          },
+          "displayName": "styled.a",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      italic={false}
       opacity={1}
       size="1rem"
+      uppercase={true}
+      weight={400}
     >
-      MyLink
-    </a>
+      <a
+        className="c0"
+        data-e2e="defaultLink"
+        opacity={1}
+        size="1rem"
+      >
+        MyLink
+      </a>
+    </StyledComponent>
   </styled.a>
 </Link>
 `;
@@ -338,14 +734,80 @@ exports[`Link should render correctly with weight 1`] = `
     uppercase={false}
     weight={500}
   >
-    <a
-      className="c0"
-      data-e2e="defaultLink"
+    <StyledComponent
+      capitalize={false}
+      e2e="defaultLink"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  font-family: ",
+              [Function],
+              ";
+  font-weight: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  text-transform: ",
+              [Function],
+              ";
+  font-style: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  opacity: ",
+              [Function],
+              ";
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: ",
+              [Function],
+              ";
+    text-decoration: none;
+  }
+",
+            ],
+          },
+          "displayName": "styled.a",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      italic={false}
       opacity={1}
       size="1rem"
+      uppercase={false}
+      weight={500}
     >
-      MyLink
-    </a>
+      <a
+        className="c0"
+        data-e2e="defaultLink"
+        opacity={1}
+        size="1rem"
+      >
+        MyLink
+      </a>
+    </StyledComponent>
   </styled.a>
 </Link>
 `;

@@ -3,11 +3,11 @@
 exports[`TabMenuToggler should render correctly 1`] = `
 .c1 {
   fill: #545456;
-  cursor: pointer;
+  cursor: default;
 }
 
 .c1:hover {
-  fill: #757679;
+  fill: #545456;
 }
 
 .c0 {
@@ -22,38 +22,132 @@ exports[`TabMenuToggler should render correctly 1`] = `
 }
 
 <TabMenuToggler>
-  <Styled(FasBars)>
-    <FasBars
-      className="c0"
-      selectable={true}
+  <Styled(FasBars)
+    selected={true}
+    size="20px"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-iChnts",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  position: absolute;
+  right: 20px;
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    display: none;
+  }
+",
+            ],
+          },
+          "displayName": "Styled(FasBars)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-iChnts",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        }
+      }
+      forwardedRef={null}
+      selected={true}
       size="20px"
     >
-      <Styled(SvgFasBars)
+      <FasBars
         className="c0"
-        height="20px"
-        selectable={1}
-        width="20px"
+        selectable={false}
+        selected={true}
+        size="20px"
       >
-        <SvgFasBars
-          className="c0 c1"
+        <Styled(SvgFasBars)
+          className="c0"
           height="20px"
-          selectable={1}
+          selectable={0}
+          selected={true}
           width="20px"
         >
-          <svg
-            className="c0 c1"
+          <StyledComponent
+            className="c0"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwNswr",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+    ",
+                    "
+  fill: ",
+                    [Function],
+                    ";
+  cursor: ",
+                    [Function],
+                    ";
+
+  &:hover {
+    fill: ",
+                    [Function],
+                    ";
+  }
+",
+                    ";
+  ",
+                  ],
+                },
+                "displayName": "Styled(SvgFasBars)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwNswr",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              }
+            }
+            forwardedRef={null}
             height="20px"
-            selectable={1}
-            viewBox="0 0 448 512"
+            selectable={0}
+            selected={true}
             width="20px"
           >
-            <path
-              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-            />
-          </svg>
-        </SvgFasBars>
-      </Styled(SvgFasBars)>
-    </FasBars>
+            <SvgFasBars
+              className="c0 c1"
+              height="20px"
+              selectable={0}
+              selected={true}
+              width="20px"
+            >
+              <svg
+                className="c0 c1"
+                height="20px"
+                selectable={0}
+                selected={true}
+                viewBox="0 0 448 512"
+                width="20px"
+              >
+                <path
+                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                />
+              </svg>
+            </SvgFasBars>
+          </StyledComponent>
+        </Styled(SvgFasBars)>
+      </FasBars>
+    </StyledComponent>
   </Styled(FasBars)>
 </TabMenuToggler>
 `;

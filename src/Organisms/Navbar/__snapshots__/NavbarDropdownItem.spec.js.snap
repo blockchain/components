@@ -55,17 +55,51 @@ exports[`NavbarDropdownItem should render correctly 1`] = `
 
 <NavbarDropdownItem>
   <Styled(Link)>
-    <Link
-      capitalize={false}
-      className="c0"
-      e2e="defaultLink"
-      italic={false}
-      opacity={1}
-      size="1rem"
-      uppercase={false}
-      weight={400}
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  height: 2.5rem;
+  margin-bottom: 1.5rem;
+  white-space: nowrap;
+  text-decoration: none;
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    &:hover span:first-child {
+      text-decoration: underline;
+    }
+  }
+",
+            ],
+          },
+          "displayName": "Styled(Link)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.a
+      <Link
         capitalize={false}
         className="c0"
         e2e="defaultLink"
@@ -75,14 +109,92 @@ exports[`NavbarDropdownItem should render correctly 1`] = `
         uppercase={false}
         weight={400}
       >
-        <a
-          className="c0 c1"
-          data-e2e="defaultLink"
+        <styled.a
+          capitalize={false}
+          className="c0"
+          e2e="defaultLink"
+          italic={false}
           opacity={1}
           size="1rem"
-        />
-      </styled.a>
-    </Link>
+          uppercase={false}
+          weight={400}
+        >
+          <StyledComponent
+            capitalize={false}
+            className="c0"
+            e2e="defaultLink"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [
+                  [Function],
+                ],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  font-family: ",
+                    [Function],
+                    ";
+  font-weight: ",
+                    [Function],
+                    ";
+  font-size: ",
+                    [Function],
+                    ";
+  text-transform: ",
+                    [Function],
+                    ";
+  font-style: ",
+                    [Function],
+                    ";
+  color: ",
+                    [Function],
+                    ";
+  opacity: ",
+                    [Function],
+                    ";
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: ",
+                    [Function],
+                    ";
+    text-decoration: none;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.a",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "a",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            italic={false}
+            opacity={1}
+            size="1rem"
+            uppercase={false}
+            weight={400}
+          >
+            <a
+              className="c0 c1"
+              data-e2e="defaultLink"
+              opacity={1}
+              size="1rem"
+            />
+          </StyledComponent>
+        </styled.a>
+      </Link>
+    </StyledComponent>
   </Styled(Link)>
 </NavbarDropdownItem>
 `;

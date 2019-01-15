@@ -26,18 +26,42 @@ exports[`FooterElement should render correctly 1`] = `
 }
 
 <FooterLink>
-  <Styled(Link)>
-    <Link
-      capitalize={false}
-      className="c0"
-      e2e="defaultLink"
-      italic={false}
-      opacity={1}
+  <Styled(Link)
+    size="1rem"
+    weight={500}
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  position: relative;
+  white-space: nowrap;
+",
+            ],
+          },
+          "displayName": "Styled(Link)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        }
+      }
+      forwardedRef={null}
       size="1rem"
-      uppercase={false}
       weight={500}
     >
-      <styled.a
+      <Link
         capitalize={false}
         className="c0"
         e2e="defaultLink"
@@ -47,16 +71,94 @@ exports[`FooterElement should render correctly 1`] = `
         uppercase={false}
         weight={500}
       >
-        <a
-          className="c0 c1"
-          data-e2e="defaultLink"
+        <styled.a
+          capitalize={false}
+          className="c0"
+          e2e="defaultLink"
+          italic={false}
           opacity={1}
           size="1rem"
+          uppercase={false}
+          weight={500}
         >
-          FooterLink
-        </a>
-      </styled.a>
-    </Link>
+          <StyledComponent
+            capitalize={false}
+            className="c0"
+            e2e="defaultLink"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [
+                  [Function],
+                ],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  font-family: ",
+                    [Function],
+                    ";
+  font-weight: ",
+                    [Function],
+                    ";
+  font-size: ",
+                    [Function],
+                    ";
+  text-transform: ",
+                    [Function],
+                    ";
+  font-style: ",
+                    [Function],
+                    ";
+  color: ",
+                    [Function],
+                    ";
+  opacity: ",
+                    [Function],
+                    ";
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: ",
+                    [Function],
+                    ";
+    text-decoration: none;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.a",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "a",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            italic={false}
+            opacity={1}
+            size="1rem"
+            uppercase={false}
+            weight={500}
+          >
+            <a
+              className="c0 c1"
+              data-e2e="defaultLink"
+              opacity={1}
+              size="1rem"
+            >
+              FooterLink
+            </a>
+          </StyledComponent>
+        </styled.a>
+      </Link>
+    </StyledComponent>
   </Styled(Link)>
 </FooterLink>
 `;

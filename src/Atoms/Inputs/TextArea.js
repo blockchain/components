@@ -1,7 +1,7 @@
 // @flow strict
-import React from 'react'
+import * as React from 'react'
 import PropTypes from 'prop-types'
-import styled, { type ReactComponentFunctional } from 'styled-components'
+import styled from 'styled-components'
 
 import injectE2E from '../../Tools/injectE2E'
 import {
@@ -20,10 +20,7 @@ const Container = styled.div`
   width: ${prop<PropsType>('width')};
 `
 
-const Wrapper: ReactComponentFunctional<PropsType> = styled.textarea.attrs({
-  'data-e2e': injectE2E,
-  name: (props: PropsType) => props.name,
-})`
+const Wrapper = styled.textarea.attrs(injectE2E)`
   display: block;
   width: ${prop<PropsType>('width')};
   height: ${prop<PropsType>('height')};

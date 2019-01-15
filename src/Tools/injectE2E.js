@@ -1,9 +1,9 @@
 // @flow strict
 import type { ThemeType } from './theme'
 
-const injectE2E = (props: { +e2e?: string, +theme: ThemeType }) =>
-  props.theme.e2e ? props.e2e || '' : undefined
+const EMPTY = {}
 
-export type E2ePropType = { e2e?: string }
+const injectE2E = (props: { +e2e?: string, +theme: ThemeType }) =>
+  props.theme.e2e ? { 'data-e2e': props.e2e } || '' : EMPTY
 
 export default injectE2E

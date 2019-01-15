@@ -31,11 +31,60 @@ exports[`Cartridge should render correctly 1`] = `
 
 <Cartridge>
   <styled.span>
-    <span
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: ",
+              [Function],
+              ";
+  background-color: ",
+              [Function],
+              ";
+  font-family: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  font-weight: 700;
+  word-wrap: normal;
+  text-transform: uppercase;
+  padding: 0.25rem;
+  margin-left: 0.75rem;
+  border-radius: 2px;
+",
+            ],
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <span />
-    </span>
+      <span
+        className="c0"
+      >
+        <span />
+      </span>
+    </StyledComponent>
   </styled.span>
 </Cartridge>
 `;

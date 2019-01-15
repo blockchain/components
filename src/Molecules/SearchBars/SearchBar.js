@@ -43,10 +43,7 @@ const IconContainer = styled.div`
   border-color: transparent;
 `
 
-const SearchIcon = styled(FasSearch).attrs({
-  selectable: false,
-  size: '20px',
-})`
+const SearchIcon = styled(FasSearch)`
   fill: ${theme('searchBarIconColor')};
 
   &:hover {
@@ -68,9 +65,7 @@ const SearchInput = styled(Input)`
   }
 `
 
-const GoContainer = styled.div.attrs({
-  'data-e2e': injectE2E,
-})`
+const GoContainer = styled.div.attrs(injectE2E)`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -94,6 +89,7 @@ const GoContainer = styled.div.attrs({
     cursor: pointer;
   }
 `
+
 const GoLabel = () => <>Go</>
 
 const SearchBar = ({
@@ -110,7 +106,7 @@ const SearchBar = ({
   return (
     <Wrapper width={width}>
       <IconContainer>
-        <SearchIcon />
+        <SearchIcon selectable={false} size="20px" />
       </IconContainer>
       <SearchInput e2e={`${e2e || ''}.Input`} onChange={onChange} {...rest} />
       <GoContainer e2e={`${e2e || ''}.Button`} onClick={onClick}>

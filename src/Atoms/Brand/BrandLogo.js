@@ -1,39 +1,43 @@
 // @flow strict
 import PropTypes from 'prop-types'
-import React from 'react'
-import styled, { type ReactComponentFunctional } from 'styled-components'
+import * as React from 'react'
+import styled from 'styled-components'
 
 export type PropsType = {
-  +size?: string,
+  +size: string,
 }
 
-const Wrapper: ReactComponentFunctional<PropsType> = styled.svg.attrs({
-  viewBox: '0 0 103.9 103.9',
-})`
+const Wrapper = styled.svg`
   height: ${(props: PropsType) => props.size};
   width: ${(props: PropsType) => props.size};
 `
+
 const Path1 = styled.path`
   fill: #00aee6;
 `
+
 const Path2 = styled.path`
   fill: #123962;
 `
+
 const Path3 = styled.path`
   fill: #b1d4e5;
 `
+
 const Polygon1 = styled.polygon`
   fill: #b1d4e5;
 `
+
 const Polygon2 = styled.polygon`
   fill: #2754ba;
 `
+
 const Path4 = styled.path`
   fill: #799eb2;
 `
 
 const BrandLogo = (props: PropsType) => (
-  <Wrapper {...props}>
+  <Wrapper {...props} viewBox="0 0 103.9 103.9">
     <Path1 d="M38.6,52L17,73.5l27.1,27.1c4.4,4.4,11.4,4.4,15.8,0l27.1-27.1L65.3,52L52,38.6L38.6,52z" />
     <Path2 d="M17,30.4L3.3,44.1c-4.4,4.4-4.4,11.4,0,15.8L17,73.5L38.6,52L52,38.6L30.4,17L17,30.4z" />
     <Path3 d="M73.5,60.1l13.4,13.4l13.7-13.7c4.4-4.4,4.4-11.4,0-15.8l-5.5-5.5L73.5,60.1z" />

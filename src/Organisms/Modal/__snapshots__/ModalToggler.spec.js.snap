@@ -20,24 +20,71 @@ exports[`ModalToggler should render correctly 1`] = `
       selectable={0}
       width="28px"
     >
-      <SvgFasTimes
-        className="c0"
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-jGVZLC",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+    ",
+                "
+  fill: ",
+                [Function],
+                ";
+  cursor: ",
+                [Function],
+                ";
+
+  &:hover {
+    fill: ",
+                [Function],
+                ";
+  }
+",
+                ";
+  ",
+              ],
+            },
+            "displayName": "Styled(SvgFasTimes)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-jGVZLC",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          }
+        }
+        forwardedRef={null}
         height="28px"
         selectable={0}
         width="28px"
       >
-        <svg
+        <SvgFasTimes
           className="c0"
           height="28px"
           selectable={0}
-          viewBox="0 0 352 512"
           width="28px"
         >
-          <path
-            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-          />
-        </svg>
-      </SvgFasTimes>
+          <svg
+            className="c0"
+            height="28px"
+            selectable={0}
+            viewBox="0 0 352 512"
+            width="28px"
+          >
+            <path
+              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            />
+          </svg>
+        </SvgFasTimes>
+      </StyledComponent>
     </Styled(SvgFasTimes)>
   </FasTimes>
 </ModalToggler>

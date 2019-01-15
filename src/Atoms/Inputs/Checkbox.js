@@ -1,10 +1,10 @@
 // @flow strict
-import React from 'react'
-import styled, { type ReactComponentFunctional } from 'styled-components'
+import * as React from 'react'
+import styled from 'styled-components'
 
-import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
+import injectE2E from '../../Tools/injectE2E'
 import { fontSize, theme } from '../../Tools/interpolation'
-import type { PropsType, HtmlInputType } from './Input'
+import type { PropsType } from './Input'
 
 const toId = (name?: string) => `${name || ''}-checkbox`
 
@@ -36,14 +36,7 @@ const Wrapper = styled.div`
   }
 `
 
-type InputPropsType = { +name?: string, +type: HtmlInputType } & E2ePropType
-
-const Input: ReactComponentFunctional<InputPropsType> = styled.input.attrs({
-  'data-e2e': injectE2E,
-  id: (props: InputPropsType) => toId(props.name),
-  name: (props: InputPropsType) => props.name,
-  type: 'checkbox',
-})`
+const Input = styled.input.attrs(injectE2E)`
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -56,11 +49,7 @@ const Input: ReactComponentFunctional<InputPropsType> = styled.input.attrs({
   width: 1px;
 `
 
-export const CheckboxLabel: ReactComponentFunctional<{
-  +name?: string,
-}> = styled.label.attrs({
-  htmlFor: (props: InputPropsType) => toId(props.name),
-})`
+export const CheckboxLabel = styled.label`
   position: relative;
   display: flex;
   align-items: center;
@@ -102,8 +91,8 @@ export const CheckboxLabel: ReactComponentFunctional<{
 
 const Checkbox = ({ className, input, ...rest }: PropsType) => (
   <Wrapper className={className}>
-    <Input {...input} {...rest} />
-    <CheckboxLabel name={rest.name}>{rest.label}</CheckboxLabel>
+    <Input {...input} {...rest} id={toId(rest.name)} type="checkbox" />
+    <CheckboxLabel htmlFor={toId(rest.name)}>{rest.label}</CheckboxLabel>
   </Wrapper>
 )
 

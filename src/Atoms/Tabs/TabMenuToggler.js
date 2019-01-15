@@ -1,9 +1,9 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
-import styled, { type ReactComponentFunctional } from 'styled-components'
+import styled from 'styled-components'
 
-import { FasBars, type IconPropsType } from '../../Atoms/Icons'
+import { FasBars } from '../../Atoms/Icons'
 import { screenSize } from '../../Tools/interpolation'
 
 export type PropsType = {
@@ -11,10 +11,7 @@ export type PropsType = {
   +onToggle?: (SyntheticEvent<HTMLDivElement>) => void,
 }
 
-const Toggler: ReactComponentFunctional<IconPropsType> = styled(FasBars).attrs({
-  selectable: true,
-  size: '20px',
-})`
+const Toggler = styled(FasBars)`
   position: absolute;
   right: 20px;
 
@@ -24,7 +21,7 @@ const Toggler: ReactComponentFunctional<IconPropsType> = styled(FasBars).attrs({
 `
 
 const TabMenuToggler = ({ onToggle, ...rest }: PropsType) => (
-  <Toggler onClick={onToggle} {...rest} />
+  <Toggler onClick={onToggle} selected size="20px" {...rest} />
 )
 
 TabMenuToggler.propTypes = {

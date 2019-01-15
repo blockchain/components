@@ -34,12 +34,55 @@ exports[`Container should render correctly 1`] = `
   <styled.div
     height="auto"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: ",
+              [Function],
+              ";
+  margin: 0 auto;
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    width: 75rem;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       height="auto"
     >
-      MyContainer
-    </div>
+      <div
+        className="c0"
+        height="auto"
+      >
+        MyContainer
+      </div>
+    </StyledComponent>
   </styled.div>
 </Container>
 `;

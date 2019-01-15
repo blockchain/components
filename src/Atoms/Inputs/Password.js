@@ -1,6 +1,6 @@
 // @flow strict
-import React from 'react'
-import styled, { type ReactComponentFunctional } from 'styled-components'
+import * as React from 'react'
+import styled from 'styled-components'
 
 import { fontSize, theme } from '../../Tools/interpolation'
 import Input, { type PropsType, type HtmlInputType } from './Input'
@@ -19,7 +19,7 @@ const Switch = styled.span`
     text-decoration: underline;
   }
 `
-const PasswordInput: ReactComponentFunctional<PropsType> = styled(Input)`
+const PasswordInput: React.ComponentType<PropsType> = styled(Input)`
   input {
     padding-right: 3rem;
   }

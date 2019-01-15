@@ -1,7 +1,7 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
-import styled, { type ReactComponentFunctional } from 'styled-components'
+import styled from 'styled-components'
 
 import Link, { type PropsType as LinkPropsType } from '../../Atoms/Links/Link'
 import { screenSize } from '../../Tools/interpolation'
@@ -10,7 +10,7 @@ export type PropsType = {
   +children?: React.Node,
 }
 
-const Wrapper: ReactComponentFunctional<LinkPropsType> = styled(Link)`
+const Wrapper: React.ComponentType<LinkPropsType> = styled(Link)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;

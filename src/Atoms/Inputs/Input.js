@@ -1,9 +1,9 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
-import styled, { type ReactComponentFunctional } from 'styled-components'
+import styled from 'styled-components'
 
-import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
+import injectE2E from '../../Tools/injectE2E'
 import {
   fontSize,
   prop,
@@ -32,11 +32,21 @@ export type PropsType = {
   +name?: string,
   +renderSuffix?: (disabled?: boolean) => React.Node,
   +type: HtmlInputType,
-  +value?: string,
+  +value?: string | number,
   +width?: string,
 }
 
-type WrapperPropsType = { +name?: string, +type: HtmlInputType } & E2ePropType
+type InputPropsType = {
+  ...$Exact<$Diff<PropsType, { input: * }>>,
+  ...$Exact<$ElementType<PropsType, 'input'>>,
+}
+
+type LabelPropsType = {
+  children?: React.Node,
+  disabled?: boolean,
+  error: boolean,
+  htmlFor?: string,
+}
 
 const Container = styled.div`
   display: flex;
@@ -45,13 +55,7 @@ const Container = styled.div`
   position: relative;
 `
 
-const InputWrapper: ReactComponentFunctional<WrapperPropsType> = styled.input.attrs(
-  {
-    'data-e2e': injectE2E,
-    name: (props: PropsType) => props.name,
-    type: (props: PropsType) => props.type,
-  },
-)`
+const InputWrapper = styled.input.attrs(injectE2E)`
   display: block;
   height: 2.7rem;
   width: ${prop<PropsType>('width')};
@@ -61,7 +65,7 @@ const InputWrapper: ReactComponentFunctional<WrapperPropsType> = styled.input.at
   font-size: ${fontSize('md')};
   color: ${theme('inputColor')};
   border-width: 1px;
-  border-color: ${(props: PropsType & ThemePropType) =>
+  border-color: ${(props: InputPropsType & ThemePropType) =>
     props.error != null
       ? theme('dangerColor')(props)
       : theme('inputBorderColor')(props)};
@@ -83,7 +87,7 @@ const InputWrapper: ReactComponentFunctional<WrapperPropsType> = styled.input.at
   &:active:not(:disabled),
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
-      ${(props: PropsType & ThemePropType) =>
+      ${(props: InputPropsType & ThemePropType) =>
         props.error != null ? 'transparent' : theme('inputActiveColor')};
   }
 
@@ -93,25 +97,15 @@ const InputWrapper: ReactComponentFunctional<WrapperPropsType> = styled.input.at
   }
 `
 
-export type LabelPropsType = {
-  +disabled?: boolean,
-  +error: boolean,
-  +name?: string,
-}
-
-export const InputLabel: ReactComponentFunctional<LabelPropsType> = styled.label.attrs(
-  {
-    htmlFor: (props: PropsType) => props.name,
-  },
-)`
+export const InputLabel = styled.label`
   font-family: ${theme('fontPrimary')};
   font-size: ${fontSize('sm')};
   padding-bottom: 0.5rem;
   color: ${(props: LabelPropsType & ThemePropType) =>
-    props.error && props.disabled !== true
+    props.error === true && props.disabled !== true
       ? props.theme.dangerColor
       : props.theme.inputLabelColor};
-  ${(props: PropsType) =>
+  ${(props: LabelPropsType) =>
     props.disabled === true ? 'cursor: not-allowed' : ''};
 `
 
@@ -136,7 +130,11 @@ const Input = ({
   if (hasLabel || hasError) {
     return (
       <Container className={className} width={rest.width}>
-        <InputLabel disabled={rest.disabled} error={hasError} name={rest.name}>
+        <InputLabel
+          disabled={rest.disabled}
+          error={hasError}
+          htmlFor={rest.name}
+        >
           {`${rest.label || ''}${
             hasLabel && hasError ? ' - ' : ''
           }${rest.error || ''}`}

@@ -1,18 +1,17 @@
 // @flow strict
-import React from 'react'
-import styled, { type ReactComponentFunctional } from 'styled-components'
+import * as React from 'react'
+import styled from 'styled-components'
 
-import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
+import injectE2E from '../../Tools/injectE2E'
 import { fontSize, theme } from '../../Tools/interpolation'
-import type { PropsType, HtmlInputType } from './Input'
+import type { PropsType } from './Input'
 
-const toId = (value?: string) => `${value || ''}-radio`
+const toId = (name?: string | number) =>
+  `${name != null ? name : '' || ''}-checkbox`
 
 const Wrapper = styled.div`
   display: flex;
 `
-
-type InputPropsType = { +name?: string, +type: HtmlInputType } & E2ePropType
 
 const RadioButton = styled.span`
   margin-right: 0.5rem;
@@ -24,12 +23,7 @@ const RadioButton = styled.span`
   width: 16px;
 `
 
-const Input: ReactComponentFunctional<InputPropsType> = styled.input.attrs({
-  'data-e2e': injectE2E,
-  id: (props: PropsType) => toId(props.value),
-  name: (props: PropsType) => props.name,
-  type: 'radio',
-})`
+const Input = styled.input.attrs(injectE2E)`
   position: absolute;
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -64,11 +58,7 @@ const Input: ReactComponentFunctional<InputPropsType> = styled.input.attrs({
   }
 `
 
-export const RadioLabel: ReactComponentFunctional<{
-  +name?: string,
-}> = styled.label.attrs({
-  htmlFor: (props: PropsType) => toId(props.value),
-})`
+export const RadioLabel = styled.label`
   position: relative;
   left: 1px;
   display: flex;
@@ -79,10 +69,10 @@ export const RadioLabel: ReactComponentFunctional<{
   font-size: ${fontSize('md')};
 `
 
-const Radio = ({ input, ...rest }: PropsType) => (
+const Radio = ({ className, input, ...rest }: PropsType) => (
   <Wrapper>
-    <Input {...input} {...rest} />
-    <RadioLabel name={rest.name} value={rest.value}>
+    <Input {...input} {...rest} id={toId(rest.value)} type="radio" />
+    <RadioLabel htmlFor={toId(rest.value)}>
       <RadioButton />
       {rest.label}
     </RadioLabel>

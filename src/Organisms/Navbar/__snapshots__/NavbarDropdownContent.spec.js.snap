@@ -74,15 +74,140 @@ exports[`NavbarDropdownContent should render correctly 1`] = `
 
 <NavbarDropdownContent>
   <styled.div>
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  width: 100%;
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    position: absolute;
+    width: auto;
+    margin: 0.25rem 0;
+    background-color: transparent;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.div>
-        <div
-          className="c1"
-        />
-      </styled.div>
-    </div>
+      <div
+        className="c0"
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  & > :last-child {
+    margin-bottom: 0 !important;
+  }
+
+  @media (max-width: ",
+                    [Function],
+                    ") {
+    padding: 1.1rem 0;
+  }
+
+  @media (min-width: ",
+                    [Function],
+                    ") {
+    margin-top: 15px;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    background-color: ",
+                    [Function],
+                    ";
+    box-shadow: 0 10px 60px -10px ",
+                    [Function],
+                    ",
+      0 8px 16px ",
+                    [Function],
+                    ";
+
+    &::after,
+    &::before {
+      bottom: 100%;
+      left: 10%;
+      border: solid transparent;
+      content: ' ';
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &::after {
+      border-color: transparent;
+      border-bottom-color: ",
+                    [Function],
+                    ";
+      border-width: 10px;
+      margin-left: -10px;
+    }
+
+    &::before {
+      border-color: transparent;
+      border-bottom-color: ",
+                    [Function],
+                    ";
+      border-width: 12px;
+      margin-left: -12px;
+    }
+  }
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            />
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
   </styled.div>
 </NavbarDropdownContent>
 `;

@@ -78,20 +78,124 @@ exports[`TabMenuItem should render correctly 1`] = `
     className=" disabled"
     e2e="defaultTabMenuItem"
   >
-    <div
-      className=" disabled c0"
-      data-e2e="defaultTabMenuItem"
+    <StyledComponent
+      className=" disabled"
+      e2e="defaultTabMenuItem"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  position: relative;
+  flex: 1 auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (max-width: ",
+              [Function],
+              ") {
+    order: 1;
+
+    &.hidden {
+      order: 2;
+    }
+  }
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    display: flex;
+    justify-content: center;
+    order: 1;
+
+    &:hover {
+      & :last-child {
+        opacity: 1;
+      }
+    }
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      MyTabMenuItem
-      <styled.div
-        selected={false}
+      <div
+        className=" disabled c0"
+        data-e2e="defaultTabMenuItem"
       >
-        <div
-          className="c1"
+        MyTabMenuItem
+        <styled.div
           selected={false}
-        />
-      </styled.div>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 0.2rem;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  background-color: ",
+                    [Function],
+                    ";
+  opacity: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            selected={false}
+          >
+            <div
+              className="c1"
+              selected={false}
+            />
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
   </styled.div>
 </TabMenuItem>
 `;
@@ -173,20 +277,123 @@ exports[`TabMenuItem should render correctly when selected 1`] = `
   <styled.div
     e2e="defaultTabMenuItem"
   >
-    <div
-      className="c0"
-      data-e2e="defaultTabMenuItem"
+    <StyledComponent
+      e2e="defaultTabMenuItem"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  position: relative;
+  flex: 1 auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (max-width: ",
+              [Function],
+              ") {
+    order: 1;
+
+    &.hidden {
+      order: 2;
+    }
+  }
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    display: flex;
+    justify-content: center;
+    order: 1;
+
+    &:hover {
+      & :last-child {
+        opacity: 1;
+      }
+    }
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      MyTabMenuItem
-      <styled.div
-        selected={true}
+      <div
+        className="c0"
+        data-e2e="defaultTabMenuItem"
       >
-        <div
-          className="c1"
+        MyTabMenuItem
+        <styled.div
           selected={true}
-        />
-      </styled.div>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 0.2rem;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  background-color: ",
+                    [Function],
+                    ";
+  opacity: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            selected={true}
+          >
+            <div
+              className="c1"
+              selected={true}
+            />
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
   </styled.div>
 </TabMenuItem>
 `;
