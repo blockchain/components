@@ -48,14 +48,14 @@ const StyledTooltip = styled.div`
   height: 2rem;
   line-height: 2rem;
   padding: 0 0.5rem;
-  margin-top: ${(props) =>
-    props.marginPlacement === 'bottom' ? '0.25rem' : '0'};
-  margin-bottom: ${(props) =>
-    props.marginPlacement === 'top' ? '0.25rem' : '0'};
-  margin-left: ${(props) =>
-    props.marginPlacement === 'right' ? '0.25rem' : '0'};
-  margin-right: ${(props) =>
-    props.marginPlacement === 'left' ? '0.25rem' : '0'};
+  margin-top: ${({ marginPlacement }: { marginPlacement: string }) =>
+    marginPlacement === 'bottom' ? '0.25rem' : '0'};
+  margin-bottom: ${({ marginPlacement }: { marginPlacement: string }) =>
+    marginPlacement === 'top' ? '0.25rem' : '0'};
+  margin-left: ${({ marginPlacement }: { marginPlacement: string }) =>
+    marginPlacement === 'right' ? '0.25rem' : '0'};
+  margin-right: ${({ marginPlacement }: { marginPlacement: string }) =>
+    marginPlacement === 'left' ? '0.25rem' : '0'};
   color: ${theme('tooltipColor')};
   border: 1px solid ${theme('tooltipBorderColor')};
   background-color: ${theme('tooltipBackgroundColor')};
@@ -87,7 +87,7 @@ const Transition = styled.div`
   }
 `
 
-const computeMarginPlacement = (placement: PlacementType = 'top'): string =>
+const computeMarginPlacement = (placement: PlacementType = 'top') =>
   placement.split('-')[0]
 
 class Tooltip extends React.Component<PropsType, StateType> {
