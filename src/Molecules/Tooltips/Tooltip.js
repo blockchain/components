@@ -87,7 +87,7 @@ const Transition = styled.div`
   }
 `
 
-const computeMarginPlacement = (placement: PlacementType = 'top') =>
+const computeMarginPlacement = (placement: PlacementType = 'top'): string =>
   placement.split('-')[0]
 
 class Tooltip extends React.Component<PropsType, StateType> {
