@@ -87,10 +87,10 @@ exports[`SearchBar should render correctly 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -133,15 +133,15 @@ exports[`SearchBar should render correctly 1`] = `
   fill: #000;
 }
 
-.c4 {
+.c4 > input {
   height: 3.5rem;
   padding-left: 3rem;
   background-color: inherit;
   border-color: transparent;
 }
 
-.c4:focus,
-.c4:active {
+.c4 > input:focus,
+.c4 > input:active {
   box-shadow: none !important;
 }
 
@@ -372,10 +372,10 @@ exports[`SearchBar should render correctly with e2e 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -418,15 +418,15 @@ exports[`SearchBar should render correctly with e2e 1`] = `
   fill: #000;
 }
 
-.c4 {
+.c4 > input {
   height: 3.5rem;
   padding-left: 3rem;
   background-color: inherit;
   border-color: transparent;
 }
 
-.c4:focus,
-.c4:active {
+.c4 > input:focus,
+.c4 > input:active {
   box-shadow: none !important;
 }
 
@@ -657,10 +657,10 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -703,15 +703,15 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   fill: #000;
 }
 
-.c4 {
+.c4 > input {
   height: 3.5rem;
   padding-left: 3rem;
   background-color: inherit;
   border-color: transparent;
 }
 
-.c4:focus,
-.c4:active {
+.c4 > input:focus,
+.c4 > input:active {
   box-shadow: none !important;
 }
 
@@ -947,10 +947,10 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -993,15 +993,15 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   fill: #000;
 }
 
-.c4 {
+.c4 > input {
   height: 3.5rem;
   padding-left: 3rem;
   background-color: inherit;
   border-color: transparent;
 }
 
-.c4:focus,
-.c4:active {
+.c4 > input:focus,
+.c4 > input:active {
   box-shadow: none !important;
 }
 
@@ -1235,10 +1235,10 @@ exports[`SearchBar should render correctly with value 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1281,15 +1281,15 @@ exports[`SearchBar should render correctly with value 1`] = `
   fill: #000;
 }
 
-.c4 {
+.c4 > input {
   height: 3.5rem;
   padding-left: 3rem;
   background-color: inherit;
   border-color: transparent;
 }
 
-.c4:focus,
-.c4:active {
+.c4 > input:focus,
+.c4 > input:active {
   box-shadow: none !important;
 }
 
@@ -1530,10 +1530,10 @@ exports[`SearchBar should render correctly with width 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1576,15 +1576,15 @@ exports[`SearchBar should render correctly with width 1`] = `
   fill: #000;
 }
 
-.c4 {
+.c4 > input {
   height: 3.5rem;
   padding-left: 3rem;
   background-color: inherit;
   border-color: transparent;
 }
 
-.c4:focus,
-.c4:active {
+.c4 > input:focus,
+.c4 > input:active {
   box-shadow: none !important;
 }
 

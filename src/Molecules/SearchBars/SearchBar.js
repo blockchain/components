@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: ${prop<PropsType>('width')};
   background-color: ${theme('searchBarBackgroundColor')};
@@ -55,14 +55,16 @@ const SearchIcon = styled(FasSearch).attrs({
 `
 
 const SearchInput = styled(Input)`
-  height: 3.5rem;
-  padding-left: 3rem;
-  background-color: inherit;
-  border-color: transparent;
+  & > input {
+    height: 3.5rem;
+    padding-left: 3rem;
+    background-color: inherit;
+    border-color: transparent;
 
-  &:focus,
-  &:active {
-    box-shadow: none !important;
+    &:focus,
+    &:active {
+      box-shadow: none !important;
+    }
   }
 `
 

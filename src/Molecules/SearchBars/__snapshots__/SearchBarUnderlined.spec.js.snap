@@ -99,13 +99,13 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
   background-color: rgba(0,0,0,0);
 }
 
-.c1 {
+.c1 > input {
   background-color: inherit;
   border-color: transparent;
 }
 
-.c1:focus,
-.c1:active {
+.c1 > input:focus,
+.c1 > input:active {
   box-shadow: none !important;
 }
 
@@ -318,13 +318,13 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
   background-color: rgba(0,0,0,0);
 }
 
-.c1 {
+.c1 > input {
   background-color: inherit;
   border-color: transparent;
 }
 
-.c1:focus,
-.c1:active {
+.c1 > input:focus,
+.c1 > input:active {
   box-shadow: none !important;
 }
 
@@ -537,13 +537,13 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
   background-color: rgba(0,0,0,0);
 }
 
-.c1 {
+.c1 > input {
   background-color: inherit;
   border-color: transparent;
 }
 
-.c1:focus,
-.c1:active {
+.c1 > input:focus,
+.c1 > input:active {
   box-shadow: none !important;
 }
 
@@ -761,13 +761,13 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
   background-color: rgba(0,0,0,0);
 }
 
-.c1 {
+.c1 > input {
   background-color: inherit;
   border-color: transparent;
 }
 
-.c1:focus,
-.c1:active {
+.c1 > input:focus,
+.c1 > input:active {
   box-shadow: none !important;
 }
 
@@ -983,13 +983,13 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
   background-color: rgba(0,0,0,0);
 }
 
-.c1 {
+.c1 > input {
   background-color: inherit;
   border-color: transparent;
 }
 
-.c1:focus,
-.c1:active {
+.c1 > input:focus,
+.c1 > input:active {
   box-shadow: none !important;
 }
 
@@ -1212,13 +1212,13 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
   background-color: rgba(0,0,0,0);
 }
 
-.c1 {
+.c1 > input {
   background-color: inherit;
   border-color: transparent;
 }
 
-.c1:focus,
-.c1:active {
+.c1 > input:focus,
+.c1 > input:active {
   box-shadow: none !important;
 }
 
