@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   }
 `
 
-type PropsType = { +children: React.Node }
+export type PropsType = { +children: React.Node }
 
 const Toggler = ({ children }: PropsType) => <Wrapper>{children}</Wrapper>
 

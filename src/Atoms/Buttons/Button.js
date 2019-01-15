@@ -8,7 +8,7 @@ import { fontSize, theme, type ThemePropType } from '../../Tools/interpolation'
 
 type HtmlButtonType = 'button' | 'reset' | 'submit'
 
-type PropsType = {
+export type PropsType = {
   +bounced?: boolean,
   +children?: React.Node,
   +disabled?: boolean,

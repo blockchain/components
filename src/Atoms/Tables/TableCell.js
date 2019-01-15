@@ -7,7 +7,7 @@ import { prop } from '../../Tools/interpolation'
 
 type AlignType = 'center' | 'left' | 'right'
 
-type PropsType = {
+export type PropsType = {
   +align?: AlignType,
   +children?: React.Node,
   +shrunk?: boolean,

@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   margin: 10px 0;
 `
 
-type PropsType = {
+export type PropsType = {
   +children?: React.Node,
 }
 

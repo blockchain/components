@@ -39,7 +39,7 @@ const Wrapper: ReactComponentFunctional<E2ePropType> = styled.a.attrs({
   }
 `
 
-type PropsType = {
+export type PropsType = {
   +children?: React.Node,
   +e2e?: string,
   +selected?: boolean,

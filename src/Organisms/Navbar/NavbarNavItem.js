@@ -23,7 +23,7 @@ const Wrapper = styled.li`
   }
 `
 
-type PropsType = {
+export type PropsType = {
   +children?: React.Node,
 }
 

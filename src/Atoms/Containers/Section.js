@@ -7,7 +7,7 @@ import { prop, theme } from '../../Tools/interpolation'
 
 type NatureType = 'none' | 'diamonds' | 'blocks'
 
-type PropsType = {
+export type PropsType = {
   +children?: React.Node,
   +height?: string,
   +nature?: NatureType,

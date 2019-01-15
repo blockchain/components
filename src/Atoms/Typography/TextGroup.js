@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 import { prop } from '../../Tools/interpolation'
 
-type PropsType = {
+export type PropsType = {
   +align?: 'center' | 'justify' | 'left' | 'right',
   +capitalize?: boolean,
   +children?: React.Node,

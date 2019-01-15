@@ -5,7 +5,7 @@ import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import Link, { type PropsType as LinkPropsType } from '../../Atoms/Links/Link'
 
-type PropsType = {
+export type PropsType = {
   +children?: React.Node,
 }
 

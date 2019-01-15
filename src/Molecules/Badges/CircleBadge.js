@@ -64,7 +64,7 @@ const WhiteTwitter: ReactComponentFunctional<IconPropsType> = styled(
   }
 `
 
-type PropsType = {
+export type PropsType = {
   +name?: 'facebook' | 'linkedin' | 'twitter',
   +size?: string,
 }

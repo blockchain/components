@@ -8,7 +8,7 @@ import Text, {
 } from '../../Atoms/Typography/Text'
 import { screenSize, theme } from '../../Tools/interpolation'
 
-type PropsType = {
+export type PropsType = {
   +children?: React.Node,
 }
 

@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 import { prop, theme } from '../../Tools/interpolation'
 
-type PropsType = {
+export type PropsType = {
   +children?: React.Node,
   +height?: string,
   +width?: string,

@@ -80,7 +80,7 @@ const IndicatorDanger = styled(IndicatorWarning)`
   }
 `
 
-type PropsType = {
+export type PropsType = {
   +description?: string,
   +e2e?: string,
   +onClose?: (SyntheticEvent<HTMLDivElement>) => void,

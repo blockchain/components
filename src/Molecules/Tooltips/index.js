@@ -1,4 +1,6 @@
 // @flow strict
-import Tooltip from './Tooltip'
+import type { PropsType as ITooltipPropsType } from './Tooltip'
 
-export { Tooltip }
+export type TooltipPropsType = ITooltipPropsType
+
+export { default as Tooltip } from './Tooltip'
