@@ -6,7 +6,7 @@ import styled, { type ReactComponentFunctional } from 'styled-components'
 import { FasTimes, FasBars, type IconPropsType } from '../../Atoms/Icons'
 import { screenSize, theme } from '../../Tools/interpolation'
 
-type PropsType = {
+export type PropsType = {
   +onToggle?: (SyntheticEvent<HTMLDivElement>) => void,
   +toggled?: boolean,
 }

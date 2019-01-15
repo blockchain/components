@@ -5,7 +5,7 @@ import styled, { keyframes } from 'styled-components'
 
 import { prop } from '../../Tools/interpolation'
 
-type PropsType = { +size?: string }
+export type PropsType = { +size?: string }
 
 const scaleDelay = keyframes`
   0%,

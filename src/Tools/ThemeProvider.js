@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components'
 import defaultTheme from './theme'
 import type { ThemeType } from './theme'
 
-type PropsType = {
+export type PropsType = {
   +children?: React.Node,
   +theme: ThemeType,
 }

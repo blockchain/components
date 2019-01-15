@@ -5,7 +5,7 @@ import styled, { type ReactComponentFunctional } from 'styled-components'
 
 import { prop, theme } from '../../Tools/interpolation'
 
-type PropsType = {
+export type PropsType = {
   +height?: string,
 }
 

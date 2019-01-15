@@ -6,7 +6,7 @@ import styled, { type ReactComponentFunctional } from 'styled-components'
 import injectE2E, { type E2ePropType } from '../../Tools/injectE2E'
 import { fontSize, theme, type ThemePropType } from '../../Tools/interpolation'
 
-type PropsType = {
+export type PropsType = {
   +children: React.Node,
   +e2e?: string,
   +selected?: boolean,

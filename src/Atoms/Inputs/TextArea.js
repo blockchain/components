@@ -12,7 +12,7 @@ import {
 } from '../../Tools/interpolation'
 import { InputLabel, type PropsType as InputPropsType } from './Input'
 
-type PropsType = InputPropsType & { +height?: string }
+export type PropsType = InputPropsType & { +height?: string }
 
 const Container = styled.div`
   display: flex;

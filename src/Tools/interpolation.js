@@ -20,4 +20,6 @@ const screenSize = (key: ScreenSizeType) => (props: ThemePropType) => {
 const theme = (key: $Keys<_ThemeType>) => (props: ThemePropType) =>
   props.theme[key]
 
-export { prop, fontSize, screenSize, theme }
+export { fontSize, prop, screenSize, theme }
+
+export default { fontSize, prop, screenSize, theme }

@@ -31,7 +31,7 @@ type StateType = {
   active: boolean,
 }
 
-type PropsType = {
+export type PropsType = {
   +children: React.Node,
   +className?: string,
   +duration: number,

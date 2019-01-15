@@ -35,7 +35,7 @@ const Circle2 = styled(Circle1)`
   animation-delay: -1s;
 `
 
-type PropsType = { +size?: string }
+export type PropsType = { +size?: string }
 
 const HeartbeatLoader = (props: PropsType) => (
   <Container {...props}>

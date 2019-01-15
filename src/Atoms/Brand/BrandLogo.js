@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled, { type ReactComponentFunctional } from 'styled-components'
 
-type PropsType = {
+export type PropsType = {
   +size?: string,
 }
 

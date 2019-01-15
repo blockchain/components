@@ -22,7 +22,7 @@ const Wrapper = styled.span`
   border-radius: 2px;
 `
 
-type PropsType = {
+export type PropsType = {
   +children?: React.Node,
 }
 

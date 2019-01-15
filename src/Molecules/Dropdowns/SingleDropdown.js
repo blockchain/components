@@ -11,7 +11,7 @@ import {
   type ThemePropType,
 } from '../../Tools/interpolation'
 
-type PropsType = {
+export type PropsType = {
   +capitalize?: boolean,
   +className?: string,
   +disabled?: boolean,

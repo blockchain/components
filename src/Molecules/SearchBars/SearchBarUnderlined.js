@@ -8,7 +8,7 @@ import { Input } from '../../Atoms/Inputs'
 import injectE2E from '../../Tools/injectE2E'
 import { prop, theme } from '../../Tools/interpolation'
 
-type PropsType = {
+export type PropsType = {
   +children?: React.Node,
   +e2e?: string,
   +onChange?: (SyntheticEvent<HTMLInputElement>) => void,
