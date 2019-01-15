@@ -19,13 +19,21 @@ const renderTrigger = (active) => <Text active={active}>Custom trigger!</Text>
 
 storiesOf('Molecules/Tooltips/Tooltip', module).add('default', () => (
   <>
-    <Tooltip text="Hover me!">This is the tooltip content.</Tooltip>
+    <Tooltip text="Hover me (short text)">This is the tooltip content.</Tooltip>
 
-    <Tooltip placement="left" text="Left">
+    <Tooltip text="Hover me (long text) !">
+      This is the a very long tooltip content that should be displayed on
+      several lines because its gonna look ugly otherwise. I am even gonna add a
+      lorem ipsum now so it looks super long ! Praesent sagittis lacus consequat
+      imperdiet pharetra. Nulla non auctor purus, id sollicitudin turpis.
+      Integer placerat eros in ex faucibus elementum.
+    </Tooltip>
+
+    <Tooltip placement="left" text="Hover me (Left placement) !">
       This is the tooltip content.
     </Tooltip>
 
-    <Tooltip placement="bottom" text="Bottom">
+    <Tooltip placement="bottom" text="Hover me (Bottom placement) !">
       This is the tooltip content.
     </Tooltip>
 
@@ -33,7 +41,7 @@ storiesOf('Molecules/Tooltips/Tooltip', module).add('default', () => (
       Custom renderTrigger prop
     </Tooltip>
 
-    <CustomTooltip text="Custom tooltip!">
+    <CustomTooltip text="Hover me (Custom tooltip)">
       This is the tooltip content.
     </CustomTooltip>
   </>

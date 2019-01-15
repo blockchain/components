@@ -45,7 +45,7 @@ const StyledTooltip = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2rem;
+  min-height: 2rem;
   line-height: 2rem;
   padding: 0 0.5rem;
   color: ${theme('tooltipColor')};
