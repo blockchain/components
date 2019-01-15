@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
 
+import Button from '../../Atoms/Buttons/Button'
 import Tooltip from './Tooltip'
 
 const Text = styled.div`
@@ -16,6 +17,8 @@ const CustomTooltip = styled(Tooltip)`
 `
 
 const renderTrigger = (active) => <Text active={active}>Custom trigger!</Text>
+
+const renderButton = () => <Button>With a button</Button>
 
 storiesOf('Molecules/Tooltips/Tooltip', module).add('default', () => (
   <>
@@ -44,5 +47,9 @@ storiesOf('Molecules/Tooltips/Tooltip', module).add('default', () => (
     <CustomTooltip text="Hover me (Custom tooltip)">
       This is the tooltip content.
     </CustomTooltip>
+
+    <Tooltip renderTrigger={renderButton}>
+      This is a tooltip triggered by a button
+    </Tooltip>
   </>
 ))
