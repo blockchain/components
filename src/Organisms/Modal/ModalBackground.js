@@ -20,6 +20,7 @@ const Wrapper = styled.div`
   align-items: center;
   background-color: ${theme('modalBackgroundColor')};
   transform: translateZ(0);
+  z-index: ${theme('modalZIndex')};
 `
 
 const ModalBackground = ({ children, ...rest }: PropsType) => (

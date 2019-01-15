@@ -52,6 +52,7 @@ const theme = {
   modalForegroundColor: palette.white,
   modalShadowColor: palette.gray1,
   modalBorderColor: palette.gray2,
+  modalZIndex: 1005,
   navbarBrandZIndex: 1001,
   navbarTogglerZIndex: 1001,
   navbarDropdownContentBackgroundColor: palette.white,
