@@ -56,10 +56,70 @@ exports[`NavbarNav should render correctly 1`] = `
     toggled={true}
     width="100%"
   >
-    <ul
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+
+  @media (max-width: ",
+              [Function],
+              ") {
+    & > li:first-child {
+      border-top: none;
+    }
+  }
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    display: ",
+              [Function],
+              ";
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    width: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.ul",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "ul",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      toggled={true}
       width="100%"
-    />
+    >
+      <ul
+        className="c0"
+        width="100%"
+      />
+    </StyledComponent>
   </styled.ul>
 </NavbarNav>
 `;
@@ -120,10 +180,70 @@ exports[`NavbarNav should render correctly with toggled 1`] = `
     toggled={true}
     width="100%"
   >
-    <ul
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+
+  @media (max-width: ",
+              [Function],
+              ") {
+    & > li:first-child {
+      border-top: none;
+    }
+  }
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    display: ",
+              [Function],
+              ";
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    width: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.ul",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "ul",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      toggled={true}
       width="100%"
-    />
+    >
+      <ul
+        className="c0"
+        width="100%"
+      />
+    </StyledComponent>
   </styled.ul>
 </NavbarNav>
 `;
@@ -184,10 +304,70 @@ exports[`NavbarNav should render correctly with toggled 2`] = `
     toggled={true}
     width="auto"
   >
-    <ul
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+
+  @media (max-width: ",
+              [Function],
+              ") {
+    & > li:first-child {
+      border-top: none;
+    }
+  }
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    display: ",
+              [Function],
+              ";
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    width: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.ul",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "ul",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      toggled={true}
       width="auto"
-    />
+    >
+      <ul
+        className="c0"
+        width="auto"
+      />
+    </StyledComponent>
   </styled.ul>
 </NavbarNav>
 `;

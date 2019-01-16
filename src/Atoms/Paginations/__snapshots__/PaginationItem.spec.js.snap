@@ -42,11 +42,75 @@ exports[`PaginationItem should render correctly 1`] = `
     e2e="defaultPaginationItem"
     selected={false}
   >
-    <a
-      className="c0"
-      data-e2e="defaultPaginationItem"
+    <StyledComponent
+      e2e="defaultPaginationItem"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 8px;
+  font-family: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  font-weight: 500;
+  color: ",
+              [Function],
+              ";
+  background-color: ",
+              [Function],
+              ";
+  border: 1px solid ",
+              [Function],
+              ";
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+
+  &:hover {
+    color: ",
+              [Function],
+              ";
+    background-color: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.a",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       selected={false}
-    />
+    >
+      <a
+        className="c0"
+        data-e2e="defaultPaginationItem"
+        selected={false}
+      />
+    </StyledComponent>
   </styled.a>
 </PaginationItem>
 `;
@@ -93,11 +157,75 @@ exports[`PaginationItem should render correctly with selected 1`] = `
     e2e="defaultPaginationItem"
     selected={true}
   >
-    <a
-      className="c0"
-      data-e2e="defaultPaginationItem"
+    <StyledComponent
+      e2e="defaultPaginationItem"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 8px;
+  font-family: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  font-weight: 500;
+  color: ",
+              [Function],
+              ";
+  background-color: ",
+              [Function],
+              ";
+  border: 1px solid ",
+              [Function],
+              ";
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+
+  &:hover {
+    color: ",
+              [Function],
+              ";
+    background-color: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.a",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       selected={true}
-    />
+    >
+      <a
+        className="c0"
+        data-e2e="defaultPaginationItem"
+        selected={true}
+      />
+    </StyledComponent>
   </styled.a>
 </PaginationItem>
 `;

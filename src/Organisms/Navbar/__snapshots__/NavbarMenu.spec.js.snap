@@ -57,9 +57,69 @@ exports[`NavbarMenu should render correctly 1`] = `
   <styled.div
     toggled={false}
   >
-    <div
-      className="c0"
-    />
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: ",
+              [Function],
+              ";
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 4.5rem 1.5rem 1.5rem 1.5rem;
+  box-sizing: border-box;
+  background-color: ",
+              [Function],
+              ";
+  transform: translate3d(0, 0, 0);
+  z-index: ",
+              [Function],
+              ";
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    position: relative;
+    top: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: transparent;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      toggled={false}
+    >
+      <div
+        className="c0"
+      />
+    </StyledComponent>
   </styled.div>
 </NavbarMenu>
 `;
@@ -124,9 +184,69 @@ exports[`NavbarMenu should render correctly with toggled 1`] = `
   <styled.div
     toggled={true}
   >
-    <div
-      className="c0"
-    />
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: ",
+              [Function],
+              ";
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 4.5rem 1.5rem 1.5rem 1.5rem;
+  box-sizing: border-box;
+  background-color: ",
+              [Function],
+              ";
+  transform: translate3d(0, 0, 0);
+  z-index: ",
+              [Function],
+              ";
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    position: relative;
+    top: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: transparent;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      toggled={true}
+    >
+      <div
+        className="c0"
+      />
+    </StyledComponent>
   </styled.div>
 </NavbarMenu>
 `;

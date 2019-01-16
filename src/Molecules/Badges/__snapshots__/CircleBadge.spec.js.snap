@@ -74,17 +74,56 @@ exports[`CircleBadge should render correctly 1`] = `
   <Styled(Link)
     size="2.625rem"
   >
-    <Link
-      capitalize={false}
-      className="c0"
-      e2e="defaultLink"
-      italic={false}
-      opacity={1}
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bkiSek",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: ",
+              [Function],
+              ";
+  width: ",
+              [Function],
+              ";
+  border-radius: 50%;
+  background-color: ",
+              [Function],
+              ";
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "Styled(Link)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bkiSek",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        }
+      }
+      forwardedRef={null}
       size="2.625rem"
-      uppercase={false}
-      weight={400}
     >
-      <styled.a
+      <Link
         capitalize={false}
         className="c0"
         e2e="defaultLink"
@@ -94,51 +133,218 @@ exports[`CircleBadge should render correctly 1`] = `
         uppercase={false}
         weight={400}
       >
-        <a
-          className="c0 c1"
-          data-e2e="defaultLink"
+        <styled.a
+          capitalize={false}
+          className="c0"
+          e2e="defaultLink"
+          italic={false}
           opacity={1}
           size="2.625rem"
+          uppercase={false}
+          weight={400}
         >
-          <Styled(FabFacebookF)
-            selectable={true}
+          <StyledComponent
+            capitalize={false}
+            className="c0"
+            e2e="defaultLink"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [
+                  [Function],
+                ],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-iChnts",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  font-family: ",
+                    [Function],
+                    ";
+  font-weight: ",
+                    [Function],
+                    ";
+  font-size: ",
+                    [Function],
+                    ";
+  text-transform: ",
+                    [Function],
+                    ";
+  font-style: ",
+                    [Function],
+                    ";
+  color: ",
+                    [Function],
+                    ";
+  opacity: ",
+                    [Function],
+                    ";
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: ",
+                    [Function],
+                    ";
+    text-decoration: none;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.a",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-iChnts",
+                "target": "a",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            italic={false}
+            opacity={1}
             size="2.625rem"
+            uppercase={false}
+            weight={400}
           >
-            <FabFacebookF
-              className="c2"
-              selectable={true}
+            <a
+              className="c0 c1"
+              data-e2e="defaultLink"
+              opacity={1}
               size="2.625rem"
             >
-              <Styled(SvgFabFacebookF)
-                className="c2"
-                height="2.625rem"
-                selectable={1}
-                width="2.625rem"
+              <Styled(FabFacebookF)
+                selectable={true}
+                size="2.625rem"
               >
-                <SvgFabFacebookF
-                  className="c2 c3"
-                  height="2.625rem"
-                  selectable={1}
-                  width="2.625rem"
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-hArCzk",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  fill: ",
+                          [Function],
+                          ";
+  max-height: 60%;
+  max-width: 60%;
+
+  &:hover {
+    fill: ",
+                          [Function],
+                          ";
+  }
+",
+                        ],
+                      },
+                      "displayName": "Styled(FabFacebookF)",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-hArCzk",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                      Symbol(Symbol.hasInstance): [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  selectable={true}
+                  size="2.625rem"
                 >
-                  <svg
-                    className="c2 c3"
-                    height="2.625rem"
-                    selectable={1}
-                    viewBox="0 0 264 512"
-                    width="2.625rem"
+                  <FabFacebookF
+                    className="c2"
+                    selectable={true}
+                    size="2.625rem"
                   >
-                    <path
-                      d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"
-                    />
-                  </svg>
-                </SvgFabFacebookF>
-              </Styled(SvgFabFacebookF)>
-            </FabFacebookF>
-          </Styled(FabFacebookF)>
-        </a>
-      </styled.a>
-    </Link>
+                    <Styled(SvgFabFacebookF)
+                      className="c2"
+                      height="2.625rem"
+                      selectable={1}
+                      width="2.625rem"
+                    >
+                      <StyledComponent
+                        className="c2"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-clWJBl",
+                              "isStatic": false,
+                              "lastClassName": "c3",
+                              "rules": Array [
+                                "
+    ",
+                                "
+  fill: ",
+                                [Function],
+                                ";
+  cursor: ",
+                                [Function],
+                                ";
+
+  &:hover {
+    fill: ",
+                                [Function],
+                                ";
+  }
+",
+                                ";
+  ",
+                              ],
+                            },
+                            "displayName": "Styled(SvgFabFacebookF)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-clWJBl",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        height="2.625rem"
+                        selectable={1}
+                        width="2.625rem"
+                      >
+                        <SvgFabFacebookF
+                          className="c2 c3"
+                          height="2.625rem"
+                          selectable={1}
+                          width="2.625rem"
+                        >
+                          <svg
+                            className="c2 c3"
+                            height="2.625rem"
+                            selectable={1}
+                            viewBox="0 0 264 512"
+                            width="2.625rem"
+                          >
+                            <path
+                              d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"
+                            />
+                          </svg>
+                        </SvgFabFacebookF>
+                      </StyledComponent>
+                    </Styled(SvgFabFacebookF)>
+                  </FabFacebookF>
+                </StyledComponent>
+              </Styled(FabFacebookF)>
+            </a>
+          </StyledComponent>
+        </styled.a>
+      </Link>
+    </StyledComponent>
   </Styled(Link)>
 </CircleBadge>
 `;
@@ -217,17 +423,56 @@ exports[`CircleBadge should render correctly with name facebook 1`] = `
   <Styled(Link)
     size="2.625rem"
   >
-    <Link
-      capitalize={false}
-      className="c0"
-      e2e="defaultLink"
-      italic={false}
-      opacity={1}
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bkiSek",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: ",
+              [Function],
+              ";
+  width: ",
+              [Function],
+              ";
+  border-radius: 50%;
+  background-color: ",
+              [Function],
+              ";
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "Styled(Link)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bkiSek",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        }
+      }
+      forwardedRef={null}
       size="2.625rem"
-      uppercase={false}
-      weight={400}
     >
-      <styled.a
+      <Link
         capitalize={false}
         className="c0"
         e2e="defaultLink"
@@ -237,51 +482,218 @@ exports[`CircleBadge should render correctly with name facebook 1`] = `
         uppercase={false}
         weight={400}
       >
-        <a
-          className="c0 c1"
-          data-e2e="defaultLink"
+        <styled.a
+          capitalize={false}
+          className="c0"
+          e2e="defaultLink"
+          italic={false}
           opacity={1}
           size="2.625rem"
+          uppercase={false}
+          weight={400}
         >
-          <Styled(FabFacebookF)
-            selectable={true}
+          <StyledComponent
+            capitalize={false}
+            className="c0"
+            e2e="defaultLink"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [
+                  [Function],
+                ],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-iChnts",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  font-family: ",
+                    [Function],
+                    ";
+  font-weight: ",
+                    [Function],
+                    ";
+  font-size: ",
+                    [Function],
+                    ";
+  text-transform: ",
+                    [Function],
+                    ";
+  font-style: ",
+                    [Function],
+                    ";
+  color: ",
+                    [Function],
+                    ";
+  opacity: ",
+                    [Function],
+                    ";
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: ",
+                    [Function],
+                    ";
+    text-decoration: none;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.a",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-iChnts",
+                "target": "a",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            italic={false}
+            opacity={1}
             size="2.625rem"
+            uppercase={false}
+            weight={400}
           >
-            <FabFacebookF
-              className="c2"
-              selectable={true}
+            <a
+              className="c0 c1"
+              data-e2e="defaultLink"
+              opacity={1}
               size="2.625rem"
             >
-              <Styled(SvgFabFacebookF)
-                className="c2"
-                height="2.625rem"
-                selectable={1}
-                width="2.625rem"
+              <Styled(FabFacebookF)
+                selectable={true}
+                size="2.625rem"
               >
-                <SvgFabFacebookF
-                  className="c2 c3"
-                  height="2.625rem"
-                  selectable={1}
-                  width="2.625rem"
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-hArCzk",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  fill: ",
+                          [Function],
+                          ";
+  max-height: 60%;
+  max-width: 60%;
+
+  &:hover {
+    fill: ",
+                          [Function],
+                          ";
+  }
+",
+                        ],
+                      },
+                      "displayName": "Styled(FabFacebookF)",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-hArCzk",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                      Symbol(Symbol.hasInstance): [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  selectable={true}
+                  size="2.625rem"
                 >
-                  <svg
-                    className="c2 c3"
-                    height="2.625rem"
-                    selectable={1}
-                    viewBox="0 0 264 512"
-                    width="2.625rem"
+                  <FabFacebookF
+                    className="c2"
+                    selectable={true}
+                    size="2.625rem"
                   >
-                    <path
-                      d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"
-                    />
-                  </svg>
-                </SvgFabFacebookF>
-              </Styled(SvgFabFacebookF)>
-            </FabFacebookF>
-          </Styled(FabFacebookF)>
-        </a>
-      </styled.a>
-    </Link>
+                    <Styled(SvgFabFacebookF)
+                      className="c2"
+                      height="2.625rem"
+                      selectable={1}
+                      width="2.625rem"
+                    >
+                      <StyledComponent
+                        className="c2"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-clWJBl",
+                              "isStatic": false,
+                              "lastClassName": "c3",
+                              "rules": Array [
+                                "
+    ",
+                                "
+  fill: ",
+                                [Function],
+                                ";
+  cursor: ",
+                                [Function],
+                                ";
+
+  &:hover {
+    fill: ",
+                                [Function],
+                                ";
+  }
+",
+                                ";
+  ",
+                              ],
+                            },
+                            "displayName": "Styled(SvgFabFacebookF)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-clWJBl",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        height="2.625rem"
+                        selectable={1}
+                        width="2.625rem"
+                      >
+                        <SvgFabFacebookF
+                          className="c2 c3"
+                          height="2.625rem"
+                          selectable={1}
+                          width="2.625rem"
+                        >
+                          <svg
+                            className="c2 c3"
+                            height="2.625rem"
+                            selectable={1}
+                            viewBox="0 0 264 512"
+                            width="2.625rem"
+                          >
+                            <path
+                              d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"
+                            />
+                          </svg>
+                        </SvgFabFacebookF>
+                      </StyledComponent>
+                    </Styled(SvgFabFacebookF)>
+                  </FabFacebookF>
+                </StyledComponent>
+              </Styled(FabFacebookF)>
+            </a>
+          </StyledComponent>
+        </styled.a>
+      </Link>
+    </StyledComponent>
   </Styled(Link)>
 </CircleBadge>
 `;
@@ -360,17 +772,56 @@ exports[`CircleBadge should render correctly with name linkedin 1`] = `
   <Styled(Link)
     size="2.625rem"
   >
-    <Link
-      capitalize={false}
-      className="c0"
-      e2e="defaultLink"
-      italic={false}
-      opacity={1}
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bkiSek",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: ",
+              [Function],
+              ";
+  width: ",
+              [Function],
+              ";
+  border-radius: 50%;
+  background-color: ",
+              [Function],
+              ";
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "Styled(Link)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bkiSek",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        }
+      }
+      forwardedRef={null}
       size="2.625rem"
-      uppercase={false}
-      weight={400}
     >
-      <styled.a
+      <Link
         capitalize={false}
         className="c0"
         e2e="defaultLink"
@@ -380,51 +831,218 @@ exports[`CircleBadge should render correctly with name linkedin 1`] = `
         uppercase={false}
         weight={400}
       >
-        <a
-          className="c0 c1"
-          data-e2e="defaultLink"
+        <styled.a
+          capitalize={false}
+          className="c0"
+          e2e="defaultLink"
+          italic={false}
           opacity={1}
           size="2.625rem"
+          uppercase={false}
+          weight={400}
         >
-          <Styled(FabLinkedinIn)
-            selectable={true}
+          <StyledComponent
+            capitalize={false}
+            className="c0"
+            e2e="defaultLink"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [
+                  [Function],
+                ],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-iChnts",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  font-family: ",
+                    [Function],
+                    ";
+  font-weight: ",
+                    [Function],
+                    ";
+  font-size: ",
+                    [Function],
+                    ";
+  text-transform: ",
+                    [Function],
+                    ";
+  font-style: ",
+                    [Function],
+                    ";
+  color: ",
+                    [Function],
+                    ";
+  opacity: ",
+                    [Function],
+                    ";
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: ",
+                    [Function],
+                    ";
+    text-decoration: none;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.a",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-iChnts",
+                "target": "a",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            italic={false}
+            opacity={1}
             size="2.625rem"
+            uppercase={false}
+            weight={400}
           >
-            <FabLinkedinIn
-              className="c2"
-              selectable={true}
+            <a
+              className="c0 c1"
+              data-e2e="defaultLink"
+              opacity={1}
               size="2.625rem"
             >
-              <Styled(SvgFabLinkedinIn)
-                className="c2"
-                height="2.625rem"
-                selectable={1}
-                width="2.625rem"
+              <Styled(FabLinkedinIn)
+                selectable={true}
+                size="2.625rem"
               >
-                <SvgFabLinkedinIn
-                  className="c2 c3"
-                  height="2.625rem"
-                  selectable={1}
-                  width="2.625rem"
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-dPrnFZ",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  fill: ",
+                          [Function],
+                          ";
+  max-height: 60%;
+  max-width: 60%;
+
+  &:hover {
+    fill: ",
+                          [Function],
+                          ";
+  }
+",
+                        ],
+                      },
+                      "displayName": "Styled(FabLinkedinIn)",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-dPrnFZ",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                      Symbol(Symbol.hasInstance): [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  selectable={true}
+                  size="2.625rem"
                 >
-                  <svg
-                    className="c2 c3"
-                    height="2.625rem"
-                    selectable={1}
-                    viewBox="0 0 448.1 512"
-                    width="2.625rem"
+                  <FabLinkedinIn
+                    className="c2"
+                    selectable={true}
+                    size="2.625rem"
                   >
-                    <path
-                      d="M100.3 448H7.4V148.9h92.9V448zM53.8 108.1C24.1 108.1 0 83.5 0 53.8S24.1 0 53.8 0s53.8 24.1 53.8 53.8-24.1 54.3-53.8 54.3zM448 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448h-.1z"
-                    />
-                  </svg>
-                </SvgFabLinkedinIn>
-              </Styled(SvgFabLinkedinIn)>
-            </FabLinkedinIn>
-          </Styled(FabLinkedinIn)>
-        </a>
-      </styled.a>
-    </Link>
+                    <Styled(SvgFabLinkedinIn)
+                      className="c2"
+                      height="2.625rem"
+                      selectable={1}
+                      width="2.625rem"
+                    >
+                      <StyledComponent
+                        className="c2"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-eIvgmF",
+                              "isStatic": false,
+                              "lastClassName": "c3",
+                              "rules": Array [
+                                "
+    ",
+                                "
+  fill: ",
+                                [Function],
+                                ";
+  cursor: ",
+                                [Function],
+                                ";
+
+  &:hover {
+    fill: ",
+                                [Function],
+                                ";
+  }
+",
+                                ";
+  ",
+                              ],
+                            },
+                            "displayName": "Styled(SvgFabLinkedinIn)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-eIvgmF",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        height="2.625rem"
+                        selectable={1}
+                        width="2.625rem"
+                      >
+                        <SvgFabLinkedinIn
+                          className="c2 c3"
+                          height="2.625rem"
+                          selectable={1}
+                          width="2.625rem"
+                        >
+                          <svg
+                            className="c2 c3"
+                            height="2.625rem"
+                            selectable={1}
+                            viewBox="0 0 448.1 512"
+                            width="2.625rem"
+                          >
+                            <path
+                              d="M100.3 448H7.4V148.9h92.9V448zM53.8 108.1C24.1 108.1 0 83.5 0 53.8S24.1 0 53.8 0s53.8 24.1 53.8 53.8-24.1 54.3-53.8 54.3zM448 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448h-.1z"
+                            />
+                          </svg>
+                        </SvgFabLinkedinIn>
+                      </StyledComponent>
+                    </Styled(SvgFabLinkedinIn)>
+                  </FabLinkedinIn>
+                </StyledComponent>
+              </Styled(FabLinkedinIn)>
+            </a>
+          </StyledComponent>
+        </styled.a>
+      </Link>
+    </StyledComponent>
   </Styled(Link)>
 </CircleBadge>
 `;
@@ -503,17 +1121,56 @@ exports[`CircleBadge should render correctly with name twitter 1`] = `
   <Styled(Link)
     size="2.625rem"
   >
-    <Link
-      capitalize={false}
-      className="c0"
-      e2e="defaultLink"
-      italic={false}
-      opacity={1}
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bkiSek",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: ",
+              [Function],
+              ";
+  width: ",
+              [Function],
+              ";
+  border-radius: 50%;
+  background-color: ",
+              [Function],
+              ";
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "Styled(Link)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bkiSek",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        }
+      }
+      forwardedRef={null}
       size="2.625rem"
-      uppercase={false}
-      weight={400}
     >
-      <styled.a
+      <Link
         capitalize={false}
         className="c0"
         e2e="defaultLink"
@@ -523,51 +1180,218 @@ exports[`CircleBadge should render correctly with name twitter 1`] = `
         uppercase={false}
         weight={400}
       >
-        <a
-          className="c0 c1"
-          data-e2e="defaultLink"
+        <styled.a
+          capitalize={false}
+          className="c0"
+          e2e="defaultLink"
+          italic={false}
           opacity={1}
           size="2.625rem"
+          uppercase={false}
+          weight={400}
         >
-          <Styled(FabTwitter)
-            selectable={true}
+          <StyledComponent
+            capitalize={false}
+            className="c0"
+            e2e="defaultLink"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [
+                  [Function],
+                ],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-iChnts",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  font-family: ",
+                    [Function],
+                    ";
+  font-weight: ",
+                    [Function],
+                    ";
+  font-size: ",
+                    [Function],
+                    ";
+  text-transform: ",
+                    [Function],
+                    ";
+  font-style: ",
+                    [Function],
+                    ";
+  color: ",
+                    [Function],
+                    ";
+  opacity: ",
+                    [Function],
+                    ";
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: ",
+                    [Function],
+                    ";
+    text-decoration: none;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.a",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-iChnts",
+                "target": "a",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            italic={false}
+            opacity={1}
             size="2.625rem"
+            uppercase={false}
+            weight={400}
           >
-            <FabTwitter
-              className="c2"
-              selectable={true}
+            <a
+              className="c0 c1"
+              data-e2e="defaultLink"
+              opacity={1}
               size="2.625rem"
             >
-              <Styled(SvgFabTwitter)
-                className="c2"
-                height="2.625rem"
-                selectable={1}
-                width="2.625rem"
+              <Styled(FabTwitter)
+                selectable={true}
+                size="2.625rem"
               >
-                <SvgFabTwitter
-                  className="c2 c3"
-                  height="2.625rem"
-                  selectable={1}
-                  width="2.625rem"
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-eSnlgF",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  fill: ",
+                          [Function],
+                          ";
+  max-height: 60%;
+  max-width: 60%;
+
+  &:hover {
+    fill: ",
+                          [Function],
+                          ";
+  }
+",
+                        ],
+                      },
+                      "displayName": "Styled(FabTwitter)",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-eSnlgF",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                      Symbol(Symbol.hasInstance): [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  selectable={true}
+                  size="2.625rem"
                 >
-                  <svg
-                    className="c2 c3"
-                    height="2.625rem"
-                    selectable={1}
-                    viewBox="0 0 512 512"
-                    width="2.625rem"
+                  <FabTwitter
+                    className="c2"
+                    selectable={true}
+                    size="2.625rem"
                   >
-                    <path
-                      d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-                    />
-                  </svg>
-                </SvgFabTwitter>
-              </Styled(SvgFabTwitter)>
-            </FabTwitter>
-          </Styled(FabTwitter)>
-        </a>
-      </styled.a>
-    </Link>
+                    <Styled(SvgFabTwitter)
+                      className="c2"
+                      height="2.625rem"
+                      selectable={1}
+                      width="2.625rem"
+                    >
+                      <StyledComponent
+                        className="c2"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-dENsGg",
+                              "isStatic": false,
+                              "lastClassName": "c3",
+                              "rules": Array [
+                                "
+    ",
+                                "
+  fill: ",
+                                [Function],
+                                ";
+  cursor: ",
+                                [Function],
+                                ";
+
+  &:hover {
+    fill: ",
+                                [Function],
+                                ";
+  }
+",
+                                ";
+  ",
+                              ],
+                            },
+                            "displayName": "Styled(SvgFabTwitter)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-dENsGg",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        height="2.625rem"
+                        selectable={1}
+                        width="2.625rem"
+                      >
+                        <SvgFabTwitter
+                          className="c2 c3"
+                          height="2.625rem"
+                          selectable={1}
+                          width="2.625rem"
+                        >
+                          <svg
+                            className="c2 c3"
+                            height="2.625rem"
+                            selectable={1}
+                            viewBox="0 0 512 512"
+                            width="2.625rem"
+                          >
+                            <path
+                              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                            />
+                          </svg>
+                        </SvgFabTwitter>
+                      </StyledComponent>
+                    </Styled(SvgFabTwitter)>
+                  </FabTwitter>
+                </StyledComponent>
+              </Styled(FabTwitter)>
+            </a>
+          </StyledComponent>
+        </styled.a>
+      </Link>
+    </StyledComponent>
   </Styled(Link)>
 </CircleBadge>
 `;
@@ -646,17 +1470,56 @@ exports[`CircleBadge should render correctly with size 1`] = `
   <Styled(Link)
     size="80px"
   >
-    <Link
-      capitalize={false}
-      className="c0"
-      e2e="defaultLink"
-      italic={false}
-      opacity={1}
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bkiSek",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: ",
+              [Function],
+              ";
+  width: ",
+              [Function],
+              ";
+  border-radius: 50%;
+  background-color: ",
+              [Function],
+              ";
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "Styled(Link)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bkiSek",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        }
+      }
+      forwardedRef={null}
       size="80px"
-      uppercase={false}
-      weight={400}
     >
-      <styled.a
+      <Link
         capitalize={false}
         className="c0"
         e2e="defaultLink"
@@ -666,51 +1529,218 @@ exports[`CircleBadge should render correctly with size 1`] = `
         uppercase={false}
         weight={400}
       >
-        <a
-          className="c0 c1"
-          data-e2e="defaultLink"
+        <styled.a
+          capitalize={false}
+          className="c0"
+          e2e="defaultLink"
+          italic={false}
           opacity={1}
           size="80px"
+          uppercase={false}
+          weight={400}
         >
-          <Styled(FabFacebookF)
-            selectable={true}
+          <StyledComponent
+            capitalize={false}
+            className="c0"
+            e2e="defaultLink"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [
+                  [Function],
+                ],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-iChnts",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  font-family: ",
+                    [Function],
+                    ";
+  font-weight: ",
+                    [Function],
+                    ";
+  font-size: ",
+                    [Function],
+                    ";
+  text-transform: ",
+                    [Function],
+                    ";
+  font-style: ",
+                    [Function],
+                    ";
+  color: ",
+                    [Function],
+                    ";
+  opacity: ",
+                    [Function],
+                    ";
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: ",
+                    [Function],
+                    ";
+    text-decoration: none;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.a",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-iChnts",
+                "target": "a",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            italic={false}
+            opacity={1}
             size="80px"
+            uppercase={false}
+            weight={400}
           >
-            <FabFacebookF
-              className="c2"
-              selectable={true}
+            <a
+              className="c0 c1"
+              data-e2e="defaultLink"
+              opacity={1}
               size="80px"
             >
-              <Styled(SvgFabFacebookF)
-                className="c2"
-                height="80px"
-                selectable={1}
-                width="80px"
+              <Styled(FabFacebookF)
+                selectable={true}
+                size="80px"
               >
-                <SvgFabFacebookF
-                  className="c2 c3"
-                  height="80px"
-                  selectable={1}
-                  width="80px"
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-hArCzk",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  fill: ",
+                          [Function],
+                          ";
+  max-height: 60%;
+  max-width: 60%;
+
+  &:hover {
+    fill: ",
+                          [Function],
+                          ";
+  }
+",
+                        ],
+                      },
+                      "displayName": "Styled(FabFacebookF)",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-hArCzk",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                      Symbol(Symbol.hasInstance): [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  selectable={true}
+                  size="80px"
                 >
-                  <svg
-                    className="c2 c3"
-                    height="80px"
-                    selectable={1}
-                    viewBox="0 0 264 512"
-                    width="80px"
+                  <FabFacebookF
+                    className="c2"
+                    selectable={true}
+                    size="80px"
                   >
-                    <path
-                      d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"
-                    />
-                  </svg>
-                </SvgFabFacebookF>
-              </Styled(SvgFabFacebookF)>
-            </FabFacebookF>
-          </Styled(FabFacebookF)>
-        </a>
-      </styled.a>
-    </Link>
+                    <Styled(SvgFabFacebookF)
+                      className="c2"
+                      height="80px"
+                      selectable={1}
+                      width="80px"
+                    >
+                      <StyledComponent
+                        className="c2"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-clWJBl",
+                              "isStatic": false,
+                              "lastClassName": "c3",
+                              "rules": Array [
+                                "
+    ",
+                                "
+  fill: ",
+                                [Function],
+                                ";
+  cursor: ",
+                                [Function],
+                                ";
+
+  &:hover {
+    fill: ",
+                                [Function],
+                                ";
+  }
+",
+                                ";
+  ",
+                              ],
+                            },
+                            "displayName": "Styled(SvgFabFacebookF)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-clWJBl",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        height="80px"
+                        selectable={1}
+                        width="80px"
+                      >
+                        <SvgFabFacebookF
+                          className="c2 c3"
+                          height="80px"
+                          selectable={1}
+                          width="80px"
+                        >
+                          <svg
+                            className="c2 c3"
+                            height="80px"
+                            selectable={1}
+                            viewBox="0 0 264 512"
+                            width="80px"
+                          >
+                            <path
+                              d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"
+                            />
+                          </svg>
+                        </SvgFabFacebookF>
+                      </StyledComponent>
+                    </Styled(SvgFabFacebookF)>
+                  </FabFacebookF>
+                </StyledComponent>
+              </Styled(FabFacebookF)>
+            </a>
+          </StyledComponent>
+        </styled.a>
+      </Link>
+    </StyledComponent>
   </Styled(Link)>
 </CircleBadge>
 `;

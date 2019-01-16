@@ -36,10 +36,57 @@ exports[`Modal should render correctly 1`] = `
   <styled.div
     width="50%"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: ",
+              [Function],
+              ";
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    width: ",
+              [Function],
+              ";
+    height: auto;
+    border-radius: 5px;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       width="50%"
-    />
+    >
+      <div
+        className="c0"
+        width="50%"
+      />
+    </StyledComponent>
   </styled.div>
 </Modal>
 `;

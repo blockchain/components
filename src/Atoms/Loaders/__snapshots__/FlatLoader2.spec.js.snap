@@ -16,6 +16,17 @@ exports[`FlatLoader2 should render correctly 1`] = `
   font-size: 10px;
 }
 
+.c1 {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: #10ADE4;
+  -webkit-animation: kCGIFG 1.2s infinite ease-in-out;
+  animation: kCGIFG 1.2s infinite ease-in-out;
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
 .c2 {
   display: inline-block;
   width: 15%;
@@ -23,29 +34,39 @@ exports[`FlatLoader2 should render correctly 1`] = `
   background-color: #10ADE4;
   -webkit-animation: kCGIFG 1.2s infinite ease-in-out;
   animation: kCGIFG 1.2s infinite ease-in-out;
-}
-
-.c1 {
-  -webkit-animation-delay: -1.1s;
-  animation-delay: -1.1s;
-}
-
-.c3 {
   -webkit-animation-delay: -1s;
   animation-delay: -1s;
 }
 
-.c4 {
+.c3 {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: #10ADE4;
+  -webkit-animation: kCGIFG 1.2s infinite ease-in-out;
+  animation: kCGIFG 1.2s infinite ease-in-out;
   -webkit-animation-delay: -0.9s;
   animation-delay: -0.9s;
 }
 
-.c5 {
+.c4 {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: #10ADE4;
+  -webkit-animation: kCGIFG 1.2s infinite ease-in-out;
+  animation: kCGIFG 1.2s infinite ease-in-out;
   -webkit-animation-delay: -0.8s;
   animation-delay: -0.8s;
 }
 
-.c6 {
+.c5 {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: #10ADE4;
+  -webkit-animation: kCGIFG 1.2s infinite ease-in-out;
+  animation: kCGIFG 1.2s infinite ease-in-out;
   -webkit-animation-delay: -0.7s;
   animation-delay: -0.7s;
 }
@@ -58,57 +79,326 @@ exports[`FlatLoader2 should render correctly 1`] = `
     height="50px"
     width="45px"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  justify-content: space-around;
+  width: ",
+              [Function],
+              ";
+  height: ",
+              [Function],
+              ";
+  text-align: center;
+  font-size: 10px;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       height="50px"
       width="45px"
     >
-      <Styled(styled.div)>
-        <styled.div
-          className="c1"
-        >
-          <div
-            className="c1 c2"
-          />
-        </styled.div>
-      </Styled(styled.div)>
-      <Styled(styled.div)>
-        <styled.div
-          className="c3"
-        >
-          <div
-            className="c3 c2"
-          />
-        </styled.div>
-      </Styled(styled.div)>
-      <Styled(styled.div)>
-        <styled.div
-          className="c4"
-        >
-          <div
-            className="c4 c2"
-          />
-        </styled.div>
-      </Styled(styled.div)>
-      <Styled(styled.div)>
-        <styled.div
-          className="c5"
-        >
-          <div
-            className="c5 c2"
-          />
-        </styled.div>
-      </Styled(styled.div)>
-      <Styled(styled.div)>
-        <styled.div
-          className="c6"
-        >
-          <div
-            className="c6 c2"
-          />
-        </styled.div>
-      </Styled(styled.div)>
-    </div>
+      <div
+        className="c0"
+        height="50px"
+        width="45px"
+      >
+        <Styled(styled.div)>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-kCGIFG",
+                      "inject": [Function],
+                      "name": "kCGIFG",
+                      "rules": Array [
+                        "@-webkit-keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                        "@keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1.2s infinite ease-in-out;
+",
+                    "
+  animation-delay: -1.1s;
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            />
+          </StyledComponent>
+        </Styled(styled.div)>
+        <Styled(styled.div)>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bxivhb",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-kCGIFG",
+                      "inject": [Function],
+                      "name": "kCGIFG",
+                      "rules": Array [
+                        "@-webkit-keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                        "@keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1.2s infinite ease-in-out;
+",
+                    "
+  animation-delay: -1s;
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-bxivhb",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c2"
+            />
+          </StyledComponent>
+        </Styled(styled.div)>
+        <Styled(styled.div)>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-ifAKCX",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-kCGIFG",
+                      "inject": [Function],
+                      "name": "kCGIFG",
+                      "rules": Array [
+                        "@-webkit-keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                        "@keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1.2s infinite ease-in-out;
+",
+                    "
+  animation-delay: -0.9s;
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-ifAKCX",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c3"
+            />
+          </StyledComponent>
+        </Styled(styled.div)>
+        <Styled(styled.div)>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-EHOje",
+                  "isStatic": false,
+                  "lastClassName": "c4",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-kCGIFG",
+                      "inject": [Function],
+                      "name": "kCGIFG",
+                      "rules": Array [
+                        "@-webkit-keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                        "@keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1.2s infinite ease-in-out;
+",
+                    "
+  animation-delay: -0.8s;
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-EHOje",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c4"
+            />
+          </StyledComponent>
+        </Styled(styled.div)>
+        <Styled(styled.div)>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c5",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-kCGIFG",
+                      "inject": [Function],
+                      "name": "kCGIFG",
+                      "rules": Array [
+                        "@-webkit-keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                        "@keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1.2s infinite ease-in-out;
+",
+                    "
+  animation-delay: -0.7s;
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c5"
+            />
+          </StyledComponent>
+        </Styled(styled.div)>
+      </div>
+    </StyledComponent>
   </styled.div>
 </FlatLoader2>
 `;
@@ -129,6 +419,17 @@ exports[`FlatLoader2 should render correctly with height 1`] = `
   font-size: 10px;
 }
 
+.c1 {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: #10ADE4;
+  -webkit-animation: kCGIFG 1.2s infinite ease-in-out;
+  animation: kCGIFG 1.2s infinite ease-in-out;
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
 .c2 {
   display: inline-block;
   width: 15%;
@@ -136,29 +437,39 @@ exports[`FlatLoader2 should render correctly with height 1`] = `
   background-color: #10ADE4;
   -webkit-animation: kCGIFG 1.2s infinite ease-in-out;
   animation: kCGIFG 1.2s infinite ease-in-out;
-}
-
-.c1 {
-  -webkit-animation-delay: -1.1s;
-  animation-delay: -1.1s;
-}
-
-.c3 {
   -webkit-animation-delay: -1s;
   animation-delay: -1s;
 }
 
-.c4 {
+.c3 {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: #10ADE4;
+  -webkit-animation: kCGIFG 1.2s infinite ease-in-out;
+  animation: kCGIFG 1.2s infinite ease-in-out;
   -webkit-animation-delay: -0.9s;
   animation-delay: -0.9s;
 }
 
-.c5 {
+.c4 {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: #10ADE4;
+  -webkit-animation: kCGIFG 1.2s infinite ease-in-out;
+  animation: kCGIFG 1.2s infinite ease-in-out;
   -webkit-animation-delay: -0.8s;
   animation-delay: -0.8s;
 }
 
-.c6 {
+.c5 {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: #10ADE4;
+  -webkit-animation: kCGIFG 1.2s infinite ease-in-out;
+  animation: kCGIFG 1.2s infinite ease-in-out;
   -webkit-animation-delay: -0.7s;
   animation-delay: -0.7s;
 }
@@ -171,57 +482,326 @@ exports[`FlatLoader2 should render correctly with height 1`] = `
     height="100px"
     width="45px"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  justify-content: space-around;
+  width: ",
+              [Function],
+              ";
+  height: ",
+              [Function],
+              ";
+  text-align: center;
+  font-size: 10px;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       height="100px"
       width="45px"
     >
-      <Styled(styled.div)>
-        <styled.div
-          className="c1"
-        >
-          <div
-            className="c1 c2"
-          />
-        </styled.div>
-      </Styled(styled.div)>
-      <Styled(styled.div)>
-        <styled.div
-          className="c3"
-        >
-          <div
-            className="c3 c2"
-          />
-        </styled.div>
-      </Styled(styled.div)>
-      <Styled(styled.div)>
-        <styled.div
-          className="c4"
-        >
-          <div
-            className="c4 c2"
-          />
-        </styled.div>
-      </Styled(styled.div)>
-      <Styled(styled.div)>
-        <styled.div
-          className="c5"
-        >
-          <div
-            className="c5 c2"
-          />
-        </styled.div>
-      </Styled(styled.div)>
-      <Styled(styled.div)>
-        <styled.div
-          className="c6"
-        >
-          <div
-            className="c6 c2"
-          />
-        </styled.div>
-      </Styled(styled.div)>
-    </div>
+      <div
+        className="c0"
+        height="100px"
+        width="45px"
+      >
+        <Styled(styled.div)>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-kCGIFG",
+                      "inject": [Function],
+                      "name": "kCGIFG",
+                      "rules": Array [
+                        "@-webkit-keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                        "@keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1.2s infinite ease-in-out;
+",
+                    "
+  animation-delay: -1.1s;
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            />
+          </StyledComponent>
+        </Styled(styled.div)>
+        <Styled(styled.div)>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bxivhb",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-kCGIFG",
+                      "inject": [Function],
+                      "name": "kCGIFG",
+                      "rules": Array [
+                        "@-webkit-keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                        "@keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1.2s infinite ease-in-out;
+",
+                    "
+  animation-delay: -1s;
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-bxivhb",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c2"
+            />
+          </StyledComponent>
+        </Styled(styled.div)>
+        <Styled(styled.div)>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-ifAKCX",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-kCGIFG",
+                      "inject": [Function],
+                      "name": "kCGIFG",
+                      "rules": Array [
+                        "@-webkit-keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                        "@keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1.2s infinite ease-in-out;
+",
+                    "
+  animation-delay: -0.9s;
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-ifAKCX",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c3"
+            />
+          </StyledComponent>
+        </Styled(styled.div)>
+        <Styled(styled.div)>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-EHOje",
+                  "isStatic": false,
+                  "lastClassName": "c4",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-kCGIFG",
+                      "inject": [Function],
+                      "name": "kCGIFG",
+                      "rules": Array [
+                        "@-webkit-keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                        "@keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1.2s infinite ease-in-out;
+",
+                    "
+  animation-delay: -0.8s;
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-EHOje",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c4"
+            />
+          </StyledComponent>
+        </Styled(styled.div)>
+        <Styled(styled.div)>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c5",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-kCGIFG",
+                      "inject": [Function],
+                      "name": "kCGIFG",
+                      "rules": Array [
+                        "@-webkit-keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                        "@keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1.2s infinite ease-in-out;
+",
+                    "
+  animation-delay: -0.7s;
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c5"
+            />
+          </StyledComponent>
+        </Styled(styled.div)>
+      </div>
+    </StyledComponent>
   </styled.div>
 </FlatLoader2>
 `;
@@ -242,6 +822,17 @@ exports[`FlatLoader2 should render correctly with width 1`] = `
   font-size: 10px;
 }
 
+.c1 {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: #10ADE4;
+  -webkit-animation: kCGIFG 1.2s infinite ease-in-out;
+  animation: kCGIFG 1.2s infinite ease-in-out;
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
 .c2 {
   display: inline-block;
   width: 15%;
@@ -249,29 +840,39 @@ exports[`FlatLoader2 should render correctly with width 1`] = `
   background-color: #10ADE4;
   -webkit-animation: kCGIFG 1.2s infinite ease-in-out;
   animation: kCGIFG 1.2s infinite ease-in-out;
-}
-
-.c1 {
-  -webkit-animation-delay: -1.1s;
-  animation-delay: -1.1s;
-}
-
-.c3 {
   -webkit-animation-delay: -1s;
   animation-delay: -1s;
 }
 
-.c4 {
+.c3 {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: #10ADE4;
+  -webkit-animation: kCGIFG 1.2s infinite ease-in-out;
+  animation: kCGIFG 1.2s infinite ease-in-out;
   -webkit-animation-delay: -0.9s;
   animation-delay: -0.9s;
 }
 
-.c5 {
+.c4 {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: #10ADE4;
+  -webkit-animation: kCGIFG 1.2s infinite ease-in-out;
+  animation: kCGIFG 1.2s infinite ease-in-out;
   -webkit-animation-delay: -0.8s;
   animation-delay: -0.8s;
 }
 
-.c6 {
+.c5 {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: #10ADE4;
+  -webkit-animation: kCGIFG 1.2s infinite ease-in-out;
+  animation: kCGIFG 1.2s infinite ease-in-out;
   -webkit-animation-delay: -0.7s;
   animation-delay: -0.7s;
 }
@@ -284,57 +885,326 @@ exports[`FlatLoader2 should render correctly with width 1`] = `
     height="50px"
     width="100px"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  justify-content: space-around;
+  width: ",
+              [Function],
+              ";
+  height: ",
+              [Function],
+              ";
+  text-align: center;
+  font-size: 10px;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       height="50px"
       width="100px"
     >
-      <Styled(styled.div)>
-        <styled.div
-          className="c1"
-        >
-          <div
-            className="c1 c2"
-          />
-        </styled.div>
-      </Styled(styled.div)>
-      <Styled(styled.div)>
-        <styled.div
-          className="c3"
-        >
-          <div
-            className="c3 c2"
-          />
-        </styled.div>
-      </Styled(styled.div)>
-      <Styled(styled.div)>
-        <styled.div
-          className="c4"
-        >
-          <div
-            className="c4 c2"
-          />
-        </styled.div>
-      </Styled(styled.div)>
-      <Styled(styled.div)>
-        <styled.div
-          className="c5"
-        >
-          <div
-            className="c5 c2"
-          />
-        </styled.div>
-      </Styled(styled.div)>
-      <Styled(styled.div)>
-        <styled.div
-          className="c6"
-        >
-          <div
-            className="c6 c2"
-          />
-        </styled.div>
-      </Styled(styled.div)>
-    </div>
+      <div
+        className="c0"
+        height="50px"
+        width="100px"
+      >
+        <Styled(styled.div)>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-kCGIFG",
+                      "inject": [Function],
+                      "name": "kCGIFG",
+                      "rules": Array [
+                        "@-webkit-keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                        "@keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1.2s infinite ease-in-out;
+",
+                    "
+  animation-delay: -1.1s;
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            />
+          </StyledComponent>
+        </Styled(styled.div)>
+        <Styled(styled.div)>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bxivhb",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-kCGIFG",
+                      "inject": [Function],
+                      "name": "kCGIFG",
+                      "rules": Array [
+                        "@-webkit-keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                        "@keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1.2s infinite ease-in-out;
+",
+                    "
+  animation-delay: -1s;
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-bxivhb",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c2"
+            />
+          </StyledComponent>
+        </Styled(styled.div)>
+        <Styled(styled.div)>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-ifAKCX",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-kCGIFG",
+                      "inject": [Function],
+                      "name": "kCGIFG",
+                      "rules": Array [
+                        "@-webkit-keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                        "@keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1.2s infinite ease-in-out;
+",
+                    "
+  animation-delay: -0.9s;
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-ifAKCX",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c3"
+            />
+          </StyledComponent>
+        </Styled(styled.div)>
+        <Styled(styled.div)>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-EHOje",
+                  "isStatic": false,
+                  "lastClassName": "c4",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-kCGIFG",
+                      "inject": [Function],
+                      "name": "kCGIFG",
+                      "rules": Array [
+                        "@-webkit-keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                        "@keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1.2s infinite ease-in-out;
+",
+                    "
+  animation-delay: -0.8s;
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-EHOje",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c4"
+            />
+          </StyledComponent>
+        </Styled(styled.div)>
+        <Styled(styled.div)>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c5",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+  animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-kCGIFG",
+                      "inject": [Function],
+                      "name": "kCGIFG",
+                      "rules": Array [
+                        "@-webkit-keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                        "@keyframes kCGIFG{0%,40%,100%{-webkit-transform:scaleY(0.4);-ms-transform:scaleY(0.4);transform:scaleY(0.4);}20%{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1.2s infinite ease-in-out;
+",
+                    "
+  animation-delay: -0.7s;
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c5"
+            />
+          </StyledComponent>
+        </Styled(styled.div)>
+      </div>
+    </StyledComponent>
   </styled.div>
 </FlatLoader2>
 `;

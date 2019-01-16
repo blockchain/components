@@ -31,12 +31,55 @@ exports[`Section should render correctly 1`] = `
     height="auto"
     nature="none"
   >
-    <section
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: ",
+              [Function],
+              ";
+  width: 100%;
+  background-color: ",
+              [Function],
+              ";
+  background-image: ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.section",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "section",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       height="auto"
+      nature="none"
     >
-      MySection
-    </section>
+      <section
+        className="c0"
+        height="auto"
+      >
+        MySection
+      </section>
+    </StyledComponent>
   </styled.section>
 </Section>
 `;
@@ -72,12 +115,55 @@ exports[`Section should render correctly with height 1`] = `
     height="200px"
     nature="none"
   >
-    <section
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: ",
+              [Function],
+              ";
+  width: 100%;
+  background-color: ",
+              [Function],
+              ";
+  background-image: ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.section",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "section",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       height="200px"
+      nature="none"
     >
-      MySection
-    </section>
+      <section
+        className="c0"
+        height="200px"
+      >
+        MySection
+      </section>
+    </StyledComponent>
   </styled.section>
 </Section>
 `;
@@ -113,12 +199,55 @@ exports[`Section should render correctly with nature 1`] = `
     height="auto"
     nature="blocks"
   >
-    <section
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: ",
+              [Function],
+              ";
+  width: 100%;
+  background-color: ",
+              [Function],
+              ";
+  background-image: ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.section",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "section",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       height="auto"
+      nature="blocks"
     >
-      MySection
-    </section>
+      <section
+        className="c0"
+        height="auto"
+      >
+        MySection
+      </section>
+    </StyledComponent>
   </styled.section>
 </Section>
 `;
@@ -154,12 +283,55 @@ exports[`Section should render correctly with nature 2`] = `
     height="auto"
     nature="diamonds"
   >
-    <section
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: ",
+              [Function],
+              ";
+  width: 100%;
+  background-color: ",
+              [Function],
+              ";
+  background-image: ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.section",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "section",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       height="auto"
+      nature="diamonds"
     >
-      MySection
-    </section>
+      <section
+        className="c0"
+        height="auto"
+      >
+        MySection
+      </section>
+    </StyledComponent>
   </styled.section>
 </Section>
 `;

@@ -30,42 +30,139 @@ exports[`NavbarToggler should render correctly 1`] = `
 >
   <Styled(FasBars)
     onClick={[MockFunction]}
+    selectable={true}
+    size="25px"
   >
-    <FasBars
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bkiSek",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  fill: ",
+              [Function],
+              " !important;
+
+  &:hover {
+    fill: ",
+              [Function],
+              " !important;
+  }
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    display: none;
+  }
+",
+            ],
+          },
+          "displayName": "Styled(FasBars)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bkiSek",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        }
+      }
+      forwardedRef={null}
       onClick={[MockFunction]}
       selectable={true}
       size="25px"
     >
-      <Styled(SvgFasBars)
+      <FasBars
         className="c0"
-        height="25px"
         onClick={[MockFunction]}
-        selectable={1}
-        width="25px"
+        selectable={true}
+        size="25px"
       >
-        <SvgFasBars
-          className="c0 c1"
+        <Styled(SvgFasBars)
+          className="c0"
           height="25px"
           onClick={[MockFunction]}
           selectable={1}
           width="25px"
         >
-          <svg
-            className="c0 c1"
+          <StyledComponent
+            className="c0"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwNswr",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+    ",
+                    "
+  fill: ",
+                    [Function],
+                    ";
+  cursor: ",
+                    [Function],
+                    ";
+
+  &:hover {
+    fill: ",
+                    [Function],
+                    ";
+  }
+",
+                    ";
+  ",
+                  ],
+                },
+                "displayName": "Styled(SvgFasBars)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwNswr",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              }
+            }
+            forwardedRef={null}
             height="25px"
             onClick={[MockFunction]}
             selectable={1}
-            viewBox="0 0 448 512"
             width="25px"
           >
-            <path
-              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-            />
-          </svg>
-        </SvgFasBars>
-      </Styled(SvgFasBars)>
-    </FasBars>
+            <SvgFasBars
+              className="c0 c1"
+              height="25px"
+              onClick={[MockFunction]}
+              selectable={1}
+              width="25px"
+            >
+              <svg
+                className="c0 c1"
+                height="25px"
+                onClick={[MockFunction]}
+                selectable={1}
+                viewBox="0 0 448 512"
+                width="25px"
+              >
+                <path
+                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                />
+              </svg>
+            </SvgFasBars>
+          </StyledComponent>
+        </Styled(SvgFasBars)>
+      </FasBars>
+    </StyledComponent>
   </Styled(FasBars)>
 </NavbarToggler>
 `;
@@ -101,42 +198,142 @@ exports[`NavbarToggler should render correctly with toggled 1`] = `
 >
   <Styled(FasTimes)
     onClick={[MockFunction]}
+    selectable={true}
+    size="20px"
   >
-    <FasTimes
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-iChnts",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  fill: ",
+              [Function],
+              ";
+  z-index: ",
+              [Function],
+              ";
+
+  &:hover {
+    fill: ",
+              [Function],
+              ";
+  }
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    display: none;
+  }
+",
+            ],
+          },
+          "displayName": "Styled(FasTimes)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-iChnts",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        }
+      }
+      forwardedRef={null}
       onClick={[MockFunction]}
       selectable={true}
       size="20px"
     >
-      <Styled(SvgFasTimes)
+      <FasTimes
         className="c0"
-        height="20px"
         onClick={[MockFunction]}
-        selectable={1}
-        width="20px"
+        selectable={true}
+        size="20px"
       >
-        <SvgFasTimes
-          className="c0 c1"
+        <Styled(SvgFasTimes)
+          className="c0"
           height="20px"
           onClick={[MockFunction]}
           selectable={1}
           width="20px"
         >
-          <svg
-            className="c0 c1"
+          <StyledComponent
+            className="c0"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-jGVZLC",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+    ",
+                    "
+  fill: ",
+                    [Function],
+                    ";
+  cursor: ",
+                    [Function],
+                    ";
+
+  &:hover {
+    fill: ",
+                    [Function],
+                    ";
+  }
+",
+                    ";
+  ",
+                  ],
+                },
+                "displayName": "Styled(SvgFasTimes)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-jGVZLC",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              }
+            }
+            forwardedRef={null}
             height="20px"
             onClick={[MockFunction]}
             selectable={1}
-            viewBox="0 0 352 512"
             width="20px"
           >
-            <path
-              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-            />
-          </svg>
-        </SvgFasTimes>
-      </Styled(SvgFasTimes)>
-    </FasTimes>
+            <SvgFasTimes
+              className="c0 c1"
+              height="20px"
+              onClick={[MockFunction]}
+              selectable={1}
+              width="20px"
+            >
+              <svg
+                className="c0 c1"
+                height="20px"
+                onClick={[MockFunction]}
+                selectable={1}
+                viewBox="0 0 352 512"
+                width="20px"
+              >
+                <path
+                  d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                />
+              </svg>
+            </SvgFasTimes>
+          </StyledComponent>
+        </Styled(SvgFasTimes)>
+      </FasTimes>
+    </StyledComponent>
   </Styled(FasTimes)>
 </NavbarToggler>
 `;

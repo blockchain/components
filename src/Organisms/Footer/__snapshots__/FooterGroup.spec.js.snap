@@ -19,11 +19,49 @@ exports[`FooterGroup should render correctly 1`] = `
 
 <FooterRow>
   <styled.div>
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  flex: 0 1 auto;
+  width: 12rem;
+  margin-bottom: 4rem;
+  margin-right: 2rem;
+  line-height: 2.5rem;
+
+  @media (max-width: ",
+              [Function],
+              ") {
+    margin-bottom: 4rem;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      FooterGroup
-    </div>
+      <div
+        className="c0"
+      >
+        FooterGroup
+      </div>
+    </StyledComponent>
   </styled.div>
 </FooterRow>
 `;

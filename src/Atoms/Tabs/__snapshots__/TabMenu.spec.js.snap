@@ -71,21 +71,116 @@ exports[`TabMenu should render correctly 1`] = `
     height="3rem"
     width="100%"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: ",
+              [Function],
+              ";
+  min-height: ",
+              [Function],
+              ";
+  border-bottom: 0.125rem solid ",
+              [Function],
+              ";
+  box-sizing: border-box;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       height="3rem"
       width="100%"
     >
-      <styled.div
-        toggled={false}
+      <div
+        className="c0"
+        height="3rem"
+        width="100%"
       >
-        <div
-          className="c1"
+        <styled.div
+          toggled={false}
         >
-          MyTabMenu
-        </div>
-      </styled.div>
-    </div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  width: 100%;
+  min-height: 100%;
+
+  @media (max-width: ",
+                    [Function],
+                    ") {
+    & > .disabled {
+      display: ",
+                    [Function],
+                    ";
+    }
+  }
+
+  @media (min-width: ",
+                    [Function],
+                    ") {
+    flex-direction: row;
+    align-items: center;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            toggled={false}
+          >
+            <div
+              className="c1"
+            >
+              MyTabMenu
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
   </styled.div>
 </TabMenu>
 `;
@@ -161,21 +256,116 @@ exports[`TabMenu should render correctly with height 1`] = `
     height="200px"
     width="100%"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: ",
+              [Function],
+              ";
+  min-height: ",
+              [Function],
+              ";
+  border-bottom: 0.125rem solid ",
+              [Function],
+              ";
+  box-sizing: border-box;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       height="200px"
       width="100%"
     >
-      <styled.div
-        toggled={false}
+      <div
+        className="c0"
+        height="200px"
+        width="100%"
       >
-        <div
-          className="c1"
+        <styled.div
+          toggled={false}
         >
-          MyTabMenu
-        </div>
-      </styled.div>
-    </div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  width: 100%;
+  min-height: 100%;
+
+  @media (max-width: ",
+                    [Function],
+                    ") {
+    & > .disabled {
+      display: ",
+                    [Function],
+                    ";
+    }
+  }
+
+  @media (min-width: ",
+                    [Function],
+                    ") {
+    flex-direction: row;
+    align-items: center;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            toggled={false}
+          >
+            <div
+              className="c1"
+            >
+              MyTabMenu
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
   </styled.div>
 </TabMenu>
 `;
@@ -254,21 +444,116 @@ exports[`TabMenu should render correctly with toggled 1`] = `
     height="3rem"
     width="100%"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: ",
+              [Function],
+              ";
+  min-height: ",
+              [Function],
+              ";
+  border-bottom: 0.125rem solid ",
+              [Function],
+              ";
+  box-sizing: border-box;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       height="3rem"
       width="100%"
     >
-      <styled.div
-        toggled={true}
+      <div
+        className="c0"
+        height="3rem"
+        width="100%"
       >
-        <div
-          className="c1"
+        <styled.div
+          toggled={true}
         >
-          MyTabMenu
-        </div>
-      </styled.div>
-    </div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  width: 100%;
+  min-height: 100%;
+
+  @media (max-width: ",
+                    [Function],
+                    ") {
+    & > .disabled {
+      display: ",
+                    [Function],
+                    ";
+    }
+  }
+
+  @media (min-width: ",
+                    [Function],
+                    ") {
+    flex-direction: row;
+    align-items: center;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            toggled={true}
+          >
+            <div
+              className="c1"
+            >
+              MyTabMenu
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
   </styled.div>
 </TabMenu>
 `;
@@ -344,21 +629,116 @@ exports[`TabMenu should render correctly with width 1`] = `
     height="3rem"
     width="50%"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: ",
+              [Function],
+              ";
+  min-height: ",
+              [Function],
+              ";
+  border-bottom: 0.125rem solid ",
+              [Function],
+              ";
+  box-sizing: border-box;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       height="3rem"
       width="50%"
     >
-      <styled.div
-        toggled={false}
+      <div
+        className="c0"
+        height="3rem"
+        width="50%"
       >
-        <div
-          className="c1"
+        <styled.div
+          toggled={false}
         >
-          MyTabMenu
-        </div>
-      </styled.div>
-    </div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  width: 100%;
+  min-height: 100%;
+
+  @media (max-width: ",
+                    [Function],
+                    ") {
+    & > .disabled {
+      display: ",
+                    [Function],
+                    ";
+    }
+  }
+
+  @media (min-width: ",
+                    [Function],
+                    ") {
+    flex-direction: row;
+    align-items: center;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            toggled={false}
+          >
+            <div
+              className="c1"
+            >
+              MyTabMenu
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
   </styled.div>
 </TabMenu>
 `;

@@ -30,11 +30,51 @@ exports[`Footer should render correctly 1`] = `
 
 <Footer>
   <styled.div>
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 1.25rem 2rem;
+  box-sizing: border-box;
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    padding: 1.25rem 3rem;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      Footer
-    </div>
+      <div
+        className="c0"
+      >
+        Footer
+      </div>
+    </StyledComponent>
   </styled.div>
 </Footer>
 `;

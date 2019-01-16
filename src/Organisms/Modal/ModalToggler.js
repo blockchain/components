@@ -1,5 +1,5 @@
 // @flow strict
-import * as React from 'react'
+import React from 'react'
 import { FasTimes } from '../../Atoms/Icons'
 
 export type PropsType = {}

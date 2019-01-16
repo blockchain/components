@@ -1,9 +1,9 @@
 // @flow strict
 import PropTypes from 'prop-types'
-import React from 'react'
-import styled, { type ReactComponentFunctional } from 'styled-components'
+import * as React from 'react'
+import styled from 'styled-components'
 
-import { FasTimes, FasBars, type IconPropsType } from '../../Atoms/Icons'
+import { FasTimes, FasBars } from '../../Atoms/Icons'
 import { screenSize, theme } from '../../Tools/interpolation'
 
 export type PropsType = {
@@ -11,12 +11,7 @@ export type PropsType = {
   +toggled?: boolean,
 }
 
-const TogglerExpand: ReactComponentFunctional<IconPropsType> = styled(
-  FasTimes,
-).attrs({
-  selectable: true,
-  size: '20px',
-})`
+const TogglerExpand = styled(FasTimes)`
   fill: ${theme('navbarTogglerColor')};
   z-index: ${theme('navbarTogglerZIndex')};
 
@@ -29,12 +24,7 @@ const TogglerExpand: ReactComponentFunctional<IconPropsType> = styled(
   }
 `
 
-const TogglerCollapse: ReactComponentFunctional<IconPropsType> = styled(
-  FasBars,
-).attrs({
-  selectable: true,
-  size: '25px',
-})`
+const TogglerCollapse = styled(FasBars)`
   fill: ${theme('navbarTogglerColor')} !important;
 
   &:hover {
@@ -48,9 +38,9 @@ const TogglerCollapse: ReactComponentFunctional<IconPropsType> = styled(
 
 const NavbarToggler = ({ onToggle, toggled }: PropsType) =>
   toggled === true ? (
-    <TogglerExpand onClick={onToggle} />
+    <TogglerExpand onClick={onToggle} selectable size="20px" />
   ) : (
-    <TogglerCollapse onClick={onToggle} />
+    <TogglerCollapse onClick={onToggle} selectable size="25px" />
   )
 
 NavbarToggler.propTypes = {

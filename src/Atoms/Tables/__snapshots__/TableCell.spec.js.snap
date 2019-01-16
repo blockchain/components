@@ -40,12 +40,67 @@ exports[`TableCell should render correctly 1`] = `
     shrunk={true}
     width="100%"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      align="left"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: ",
+              [Function],
+              ";
+  align-items: center;
+  min-width: 0;
+  flex-basis: ",
+              [Function],
+              ";
+
+  & > * {
+    display: ",
+              [Function],
+              ";
+    text-overflow: ",
+              [Function],
+              ";
+    overflow: ",
+              [Function],
+              ";
+    white-space: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      shrunk={true}
       width="100%"
     >
-      MyTableCell
-    </div>
+      <div
+        className="c0"
+        width="100%"
+      >
+        MyTableCell
+      </div>
+    </StyledComponent>
   </styled.div>
 </TableCell>
 `;
@@ -90,12 +145,67 @@ exports[`TableCell should render correctly with align center 1`] = `
     shrunk={true}
     width="100%"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      align="center"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: ",
+              [Function],
+              ";
+  align-items: center;
+  min-width: 0;
+  flex-basis: ",
+              [Function],
+              ";
+
+  & > * {
+    display: ",
+              [Function],
+              ";
+    text-overflow: ",
+              [Function],
+              ";
+    overflow: ",
+              [Function],
+              ";
+    white-space: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      shrunk={true}
       width="100%"
     >
-      MyTableCell
-    </div>
+      <div
+        className="c0"
+        width="100%"
+      >
+        MyTableCell
+      </div>
+    </StyledComponent>
   </styled.div>
 </TableCell>
 `;
@@ -140,12 +250,67 @@ exports[`TableCell should render correctly with align left 1`] = `
     shrunk={true}
     width="100%"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      align="left"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: ",
+              [Function],
+              ";
+  align-items: center;
+  min-width: 0;
+  flex-basis: ",
+              [Function],
+              ";
+
+  & > * {
+    display: ",
+              [Function],
+              ";
+    text-overflow: ",
+              [Function],
+              ";
+    overflow: ",
+              [Function],
+              ";
+    white-space: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      shrunk={true}
       width="100%"
     >
-      MyTableCell
-    </div>
+      <div
+        className="c0"
+        width="100%"
+      >
+        MyTableCell
+      </div>
+    </StyledComponent>
   </styled.div>
 </TableCell>
 `;
@@ -190,12 +355,67 @@ exports[`TableCell should render correctly with align right 1`] = `
     shrunk={true}
     width="100%"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      align="right"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: ",
+              [Function],
+              ";
+  align-items: center;
+  min-width: 0;
+  flex-basis: ",
+              [Function],
+              ";
+
+  & > * {
+    display: ",
+              [Function],
+              ";
+    text-overflow: ",
+              [Function],
+              ";
+    overflow: ",
+              [Function],
+              ";
+    white-space: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      shrunk={true}
       width="100%"
     >
-      MyTableCell
-    </div>
+      <div
+        className="c0"
+        width="100%"
+      >
+        MyTableCell
+      </div>
+    </StyledComponent>
   </styled.div>
 </TableCell>
 `;
@@ -240,12 +460,67 @@ exports[`TableCell should render correctly with shrunk false 1`] = `
     shrunk={false}
     width="100%"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      align="left"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: ",
+              [Function],
+              ";
+  align-items: center;
+  min-width: 0;
+  flex-basis: ",
+              [Function],
+              ";
+
+  & > * {
+    display: ",
+              [Function],
+              ";
+    text-overflow: ",
+              [Function],
+              ";
+    overflow: ",
+              [Function],
+              ";
+    white-space: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      shrunk={false}
       width="100%"
     >
-      MyTableCell
-    </div>
+      <div
+        className="c0"
+        width="100%"
+      >
+        MyTableCell
+      </div>
+    </StyledComponent>
   </styled.div>
 </TableCell>
 `;
@@ -290,12 +565,67 @@ exports[`TableCell should render correctly with shrunk true 1`] = `
     shrunk={true}
     width="100%"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      align="left"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: ",
+              [Function],
+              ";
+  align-items: center;
+  min-width: 0;
+  flex-basis: ",
+              [Function],
+              ";
+
+  & > * {
+    display: ",
+              [Function],
+              ";
+    text-overflow: ",
+              [Function],
+              ";
+    overflow: ",
+              [Function],
+              ";
+    white-space: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      shrunk={true}
       width="100%"
     >
-      MyTableCell
-    </div>
+      <div
+        className="c0"
+        width="100%"
+      >
+        MyTableCell
+      </div>
+    </StyledComponent>
   </styled.div>
 </TableCell>
 `;
@@ -340,12 +670,67 @@ exports[`TableCell should render correctly with width 1`] = `
     shrunk={true}
     width="20%"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      align="left"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: ",
+              [Function],
+              ";
+  align-items: center;
+  min-width: 0;
+  flex-basis: ",
+              [Function],
+              ";
+
+  & > * {
+    display: ",
+              [Function],
+              ";
+    text-overflow: ",
+              [Function],
+              ";
+    overflow: ",
+              [Function],
+              ";
+    white-space: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      shrunk={true}
       width="20%"
     >
-      MyTableCell
-    </div>
+      <div
+        className="c0"
+        width="20%"
+      >
+        MyTableCell
+      </div>
+    </StyledComponent>
   </styled.div>
 </TableCell>
 `;

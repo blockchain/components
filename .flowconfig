@@ -1,16 +1,18 @@
+[declarations]
+
+[untyped]
+
 [ignore]
-.*/coverage/.*
-.*/esm/.*
-.*/storybook-static/.*
-.*/utils/.*
 
 [include]
+.*/src/.*
 
 [libs]
 
 [lints]
 
 [options]
+module.system.node.resolve_dirname=node_modules
 suppress_comment= \\(.\\|\n\\)*\\$IgnoreStrictImport
 suppress_comment= \\(.\\|\n\\)*\\$IgnoreUnitTest
 suppress_comment= \\(.\\|\n\\)*\\$IgnoreLibDef
@@ -23,3 +25,6 @@ untyped-import
 untyped-type-import
 sketchy-null
 sketchy-number
+
+[version]
+^0.90.0

@@ -31,11 +31,58 @@ exports[`Table should render correctly 1`] = `
 
 <Table>
   <styled.div>
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  box-shadow: 0 0 1.5rem 0.4rem ",
+              [Function],
+              ";
+
+  & > :nth-child(even) {
+    background-color: ",
+              [Function],
+              ";
+  }
+
+  & > :nth-child(odd) {
+    background-color: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      MyTable
-    </div>
+      <div
+        className="c0"
+      >
+        MyTable
+      </div>
+    </StyledComponent>
   </styled.div>
 </Table>
 `;

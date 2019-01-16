@@ -28,19 +28,51 @@ exports[`TextGroup mount render correctly 1`] = `
     align="justify"
     inline={true}
   >
-    <div
-      className="c0"
+    <StyledComponent
+      align="justify"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  text-align: ",
+              [Function],
+              ";
+
+  & > * {
+    display: ",
+              [Function],
+              ";
+    margin-right: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      inline={true}
     >
-      <Texts>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+      <div
+        className="c0"
+      >
+        <Texts>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -48,25 +80,80 @@ exports[`TextGroup mount render correctly 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my first text. This is my first text. This is my first text. This is my first text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my first text. This is my first text. This is my first text. This is my first text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -74,25 +161,80 @@ exports[`TextGroup mount render correctly 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my second text. This is my second text. This is my second text. This is my second text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my second text. This is my second text. This is my second text. This is my second text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -100,25 +242,80 @@ exports[`TextGroup mount render correctly 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my third text. This is my third text. This is my third text. This is my third text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my third text. This is my third text. This is my third text. This is my third text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -126,25 +323,80 @@ exports[`TextGroup mount render correctly 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my fourth text. This is my fourth text. This is my fourth text. This is my fourth text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my fourth text. This is my fourth text. This is my fourth text. This is my fourth text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -152,25 +404,80 @@ exports[`TextGroup mount render correctly 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my fifth text. This is my fifth text. This is my fifth text. This is my fifth text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my fifth text. This is my fifth text. This is my fifth text. This is my fifth text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -178,25 +485,80 @@ exports[`TextGroup mount render correctly 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my sixth text. This is my sixth text. This is my sixth text. This is my sixth text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my sixth text. This is my sixth text. This is my sixth text. This is my sixth text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -204,18 +566,82 @@ exports[`TextGroup mount render correctly 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my seventh text. This is my seventh text. This is my seventh text. This is my seventh text.
-            </span>
-          </styled.span>
-        </Text>
-      </Texts>
-    </div>
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my seventh text. This is my seventh text. This is my seventh text. This is my seventh text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+        </Texts>
+      </div>
+    </StyledComponent>
   </styled.div>
 </TextGroup>
 `;
@@ -248,19 +674,51 @@ exports[`TextGroup mount render correctly with align 1`] = `
     align="right"
     inline={true}
   >
-    <div
-      className="c0"
+    <StyledComponent
+      align="right"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  text-align: ",
+              [Function],
+              ";
+
+  & > * {
+    display: ",
+              [Function],
+              ";
+    margin-right: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      inline={true}
     >
-      <Texts>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+      <div
+        className="c0"
+      >
+        <Texts>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -268,25 +726,80 @@ exports[`TextGroup mount render correctly with align 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my first text. This is my first text. This is my first text. This is my first text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my first text. This is my first text. This is my first text. This is my first text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -294,25 +807,80 @@ exports[`TextGroup mount render correctly with align 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my second text. This is my second text. This is my second text. This is my second text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my second text. This is my second text. This is my second text. This is my second text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -320,25 +888,80 @@ exports[`TextGroup mount render correctly with align 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my third text. This is my third text. This is my third text. This is my third text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my third text. This is my third text. This is my third text. This is my third text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -346,25 +969,80 @@ exports[`TextGroup mount render correctly with align 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my fourth text. This is my fourth text. This is my fourth text. This is my fourth text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my fourth text. This is my fourth text. This is my fourth text. This is my fourth text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -372,25 +1050,80 @@ exports[`TextGroup mount render correctly with align 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my fifth text. This is my fifth text. This is my fifth text. This is my fifth text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my fifth text. This is my fifth text. This is my fifth text. This is my fifth text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -398,25 +1131,80 @@ exports[`TextGroup mount render correctly with align 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my sixth text. This is my sixth text. This is my sixth text. This is my sixth text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my sixth text. This is my sixth text. This is my sixth text. This is my sixth text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -424,18 +1212,82 @@ exports[`TextGroup mount render correctly with align 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my seventh text. This is my seventh text. This is my seventh text. This is my seventh text.
-            </span>
-          </styled.span>
-        </Text>
-      </Texts>
-    </div>
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my seventh text. This is my seventh text. This is my seventh text. This is my seventh text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+        </Texts>
+      </div>
+    </StyledComponent>
   </styled.div>
 </TextGroup>
 `;
@@ -468,19 +1320,51 @@ exports[`TextGroup mount render correctly with inline 1`] = `
     align="justify"
     inline={false}
   >
-    <div
-      className="c0"
+    <StyledComponent
+      align="justify"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  text-align: ",
+              [Function],
+              ";
+
+  & > * {
+    display: ",
+              [Function],
+              ";
+    margin-right: ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      inline={false}
     >
-      <Texts>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+      <div
+        className="c0"
+      >
+        <Texts>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -488,25 +1372,80 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my first text. This is my first text. This is my first text. This is my first text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my first text. This is my first text. This is my first text. This is my first text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -514,25 +1453,80 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my second text. This is my second text. This is my second text. This is my second text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my second text. This is my second text. This is my second text. This is my second text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -540,25 +1534,80 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my third text. This is my third text. This is my third text. This is my third text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my third text. This is my third text. This is my third text. This is my third text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -566,25 +1615,80 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my fourth text. This is my fourth text. This is my fourth text. This is my fourth text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my fourth text. This is my fourth text. This is my fourth text. This is my fourth text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -592,25 +1696,80 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my fifth text. This is my fifth text. This is my fifth text. This is my fifth text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my fifth text. This is my fifth text. This is my fifth text. This is my fifth text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -618,25 +1777,80 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my sixth text. This is my sixth text. This is my sixth text. This is my sixth text.
-            </span>
-          </styled.span>
-        </Text>
-        <Text
-          capitalize={false}
-          italic={false}
-          opacity={1}
-          size="1rem"
-          uppercase={false}
-          weight={400}
-        >
-          <styled.span
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my sixth text. This is my sixth text. This is my sixth text. This is my sixth text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+          <Text
             capitalize={false}
             italic={false}
             opacity={1}
@@ -644,18 +1858,82 @@ exports[`TextGroup mount render correctly with inline 1`] = `
             uppercase={false}
             weight={400}
           >
-            <span
-              className="c1"
-              data-e2e=""
+            <styled.span
+              capitalize={false}
+              italic={false}
               opacity={1}
               size="1rem"
+              uppercase={false}
+              weight={400}
             >
-              This is my seventh text. This is my seventh text. This is my seventh text. This is my seventh text.
-            </span>
-          </styled.span>
-        </Text>
-      </Texts>
-    </div>
+              <StyledComponent
+                capitalize={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [
+                      [Function],
+                    ],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: ",
+                        [Function],
+                        ";
+  font-weight: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
+  text-transform: ",
+                        [Function],
+                        ";
+  font-style: ",
+                        [Function],
+                        ";
+  color: ",
+                        [Function],
+                        ";
+  opacity: ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                italic={false}
+                opacity={1}
+                size="1rem"
+                uppercase={false}
+                weight={400}
+              >
+                <span
+                  className="c1"
+                  opacity={1}
+                  size="1rem"
+                >
+                  This is my seventh text. This is my seventh text. This is my seventh text. This is my seventh text.
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Text>
+        </Texts>
+      </div>
+    </StyledComponent>
   </styled.div>
 </TextGroup>
 `;

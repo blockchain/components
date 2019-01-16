@@ -1,6 +1,6 @@
 // @flow strict
 import PropTypes from 'prop-types'
-import React from 'react'
+import * as React from 'react'
 import styled, { keyframes } from 'styled-components'
 
 import { prop } from '../../Tools/interpolation'

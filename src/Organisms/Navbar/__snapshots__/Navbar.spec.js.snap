@@ -36,10 +36,55 @@ exports[`Navbar should render correctly 1`] = `
   <styled.div
     height="60px"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: ",
+              [Function],
+              ";
+  padding: 0 2rem;
+  box-sizing: border-box;
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    padding: 0 3rem;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       height="60px"
-    />
+    >
+      <div
+        className="c0"
+        height="60px"
+      />
+    </StyledComponent>
   </styled.div>
 </Navbar>
 `;
@@ -80,10 +125,55 @@ exports[`Navbar should render correctly with height 1`] = `
   <styled.div
     height="60px"
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: ",
+              [Function],
+              ";
+  padding: 0 2rem;
+  box-sizing: border-box;
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    padding: 0 3rem;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       height="60px"
-    />
+    >
+      <div
+        className="c0"
+        height="60px"
+      />
+    </StyledComponent>
   </styled.div>
 </Navbar>
 `;

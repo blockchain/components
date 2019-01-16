@@ -36,13 +36,65 @@ exports[`TogglerItem should render correctly 1`] = `
     e2e="defaultTogglerItem"
     selected={false}
   >
-    <div
-      className="c0"
-      data-e2e="defaultTogglerItem"
+    <StyledComponent
+      e2e="defaultTogglerItem"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+  box-sizing: border-box;
+  font-family: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  font-weight: 500;
+  color: ",
+              [Function],
+              ";
+  background-color: ",
+              [Function],
+              ";
+  cursor: pointer;
+  text-transform: uppercase;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       selected={false}
     >
-      TogglerItem
-    </div>
+      <div
+        className="c0"
+        data-e2e="defaultTogglerItem"
+        selected={false}
+      >
+        TogglerItem
+      </div>
+    </StyledComponent>
   </styled.div>
 </TogglerItem>
 `;
@@ -83,13 +135,65 @@ exports[`TogglerItem should render correctly with selected 1`] = `
     e2e="defaultTogglerItem"
     selected={true}
   >
-    <div
-      className="c0"
-      data-e2e="defaultTogglerItem"
+    <StyledComponent
+      e2e="defaultTogglerItem"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+  box-sizing: border-box;
+  font-family: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  font-weight: 500;
+  color: ",
+              [Function],
+              ";
+  background-color: ",
+              [Function],
+              ";
+  cursor: pointer;
+  text-transform: uppercase;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       selected={true}
     >
-      TogglerItem
-    </div>
+      <div
+        className="c0"
+        data-e2e="defaultTogglerItem"
+        selected={true}
+      >
+        TogglerItem
+      </div>
+    </StyledComponent>
   </styled.div>
 </TogglerItem>
 `;

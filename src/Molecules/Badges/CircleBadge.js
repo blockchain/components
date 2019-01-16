@@ -1,7 +1,7 @@
 // @flow strict
 import PropTypes from 'prop-types'
-import React from 'react'
-import styled, { type ReactComponentFunctional } from 'styled-components'
+import * as React from 'react'
+import styled from 'styled-components'
 
 import {
   FabFacebookF,
@@ -14,7 +14,7 @@ import { prop, theme } from '../../Tools/interpolation'
 
 type WrapperPropsType = { +size: string }
 
-const Wrapper: ReactComponentFunctional<LinkPropsType> = styled(Link)`
+const Wrapper: React.ComponentType<LinkPropsType> = styled(Link)`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -30,9 +30,7 @@ const Wrapper: ReactComponentFunctional<LinkPropsType> = styled(Link)`
   }
 `
 
-const WhiteFacebook: ReactComponentFunctional<IconPropsType> = styled(
-  FabFacebookF,
-)`
+const WhiteFacebook: React.ComponentType<IconPropsType> = styled(FabFacebookF)`
   fill: ${theme('circleBadgeColor')};
   max-height: 60%;
   max-width: 60%;
@@ -41,9 +39,7 @@ const WhiteFacebook: ReactComponentFunctional<IconPropsType> = styled(
     fill: ${theme('circleBadgeColor')};
   }
 `
-const WhiteLinkedin: ReactComponentFunctional<IconPropsType> = styled(
-  FabLinkedinIn,
-)`
+const WhiteLinkedin: React.ComponentType<IconPropsType> = styled(FabLinkedinIn)`
   fill: ${theme('circleBadgeColor')};
   max-height: 60%;
   max-width: 60%;
@@ -52,9 +48,7 @@ const WhiteLinkedin: ReactComponentFunctional<IconPropsType> = styled(
     fill: ${theme('circleBadgeColor')};
   }
 `
-const WhiteTwitter: ReactComponentFunctional<IconPropsType> = styled(
-  FabTwitter,
-)`
+const WhiteTwitter: React.ComponentType<IconPropsType> = styled(FabTwitter)`
   fill: ${theme('circleBadgeColor')};
   max-height: 60%;
   max-width: 60%;

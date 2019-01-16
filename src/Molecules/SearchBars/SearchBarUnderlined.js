@@ -39,9 +39,7 @@ const SearchInput = styled(Input)`
   }
 `
 
-const IconContainer = styled.div.attrs({
-  'data-e2e': injectE2E,
-})`
+const IconContainer = styled.div.attrs(injectE2E)`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -53,19 +51,12 @@ const IconContainer = styled.div.attrs({
 const SearchBarUnderlined = ({
   children,
   e2e,
-  onChange,
   onClick,
-  value,
   width,
   ...rest
 }: PropsType) => (
   <Wrapper width={width}>
-    <SearchInput
-      e2e={`${e2e || ''}.Input`}
-      onChange={onChange}
-      value={value}
-      {...rest}
-    />
+    <SearchInput e2e={`${e2e || ''}.Input`} {...rest} />
     <IconContainer e2e={`${e2e || ''}.Button`} onClick={onClick}>
       <FasSearch selectable size="20px" />
     </IconContainer>

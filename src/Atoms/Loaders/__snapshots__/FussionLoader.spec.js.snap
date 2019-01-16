@@ -72,20 +72,168 @@ exports[`FussionLoader should render correctly 1`] = `
 
 <FussionLoader>
   <styled.div>
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.div>
-        <div
-          className="c1"
-        >
-          <div />
-          <div />
-          <div />
-          <div />
-        </div>
-      </styled.div>
-    </div>
+      <div
+        className="c0"
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  width: 8px;
+  height: 8px;
+  position: relative;
+  box-sizing: border-box;
+
+  & > div {
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: ",
+                    [Function],
+                    ";
+    transform: translate(-50%, -50%);
+  }
+
+  & > div:nth-child(1) {
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-cDEyoB",
+                      "inject": [Function],
+                      "name": "cDEyoB",
+                      "rules": Array [
+                        "@-webkit-keyframes cDEyoB{0%{opacity:0.35;}50%{top:-100%;left:200%;opacity:1;}100%{top:50%;left:100%;z-index:2;opacity:0.35;}}",
+                        "@keyframes cDEyoB{0%{opacity:0.35;}50%{top:-100%;left:200%;opacity:1;}100%{top:50%;left:100%;z-index:2;opacity:0.35;}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1s 0s ease infinite;
+  }
+
+  & > div:nth-child(2) {
+    top: 50%;
+    left: 100%;
+    z-index: 2;
+    animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-bjqCJF",
+                      "inject": [Function],
+                      "name": "bjqCJF",
+                      "rules": Array [
+                        "@-webkit-keyframes bjqCJF{0%{opacity:0.35;}50%{top:200%;left:200%;opacity:1;}100%{top:100%;left:50%;z-index:1;opacity:0.35;}}",
+                        "@keyframes bjqCJF{0%{opacity:0.35;}50%{top:200%;left:200%;opacity:1;}100%{top:100%;left:50%;z-index:1;opacity:0.35;}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1s 0s ease infinite;
+  }
+
+  & > div:nth-child(3) {
+    top: 100%;
+    left: 50%;
+    z-index: 1;
+    animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-IydCq",
+                      "inject": [Function],
+                      "name": "IydCq",
+                      "rules": Array [
+                        "@-webkit-keyframes IydCq{0%{opacity:0.35;}50%{top:200%;left:-100%;opacity:1;}100%{top:50%;left:0;z-index:2;opacity:0.35;}}",
+                        "@keyframes IydCq{0%{opacity:0.35;}50%{top:200%;left:-100%;opacity:1;}100%{top:50%;left:0;z-index:2;opacity:0.35;}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1s 0s ease infinite;
+  }
+
+  & > div:nth-child(4) {
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    animation: ",
+                    Keyframes {
+                      "id": "sc-keyframes-dsyxXP",
+                      "inject": [Function],
+                      "name": "dsyxXP",
+                      "rules": Array [
+                        "@-webkit-keyframes dsyxXP{0%{opacity:0.35;}50%{top:-100%;left:-100%;opacity:1;}100%{top:0;left:50%;z-index:1;opacity:0.35;}}",
+                        "@keyframes dsyxXP{0%{opacity:0.35;}50%{top:-100%;left:-100%;opacity:1;}100%{top:0;left:50%;z-index:1;opacity:0.35;}}",
+                      ],
+                      "toString": [Function],
+                    },
+                    " 1s 0s ease infinite;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              <div />
+              <div />
+              <div />
+              <div />
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
   </styled.div>
 </FussionLoader>
 `;
