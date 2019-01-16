@@ -146,12 +146,12 @@ const createClassFile = (dest, type) => (p) => {
         {
           dimensions: false,
           svgoConfig,
-          template: generateClass('../../'),
+          template: generateClass('../../', false),
         },
         { componentName: name },
       )
       .then((jsCode) => {
-        classOutput.end(jsCode)
+        classOutput.end('// @flow strict\n' + jsCode)
 
         return { componentName, filename }
       })

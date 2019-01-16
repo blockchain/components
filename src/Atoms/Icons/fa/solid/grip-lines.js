@@ -1,12 +1,7 @@
 // @flow strict
-import React from 'react'
+import React from 'react';
+import withStyle from "../../withStyle";
 
-import withStyle from '../../withStyle'
+const SvgFasGripLines = props => <svg viewBox="0 0 512 512" {...props}><path d="M496 288H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm0-128H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16z" /></svg>;
 
-const SvgFasGripLines = (props) => (
-  <svg viewBox="0 0 512 512" {...props}>
-    <path d="M496 288H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm0-128H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16z" />
-  </svg>
-)
-
-export const FasGripLines = withStyle(SvgFasGripLines, 'FasGripLines', false)
+export const FasGripLines = withStyle(SvgFasGripLines, "FasGripLines", false);
