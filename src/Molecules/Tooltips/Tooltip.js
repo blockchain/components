@@ -96,13 +96,12 @@ class Tooltip extends React.Component<PropsType, StateType> {
     placement: 'top',
   }
 
-  constructor(props: PropsType) {
-    super(props)
-    this.container = document.createElement('div')
-  }
-
   state = {
     active: false,
+  }
+
+  componentDidMount() {
+    this.container = document.createElement('div')
   }
 
   componentWillUnmount() {
