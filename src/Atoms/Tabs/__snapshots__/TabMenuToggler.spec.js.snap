@@ -32,7 +32,7 @@ exports[`TabMenuToggler should render correctly 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-iChnts",
+            "componentId": "sc-eusCwN",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -51,7 +51,7 @@ exports[`TabMenuToggler should render correctly 1`] = `
           "displayName": "Styled(FasBars)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-iChnts",
+          "styledComponentId": "sc-eusCwN",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -83,7 +83,7 @@ exports[`TabMenuToggler should render correctly 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwNswr",
+                  "componentId": "sc-frcGqA",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -110,7 +110,7 @@ exports[`TabMenuToggler should render correctly 1`] = `
                 "displayName": "Styled(SvgFasBars)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-bwNswr",
+                "styledComponentId": "sc-frcGqA",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],

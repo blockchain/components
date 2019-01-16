@@ -25,7 +25,7 @@ exports[`bc should render correctly 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-dXfzlN",
+            "componentId": "sc-jHXLhC",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -52,7 +52,7 @@ exports[`bc should render correctly 1`] = `
           "displayName": "Styled(SvgBitcoin)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-dXfzlN",
+          "styledComponentId": "sc-jHXLhC",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -113,7 +113,7 @@ exports[`bc should render correctly with selectable 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-dXfzlN",
+            "componentId": "sc-jHXLhC",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -140,7 +140,7 @@ exports[`bc should render correctly with selectable 1`] = `
           "displayName": "Styled(SvgBitcoin)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-dXfzlN",
+          "styledComponentId": "sc-jHXLhC",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -201,7 +201,7 @@ exports[`bc should render correctly with size 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-dXfzlN",
+            "componentId": "sc-jHXLhC",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -228,7 +228,7 @@ exports[`bc should render correctly with size 1`] = `
           "displayName": "Styled(SvgBitcoin)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-dXfzlN",
+          "styledComponentId": "sc-jHXLhC",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],

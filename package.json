@@ -62,6 +62,7 @@
     "@storybook/react": "4.1.6",
     "@storybook/storybook-deployer": "2.8.1",
     "@svgr/cli": "4.1.0",
+    "@svgr/core": "4.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.0.1",
     "babel-jest": "23.6.0",

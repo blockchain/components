@@ -193,9 +193,9 @@ class Tooltip extends React.Component<PropsType, StateType> {
                   ReactDOM.createPortal(
                     <Transition
                       duration={duration}
-                      innerRef={ref}
                       onMouseLeave={this.handleMouseLeave}
                       onMouseMove={this.handleMouseMove}
+                      ref={ref}
                       style={style}
                     >
                       <StyledTooltip
