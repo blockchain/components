@@ -17,7 +17,7 @@ const name = `cryptocurrency-icons-${version}`
 
 const url = `https://github.com/atomiclabs/cryptocurrency-icons/archive/v${version}.zip`
 
-const blacklist = ['$pac.js']
+const blacklist = ['$pac.svg']
 
 console.log('\n\n######## Building Crypto ########')
 console.log('Cleanup')

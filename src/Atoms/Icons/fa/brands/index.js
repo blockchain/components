@@ -1,4 +1,5 @@
 // @flow strict
+export { Fab500px } from './500px'
 export { FabAccessibleIcon } from './accessible-icon'
 export { FabAccusoft } from './accusoft'
 export { FabAcquisitionsIncorporated } from './acquisitions-incorporated'

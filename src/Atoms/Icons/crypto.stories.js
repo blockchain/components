@@ -2,7 +2,14 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import { infoStory as styles } from '../../../.storybook/config'
-import { CryptoEth, CryptoEtc, CryptoBch, CryptoBtc, CryptoXlm } from '.'
+import {
+  CryptoEth,
+  CryptoEtc,
+  CryptoBch,
+  CryptoBsv,
+  CryptoBtc,
+  CryptoXlm,
+} from '.'
 
 const infoStory = {
   ...styles,
@@ -16,6 +23,7 @@ storiesOf('Atoms/Icons/crypto', module)
       <CryptoBtc />
       <CryptoBch size="15px" />
       <CryptoBch />
+      <CryptoBsv />
       <CryptoEth />
       <CryptoEtc />
       <CryptoXlm />
