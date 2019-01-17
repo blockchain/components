@@ -1,5 +1,4 @@
 // @flow strict
-export { Crypto$pac } from './$pac'
 export { Crypto2give } from './2give'
 export { CryptoAbt } from './abt'
 export { CryptoAct } from './act'

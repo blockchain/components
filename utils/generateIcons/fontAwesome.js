@@ -17,7 +17,7 @@ const faName = `fontawesome-free-${faVersion}-desktop`
 
 const url = `https://github.com/FortAwesome/Font-Awesome/releases/download/${faVersion}/${faName}.zip`
 
-const blacklist = ['500px.svg']
+const blacklist = []
 
 console.log('######## Building FontAwesome ########')
 console.log('Cleanup')
