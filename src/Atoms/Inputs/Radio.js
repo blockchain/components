@@ -70,7 +70,7 @@ export const RadioLabel = styled.label`
 `
 
 const Radio = ({ className, input, ...rest }: PropsType) => (
-  <Wrapper>
+  <Wrapper className={className}>
     <Input {...input} {...rest} id={toId(rest.value)} type="radio" />
     <RadioLabel htmlFor={toId(rest.value)}>
       <RadioButton />
