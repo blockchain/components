@@ -76,9 +76,11 @@ exports[`Input should render correctly 1`] = `
   width="100%"
 >
   <styled.div
+    className=""
     width="100%"
   >
     <StyledComponent
+      className=""
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -305,9 +307,11 @@ exports[`Input should render correctly with disabled 1`] = `
   width="100%"
 >
   <styled.div
+    className=""
     width="100%"
   >
     <StyledComponent
+      className=""
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -542,9 +546,11 @@ exports[`Input should render correctly with error="error" 1`] = `
   width="100%"
 >
   <styled.div
+    className=""
     width="100%"
   >
     <StyledComponent
+      className=""
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -834,9 +840,11 @@ exports[`Input should render correctly with label="label" 1`] = `
   width="100%"
 >
   <styled.div
+    className=""
     width="100%"
   >
     <StyledComponent
+      className=""
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -1128,9 +1136,11 @@ exports[`Input should render correctly with label="label" and disabled 1`] = `
   width="100%"
 >
   <styled.div
+    className=""
     width="100%"
   >
     <StyledComponent
+      className=""
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -1422,9 +1432,11 @@ exports[`Input should render correctly with label="label" and error="error" 1`] 
   width="100%"
 >
   <styled.div
+    className=""
     width="100%"
   >
     <StyledComponent
+      className=""
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -1709,9 +1721,11 @@ exports[`Input should render correctly with type 1`] = `
   width="100%"
 >
   <styled.div
+    className=""
     width="100%"
   >
     <StyledComponent
+      className=""
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -1960,13 +1974,17 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
   width="100%"
 >
   <Checkbox
+    className=""
     disabled={false}
     e2e="defaultInput"
     type="checkbox"
     width="100%"
   >
-    <styled.div>
+    <styled.div
+      className=""
+    >
       <StyledComponent
+        className=""
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -2271,13 +2289,17 @@ exports[`Input should render correctly with type="radio" 1`] = `
   width="100%"
 >
   <Radio
+    className=""
     disabled={false}
     e2e="defaultInput"
     type="radio"
     width="100%"
   >
-    <styled.div>
+    <styled.div
+      className=""
+    >
       <StyledComponent
+        className=""
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -2574,9 +2596,11 @@ exports[`Input should render correctly with width 1`] = `
   width="200px"
 >
   <styled.div
+    className=""
     width="200px"
   >
     <StyledComponent
+      className=""
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),

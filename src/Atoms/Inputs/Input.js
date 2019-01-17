@@ -110,7 +110,7 @@ export const InputLabel = styled.label`
 `
 
 const Input = ({
-  className,
+  className = '',
   input,
   type,
   renderSuffix,
@@ -120,11 +120,13 @@ const Input = ({
   const hasError = rest.error != null
 
   if (type === 'checkbox') {
-    return <Checkbox {...input} {...rest} type={type} />
+    return (
+      <Checkbox className={className} input={input} type="checkbox" {...rest} />
+    )
   }
 
   if (type === 'radio') {
-    return <Radio {...input} {...rest} type={type} />
+    return <Radio className={className} input={input} type="radio" {...rest} />
   }
 
   if (hasLabel || hasError) {
