@@ -76,9 +76,7 @@ exports[`SingleDropdown should render correctly 1`] = `
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-<SingleDropdown
-  capitalize={false}
-  italic={false}
+<ForwardRef(SingleDropdownWithRef)
   items={
     Array [
       Object {
@@ -120,30 +118,76 @@ exports[`SingleDropdown should render correctly 1`] = `
     ]
   }
   onChange={[MockFunction]}
-  uppercase={false}
-  width="100%"
 >
-  <styled.div
+  <SingleDropdown
+    capitalize={false}
+    forwardRef={null}
+    italic={false}
+    items={
+      Array [
+        Object {
+          "text": "Item1",
+          "value": 1,
+        },
+        Object {
+          "text": "Item2",
+          "value": 2,
+        },
+        Object {
+          "text": "Item3",
+          "value": 3,
+        },
+        Object {
+          "text": "Item4",
+          "value": 4,
+        },
+        Object {
+          "text": "Item5",
+          "value": 5,
+        },
+        Object {
+          "text": "Item6",
+          "value": 6,
+        },
+        Object {
+          "text": "Item7",
+          "value": 7,
+        },
+        Object {
+          "text": "Item8",
+          "value": 8,
+        },
+        Object {
+          "text": "Item9",
+          "value": 9,
+        },
+      ]
+    }
+    onChange={[MockFunction]}
+    uppercase={false}
     width="100%"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-iwsKbI",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+    <styled.div
+      width="100%"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-iwsKbI",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   box-sizing: border-box;
 
   &::after {
@@ -156,78 +200,78 @@ exports[`SingleDropdown should render correctly 1`] = `
     border-left: 0.4rem solid transparent;
     border-right: 0.4rem solid transparent;
     border-top: 0.4rem solid ",
-              [Function],
-              ";
+                [Function],
+                ";
     pointer-events: none;
   }
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-iwsKbI",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-iwsKbI",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.select
-          capitalize={false}
-          italic={false}
-          onChange={[MockFunction]}
-          uppercase={false}
+        <div
+          className="c0"
+          width="100%"
         >
-          <StyledComponent
+          <styled.select
             capitalize={false}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-gZMcBi",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
+            italic={false}
+            onChange={[MockFunction]}
+            uppercase={false}
+          >
+            <StyledComponent
+              capitalize={false}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gZMcBi",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
   width: 100%;
   height: 2.7rem;
   padding: 0 2.4rem 0 1rem;
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   appearance: none;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-weight: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-style: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   cursor: pointer;
   outline: none;
   text-overflow: ellipsis;
@@ -236,21 +280,21 @@ exports[`SingleDropdown should render correctly 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
   &:required:invalid {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   option[value=''][disabled] {
@@ -259,100 +303,101 @@ exports[`SingleDropdown should render correctly 1`] = `
 
   option {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &:active:not(:disabled),
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.select",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-gZMcBi",
-                "target": "select",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.select",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-gZMcBi",
+                  "target": "select",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            italic={false}
-            onChange={[MockFunction]}
-            uppercase={false}
-          >
-            <select
-              className="c1"
+              forwardedRef={null}
+              italic={false}
               onChange={[MockFunction]}
+              uppercase={false}
             >
-              <option
-                key="1"
-                value={1}
+              <select
+                className="c1"
+                onChange={[MockFunction]}
               >
-                Item1
-              </option>
-              <option
-                key="2"
-                value={2}
-              >
-                Item2
-              </option>
-              <option
-                key="3"
-                value={3}
-              >
-                Item3
-              </option>
-              <option
-                key="4"
-                value={4}
-              >
-                Item4
-              </option>
-              <option
-                key="5"
-                value={5}
-              >
-                Item5
-              </option>
-              <option
-                key="6"
-                value={6}
-              >
-                Item6
-              </option>
-              <option
-                key="7"
-                value={7}
-              >
-                Item7
-              </option>
-              <option
-                key="8"
-                value={8}
-              >
-                Item8
-              </option>
-              <option
-                key="9"
-                value={9}
-              >
-                Item9
-              </option>
-            </select>
-          </StyledComponent>
-        </styled.select>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</SingleDropdown>
+                <option
+                  key="1"
+                  value={1}
+                >
+                  Item1
+                </option>
+                <option
+                  key="2"
+                  value={2}
+                >
+                  Item2
+                </option>
+                <option
+                  key="3"
+                  value={3}
+                >
+                  Item3
+                </option>
+                <option
+                  key="4"
+                  value={4}
+                >
+                  Item4
+                </option>
+                <option
+                  key="5"
+                  value={5}
+                >
+                  Item5
+                </option>
+                <option
+                  key="6"
+                  value={6}
+                >
+                  Item6
+                </option>
+                <option
+                  key="7"
+                  value={7}
+                >
+                  Item7
+                </option>
+                <option
+                  key="8"
+                  value={8}
+                >
+                  Item8
+                </option>
+                <option
+                  key="9"
+                  value={9}
+                >
+                  Item9
+                </option>
+              </select>
+            </StyledComponent>
+          </styled.select>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </SingleDropdown>
+</ForwardRef(SingleDropdownWithRef)>
 `;
 
 exports[`SingleDropdown should render correctly with capitalize 1`] = `
@@ -431,9 +476,8 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-<SingleDropdown
+<ForwardRef(SingleDropdownWithRef)
   capitalize={true}
-  italic={false}
   items={
     Array [
       Object {
@@ -475,30 +519,76 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
     ]
   }
   onChange={[MockFunction]}
-  uppercase={false}
-  width="100%"
 >
-  <styled.div
+  <SingleDropdown
+    capitalize={true}
+    forwardRef={null}
+    italic={false}
+    items={
+      Array [
+        Object {
+          "text": "Item1",
+          "value": 1,
+        },
+        Object {
+          "text": "Item2",
+          "value": 2,
+        },
+        Object {
+          "text": "Item3",
+          "value": 3,
+        },
+        Object {
+          "text": "Item4",
+          "value": 4,
+        },
+        Object {
+          "text": "Item5",
+          "value": 5,
+        },
+        Object {
+          "text": "Item6",
+          "value": 6,
+        },
+        Object {
+          "text": "Item7",
+          "value": 7,
+        },
+        Object {
+          "text": "Item8",
+          "value": 8,
+        },
+        Object {
+          "text": "Item9",
+          "value": 9,
+        },
+      ]
+    }
+    onChange={[MockFunction]}
+    uppercase={false}
     width="100%"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-iwsKbI",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+    <styled.div
+      width="100%"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-iwsKbI",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   box-sizing: border-box;
 
   &::after {
@@ -511,78 +601,78 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
     border-left: 0.4rem solid transparent;
     border-right: 0.4rem solid transparent;
     border-top: 0.4rem solid ",
-              [Function],
-              ";
+                [Function],
+                ";
     pointer-events: none;
   }
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-iwsKbI",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-iwsKbI",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.select
-          capitalize={true}
-          italic={false}
-          onChange={[MockFunction]}
-          uppercase={false}
+        <div
+          className="c0"
+          width="100%"
         >
-          <StyledComponent
+          <styled.select
             capitalize={true}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-gZMcBi",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
+            italic={false}
+            onChange={[MockFunction]}
+            uppercase={false}
+          >
+            <StyledComponent
+              capitalize={true}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gZMcBi",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
   width: 100%;
   height: 2.7rem;
   padding: 0 2.4rem 0 1rem;
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   appearance: none;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-weight: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-style: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   cursor: pointer;
   outline: none;
   text-overflow: ellipsis;
@@ -591,21 +681,21 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
   &:required:invalid {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   option[value=''][disabled] {
@@ -614,100 +704,101 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
 
   option {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &:active:not(:disabled),
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.select",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-gZMcBi",
-                "target": "select",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.select",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-gZMcBi",
+                  "target": "select",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            italic={false}
-            onChange={[MockFunction]}
-            uppercase={false}
-          >
-            <select
-              className="c1"
+              forwardedRef={null}
+              italic={false}
               onChange={[MockFunction]}
+              uppercase={false}
             >
-              <option
-                key="1"
-                value={1}
+              <select
+                className="c1"
+                onChange={[MockFunction]}
               >
-                Item1
-              </option>
-              <option
-                key="2"
-                value={2}
-              >
-                Item2
-              </option>
-              <option
-                key="3"
-                value={3}
-              >
-                Item3
-              </option>
-              <option
-                key="4"
-                value={4}
-              >
-                Item4
-              </option>
-              <option
-                key="5"
-                value={5}
-              >
-                Item5
-              </option>
-              <option
-                key="6"
-                value={6}
-              >
-                Item6
-              </option>
-              <option
-                key="7"
-                value={7}
-              >
-                Item7
-              </option>
-              <option
-                key="8"
-                value={8}
-              >
-                Item8
-              </option>
-              <option
-                key="9"
-                value={9}
-              >
-                Item9
-              </option>
-            </select>
-          </StyledComponent>
-        </styled.select>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</SingleDropdown>
+                <option
+                  key="1"
+                  value={1}
+                >
+                  Item1
+                </option>
+                <option
+                  key="2"
+                  value={2}
+                >
+                  Item2
+                </option>
+                <option
+                  key="3"
+                  value={3}
+                >
+                  Item3
+                </option>
+                <option
+                  key="4"
+                  value={4}
+                >
+                  Item4
+                </option>
+                <option
+                  key="5"
+                  value={5}
+                >
+                  Item5
+                </option>
+                <option
+                  key="6"
+                  value={6}
+                >
+                  Item6
+                </option>
+                <option
+                  key="7"
+                  value={7}
+                >
+                  Item7
+                </option>
+                <option
+                  key="8"
+                  value={8}
+                >
+                  Item8
+                </option>
+                <option
+                  key="9"
+                  value={9}
+                >
+                  Item9
+                </option>
+              </select>
+            </StyledComponent>
+          </styled.select>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </SingleDropdown>
+</ForwardRef(SingleDropdownWithRef)>
 `;
 
 exports[`SingleDropdown should render correctly with error="error" 1`] = `
@@ -793,10 +884,8 @@ exports[`SingleDropdown should render correctly with error="error" 1`] = `
   box-shadow: 0 0 0 1px transparent;
 }
 
-<SingleDropdown
-  capitalize={false}
+<ForwardRef(SingleDropdownWithRef)
   error="error"
-  italic={false}
   items={
     Array [
       Object {
@@ -837,30 +926,76 @@ exports[`SingleDropdown should render correctly with error="error" 1`] = `
       },
     ]
   }
-  uppercase={false}
-  width="100%"
 >
-  <styled.div
+  <SingleDropdown
+    capitalize={false}
+    error="error"
+    forwardRef={null}
+    italic={false}
+    items={
+      Array [
+        Object {
+          "text": "Item1",
+          "value": 1,
+        },
+        Object {
+          "text": "Item2",
+          "value": 2,
+        },
+        Object {
+          "text": "Item3",
+          "value": 3,
+        },
+        Object {
+          "text": "Item4",
+          "value": 4,
+        },
+        Object {
+          "text": "Item5",
+          "value": 5,
+        },
+        Object {
+          "text": "Item6",
+          "value": 6,
+        },
+        Object {
+          "text": "Item7",
+          "value": 7,
+        },
+        Object {
+          "text": "Item8",
+          "value": 8,
+        },
+        Object {
+          "text": "Item9",
+          "value": 9,
+        },
+      ]
+    }
+    uppercase={false}
     width="100%"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-iwsKbI",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+    <styled.div
+      width="100%"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-iwsKbI",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   box-sizing: border-box;
 
   &::after {
@@ -873,129 +1008,129 @@ exports[`SingleDropdown should render correctly with error="error" 1`] = `
     border-left: 0.4rem solid transparent;
     border-right: 0.4rem solid transparent;
     border-top: 0.4rem solid ",
-              [Function],
-              ";
+                [Function],
+                ";
     pointer-events: none;
   }
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-iwsKbI",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-iwsKbI",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.label
-          error={true}
+        <div
+          className="c0"
+          width="100%"
         >
-          <StyledComponent
+          <styled.label
             error={true}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-dnqmqq",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
+          >
+            <StyledComponent
+              error={true}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-dnqmqq",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   padding-bottom: 0.5rem;
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
 ",
-                  ],
-                },
-                "displayName": "styled.label",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-dnqmqq",
-                "target": "label",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.label",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-dnqmqq",
+                  "target": "label",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-          >
-            <label
-              className="c1"
+              forwardedRef={null}
             >
-              error
-            </label>
-          </StyledComponent>
-        </styled.label>
-        <styled.select
-          capitalize={false}
-          error="error"
-          italic={false}
-          uppercase={false}
-        >
-          <StyledComponent
+              <label
+                className="c1"
+              >
+                error
+              </label>
+            </StyledComponent>
+          </styled.label>
+          <styled.select
             capitalize={false}
             error="error"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-gZMcBi",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    "
+            italic={false}
+            uppercase={false}
+          >
+            <StyledComponent
+              capitalize={false}
+              error="error"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gZMcBi",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
   width: 100%;
   height: 2.7rem;
   padding: 0 2.4rem 0 1rem;
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   appearance: none;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-weight: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-style: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   cursor: pointer;
   outline: none;
   text-overflow: ellipsis;
@@ -1004,21 +1139,21 @@ exports[`SingleDropdown should render correctly with error="error" 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
   &:required:invalid {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   option[value=''][disabled] {
@@ -1027,98 +1162,99 @@ exports[`SingleDropdown should render correctly with error="error" 1`] = `
 
   option {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &:active:not(:disabled),
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.select",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-gZMcBi",
-                "target": "select",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.select",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-gZMcBi",
+                  "target": "select",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            italic={false}
-            uppercase={false}
-          >
-            <select
-              className="c2"
+              forwardedRef={null}
+              italic={false}
+              uppercase={false}
             >
-              <option
-                key="1"
-                value={1}
+              <select
+                className="c2"
               >
-                Item1
-              </option>
-              <option
-                key="2"
-                value={2}
-              >
-                Item2
-              </option>
-              <option
-                key="3"
-                value={3}
-              >
-                Item3
-              </option>
-              <option
-                key="4"
-                value={4}
-              >
-                Item4
-              </option>
-              <option
-                key="5"
-                value={5}
-              >
-                Item5
-              </option>
-              <option
-                key="6"
-                value={6}
-              >
-                Item6
-              </option>
-              <option
-                key="7"
-                value={7}
-              >
-                Item7
-              </option>
-              <option
-                key="8"
-                value={8}
-              >
-                Item8
-              </option>
-              <option
-                key="9"
-                value={9}
-              >
-                Item9
-              </option>
-            </select>
-          </StyledComponent>
-        </styled.select>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</SingleDropdown>
+                <option
+                  key="1"
+                  value={1}
+                >
+                  Item1
+                </option>
+                <option
+                  key="2"
+                  value={2}
+                >
+                  Item2
+                </option>
+                <option
+                  key="3"
+                  value={3}
+                >
+                  Item3
+                </option>
+                <option
+                  key="4"
+                  value={4}
+                >
+                  Item4
+                </option>
+                <option
+                  key="5"
+                  value={5}
+                >
+                  Item5
+                </option>
+                <option
+                  key="6"
+                  value={6}
+                >
+                  Item6
+                </option>
+                <option
+                  key="7"
+                  value={7}
+                >
+                  Item7
+                </option>
+                <option
+                  key="8"
+                  value={8}
+                >
+                  Item8
+                </option>
+                <option
+                  key="9"
+                  value={9}
+                >
+                  Item9
+                </option>
+              </select>
+            </StyledComponent>
+          </styled.select>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </SingleDropdown>
+</ForwardRef(SingleDropdownWithRef)>
 `;
 
 exports[`SingleDropdown should render correctly with italic 1`] = `
@@ -1197,8 +1333,7 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-<SingleDropdown
-  capitalize={false}
+<ForwardRef(SingleDropdownWithRef)
   italic={true}
   items={
     Array [
@@ -1241,30 +1376,76 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
     ]
   }
   onChange={[MockFunction]}
-  uppercase={false}
-  width="100%"
 >
-  <styled.div
+  <SingleDropdown
+    capitalize={false}
+    forwardRef={null}
+    italic={true}
+    items={
+      Array [
+        Object {
+          "text": "Item1",
+          "value": 1,
+        },
+        Object {
+          "text": "Item2",
+          "value": 2,
+        },
+        Object {
+          "text": "Item3",
+          "value": 3,
+        },
+        Object {
+          "text": "Item4",
+          "value": 4,
+        },
+        Object {
+          "text": "Item5",
+          "value": 5,
+        },
+        Object {
+          "text": "Item6",
+          "value": 6,
+        },
+        Object {
+          "text": "Item7",
+          "value": 7,
+        },
+        Object {
+          "text": "Item8",
+          "value": 8,
+        },
+        Object {
+          "text": "Item9",
+          "value": 9,
+        },
+      ]
+    }
+    onChange={[MockFunction]}
+    uppercase={false}
     width="100%"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-iwsKbI",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+    <styled.div
+      width="100%"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-iwsKbI",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   box-sizing: border-box;
 
   &::after {
@@ -1277,78 +1458,78 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
     border-left: 0.4rem solid transparent;
     border-right: 0.4rem solid transparent;
     border-top: 0.4rem solid ",
-              [Function],
-              ";
+                [Function],
+                ";
     pointer-events: none;
   }
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-iwsKbI",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-iwsKbI",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.select
-          capitalize={false}
-          italic={true}
-          onChange={[MockFunction]}
-          uppercase={false}
+        <div
+          className="c0"
+          width="100%"
         >
-          <StyledComponent
+          <styled.select
             capitalize={false}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-gZMcBi",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
+            italic={true}
+            onChange={[MockFunction]}
+            uppercase={false}
+          >
+            <StyledComponent
+              capitalize={false}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gZMcBi",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
   width: 100%;
   height: 2.7rem;
   padding: 0 2.4rem 0 1rem;
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   appearance: none;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-weight: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-style: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   cursor: pointer;
   outline: none;
   text-overflow: ellipsis;
@@ -1357,21 +1538,21 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
   &:required:invalid {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   option[value=''][disabled] {
@@ -1380,100 +1561,101 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
 
   option {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &:active:not(:disabled),
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.select",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-gZMcBi",
-                "target": "select",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.select",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-gZMcBi",
+                  "target": "select",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            italic={true}
-            onChange={[MockFunction]}
-            uppercase={false}
-          >
-            <select
-              className="c1"
+              forwardedRef={null}
+              italic={true}
               onChange={[MockFunction]}
+              uppercase={false}
             >
-              <option
-                key="1"
-                value={1}
+              <select
+                className="c1"
+                onChange={[MockFunction]}
               >
-                Item1
-              </option>
-              <option
-                key="2"
-                value={2}
-              >
-                Item2
-              </option>
-              <option
-                key="3"
-                value={3}
-              >
-                Item3
-              </option>
-              <option
-                key="4"
-                value={4}
-              >
-                Item4
-              </option>
-              <option
-                key="5"
-                value={5}
-              >
-                Item5
-              </option>
-              <option
-                key="6"
-                value={6}
-              >
-                Item6
-              </option>
-              <option
-                key="7"
-                value={7}
-              >
-                Item7
-              </option>
-              <option
-                key="8"
-                value={8}
-              >
-                Item8
-              </option>
-              <option
-                key="9"
-                value={9}
-              >
-                Item9
-              </option>
-            </select>
-          </StyledComponent>
-        </styled.select>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</SingleDropdown>
+                <option
+                  key="1"
+                  value={1}
+                >
+                  Item1
+                </option>
+                <option
+                  key="2"
+                  value={2}
+                >
+                  Item2
+                </option>
+                <option
+                  key="3"
+                  value={3}
+                >
+                  Item3
+                </option>
+                <option
+                  key="4"
+                  value={4}
+                >
+                  Item4
+                </option>
+                <option
+                  key="5"
+                  value={5}
+                >
+                  Item5
+                </option>
+                <option
+                  key="6"
+                  value={6}
+                >
+                  Item6
+                </option>
+                <option
+                  key="7"
+                  value={7}
+                >
+                  Item7
+                </option>
+                <option
+                  key="8"
+                  value={8}
+                >
+                  Item8
+                </option>
+                <option
+                  key="9"
+                  value={9}
+                >
+                  Item9
+                </option>
+              </select>
+            </StyledComponent>
+          </styled.select>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </SingleDropdown>
+</ForwardRef(SingleDropdownWithRef)>
 `;
 
 exports[`SingleDropdown should render correctly with label="label" 1`] = `
@@ -1559,9 +1741,7 @@ exports[`SingleDropdown should render correctly with label="label" 1`] = `
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-<SingleDropdown
-  capitalize={false}
-  italic={false}
+<ForwardRef(SingleDropdownWithRef)
   items={
     Array [
       Object {
@@ -1603,30 +1783,76 @@ exports[`SingleDropdown should render correctly with label="label" 1`] = `
     ]
   }
   label="label"
-  uppercase={false}
-  width="100%"
 >
-  <styled.div
+  <SingleDropdown
+    capitalize={false}
+    forwardRef={null}
+    italic={false}
+    items={
+      Array [
+        Object {
+          "text": "Item1",
+          "value": 1,
+        },
+        Object {
+          "text": "Item2",
+          "value": 2,
+        },
+        Object {
+          "text": "Item3",
+          "value": 3,
+        },
+        Object {
+          "text": "Item4",
+          "value": 4,
+        },
+        Object {
+          "text": "Item5",
+          "value": 5,
+        },
+        Object {
+          "text": "Item6",
+          "value": 6,
+        },
+        Object {
+          "text": "Item7",
+          "value": 7,
+        },
+        Object {
+          "text": "Item8",
+          "value": 8,
+        },
+        Object {
+          "text": "Item9",
+          "value": 9,
+        },
+      ]
+    }
+    label="label"
+    uppercase={false}
     width="100%"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-iwsKbI",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+    <styled.div
+      width="100%"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-iwsKbI",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   box-sizing: border-box;
 
   &::after {
@@ -1639,128 +1865,128 @@ exports[`SingleDropdown should render correctly with label="label" 1`] = `
     border-left: 0.4rem solid transparent;
     border-right: 0.4rem solid transparent;
     border-top: 0.4rem solid ",
-              [Function],
-              ";
+                [Function],
+                ";
     pointer-events: none;
   }
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-iwsKbI",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-iwsKbI",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.label
-          error={false}
+        <div
+          className="c0"
+          width="100%"
         >
-          <StyledComponent
+          <styled.label
             error={false}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-dnqmqq",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
+          >
+            <StyledComponent
+              error={false}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-dnqmqq",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   padding-bottom: 0.5rem;
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
 ",
-                  ],
-                },
-                "displayName": "styled.label",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-dnqmqq",
-                "target": "label",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.label",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-dnqmqq",
+                  "target": "label",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-          >
-            <label
-              className="c1"
+              forwardedRef={null}
             >
-              label
-            </label>
-          </StyledComponent>
-        </styled.label>
-        <styled.select
-          capitalize={false}
-          italic={false}
-          label="label"
-          uppercase={false}
-        >
-          <StyledComponent
+              <label
+                className="c1"
+              >
+                label
+              </label>
+            </StyledComponent>
+          </styled.label>
+          <styled.select
             capitalize={false}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-gZMcBi",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    "
+            italic={false}
+            label="label"
+            uppercase={false}
+          >
+            <StyledComponent
+              capitalize={false}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gZMcBi",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
   width: 100%;
   height: 2.7rem;
   padding: 0 2.4rem 0 1rem;
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   appearance: none;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-weight: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-style: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   cursor: pointer;
   outline: none;
   text-overflow: ellipsis;
@@ -1769,21 +1995,21 @@ exports[`SingleDropdown should render correctly with label="label" 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
   &:required:invalid {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   option[value=''][disabled] {
@@ -1792,100 +2018,101 @@ exports[`SingleDropdown should render correctly with label="label" 1`] = `
 
   option {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &:active:not(:disabled),
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.select",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-gZMcBi",
-                "target": "select",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.select",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-gZMcBi",
+                  "target": "select",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            italic={false}
-            label="label"
-            uppercase={false}
-          >
-            <select
-              className="c2"
+              forwardedRef={null}
+              italic={false}
               label="label"
+              uppercase={false}
             >
-              <option
-                key="1"
-                value={1}
+              <select
+                className="c2"
+                label="label"
               >
-                Item1
-              </option>
-              <option
-                key="2"
-                value={2}
-              >
-                Item2
-              </option>
-              <option
-                key="3"
-                value={3}
-              >
-                Item3
-              </option>
-              <option
-                key="4"
-                value={4}
-              >
-                Item4
-              </option>
-              <option
-                key="5"
-                value={5}
-              >
-                Item5
-              </option>
-              <option
-                key="6"
-                value={6}
-              >
-                Item6
-              </option>
-              <option
-                key="7"
-                value={7}
-              >
-                Item7
-              </option>
-              <option
-                key="8"
-                value={8}
-              >
-                Item8
-              </option>
-              <option
-                key="9"
-                value={9}
-              >
-                Item9
-              </option>
-            </select>
-          </StyledComponent>
-        </styled.select>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</SingleDropdown>
+                <option
+                  key="1"
+                  value={1}
+                >
+                  Item1
+                </option>
+                <option
+                  key="2"
+                  value={2}
+                >
+                  Item2
+                </option>
+                <option
+                  key="3"
+                  value={3}
+                >
+                  Item3
+                </option>
+                <option
+                  key="4"
+                  value={4}
+                >
+                  Item4
+                </option>
+                <option
+                  key="5"
+                  value={5}
+                >
+                  Item5
+                </option>
+                <option
+                  key="6"
+                  value={6}
+                >
+                  Item6
+                </option>
+                <option
+                  key="7"
+                  value={7}
+                >
+                  Item7
+                </option>
+                <option
+                  key="8"
+                  value={8}
+                >
+                  Item8
+                </option>
+                <option
+                  key="9"
+                  value={9}
+                >
+                  Item9
+                </option>
+              </select>
+            </StyledComponent>
+          </styled.select>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </SingleDropdown>
+</ForwardRef(SingleDropdownWithRef)>
 `;
 
 exports[`SingleDropdown should render correctly with label="label" and error="error" 1`] = `
@@ -1971,10 +2198,8 @@ exports[`SingleDropdown should render correctly with label="label" and error="er
   box-shadow: 0 0 0 1px transparent;
 }
 
-<SingleDropdown
-  capitalize={false}
+<ForwardRef(SingleDropdownWithRef)
   error="error"
-  italic={false}
   items={
     Array [
       Object {
@@ -2016,30 +2241,77 @@ exports[`SingleDropdown should render correctly with label="label" and error="er
     ]
   }
   label="label"
-  uppercase={false}
-  width="100%"
 >
-  <styled.div
+  <SingleDropdown
+    capitalize={false}
+    error="error"
+    forwardRef={null}
+    italic={false}
+    items={
+      Array [
+        Object {
+          "text": "Item1",
+          "value": 1,
+        },
+        Object {
+          "text": "Item2",
+          "value": 2,
+        },
+        Object {
+          "text": "Item3",
+          "value": 3,
+        },
+        Object {
+          "text": "Item4",
+          "value": 4,
+        },
+        Object {
+          "text": "Item5",
+          "value": 5,
+        },
+        Object {
+          "text": "Item6",
+          "value": 6,
+        },
+        Object {
+          "text": "Item7",
+          "value": 7,
+        },
+        Object {
+          "text": "Item8",
+          "value": 8,
+        },
+        Object {
+          "text": "Item9",
+          "value": 9,
+        },
+      ]
+    }
+    label="label"
+    uppercase={false}
     width="100%"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-iwsKbI",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+    <styled.div
+      width="100%"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-iwsKbI",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   box-sizing: border-box;
 
   &::after {
@@ -2052,130 +2324,130 @@ exports[`SingleDropdown should render correctly with label="label" and error="er
     border-left: 0.4rem solid transparent;
     border-right: 0.4rem solid transparent;
     border-top: 0.4rem solid ",
-              [Function],
-              ";
+                [Function],
+                ";
     pointer-events: none;
   }
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-iwsKbI",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-iwsKbI",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.label
-          error={true}
+        <div
+          className="c0"
+          width="100%"
         >
-          <StyledComponent
+          <styled.label
             error={true}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-dnqmqq",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
+          >
+            <StyledComponent
+              error={true}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-dnqmqq",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   padding-bottom: 0.5rem;
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
 ",
-                  ],
-                },
-                "displayName": "styled.label",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-dnqmqq",
-                "target": "label",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.label",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-dnqmqq",
+                  "target": "label",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-          >
-            <label
-              className="c1"
+              forwardedRef={null}
             >
-              label - error
-            </label>
-          </StyledComponent>
-        </styled.label>
-        <styled.select
-          capitalize={false}
-          error="error"
-          italic={false}
-          label="label"
-          uppercase={false}
-        >
-          <StyledComponent
+              <label
+                className="c1"
+              >
+                label - error
+              </label>
+            </StyledComponent>
+          </styled.label>
+          <styled.select
             capitalize={false}
             error="error"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-gZMcBi",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    "
+            italic={false}
+            label="label"
+            uppercase={false}
+          >
+            <StyledComponent
+              capitalize={false}
+              error="error"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gZMcBi",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
   width: 100%;
   height: 2.7rem;
   padding: 0 2.4rem 0 1rem;
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   appearance: none;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-weight: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-style: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   cursor: pointer;
   outline: none;
   text-overflow: ellipsis;
@@ -2184,21 +2456,21 @@ exports[`SingleDropdown should render correctly with label="label" and error="er
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
   &:required:invalid {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   option[value=''][disabled] {
@@ -2207,100 +2479,101 @@ exports[`SingleDropdown should render correctly with label="label" and error="er
 
   option {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &:active:not(:disabled),
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.select",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-gZMcBi",
-                "target": "select",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.select",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-gZMcBi",
+                  "target": "select",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            italic={false}
-            label="label"
-            uppercase={false}
-          >
-            <select
-              className="c2"
+              forwardedRef={null}
+              italic={false}
               label="label"
+              uppercase={false}
             >
-              <option
-                key="1"
-                value={1}
+              <select
+                className="c2"
+                label="label"
               >
-                Item1
-              </option>
-              <option
-                key="2"
-                value={2}
-              >
-                Item2
-              </option>
-              <option
-                key="3"
-                value={3}
-              >
-                Item3
-              </option>
-              <option
-                key="4"
-                value={4}
-              >
-                Item4
-              </option>
-              <option
-                key="5"
-                value={5}
-              >
-                Item5
-              </option>
-              <option
-                key="6"
-                value={6}
-              >
-                Item6
-              </option>
-              <option
-                key="7"
-                value={7}
-              >
-                Item7
-              </option>
-              <option
-                key="8"
-                value={8}
-              >
-                Item8
-              </option>
-              <option
-                key="9"
-                value={9}
-              >
-                Item9
-              </option>
-            </select>
-          </StyledComponent>
-        </styled.select>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</SingleDropdown>
+                <option
+                  key="1"
+                  value={1}
+                >
+                  Item1
+                </option>
+                <option
+                  key="2"
+                  value={2}
+                >
+                  Item2
+                </option>
+                <option
+                  key="3"
+                  value={3}
+                >
+                  Item3
+                </option>
+                <option
+                  key="4"
+                  value={4}
+                >
+                  Item4
+                </option>
+                <option
+                  key="5"
+                  value={5}
+                >
+                  Item5
+                </option>
+                <option
+                  key="6"
+                  value={6}
+                >
+                  Item6
+                </option>
+                <option
+                  key="7"
+                  value={7}
+                >
+                  Item7
+                </option>
+                <option
+                  key="8"
+                  value={8}
+                >
+                  Item8
+                </option>
+                <option
+                  key="9"
+                  value={9}
+                >
+                  Item9
+                </option>
+              </select>
+            </StyledComponent>
+          </styled.select>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </SingleDropdown>
+</ForwardRef(SingleDropdownWithRef)>
 `;
 
 exports[`SingleDropdown should render correctly with placeholder 1`] = `
@@ -2379,9 +2652,7 @@ exports[`SingleDropdown should render correctly with placeholder 1`] = `
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-<SingleDropdown
-  capitalize={false}
-  italic={false}
+<ForwardRef(SingleDropdownWithRef)
   items={
     Array [
       Object {
@@ -2424,30 +2695,77 @@ exports[`SingleDropdown should render correctly with placeholder 1`] = `
   }
   onChange={[MockFunction]}
   placeholder="Select"
-  uppercase={false}
-  width="100%"
 >
-  <styled.div
+  <SingleDropdown
+    capitalize={false}
+    forwardRef={null}
+    italic={false}
+    items={
+      Array [
+        Object {
+          "text": "Item1",
+          "value": 1,
+        },
+        Object {
+          "text": "Item2",
+          "value": 2,
+        },
+        Object {
+          "text": "Item3",
+          "value": 3,
+        },
+        Object {
+          "text": "Item4",
+          "value": 4,
+        },
+        Object {
+          "text": "Item5",
+          "value": 5,
+        },
+        Object {
+          "text": "Item6",
+          "value": 6,
+        },
+        Object {
+          "text": "Item7",
+          "value": 7,
+        },
+        Object {
+          "text": "Item8",
+          "value": 8,
+        },
+        Object {
+          "text": "Item9",
+          "value": 9,
+        },
+      ]
+    }
+    onChange={[MockFunction]}
+    placeholder="Select"
+    uppercase={false}
     width="100%"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-iwsKbI",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+    <styled.div
+      width="100%"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-iwsKbI",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   box-sizing: border-box;
 
   &::after {
@@ -2460,80 +2778,80 @@ exports[`SingleDropdown should render correctly with placeholder 1`] = `
     border-left: 0.4rem solid transparent;
     border-right: 0.4rem solid transparent;
     border-top: 0.4rem solid ",
-              [Function],
-              ";
+                [Function],
+                ";
     pointer-events: none;
   }
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-iwsKbI",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-iwsKbI",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.select
-          capitalize={false}
-          defaultValue=""
-          italic={false}
-          onChange={[MockFunction]}
-          uppercase={false}
+        <div
+          className="c0"
+          width="100%"
         >
-          <StyledComponent
+          <styled.select
             capitalize={false}
             defaultValue=""
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-gZMcBi",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
+            italic={false}
+            onChange={[MockFunction]}
+            uppercase={false}
+          >
+            <StyledComponent
+              capitalize={false}
+              defaultValue=""
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gZMcBi",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
   width: 100%;
   height: 2.7rem;
   padding: 0 2.4rem 0 1rem;
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   appearance: none;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-weight: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-style: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   cursor: pointer;
   outline: none;
   text-overflow: ellipsis;
@@ -2542,21 +2860,21 @@ exports[`SingleDropdown should render correctly with placeholder 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
   &:required:invalid {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   option[value=''][disabled] {
@@ -2565,107 +2883,108 @@ exports[`SingleDropdown should render correctly with placeholder 1`] = `
 
   option {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &:active:not(:disabled),
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.select",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-gZMcBi",
-                "target": "select",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.select",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-gZMcBi",
+                  "target": "select",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            italic={false}
-            onChange={[MockFunction]}
-            uppercase={false}
-          >
-            <select
-              className="c1"
-              defaultValue=""
+              forwardedRef={null}
+              italic={false}
               onChange={[MockFunction]}
+              uppercase={false}
             >
-              <option
-                disabled={true}
-                hidden={true}
-                label="Select"
-                value=""
-              />
-              <option
-                key="1"
-                value={1}
+              <select
+                className="c1"
+                defaultValue=""
+                onChange={[MockFunction]}
               >
-                Item1
-              </option>
-              <option
-                key="2"
-                value={2}
-              >
-                Item2
-              </option>
-              <option
-                key="3"
-                value={3}
-              >
-                Item3
-              </option>
-              <option
-                key="4"
-                value={4}
-              >
-                Item4
-              </option>
-              <option
-                key="5"
-                value={5}
-              >
-                Item5
-              </option>
-              <option
-                key="6"
-                value={6}
-              >
-                Item6
-              </option>
-              <option
-                key="7"
-                value={7}
-              >
-                Item7
-              </option>
-              <option
-                key="8"
-                value={8}
-              >
-                Item8
-              </option>
-              <option
-                key="9"
-                value={9}
-              >
-                Item9
-              </option>
-            </select>
-          </StyledComponent>
-        </styled.select>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</SingleDropdown>
+                <option
+                  disabled={true}
+                  hidden={true}
+                  label="Select"
+                  value=""
+                />
+                <option
+                  key="1"
+                  value={1}
+                >
+                  Item1
+                </option>
+                <option
+                  key="2"
+                  value={2}
+                >
+                  Item2
+                </option>
+                <option
+                  key="3"
+                  value={3}
+                >
+                  Item3
+                </option>
+                <option
+                  key="4"
+                  value={4}
+                >
+                  Item4
+                </option>
+                <option
+                  key="5"
+                  value={5}
+                >
+                  Item5
+                </option>
+                <option
+                  key="6"
+                  value={6}
+                >
+                  Item6
+                </option>
+                <option
+                  key="7"
+                  value={7}
+                >
+                  Item7
+                </option>
+                <option
+                  key="8"
+                  value={8}
+                >
+                  Item8
+                </option>
+                <option
+                  key="9"
+                  value={9}
+                >
+                  Item9
+                </option>
+              </select>
+            </StyledComponent>
+          </styled.select>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </SingleDropdown>
+</ForwardRef(SingleDropdownWithRef)>
 `;
 
 exports[`SingleDropdown should render correctly with uppercase 1`] = `
@@ -2744,9 +3063,7 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-<SingleDropdown
-  capitalize={false}
-  italic={false}
+<ForwardRef(SingleDropdownWithRef)
   items={
     Array [
       Object {
@@ -2789,29 +3106,76 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
   }
   onChange={[MockFunction]}
   uppercase={true}
-  width="100%"
 >
-  <styled.div
+  <SingleDropdown
+    capitalize={false}
+    forwardRef={null}
+    italic={false}
+    items={
+      Array [
+        Object {
+          "text": "Item1",
+          "value": 1,
+        },
+        Object {
+          "text": "Item2",
+          "value": 2,
+        },
+        Object {
+          "text": "Item3",
+          "value": 3,
+        },
+        Object {
+          "text": "Item4",
+          "value": 4,
+        },
+        Object {
+          "text": "Item5",
+          "value": 5,
+        },
+        Object {
+          "text": "Item6",
+          "value": 6,
+        },
+        Object {
+          "text": "Item7",
+          "value": 7,
+        },
+        Object {
+          "text": "Item8",
+          "value": 8,
+        },
+        Object {
+          "text": "Item9",
+          "value": 9,
+        },
+      ]
+    }
+    onChange={[MockFunction]}
+    uppercase={true}
     width="100%"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-iwsKbI",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+    <styled.div
+      width="100%"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-iwsKbI",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   box-sizing: border-box;
 
   &::after {
@@ -2824,78 +3188,78 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
     border-left: 0.4rem solid transparent;
     border-right: 0.4rem solid transparent;
     border-top: 0.4rem solid ",
-              [Function],
-              ";
+                [Function],
+                ";
     pointer-events: none;
   }
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-iwsKbI",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-iwsKbI",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.select
-          capitalize={false}
-          italic={false}
-          onChange={[MockFunction]}
-          uppercase={true}
+        <div
+          className="c0"
+          width="100%"
         >
-          <StyledComponent
+          <styled.select
             capitalize={false}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-gZMcBi",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
+            italic={false}
+            onChange={[MockFunction]}
+            uppercase={true}
+          >
+            <StyledComponent
+              capitalize={false}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gZMcBi",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
   width: 100%;
   height: 2.7rem;
   padding: 0 2.4rem 0 1rem;
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   appearance: none;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-weight: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-style: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   cursor: pointer;
   outline: none;
   text-overflow: ellipsis;
@@ -2904,21 +3268,21 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
   &:required:invalid {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   option[value=''][disabled] {
@@ -2927,100 +3291,101 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
 
   option {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &:active:not(:disabled),
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.select",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-gZMcBi",
-                "target": "select",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.select",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-gZMcBi",
+                  "target": "select",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            italic={false}
-            onChange={[MockFunction]}
-            uppercase={true}
-          >
-            <select
-              className="c1"
+              forwardedRef={null}
+              italic={false}
               onChange={[MockFunction]}
+              uppercase={true}
             >
-              <option
-                key="1"
-                value={1}
+              <select
+                className="c1"
+                onChange={[MockFunction]}
               >
-                Item1
-              </option>
-              <option
-                key="2"
-                value={2}
-              >
-                Item2
-              </option>
-              <option
-                key="3"
-                value={3}
-              >
-                Item3
-              </option>
-              <option
-                key="4"
-                value={4}
-              >
-                Item4
-              </option>
-              <option
-                key="5"
-                value={5}
-              >
-                Item5
-              </option>
-              <option
-                key="6"
-                value={6}
-              >
-                Item6
-              </option>
-              <option
-                key="7"
-                value={7}
-              >
-                Item7
-              </option>
-              <option
-                key="8"
-                value={8}
-              >
-                Item8
-              </option>
-              <option
-                key="9"
-                value={9}
-              >
-                Item9
-              </option>
-            </select>
-          </StyledComponent>
-        </styled.select>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</SingleDropdown>
+                <option
+                  key="1"
+                  value={1}
+                >
+                  Item1
+                </option>
+                <option
+                  key="2"
+                  value={2}
+                >
+                  Item2
+                </option>
+                <option
+                  key="3"
+                  value={3}
+                >
+                  Item3
+                </option>
+                <option
+                  key="4"
+                  value={4}
+                >
+                  Item4
+                </option>
+                <option
+                  key="5"
+                  value={5}
+                >
+                  Item5
+                </option>
+                <option
+                  key="6"
+                  value={6}
+                >
+                  Item6
+                </option>
+                <option
+                  key="7"
+                  value={7}
+                >
+                  Item7
+                </option>
+                <option
+                  key="8"
+                  value={8}
+                >
+                  Item8
+                </option>
+                <option
+                  key="9"
+                  value={9}
+                >
+                  Item9
+                </option>
+              </select>
+            </StyledComponent>
+          </styled.select>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </SingleDropdown>
+</ForwardRef(SingleDropdownWithRef)>
 `;
 
 exports[`SingleDropdown should render correctly with weight 1`] = `
@@ -3100,9 +3465,7 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
   box-shadow: 0 0 0 1px #10ADE4;
 }
 
-<SingleDropdown
-  capitalize={false}
-  italic={false}
+<ForwardRef(SingleDropdownWithRef)
   items={
     Array [
       Object {
@@ -3144,31 +3507,78 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
     ]
   }
   onChange={[MockFunction]}
-  uppercase={false}
   weight={500}
-  width="100%"
 >
-  <styled.div
+  <SingleDropdown
+    capitalize={false}
+    forwardRef={null}
+    italic={false}
+    items={
+      Array [
+        Object {
+          "text": "Item1",
+          "value": 1,
+        },
+        Object {
+          "text": "Item2",
+          "value": 2,
+        },
+        Object {
+          "text": "Item3",
+          "value": 3,
+        },
+        Object {
+          "text": "Item4",
+          "value": 4,
+        },
+        Object {
+          "text": "Item5",
+          "value": 5,
+        },
+        Object {
+          "text": "Item6",
+          "value": 6,
+        },
+        Object {
+          "text": "Item7",
+          "value": 7,
+        },
+        Object {
+          "text": "Item8",
+          "value": 8,
+        },
+        Object {
+          "text": "Item9",
+          "value": 9,
+        },
+      ]
+    }
+    onChange={[MockFunction]}
+    uppercase={false}
+    weight={500}
     width="100%"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-iwsKbI",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+    <styled.div
+      width="100%"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-iwsKbI",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   box-sizing: border-box;
 
   &::after {
@@ -3181,79 +3591,79 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
     border-left: 0.4rem solid transparent;
     border-right: 0.4rem solid transparent;
     border-top: 0.4rem solid ",
-              [Function],
-              ";
+                [Function],
+                ";
     pointer-events: none;
   }
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-iwsKbI",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-iwsKbI",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.select
-          capitalize={false}
-          italic={false}
-          onChange={[MockFunction]}
-          uppercase={false}
-          weight={500}
+        <div
+          className="c0"
+          width="100%"
         >
-          <StyledComponent
+          <styled.select
             capitalize={false}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-gZMcBi",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
+            italic={false}
+            onChange={[MockFunction]}
+            uppercase={false}
+            weight={500}
+          >
+            <StyledComponent
+              capitalize={false}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gZMcBi",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
   width: 100%;
   height: 2.7rem;
   padding: 0 2.4rem 0 1rem;
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   appearance: none;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-weight: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-style: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   cursor: pointer;
   outline: none;
   text-overflow: ellipsis;
@@ -3262,21 +3672,21 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
   &:required:invalid {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   option[value=''][disabled] {
@@ -3285,99 +3695,100 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
 
   option {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &:active:not(:disabled),
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.select",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-gZMcBi",
-                "target": "select",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.select",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-gZMcBi",
+                  "target": "select",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            italic={false}
-            onChange={[MockFunction]}
-            uppercase={false}
-            weight={500}
-          >
-            <select
-              className="c1"
+              forwardedRef={null}
+              italic={false}
               onChange={[MockFunction]}
+              uppercase={false}
+              weight={500}
             >
-              <option
-                key="1"
-                value={1}
+              <select
+                className="c1"
+                onChange={[MockFunction]}
               >
-                Item1
-              </option>
-              <option
-                key="2"
-                value={2}
-              >
-                Item2
-              </option>
-              <option
-                key="3"
-                value={3}
-              >
-                Item3
-              </option>
-              <option
-                key="4"
-                value={4}
-              >
-                Item4
-              </option>
-              <option
-                key="5"
-                value={5}
-              >
-                Item5
-              </option>
-              <option
-                key="6"
-                value={6}
-              >
-                Item6
-              </option>
-              <option
-                key="7"
-                value={7}
-              >
-                Item7
-              </option>
-              <option
-                key="8"
-                value={8}
-              >
-                Item8
-              </option>
-              <option
-                key="9"
-                value={9}
-              >
-                Item9
-              </option>
-            </select>
-          </StyledComponent>
-        </styled.select>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</SingleDropdown>
+                <option
+                  key="1"
+                  value={1}
+                >
+                  Item1
+                </option>
+                <option
+                  key="2"
+                  value={2}
+                >
+                  Item2
+                </option>
+                <option
+                  key="3"
+                  value={3}
+                >
+                  Item3
+                </option>
+                <option
+                  key="4"
+                  value={4}
+                >
+                  Item4
+                </option>
+                <option
+                  key="5"
+                  value={5}
+                >
+                  Item5
+                </option>
+                <option
+                  key="6"
+                  value={6}
+                >
+                  Item6
+                </option>
+                <option
+                  key="7"
+                  value={7}
+                >
+                  Item7
+                </option>
+                <option
+                  key="8"
+                  value={8}
+                >
+                  Item8
+                </option>
+                <option
+                  key="9"
+                  value={9}
+                >
+                  Item9
+                </option>
+              </select>
+            </StyledComponent>
+          </styled.select>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </SingleDropdown>
+</ForwardRef(SingleDropdownWithRef)>
 `;

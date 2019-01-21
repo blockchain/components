@@ -1,6 +1,7 @@
+import { mount } from 'enzyme'
 import React from 'react'
-import { mountWithTheme } from '../../Utils/testHelper'
 
+import { mountWithTheme } from '../../Utils/testHelper'
 import Input from './Input'
 
 describe('Input', () => {
@@ -62,5 +63,28 @@ describe('Input', () => {
     const tree = mountWithTheme(<Input disabled />)
 
     expect(tree.find(Input)).toMatchSnapshot()
+  })
+
+  it('should accept ref', () => {
+    class MyComponent extends React.Component {
+      constructor(props) {
+        super(props)
+        this.myRef = React.createRef()
+        this.focus = this.focus.bind(this)
+      }
+
+      focus() {
+        this.myRef.current.focus()
+      }
+
+      render() {
+        return <Input id="TestRef" ref={this.myRef} />
+      }
+    }
+    const wrapper = mount(<MyComponent />)
+
+    expect(document.activeElement.type).toBeUndefined()
+    wrapper.instance().focus()
+    expect(document.activeElement.id).toEqual('TestRef')
   })
 })

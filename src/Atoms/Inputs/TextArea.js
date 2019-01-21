@@ -62,7 +62,7 @@ const Wrapper = styled.textarea.attrs(injectE2E)`
   }
 `
 
-const TextArea = ({ input, ...rest }: PropsType) => {
+const TextArea = ({ forwardRef: ref, input, ...rest }: PropsType) => {
   const hasLabel = rest.label != null
   const hasError = rest.error != null
 
@@ -74,7 +74,7 @@ const TextArea = ({ input, ...rest }: PropsType) => {
             hasLabel && hasError ? ' - ' : ''
           }${rest.error || ''}`}
         </InputLabel>
-        <Wrapper {...input} {...rest} />
+        <Wrapper {...input} {...rest} ref={ref} />
       </Container>
     )
   }
@@ -99,4 +99,8 @@ TextArea.defaultProps = {
   width: '100%',
 }
 
-export default TextArea
+type RefPropsType = { ...PropsType }
+
+const TextAreaWithRef = (props, ref) => <TextArea {...props} forwardRef={ref} />
+
+export default React.forwardRef<RefPropsType, _>(TextAreaWithRef)

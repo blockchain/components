@@ -16,6 +16,7 @@ export type PropsType = {
   +className?: string,
   +disabled?: boolean,
   +error?: string,
+  +forwardRef?: React.ElementRef<*>,
   +input?: {},
   +italic?: boolean,
   +items: Array<{ +text: string, +value: string | number }>,
@@ -105,6 +106,7 @@ const Select = styled.select`
 
 const SingleDropdown = ({
   className,
+  forwardRef: ref,
   input,
   items,
   placeholder,
@@ -128,6 +130,7 @@ const SingleDropdown = ({
           defaultValue: placeholder != null ? '' : undefined,
           ...input,
           ...rest,
+          ref,
         }}
       >
         {placeholder != null && (
@@ -166,4 +169,8 @@ SingleDropdown.defaultProps = {
   width: '100%',
 }
 
-export default SingleDropdown
+const SingleDropdownWithRef = (props, ref) => (
+  <SingleDropdown {...props} forwardRef={ref} />
+)
+
+export default React.forwardRef<PropsType, _>(SingleDropdownWithRef)

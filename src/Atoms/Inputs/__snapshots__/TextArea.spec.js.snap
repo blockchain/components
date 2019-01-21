@@ -57,62 +57,64 @@ exports[`TextArea should render correctly 1`] = `
   font-size: 0.875rem;
 }
 
-<TextArea
-  disabled={false}
-  e2e="defaultTextArea"
-  height="100px"
-  width="100%"
->
-  <styled.textarea
+<ForwardRef(TextAreaWithRef)>
+  <TextArea
     disabled={false}
     e2e="defaultTextArea"
+    forwardRef={null}
     height="100px"
     width="100%"
   >
-    <StyledComponent
+    <styled.textarea
       disabled={false}
       e2e="defaultTextArea"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [
-            [Function],
-          ],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-gZMcBi",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+      height="100px"
+      width="100%"
+    >
+      <StyledComponent
+        disabled={false}
+        e2e="defaultTextArea"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [
+              [Function],
+            ],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gZMcBi",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: block;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   height: ",
-              [Function],
-              ";
+                [Function],
+                ";
   padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: ",
-              [Function],
-              ";
+                [Function],
+                ";
   font-size: ",
-              [Function],
-              ";
+                [Function],
+                ";
   color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   border-width: 1px;
   border-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   border-style: solid;
   border-radius: ",
-              [Function],
-              ";
+                [Function],
+                ";
   background-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   outline-width: 0;
   user-select: text;
   resize: none;
@@ -120,14 +122,14 @@ exports[`TextArea should render correctly 1`] = `
 
   &:disabled {
     color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     border-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     background: ",
-              [Function],
-              ";
+                [Function],
+                ";
     cursor: not-allowed;
   }
 
@@ -135,45 +137,46 @@ exports[`TextArea should render correctly 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-              [Function],
-              ";
+                [Function],
+                ";
   }
 
   &::placeholder {
     color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     font-size: ",
-              [Function],
-              ";
+                [Function],
+                ";
   }
 ",
-            ],
-          },
-          "displayName": "styled.textarea",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-gZMcBi",
-          "target": "textarea",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.textarea",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gZMcBi",
+            "target": "textarea",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      height="100px"
-      width="100%"
-    >
-      <textarea
-        className="c0"
-        data-e2e="defaultTextArea"
-        disabled={false}
+        forwardedRef={null}
         height="100px"
         width="100%"
-      />
-    </StyledComponent>
-  </styled.textarea>
-</TextArea>
+      >
+        <textarea
+          className="c0"
+          data-e2e="defaultTextArea"
+          disabled={false}
+          height="100px"
+          width="100%"
+        />
+      </StyledComponent>
+    </styled.textarea>
+  </TextArea>
+</ForwardRef(TextAreaWithRef)>
 `;
 
 exports[`TextArea should render correctly with disabled 1`] = `
@@ -233,62 +236,66 @@ exports[`TextArea should render correctly with disabled 1`] = `
   font-size: 0.875rem;
 }
 
-<TextArea
+<ForwardRef(TextAreaWithRef)
   disabled={true}
-  e2e="defaultTextArea"
-  height="100px"
-  width="100%"
 >
-  <styled.textarea
+  <TextArea
     disabled={true}
     e2e="defaultTextArea"
+    forwardRef={null}
     height="100px"
     width="100%"
   >
-    <StyledComponent
+    <styled.textarea
       disabled={true}
       e2e="defaultTextArea"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [
-            [Function],
-          ],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-gZMcBi",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+      height="100px"
+      width="100%"
+    >
+      <StyledComponent
+        disabled={true}
+        e2e="defaultTextArea"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [
+              [Function],
+            ],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gZMcBi",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: block;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   height: ",
-              [Function],
-              ";
+                [Function],
+                ";
   padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: ",
-              [Function],
-              ";
+                [Function],
+                ";
   font-size: ",
-              [Function],
-              ";
+                [Function],
+                ";
   color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   border-width: 1px;
   border-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   border-style: solid;
   border-radius: ",
-              [Function],
-              ";
+                [Function],
+                ";
   background-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   outline-width: 0;
   user-select: text;
   resize: none;
@@ -296,14 +303,14 @@ exports[`TextArea should render correctly with disabled 1`] = `
 
   &:disabled {
     color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     border-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     background: ",
-              [Function],
-              ";
+                [Function],
+                ";
     cursor: not-allowed;
   }
 
@@ -311,45 +318,46 @@ exports[`TextArea should render correctly with disabled 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-              [Function],
-              ";
+                [Function],
+                ";
   }
 
   &::placeholder {
     color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     font-size: ",
-              [Function],
-              ";
+                [Function],
+                ";
   }
 ",
-            ],
-          },
-          "displayName": "styled.textarea",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-gZMcBi",
-          "target": "textarea",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.textarea",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gZMcBi",
+            "target": "textarea",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      height="100px"
-      width="100%"
-    >
-      <textarea
-        className="c0"
-        data-e2e="defaultTextArea"
-        disabled={true}
+        forwardedRef={null}
         height="100px"
         width="100%"
-      />
-    </StyledComponent>
-  </styled.textarea>
-</TextArea>
+      >
+        <textarea
+          className="c0"
+          data-e2e="defaultTextArea"
+          disabled={true}
+          height="100px"
+          width="100%"
+        />
+      </StyledComponent>
+    </styled.textarea>
+  </TextArea>
+</ForwardRef(TextAreaWithRef)>
 `;
 
 exports[`TextArea should render correctly with e2e 1`] = `
@@ -409,62 +417,66 @@ exports[`TextArea should render correctly with e2e 1`] = `
   font-size: 0.875rem;
 }
 
-<TextArea
-  disabled={false}
+<ForwardRef(TextAreaWithRef)
   e2e="E2ELabel"
-  height="100px"
-  width="100%"
 >
-  <styled.textarea
+  <TextArea
     disabled={false}
     e2e="E2ELabel"
+    forwardRef={null}
     height="100px"
     width="100%"
   >
-    <StyledComponent
+    <styled.textarea
       disabled={false}
       e2e="E2ELabel"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [
-            [Function],
-          ],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-gZMcBi",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+      height="100px"
+      width="100%"
+    >
+      <StyledComponent
+        disabled={false}
+        e2e="E2ELabel"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [
+              [Function],
+            ],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gZMcBi",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: block;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   height: ",
-              [Function],
-              ";
+                [Function],
+                ";
   padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: ",
-              [Function],
-              ";
+                [Function],
+                ";
   font-size: ",
-              [Function],
-              ";
+                [Function],
+                ";
   color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   border-width: 1px;
   border-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   border-style: solid;
   border-radius: ",
-              [Function],
-              ";
+                [Function],
+                ";
   background-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   outline-width: 0;
   user-select: text;
   resize: none;
@@ -472,14 +484,14 @@ exports[`TextArea should render correctly with e2e 1`] = `
 
   &:disabled {
     color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     border-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     background: ",
-              [Function],
-              ";
+                [Function],
+                ";
     cursor: not-allowed;
   }
 
@@ -487,45 +499,46 @@ exports[`TextArea should render correctly with e2e 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-              [Function],
-              ";
+                [Function],
+                ";
   }
 
   &::placeholder {
     color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     font-size: ",
-              [Function],
-              ";
+                [Function],
+                ";
   }
 ",
-            ],
-          },
-          "displayName": "styled.textarea",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-gZMcBi",
-          "target": "textarea",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.textarea",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gZMcBi",
+            "target": "textarea",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      height="100px"
-      width="100%"
-    >
-      <textarea
-        className="c0"
-        data-e2e="E2ELabel"
-        disabled={false}
+        forwardedRef={null}
         height="100px"
         width="100%"
-      />
-    </StyledComponent>
-  </styled.textarea>
-</TextArea>
+      >
+        <textarea
+          className="c0"
+          data-e2e="E2ELabel"
+          disabled={false}
+          height="100px"
+          width="100%"
+        />
+      </StyledComponent>
+    </styled.textarea>
+  </TextArea>
+</ForwardRef(TextAreaWithRef)>
 `;
 
 exports[`TextArea should render correctly with error="error" 1`] = `
@@ -603,157 +616,161 @@ exports[`TextArea should render correctly with error="error" 1`] = `
   font-size: 0.875rem;
 }
 
-<TextArea
-  disabled={false}
-  e2e="defaultTextArea"
+<ForwardRef(TextAreaWithRef)
   error="error"
-  height="100px"
-  width="100%"
 >
-  <styled.div
+  <TextArea
+    disabled={false}
+    e2e="defaultTextArea"
+    error="error"
+    forwardRef={null}
+    height="100px"
     width="100%"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-iwsKbI",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+    <styled.div
+      width="100%"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-iwsKbI",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: flex;
   flex-direction: column;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-iwsKbI",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-iwsKbI",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.label
-          disabled={false}
-          error={true}
-        >
-          <StyledComponent
-            disabled={false}
-            error={true}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-dnqmqq",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  font-family: ",
-                    [Function],
-                    ";
-  font-size: ",
-                    [Function],
-                    ";
-  padding-bottom: 0.5rem;
-  color: ",
-                    [Function],
-                    ";
-  ",
-                    [Function],
-                    ";
-",
-                  ],
-                },
-                "displayName": "styled.label",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-dnqmqq",
-                "target": "label",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <label
-              className="c1"
-              disabled={false}
-            >
-              error
-            </label>
-          </StyledComponent>
-        </styled.label>
-        <styled.textarea
-          disabled={false}
-          e2e="defaultTextArea"
-          error="error"
-          height="100px"
+        <div
+          className="c0"
           width="100%"
         >
-          <StyledComponent
+          <styled.label
+            disabled={false}
+            error={true}
+          >
+            <StyledComponent
+              disabled={false}
+              error={true}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-dnqmqq",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  font-family: ",
+                      [Function],
+                      ";
+  font-size: ",
+                      [Function],
+                      ";
+  padding-bottom: 0.5rem;
+  color: ",
+                      [Function],
+                      ";
+  ",
+                      [Function],
+                      ";
+",
+                    ],
+                  },
+                  "displayName": "styled.label",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-dnqmqq",
+                  "target": "label",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <label
+                className="c1"
+                disabled={false}
+              >
+                error
+              </label>
+            </StyledComponent>
+          </styled.label>
+          <styled.textarea
             disabled={false}
             e2e="defaultTextArea"
             error="error"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [
-                  [Function],
-                ],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-gZMcBi",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    "
+            height="100px"
+            width="100%"
+          >
+            <StyledComponent
+              disabled={false}
+              e2e="defaultTextArea"
+              error="error"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gZMcBi",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
   display: block;
   width: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   height: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   outline-width: 0;
   user-select: text;
   resize: none;
@@ -761,14 +778,14 @@ exports[`TextArea should render correctly with error="error" 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
@@ -776,48 +793,49 @@ exports[`TextArea should render correctly with error="error" 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &::placeholder {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.textarea",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-gZMcBi",
-                "target": "textarea",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.textarea",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-gZMcBi",
+                  "target": "textarea",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            height="100px"
-            width="100%"
-          >
-            <textarea
-              className="c2"
-              data-e2e="defaultTextArea"
-              disabled={false}
+              forwardedRef={null}
               height="100px"
               width="100%"
-            />
-          </StyledComponent>
-        </styled.textarea>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</TextArea>
+            >
+              <textarea
+                className="c2"
+                data-e2e="defaultTextArea"
+                disabled={false}
+                height="100px"
+                width="100%"
+              />
+            </StyledComponent>
+          </styled.textarea>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </TextArea>
+</ForwardRef(TextAreaWithRef)>
 `;
 
 exports[`TextArea should render correctly with height 1`] = `
@@ -877,62 +895,66 @@ exports[`TextArea should render correctly with height 1`] = `
   font-size: 0.875rem;
 }
 
-<TextArea
-  disabled={false}
-  e2e="defaultTextArea"
+<ForwardRef(TextAreaWithRef)
   height="200px"
-  width="100%"
 >
-  <styled.textarea
+  <TextArea
     disabled={false}
     e2e="defaultTextArea"
+    forwardRef={null}
     height="200px"
     width="100%"
   >
-    <StyledComponent
+    <styled.textarea
       disabled={false}
       e2e="defaultTextArea"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [
-            [Function],
-          ],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-gZMcBi",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+      height="200px"
+      width="100%"
+    >
+      <StyledComponent
+        disabled={false}
+        e2e="defaultTextArea"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [
+              [Function],
+            ],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gZMcBi",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: block;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   height: ",
-              [Function],
-              ";
+                [Function],
+                ";
   padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: ",
-              [Function],
-              ";
+                [Function],
+                ";
   font-size: ",
-              [Function],
-              ";
+                [Function],
+                ";
   color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   border-width: 1px;
   border-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   border-style: solid;
   border-radius: ",
-              [Function],
-              ";
+                [Function],
+                ";
   background-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   outline-width: 0;
   user-select: text;
   resize: none;
@@ -940,14 +962,14 @@ exports[`TextArea should render correctly with height 1`] = `
 
   &:disabled {
     color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     border-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     background: ",
-              [Function],
-              ";
+                [Function],
+                ";
     cursor: not-allowed;
   }
 
@@ -955,45 +977,46 @@ exports[`TextArea should render correctly with height 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-              [Function],
-              ";
+                [Function],
+                ";
   }
 
   &::placeholder {
     color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     font-size: ",
-              [Function],
-              ";
+                [Function],
+                ";
   }
 ",
-            ],
-          },
-          "displayName": "styled.textarea",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-gZMcBi",
-          "target": "textarea",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.textarea",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gZMcBi",
+            "target": "textarea",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      height="200px"
-      width="100%"
-    >
-      <textarea
-        className="c0"
-        data-e2e="defaultTextArea"
-        disabled={false}
+        forwardedRef={null}
         height="200px"
         width="100%"
-      />
-    </StyledComponent>
-  </styled.textarea>
-</TextArea>
+      >
+        <textarea
+          className="c0"
+          data-e2e="defaultTextArea"
+          disabled={false}
+          height="200px"
+          width="100%"
+        />
+      </StyledComponent>
+    </styled.textarea>
+  </TextArea>
+</ForwardRef(TextAreaWithRef)>
 `;
 
 exports[`TextArea should render correctly with label="label" 1`] = `
@@ -1071,156 +1094,160 @@ exports[`TextArea should render correctly with label="label" 1`] = `
   font-size: 0.875rem;
 }
 
-<TextArea
-  disabled={false}
-  e2e="defaultTextArea"
-  height="100px"
+<ForwardRef(TextAreaWithRef)
   label="label"
-  width="100%"
 >
-  <styled.div
+  <TextArea
+    disabled={false}
+    e2e="defaultTextArea"
+    forwardRef={null}
+    height="100px"
+    label="label"
     width="100%"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-iwsKbI",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+    <styled.div
+      width="100%"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-iwsKbI",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: flex;
   flex-direction: column;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-iwsKbI",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-iwsKbI",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.label
-          disabled={false}
-          error={false}
-        >
-          <StyledComponent
-            disabled={false}
-            error={false}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-dnqmqq",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  font-family: ",
-                    [Function],
-                    ";
-  font-size: ",
-                    [Function],
-                    ";
-  padding-bottom: 0.5rem;
-  color: ",
-                    [Function],
-                    ";
-  ",
-                    [Function],
-                    ";
-",
-                  ],
-                },
-                "displayName": "styled.label",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-dnqmqq",
-                "target": "label",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <label
-              className="c1"
-              disabled={false}
-            >
-              label
-            </label>
-          </StyledComponent>
-        </styled.label>
-        <styled.textarea
-          disabled={false}
-          e2e="defaultTextArea"
-          height="100px"
-          label="label"
+        <div
+          className="c0"
           width="100%"
         >
-          <StyledComponent
+          <styled.label
+            disabled={false}
+            error={false}
+          >
+            <StyledComponent
+              disabled={false}
+              error={false}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-dnqmqq",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  font-family: ",
+                      [Function],
+                      ";
+  font-size: ",
+                      [Function],
+                      ";
+  padding-bottom: 0.5rem;
+  color: ",
+                      [Function],
+                      ";
+  ",
+                      [Function],
+                      ";
+",
+                    ],
+                  },
+                  "displayName": "styled.label",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-dnqmqq",
+                  "target": "label",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <label
+                className="c1"
+                disabled={false}
+              >
+                label
+              </label>
+            </StyledComponent>
+          </styled.label>
+          <styled.textarea
             disabled={false}
             e2e="defaultTextArea"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [
-                  [Function],
-                ],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-gZMcBi",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    "
+            height="100px"
+            label="label"
+            width="100%"
+          >
+            <StyledComponent
+              disabled={false}
+              e2e="defaultTextArea"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gZMcBi",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
   display: block;
   width: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   height: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   outline-width: 0;
   user-select: text;
   resize: none;
@@ -1228,14 +1255,14 @@ exports[`TextArea should render correctly with label="label" 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
@@ -1243,50 +1270,51 @@ exports[`TextArea should render correctly with label="label" 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &::placeholder {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.textarea",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-gZMcBi",
-                "target": "textarea",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.textarea",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-gZMcBi",
+                  "target": "textarea",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            height="100px"
-            label="label"
-            width="100%"
-          >
-            <textarea
-              className="c2"
-              data-e2e="defaultTextArea"
-              disabled={false}
+              forwardedRef={null}
               height="100px"
               label="label"
               width="100%"
-            />
-          </StyledComponent>
-        </styled.textarea>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</TextArea>
+            >
+              <textarea
+                className="c2"
+                data-e2e="defaultTextArea"
+                disabled={false}
+                height="100px"
+                label="label"
+                width="100%"
+              />
+            </StyledComponent>
+          </styled.textarea>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </TextArea>
+</ForwardRef(TextAreaWithRef)>
 `;
 
 exports[`TextArea should render correctly with label="label" and error="error" 1`] = `
@@ -1364,159 +1392,164 @@ exports[`TextArea should render correctly with label="label" and error="error" 1
   font-size: 0.875rem;
 }
 
-<TextArea
-  disabled={false}
-  e2e="defaultTextArea"
+<ForwardRef(TextAreaWithRef)
   error="error"
-  height="100px"
   label="label"
-  width="100%"
 >
-  <styled.div
+  <TextArea
+    disabled={false}
+    e2e="defaultTextArea"
+    error="error"
+    forwardRef={null}
+    height="100px"
+    label="label"
     width="100%"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-iwsKbI",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+    <styled.div
+      width="100%"
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-iwsKbI",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: flex;
   flex-direction: column;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-iwsKbI",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-iwsKbI",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.label
-          disabled={false}
-          error={true}
-        >
-          <StyledComponent
-            disabled={false}
-            error={true}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-dnqmqq",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  font-family: ",
-                    [Function],
-                    ";
-  font-size: ",
-                    [Function],
-                    ";
-  padding-bottom: 0.5rem;
-  color: ",
-                    [Function],
-                    ";
-  ",
-                    [Function],
-                    ";
-",
-                  ],
-                },
-                "displayName": "styled.label",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-dnqmqq",
-                "target": "label",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <label
-              className="c1"
-              disabled={false}
-            >
-              label - error
-            </label>
-          </StyledComponent>
-        </styled.label>
-        <styled.textarea
-          disabled={false}
-          e2e="defaultTextArea"
-          error="error"
-          height="100px"
-          label="label"
+        <div
+          className="c0"
           width="100%"
         >
-          <StyledComponent
+          <styled.label
+            disabled={false}
+            error={true}
+          >
+            <StyledComponent
+              disabled={false}
+              error={true}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-dnqmqq",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  font-family: ",
+                      [Function],
+                      ";
+  font-size: ",
+                      [Function],
+                      ";
+  padding-bottom: 0.5rem;
+  color: ",
+                      [Function],
+                      ";
+  ",
+                      [Function],
+                      ";
+",
+                    ],
+                  },
+                  "displayName": "styled.label",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-dnqmqq",
+                  "target": "label",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <label
+                className="c1"
+                disabled={false}
+              >
+                label - error
+              </label>
+            </StyledComponent>
+          </styled.label>
+          <styled.textarea
             disabled={false}
             e2e="defaultTextArea"
             error="error"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [
-                  [Function],
-                ],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-gZMcBi",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    "
+            height="100px"
+            label="label"
+            width="100%"
+          >
+            <StyledComponent
+              disabled={false}
+              e2e="defaultTextArea"
+              error="error"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gZMcBi",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
   display: block;
   width: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   height: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   outline-width: 0;
   user-select: text;
   resize: none;
@@ -1524,14 +1557,14 @@ exports[`TextArea should render correctly with label="label" and error="error" 1
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
@@ -1539,50 +1572,51 @@ exports[`TextArea should render correctly with label="label" and error="error" 1
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &::placeholder {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.textarea",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-gZMcBi",
-                "target": "textarea",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.textarea",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-gZMcBi",
+                  "target": "textarea",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            height="100px"
-            label="label"
-            width="100%"
-          >
-            <textarea
-              className="c2"
-              data-e2e="defaultTextArea"
-              disabled={false}
+              forwardedRef={null}
               height="100px"
               label="label"
               width="100%"
-            />
-          </StyledComponent>
-        </styled.textarea>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</TextArea>
+            >
+              <textarea
+                className="c2"
+                data-e2e="defaultTextArea"
+                disabled={false}
+                height="100px"
+                label="label"
+                width="100%"
+              />
+            </StyledComponent>
+          </styled.textarea>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </TextArea>
+</ForwardRef(TextAreaWithRef)>
 `;
 
 exports[`TextArea should render correctly with name 1`] = `
@@ -1642,64 +1676,68 @@ exports[`TextArea should render correctly with name 1`] = `
   font-size: 0.875rem;
 }
 
-<TextArea
-  disabled={false}
-  e2e="defaultTextArea"
-  height="100px"
+<ForwardRef(TextAreaWithRef)
   name="mytextarea"
-  width="100%"
 >
-  <styled.textarea
+  <TextArea
     disabled={false}
     e2e="defaultTextArea"
+    forwardRef={null}
     height="100px"
     name="mytextarea"
     width="100%"
   >
-    <StyledComponent
+    <styled.textarea
       disabled={false}
       e2e="defaultTextArea"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [
-            [Function],
-          ],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-gZMcBi",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+      height="100px"
+      name="mytextarea"
+      width="100%"
+    >
+      <StyledComponent
+        disabled={false}
+        e2e="defaultTextArea"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [
+              [Function],
+            ],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gZMcBi",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: block;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   height: ",
-              [Function],
-              ";
+                [Function],
+                ";
   padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: ",
-              [Function],
-              ";
+                [Function],
+                ";
   font-size: ",
-              [Function],
-              ";
+                [Function],
+                ";
   color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   border-width: 1px;
   border-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   border-style: solid;
   border-radius: ",
-              [Function],
-              ";
+                [Function],
+                ";
   background-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   outline-width: 0;
   user-select: text;
   resize: none;
@@ -1707,14 +1745,14 @@ exports[`TextArea should render correctly with name 1`] = `
 
   &:disabled {
     color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     border-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     background: ",
-              [Function],
-              ";
+                [Function],
+                ";
     cursor: not-allowed;
   }
 
@@ -1722,47 +1760,48 @@ exports[`TextArea should render correctly with name 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-              [Function],
-              ";
+                [Function],
+                ";
   }
 
   &::placeholder {
     color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     font-size: ",
-              [Function],
-              ";
+                [Function],
+                ";
   }
 ",
-            ],
-          },
-          "displayName": "styled.textarea",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-gZMcBi",
-          "target": "textarea",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.textarea",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gZMcBi",
+            "target": "textarea",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      height="100px"
-      name="mytextarea"
-      width="100%"
-    >
-      <textarea
-        className="c0"
-        data-e2e="defaultTextArea"
-        disabled={false}
+        forwardedRef={null}
         height="100px"
         name="mytextarea"
         width="100%"
-      />
-    </StyledComponent>
-  </styled.textarea>
-</TextArea>
+      >
+        <textarea
+          className="c0"
+          data-e2e="defaultTextArea"
+          disabled={false}
+          height="100px"
+          name="mytextarea"
+          width="100%"
+        />
+      </StyledComponent>
+    </styled.textarea>
+  </TextArea>
+</ForwardRef(TextAreaWithRef)>
 `;
 
 exports[`TextArea should render correctly with value 1`] = `
@@ -1822,66 +1861,71 @@ exports[`TextArea should render correctly with value 1`] = `
   font-size: 0.875rem;
 }
 
-<TextArea
-  disabled={false}
-  e2e="defaultTextArea"
-  height="100px"
+<ForwardRef(TextAreaWithRef)
   onChange={[Function]}
   value="Hello dear friend"
-  width="100%"
 >
-  <styled.textarea
+  <TextArea
     disabled={false}
     e2e="defaultTextArea"
+    forwardRef={null}
     height="100px"
     onChange={[Function]}
     value="Hello dear friend"
     width="100%"
   >
-    <StyledComponent
+    <styled.textarea
       disabled={false}
       e2e="defaultTextArea"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [
-            [Function],
-          ],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-gZMcBi",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+      height="100px"
+      onChange={[Function]}
+      value="Hello dear friend"
+      width="100%"
+    >
+      <StyledComponent
+        disabled={false}
+        e2e="defaultTextArea"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [
+              [Function],
+            ],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gZMcBi",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: block;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   height: ",
-              [Function],
-              ";
+                [Function],
+                ";
   padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: ",
-              [Function],
-              ";
+                [Function],
+                ";
   font-size: ",
-              [Function],
-              ";
+                [Function],
+                ";
   color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   border-width: 1px;
   border-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   border-style: solid;
   border-radius: ",
-              [Function],
-              ";
+                [Function],
+                ";
   background-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   outline-width: 0;
   user-select: text;
   resize: none;
@@ -1889,14 +1933,14 @@ exports[`TextArea should render correctly with value 1`] = `
 
   &:disabled {
     color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     border-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     background: ",
-              [Function],
-              ";
+                [Function],
+                ";
     cursor: not-allowed;
   }
 
@@ -1904,49 +1948,50 @@ exports[`TextArea should render correctly with value 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-              [Function],
-              ";
+                [Function],
+                ";
   }
 
   &::placeholder {
     color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     font-size: ",
-              [Function],
-              ";
+                [Function],
+                ";
   }
 ",
-            ],
-          },
-          "displayName": "styled.textarea",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-gZMcBi",
-          "target": "textarea",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.textarea",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gZMcBi",
+            "target": "textarea",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      height="100px"
-      onChange={[Function]}
-      value="Hello dear friend"
-      width="100%"
-    >
-      <textarea
-        className="c0"
-        data-e2e="defaultTextArea"
-        disabled={false}
+        forwardedRef={null}
         height="100px"
         onChange={[Function]}
         value="Hello dear friend"
         width="100%"
-      />
-    </StyledComponent>
-  </styled.textarea>
-</TextArea>
+      >
+        <textarea
+          className="c0"
+          data-e2e="defaultTextArea"
+          disabled={false}
+          height="100px"
+          onChange={[Function]}
+          value="Hello dear friend"
+          width="100%"
+        />
+      </StyledComponent>
+    </styled.textarea>
+  </TextArea>
+</ForwardRef(TextAreaWithRef)>
 `;
 
 exports[`TextArea should render correctly with width 1`] = `
@@ -2006,62 +2051,66 @@ exports[`TextArea should render correctly with width 1`] = `
   font-size: 0.875rem;
 }
 
-<TextArea
-  disabled={false}
-  e2e="defaultTextArea"
-  height="100px"
+<ForwardRef(TextAreaWithRef)
   width="200px"
 >
-  <styled.textarea
+  <TextArea
     disabled={false}
     e2e="defaultTextArea"
+    forwardRef={null}
     height="100px"
     width="200px"
   >
-    <StyledComponent
+    <styled.textarea
       disabled={false}
       e2e="defaultTextArea"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [
-            [Function],
-          ],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-gZMcBi",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+      height="100px"
+      width="200px"
+    >
+      <StyledComponent
+        disabled={false}
+        e2e="defaultTextArea"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [
+              [Function],
+            ],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gZMcBi",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: block;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   height: ",
-              [Function],
-              ";
+                [Function],
+                ";
   padding: 0.7rem 1rem;
   box-sizing: border-box;
   font-family: ",
-              [Function],
-              ";
+                [Function],
+                ";
   font-size: ",
-              [Function],
-              ";
+                [Function],
+                ";
   color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   border-width: 1px;
   border-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   border-style: solid;
   border-radius: ",
-              [Function],
-              ";
+                [Function],
+                ";
   background-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   outline-width: 0;
   user-select: text;
   resize: none;
@@ -2069,14 +2118,14 @@ exports[`TextArea should render correctly with width 1`] = `
 
   &:disabled {
     color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     border-color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     background: ",
-              [Function],
-              ";
+                [Function],
+                ";
     cursor: not-allowed;
   }
 
@@ -2084,43 +2133,44 @@ exports[`TextArea should render correctly with width 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-              [Function],
-              ";
+                [Function],
+                ";
   }
 
   &::placeholder {
     color: ",
-              [Function],
-              ";
+                [Function],
+                ";
     font-size: ",
-              [Function],
-              ";
+                [Function],
+                ";
   }
 ",
-            ],
-          },
-          "displayName": "styled.textarea",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-gZMcBi",
-          "target": "textarea",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.textarea",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gZMcBi",
+            "target": "textarea",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      height="100px"
-      width="200px"
-    >
-      <textarea
-        className="c0"
-        data-e2e="defaultTextArea"
-        disabled={false}
+        forwardedRef={null}
         height="100px"
         width="200px"
-      />
-    </StyledComponent>
-  </styled.textarea>
-</TextArea>
+      >
+        <textarea
+          className="c0"
+          data-e2e="defaultTextArea"
+          disabled={false}
+          height="100px"
+          width="200px"
+        />
+      </StyledComponent>
+    </styled.textarea>
+  </TextArea>
+</ForwardRef(TextAreaWithRef)>
 `;

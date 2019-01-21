@@ -89,11 +89,26 @@ export const CheckboxLabel = styled.label`
   }
 `
 
-const Checkbox = ({ className, input, ...rest }: PropsType) => (
+const Checkbox = ({
+  className,
+  forwardRef: ref,
+  input,
+  ...rest
+}: PropsType) => (
   <Wrapper className={className}>
-    <Input {...input} {...rest} id={toId(rest.name)} type="checkbox" />
+    <Input
+      {...input}
+      {...rest}
+      id={toId(rest.name)}
+      ref={ref}
+      type="checkbox"
+    />
     <CheckboxLabel htmlFor={toId(rest.name)}>{rest.label}</CheckboxLabel>
   </Wrapper>
 )
 
-export default Checkbox
+type RefPropsType = { ...PropsType }
+
+const CheckboxWithRef = (props, ref) => <Checkbox {...props} forwardRef={ref} />
+
+export default React.forwardRef<RefPropsType, _>(CheckboxWithRef)
