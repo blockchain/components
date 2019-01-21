@@ -401,7 +401,7 @@ exports[`SearchBar should render correctly 1`] = `
             </div>
           </StyledComponent>
         </styled.div>
-        <Styled(Input)
+        <Styled(Component)
           e2e="defaultSearchBar.Input"
         >
           <StyledComponent
@@ -430,116 +430,123 @@ exports[`SearchBar should render correctly 1`] = `
 ",
                   ],
                 },
-                "displayName": "Styled(Input)",
+                "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-SpTIZ",
-                "target": [Function],
+                "target": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "render": [Function],
+                },
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
               }
             }
             forwardedRef={null}
           >
-            <Input
+            <ForwardRef(InputWithRef)
               className="c4"
-              disabled={false}
               e2e="defaultSearchBar.Input"
-              type="text"
-              width="100%"
             >
-              <styled.div
+              <Input
                 className="c4"
+                disabled={false}
+                e2e="defaultSearchBar.Input"
+                forwardRef={null}
+                type="text"
                 width="100%"
               >
-                <StyledComponent
+                <styled.div
                   className="c4"
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-kPMMwu",
-                        "isStatic": false,
-                        "lastClassName": "c5",
-                        "rules": Array [
-                          "
+                  width="100%"
+                >
+                  <StyledComponent
+                    className="c4"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-kPMMwu",
+                          "isStatic": false,
+                          "lastClassName": "c5",
+                          "rules": Array [
+                            "
   display: flex;
   flex-direction: column;
   width: ",
-                          [Function],
-                          ";
+                            [Function],
+                            ";
   position: relative;
 ",
-                        ],
-                      },
-                      "displayName": "styled.div",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-kPMMwu",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-kPMMwu",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
                     }
-                  }
-                  forwardedRef={null}
-                  width="100%"
-                >
-                  <div
-                    className="c4 c5"
+                    forwardedRef={null}
                     width="100%"
                   >
-                    <styled.input
-                      disabled={false}
-                      e2e="defaultSearchBar.Input"
-                      type="text"
+                    <div
+                      className="c4 c5"
                       width="100%"
                     >
-                      <StyledComponent
+                      <styled.input
                         disabled={false}
                         e2e="defaultSearchBar.Input"
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [
-                              [Function],
-                            ],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "sc-joZmNN",
-                              "isStatic": false,
-                              "lastClassName": "c6",
-                              "rules": Array [
-                                "
+                        type="text"
+                        width="100%"
+                      >
+                        <StyledComponent
+                          disabled={false}
+                          e2e="defaultSearchBar.Input"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [
+                                [Function],
+                              ],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-joZmNN",
+                                "isStatic": false,
+                                "lastClassName": "c6",
+                                "rules": Array [
+                                  "
   display: block;
   height: 2.7rem;
   width: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   padding: 0 1rem;
   box-sizing: border-box;
   font-family: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   font-size: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   border-width: 1px;
   border-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   border-style: solid;
   border-radius: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   background-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   background-image: none;
   outline-width: 0;
   user-select: text;
@@ -547,14 +554,14 @@ exports[`SearchBar should render correctly 1`] = `
 
   &:disabled {
     color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     border-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     background: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     cursor: not-allowed;
   }
 
@@ -562,50 +569,51 @@ exports[`SearchBar should render correctly 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   }
 
   &::placeholder {
     color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     font-size: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   }
 ",
-                              ],
-                            },
-                            "displayName": "styled.input",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "sc-joZmNN",
-                            "target": "input",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
+                                ],
+                              },
+                              "displayName": "styled.input",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-joZmNN",
+                              "target": "input",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
                           }
-                        }
-                        forwardedRef={null}
-                        type="text"
-                        width="100%"
-                      >
-                        <input
-                          className="c6"
-                          data-e2e="defaultSearchBar.Input"
-                          disabled={false}
+                          forwardedRef={null}
                           type="text"
                           width="100%"
-                        />
-                      </StyledComponent>
-                    </styled.input>
-                  </div>
-                </StyledComponent>
-              </styled.div>
-            </Input>
+                        >
+                          <input
+                            className="c6"
+                            data-e2e="defaultSearchBar.Input"
+                            disabled={false}
+                            type="text"
+                            width="100%"
+                          />
+                        </StyledComponent>
+                      </styled.input>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </Input>
+            </ForwardRef(InputWithRef)>
           </StyledComponent>
-        </Styled(Input)>
+        </Styled(Component)>
         <styled.div
           e2e="defaultSearchBar.Button"
         >
@@ -1087,7 +1095,7 @@ exports[`SearchBar should render correctly with e2e 1`] = `
             </div>
           </StyledComponent>
         </styled.div>
-        <Styled(Input)
+        <Styled(Component)
           e2e=".Input"
         >
           <StyledComponent
@@ -1116,116 +1124,123 @@ exports[`SearchBar should render correctly with e2e 1`] = `
 ",
                   ],
                 },
-                "displayName": "Styled(Input)",
+                "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-SpTIZ",
-                "target": [Function],
+                "target": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "render": [Function],
+                },
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
               }
             }
             forwardedRef={null}
           >
-            <Input
+            <ForwardRef(InputWithRef)
               className="c4"
-              disabled={false}
               e2e=".Input"
-              type="text"
-              width="100%"
             >
-              <styled.div
+              <Input
                 className="c4"
+                disabled={false}
+                e2e=".Input"
+                forwardRef={null}
+                type="text"
                 width="100%"
               >
-                <StyledComponent
+                <styled.div
                   className="c4"
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-kPMMwu",
-                        "isStatic": false,
-                        "lastClassName": "c5",
-                        "rules": Array [
-                          "
+                  width="100%"
+                >
+                  <StyledComponent
+                    className="c4"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-kPMMwu",
+                          "isStatic": false,
+                          "lastClassName": "c5",
+                          "rules": Array [
+                            "
   display: flex;
   flex-direction: column;
   width: ",
-                          [Function],
-                          ";
+                            [Function],
+                            ";
   position: relative;
 ",
-                        ],
-                      },
-                      "displayName": "styled.div",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-kPMMwu",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-kPMMwu",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
                     }
-                  }
-                  forwardedRef={null}
-                  width="100%"
-                >
-                  <div
-                    className="c4 c5"
+                    forwardedRef={null}
                     width="100%"
                   >
-                    <styled.input
-                      disabled={false}
-                      e2e=".Input"
-                      type="text"
+                    <div
+                      className="c4 c5"
                       width="100%"
                     >
-                      <StyledComponent
+                      <styled.input
                         disabled={false}
                         e2e=".Input"
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [
-                              [Function],
-                            ],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "sc-joZmNN",
-                              "isStatic": false,
-                              "lastClassName": "c6",
-                              "rules": Array [
-                                "
+                        type="text"
+                        width="100%"
+                      >
+                        <StyledComponent
+                          disabled={false}
+                          e2e=".Input"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [
+                                [Function],
+                              ],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-joZmNN",
+                                "isStatic": false,
+                                "lastClassName": "c6",
+                                "rules": Array [
+                                  "
   display: block;
   height: 2.7rem;
   width: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   padding: 0 1rem;
   box-sizing: border-box;
   font-family: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   font-size: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   border-width: 1px;
   border-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   border-style: solid;
   border-radius: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   background-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   background-image: none;
   outline-width: 0;
   user-select: text;
@@ -1233,14 +1248,14 @@ exports[`SearchBar should render correctly with e2e 1`] = `
 
   &:disabled {
     color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     border-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     background: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     cursor: not-allowed;
   }
 
@@ -1248,50 +1263,51 @@ exports[`SearchBar should render correctly with e2e 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   }
 
   &::placeholder {
     color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     font-size: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   }
 ",
-                              ],
-                            },
-                            "displayName": "styled.input",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "sc-joZmNN",
-                            "target": "input",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
+                                ],
+                              },
+                              "displayName": "styled.input",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-joZmNN",
+                              "target": "input",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
                           }
-                        }
-                        forwardedRef={null}
-                        type="text"
-                        width="100%"
-                      >
-                        <input
-                          className="c6"
-                          data-e2e=".Input"
-                          disabled={false}
+                          forwardedRef={null}
                           type="text"
                           width="100%"
-                        />
-                      </StyledComponent>
-                    </styled.input>
-                  </div>
-                </StyledComponent>
-              </styled.div>
-            </Input>
+                        >
+                          <input
+                            className="c6"
+                            data-e2e=".Input"
+                            disabled={false}
+                            type="text"
+                            width="100%"
+                          />
+                        </StyledComponent>
+                      </styled.input>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </Input>
+            </ForwardRef(InputWithRef)>
           </StyledComponent>
-        </Styled(Input)>
+        </Styled(Component)>
         <styled.div
           e2e=".Button"
         >
@@ -1774,7 +1790,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
             </div>
           </StyledComponent>
         </styled.div>
-        <Styled(Input)
+        <Styled(Component)
           e2e="defaultSearchBar.Input"
           onChange={[MockFunction]}
         >
@@ -1804,119 +1820,127 @@ exports[`SearchBar should render correctly with onChange 1`] = `
 ",
                   ],
                 },
-                "displayName": "Styled(Input)",
+                "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-SpTIZ",
-                "target": [Function],
+                "target": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "render": [Function],
+                },
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
               }
             }
             forwardedRef={null}
             onChange={[MockFunction]}
           >
-            <Input
+            <ForwardRef(InputWithRef)
               className="c4"
-              disabled={false}
               e2e="defaultSearchBar.Input"
               onChange={[MockFunction]}
-              type="text"
-              width="100%"
             >
-              <styled.div
+              <Input
                 className="c4"
+                disabled={false}
+                e2e="defaultSearchBar.Input"
+                forwardRef={null}
+                onChange={[MockFunction]}
+                type="text"
                 width="100%"
               >
-                <StyledComponent
+                <styled.div
                   className="c4"
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-kPMMwu",
-                        "isStatic": false,
-                        "lastClassName": "c5",
-                        "rules": Array [
-                          "
+                  width="100%"
+                >
+                  <StyledComponent
+                    className="c4"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-kPMMwu",
+                          "isStatic": false,
+                          "lastClassName": "c5",
+                          "rules": Array [
+                            "
   display: flex;
   flex-direction: column;
   width: ",
-                          [Function],
-                          ";
+                            [Function],
+                            ";
   position: relative;
 ",
-                        ],
-                      },
-                      "displayName": "styled.div",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-kPMMwu",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-kPMMwu",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
                     }
-                  }
-                  forwardedRef={null}
-                  width="100%"
-                >
-                  <div
-                    className="c4 c5"
+                    forwardedRef={null}
                     width="100%"
                   >
-                    <styled.input
-                      disabled={false}
-                      e2e="defaultSearchBar.Input"
-                      onChange={[MockFunction]}
-                      type="text"
+                    <div
+                      className="c4 c5"
                       width="100%"
                     >
-                      <StyledComponent
+                      <styled.input
                         disabled={false}
                         e2e="defaultSearchBar.Input"
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [
-                              [Function],
-                            ],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "sc-joZmNN",
-                              "isStatic": false,
-                              "lastClassName": "c6",
-                              "rules": Array [
-                                "
+                        onChange={[MockFunction]}
+                        type="text"
+                        width="100%"
+                      >
+                        <StyledComponent
+                          disabled={false}
+                          e2e="defaultSearchBar.Input"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [
+                                [Function],
+                              ],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-joZmNN",
+                                "isStatic": false,
+                                "lastClassName": "c6",
+                                "rules": Array [
+                                  "
   display: block;
   height: 2.7rem;
   width: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   padding: 0 1rem;
   box-sizing: border-box;
   font-family: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   font-size: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   border-width: 1px;
   border-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   border-style: solid;
   border-radius: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   background-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   background-image: none;
   outline-width: 0;
   user-select: text;
@@ -1924,14 +1948,14 @@ exports[`SearchBar should render correctly with onChange 1`] = `
 
   &:disabled {
     color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     border-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     background: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     cursor: not-allowed;
   }
 
@@ -1939,52 +1963,53 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   }
 
   &::placeholder {
     color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     font-size: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   }
 ",
-                              ],
-                            },
-                            "displayName": "styled.input",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "sc-joZmNN",
-                            "target": "input",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
+                                ],
+                              },
+                              "displayName": "styled.input",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-joZmNN",
+                              "target": "input",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
                           }
-                        }
-                        forwardedRef={null}
-                        onChange={[MockFunction]}
-                        type="text"
-                        width="100%"
-                      >
-                        <input
-                          className="c6"
-                          data-e2e="defaultSearchBar.Input"
-                          disabled={false}
+                          forwardedRef={null}
                           onChange={[MockFunction]}
                           type="text"
                           width="100%"
-                        />
-                      </StyledComponent>
-                    </styled.input>
-                  </div>
-                </StyledComponent>
-              </styled.div>
-            </Input>
+                        >
+                          <input
+                            className="c6"
+                            data-e2e="defaultSearchBar.Input"
+                            disabled={false}
+                            onChange={[MockFunction]}
+                            type="text"
+                            width="100%"
+                          />
+                        </StyledComponent>
+                      </styled.input>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </Input>
+            </ForwardRef(InputWithRef)>
           </StyledComponent>
-        </Styled(Input)>
+        </Styled(Component)>
         <styled.div
           e2e="defaultSearchBar.Button"
         >
@@ -2467,7 +2492,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
             </div>
           </StyledComponent>
         </styled.div>
-        <Styled(Input)
+        <Styled(Component)
           e2e="defaultSearchBar.Input"
         >
           <StyledComponent
@@ -2496,116 +2521,123 @@ exports[`SearchBar should render correctly with onClick 1`] = `
 ",
                   ],
                 },
-                "displayName": "Styled(Input)",
+                "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-SpTIZ",
-                "target": [Function],
+                "target": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "render": [Function],
+                },
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
               }
             }
             forwardedRef={null}
           >
-            <Input
+            <ForwardRef(InputWithRef)
               className="c4"
-              disabled={false}
               e2e="defaultSearchBar.Input"
-              type="text"
-              width="100%"
             >
-              <styled.div
+              <Input
                 className="c4"
+                disabled={false}
+                e2e="defaultSearchBar.Input"
+                forwardRef={null}
+                type="text"
                 width="100%"
               >
-                <StyledComponent
+                <styled.div
                   className="c4"
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-kPMMwu",
-                        "isStatic": false,
-                        "lastClassName": "c5",
-                        "rules": Array [
-                          "
+                  width="100%"
+                >
+                  <StyledComponent
+                    className="c4"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-kPMMwu",
+                          "isStatic": false,
+                          "lastClassName": "c5",
+                          "rules": Array [
+                            "
   display: flex;
   flex-direction: column;
   width: ",
-                          [Function],
-                          ";
+                            [Function],
+                            ";
   position: relative;
 ",
-                        ],
-                      },
-                      "displayName": "styled.div",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-kPMMwu",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-kPMMwu",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
                     }
-                  }
-                  forwardedRef={null}
-                  width="100%"
-                >
-                  <div
-                    className="c4 c5"
+                    forwardedRef={null}
                     width="100%"
                   >
-                    <styled.input
-                      disabled={false}
-                      e2e="defaultSearchBar.Input"
-                      type="text"
+                    <div
+                      className="c4 c5"
                       width="100%"
                     >
-                      <StyledComponent
+                      <styled.input
                         disabled={false}
                         e2e="defaultSearchBar.Input"
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [
-                              [Function],
-                            ],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "sc-joZmNN",
-                              "isStatic": false,
-                              "lastClassName": "c6",
-                              "rules": Array [
-                                "
+                        type="text"
+                        width="100%"
+                      >
+                        <StyledComponent
+                          disabled={false}
+                          e2e="defaultSearchBar.Input"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [
+                                [Function],
+                              ],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-joZmNN",
+                                "isStatic": false,
+                                "lastClassName": "c6",
+                                "rules": Array [
+                                  "
   display: block;
   height: 2.7rem;
   width: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   padding: 0 1rem;
   box-sizing: border-box;
   font-family: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   font-size: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   border-width: 1px;
   border-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   border-style: solid;
   border-radius: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   background-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   background-image: none;
   outline-width: 0;
   user-select: text;
@@ -2613,14 +2645,14 @@ exports[`SearchBar should render correctly with onClick 1`] = `
 
   &:disabled {
     color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     border-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     background: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     cursor: not-allowed;
   }
 
@@ -2628,50 +2660,51 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   }
 
   &::placeholder {
     color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     font-size: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   }
 ",
-                              ],
-                            },
-                            "displayName": "styled.input",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "sc-joZmNN",
-                            "target": "input",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
+                                ],
+                              },
+                              "displayName": "styled.input",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-joZmNN",
+                              "target": "input",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
                           }
-                        }
-                        forwardedRef={null}
-                        type="text"
-                        width="100%"
-                      >
-                        <input
-                          className="c6"
-                          data-e2e="defaultSearchBar.Input"
-                          disabled={false}
+                          forwardedRef={null}
                           type="text"
                           width="100%"
-                        />
-                      </StyledComponent>
-                    </styled.input>
-                  </div>
-                </StyledComponent>
-              </styled.div>
-            </Input>
+                        >
+                          <input
+                            className="c6"
+                            data-e2e="defaultSearchBar.Input"
+                            disabled={false}
+                            type="text"
+                            width="100%"
+                          />
+                        </StyledComponent>
+                      </styled.input>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </Input>
+            </ForwardRef(InputWithRef)>
           </StyledComponent>
-        </Styled(Input)>
+        </Styled(Component)>
         <styled.div
           e2e="defaultSearchBar.Button"
           onClick={[MockFunction]}
@@ -3158,7 +3191,7 @@ exports[`SearchBar should render correctly with value 1`] = `
             </div>
           </StyledComponent>
         </styled.div>
-        <Styled(Input)
+        <Styled(Component)
           e2e="defaultSearchBar.Input"
           onChange={[MockFunction]}
           value="My search"
@@ -3189,122 +3222,131 @@ exports[`SearchBar should render correctly with value 1`] = `
 ",
                   ],
                 },
-                "displayName": "Styled(Input)",
+                "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-SpTIZ",
-                "target": [Function],
+                "target": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "render": [Function],
+                },
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
               }
             }
             forwardedRef={null}
             onChange={[MockFunction]}
             value="My search"
           >
-            <Input
+            <ForwardRef(InputWithRef)
               className="c4"
-              disabled={false}
               e2e="defaultSearchBar.Input"
               onChange={[MockFunction]}
-              type="text"
               value="My search"
-              width="100%"
             >
-              <styled.div
+              <Input
                 className="c4"
+                disabled={false}
+                e2e="defaultSearchBar.Input"
+                forwardRef={null}
+                onChange={[MockFunction]}
+                type="text"
+                value="My search"
                 width="100%"
               >
-                <StyledComponent
+                <styled.div
                   className="c4"
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-kPMMwu",
-                        "isStatic": false,
-                        "lastClassName": "c5",
-                        "rules": Array [
-                          "
+                  width="100%"
+                >
+                  <StyledComponent
+                    className="c4"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-kPMMwu",
+                          "isStatic": false,
+                          "lastClassName": "c5",
+                          "rules": Array [
+                            "
   display: flex;
   flex-direction: column;
   width: ",
-                          [Function],
-                          ";
+                            [Function],
+                            ";
   position: relative;
 ",
-                        ],
-                      },
-                      "displayName": "styled.div",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-kPMMwu",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-kPMMwu",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
                     }
-                  }
-                  forwardedRef={null}
-                  width="100%"
-                >
-                  <div
-                    className="c4 c5"
+                    forwardedRef={null}
                     width="100%"
                   >
-                    <styled.input
-                      disabled={false}
-                      e2e="defaultSearchBar.Input"
-                      onChange={[MockFunction]}
-                      type="text"
-                      value="My search"
+                    <div
+                      className="c4 c5"
                       width="100%"
                     >
-                      <StyledComponent
+                      <styled.input
                         disabled={false}
                         e2e="defaultSearchBar.Input"
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [
-                              [Function],
-                            ],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "sc-joZmNN",
-                              "isStatic": false,
-                              "lastClassName": "c6",
-                              "rules": Array [
-                                "
+                        onChange={[MockFunction]}
+                        type="text"
+                        value="My search"
+                        width="100%"
+                      >
+                        <StyledComponent
+                          disabled={false}
+                          e2e="defaultSearchBar.Input"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [
+                                [Function],
+                              ],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-joZmNN",
+                                "isStatic": false,
+                                "lastClassName": "c6",
+                                "rules": Array [
+                                  "
   display: block;
   height: 2.7rem;
   width: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   padding: 0 1rem;
   box-sizing: border-box;
   font-family: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   font-size: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   border-width: 1px;
   border-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   border-style: solid;
   border-radius: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   background-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   background-image: none;
   outline-width: 0;
   user-select: text;
@@ -3312,14 +3354,14 @@ exports[`SearchBar should render correctly with value 1`] = `
 
   &:disabled {
     color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     border-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     background: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     cursor: not-allowed;
   }
 
@@ -3327,54 +3369,55 @@ exports[`SearchBar should render correctly with value 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   }
 
   &::placeholder {
     color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     font-size: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   }
 ",
-                              ],
-                            },
-                            "displayName": "styled.input",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "sc-joZmNN",
-                            "target": "input",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
+                                ],
+                              },
+                              "displayName": "styled.input",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-joZmNN",
+                              "target": "input",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
                           }
-                        }
-                        forwardedRef={null}
-                        onChange={[MockFunction]}
-                        type="text"
-                        value="My search"
-                        width="100%"
-                      >
-                        <input
-                          className="c6"
-                          data-e2e="defaultSearchBar.Input"
-                          disabled={false}
+                          forwardedRef={null}
                           onChange={[MockFunction]}
                           type="text"
                           value="My search"
                           width="100%"
-                        />
-                      </StyledComponent>
-                    </styled.input>
-                  </div>
-                </StyledComponent>
-              </styled.div>
-            </Input>
+                        >
+                          <input
+                            className="c6"
+                            data-e2e="defaultSearchBar.Input"
+                            disabled={false}
+                            onChange={[MockFunction]}
+                            type="text"
+                            value="My search"
+                            width="100%"
+                          />
+                        </StyledComponent>
+                      </styled.input>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </Input>
+            </ForwardRef(InputWithRef)>
           </StyledComponent>
-        </Styled(Input)>
+        </Styled(Component)>
         <styled.div
           e2e="defaultSearchBar.Button"
         >
@@ -3858,7 +3901,7 @@ exports[`SearchBar should render correctly with width 1`] = `
             </div>
           </StyledComponent>
         </styled.div>
-        <Styled(Input)
+        <Styled(Component)
           e2e="defaultSearchBar.Input"
           onChange={[MockFunction]}
           value="My search"
@@ -3889,122 +3932,131 @@ exports[`SearchBar should render correctly with width 1`] = `
 ",
                   ],
                 },
-                "displayName": "Styled(Input)",
+                "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-SpTIZ",
-                "target": [Function],
+                "target": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "render": [Function],
+                },
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
               }
             }
             forwardedRef={null}
             onChange={[MockFunction]}
             value="My search"
           >
-            <Input
+            <ForwardRef(InputWithRef)
               className="c4"
-              disabled={false}
               e2e="defaultSearchBar.Input"
               onChange={[MockFunction]}
-              type="text"
               value="My search"
-              width="100%"
             >
-              <styled.div
+              <Input
                 className="c4"
+                disabled={false}
+                e2e="defaultSearchBar.Input"
+                forwardRef={null}
+                onChange={[MockFunction]}
+                type="text"
+                value="My search"
                 width="100%"
               >
-                <StyledComponent
+                <styled.div
                   className="c4"
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-kPMMwu",
-                        "isStatic": false,
-                        "lastClassName": "c5",
-                        "rules": Array [
-                          "
+                  width="100%"
+                >
+                  <StyledComponent
+                    className="c4"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-kPMMwu",
+                          "isStatic": false,
+                          "lastClassName": "c5",
+                          "rules": Array [
+                            "
   display: flex;
   flex-direction: column;
   width: ",
-                          [Function],
-                          ";
+                            [Function],
+                            ";
   position: relative;
 ",
-                        ],
-                      },
-                      "displayName": "styled.div",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-kPMMwu",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-kPMMwu",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
                     }
-                  }
-                  forwardedRef={null}
-                  width="100%"
-                >
-                  <div
-                    className="c4 c5"
+                    forwardedRef={null}
                     width="100%"
                   >
-                    <styled.input
-                      disabled={false}
-                      e2e="defaultSearchBar.Input"
-                      onChange={[MockFunction]}
-                      type="text"
-                      value="My search"
+                    <div
+                      className="c4 c5"
                       width="100%"
                     >
-                      <StyledComponent
+                      <styled.input
                         disabled={false}
                         e2e="defaultSearchBar.Input"
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [
-                              [Function],
-                            ],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "sc-joZmNN",
-                              "isStatic": false,
-                              "lastClassName": "c6",
-                              "rules": Array [
-                                "
+                        onChange={[MockFunction]}
+                        type="text"
+                        value="My search"
+                        width="100%"
+                      >
+                        <StyledComponent
+                          disabled={false}
+                          e2e="defaultSearchBar.Input"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [
+                                [Function],
+                              ],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-joZmNN",
+                                "isStatic": false,
+                                "lastClassName": "c6",
+                                "rules": Array [
+                                  "
   display: block;
   height: 2.7rem;
   width: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   padding: 0 1rem;
   box-sizing: border-box;
   font-family: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   font-size: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   border-width: 1px;
   border-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   border-style: solid;
   border-radius: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   background-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   background-image: none;
   outline-width: 0;
   user-select: text;
@@ -4012,14 +4064,14 @@ exports[`SearchBar should render correctly with width 1`] = `
 
   &:disabled {
     color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     border-color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     background: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     cursor: not-allowed;
   }
 
@@ -4027,54 +4079,55 @@ exports[`SearchBar should render correctly with width 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   }
 
   &::placeholder {
     color: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
     font-size: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   }
 ",
-                              ],
-                            },
-                            "displayName": "styled.input",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "sc-joZmNN",
-                            "target": "input",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
+                                ],
+                              },
+                              "displayName": "styled.input",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-joZmNN",
+                              "target": "input",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
                           }
-                        }
-                        forwardedRef={null}
-                        onChange={[MockFunction]}
-                        type="text"
-                        value="My search"
-                        width="100%"
-                      >
-                        <input
-                          className="c6"
-                          data-e2e="defaultSearchBar.Input"
-                          disabled={false}
+                          forwardedRef={null}
                           onChange={[MockFunction]}
                           type="text"
                           value="My search"
                           width="100%"
-                        />
-                      </StyledComponent>
-                    </styled.input>
-                  </div>
-                </StyledComponent>
-              </styled.div>
-            </Input>
+                        >
+                          <input
+                            className="c6"
+                            data-e2e="defaultSearchBar.Input"
+                            disabled={false}
+                            onChange={[MockFunction]}
+                            type="text"
+                            value="My search"
+                            width="100%"
+                          />
+                        </StyledComponent>
+                      </styled.input>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </Input>
+            </ForwardRef(InputWithRef)>
           </StyledComponent>
-        </Styled(Input)>
+        </Styled(Component)>
         <styled.div
           e2e="defaultSearchBar.Button"
         >

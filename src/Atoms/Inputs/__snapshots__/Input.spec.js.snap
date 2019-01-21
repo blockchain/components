@@ -69,102 +69,104 @@ exports[`Input should render correctly 1`] = `
   font-size: 0.875rem;
 }
 
-<Input
-  disabled={false}
-  e2e="defaultInput"
-  type="text"
-  width="100%"
->
-  <styled.div
-    className=""
+<ForwardRef(InputWithRef)>
+  <Input
+    disabled={false}
+    e2e="defaultInput"
+    forwardRef={null}
+    type="text"
     width="100%"
   >
-    <StyledComponent
+    <styled.div
       className=""
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-gzVnrw",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+      width="100%"
+    >
+      <StyledComponent
+        className=""
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gzVnrw",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: flex;
   flex-direction: column;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   position: relative;
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-gzVnrw",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gzVnrw",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.input
-          disabled={false}
-          e2e="defaultInput"
-          type="text"
+        <div
+          className="c0"
           width="100%"
         >
-          <StyledComponent
+          <styled.input
             disabled={false}
             e2e="defaultInput"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [
-                  [Function],
-                ],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-htoDjs",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
+            type="text"
+            width="100%"
+          >
+            <StyledComponent
+              disabled={false}
+              e2e="defaultInput"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htoDjs",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
   display: block;
   height: 2.7rem;
   width: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   padding: 0 1rem;
   box-sizing: border-box;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-image: none;
   outline-width: 0;
   user-select: text;
@@ -172,14 +174,14 @@ exports[`Input should render correctly 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
@@ -187,48 +189,49 @@ exports[`Input should render correctly 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &::placeholder {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.input",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-htoDjs",
-                "target": "input",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.input",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htoDjs",
+                  "target": "input",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            type="text"
-            width="100%"
-          >
-            <input
-              className="c1"
-              data-e2e="defaultInput"
-              disabled={false}
+              forwardedRef={null}
               type="text"
               width="100%"
-            />
-          </StyledComponent>
-        </styled.input>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</Input>
+            >
+              <input
+                className="c1"
+                data-e2e="defaultInput"
+                disabled={false}
+                type="text"
+                width="100%"
+              />
+            </StyledComponent>
+          </styled.input>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Input>
+</ForwardRef(InputWithRef)>
 `;
 
 exports[`Input should render correctly with disabled 1`] = `
@@ -300,102 +303,106 @@ exports[`Input should render correctly with disabled 1`] = `
   font-size: 0.875rem;
 }
 
-<Input
+<ForwardRef(InputWithRef)
   disabled={true}
-  e2e="defaultInput"
-  type="text"
-  width="100%"
 >
-  <styled.div
-    className=""
+  <Input
+    disabled={true}
+    e2e="defaultInput"
+    forwardRef={null}
+    type="text"
     width="100%"
   >
-    <StyledComponent
+    <styled.div
       className=""
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-gzVnrw",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+      width="100%"
+    >
+      <StyledComponent
+        className=""
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gzVnrw",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: flex;
   flex-direction: column;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   position: relative;
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-gzVnrw",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gzVnrw",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.input
-          disabled={true}
-          e2e="defaultInput"
-          type="text"
+        <div
+          className="c0"
           width="100%"
         >
-          <StyledComponent
+          <styled.input
             disabled={true}
             e2e="defaultInput"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [
-                  [Function],
-                ],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-htoDjs",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
+            type="text"
+            width="100%"
+          >
+            <StyledComponent
+              disabled={true}
+              e2e="defaultInput"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htoDjs",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
   display: block;
   height: 2.7rem;
   width: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   padding: 0 1rem;
   box-sizing: border-box;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-image: none;
   outline-width: 0;
   user-select: text;
@@ -403,14 +410,14 @@ exports[`Input should render correctly with disabled 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
@@ -418,48 +425,49 @@ exports[`Input should render correctly with disabled 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &::placeholder {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.input",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-htoDjs",
-                "target": "input",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.input",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htoDjs",
+                  "target": "input",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            type="text"
-            width="100%"
-          >
-            <input
-              className="c1"
-              data-e2e="defaultInput"
-              disabled={true}
+              forwardedRef={null}
               type="text"
               width="100%"
-            />
-          </StyledComponent>
-        </styled.input>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</Input>
+            >
+              <input
+                className="c1"
+                data-e2e="defaultInput"
+                disabled={true}
+                type="text"
+                width="100%"
+              />
+            </StyledComponent>
+          </styled.input>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Input>
+</ForwardRef(InputWithRef)>
 `;
 
 exports[`Input should render correctly with error="error" 1`] = `
@@ -538,158 +546,162 @@ exports[`Input should render correctly with error="error" 1`] = `
   color: #F36331;
 }
 
-<Input
-  disabled={false}
-  e2e="defaultInput"
+<ForwardRef(InputWithRef)
   error="error"
-  type="text"
-  width="100%"
 >
-  <styled.div
-    className=""
+  <Input
+    disabled={false}
+    e2e="defaultInput"
+    error="error"
+    forwardRef={null}
+    type="text"
     width="100%"
   >
-    <StyledComponent
+    <styled.div
       className=""
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-gzVnrw",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+      width="100%"
+    >
+      <StyledComponent
+        className=""
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gzVnrw",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: flex;
   flex-direction: column;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   position: relative;
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-gzVnrw",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gzVnrw",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.label
-          disabled={false}
-          error={true}
-        >
-          <StyledComponent
-            disabled={false}
-            error={true}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-dnqmqq",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  font-family: ",
-                    [Function],
-                    ";
-  font-size: ",
-                    [Function],
-                    ";
-  padding-bottom: 0.5rem;
-  color: ",
-                    [Function],
-                    ";
-  ",
-                    [Function],
-                    ";
-",
-                  ],
-                },
-                "displayName": "styled.label",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-dnqmqq",
-                "target": "label",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <label
-              className="c1"
-              disabled={false}
-            >
-              error
-            </label>
-          </StyledComponent>
-        </styled.label>
-        <styled.input
-          disabled={false}
-          e2e="defaultInput"
-          error="error"
-          type="text"
+        <div
+          className="c0"
           width="100%"
         >
-          <StyledComponent
+          <styled.label
+            disabled={false}
+            error={true}
+          >
+            <StyledComponent
+              disabled={false}
+              error={true}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-dnqmqq",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  font-family: ",
+                      [Function],
+                      ";
+  font-size: ",
+                      [Function],
+                      ";
+  padding-bottom: 0.5rem;
+  color: ",
+                      [Function],
+                      ";
+  ",
+                      [Function],
+                      ";
+",
+                    ],
+                  },
+                  "displayName": "styled.label",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-dnqmqq",
+                  "target": "label",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <label
+                className="c1"
+                disabled={false}
+              >
+                error
+              </label>
+            </StyledComponent>
+          </styled.label>
+          <styled.input
             disabled={false}
             e2e="defaultInput"
             error="error"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [
-                  [Function],
-                ],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-htoDjs",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    "
+            type="text"
+            width="100%"
+          >
+            <StyledComponent
+              disabled={false}
+              e2e="defaultInput"
+              error="error"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htoDjs",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
   display: block;
   height: 2.7rem;
   width: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   padding: 0 1rem;
   box-sizing: border-box;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-image: none;
   outline-width: 0;
   user-select: text;
@@ -697,14 +709,14 @@ exports[`Input should render correctly with error="error" 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
@@ -712,48 +724,49 @@ exports[`Input should render correctly with error="error" 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &::placeholder {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.input",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-htoDjs",
-                "target": "input",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.input",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htoDjs",
+                  "target": "input",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            type="text"
-            width="100%"
-          >
-            <input
-              className="c2"
-              data-e2e="defaultInput"
-              disabled={false}
+              forwardedRef={null}
               type="text"
               width="100%"
-            />
-          </StyledComponent>
-        </styled.input>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</Input>
+            >
+              <input
+                className="c2"
+                data-e2e="defaultInput"
+                disabled={false}
+                type="text"
+                width="100%"
+              />
+            </StyledComponent>
+          </styled.input>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Input>
+</ForwardRef(InputWithRef)>
 `;
 
 exports[`Input should render correctly with label="label" 1`] = `
@@ -832,157 +845,161 @@ exports[`Input should render correctly with label="label" 1`] = `
   color: #757679;
 }
 
-<Input
-  disabled={false}
-  e2e="defaultInput"
+<ForwardRef(InputWithRef)
   label="label"
-  type="text"
-  width="100%"
 >
-  <styled.div
-    className=""
+  <Input
+    disabled={false}
+    e2e="defaultInput"
+    forwardRef={null}
+    label="label"
+    type="text"
     width="100%"
   >
-    <StyledComponent
+    <styled.div
       className=""
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-gzVnrw",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+      width="100%"
+    >
+      <StyledComponent
+        className=""
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gzVnrw",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: flex;
   flex-direction: column;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   position: relative;
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-gzVnrw",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gzVnrw",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.label
-          disabled={false}
-          error={false}
-        >
-          <StyledComponent
-            disabled={false}
-            error={false}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-dnqmqq",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  font-family: ",
-                    [Function],
-                    ";
-  font-size: ",
-                    [Function],
-                    ";
-  padding-bottom: 0.5rem;
-  color: ",
-                    [Function],
-                    ";
-  ",
-                    [Function],
-                    ";
-",
-                  ],
-                },
-                "displayName": "styled.label",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-dnqmqq",
-                "target": "label",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <label
-              className="c1"
-              disabled={false}
-            >
-              label
-            </label>
-          </StyledComponent>
-        </styled.label>
-        <styled.input
-          disabled={false}
-          e2e="defaultInput"
-          label="label"
-          type="text"
+        <div
+          className="c0"
           width="100%"
         >
-          <StyledComponent
+          <styled.label
+            disabled={false}
+            error={false}
+          >
+            <StyledComponent
+              disabled={false}
+              error={false}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-dnqmqq",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  font-family: ",
+                      [Function],
+                      ";
+  font-size: ",
+                      [Function],
+                      ";
+  padding-bottom: 0.5rem;
+  color: ",
+                      [Function],
+                      ";
+  ",
+                      [Function],
+                      ";
+",
+                    ],
+                  },
+                  "displayName": "styled.label",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-dnqmqq",
+                  "target": "label",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <label
+                className="c1"
+                disabled={false}
+              >
+                label
+              </label>
+            </StyledComponent>
+          </styled.label>
+          <styled.input
             disabled={false}
             e2e="defaultInput"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [
-                  [Function],
-                ],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-htoDjs",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    "
+            label="label"
+            type="text"
+            width="100%"
+          >
+            <StyledComponent
+              disabled={false}
+              e2e="defaultInput"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htoDjs",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
   display: block;
   height: 2.7rem;
   width: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   padding: 0 1rem;
   box-sizing: border-box;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-image: none;
   outline-width: 0;
   user-select: text;
@@ -990,14 +1007,14 @@ exports[`Input should render correctly with label="label" 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
@@ -1005,50 +1022,51 @@ exports[`Input should render correctly with label="label" 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &::placeholder {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.input",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-htoDjs",
-                "target": "input",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.input",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htoDjs",
+                  "target": "input",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            label="label"
-            type="text"
-            width="100%"
-          >
-            <input
-              className="c2"
-              data-e2e="defaultInput"
-              disabled={false}
+              forwardedRef={null}
               label="label"
               type="text"
               width="100%"
-            />
-          </StyledComponent>
-        </styled.input>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</Input>
+            >
+              <input
+                className="c2"
+                data-e2e="defaultInput"
+                disabled={false}
+                label="label"
+                type="text"
+                width="100%"
+              />
+            </StyledComponent>
+          </styled.input>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Input>
+</ForwardRef(InputWithRef)>
 `;
 
 exports[`Input should render correctly with label="label" and disabled 1`] = `
@@ -1128,157 +1146,162 @@ exports[`Input should render correctly with label="label" and disabled 1`] = `
   cursor: not-allowed;
 }
 
-<Input
+<ForwardRef(InputWithRef)
   disabled={true}
-  e2e="defaultInput"
   label="label"
-  type="text"
-  width="100%"
 >
-  <styled.div
-    className=""
+  <Input
+    disabled={true}
+    e2e="defaultInput"
+    forwardRef={null}
+    label="label"
+    type="text"
     width="100%"
   >
-    <StyledComponent
+    <styled.div
       className=""
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-gzVnrw",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+      width="100%"
+    >
+      <StyledComponent
+        className=""
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gzVnrw",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: flex;
   flex-direction: column;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   position: relative;
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-gzVnrw",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gzVnrw",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.label
-          disabled={true}
-          error={false}
-        >
-          <StyledComponent
-            disabled={true}
-            error={false}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-dnqmqq",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  font-family: ",
-                    [Function],
-                    ";
-  font-size: ",
-                    [Function],
-                    ";
-  padding-bottom: 0.5rem;
-  color: ",
-                    [Function],
-                    ";
-  ",
-                    [Function],
-                    ";
-",
-                  ],
-                },
-                "displayName": "styled.label",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-dnqmqq",
-                "target": "label",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <label
-              className="c1"
-              disabled={true}
-            >
-              label
-            </label>
-          </StyledComponent>
-        </styled.label>
-        <styled.input
-          disabled={true}
-          e2e="defaultInput"
-          label="label"
-          type="text"
+        <div
+          className="c0"
           width="100%"
         >
-          <StyledComponent
+          <styled.label
+            disabled={true}
+            error={false}
+          >
+            <StyledComponent
+              disabled={true}
+              error={false}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-dnqmqq",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  font-family: ",
+                      [Function],
+                      ";
+  font-size: ",
+                      [Function],
+                      ";
+  padding-bottom: 0.5rem;
+  color: ",
+                      [Function],
+                      ";
+  ",
+                      [Function],
+                      ";
+",
+                    ],
+                  },
+                  "displayName": "styled.label",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-dnqmqq",
+                  "target": "label",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <label
+                className="c1"
+                disabled={true}
+              >
+                label
+              </label>
+            </StyledComponent>
+          </styled.label>
+          <styled.input
             disabled={true}
             e2e="defaultInput"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [
-                  [Function],
-                ],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-htoDjs",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    "
+            label="label"
+            type="text"
+            width="100%"
+          >
+            <StyledComponent
+              disabled={true}
+              e2e="defaultInput"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htoDjs",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
   display: block;
   height: 2.7rem;
   width: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   padding: 0 1rem;
   box-sizing: border-box;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-image: none;
   outline-width: 0;
   user-select: text;
@@ -1286,14 +1309,14 @@ exports[`Input should render correctly with label="label" and disabled 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
@@ -1301,50 +1324,51 @@ exports[`Input should render correctly with label="label" and disabled 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &::placeholder {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.input",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-htoDjs",
-                "target": "input",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.input",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htoDjs",
+                  "target": "input",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            label="label"
-            type="text"
-            width="100%"
-          >
-            <input
-              className="c2"
-              data-e2e="defaultInput"
-              disabled={true}
+              forwardedRef={null}
               label="label"
               type="text"
               width="100%"
-            />
-          </StyledComponent>
-        </styled.input>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</Input>
+            >
+              <input
+                className="c2"
+                data-e2e="defaultInput"
+                disabled={true}
+                label="label"
+                type="text"
+                width="100%"
+              />
+            </StyledComponent>
+          </styled.input>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Input>
+</ForwardRef(InputWithRef)>
 `;
 
 exports[`Input should render correctly with label="label" and error="error" 1`] = `
@@ -1423,160 +1447,165 @@ exports[`Input should render correctly with label="label" and error="error" 1`] 
   color: #F36331;
 }
 
-<Input
-  disabled={false}
-  e2e="defaultInput"
+<ForwardRef(InputWithRef)
   error="error"
   label="label"
-  type="text"
-  width="100%"
 >
-  <styled.div
-    className=""
+  <Input
+    disabled={false}
+    e2e="defaultInput"
+    error="error"
+    forwardRef={null}
+    label="label"
+    type="text"
     width="100%"
   >
-    <StyledComponent
+    <styled.div
       className=""
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-gzVnrw",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+      width="100%"
+    >
+      <StyledComponent
+        className=""
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gzVnrw",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: flex;
   flex-direction: column;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   position: relative;
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-gzVnrw",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gzVnrw",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.label
-          disabled={false}
-          error={true}
-        >
-          <StyledComponent
-            disabled={false}
-            error={true}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-dnqmqq",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  font-family: ",
-                    [Function],
-                    ";
-  font-size: ",
-                    [Function],
-                    ";
-  padding-bottom: 0.5rem;
-  color: ",
-                    [Function],
-                    ";
-  ",
-                    [Function],
-                    ";
-",
-                  ],
-                },
-                "displayName": "styled.label",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-dnqmqq",
-                "target": "label",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <label
-              className="c1"
-              disabled={false}
-            >
-              label - error
-            </label>
-          </StyledComponent>
-        </styled.label>
-        <styled.input
-          disabled={false}
-          e2e="defaultInput"
-          error="error"
-          label="label"
-          type="text"
+        <div
+          className="c0"
           width="100%"
         >
-          <StyledComponent
+          <styled.label
+            disabled={false}
+            error={true}
+          >
+            <StyledComponent
+              disabled={false}
+              error={true}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-dnqmqq",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  font-family: ",
+                      [Function],
+                      ";
+  font-size: ",
+                      [Function],
+                      ";
+  padding-bottom: 0.5rem;
+  color: ",
+                      [Function],
+                      ";
+  ",
+                      [Function],
+                      ";
+",
+                    ],
+                  },
+                  "displayName": "styled.label",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-dnqmqq",
+                  "target": "label",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <label
+                className="c1"
+                disabled={false}
+              >
+                label - error
+              </label>
+            </StyledComponent>
+          </styled.label>
+          <styled.input
             disabled={false}
             e2e="defaultInput"
             error="error"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [
-                  [Function],
-                ],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-htoDjs",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    "
+            label="label"
+            type="text"
+            width="100%"
+          >
+            <StyledComponent
+              disabled={false}
+              e2e="defaultInput"
+              error="error"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htoDjs",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
   display: block;
   height: 2.7rem;
   width: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   padding: 0 1rem;
   box-sizing: border-box;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-image: none;
   outline-width: 0;
   user-select: text;
@@ -1584,14 +1613,14 @@ exports[`Input should render correctly with label="label" and error="error" 1`] 
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
@@ -1599,50 +1628,51 @@ exports[`Input should render correctly with label="label" and error="error" 1`] 
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &::placeholder {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.input",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-htoDjs",
-                "target": "input",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.input",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htoDjs",
+                  "target": "input",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            label="label"
-            type="text"
-            width="100%"
-          >
-            <input
-              className="c2"
-              data-e2e="defaultInput"
-              disabled={false}
+              forwardedRef={null}
               label="label"
               type="text"
               width="100%"
-            />
-          </StyledComponent>
-        </styled.input>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</Input>
+            >
+              <input
+                className="c2"
+                data-e2e="defaultInput"
+                disabled={false}
+                label="label"
+                type="text"
+                width="100%"
+              />
+            </StyledComponent>
+          </styled.input>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Input>
+</ForwardRef(InputWithRef)>
 `;
 
 exports[`Input should render correctly with type 1`] = `
@@ -1714,102 +1744,106 @@ exports[`Input should render correctly with type 1`] = `
   font-size: 0.875rem;
 }
 
-<Input
-  disabled={false}
-  e2e="defaultInput"
+<ForwardRef(InputWithRef)
   type="password"
-  width="100%"
 >
-  <styled.div
-    className=""
+  <Input
+    disabled={false}
+    e2e="defaultInput"
+    forwardRef={null}
+    type="password"
     width="100%"
   >
-    <StyledComponent
+    <styled.div
       className=""
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-gzVnrw",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+      width="100%"
+    >
+      <StyledComponent
+        className=""
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gzVnrw",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: flex;
   flex-direction: column;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   position: relative;
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-gzVnrw",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gzVnrw",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="100%"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="100%"
       >
-        <styled.input
-          disabled={false}
-          e2e="defaultInput"
-          type="password"
+        <div
+          className="c0"
           width="100%"
         >
-          <StyledComponent
+          <styled.input
             disabled={false}
             e2e="defaultInput"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [
-                  [Function],
-                ],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-htoDjs",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
+            type="password"
+            width="100%"
+          >
+            <StyledComponent
+              disabled={false}
+              e2e="defaultInput"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htoDjs",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
   display: block;
   height: 2.7rem;
   width: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   padding: 0 1rem;
   box-sizing: border-box;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-image: none;
   outline-width: 0;
   user-select: text;
@@ -1817,14 +1851,14 @@ exports[`Input should render correctly with type 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
@@ -1832,48 +1866,49 @@ exports[`Input should render correctly with type 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &::placeholder {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.input",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-htoDjs",
-                "target": "input",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.input",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htoDjs",
+                  "target": "input",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            type="password"
-            width="100%"
-          >
-            <input
-              className="c1"
-              data-e2e="defaultInput"
-              disabled={false}
+              forwardedRef={null}
               type="password"
               width="100%"
-            />
-          </StyledComponent>
-        </styled.input>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</Input>
+            >
+              <input
+                className="c1"
+                data-e2e="defaultInput"
+                disabled={false}
+                type="password"
+                width="100%"
+              />
+            </StyledComponent>
+          </styled.input>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Input>
+</ForwardRef(InputWithRef)>
 `;
 
 exports[`Input should render correctly with type="checkbox" 1`] = `
@@ -1967,47 +2002,59 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
   width: 9px;
 }
 
-<Input
-  disabled={false}
-  e2e="defaultInput"
+<ForwardRef(InputWithRef)
   type="checkbox"
-  width="100%"
 >
-  <Checkbox
-    className=""
+  <Input
     disabled={false}
     e2e="defaultInput"
+    forwardRef={null}
     type="checkbox"
     width="100%"
   >
-    <styled.div
+    <ForwardRef(CheckboxWithRef)
       className=""
+      disabled={false}
+      e2e="defaultInput"
+      type="checkbox"
+      width="100%"
     >
-      <StyledComponent
+      <Checkbox
         className=""
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bdVaJa",
-              "isStatic": false,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
+        disabled={false}
+        e2e="defaultInput"
+        forwardRef={null}
+        type="checkbox"
+        width="100%"
+      >
+        <styled.div
+          className=""
+        >
+          <StyledComponent
+            className=""
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c0",
+                  "rules": Array [
+                    "
   input:checked + label::before {
     background-color: ",
-                [Function],
-                ";
+                    [Function],
+                    ";
     border-color: ",
-                [Function],
-                ";
+                    [Function],
+                    ";
   }
 
   input:focus + label::before {
     box-shadow: 0 0 0 2px ",
-                [Function],
-                ";
+                    [Function],
+                    ";
     outline: 1px solid transparent;
   }
 
@@ -2019,59 +2066,59 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
 
   input:disabled + label::before {
     background-color: ",
-                [Function],
-                ";
+                    [Function],
+                    ";
     border: none;
   }
 
   input:disabled + label::after {
     border-left: 2px solid ",
-                [Function],
-                ";
+                    [Function],
+                    ";
     border-bottom: 2px solid ",
-                [Function],
-                ";
+                    [Function],
+                    ";
   }
 ",
-              ],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bdVaJa",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
-      >
-        <div
-          className="c0"
-        >
-          <styled.input
-            disabled={false}
-            e2e="defaultInput"
-            id="-checkbox"
-            type="checkbox"
-            width="100%"
-          >
-            <StyledComponent
-              disabled={false}
-              e2e="defaultInput"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [
-                    [Function],
                   ],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-bwzfXH",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c0"
+            >
+              <styled.input
+                disabled={false}
+                e2e="defaultInput"
+                id="-checkbox"
+                type="checkbox"
+                width="100%"
+              >
+                <StyledComponent
+                  disabled={false}
+                  e2e="defaultInput"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [
+                        [Function],
+                      ],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bwzfXH",
+                        "isStatic": false,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          "
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -2083,47 +2130,47 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
   white-space: nowrap;
   width: 1px;
 ",
-                    ],
-                  },
-                  "displayName": "styled.input",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-bwzfXH",
-                  "target": "input",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              id="-checkbox"
-              type="checkbox"
-              width="100%"
-            >
-              <input
-                className="c1"
-                data-e2e="defaultInput"
-                disabled={false}
-                id="-checkbox"
-                type="checkbox"
-                width="100%"
-              />
-            </StyledComponent>
-          </styled.input>
-          <styled.label
-            htmlFor="-checkbox"
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-htpNat",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
+                        ],
+                      },
+                      "displayName": "styled.input",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bwzfXH",
+                      "target": "input",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  id="-checkbox"
+                  type="checkbox"
+                  width="100%"
+                >
+                  <input
+                    className="c1"
+                    data-e2e="defaultInput"
+                    disabled={false}
+                    id="-checkbox"
+                    type="checkbox"
+                    width="100%"
+                  />
+                </StyledComponent>
+              </styled.input>
+              <styled.label
+                htmlFor="-checkbox"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htpNat",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
   position: relative;
   display: flex;
   align-items: center;
@@ -2131,19 +2178,19 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
   padding-left: 1.5rem;
   cursor: pointer;
   font-family: ",
-                      [Function],
-                      ";
+                          [Function],
+                          ";
   font-size: ",
-                      [Function],
-                      ";
+                          [Function],
+                          ";
 
   &::before {
     background-color: ",
-                      [Function],
-                      ";
+                          [Function],
+                          ";
     border: 1px solid ",
-                      [Function],
-                      ";
+                          [Function],
+                          ";
     box-sizing: border-box;
     content: '';
     height: 16px;
@@ -2157,11 +2204,11 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
   &::after {
     background: none;
     border-left: 2px solid ",
-                      [Function],
-                      ";
+                          [Function],
+                          ";
     border-bottom: 2px solid ",
-                      [Function],
-                      ";
+                          [Function],
+                          ";
     box-sizing: border-box;
     content: '';
     height: 5px;
@@ -2174,32 +2221,34 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
     width: 9px;
   }
 ",
-                    ],
-                  },
-                  "displayName": "styled.label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-htpNat",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              htmlFor="-checkbox"
-            >
-              <label
-                className="c2"
-                htmlFor="-checkbox"
-              />
-            </StyledComponent>
-          </styled.label>
-        </div>
-      </StyledComponent>
-    </styled.div>
-  </Checkbox>
-</Input>
+                        ],
+                      },
+                      "displayName": "styled.label",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htpNat",
+                      "target": "label",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  htmlFor="-checkbox"
+                >
+                  <label
+                    className="c2"
+                    htmlFor="-checkbox"
+                  />
+                </StyledComponent>
+              </styled.label>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </Checkbox>
+    </ForwardRef(CheckboxWithRef)>
+  </Input>
+</ForwardRef(InputWithRef)>
 `;
 
 exports[`Input should render correctly with type="radio" 1`] = `
@@ -2232,6 +2281,10 @@ exports[`Input should render correctly with type="radio" 1`] = `
   visibility: visible;
   white-space: nowrap;
   width: 1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c1:focus ~ label .c3 {
@@ -2282,75 +2335,87 @@ exports[`Input should render correctly with type="radio" 1`] = `
   font-size: 1rem;
 }
 
-<Input
-  disabled={false}
-  e2e="defaultInput"
+<ForwardRef(InputWithRef)
   type="radio"
-  width="100%"
 >
-  <Radio
-    className=""
+  <Input
     disabled={false}
     e2e="defaultInput"
+    forwardRef={null}
     type="radio"
     width="100%"
   >
-    <styled.div
+    <ForwardRef(RadioWithRef)
       className=""
+      disabled={false}
+      e2e="defaultInput"
+      type="radio"
+      width="100%"
     >
-      <StyledComponent
+      <Radio
         className=""
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bxivhb",
-              "isStatic": true,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
+        disabled={false}
+        e2e="defaultInput"
+        forwardRef={null}
+        type="radio"
+        width="100%"
+      >
+        <styled.div
+          className=""
+        >
+          <StyledComponent
+            className=""
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bxivhb",
+                  "isStatic": true,
+                  "lastClassName": "c0",
+                  "rules": Array [
+                    "
   display: flex;
 ",
-              ],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bxivhb",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
-      >
-        <div
-          className="c0"
-        >
-          <styled.input
-            disabled={false}
-            e2e="defaultInput"
-            id="-checkbox"
-            type="radio"
-            width="100%"
-          >
-            <StyledComponent
-              disabled={false}
-              e2e="defaultInput"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [
-                    [Function],
                   ],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-EHOje",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bxivhb",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c0"
+            >
+              <styled.input
+                disabled={false}
+                e2e="defaultInput"
+                id="-checkbox"
+                type="radio"
+                width="100%"
+              >
+                <StyledComponent
+                  disabled={false}
+                  e2e="defaultInput"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [
+                        [Function],
+                      ],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-EHOje",
+                        "isStatic": false,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          "
   position: absolute;
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -2361,25 +2426,26 @@ exports[`Input should render correctly with type="radio" 1`] = `
   visibility: visible;
   white-space: nowrap;
   width: 1px;
+  user-select: none;
 
   &:focus ~ label ",
-                      ".c3",
-                      " {
+                          ".c3",
+                          " {
     box-shadow: 0 0 0 2px ",
-                      [Function],
-                      ";
+                          [Function],
+                          ";
     outline: 1px solid transparent;
   }
 
   &:checked ~ label ",
-                      ".c3",
-                      " {
+                          ".c3",
+                          " {
     display: flex;
     align-items: center;
     justify-content: center;
     border-color: ",
-                      [Function],
-                      ";
+                          [Function],
+                          ";
 
     &::before {
       border-radius: 51%;
@@ -2389,52 +2455,52 @@ exports[`Input should render correctly with type="radio" 1`] = `
       width: 8px;
       position: relative;
       background: ",
-                      [Function],
-                      ";
+                          [Function],
+                          ";
     }
   }
 ",
-                    ],
-                  },
-                  "displayName": "styled.input",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-EHOje",
-                  "target": "input",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              id="-checkbox"
-              type="radio"
-              width="100%"
-            >
-              <input
-                className="c1"
-                data-e2e="defaultInput"
-                disabled={false}
-                id="-checkbox"
-                type="radio"
-                width="100%"
-              />
-            </StyledComponent>
-          </styled.input>
-          <styled.label
-            htmlFor="-checkbox"
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-bZQynM",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
+                        ],
+                      },
+                      "displayName": "styled.input",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-EHOje",
+                      "target": "input",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  id="-checkbox"
+                  type="radio"
+                  width="100%"
+                >
+                  <input
+                    className="c1"
+                    data-e2e="defaultInput"
+                    disabled={false}
+                    id="-checkbox"
+                    type="radio"
+                    width="100%"
+                  />
+                </StyledComponent>
+              </styled.input>
+              <styled.label
+                htmlFor="-checkbox"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bZQynM",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
   position: relative;
   left: 1px;
   display: flex;
@@ -2442,82 +2508,84 @@ exports[`Input should render correctly with type="radio" 1`] = `
   min-height: 1rem;
   cursor: pointer;
   font-family: ",
-                      [Function],
-                      ";
+                          [Function],
+                          ";
   font-size: ",
-                      [Function],
-                      ";
+                          [Function],
+                          ";
 ",
-                    ],
-                  },
-                  "displayName": "styled.label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-bZQynM",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              htmlFor="-checkbox"
-            >
-              <label
-                className="c2"
-                htmlFor="-checkbox"
-              >
-                <styled.span>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "c3",
-                          "isStatic": false,
-                          "lastClassName": "c4",
-                          "rules": Array [
-                            "
+                        ],
+                      },
+                      "displayName": "styled.label",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bZQynM",
+                      "target": "label",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  htmlFor="-checkbox"
+                >
+                  <label
+                    className="c2"
+                    htmlFor="-checkbox"
+                  >
+                    <styled.span>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "c3",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "
   margin-right: 0.5rem;
   background: ",
-                            [Function],
-                            ";
+                                [Function],
+                                ";
   border: 2px solid ",
-                            [Function],
-                            ";
+                                [Function],
+                                ";
   box-sizing: border-box;
   border-radius: 50%;
   height: 16px;
   width: 16px;
 ",
-                          ],
-                        },
-                        "displayName": "styled.span",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "c3",
-                        "target": "span",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                  >
-                    <span
-                      className="c3 c4"
-                    />
-                  </StyledComponent>
-                </styled.span>
-              </label>
-            </StyledComponent>
-          </styled.label>
-        </div>
-      </StyledComponent>
-    </styled.div>
-  </Radio>
-</Input>
+                              ],
+                            },
+                            "displayName": "styled.span",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "c3",
+                            "target": "span",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <span
+                          className="c3 c4"
+                        />
+                      </StyledComponent>
+                    </styled.span>
+                  </label>
+                </StyledComponent>
+              </styled.label>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </Radio>
+    </ForwardRef(RadioWithRef)>
+  </Input>
+</ForwardRef(InputWithRef)>
 `;
 
 exports[`Input should render correctly with width 1`] = `
@@ -2589,102 +2657,106 @@ exports[`Input should render correctly with width 1`] = `
   font-size: 0.875rem;
 }
 
-<Input
-  disabled={false}
-  e2e="defaultInput"
-  type="text"
+<ForwardRef(InputWithRef)
   width="200px"
 >
-  <styled.div
-    className=""
+  <Input
+    disabled={false}
+    e2e="defaultInput"
+    forwardRef={null}
+    type="text"
     width="200px"
   >
-    <StyledComponent
+    <styled.div
       className=""
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-gzVnrw",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+      width="200px"
+    >
+      <StyledComponent
+        className=""
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gzVnrw",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   display: flex;
   flex-direction: column;
   width: ",
-              [Function],
-              ";
+                [Function],
+                ";
   position: relative;
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-gzVnrw",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gzVnrw",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      width="200px"
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
         width="200px"
       >
-        <styled.input
-          disabled={false}
-          e2e="defaultInput"
-          type="text"
+        <div
+          className="c0"
           width="200px"
         >
-          <StyledComponent
+          <styled.input
             disabled={false}
             e2e="defaultInput"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [
-                  [Function],
-                ],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-htoDjs",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
+            type="text"
+            width="200px"
+          >
+            <StyledComponent
+              disabled={false}
+              e2e="defaultInput"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htoDjs",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
   display: block;
   height: 2.7rem;
   width: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   padding: 0 1rem;
   box-sizing: border-box;
   font-family: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-width: 1px;
   border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   border-style: solid;
   border-radius: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   background-image: none;
   outline-width: 0;
   user-select: text;
@@ -2692,14 +2764,14 @@ exports[`Input should render correctly with width 1`] = `
 
   &:disabled {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     border-color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     background: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     cursor: not-allowed;
   }
 
@@ -2707,46 +2779,47 @@ exports[`Input should render correctly with width 1`] = `
   &:focus:not(:disabled) {
     box-shadow: 0 0 0 1px
       ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 
   &::placeholder {
     color: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
     font-size: ",
-                    [Function],
-                    ";
+                      [Function],
+                      ";
   }
 ",
-                  ],
-                },
-                "displayName": "styled.input",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-htoDjs",
-                "target": "input",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                    ],
+                  },
+                  "displayName": "styled.input",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htoDjs",
+                  "target": "input",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-            type="text"
-            width="200px"
-          >
-            <input
-              className="c1"
-              data-e2e="defaultInput"
-              disabled={false}
+              forwardedRef={null}
               type="text"
               width="200px"
-            />
-          </StyledComponent>
-        </styled.input>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</Input>
+            >
+              <input
+                className="c1"
+                data-e2e="defaultInput"
+                disabled={false}
+                type="text"
+                width="200px"
+              />
+            </StyledComponent>
+          </styled.input>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Input>
+</ForwardRef(InputWithRef)>
 `;

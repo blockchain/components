@@ -3,7 +3,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 import { fontSize, theme } from '../../Tools/interpolation'
-import Input, { type PropsType, type HtmlInputType } from './Input'
+import { Input, type PropsType, type HtmlInputType } from './Input'
 import { FarEye, FarEyeSlash } from '../Icons'
 
 const Switch = styled.span`
@@ -59,11 +59,12 @@ class Password extends React.Component<PropsType, StateType> {
 
   render() {
     const { type } = this.state
-    const { renderSuffix } = this.props
+    const { forwardRef: ref, renderSuffix } = this.props
 
     return (
       <PasswordInput
         {...this.props}
+        ref={ref}
         renderSuffix={renderSuffix || this.renderToggle}
         type={type}
       />
@@ -71,4 +72,8 @@ class Password extends React.Component<PropsType, StateType> {
   }
 }
 
-export default Password
+type RefPropsType = { ...PropsType }
+
+const PasswordWithRef = (props, ref) => <Password {...props} forwardRef={ref} />
+
+export default React.forwardRef<RefPropsType, _>(PasswordWithRef)

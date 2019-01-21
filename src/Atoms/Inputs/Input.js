@@ -27,6 +27,7 @@ export type PropsType = {
   +disabled?: boolean,
   +e2e?: string,
   +error?: string,
+  +forwardRef?: React.ElementRef<*>,
   +input?: {},
   +label?: string,
   +name?: string,
@@ -109,8 +110,9 @@ export const InputLabel = styled.label`
     props.disabled === true ? 'cursor: not-allowed' : ''};
 `
 
-const Input = ({
+export const Input = ({
   className = '',
+  forwardRef: ref,
   input,
   type,
   renderSuffix,
@@ -141,7 +143,7 @@ const Input = ({
             hasLabel && hasError ? ' - ' : ''
           }${rest.error || ''}`}
         </InputLabel>
-        <InputWrapper {...input} {...rest} type={type} />
+        <InputWrapper {...input} {...rest} ref={ref} type={type} />
         {renderSuffix && renderSuffix(rest.disabled)}
       </Container>
     )
@@ -149,7 +151,7 @@ const Input = ({
 
   return (
     <Container className={className} width={rest.width}>
-      <InputWrapper {...input} {...rest} type={type} />
+      <InputWrapper {...input} {...rest} ref={ref} type={type} />
       {renderSuffix && renderSuffix(rest.disabled)}
     </Container>
   )
@@ -184,4 +186,8 @@ Input.defaultProps = {
   width: '100%',
 }
 
-export default Input
+type RefPropsType = { ...PropsType }
+
+const InputWithRef = (props, ref) => <Input {...props} forwardRef={ref} />
+
+export default React.forwardRef<RefPropsType, _>(InputWithRef)

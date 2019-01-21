@@ -34,6 +34,7 @@ const Input = styled.input.attrs(injectE2E)`
   visibility: visible;
   white-space: nowrap;
   width: 1px;
+  user-select: none;
 
   &:focus ~ label ${RadioButton} {
     box-shadow: 0 0 0 2px ${theme('inputActiveColor')};
@@ -69,9 +70,9 @@ export const RadioLabel = styled.label`
   font-size: ${fontSize('md')};
 `
 
-const Radio = ({ className, input, ...rest }: PropsType) => (
+const Radio = ({ className, forwardRef: ref, input, ...rest }: PropsType) => (
   <Wrapper className={className}>
-    <Input {...input} {...rest} id={toId(rest.value)} type="radio" />
+    <Input {...input} {...rest} id={toId(rest.value)} ref={ref} type="radio" />
     <RadioLabel htmlFor={toId(rest.value)}>
       <RadioButton />
       {rest.label}
@@ -79,4 +80,8 @@ const Radio = ({ className, input, ...rest }: PropsType) => (
   </Wrapper>
 )
 
-export default Radio
+type RefPropsType = { ...PropsType }
+
+const RadioWithRef = (props, ref) => <Radio {...props} forwardRef={ref} />
+
+export default React.forwardRef<RefPropsType, _>(RadioWithRef)

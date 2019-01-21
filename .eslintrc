@@ -25,7 +25,7 @@ settings:
     onlyFilesWithFlowAnnotation: true
   react:
     version: 16.7.0
-    flowVersion: 0.90.0
+    flowVersion: 0.91.0
 
 rules:
   react/sort-comp:
