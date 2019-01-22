@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { InputLabel } from '../../Atoms/Inputs/Input'
+import injectE2E from '../../Tools/injectE2E'
 import {
   fontSize,
   prop,
@@ -15,6 +16,7 @@ export type PropsType = {
   +capitalize?: boolean,
   +className?: string,
   +disabled?: boolean,
+  +e2e?: string,
   +error?: string,
   +forwardRef?: React.ElementRef<*>,
   +input?: {},
@@ -25,7 +27,6 @@ export type PropsType = {
   +placeholder?: string,
   +size?: string,
   +uppercase?: boolean,
-  +value?: string | number,
   +weight?: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900,
   +width?: string,
 }
@@ -52,7 +53,7 @@ const Wrapper = styled.div`
   }
 `
 
-const Select = styled.select`
+const Select = styled.select.attrs(injectE2E)`
   width: 100%;
   height: 2.7rem;
   padding: 0 2.4rem 0 1rem;
@@ -148,22 +149,33 @@ const SingleDropdown = ({
 
 SingleDropdown.propTypes = {
   capitalize: PropTypes.bool,
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
+  e2e: PropTypes.string,
+  error: PropTypes.string,
+  forwardRef: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.func }),
+  ]),
+  input: PropTypes.object,
   italic: PropTypes.bool,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       text: PropTypes.string,
-      value: PropTypes.any,
+      value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     }),
   ).isRequired,
+  label: PropTypes.string,
+  name: PropTypes.string,
   placeholder: PropTypes.string,
   uppercase: PropTypes.bool,
-  value: PropTypes.any,
   weight: PropTypes.oneOf([100, 200, 300, 400, 500, 600, 700, 800, 900]),
-  width: PropTypes.string.isRequired,
+  width: PropTypes.string,
 }
 
 SingleDropdown.defaultProps = {
   capitalize: false,
+  e2e: 'defaultSingleDropdown',
   italic: false,
   uppercase: false,
   width: '100%',
