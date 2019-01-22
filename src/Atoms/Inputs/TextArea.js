@@ -10,7 +10,7 @@ import {
   theme,
   type ThemePropType,
 } from '../../Tools/interpolation'
-import { InputLabel, type PropsType as InputPropsType } from './Input'
+import { Input, InputLabel, type PropsType as InputPropsType } from './Input'
 
 export type PropsType = InputPropsType & { +height?: string }
 
@@ -83,13 +83,8 @@ const TextArea = ({ forwardRef: ref, input, ...rest }: PropsType) => {
 }
 
 TextArea.propTypes = {
-  disabled: PropTypes.bool,
-  e2e: PropTypes.string,
+  ...Input.propTypes,
   height: PropTypes.string,
-  input: PropTypes.object,
-  name: PropTypes.string,
-  value: PropTypes.string,
-  width: PropTypes.string,
 }
 
 TextArea.defaultProps = {

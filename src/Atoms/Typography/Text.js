@@ -47,6 +47,7 @@ const Text = ({ children, ...rest }: PropsType) => (
 Text.propTypes = {
   capitalize: PropTypes.bool,
   children: PropTypes.node,
+  e2e: PropTypes.string,
   italic: PropTypes.bool,
   opacity: PropTypes.number,
   size: PropTypes.string,

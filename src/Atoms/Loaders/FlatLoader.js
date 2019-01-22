@@ -58,8 +58,8 @@ const FlatLoader = (props: PropsType) => (
 )
 
 FlatLoader.propTypes = {
-  height: PropTypes.string.isRequired,
-  width: PropTypes.string.isRequired,
+  height: PropTypes.string,
+  width: PropTypes.string,
 }
 
 FlatLoader.defaultProps = {

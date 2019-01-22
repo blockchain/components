@@ -121,6 +121,7 @@ exports[`SingleDropdown should render correctly 1`] = `
 >
   <SingleDropdown
     capitalize={false}
+    e2e="defaultSingleDropdown"
     forwardRef={null}
     italic={false}
     items={
@@ -226,16 +227,20 @@ exports[`SingleDropdown should render correctly 1`] = `
         >
           <styled.select
             capitalize={false}
+            e2e="defaultSingleDropdown"
             italic={false}
             onChange={[MockFunction]}
             uppercase={false}
           >
             <StyledComponent
               capitalize={false}
+              e2e="defaultSingleDropdown"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
+                  "attrs": Array [
+                    [Function],
+                  ],
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-gZMcBi",
                     "isStatic": false,
@@ -334,6 +339,7 @@ exports[`SingleDropdown should render correctly 1`] = `
             >
               <select
                 className="c1"
+                data-e2e="defaultSingleDropdown"
                 onChange={[MockFunction]}
               >
                 <option
@@ -522,6 +528,7 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
 >
   <SingleDropdown
     capitalize={true}
+    e2e="defaultSingleDropdown"
     forwardRef={null}
     italic={false}
     items={
@@ -627,16 +634,20 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
         >
           <styled.select
             capitalize={true}
+            e2e="defaultSingleDropdown"
             italic={false}
             onChange={[MockFunction]}
             uppercase={false}
           >
             <StyledComponent
               capitalize={true}
+              e2e="defaultSingleDropdown"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
+                  "attrs": Array [
+                    [Function],
+                  ],
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-gZMcBi",
                     "isStatic": false,
@@ -735,6 +746,7 @@ exports[`SingleDropdown should render correctly with capitalize 1`] = `
             >
               <select
                 className="c1"
+                data-e2e="defaultSingleDropdown"
                 onChange={[MockFunction]}
               >
                 <option
@@ -929,6 +941,7 @@ exports[`SingleDropdown should render correctly with error="error" 1`] = `
 >
   <SingleDropdown
     capitalize={false}
+    e2e="defaultSingleDropdown"
     error="error"
     forwardRef={null}
     italic={false}
@@ -1084,17 +1097,21 @@ exports[`SingleDropdown should render correctly with error="error" 1`] = `
           </styled.label>
           <styled.select
             capitalize={false}
+            e2e="defaultSingleDropdown"
             error="error"
             italic={false}
             uppercase={false}
           >
             <StyledComponent
               capitalize={false}
+              e2e="defaultSingleDropdown"
               error="error"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
+                  "attrs": Array [
+                    [Function],
+                  ],
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-gZMcBi",
                     "isStatic": false,
@@ -1192,6 +1209,7 @@ exports[`SingleDropdown should render correctly with error="error" 1`] = `
             >
               <select
                 className="c2"
+                data-e2e="defaultSingleDropdown"
               >
                 <option
                   key="1"
@@ -1379,6 +1397,7 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
 >
   <SingleDropdown
     capitalize={false}
+    e2e="defaultSingleDropdown"
     forwardRef={null}
     italic={true}
     items={
@@ -1484,16 +1503,20 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
         >
           <styled.select
             capitalize={false}
+            e2e="defaultSingleDropdown"
             italic={true}
             onChange={[MockFunction]}
             uppercase={false}
           >
             <StyledComponent
               capitalize={false}
+              e2e="defaultSingleDropdown"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
+                  "attrs": Array [
+                    [Function],
+                  ],
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-gZMcBi",
                     "isStatic": false,
@@ -1592,6 +1615,7 @@ exports[`SingleDropdown should render correctly with italic 1`] = `
             >
               <select
                 className="c1"
+                data-e2e="defaultSingleDropdown"
                 onChange={[MockFunction]}
               >
                 <option
@@ -1786,6 +1810,7 @@ exports[`SingleDropdown should render correctly with label="label" 1`] = `
 >
   <SingleDropdown
     capitalize={false}
+    e2e="defaultSingleDropdown"
     forwardRef={null}
     italic={false}
     items={
@@ -1941,16 +1966,20 @@ exports[`SingleDropdown should render correctly with label="label" 1`] = `
           </styled.label>
           <styled.select
             capitalize={false}
+            e2e="defaultSingleDropdown"
             italic={false}
             label="label"
             uppercase={false}
           >
             <StyledComponent
               capitalize={false}
+              e2e="defaultSingleDropdown"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
+                  "attrs": Array [
+                    [Function],
+                  ],
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-gZMcBi",
                     "isStatic": false,
@@ -2049,6 +2078,7 @@ exports[`SingleDropdown should render correctly with label="label" 1`] = `
             >
               <select
                 className="c2"
+                data-e2e="defaultSingleDropdown"
                 label="label"
               >
                 <option
@@ -2244,6 +2274,7 @@ exports[`SingleDropdown should render correctly with label="label" and error="er
 >
   <SingleDropdown
     capitalize={false}
+    e2e="defaultSingleDropdown"
     error="error"
     forwardRef={null}
     italic={false}
@@ -2400,6 +2431,7 @@ exports[`SingleDropdown should render correctly with label="label" and error="er
           </styled.label>
           <styled.select
             capitalize={false}
+            e2e="defaultSingleDropdown"
             error="error"
             italic={false}
             label="label"
@@ -2407,11 +2439,14 @@ exports[`SingleDropdown should render correctly with label="label" and error="er
           >
             <StyledComponent
               capitalize={false}
+              e2e="defaultSingleDropdown"
               error="error"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
+                  "attrs": Array [
+                    [Function],
+                  ],
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-gZMcBi",
                     "isStatic": false,
@@ -2510,6 +2545,7 @@ exports[`SingleDropdown should render correctly with label="label" and error="er
             >
               <select
                 className="c2"
+                data-e2e="defaultSingleDropdown"
                 label="label"
               >
                 <option
@@ -2698,6 +2734,7 @@ exports[`SingleDropdown should render correctly with placeholder 1`] = `
 >
   <SingleDropdown
     capitalize={false}
+    e2e="defaultSingleDropdown"
     forwardRef={null}
     italic={false}
     items={
@@ -2805,6 +2842,7 @@ exports[`SingleDropdown should render correctly with placeholder 1`] = `
           <styled.select
             capitalize={false}
             defaultValue=""
+            e2e="defaultSingleDropdown"
             italic={false}
             onChange={[MockFunction]}
             uppercase={false}
@@ -2812,10 +2850,13 @@ exports[`SingleDropdown should render correctly with placeholder 1`] = `
             <StyledComponent
               capitalize={false}
               defaultValue=""
+              e2e="defaultSingleDropdown"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
+                  "attrs": Array [
+                    [Function],
+                  ],
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-gZMcBi",
                     "isStatic": false,
@@ -2914,6 +2955,7 @@ exports[`SingleDropdown should render correctly with placeholder 1`] = `
             >
               <select
                 className="c1"
+                data-e2e="defaultSingleDropdown"
                 defaultValue=""
                 onChange={[MockFunction]}
               >
@@ -3109,6 +3151,7 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
 >
   <SingleDropdown
     capitalize={false}
+    e2e="defaultSingleDropdown"
     forwardRef={null}
     italic={false}
     items={
@@ -3214,16 +3257,20 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
         >
           <styled.select
             capitalize={false}
+            e2e="defaultSingleDropdown"
             italic={false}
             onChange={[MockFunction]}
             uppercase={true}
           >
             <StyledComponent
               capitalize={false}
+              e2e="defaultSingleDropdown"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
+                  "attrs": Array [
+                    [Function],
+                  ],
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-gZMcBi",
                     "isStatic": false,
@@ -3322,6 +3369,7 @@ exports[`SingleDropdown should render correctly with uppercase 1`] = `
             >
               <select
                 className="c1"
+                data-e2e="defaultSingleDropdown"
                 onChange={[MockFunction]}
               >
                 <option
@@ -3511,6 +3559,7 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
 >
   <SingleDropdown
     capitalize={false}
+    e2e="defaultSingleDropdown"
     forwardRef={null}
     italic={false}
     items={
@@ -3617,6 +3666,7 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
         >
           <styled.select
             capitalize={false}
+            e2e="defaultSingleDropdown"
             italic={false}
             onChange={[MockFunction]}
             uppercase={false}
@@ -3624,10 +3674,13 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
           >
             <StyledComponent
               capitalize={false}
+              e2e="defaultSingleDropdown"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
+                  "attrs": Array [
+                    [Function],
+                  ],
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-gZMcBi",
                     "isStatic": false,
@@ -3727,6 +3780,7 @@ exports[`SingleDropdown should render correctly with weight 1`] = `
             >
               <select
                 className="c1"
+                data-e2e="defaultSingleDropdown"
                 onChange={[MockFunction]}
               >
                 <option

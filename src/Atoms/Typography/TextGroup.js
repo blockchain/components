@@ -29,6 +29,7 @@ const TextGroup = ({ children, ...rest }: PropsType) => (
 
 TextGroup.propTypes = {
   align: PropTypes.oneOf(['justify', 'left', 'right', 'center']),
+  capitalize: PropTypes.bool,
   children: PropTypes.node,
   inline: PropTypes.bool,
 }
