@@ -195,7 +195,7 @@ exports[`SearchBar should render correctly 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gTwQXg",
+            "componentId": "sc-irJFYO",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -221,7 +221,7 @@ exports[`SearchBar should render correctly 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gTwQXg",
+          "styledComponentId": "sc-irJFYO",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -242,7 +242,7 @@ exports[`SearchBar should render correctly 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-irJFYO",
+                  "componentId": "sc-jXmkxr",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -263,7 +263,7 @@ exports[`SearchBar should render correctly 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-irJFYO",
+                "styledComponentId": "sc-jXmkxr",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -285,7 +285,7 @@ exports[`SearchBar should render correctly 1`] = `
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-jXmkxr",
+                        "componentId": "sc-SpTIZ",
                         "isStatic": false,
                         "lastClassName": "c2",
                         "rules": Array [
@@ -305,7 +305,7 @@ exports[`SearchBar should render correctly 1`] = `
                       "displayName": "Styled(FasSearch)",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "sc-jXmkxr",
+                      "styledComponentId": "sc-SpTIZ",
                       "target": [Function],
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -411,7 +411,7 @@ exports[`SearchBar should render correctly 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-SpTIZ",
+                  "componentId": "sc-ejfVCH",
                   "isStatic": true,
                   "lastClassName": "c4",
                   "rules": Array [
@@ -433,7 +433,7 @@ exports[`SearchBar should render correctly 1`] = `
                 "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-SpTIZ",
+                "styledComponentId": "sc-ejfVCH",
                 "target": Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
@@ -626,7 +626,7 @@ exports[`SearchBar should render correctly 1`] = `
                   [Function],
                 ],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-ejfVCH",
+                  "componentId": "sc-dTpUTz",
                   "isStatic": false,
                   "lastClassName": "c7",
                   "rules": Array [
@@ -669,7 +669,7 @@ exports[`SearchBar should render correctly 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-ejfVCH",
+                "styledComponentId": "sc-dTpUTz",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -889,7 +889,7 @@ exports[`SearchBar should render correctly with e2e 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gTwQXg",
+            "componentId": "sc-irJFYO",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -915,7 +915,7 @@ exports[`SearchBar should render correctly with e2e 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gTwQXg",
+          "styledComponentId": "sc-irJFYO",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -936,7 +936,7 @@ exports[`SearchBar should render correctly with e2e 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-irJFYO",
+                  "componentId": "sc-jXmkxr",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -957,7 +957,7 @@ exports[`SearchBar should render correctly with e2e 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-irJFYO",
+                "styledComponentId": "sc-jXmkxr",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -979,7 +979,7 @@ exports[`SearchBar should render correctly with e2e 1`] = `
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-jXmkxr",
+                        "componentId": "sc-SpTIZ",
                         "isStatic": false,
                         "lastClassName": "c2",
                         "rules": Array [
@@ -999,7 +999,7 @@ exports[`SearchBar should render correctly with e2e 1`] = `
                       "displayName": "Styled(FasSearch)",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "sc-jXmkxr",
+                      "styledComponentId": "sc-SpTIZ",
                       "target": [Function],
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -1105,7 +1105,7 @@ exports[`SearchBar should render correctly with e2e 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-SpTIZ",
+                  "componentId": "sc-ejfVCH",
                   "isStatic": true,
                   "lastClassName": "c4",
                   "rules": Array [
@@ -1127,7 +1127,7 @@ exports[`SearchBar should render correctly with e2e 1`] = `
                 "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-SpTIZ",
+                "styledComponentId": "sc-ejfVCH",
                 "target": Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
@@ -1320,7 +1320,7 @@ exports[`SearchBar should render correctly with e2e 1`] = `
                   [Function],
                 ],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-ejfVCH",
+                  "componentId": "sc-dTpUTz",
                   "isStatic": false,
                   "lastClassName": "c7",
                   "rules": Array [
@@ -1363,7 +1363,7 @@ exports[`SearchBar should render correctly with e2e 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-ejfVCH",
+                "styledComponentId": "sc-dTpUTz",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1584,7 +1584,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gTwQXg",
+            "componentId": "sc-irJFYO",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -1610,7 +1610,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gTwQXg",
+          "styledComponentId": "sc-irJFYO",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1631,7 +1631,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-irJFYO",
+                  "componentId": "sc-jXmkxr",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -1652,7 +1652,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-irJFYO",
+                "styledComponentId": "sc-jXmkxr",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1674,7 +1674,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-jXmkxr",
+                        "componentId": "sc-SpTIZ",
                         "isStatic": false,
                         "lastClassName": "c2",
                         "rules": Array [
@@ -1694,7 +1694,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
                       "displayName": "Styled(FasSearch)",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "sc-jXmkxr",
+                      "styledComponentId": "sc-SpTIZ",
                       "target": [Function],
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -1801,7 +1801,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-SpTIZ",
+                  "componentId": "sc-ejfVCH",
                   "isStatic": true,
                   "lastClassName": "c4",
                   "rules": Array [
@@ -1823,7 +1823,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
                 "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-SpTIZ",
+                "styledComponentId": "sc-ejfVCH",
                 "target": Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
@@ -2022,7 +2022,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
                   [Function],
                 ],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-ejfVCH",
+                  "componentId": "sc-dTpUTz",
                   "isStatic": false,
                   "lastClassName": "c7",
                   "rules": Array [
@@ -2065,7 +2065,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-ejfVCH",
+                "styledComponentId": "sc-dTpUTz",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -2286,7 +2286,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gTwQXg",
+            "componentId": "sc-irJFYO",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -2312,7 +2312,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gTwQXg",
+          "styledComponentId": "sc-irJFYO",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -2333,7 +2333,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-irJFYO",
+                  "componentId": "sc-jXmkxr",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -2354,7 +2354,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-irJFYO",
+                "styledComponentId": "sc-jXmkxr",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -2376,7 +2376,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-jXmkxr",
+                        "componentId": "sc-SpTIZ",
                         "isStatic": false,
                         "lastClassName": "c2",
                         "rules": Array [
@@ -2396,7 +2396,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
                       "displayName": "Styled(FasSearch)",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "sc-jXmkxr",
+                      "styledComponentId": "sc-SpTIZ",
                       "target": [Function],
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -2502,7 +2502,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-SpTIZ",
+                  "componentId": "sc-ejfVCH",
                   "isStatic": true,
                   "lastClassName": "c4",
                   "rules": Array [
@@ -2524,7 +2524,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
                 "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-SpTIZ",
+                "styledComponentId": "sc-ejfVCH",
                 "target": Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
@@ -2718,7 +2718,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
                   [Function],
                 ],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-ejfVCH",
+                  "componentId": "sc-dTpUTz",
                   "isStatic": false,
                   "lastClassName": "c7",
                   "rules": Array [
@@ -2761,7 +2761,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-ejfVCH",
+                "styledComponentId": "sc-dTpUTz",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -2985,7 +2985,7 @@ exports[`SearchBar should render correctly with value 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gTwQXg",
+            "componentId": "sc-irJFYO",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -3011,7 +3011,7 @@ exports[`SearchBar should render correctly with value 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gTwQXg",
+          "styledComponentId": "sc-irJFYO",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -3032,7 +3032,7 @@ exports[`SearchBar should render correctly with value 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-irJFYO",
+                  "componentId": "sc-jXmkxr",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -3053,7 +3053,7 @@ exports[`SearchBar should render correctly with value 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-irJFYO",
+                "styledComponentId": "sc-jXmkxr",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -3075,7 +3075,7 @@ exports[`SearchBar should render correctly with value 1`] = `
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-jXmkxr",
+                        "componentId": "sc-SpTIZ",
                         "isStatic": false,
                         "lastClassName": "c2",
                         "rules": Array [
@@ -3095,7 +3095,7 @@ exports[`SearchBar should render correctly with value 1`] = `
                       "displayName": "Styled(FasSearch)",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "sc-jXmkxr",
+                      "styledComponentId": "sc-SpTIZ",
                       "target": [Function],
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -3203,7 +3203,7 @@ exports[`SearchBar should render correctly with value 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-SpTIZ",
+                  "componentId": "sc-ejfVCH",
                   "isStatic": true,
                   "lastClassName": "c4",
                   "rules": Array [
@@ -3225,7 +3225,7 @@ exports[`SearchBar should render correctly with value 1`] = `
                 "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-SpTIZ",
+                "styledComponentId": "sc-ejfVCH",
                 "target": Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
@@ -3430,7 +3430,7 @@ exports[`SearchBar should render correctly with value 1`] = `
                   [Function],
                 ],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-ejfVCH",
+                  "componentId": "sc-dTpUTz",
                   "isStatic": false,
                   "lastClassName": "c7",
                   "rules": Array [
@@ -3473,7 +3473,7 @@ exports[`SearchBar should render correctly with value 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-ejfVCH",
+                "styledComponentId": "sc-dTpUTz",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -3695,7 +3695,7 @@ exports[`SearchBar should render correctly with width 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gTwQXg",
+            "componentId": "sc-irJFYO",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -3721,7 +3721,7 @@ exports[`SearchBar should render correctly with width 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gTwQXg",
+          "styledComponentId": "sc-irJFYO",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -3742,7 +3742,7 @@ exports[`SearchBar should render correctly with width 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-irJFYO",
+                  "componentId": "sc-jXmkxr",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -3763,7 +3763,7 @@ exports[`SearchBar should render correctly with width 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-irJFYO",
+                "styledComponentId": "sc-jXmkxr",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -3785,7 +3785,7 @@ exports[`SearchBar should render correctly with width 1`] = `
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-jXmkxr",
+                        "componentId": "sc-SpTIZ",
                         "isStatic": false,
                         "lastClassName": "c2",
                         "rules": Array [
@@ -3805,7 +3805,7 @@ exports[`SearchBar should render correctly with width 1`] = `
                       "displayName": "Styled(FasSearch)",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "sc-jXmkxr",
+                      "styledComponentId": "sc-SpTIZ",
                       "target": [Function],
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -3913,7 +3913,7 @@ exports[`SearchBar should render correctly with width 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-SpTIZ",
+                  "componentId": "sc-ejfVCH",
                   "isStatic": true,
                   "lastClassName": "c4",
                   "rules": Array [
@@ -3935,7 +3935,7 @@ exports[`SearchBar should render correctly with width 1`] = `
                 "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-SpTIZ",
+                "styledComponentId": "sc-ejfVCH",
                 "target": Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
@@ -4140,7 +4140,7 @@ exports[`SearchBar should render correctly with width 1`] = `
                   [Function],
                 ],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-ejfVCH",
+                  "componentId": "sc-dTpUTz",
                   "isStatic": false,
                   "lastClassName": "c7",
                   "rules": Array [
@@ -4183,7 +4183,7 @@ exports[`SearchBar should render correctly with width 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-ejfVCH",
+                "styledComponentId": "sc-dTpUTz",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],

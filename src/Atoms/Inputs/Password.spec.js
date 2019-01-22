@@ -55,11 +55,11 @@ describe('Password', () => {
   it('should render correctly with switching its type', () => {
     const tree = mountWithTheme(<Password />)
 
-    tree.find('span').simulate('click')
+    tree.find('svg').simulate('click')
 
     expect(tree.find(Password)).toMatchSnapshot()
 
-    tree.find('span').simulate('click')
+    tree.find('svg').simulate('click')
 
     expect(tree.find(Password)).toMatchSnapshot()
   })
