@@ -1,29 +1,37 @@
 // @flow strict
 import * as React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-import { fontSize, theme } from '../../Tools/interpolation'
+import { theme } from '../../Tools/interpolation'
 import { Input, type PropsType, type HtmlInputType } from './Input'
 import { FarEye, FarEyeSlash } from '../Icons'
 
-const Switch = styled.span`
+const iconCss = css`
   position: absolute;
   right: 1rem;
-  bottom: 0.5rem;
-  font-family: ${theme('fontPrimary')};
-  font-size: ${fontSize('xs')};
-  font-weight: 600;
+  bottom: calc(1.35rem - 8px);
   user-select: none;
+  fill: ${theme('inputColor')};
 
   &:hover {
-    text-decoration: underline;
+    fill: ${theme('inputColor')};
   }
 `
+
+const Eye = styled(FarEye)`
+  ${iconCss};
+`
+
+const EyeSlash = styled(FarEyeSlash)`
+  ${iconCss};
+`
+
 const PasswordInput: React.ComponentType<PropsType> = styled(Input)`
   input {
     padding-right: 3rem;
   }
 `
+
 type StateType = {| type: HtmlInputType |}
 
 class Password extends React.Component<PropsType, StateType> {
@@ -35,7 +43,7 @@ class Password extends React.Component<PropsType, StateType> {
     this.state = { type: props.type }
   }
 
-  handleSwitchClick = () => {
+  handleIconClick = () => {
     this.state.type === 'password'
       ? this.setState({ type: 'text' })
       : this.setState({ type: 'password' })
@@ -46,14 +54,16 @@ class Password extends React.Component<PropsType, StateType> {
       return null
     }
 
-    return (
-      <Switch onClick={this.handleSwitchClick}>
-        {this.state.type === 'password' ? (
-          <FarEye selectable size="20px" />
-        ) : (
-          <FarEyeSlash selectable size="20px" />
-        )}
-      </Switch>
+    const props = {
+      onClick: this.handleIconClick,
+      selectable: true,
+      size: '16px',
+    }
+
+    return this.state.type === 'password' ? (
+      <Eye {...props} />
+    ) : (
+      <EyeSlash {...props} />
     )
   }
 

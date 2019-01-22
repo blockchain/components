@@ -142,7 +142,7 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gTwQXg",
+            "componentId": "sc-irJFYO",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -166,7 +166,7 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gTwQXg",
+          "styledComponentId": "sc-irJFYO",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -190,7 +190,7 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-irJFYO",
+                  "componentId": "sc-jXmkxr",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -210,7 +210,7 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
                 "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-irJFYO",
+                "styledComponentId": "sc-jXmkxr",
                 "target": Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
@@ -403,7 +403,7 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
                   [Function],
                 ],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-jXmkxr",
+                  "componentId": "sc-SpTIZ",
                   "isStatic": false,
                   "lastClassName": "c4",
                   "rules": Array [
@@ -420,7 +420,7 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-jXmkxr",
+                "styledComponentId": "sc-SpTIZ",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -660,7 +660,7 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gTwQXg",
+            "componentId": "sc-irJFYO",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -684,7 +684,7 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gTwQXg",
+          "styledComponentId": "sc-irJFYO",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -708,7 +708,7 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-irJFYO",
+                  "componentId": "sc-jXmkxr",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -728,7 +728,7 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
                 "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-irJFYO",
+                "styledComponentId": "sc-jXmkxr",
                 "target": Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
@@ -921,7 +921,7 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
                   [Function],
                 ],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-jXmkxr",
+                  "componentId": "sc-SpTIZ",
                   "isStatic": false,
                   "lastClassName": "c4",
                   "rules": Array [
@@ -938,7 +938,7 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-jXmkxr",
+                "styledComponentId": "sc-SpTIZ",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1179,7 +1179,7 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gTwQXg",
+            "componentId": "sc-irJFYO",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -1203,7 +1203,7 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gTwQXg",
+          "styledComponentId": "sc-irJFYO",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1228,7 +1228,7 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-irJFYO",
+                  "componentId": "sc-jXmkxr",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -1248,7 +1248,7 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
                 "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-irJFYO",
+                "styledComponentId": "sc-jXmkxr",
                 "target": Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
@@ -1447,7 +1447,7 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
                   [Function],
                 ],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-jXmkxr",
+                  "componentId": "sc-SpTIZ",
                   "isStatic": false,
                   "lastClassName": "c4",
                   "rules": Array [
@@ -1464,7 +1464,7 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-jXmkxr",
+                "styledComponentId": "sc-SpTIZ",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1705,7 +1705,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gTwQXg",
+            "componentId": "sc-irJFYO",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -1729,7 +1729,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gTwQXg",
+          "styledComponentId": "sc-irJFYO",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1753,7 +1753,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-irJFYO",
+                  "componentId": "sc-jXmkxr",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -1773,7 +1773,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
                 "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-irJFYO",
+                "styledComponentId": "sc-jXmkxr",
                 "target": Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
@@ -1967,7 +1967,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
                   [Function],
                 ],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-jXmkxr",
+                  "componentId": "sc-SpTIZ",
                   "isStatic": false,
                   "lastClassName": "c4",
                   "rules": Array [
@@ -1984,7 +1984,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-jXmkxr",
+                "styledComponentId": "sc-SpTIZ",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -2228,7 +2228,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gTwQXg",
+            "componentId": "sc-irJFYO",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -2252,7 +2252,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gTwQXg",
+          "styledComponentId": "sc-irJFYO",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -2278,7 +2278,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-irJFYO",
+                  "componentId": "sc-jXmkxr",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -2298,7 +2298,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
                 "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-irJFYO",
+                "styledComponentId": "sc-jXmkxr",
                 "target": Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
@@ -2503,7 +2503,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
                   [Function],
                 ],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-jXmkxr",
+                  "componentId": "sc-SpTIZ",
                   "isStatic": false,
                   "lastClassName": "c4",
                   "rules": Array [
@@ -2520,7 +2520,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-jXmkxr",
+                "styledComponentId": "sc-SpTIZ",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -2762,7 +2762,7 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gTwQXg",
+            "componentId": "sc-irJFYO",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -2786,7 +2786,7 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gTwQXg",
+          "styledComponentId": "sc-irJFYO",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -2812,7 +2812,7 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-irJFYO",
+                  "componentId": "sc-jXmkxr",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -2832,7 +2832,7 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
                 "displayName": "Styled(Component)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-irJFYO",
+                "styledComponentId": "sc-jXmkxr",
                 "target": Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
@@ -3037,7 +3037,7 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
                   [Function],
                 ],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-jXmkxr",
+                  "componentId": "sc-SpTIZ",
                   "isStatic": false,
                   "lastClassName": "c4",
                   "rules": Array [
@@ -3054,7 +3054,7 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-jXmkxr",
+                "styledComponentId": "sc-SpTIZ",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
