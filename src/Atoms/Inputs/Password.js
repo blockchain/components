@@ -61,9 +61,9 @@ class Password extends React.Component<PropsType, StateType> {
     }
 
     return this.state.type === 'password' ? (
-      <Eye {...props} />
-    ) : (
       <EyeSlash {...props} />
+    ) : (
+      <Eye {...props} />
     )
   }
 
