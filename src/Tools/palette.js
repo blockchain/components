@@ -57,9 +57,9 @@ const palette = {
   orange400: '#FFB266',
   orange500: '#F5A250',
   orange600: '#F28B24',
-  orange700: '#BF4330',
-  orange800: '#A62C19',
-  orange900: '#801706',
+  orange700: '#D96716',
+  orange800: '#B24400',
+  orange900: '#8C2F00',
 
   // Grey Overlay (Light to Dark)
   greyFade100: 'rgba(5, 24, 61, 0.1)',
