@@ -18,7 +18,7 @@ exports[`Cartridge should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   color: #FFF;
-  background-color: #10ADE4;
+  background-color: #0C6CF2;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 0.625rem;
   font-weight: 700;

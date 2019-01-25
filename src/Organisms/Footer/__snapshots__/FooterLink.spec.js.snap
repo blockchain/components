@@ -7,7 +7,7 @@ exports[`FooterElement should render correctly 1`] = `
   font-size: 1rem;
   text-transform: none;
   font-style: normal;
-  color: #545456;
+  color: #0C6CF2;
   opacity: 1;
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -15,7 +15,7 @@ exports[`FooterElement should render correctly 1`] = `
 }
 
 .c1:hover {
-  color: #004A7C;
+  color: #144699;
   -webkit-text-decoration: none;
   text-decoration: none;
 }

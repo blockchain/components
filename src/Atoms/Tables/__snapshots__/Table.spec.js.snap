@@ -18,11 +18,11 @@ exports[`Table should render correctly 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   width: 100%;
-  box-shadow: 0 0 1.5rem 0.4rem #EEF2F5;
+  box-shadow: 0 0 1.5rem 0.4rem #DFE3EB;
 }
 
 .c0 > :nth-child(even) {
-  background-color: #F8F8F8;
+  background-color: #F0F2F7;
 }
 
 .c0 > :nth-child(odd) {

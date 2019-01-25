@@ -23,9 +23,9 @@ exports[`Button should render correctly 1`] = `
   padding: 0 1rem;
   box-sizing: border-box;
   color: #FFF;
-  background-color: #004A7C;
+  background-color: #0C6CF2;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   cursor: pointer;
   outline: none;
   -webkit-transition: all 0.3s ease 0s;
@@ -37,7 +37,7 @@ exports[`Button should render correctly 1`] = `
 }
 
 .c1:hover {
-  background-color: #0068AF;
+  background-color: #144699;
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;

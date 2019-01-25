@@ -7,7 +7,7 @@ exports[`TextGroup mount render correctly 1`] = `
   font-size: 1rem;
   text-transform: none;
   font-style: normal;
-  color: #545456;
+  color: #677185;
   opacity: 1;
 }
 
@@ -653,7 +653,7 @@ exports[`TextGroup mount render correctly with align 1`] = `
   font-size: 1rem;
   text-transform: none;
   font-style: normal;
-  color: #545456;
+  color: #677185;
   opacity: 1;
 }
 
@@ -1299,7 +1299,7 @@ exports[`TextGroup mount render correctly with inline 1`] = `
   font-size: 1rem;
   text-transform: none;
   font-style: normal;
-  color: #545456;
+  color: #677185;
   opacity: 1;
 }
 

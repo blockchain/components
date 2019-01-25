@@ -2,12 +2,12 @@
 
 exports[`bc should render correctly 1`] = `
 .c0 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: default;
 }
 
 .c0:hover {
-  fill: #545456;
+  fill: #98A1B2;
 }
 
 <BcBitcoin
@@ -90,12 +90,12 @@ exports[`bc should render correctly 1`] = `
 
 exports[`bc should render correctly with selectable 1`] = `
 .c0 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c0:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 <BcBitcoin
@@ -178,12 +178,12 @@ exports[`bc should render correctly with selectable 1`] = `
 
 exports[`bc should render correctly with size 1`] = `
 .c0 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: default;
 }
 
 .c0:hover {
-  fill: #545456;
+  fill: #98A1B2;
 }
 
 <BcBitcoin

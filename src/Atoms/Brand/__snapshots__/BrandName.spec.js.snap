@@ -3,7 +3,7 @@
 exports[`BrandName should render correctly 1`] = `
 .c0 {
   height: 1rem;
-  fill: #999B9E;
+  fill: #DFE3EB;
 }
 
 <BrandName
@@ -94,7 +94,7 @@ exports[`BrandName should render correctly 1`] = `
 exports[`BrandName should render correctly with height 1`] = `
 .c0 {
   height: 100px;
-  fill: #999B9E;
+  fill: #DFE3EB;
 }
 
 <BrandName

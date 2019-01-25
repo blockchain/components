@@ -2,12 +2,12 @@
 
 exports[`Toast should render correctly 1`] = `
 .c4 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c4:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c0 {
@@ -18,8 +18,8 @@ exports[`Toast should render correctly 1`] = `
   padding: 1.025rem;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   background-color: #FFF;
-  border-radius: 0.25rem;
-  color: #000;
+  border-radius: 0.255rem;
+  color: #353F52;
   box-shadow: rgba(67,90,111,0.416) 0 0 1px, rgba(67,90,111,0.3) 0 8px 10px -4px;
   min-width: 250px;
   max-width: 560px;
@@ -303,12 +303,12 @@ exports[`Toast should render correctly 1`] = `
 
 exports[`Toast should render correctly with description 1`] = `
 .c5 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c5:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c0 {
@@ -319,8 +319,8 @@ exports[`Toast should render correctly with description 1`] = `
   padding: 1.025rem;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   background-color: #FFF;
-  border-radius: 0.25rem;
-  color: #000;
+  border-radius: 0.255rem;
+  color: #353F52;
   box-shadow: rgba(67,90,111,0.416) 0 0 1px, rgba(67,90,111,0.3) 0 8px 10px -4px;
   min-width: 250px;
   max-width: 560px;
@@ -649,21 +649,21 @@ exports[`Toast should render correctly with description 1`] = `
 
 exports[`Toast should render correctly with type=danger 1`] = `
 .c2 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: default;
 }
 
 .c2:hover {
-  fill: #545456;
+  fill: #98A1B2;
 }
 
 .c7 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c7:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c0 {
@@ -674,8 +674,8 @@ exports[`Toast should render correctly with type=danger 1`] = `
   padding: 1.025rem;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   background-color: #FFF;
-  border-radius: 0.25rem;
-  color: #000;
+  border-radius: 0.255rem;
+  color: #353F52;
   box-shadow: rgba(67,90,111,0.416) 0 0 1px, rgba(67,90,111,0.3) 0 8px 10px -4px;
   min-width: 250px;
   max-width: 560px;
@@ -717,18 +717,18 @@ exports[`Toast should render correctly with type=danger 1`] = `
 .c1 {
   margin-right: 1.025rem;
   margin-top: 2px;
-  fill: #F7C653;
+  fill: #F28B24;
   margin-right: 1.025rem;
   margin-top: 2px;
-  fill: #F36331;
+  fill: #D93B30;
 }
 
 .c1:hover {
-  fill: #F7C653;
+  fill: #F28B24;
 }
 
 .c1:hover {
-  fill: #F36331;
+  fill: #D93B30;
 }
 
 <Toast
@@ -1171,21 +1171,21 @@ exports[`Toast should render correctly with type=danger 1`] = `
 
 exports[`Toast should render correctly with type=success 1`] = `
 .c2 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: default;
 }
 
 .c2:hover {
-  fill: #545456;
+  fill: #98A1B2;
 }
 
 .c7 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c7:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c0 {
@@ -1196,8 +1196,8 @@ exports[`Toast should render correctly with type=success 1`] = `
   padding: 1.025rem;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   background-color: #FFF;
-  border-radius: 0.25rem;
-  color: #000;
+  border-radius: 0.255rem;
+  color: #353F52;
   box-shadow: rgba(67,90,111,0.416) 0 0 1px, rgba(67,90,111,0.3) 0 8px 10px -4px;
   min-width: 250px;
   max-width: 560px;
@@ -1239,11 +1239,11 @@ exports[`Toast should render correctly with type=success 1`] = `
 .c1 {
   margin-right: 1.025rem;
   margin-top: 2px;
-  fill: #47B881;
+  fill: #00875A;
 }
 
 .c1:hover {
-  fill: #47B881;
+  fill: #00875A;
 }
 
 <Toast
@@ -1665,21 +1665,21 @@ exports[`Toast should render correctly with type=success 1`] = `
 
 exports[`Toast should render correctly with type=warning 1`] = `
 .c2 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: default;
 }
 
 .c2:hover {
-  fill: #545456;
+  fill: #98A1B2;
 }
 
 .c7 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c7:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c0 {
@@ -1690,8 +1690,8 @@ exports[`Toast should render correctly with type=warning 1`] = `
   padding: 1.025rem;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   background-color: #FFF;
-  border-radius: 0.25rem;
-  color: #000;
+  border-radius: 0.255rem;
+  color: #353F52;
   box-shadow: rgba(67,90,111,0.416) 0 0 1px, rgba(67,90,111,0.3) 0 8px 10px -4px;
   min-width: 250px;
   max-width: 560px;
@@ -1733,11 +1733,11 @@ exports[`Toast should render correctly with type=warning 1`] = `
 .c1 {
   margin-right: 1.025rem;
   margin-top: 2px;
-  fill: #F7C653;
+  fill: #F28B24;
 }
 
 .c1:hover {
-  fill: #F7C653;
+  fill: #F28B24;
 }
 
 <Toast

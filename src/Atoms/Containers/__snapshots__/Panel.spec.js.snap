@@ -20,7 +20,7 @@ exports[`Panel should render correctly 1`] = `
   height: auto;
   width: 100%;
   min-width: 100%;
-  box-shadow: 0 0 1.5rem 0.4rem #EEF2F5;
+  box-shadow: 0 0 1.5rem 0.4rem rgba(5,24,61,0.1);
   background-color: #FFF;
 }
 
@@ -111,7 +111,7 @@ exports[`Panel should render correctly with height 1`] = `
   height: 200px;
   width: 100%;
   min-width: 100%;
-  box-shadow: 0 0 1.5rem 0.4rem #EEF2F5;
+  box-shadow: 0 0 1.5rem 0.4rem rgba(5,24,61,0.1);
   background-color: #FFF;
 }
 
@@ -202,7 +202,7 @@ exports[`Panel should render correctly with width 1`] = `
   height: auto;
   width: 200px;
   min-width: 200px;
-  box-shadow: 0 0 1.5rem 0.4rem #EEF2F5;
+  box-shadow: 0 0 1.5rem 0.4rem rgba(5,24,61,0.1);
   background-color: #FFF;
 }
 

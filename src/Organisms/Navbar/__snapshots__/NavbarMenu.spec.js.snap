@@ -20,7 +20,7 @@ exports[`NavbarMenu should render correctly 1`] = `
   width: 100%;
   padding: 4.5rem 1.5rem 1.5rem 1.5rem;
   box-sizing: border-box;
-  background-color: #004A7C;
+  background-color: #144699;
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
@@ -147,7 +147,7 @@ exports[`NavbarMenu should render correctly with toggled 1`] = `
   width: 100%;
   padding: 4.5rem 1.5rem 1.5rem 1.5rem;
   box-sizing: border-box;
-  background-color: #004A7C;
+  background-color: #144699;
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);

@@ -2,12 +2,12 @@
 
 exports[`SearchBar should render correctly 1`] = `
 .c3 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: default;
 }
 
 .c3:hover {
-  fill: #545456;
+  fill: #98A1B2;
 }
 
 .c5 {
@@ -30,11 +30,11 @@ exports[`SearchBar should render correctly 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -47,34 +47,34 @@ exports[`SearchBar should render correctly 1`] = `
 }
 
 .c6:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c6:active:not(:disabled),
 .c6:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c6::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -97,7 +97,7 @@ exports[`SearchBar should render correctly 1`] = `
   align-items: center;
   width: 100%;
   background-color: #FFF;
-  box-shadow: 0 2px 8px 1px rgba(0,0,0,0.50);
+  box-shadow: 0 2px 8px 1px rgba(3,17,47,0.6);
   border-radius: 0.125rem;
 }
 
@@ -126,11 +126,11 @@ exports[`SearchBar should render correctly 1`] = `
 }
 
 .c2 {
-  fill: #000;
+  fill: #121D33;
 }
 
 .c2:hover {
-  fill: #000;
+  fill: #121D33;
 }
 
 .c4 > input {
@@ -169,15 +169,15 @@ exports[`SearchBar should render correctly 1`] = `
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #000;
-  background-color: #FFCA00;
+  color: #121D33;
+  background-color: #FFCC00;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
   white-space: nowrap;
 }
 
 .c7:hover {
-  background-color: #FFD533;
+  background-color: #FFCC00;
   cursor: pointer;
 }
 
@@ -696,12 +696,12 @@ exports[`SearchBar should render correctly 1`] = `
 
 exports[`SearchBar should render correctly with e2e 1`] = `
 .c3 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: default;
 }
 
 .c3:hover {
-  fill: #545456;
+  fill: #98A1B2;
 }
 
 .c5 {
@@ -724,11 +724,11 @@ exports[`SearchBar should render correctly with e2e 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -741,34 +741,34 @@ exports[`SearchBar should render correctly with e2e 1`] = `
 }
 
 .c6:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c6:active:not(:disabled),
 .c6:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c6::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -791,7 +791,7 @@ exports[`SearchBar should render correctly with e2e 1`] = `
   align-items: center;
   width: 100%;
   background-color: #FFF;
-  box-shadow: 0 2px 8px 1px rgba(0,0,0,0.50);
+  box-shadow: 0 2px 8px 1px rgba(3,17,47,0.6);
   border-radius: 0.125rem;
 }
 
@@ -820,11 +820,11 @@ exports[`SearchBar should render correctly with e2e 1`] = `
 }
 
 .c2 {
-  fill: #000;
+  fill: #121D33;
 }
 
 .c2:hover {
-  fill: #000;
+  fill: #121D33;
 }
 
 .c4 > input {
@@ -863,15 +863,15 @@ exports[`SearchBar should render correctly with e2e 1`] = `
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #000;
-  background-color: #FFCA00;
+  color: #121D33;
+  background-color: #FFCC00;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
   white-space: nowrap;
 }
 
 .c7:hover {
-  background-color: #FFD533;
+  background-color: #FFCC00;
   cursor: pointer;
 }
 
@@ -1390,12 +1390,12 @@ exports[`SearchBar should render correctly with e2e 1`] = `
 
 exports[`SearchBar should render correctly with onChange 1`] = `
 .c3 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: default;
 }
 
 .c3:hover {
-  fill: #545456;
+  fill: #98A1B2;
 }
 
 .c5 {
@@ -1418,11 +1418,11 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -1435,34 +1435,34 @@ exports[`SearchBar should render correctly with onChange 1`] = `
 }
 
 .c6:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c6:active:not(:disabled),
 .c6:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c6::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -1485,7 +1485,7 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   align-items: center;
   width: 100%;
   background-color: #FFF;
-  box-shadow: 0 2px 8px 1px rgba(0,0,0,0.50);
+  box-shadow: 0 2px 8px 1px rgba(3,17,47,0.6);
   border-radius: 0.125rem;
 }
 
@@ -1514,11 +1514,11 @@ exports[`SearchBar should render correctly with onChange 1`] = `
 }
 
 .c2 {
-  fill: #000;
+  fill: #121D33;
 }
 
 .c2:hover {
-  fill: #000;
+  fill: #121D33;
 }
 
 .c4 > input {
@@ -1557,15 +1557,15 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #000;
-  background-color: #FFCA00;
+  color: #121D33;
+  background-color: #FFCC00;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
   white-space: nowrap;
 }
 
 .c7:hover {
-  background-color: #FFD533;
+  background-color: #FFCC00;
   cursor: pointer;
 }
 
@@ -2092,12 +2092,12 @@ exports[`SearchBar should render correctly with onChange 1`] = `
 
 exports[`SearchBar should render correctly with onClick 1`] = `
 .c3 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: default;
 }
 
 .c3:hover {
-  fill: #545456;
+  fill: #98A1B2;
 }
 
 .c5 {
@@ -2120,11 +2120,11 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -2137,34 +2137,34 @@ exports[`SearchBar should render correctly with onClick 1`] = `
 }
 
 .c6:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c6:active:not(:disabled),
 .c6:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c6::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -2187,7 +2187,7 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   align-items: center;
   width: 100%;
   background-color: #FFF;
-  box-shadow: 0 2px 8px 1px rgba(0,0,0,0.50);
+  box-shadow: 0 2px 8px 1px rgba(3,17,47,0.6);
   border-radius: 0.125rem;
 }
 
@@ -2216,11 +2216,11 @@ exports[`SearchBar should render correctly with onClick 1`] = `
 }
 
 .c2 {
-  fill: #000;
+  fill: #121D33;
 }
 
 .c2:hover {
-  fill: #000;
+  fill: #121D33;
 }
 
 .c4 > input {
@@ -2259,15 +2259,15 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #000;
-  background-color: #FFCA00;
+  color: #121D33;
+  background-color: #FFCC00;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
   white-space: nowrap;
 }
 
 .c7:hover {
-  background-color: #FFD533;
+  background-color: #FFCC00;
   cursor: pointer;
 }
 
@@ -2790,12 +2790,12 @@ exports[`SearchBar should render correctly with onClick 1`] = `
 
 exports[`SearchBar should render correctly with value 1`] = `
 .c3 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: default;
 }
 
 .c3:hover {
-  fill: #545456;
+  fill: #98A1B2;
 }
 
 .c5 {
@@ -2818,11 +2818,11 @@ exports[`SearchBar should render correctly with value 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -2835,34 +2835,34 @@ exports[`SearchBar should render correctly with value 1`] = `
 }
 
 .c6:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c6:active:not(:disabled),
 .c6:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c6::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -2885,7 +2885,7 @@ exports[`SearchBar should render correctly with value 1`] = `
   align-items: center;
   width: 100%;
   background-color: #FFF;
-  box-shadow: 0 2px 8px 1px rgba(0,0,0,0.50);
+  box-shadow: 0 2px 8px 1px rgba(3,17,47,0.6);
   border-radius: 0.125rem;
 }
 
@@ -2914,11 +2914,11 @@ exports[`SearchBar should render correctly with value 1`] = `
 }
 
 .c2 {
-  fill: #000;
+  fill: #121D33;
 }
 
 .c2:hover {
-  fill: #000;
+  fill: #121D33;
 }
 
 .c4 > input {
@@ -2957,15 +2957,15 @@ exports[`SearchBar should render correctly with value 1`] = `
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #000;
-  background-color: #FFCA00;
+  color: #121D33;
+  background-color: #FFCC00;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
   white-space: nowrap;
 }
 
 .c7:hover {
-  background-color: #FFD533;
+  background-color: #FFCC00;
   cursor: pointer;
 }
 
@@ -3500,12 +3500,12 @@ exports[`SearchBar should render correctly with value 1`] = `
 
 exports[`SearchBar should render correctly with width 1`] = `
 .c3 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: default;
 }
 
 .c3:hover {
-  fill: #545456;
+  fill: #98A1B2;
 }
 
 .c5 {
@@ -3528,11 +3528,11 @@ exports[`SearchBar should render correctly with width 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -3545,34 +3545,34 @@ exports[`SearchBar should render correctly with width 1`] = `
 }
 
 .c6:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c6:active:not(:disabled),
 .c6:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c6::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c6::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -3595,7 +3595,7 @@ exports[`SearchBar should render correctly with width 1`] = `
   align-items: center;
   width: 200px;
   background-color: #FFF;
-  box-shadow: 0 2px 8px 1px rgba(0,0,0,0.50);
+  box-shadow: 0 2px 8px 1px rgba(3,17,47,0.6);
   border-radius: 0.125rem;
 }
 
@@ -3624,11 +3624,11 @@ exports[`SearchBar should render correctly with width 1`] = `
 }
 
 .c2 {
-  fill: #000;
+  fill: #121D33;
 }
 
 .c2:hover {
-  fill: #000;
+  fill: #121D33;
 }
 
 .c4 > input {
@@ -3667,15 +3667,15 @@ exports[`SearchBar should render correctly with width 1`] = `
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #000;
-  background-color: #FFCA00;
+  color: #121D33;
+  background-color: #FFCC00;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
   white-space: nowrap;
 }
 
 .c7:hover {
-  background-color: #FFD533;
+  background-color: #FFCC00;
   cursor: pointer;
 }
 

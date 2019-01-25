@@ -2,12 +2,12 @@
 
 exports[`CircleBadge should render correctly 1`] = `
 .c3 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c3:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c1 {
@@ -16,7 +16,7 @@ exports[`CircleBadge should render correctly 1`] = `
   font-size: 2.625rem;
   text-transform: none;
   font-style: normal;
-  color: #545456;
+  color: #0C6CF2;
   opacity: 1;
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -24,7 +24,7 @@ exports[`CircleBadge should render correctly 1`] = `
 }
 
 .c1:hover {
-  color: #004A7C;
+  color: #144699;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -48,13 +48,13 @@ exports[`CircleBadge should render correctly 1`] = `
   height: 2.625rem;
   width: 2.625rem;
   border-radius: 50%;
-  background-color: #CCC;
+  background-color: #98A1B2;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .c0:hover {
-  background-color: #004A7C;
+  background-color: #0C6CF2;
 }
 
 .c2 {
@@ -351,12 +351,12 @@ exports[`CircleBadge should render correctly 1`] = `
 
 exports[`CircleBadge should render correctly with name facebook 1`] = `
 .c3 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c3:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c1 {
@@ -365,7 +365,7 @@ exports[`CircleBadge should render correctly with name facebook 1`] = `
   font-size: 2.625rem;
   text-transform: none;
   font-style: normal;
-  color: #545456;
+  color: #0C6CF2;
   opacity: 1;
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -373,7 +373,7 @@ exports[`CircleBadge should render correctly with name facebook 1`] = `
 }
 
 .c1:hover {
-  color: #004A7C;
+  color: #144699;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -397,13 +397,13 @@ exports[`CircleBadge should render correctly with name facebook 1`] = `
   height: 2.625rem;
   width: 2.625rem;
   border-radius: 50%;
-  background-color: #CCC;
+  background-color: #98A1B2;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .c0:hover {
-  background-color: #004A7C;
+  background-color: #0C6CF2;
 }
 
 .c2 {
@@ -700,12 +700,12 @@ exports[`CircleBadge should render correctly with name facebook 1`] = `
 
 exports[`CircleBadge should render correctly with name linkedin 1`] = `
 .c3 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c3:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c1 {
@@ -714,7 +714,7 @@ exports[`CircleBadge should render correctly with name linkedin 1`] = `
   font-size: 2.625rem;
   text-transform: none;
   font-style: normal;
-  color: #545456;
+  color: #0C6CF2;
   opacity: 1;
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -722,7 +722,7 @@ exports[`CircleBadge should render correctly with name linkedin 1`] = `
 }
 
 .c1:hover {
-  color: #004A7C;
+  color: #144699;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -746,13 +746,13 @@ exports[`CircleBadge should render correctly with name linkedin 1`] = `
   height: 2.625rem;
   width: 2.625rem;
   border-radius: 50%;
-  background-color: #CCC;
+  background-color: #98A1B2;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .c0:hover {
-  background-color: #004A7C;
+  background-color: #0C6CF2;
 }
 
 .c2 {
@@ -1049,12 +1049,12 @@ exports[`CircleBadge should render correctly with name linkedin 1`] = `
 
 exports[`CircleBadge should render correctly with name twitter 1`] = `
 .c3 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c3:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c1 {
@@ -1063,7 +1063,7 @@ exports[`CircleBadge should render correctly with name twitter 1`] = `
   font-size: 2.625rem;
   text-transform: none;
   font-style: normal;
-  color: #545456;
+  color: #0C6CF2;
   opacity: 1;
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -1071,7 +1071,7 @@ exports[`CircleBadge should render correctly with name twitter 1`] = `
 }
 
 .c1:hover {
-  color: #004A7C;
+  color: #144699;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -1095,13 +1095,13 @@ exports[`CircleBadge should render correctly with name twitter 1`] = `
   height: 2.625rem;
   width: 2.625rem;
   border-radius: 50%;
-  background-color: #CCC;
+  background-color: #98A1B2;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .c0:hover {
-  background-color: #004A7C;
+  background-color: #0C6CF2;
 }
 
 .c2 {
@@ -1398,12 +1398,12 @@ exports[`CircleBadge should render correctly with name twitter 1`] = `
 
 exports[`CircleBadge should render correctly with size 1`] = `
 .c3 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c3:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c1 {
@@ -1412,7 +1412,7 @@ exports[`CircleBadge should render correctly with size 1`] = `
   font-size: 80px;
   text-transform: none;
   font-style: normal;
-  color: #545456;
+  color: #0C6CF2;
   opacity: 1;
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -1420,7 +1420,7 @@ exports[`CircleBadge should render correctly with size 1`] = `
 }
 
 .c1:hover {
-  color: #004A7C;
+  color: #144699;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -1444,13 +1444,13 @@ exports[`CircleBadge should render correctly with size 1`] = `
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  background-color: #CCC;
+  background-color: #98A1B2;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .c0:hover {
-  background-color: #004A7C;
+  background-color: #0C6CF2;
 }
 
 .c2 {

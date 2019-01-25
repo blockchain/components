@@ -2,12 +2,12 @@
 
 exports[`TabMenuToggler should render correctly 1`] = `
 .c1 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: default;
 }
 
 .c1:hover {
-  fill: #545456;
+  fill: #98A1B2;
 }
 
 .c0 {

@@ -21,11 +21,11 @@ exports[`Input should render correctly 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -38,34 +38,34 @@ exports[`Input should render correctly 1`] = `
 }
 
 .c1:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c1:active:not(:disabled),
 .c1:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c1::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c1::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c1:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c1::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -255,11 +255,11 @@ exports[`Input should render correctly with disabled 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -272,34 +272,34 @@ exports[`Input should render correctly with disabled 1`] = `
 }
 
 .c1:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c1:active:not(:disabled),
 .c1:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c1::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c1::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c1:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c1::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -491,11 +491,11 @@ exports[`Input should render correctly with error="error" 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #F36331;
+  border-color: #D93B30;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -508,9 +508,9 @@ exports[`Input should render correctly with error="error" 1`] = `
 }
 
 .c2:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
@@ -520,22 +520,22 @@ exports[`Input should render correctly with error="error" 1`] = `
 }
 
 .c2::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c2::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c2:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c2::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -543,7 +543,7 @@ exports[`Input should render correctly with error="error" 1`] = `
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 0.875rem;
   padding-bottom: 0.5rem;
-  color: #F36331;
+  color: #D93B30;
 }
 
 <ForwardRef(InputWithRef)
@@ -790,11 +790,11 @@ exports[`Input should render correctly with label="label" 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -807,34 +807,34 @@ exports[`Input should render correctly with label="label" 1`] = `
 }
 
 .c2:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c2:active:not(:disabled),
 .c2:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c2::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c2:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c2::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -842,7 +842,7 @@ exports[`Input should render correctly with label="label" 1`] = `
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 0.875rem;
   padding-bottom: 0.5rem;
-  color: #757679;
+  color: #677185;
 }
 
 <ForwardRef(InputWithRef)
@@ -1090,11 +1090,11 @@ exports[`Input should render correctly with label="label" and disabled 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -1107,34 +1107,34 @@ exports[`Input should render correctly with label="label" and disabled 1`] = `
 }
 
 .c2:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c2:active:not(:disabled),
 .c2:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c2::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c2:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c2::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -1142,7 +1142,7 @@ exports[`Input should render correctly with label="label" and disabled 1`] = `
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 0.875rem;
   padding-bottom: 0.5rem;
-  color: #757679;
+  color: #677185;
   cursor: not-allowed;
 }
 
@@ -1392,11 +1392,11 @@ exports[`Input should render correctly with label="label" and error="error" 1`] 
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #F36331;
+  border-color: #D93B30;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -1409,9 +1409,9 @@ exports[`Input should render correctly with label="label" and error="error" 1`] 
 }
 
 .c2:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
@@ -1421,22 +1421,22 @@ exports[`Input should render correctly with label="label" and error="error" 1`] 
 }
 
 .c2::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c2::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c2:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c2::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -1444,7 +1444,7 @@ exports[`Input should render correctly with label="label" and error="error" 1`] 
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 0.875rem;
   padding-bottom: 0.5rem;
-  color: #F36331;
+  color: #D93B30;
 }
 
 <ForwardRef(InputWithRef)
@@ -1696,11 +1696,11 @@ exports[`Input should render correctly with type 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -1713,34 +1713,34 @@ exports[`Input should render correctly with type 1`] = `
 }
 
 .c1:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c1:active:not(:disabled),
 .c1:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c1::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c1::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c1:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c1::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -1913,12 +1913,12 @@ exports[`Input should render correctly with type 1`] = `
 
 exports[`Input should render correctly with type="checkbox" 1`] = `
 .c0 input:checked + label::before {
-  background-color: #004A7C;
-  border-color: #004A7C;
+  background-color: #0C6CF2;
+  border-color: #0C6CF2;
 }
 
 .c0 input:focus + label::before {
-  box-shadow: 0 0 0 2px #10ADE4;
+  box-shadow: 0 0 0 2px #619FF7;
   outline: 1px solid transparent;
 }
 
@@ -1931,13 +1931,13 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
 }
 
 .c0 input:disabled + label::before {
-  background-color: rgba(0,0,0,0.10);
+  background-color: rgba(5,24,61,0.1);
   border: none;
 }
 
 .c0 input:disabled + label::after {
-  border-left: 2px solid #757679;
-  border-bottom: 2px solid #757679;
+  border-left: 2px solid #677185;
+  border-bottom: 2px solid #677185;
 }
 
 .c1 {
@@ -1973,7 +1973,7 @@ exports[`Input should render correctly with type="checkbox" 1`] = `
 
 .c2::before {
   background-color: #FFF;
-  border: 1px solid #CCC;
+  border: 1px solid #DFE3EB;
   box-sizing: border-box;
   content: '';
   height: 16px;
@@ -2262,7 +2262,7 @@ exports[`Input should render correctly with type="radio" 1`] = `
 .c4 {
   margin-right: 0.5rem;
   background: #FFF;
-  border: 2px solid #CCC;
+  border: 2px solid #DFE3EB;
   box-sizing: border-box;
   border-radius: 50%;
   height: 16px;
@@ -2288,7 +2288,7 @@ exports[`Input should render correctly with type="radio" 1`] = `
 }
 
 .c1:focus ~ label .c3 {
-  box-shadow: 0 0 0 2px #10ADE4;
+  box-shadow: 0 0 0 2px #619FF7;
   outline: 1px solid transparent;
 }
 
@@ -2305,7 +2305,7 @@ exports[`Input should render correctly with type="radio" 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-color: #004A7C;
+  border-color: #0C6CF2;
 }
 
 .c1:checked ~ label .c3::before {
@@ -2315,7 +2315,7 @@ exports[`Input should render correctly with type="radio" 1`] = `
   height: 8px;
   width: 8px;
   position: relative;
-  background: #004A7C;
+  background: #0C6CF2;
 }
 
 .c2 {
@@ -2609,11 +2609,11 @@ exports[`Input should render correctly with width 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -2626,34 +2626,34 @@ exports[`Input should render correctly with width 1`] = `
 }
 
 .c1:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c1:active:not(:disabled),
 .c1:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c1::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c1::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c1:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c1::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
