@@ -162,10 +162,6 @@ Input.propTypes = {
   disabled: PropTypes.bool,
   e2e: PropTypes.string,
   error: PropTypes.string,
-  forwardRef: PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.shape({ current: PropTypes.func }),
-  ]),
   input: PropTypes.object,
   label: PropTypes.string,
   name: PropTypes.string,
