@@ -5,6 +5,7 @@ import { parseToRgb } from 'polished'
 import { equals, keysIn, sum, values } from 'ramda'
 
 import palette from './palette'
+import theme from './theme'
 
 const thresholdColor = Math.trunc((255 * 3) / 2)
 
@@ -30,10 +31,6 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   width: 100%;
 
-  & > :not(:last-child) {
-    margin-right: 0.5rem;
-  }
-
   > * {
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -44,7 +41,7 @@ const Cell = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: calc(10% - 0.5rem);
+  width: 10%;
   padding: 2rem 1rem;
   box-sizing: border-box;
   background: ${(props) => props.background};
@@ -56,10 +53,12 @@ const Cell = styled.div`
   }
 `
 const ColorKey = styled.span`
+  font-family: ${theme.fontPrimary};
   font-size: 1rem;
   font-weight: 700;
 `
 const ColorHex = styled.span`
+  font-family: ${theme.fontPrimary};
   font-size: 0.7rem;
   font-weight: 400;
 `
