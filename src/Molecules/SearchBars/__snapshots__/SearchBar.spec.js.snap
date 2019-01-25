@@ -170,14 +170,14 @@ exports[`SearchBar should render correctly 1`] = `
   font-size: 1.5rem;
   font-weight: 600;
   color: #121D33;
-  background-color: #FFCC00;
+  background-color: #FFB266;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
   white-space: nowrap;
 }
 
 .c7:hover {
-  background-color: #FFCC00;
+  background-color: #FFB266;
   cursor: pointer;
 }
 
@@ -864,14 +864,14 @@ exports[`SearchBar should render correctly with e2e 1`] = `
   font-size: 1.5rem;
   font-weight: 600;
   color: #121D33;
-  background-color: #FFCC00;
+  background-color: #FFB266;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
   white-space: nowrap;
 }
 
 .c7:hover {
-  background-color: #FFCC00;
+  background-color: #FFB266;
   cursor: pointer;
 }
 
@@ -1558,14 +1558,14 @@ exports[`SearchBar should render correctly with onChange 1`] = `
   font-size: 1.5rem;
   font-weight: 600;
   color: #121D33;
-  background-color: #FFCC00;
+  background-color: #FFB266;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
   white-space: nowrap;
 }
 
 .c7:hover {
-  background-color: #FFCC00;
+  background-color: #FFB266;
   cursor: pointer;
 }
 
@@ -2260,14 +2260,14 @@ exports[`SearchBar should render correctly with onClick 1`] = `
   font-size: 1.5rem;
   font-weight: 600;
   color: #121D33;
-  background-color: #FFCC00;
+  background-color: #FFB266;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
   white-space: nowrap;
 }
 
 .c7:hover {
-  background-color: #FFCC00;
+  background-color: #FFB266;
   cursor: pointer;
 }
 
@@ -2958,14 +2958,14 @@ exports[`SearchBar should render correctly with value 1`] = `
   font-size: 1.5rem;
   font-weight: 600;
   color: #121D33;
-  background-color: #FFCC00;
+  background-color: #FFB266;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
   white-space: nowrap;
 }
 
 .c7:hover {
-  background-color: #FFCC00;
+  background-color: #FFB266;
   cursor: pointer;
 }
 
@@ -3668,14 +3668,14 @@ exports[`SearchBar should render correctly with width 1`] = `
   font-size: 1.5rem;
   font-weight: 600;
   color: #121D33;
-  background-color: #FFCC00;
+  background-color: #FFB266;
   border-top-right-radius: 0.125rem;
   border-bottom-right-radius: 0.125rem;
   white-space: nowrap;
 }
 
 .c7:hover {
-  background-color: #FFCC00;
+  background-color: #FFB266;
   cursor: pointer;
 }
 

@@ -61,9 +61,6 @@ const palette = {
   orange800: '#A62C19',
   orange900: '#801706',
 
-  // Yellow shades (Light to Dark)
-  yellow400: '#FFCC00',
-
   // Grey Overlay (Light to Dark)
   greyFade100: 'rgba(5, 24, 61, 0.1)',
   greyFade400: 'rgba(5, 24, 61, 0.4)',
