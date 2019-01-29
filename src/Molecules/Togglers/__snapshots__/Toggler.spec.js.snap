@@ -20,13 +20,13 @@ exports[`Toggler should render correctly 1`] = `
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  border: 1px solid #EEF2F5;
+  border: 1px solid rgba(0,0,0,0);
   border-radius: 0.2rem;
   box-sizing: border-box;
 }
 
 .c0 > *:not(:last-child) {
-  border-right: 1px solid #EEF2F5;
+  border-right: 1px solid rgba(0,0,0,0);
 }
 
 <Toggler>

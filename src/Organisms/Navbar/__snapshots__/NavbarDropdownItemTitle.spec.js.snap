@@ -7,7 +7,7 @@ exports[`NavbarDropdownItemTitle should render correctly 1`] = `
   font-size: 1rem;
   text-transform: none;
   font-style: normal;
-  color: #545456;
+  color: #677185;
   opacity: 1;
 }
 
@@ -17,7 +17,7 @@ exports[`NavbarDropdownItemTitle should render correctly 1`] = `
 
 @media (min-width:48rem) {
   .c0 {
-    color: #3558A8;
+    color: #0C6CF2;
   }
 }
 

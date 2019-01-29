@@ -2,7 +2,7 @@
 
 exports[`FooterCategory should render correctly 1`] = `
 .c0 {
-  color: #040d25;
+  color: #121D33;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 0.875rem;
   font-weight: 600;

@@ -29,7 +29,7 @@ const info = {
 const colors = Object.keys(palette).map((name) => ({
   name,
   value: palette[name],
-  default: name === 'gray0',
+  default: name === 'white',
 }))
 
 function loadStories() {

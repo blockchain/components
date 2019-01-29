@@ -2,12 +2,12 @@
 
 exports[`NavbarToggler should render correctly 1`] = `
 .c1 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c1:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c0 {
@@ -169,12 +169,12 @@ exports[`NavbarToggler should render correctly 1`] = `
 
 exports[`NavbarToggler should render correctly with toggled 1`] = `
 .c1 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c1:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c0 {

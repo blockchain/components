@@ -22,8 +22,8 @@ exports[`TogglerItem should render correctly 1`] = `
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #10ADE4;
-  background-color: #FFF;
+  color: #98A1B2;
+  background-color: #F0F2F7;
   cursor: pointer;
   text-transform: uppercase;
 }
@@ -122,7 +122,7 @@ exports[`TogglerItem should render correctly with selected 1`] = `
   font-size: 0.875rem;
   font-weight: 500;
   color: #FFF;
-  background-color: #10ADE4;
+  background-color: #0C6CF2;
   cursor: pointer;
   text-transform: uppercase;
 }

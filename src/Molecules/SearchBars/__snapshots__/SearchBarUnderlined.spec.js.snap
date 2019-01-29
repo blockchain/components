@@ -2,12 +2,12 @@
 
 exports[`SearchBarUnderlined should render correctly 1`] = `
 .c5 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c5:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c2 {
@@ -30,11 +30,11 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -47,34 +47,34 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
 }
 
 .c3:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c3:active:not(:disabled),
 .c3:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c3::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -95,7 +95,7 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #CCD2DE;
   background-color: rgba(0,0,0,0);
 }
 
@@ -520,12 +520,12 @@ exports[`SearchBarUnderlined should render correctly 1`] = `
 
 exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
 .c5 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c5:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c2 {
@@ -548,11 +548,11 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -565,34 +565,34 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
 }
 
 .c3:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c3:active:not(:disabled),
 .c3:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c3::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -613,7 +613,7 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #CCD2DE;
   background-color: rgba(0,0,0,0);
 }
 
@@ -1038,12 +1038,12 @@ exports[`SearchBarUnderlined should render correctly with e2e 1`] = `
 
 exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
 .c5 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c5:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c2 {
@@ -1066,11 +1066,11 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -1083,34 +1083,34 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
 }
 
 .c3:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c3:active:not(:disabled),
 .c3:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c3::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -1131,7 +1131,7 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #CCD2DE;
   background-color: rgba(0,0,0,0);
 }
 
@@ -1564,12 +1564,12 @@ exports[`SearchBarUnderlined should render correctly with onChange 1`] = `
 
 exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
 .c5 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c5:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c2 {
@@ -1592,11 +1592,11 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -1609,34 +1609,34 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
 }
 
 .c3:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c3:active:not(:disabled),
 .c3:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c3::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -1657,7 +1657,7 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #CCD2DE;
   background-color: rgba(0,0,0,0);
 }
 
@@ -2086,12 +2086,12 @@ exports[`SearchBarUnderlined should render correctly with onClick 1`] = `
 
 exports[`SearchBarUnderlined should render correctly with value 1`] = `
 .c5 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c5:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c2 {
@@ -2114,11 +2114,11 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -2131,34 +2131,34 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
 }
 
 .c3:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c3:active:not(:disabled),
 .c3:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c3::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -2179,7 +2179,7 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #CCD2DE;
   background-color: rgba(0,0,0,0);
 }
 
@@ -2620,12 +2620,12 @@ exports[`SearchBarUnderlined should render correctly with value 1`] = `
 
 exports[`SearchBarUnderlined should render correctly with width 1`] = `
 .c5 {
-  fill: #545456;
+  fill: #98A1B2;
   cursor: pointer;
 }
 
 .c5:hover {
-  fill: #757679;
+  fill: #677185;
 }
 
 .c2 {
@@ -2648,11 +2648,11 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
   box-sizing: border-box;
   font-family: 'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1rem;
-  color: #545456;
+  color: #353F52;
   border-width: 1px;
-  border-color: #CCC;
+  border-color: #DFE3EB;
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 0.255rem;
   background-color: #FFF;
   background-image: none;
   outline-width: 0;
@@ -2665,34 +2665,34 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
 }
 
 .c3:disabled {
-  color: #545456;
-  border-color: #CCC;
-  background: #F8F8F8;
+  color: #353F52;
+  border-color: #DFE3EB;
+  background: #F0F2F7;
   cursor: not-allowed;
 }
 
 .c3:active:not(:disabled),
 .c3:focus:not(:disabled) {
-  box-shadow: 0 0 0 1px #10ADE4;
+  box-shadow: 0 0 0 1px #619FF7;
 }
 
 .c3::-webkit-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3::-moz-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3:-ms-input-placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
 .c3::placeholder {
-  color: #999B9E;
+  color: #98A1B2;
   font-size: 0.875rem;
 }
 
@@ -2713,7 +2713,7 @@ exports[`SearchBarUnderlined should render correctly with width 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 200px;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #CCD2DE;
   background-color: rgba(0,0,0,0);
 }
 

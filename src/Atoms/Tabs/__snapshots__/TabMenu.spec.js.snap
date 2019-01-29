@@ -19,7 +19,7 @@ exports[`TabMenu should render correctly 1`] = `
   align-items: center;
   width: 100%;
   min-height: 3rem;
-  border-bottom: 0.125rem solid #EEF2F5;
+  border-bottom: 0.125rem solid #DFE3EB;
   box-sizing: border-box;
 }
 
@@ -204,7 +204,7 @@ exports[`TabMenu should render correctly with height 1`] = `
   align-items: center;
   width: 100%;
   min-height: 200px;
-  border-bottom: 0.125rem solid #EEF2F5;
+  border-bottom: 0.125rem solid #DFE3EB;
   box-sizing: border-box;
 }
 
@@ -389,7 +389,7 @@ exports[`TabMenu should render correctly with toggled 1`] = `
   align-items: center;
   width: 100%;
   min-height: 3rem;
-  border-bottom: 0.125rem solid #EEF2F5;
+  border-bottom: 0.125rem solid #DFE3EB;
   box-sizing: border-box;
 }
 
@@ -577,7 +577,7 @@ exports[`TabMenu should render correctly with width 1`] = `
   align-items: center;
   width: 50%;
   min-height: 3rem;
-  border-bottom: 0.125rem solid #EEF2F5;
+  border-bottom: 0.125rem solid #DFE3EB;
   box-sizing: border-box;
 }
 

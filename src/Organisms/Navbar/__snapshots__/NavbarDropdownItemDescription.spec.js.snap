@@ -7,17 +7,17 @@ exports[`NavbarDropdownItemDescription should render correctly 1`] = `
   font-size: 0.875rem;
   text-transform: none;
   font-style: normal;
-  color: #545456;
+  color: #677185;
   opacity: 1;
 }
 
 .c0 {
-  color: rgba(255,255,255,0.50);
+  color: rgba(255,255,255,0.4);
 }
 
 @media (min-width:48rem) {
   .c0 {
-    color: #999B9E;
+    color: #98A1B2;
   }
 }
 

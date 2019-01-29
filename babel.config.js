@@ -65,7 +65,7 @@ module.exports = {
     },
     production,
     test: {
-      plugins: basePlugins,
+      plugins: [...basePlugins, '@babel/plugin-transform-modules-commonjs'],
       presets: ['@babel/env', '@babel/react', '@babel/flow'],
     },
   },

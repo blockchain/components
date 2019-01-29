@@ -6,7 +6,7 @@ exports[`NavbarNavItem should render correctly 1`] = `
   width: 100%;
   padding: 0.5rem 0;
   box-sizing: border-box;
-  border-top: 0.5px solid #999B9E;
+  border-top: 0.5px solid #98A1B2;
 }
 
 @media (min-width:48rem) {

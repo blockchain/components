@@ -95,6 +95,7 @@
     "jest": "23.6.0",
     "jest-styled-components": "6.3.1",
     "lint-staged": "8.1.0",
+    "polished": "2.3.3",
     "prettier": "1.16.0",
     "prop-types": "15.6.2",
     "react": "16.7.0",

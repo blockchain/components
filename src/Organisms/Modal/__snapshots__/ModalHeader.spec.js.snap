@@ -20,7 +20,7 @@ exports[`ModalHeader should render correctly 1`] = `
   width: 100%;
   padding: 1.5rem;
   box-sizing: border-box;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #CCD2DE;
 }
 
 <ModalHeader>
