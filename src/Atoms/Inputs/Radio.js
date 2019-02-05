@@ -6,8 +6,8 @@ import injectE2E from '../../Tools/injectE2E'
 import { fontSize, theme } from '../../Tools/interpolation'
 import type { PropsType } from './Input'
 
-const toId = (name?: string | number) =>
-  `${name != null ? name : '' || ''}-checkbox`
+const toId = (value?: string | number) =>
+  `${value != null ? value : '' || ''}-checkbox`
 
 const Wrapper = styled.div`
   display: flex;
@@ -70,15 +70,18 @@ export const RadioLabel = styled.label`
   font-size: ${fontSize('md')};
 `
 
-const Radio = ({ className, forwardRef: ref, input, ...rest }: PropsType) => (
-  <Wrapper className={className}>
-    <Input {...input} {...rest} id={toId(rest.value)} ref={ref} type="radio" />
-    <RadioLabel htmlFor={toId(rest.value)}>
-      <RadioButton />
-      {rest.label}
-    </RadioLabel>
-  </Wrapper>
-)
+const Radio = ({ className, forwardRef: ref, input, ...rest }: PropsType) => {
+  const value = input ? input.value : rest.value
+  return (
+    <Wrapper className={className}>
+      <Input {...input} {...rest} id={toId(value)} ref={ref} type="radio" />
+      <RadioLabel htmlFor={toId(value)}>
+        <RadioButton />
+        {rest.label}
+      </RadioLabel>
+    </Wrapper>
+  )
+}
 
 type RefPropsType = { ...PropsType }
 
