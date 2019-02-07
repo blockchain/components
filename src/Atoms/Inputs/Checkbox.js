@@ -94,18 +94,15 @@ const Checkbox = ({
   forwardRef: ref,
   input,
   ...rest
-}: PropsType) => (
-  <Wrapper className={className}>
-    <Input
-      {...input}
-      {...rest}
-      id={toId(rest.name)}
-      ref={ref}
-      type="checkbox"
-    />
-    <CheckboxLabel htmlFor={toId(rest.name)}>{rest.label}</CheckboxLabel>
-  </Wrapper>
-)
+}: PropsType) => {
+  const name = input ? input.name : rest.name
+  return (
+    <Wrapper className={className}>
+      <Input {...input} {...rest} id={toId(name)} ref={ref} type="checkbox" />
+      <CheckboxLabel htmlFor={toId(name)}>{rest.label}</CheckboxLabel>
+    </Wrapper>
+  )
+}
 
 type RefPropsType = { ...PropsType }
 

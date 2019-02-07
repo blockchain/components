@@ -1,6 +1,7 @@
 // @flow strict
 import PropTypes from 'prop-types'
 import * as React from 'react'
+import type { InputProps } from 'redux-form/lib/FieldProps.types'
 import styled from 'styled-components'
 
 import injectE2E from '../../Tools/injectE2E'
@@ -28,7 +29,7 @@ export type PropsType = {
   +e2e?: string,
   +error?: string,
   +forwardRef?: React.ElementRef<*>,
-  +input?: {},
+  +input?: $Shape<InputProps>,
   +label?: string,
   +name?: string,
   +renderSuffix?: (disabled?: boolean) => React.Node,
@@ -37,10 +38,7 @@ export type PropsType = {
   +width?: string,
 }
 
-type InputPropsType = {
-  ...$Exact<$Diff<PropsType, { input: * }>>,
-  ...$Exact<$ElementType<PropsType, 'input'>>,
-}
+type InputPropsType = PropsType
 
 type LabelPropsType = {
   children?: React.Node,
