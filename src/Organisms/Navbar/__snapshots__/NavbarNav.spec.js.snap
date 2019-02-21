@@ -17,6 +17,12 @@ exports[`NavbarNav should render correctly 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -43,16 +49,21 @@ exports[`NavbarNav should render correctly 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-order: initial;
+    -ms-flex-order: initial;
+    order: initial;
     height: auto;
     width: 100%;
   }
 }
 
 <NavbarNav
+  order="0"
   toggled={true}
   width="100%"
 >
   <styled.ul
+    order="0"
     toggled={true}
     width="100%"
   >
@@ -71,6 +82,10 @@ exports[`NavbarNav should render correctly 1`] = `
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  order: ",
+              [Function],
+              ";
+  flex-shrink: 0;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -93,6 +108,7 @@ exports[`NavbarNav should render correctly 1`] = `
               ";
     flex-direction: row;
     align-items: center;
+    order: initial;
     height: auto;
     width: ",
               [Function],
@@ -112,11 +128,13 @@ exports[`NavbarNav should render correctly 1`] = `
         }
       }
       forwardedRef={null}
+      order="0"
       toggled={true}
       width="100%"
     >
       <ul
         className="c0"
+        order="0"
         width="100%"
       />
     </StyledComponent>
@@ -141,6 +159,12 @@ exports[`NavbarNav should render correctly with toggled 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -167,16 +191,21 @@ exports[`NavbarNav should render correctly with toggled 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-order: initial;
+    -ms-flex-order: initial;
+    order: initial;
     height: auto;
     width: 100%;
   }
 }
 
 <NavbarNav
+  order="0"
   toggled={true}
   width="100%"
 >
   <styled.ul
+    order="0"
     toggled={true}
     width="100%"
   >
@@ -195,6 +224,10 @@ exports[`NavbarNav should render correctly with toggled 1`] = `
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  order: ",
+              [Function],
+              ";
+  flex-shrink: 0;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -217,6 +250,7 @@ exports[`NavbarNav should render correctly with toggled 1`] = `
               ";
     flex-direction: row;
     align-items: center;
+    order: initial;
     height: auto;
     width: ",
               [Function],
@@ -236,11 +270,13 @@ exports[`NavbarNav should render correctly with toggled 1`] = `
         }
       }
       forwardedRef={null}
+      order="0"
       toggled={true}
       width="100%"
     >
       <ul
         className="c0"
+        order="0"
         width="100%"
       />
     </StyledComponent>
@@ -265,6 +301,12 @@ exports[`NavbarNav should render correctly with toggled 2`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -291,16 +333,21 @@ exports[`NavbarNav should render correctly with toggled 2`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-order: initial;
+    -ms-flex-order: initial;
+    order: initial;
     height: auto;
     width: auto;
   }
 }
 
 <NavbarNav
+  order="0"
   toggled={true}
   width="auto"
 >
   <styled.ul
+    order="0"
     toggled={true}
     width="auto"
   >
@@ -319,6 +366,10 @@ exports[`NavbarNav should render correctly with toggled 2`] = `
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  order: ",
+              [Function],
+              ";
+  flex-shrink: 0;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -341,6 +392,7 @@ exports[`NavbarNav should render correctly with toggled 2`] = `
               ";
     flex-direction: row;
     align-items: center;
+    order: initial;
     height: auto;
     width: ",
               [Function],
@@ -360,11 +412,13 @@ exports[`NavbarNav should render correctly with toggled 2`] = `
         }
       }
       forwardedRef={null}
+      order="0"
       toggled={true}
       width="auto"
     >
       <ul
         className="c0"
+        order="0"
         width="auto"
       />
     </StyledComponent>

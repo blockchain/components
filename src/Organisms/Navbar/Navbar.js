@@ -3,11 +3,10 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { prop, screenSize } from '../../Tools/interpolation'
+import { screenSize } from '../../Tools/interpolation'
 
 export type PropsType = {
   +children?: React.Node,
-  +height?: string,
 }
 
 const Wrapper = styled.div`
@@ -17,7 +16,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: ${prop<PropsType>('height')};
+  height: 4.5rem;
   padding: 0 2rem;
   box-sizing: border-box;
 
@@ -26,19 +25,12 @@ const Wrapper = styled.div`
   }
 `
 
-const Navbar = ({ children, height, ...rest }: PropsType) => (
-  <Wrapper height={height} {...rest}>
-    {children}
-  </Wrapper>
+const Navbar = ({ children, ...rest }: PropsType) => (
+  <Wrapper {...rest}>{children}</Wrapper>
 )
 
 Navbar.propTypes = {
-  children: PropTypes.node,
-  height: PropTypes.string.isRequired,
-}
-
-Navbar.defaultProps = {
-  height: '60px',
+  children: PropTypes.node.isRequired,
 }
 
 export default Navbar

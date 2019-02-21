@@ -7,6 +7,7 @@ import { prop, screenSize } from '../../Tools/interpolation'
 
 export type PropsType = {
   +children?: React.Node,
+  +order: string,
   +toggled?: boolean,
   +width?: string,
 }
@@ -16,6 +17,8 @@ const Wrapper = styled.ul`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  order: ${prop<PropsType>('order')};
+  flex-shrink: 0;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -33,6 +36,7 @@ const Wrapper = styled.ul`
       props.toggled === true ? 'flex' : 'none'};
     flex-direction: row;
     align-items: center;
+    order: initial;
     height: auto;
     width: ${prop<PropsType>('width')};
   }
@@ -44,11 +48,13 @@ const NavbarNav = ({ children, ...rest }: PropsType) => (
 
 NavbarNav.propTypes = {
   children: PropTypes.node,
+  order: PropTypes.string,
   toggled: PropTypes.bool,
   width: PropTypes.string,
 }
 
 NavbarNav.defaultProps = {
+  order: '0',
   toggled: true,
   width: '100%',
 }

@@ -19,7 +19,7 @@ exports[`Navbar should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  height: 60px;
+  height: 4.5rem;
   padding: 0 2rem;
   box-sizing: border-box;
 }
@@ -30,12 +30,8 @@ exports[`Navbar should render correctly 1`] = `
   }
 }
 
-<Navbar
-  height="60px"
->
-  <styled.div
-    height="60px"
-  >
+<Navbar>
+  <styled.div>
     <StyledComponent
       forwardedComponent={
         Object {
@@ -53,9 +49,7 @@ exports[`Navbar should render correctly 1`] = `
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: ",
-              [Function],
-              ";
+  height: 4.5rem;
   padding: 0 2rem;
   box-sizing: border-box;
 
@@ -78,100 +72,9 @@ exports[`Navbar should render correctly 1`] = `
         }
       }
       forwardedRef={null}
-      height="60px"
     >
       <div
         className="c0"
-        height="60px"
-      />
-    </StyledComponent>
-  </styled.div>
-</Navbar>
-`;
-
-exports[`Navbar should render correctly with height 1`] = `
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 60px;
-  padding: 0 2rem;
-  box-sizing: border-box;
-}
-
-@media (min-width:48rem) {
-  .c0 {
-    padding: 0 3rem;
-  }
-}
-
-<Navbar
-  height="60px"
->
-  <styled.div
-    height="60px"
-  >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: ",
-              [Function],
-              ";
-  padding: 0 2rem;
-  box-sizing: border-box;
-
-  @media (min-width: ",
-              [Function],
-              ") {
-    padding: 0 3rem;
-  }
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-      height="60px"
-    >
-      <div
-        className="c0"
-        height="60px"
       />
     </StyledComponent>
   </styled.div>

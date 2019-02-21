@@ -15,4 +15,10 @@ describe('NavbarMenu', () => {
 
     expect(tree.find(NavbarMenu)).toMatchSnapshot()
   })
+
+  it('should render correctly with maxHeight', () => {
+    const tree = mountWithTheme(<NavbarMenu maxHeight="60vh" />)
+
+    expect(tree.find(NavbarMenu)).toMatchSnapshot()
+  })
 })

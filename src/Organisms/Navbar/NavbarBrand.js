@@ -10,6 +10,7 @@ export type PropsType = {
 }
 
 const Wrapper = styled.div`
+  display: flex;
   position: relative;
   z-index: ${theme('navbarBrandZIndex')};
 `

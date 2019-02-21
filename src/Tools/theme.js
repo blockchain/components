@@ -64,7 +64,7 @@ const theme = {
   navbarDropdownHeaderColor: palette.white,
   navbarDropdownTitleColor: palette.blue600,
   navbarDropdownTitleMobileColor: palette.white,
-  navbarMenuBackgroundColor: palette.blue800,
+  navbarMenuBackgroundColor: palette.blue900,
   navbarMenuZIndex: 1000,
   navbarTogglerColor: palette.white,
   paginationBackgroundColor: palette.grey000,

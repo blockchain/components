@@ -9,10 +9,4 @@ describe('Navbar', () => {
 
     expect(tree.find(Navbar)).toMatchSnapshot()
   })
-
-  it('should render correctly with height', () => {
-    const tree = mountWithTheme(<Navbar height="60px" />)
-
-    expect(tree.find(Navbar)).toMatchSnapshot()
-  })
 })
