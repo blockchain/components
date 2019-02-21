@@ -58,12 +58,12 @@ exports[`NavbarNav should render correctly 1`] = `
 }
 
 <NavbarNav
-  order={0}
+  order="0"
   toggled={true}
   width="100%"
 >
   <styled.ul
-    order={0}
+    order="0"
     toggled={true}
     width="100%"
   >
@@ -128,13 +128,13 @@ exports[`NavbarNav should render correctly 1`] = `
         }
       }
       forwardedRef={null}
-      order={0}
+      order="0"
       toggled={true}
       width="100%"
     >
       <ul
         className="c0"
-        order={0}
+        order="0"
         width="100%"
       />
     </StyledComponent>
@@ -200,12 +200,12 @@ exports[`NavbarNav should render correctly with toggled 1`] = `
 }
 
 <NavbarNav
-  order={0}
+  order="0"
   toggled={true}
   width="100%"
 >
   <styled.ul
-    order={0}
+    order="0"
     toggled={true}
     width="100%"
   >
@@ -270,13 +270,13 @@ exports[`NavbarNav should render correctly with toggled 1`] = `
         }
       }
       forwardedRef={null}
-      order={0}
+      order="0"
       toggled={true}
       width="100%"
     >
       <ul
         className="c0"
-        order={0}
+        order="0"
         width="100%"
       />
     </StyledComponent>
@@ -342,12 +342,12 @@ exports[`NavbarNav should render correctly with toggled 2`] = `
 }
 
 <NavbarNav
-  order={0}
+  order="0"
   toggled={true}
   width="auto"
 >
   <styled.ul
-    order={0}
+    order="0"
     toggled={true}
     width="auto"
   >
@@ -412,13 +412,13 @@ exports[`NavbarNav should render correctly with toggled 2`] = `
         }
       }
       forwardedRef={null}
-      order={0}
+      order="0"
       toggled={true}
       width="auto"
     >
       <ul
         className="c0"
-        order={0}
+        order="0"
         width="auto"
       />
     </StyledComponent>

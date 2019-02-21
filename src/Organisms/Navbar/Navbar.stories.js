@@ -194,3 +194,38 @@ storiesOf('Organisms/Navbar', module)
       </BlueSection>
     </Layout>
   ))
+  .add('Navbar (Opened on mobile with small height)', () => (
+    <Layout>
+      <BlueSection>
+        <Navbar>
+          <NavbarHeader>
+            <NavbarBrand>
+              <BrandName width="175px" />
+            </NavbarBrand>
+          </NavbarHeader>
+          <NavbarMenu maxHeight="250px" toggled>
+            <NavbarNav width="auto">
+              <NavbarNavDropdown>
+                <NavbarDropdownHeader>Header 1</NavbarDropdownHeader>
+                <NavbarDropdownContent>
+                  <BigContent />
+                </NavbarDropdownContent>
+              </NavbarNavDropdown>
+              <NavbarNavDropdown>
+                <NavbarDropdownHeader>Header 2</NavbarDropdownHeader>
+                <NavbarDropdownContent>
+                  <BigContent />
+                </NavbarDropdownContent>
+              </NavbarNavDropdown>
+            </NavbarNav>
+            <NavbarNav width="auto">
+              <NavbarNavItem>
+                <ButtonLogin />
+              </NavbarNavItem>
+            </NavbarNav>
+          </NavbarMenu>
+          <NavbarToggler toggled />
+        </Navbar>
+      </BlueSection>
+    </Layout>
+  ))

@@ -7,6 +7,7 @@ import { screenSize, theme } from '../../Tools/interpolation'
 
 export type PropsType = {
   +children?: React.Node,
+  +maxHeight: string,
   +toggled?: boolean,
 }
 
@@ -15,7 +16,7 @@ const Wrapper = styled.div`
   top: 4.5rem;
   left: 0;
   width: 100%;
-  height: calc(80vh - 60px);
+  height: calc(${(props) => props.maxHeight} - 4.5rem);
 
   @media (min-width: ${screenSize('sm')}) {
     position: relative;
@@ -24,6 +25,7 @@ const Wrapper = styled.div`
     height: 100%;
   }
 `
+
 const Container = styled.div`
   position: relative;
   display: ${(props) => (props.toggled ? 'flex' : 'none')};
@@ -55,18 +57,20 @@ const Container = styled.div`
   }
 `
 
-const NavbarMenu = ({ children, toggled, ...rest }: PropsType) => (
-  <Wrapper {...rest}>
+const NavbarMenu = ({ children, maxHeight, toggled, ...rest }: PropsType) => (
+  <Wrapper maxHeight={maxHeight} {...rest}>
     <Container toggled={toggled}>{children}</Container>
   </Wrapper>
 )
 
 NavbarMenu.propTypes = {
   children: PropTypes.node,
+  maxHeight: PropTypes.string,
   toggled: PropTypes.bool,
 }
 
 NavbarMenu.defaultProps = {
+  maxHeight: '80vh',
   toggled: false,
 }
 

@@ -6,7 +6,7 @@ exports[`NavbarMenu should render correctly 1`] = `
   top: 4.5rem;
   left: 0;
   width: 100%;
-  height: calc(80vh - 60px);
+  height: calc(80vh - 4.5rem);
 }
 
 .c1 {
@@ -75,9 +75,12 @@ exports[`NavbarMenu should render correctly 1`] = `
 }
 
 <NavbarMenu
+  maxHeight="80vh"
   toggled={false}
 >
-  <styled.div>
+  <styled.div
+    maxHeight="80vh"
+  >
     <StyledComponent
       forwardedComponent={
         Object {
@@ -93,7 +96,9 @@ exports[`NavbarMenu should render correctly 1`] = `
   top: 4.5rem;
   left: 0;
   width: 100%;
-  height: calc(80vh - 60px);
+  height: calc(",
+              [Function],
+              " - 4.5rem);
 
   @media (min-width: ",
               [Function],
@@ -117,6 +122,211 @@ exports[`NavbarMenu should render correctly 1`] = `
         }
       }
       forwardedRef={null}
+      maxHeight="80vh"
+    >
+      <div
+        className="c0"
+      >
+        <styled.div
+          toggled={false}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  position: relative;
+  display: ",
+                    [Function],
+                    ";
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+  max-height: 100%;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  box-sizing: border-box;
+  background: ",
+                    [Function],
+                    ";
+  transform: translate3d(0, 0, 0);
+  z-index: ",
+                    [Function],
+                    ";
+  overflow-y: auto;
+
+  @media (min-width: ",
+                    [Function],
+                    ") {
+    position: relative;
+    top: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    padding: 0;
+    background: transparent;
+    overflow-y: initial;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            toggled={false}
+          >
+            <div
+              className="c1"
+            />
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</NavbarMenu>
+`;
+
+exports[`NavbarMenu should render correctly with maxHeight 1`] = `
+.c0 {
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  width: 100%;
+  height: calc(60vh - 4.5rem);
+}
+
+.c1 {
+  position: relative;
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  max-height: 100%;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  box-sizing: border-box;
+  background: #0D3578;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+@media (min-width:48rem) {
+  .c0 {
+    position: relative;
+    top: 0;
+    width: calc(100% - 12rem);
+    height: 100%;
+  }
+}
+
+@media (min-width:48rem) {
+  .c1 {
+    position: relative;
+    top: initial;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    padding: 0;
+    background: transparent;
+    overflow-y: initial;
+  }
+}
+
+<NavbarMenu
+  maxHeight="60vh"
+  toggled={false}
+>
+  <styled.div
+    maxHeight="60vh"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  width: 100%;
+  height: calc(",
+              [Function],
+              " - 4.5rem);
+
+  @media (min-width: ",
+              [Function],
+              ") {
+    position: relative;
+    top: 0;
+    width: calc(100% - 12rem);
+    height: 100%;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      maxHeight="60vh"
     >
       <div
         className="c0"
@@ -204,7 +414,7 @@ exports[`NavbarMenu should render correctly with toggled 1`] = `
   top: 4.5rem;
   left: 0;
   width: 100%;
-  height: calc(80vh - 60px);
+  height: calc(80vh - 4.5rem);
 }
 
 .c1 {
@@ -276,9 +486,12 @@ exports[`NavbarMenu should render correctly with toggled 1`] = `
 }
 
 <NavbarMenu
+  maxHeight="80vh"
   toggled={true}
 >
-  <styled.div>
+  <styled.div
+    maxHeight="80vh"
+  >
     <StyledComponent
       forwardedComponent={
         Object {
@@ -294,7 +507,9 @@ exports[`NavbarMenu should render correctly with toggled 1`] = `
   top: 4.5rem;
   left: 0;
   width: 100%;
-  height: calc(80vh - 60px);
+  height: calc(",
+              [Function],
+              " - 4.5rem);
 
   @media (min-width: ",
               [Function],
@@ -318,6 +533,7 @@ exports[`NavbarMenu should render correctly with toggled 1`] = `
         }
       }
       forwardedRef={null}
+      maxHeight="80vh"
     >
       <div
         className="c0"
