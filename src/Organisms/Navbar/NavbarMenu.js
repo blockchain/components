@@ -12,7 +12,7 @@ export type PropsType = {
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 60px;
+  top: 4.5rem;
   left: 0;
   width: 100%;
   height: calc(80vh - 60px);

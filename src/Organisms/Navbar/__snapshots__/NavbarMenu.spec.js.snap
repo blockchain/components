@@ -3,7 +3,7 @@
 exports[`NavbarMenu should render correctly 1`] = `
 .c0 {
   position: absolute;
-  top: 60px;
+  top: 4.5rem;
   left: 0;
   width: 100%;
   height: calc(80vh - 60px);
@@ -90,7 +90,7 @@ exports[`NavbarMenu should render correctly 1`] = `
             "rules": Array [
               "
   position: absolute;
-  top: 60px;
+  top: 4.5rem;
   left: 0;
   width: 100%;
   height: calc(80vh - 60px);
@@ -201,7 +201,7 @@ exports[`NavbarMenu should render correctly 1`] = `
 exports[`NavbarMenu should render correctly with toggled 1`] = `
 .c0 {
   position: absolute;
-  top: 60px;
+  top: 4.5rem;
   left: 0;
   width: 100%;
   height: calc(80vh - 60px);
@@ -291,7 +291,7 @@ exports[`NavbarMenu should render correctly with toggled 1`] = `
             "rules": Array [
               "
   position: absolute;
-  top: 60px;
+  top: 4.5rem;
   left: 0;
   width: 100%;
   height: calc(80vh - 60px);
