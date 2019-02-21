@@ -2,6 +2,10 @@
 
 exports[`NavbarBrand should render correctly 1`] = `
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   z-index: 1001;
 }
@@ -23,6 +27,7 @@ exports[`NavbarBrand should render correctly 1`] = `
             "lastClassName": "c0",
             "rules": Array [
               "
+  display: flex;
   position: relative;
   z-index: ",
               [Function],
@@ -54,6 +59,10 @@ exports[`NavbarBrand should render correctly 1`] = `
 
 exports[`NavbarBrand should render correctly with height 1`] = `
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   z-index: 1001;
 }
@@ -75,6 +84,7 @@ exports[`NavbarBrand should render correctly with height 1`] = `
             "lastClassName": "c0",
             "rules": Array [
               "
+  display: flex;
   position: relative;
   z-index: ",
               [Function],

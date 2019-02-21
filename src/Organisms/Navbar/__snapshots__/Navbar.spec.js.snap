@@ -30,12 +30,8 @@ exports[`Navbar should render correctly 1`] = `
   }
 }
 
-<Navbar
-  height="60px"
->
-  <styled.div
-    height="60px"
-  >
+<Navbar>
+  <styled.div>
     <StyledComponent
       forwardedComponent={
         Object {
@@ -53,9 +49,7 @@ exports[`Navbar should render correctly 1`] = `
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: ",
-              [Function],
-              ";
+  height: 60px;
   padding: 0 2rem;
   box-sizing: border-box;
 
@@ -78,11 +72,9 @@ exports[`Navbar should render correctly 1`] = `
         }
       }
       forwardedRef={null}
-      height="60px"
     >
       <div
         className="c0"
-        height="60px"
       />
     </StyledComponent>
   </styled.div>
@@ -142,9 +134,7 @@ exports[`Navbar should render correctly with height 1`] = `
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: ",
-              [Function],
-              ";
+  height: 60px;
   padding: 0 2rem;
   box-sizing: border-box;
 
