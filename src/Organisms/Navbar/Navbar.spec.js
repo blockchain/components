@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 
 describe('Navbar', () => {
   it('should render correctly', () => {
-    const tree = mountWithTheme(<Navbar />)
+    const tree = mountWithTheme(<Navbar>Navbar</Navbar>)
 
     expect(tree.find(Navbar)).toMatchSnapshot()
   })
