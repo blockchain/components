@@ -12,6 +12,7 @@ export type PropsType = {
 }
 
 const Wrapper = styled.div`
+  display: ${(props) => (props.toggled ? 'block' : 'none')};
   position: absolute;
   top: 4.5rem;
   left: 0;
@@ -19,6 +20,7 @@ const Wrapper = styled.div`
   height: calc(${prop<PropsType>('maxHeight')} - 4.5rem);
 
   @media (min-width: ${screenSize('sm')}) {
+    display: block;
     position: relative;
     top: 0;
     width: calc(100% - 12rem);
@@ -28,7 +30,7 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   position: relative;
-  display: ${(props) => (props.toggled ? 'flex' : 'none')};
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -57,9 +59,9 @@ const Container = styled.div`
   }
 `
 
-const NavbarMenu = ({ children, maxHeight, toggled, ...rest }: PropsType) => (
-  <Wrapper maxHeight={maxHeight} {...rest}>
-    <Container toggled={toggled}>{children}</Container>
+const NavbarMenu = ({ children, ...rest }: PropsType) => (
+  <Wrapper {...rest}>
+    <Container>{children}</Container>
   </Wrapper>
 )
 

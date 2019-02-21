@@ -75,7 +75,9 @@ exports[`Navbar should render correctly 1`] = `
     >
       <div
         className="c0"
-      />
+      >
+        Navbar
+      </div>
     </StyledComponent>
   </styled.div>
 </Navbar>
