@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { screenSize, theme } from '../../Tools/interpolation'
+import { prop, screenSize, theme } from '../../Tools/interpolation'
 
 export type PropsType = {
   +children?: React.Node,
@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   top: 4.5rem;
   left: 0;
   width: 100%;
-  height: calc(${(props) => props.maxHeight} - 4.5rem);
+  height: calc(${prop<PropsType>('maxHeight')} - 4.5rem);
 
   @media (min-width: ${screenSize('sm')}) {
     position: relative;
