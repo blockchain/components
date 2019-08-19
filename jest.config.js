@@ -1,39 +1,38 @@
-const enzyme = require.resolve('./utils/enzyme')
-const raf = require.resolve('./utils/raf')
-const testFramework = require.resolve('./utils/testFramework')
+const enzyme = require.resolve('./utils/enzyme');
+const raf = require.resolve('./utils/raf');
+const testFramework = require.resolve('./utils/testFramework');
 
-const coverageEnabled = process.argv.indexOf('--coverage') !== -1
+const coverageEnabled = process.argv.indexOf('--coverage') !== -1;
 
 module.exports = {
   clearMocks: true,
   collectCoverage: coverageEnabled,
   collectCoverageFrom: [
-    'src/Atoms/**/**.js',
-    'src/Molecules/**/**.js',
-    'src/Organims/**/**.js',
+    'src/**/**.tsx',
+    '!src/**/index.tsx',
     '!src/Tools/**',
-    '!src/Atoms/Icons/crypto/**',
-    '!src/Atoms/Icons/custom/**',
-    '!src/Atoms/Icons/fa/**',
-    '!src/Atoms/Icons/withStyle.js',
-    '!**/__snapshots__/**',
-    '!**/**.stories.js',
-    '!**/**Map.js',
-    '!**/index.js',
+    '!src/Navbar/**',
+    '!src/**/*.test.tsx',
+    '!src/**/*.stories.tsx',
   ],
   coverageDirectory: './coverage',
-  coverageReporters: ['json-summary', 'text-lcov', 'lcov'],
+  coveragePathIgnorePatterns: ['<rootDir>/node_modules'],
+  coverageReporters: ['json', 'lcov', 'text-summary'],
   coverageThreshold: {
     global: {
-      branches: 90,
-      functions: 95,
-      lines: 95,
-      statements: 95,
+      branches: 100,
+      functions: 100,
+      lines: 100,
+      statements: 100,
     },
   },
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   setupFiles: [raf, enzyme],
-  setupTestFrameworkScriptFile: testFramework,
+  setupFilesAfterEnv: [testFramework],
   snapshotSerializers: [require.resolve('enzyme-to-json/serializer')],
+  transform: {
+    '.tsx': 'ts-jest',
+  },
   testURL: 'http://localhost/',
-  transform: { '^.+\\.(js|jsx|mjs)$': '<rootDir>/node_modules/babel-jest' },
-}
+  testRegex: '.test.tsx$',
+};

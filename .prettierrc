@@ -1,6 +1,5 @@
----
-arrowParens: always
-parser: flow
-semi: false
-singleQuote: true
-trailingComma: all
+{
+  "printWidth": 120,
+  "trailingComma": "all",
+  "singleQuote": true
+}

@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text should render correctly (size) 1`] = `
+.c0 {
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #353F52;
+}
+
+<Text
+  size="size5"
+  weight="weight4"
+>
+  <styled.span
+    size="size5"
+    weight="weight4"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  font-family: Inter, sans-serif;
+  font-size: ",
+              [Function],
+              ";
+  font-weight: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      size="size5"
+      weight="weight4"
+    >
+      <span
+        className="c0"
+        size="size5"
+      >
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+      </span>
+    </StyledComponent>
+  </styled.span>
+</Text>
+`;
+
+exports[`Text should render correctly (weight) 1`] = `
+.c0 {
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #353F52;
+}
+
+<Text
+  size="size5"
+  weight="weight9"
+>
+  <styled.span
+    size="size5"
+    weight="weight9"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  font-family: Inter, sans-serif;
+  font-size: ",
+              [Function],
+              ";
+  font-weight: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      size="size5"
+      weight="weight9"
+    >
+      <span
+        className="c0"
+        size="size5"
+      >
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+      </span>
+    </StyledComponent>
+  </styled.span>
+</Text>
+`;
+
+exports[`Text should render correctly 1`] = `
+.c0 {
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #353F52;
+}
+
+<Text
+  size="size5"
+  weight="weight4"
+>
+  <styled.span
+    size="size5"
+    weight="weight4"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  font-family: Inter, sans-serif;
+  font-size: ",
+              [Function],
+              ";
+  font-weight: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      size="size5"
+      weight="weight4"
+    >
+      <span
+        className="c0"
+        size="size5"
+      >
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+      </span>
+    </StyledComponent>
+  </styled.span>
+</Text>
+`;

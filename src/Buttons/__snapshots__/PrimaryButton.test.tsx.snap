@@ -1,0 +1,2081 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrimaryButton should render correctly (disabled) 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: not-allowed;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.c0 {
+  background: #0C6CF2;
+  color: #FFF;
+  border-color: #0C6CF2;
+}
+
+.c0:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+.c0:active,
+.c0:focus {
+  background: #144699;
+  color: #FFF;
+  border-color: #144699;
+}
+
+.c0:hover {
+  background: #1656B9;
+  color: #FFF;
+  border-color: #1656B9;
+}
+
+.c0:hover:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+<PrimaryButton
+  disabled={true}
+  fullscreen={false}
+  size="medium"
+  state="initial"
+  width="auto"
+>
+  <Styled(Button)
+    disabled={true}
+    fullscreen={false}
+    size="medium"
+    state="initial"
+    width="auto"
+  >
+    <StyledComponent
+      disabled={true}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  background: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  border-color: ",
+              [Function],
+              ";
+
+  &:disabled {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:active,
+  :focus {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:hover {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+
+    &:disabled {
+      background: ",
+              [Function],
+              ";
+      color: ",
+              [Function],
+              ";
+      border-color: ",
+              [Function],
+              ";
+    }
+  }
+",
+            ],
+          },
+          "displayName": "Styled(Button)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      fullscreen={false}
+      size="medium"
+      state="initial"
+      width="auto"
+    >
+      <Button
+        className="c0"
+        disabled={true}
+        fullscreen={false}
+        size="medium"
+        state="initial"
+        width="auto"
+      >
+        <styled.button
+          className="c0"
+          disabled={true}
+          fullscreen={false}
+          size="medium"
+          state="initial"
+          width="auto"
+        >
+          <StyledComponent
+            className="c0"
+            disabled={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: ",
+                    [Function],
+                    ";
+  box-sizing: border-box;
+  width: ",
+                    [Function],
+                    ";
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  transition: 0.2s;
+  cursor: ",
+                    [Function],
+                    ";
+  font-family: Inter, sans-serif;
+  font-size: ",
+                    [Function],
+                    ";
+  font-weight: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.button",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "button",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            fullscreen={false}
+            size="medium"
+            state="initial"
+            width="auto"
+          >
+            <button
+              className="c0 c1"
+              disabled={true}
+              size="medium"
+              width="auto"
+            >
+              PrimaryButton
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </Button>
+    </StyledComponent>
+  </Styled(Button)>
+</PrimaryButton>
+`;
+
+exports[`PrimaryButton should render correctly (fullscreen) 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.c0 {
+  background: #0C6CF2;
+  color: #FFF;
+  border-color: #0C6CF2;
+}
+
+.c0:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+.c0:active,
+.c0:focus {
+  background: #144699;
+  color: #FFF;
+  border-color: #144699;
+}
+
+.c0:hover {
+  background: #1656B9;
+  color: #FFF;
+  border-color: #1656B9;
+}
+
+.c0:hover:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+<PrimaryButton
+  disabled={false}
+  fullscreen={true}
+  size="medium"
+  state="initial"
+  width="auto"
+>
+  <Styled(Button)
+    disabled={false}
+    fullscreen={true}
+    size="medium"
+    state="initial"
+    width="auto"
+  >
+    <StyledComponent
+      disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  background: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  border-color: ",
+              [Function],
+              ";
+
+  &:disabled {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:active,
+  :focus {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:hover {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+
+    &:disabled {
+      background: ",
+              [Function],
+              ";
+      color: ",
+              [Function],
+              ";
+      border-color: ",
+              [Function],
+              ";
+    }
+  }
+",
+            ],
+          },
+          "displayName": "Styled(Button)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      fullscreen={true}
+      size="medium"
+      state="initial"
+      width="auto"
+    >
+      <Button
+        className="c0"
+        disabled={false}
+        fullscreen={true}
+        size="medium"
+        state="initial"
+        width="auto"
+      >
+        <styled.button
+          className="c0"
+          disabled={false}
+          fullscreen={true}
+          size="medium"
+          state="initial"
+          width="auto"
+        >
+          <StyledComponent
+            className="c0"
+            disabled={false}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: ",
+                    [Function],
+                    ";
+  box-sizing: border-box;
+  width: ",
+                    [Function],
+                    ";
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  transition: 0.2s;
+  cursor: ",
+                    [Function],
+                    ";
+  font-family: Inter, sans-serif;
+  font-size: ",
+                    [Function],
+                    ";
+  font-weight: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.button",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "button",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            fullscreen={true}
+            size="medium"
+            state="initial"
+            width="auto"
+          >
+            <button
+              className="c0 c1"
+              disabled={false}
+              size="medium"
+              width="auto"
+            >
+              PrimaryButton
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </Button>
+    </StyledComponent>
+  </Styled(Button)>
+</PrimaryButton>
+`;
+
+exports[`PrimaryButton should render correctly (size - large) 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: 1rem 1.5rem;
+  box-sizing: border-box;
+  width: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.c0 {
+  background: #0C6CF2;
+  color: #FFF;
+  border-color: #0C6CF2;
+}
+
+.c0:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+.c0:active,
+.c0:focus {
+  background: #144699;
+  color: #FFF;
+  border-color: #144699;
+}
+
+.c0:hover {
+  background: #1656B9;
+  color: #FFF;
+  border-color: #1656B9;
+}
+
+.c0:hover:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+<PrimaryButton
+  disabled={false}
+  fullscreen={false}
+  size="large"
+  state="initial"
+  width="auto"
+>
+  <Styled(Button)
+    disabled={false}
+    fullscreen={false}
+    size="large"
+    state="initial"
+    width="auto"
+  >
+    <StyledComponent
+      disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  background: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  border-color: ",
+              [Function],
+              ";
+
+  &:disabled {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:active,
+  :focus {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:hover {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+
+    &:disabled {
+      background: ",
+              [Function],
+              ";
+      color: ",
+              [Function],
+              ";
+      border-color: ",
+              [Function],
+              ";
+    }
+  }
+",
+            ],
+          },
+          "displayName": "Styled(Button)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      fullscreen={false}
+      size="large"
+      state="initial"
+      width="auto"
+    >
+      <Button
+        className="c0"
+        disabled={false}
+        fullscreen={false}
+        size="large"
+        state="initial"
+        width="auto"
+      >
+        <styled.button
+          className="c0"
+          disabled={false}
+          fullscreen={false}
+          size="large"
+          state="initial"
+          width="auto"
+        >
+          <StyledComponent
+            className="c0"
+            disabled={false}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: ",
+                    [Function],
+                    ";
+  box-sizing: border-box;
+  width: ",
+                    [Function],
+                    ";
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  transition: 0.2s;
+  cursor: ",
+                    [Function],
+                    ";
+  font-family: Inter, sans-serif;
+  font-size: ",
+                    [Function],
+                    ";
+  font-weight: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.button",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "button",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            fullscreen={false}
+            size="large"
+            state="initial"
+            width="auto"
+          >
+            <button
+              className="c0 c1"
+              disabled={false}
+              size="large"
+              width="auto"
+            >
+              PrimaryButton
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </Button>
+    </StyledComponent>
+  </Styled(Button)>
+</PrimaryButton>
+`;
+
+exports[`PrimaryButton should render correctly (size - small) 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: 0.25rem 0.5rem;
+  box-sizing: border-box;
+  width: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  font-family: Inter,sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.c0 {
+  background: #0C6CF2;
+  color: #FFF;
+  border-color: #0C6CF2;
+}
+
+.c0:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+.c0:active,
+.c0:focus {
+  background: #144699;
+  color: #FFF;
+  border-color: #144699;
+}
+
+.c0:hover {
+  background: #1656B9;
+  color: #FFF;
+  border-color: #1656B9;
+}
+
+.c0:hover:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+<PrimaryButton
+  disabled={false}
+  fullscreen={false}
+  size="small"
+  state="initial"
+  width="auto"
+>
+  <Styled(Button)
+    disabled={false}
+    fullscreen={false}
+    size="small"
+    state="initial"
+    width="auto"
+  >
+    <StyledComponent
+      disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  background: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  border-color: ",
+              [Function],
+              ";
+
+  &:disabled {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:active,
+  :focus {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:hover {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+
+    &:disabled {
+      background: ",
+              [Function],
+              ";
+      color: ",
+              [Function],
+              ";
+      border-color: ",
+              [Function],
+              ";
+    }
+  }
+",
+            ],
+          },
+          "displayName": "Styled(Button)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      fullscreen={false}
+      size="small"
+      state="initial"
+      width="auto"
+    >
+      <Button
+        className="c0"
+        disabled={false}
+        fullscreen={false}
+        size="small"
+        state="initial"
+        width="auto"
+      >
+        <styled.button
+          className="c0"
+          disabled={false}
+          fullscreen={false}
+          size="small"
+          state="initial"
+          width="auto"
+        >
+          <StyledComponent
+            className="c0"
+            disabled={false}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: ",
+                    [Function],
+                    ";
+  box-sizing: border-box;
+  width: ",
+                    [Function],
+                    ";
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  transition: 0.2s;
+  cursor: ",
+                    [Function],
+                    ";
+  font-family: Inter, sans-serif;
+  font-size: ",
+                    [Function],
+                    ";
+  font-weight: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.button",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "button",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            fullscreen={false}
+            size="small"
+            state="initial"
+            width="auto"
+          >
+            <button
+              className="c0 c1"
+              disabled={false}
+              size="small"
+              width="auto"
+            >
+              PrimaryButton
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </Button>
+    </StyledComponent>
+  </Styled(Button)>
+</PrimaryButton>
+`;
+
+exports[`PrimaryButton should render correctly (state - success) 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.c0 {
+  background: #0C6CF2;
+  color: #FFF;
+  border-color: #0C6CF2;
+}
+
+.c0:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+.c0:active,
+.c0:focus {
+  background: #144699;
+  color: #FFF;
+  border-color: #144699;
+}
+
+.c0:hover {
+  background: #1656B9;
+  color: #FFF;
+  border-color: #1656B9;
+}
+
+.c0:hover:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+<PrimaryButton
+  disabled={false}
+  fullscreen={false}
+  size="medium"
+  state="success"
+  width="auto"
+>
+  <Styled(Button)
+    disabled={false}
+    fullscreen={false}
+    size="medium"
+    state="success"
+    width="auto"
+  >
+    <StyledComponent
+      disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  background: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  border-color: ",
+              [Function],
+              ";
+
+  &:disabled {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:active,
+  :focus {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:hover {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+
+    &:disabled {
+      background: ",
+              [Function],
+              ";
+      color: ",
+              [Function],
+              ";
+      border-color: ",
+              [Function],
+              ";
+    }
+  }
+",
+            ],
+          },
+          "displayName": "Styled(Button)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      fullscreen={false}
+      size="medium"
+      state="success"
+      width="auto"
+    >
+      <Button
+        className="c0"
+        disabled={false}
+        fullscreen={false}
+        size="medium"
+        state="success"
+        width="auto"
+      >
+        <styled.button
+          className="c0"
+          disabled={false}
+          fullscreen={false}
+          size="medium"
+          state="success"
+          width="auto"
+        >
+          <StyledComponent
+            className="c0"
+            disabled={false}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: ",
+                    [Function],
+                    ";
+  box-sizing: border-box;
+  width: ",
+                    [Function],
+                    ";
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  transition: 0.2s;
+  cursor: ",
+                    [Function],
+                    ";
+  font-family: Inter, sans-serif;
+  font-size: ",
+                    [Function],
+                    ";
+  font-weight: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.button",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "button",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            fullscreen={false}
+            size="medium"
+            state="success"
+            width="auto"
+          >
+            <button
+              className="c0 c1"
+              disabled={false}
+              size="medium"
+              width="auto"
+            >
+              Success
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </Button>
+    </StyledComponent>
+  </Styled(Button)>
+</PrimaryButton>
+`;
+
+exports[`PrimaryButton should render correctly (state -loading) 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.c0 {
+  background: #0C6CF2;
+  color: #FFF;
+  border-color: #0C6CF2;
+}
+
+.c0:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+.c0:active,
+.c0:focus {
+  background: #144699;
+  color: #FFF;
+  border-color: #144699;
+}
+
+.c0:hover {
+  background: #1656B9;
+  color: #FFF;
+  border-color: #1656B9;
+}
+
+.c0:hover:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+<PrimaryButton
+  disabled={false}
+  fullscreen={false}
+  size="medium"
+  state="loading"
+  width="auto"
+>
+  <Styled(Button)
+    disabled={false}
+    fullscreen={false}
+    size="medium"
+    state="loading"
+    width="auto"
+  >
+    <StyledComponent
+      disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  background: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  border-color: ",
+              [Function],
+              ";
+
+  &:disabled {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:active,
+  :focus {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:hover {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+
+    &:disabled {
+      background: ",
+              [Function],
+              ";
+      color: ",
+              [Function],
+              ";
+      border-color: ",
+              [Function],
+              ";
+    }
+  }
+",
+            ],
+          },
+          "displayName": "Styled(Button)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      fullscreen={false}
+      size="medium"
+      state="loading"
+      width="auto"
+    >
+      <Button
+        className="c0"
+        disabled={false}
+        fullscreen={false}
+        size="medium"
+        state="loading"
+        width="auto"
+      >
+        <styled.button
+          className="c0"
+          disabled={false}
+          fullscreen={false}
+          size="medium"
+          state="loading"
+          width="auto"
+        >
+          <StyledComponent
+            className="c0"
+            disabled={false}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: ",
+                    [Function],
+                    ";
+  box-sizing: border-box;
+  width: ",
+                    [Function],
+                    ";
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  transition: 0.2s;
+  cursor: ",
+                    [Function],
+                    ";
+  font-family: Inter, sans-serif;
+  font-size: ",
+                    [Function],
+                    ";
+  font-weight: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.button",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "button",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            fullscreen={false}
+            size="medium"
+            state="loading"
+            width="auto"
+          >
+            <button
+              className="c0 c1"
+              disabled={false}
+              size="medium"
+              width="auto"
+            >
+              Loading
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </Button>
+    </StyledComponent>
+  </Styled(Button)>
+</PrimaryButton>
+`;
+
+exports[`PrimaryButton should render correctly (width) 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: 400px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.c0 {
+  background: #0C6CF2;
+  color: #FFF;
+  border-color: #0C6CF2;
+}
+
+.c0:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+.c0:active,
+.c0:focus {
+  background: #144699;
+  color: #FFF;
+  border-color: #144699;
+}
+
+.c0:hover {
+  background: #1656B9;
+  color: #FFF;
+  border-color: #1656B9;
+}
+
+.c0:hover:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+<PrimaryButton
+  disabled={false}
+  fullscreen={false}
+  size="medium"
+  state="initial"
+  width="400px"
+>
+  <Styled(Button)
+    disabled={false}
+    fullscreen={false}
+    size="medium"
+    state="initial"
+    width="400px"
+  >
+    <StyledComponent
+      disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  background: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  border-color: ",
+              [Function],
+              ";
+
+  &:disabled {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:active,
+  :focus {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:hover {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+
+    &:disabled {
+      background: ",
+              [Function],
+              ";
+      color: ",
+              [Function],
+              ";
+      border-color: ",
+              [Function],
+              ";
+    }
+  }
+",
+            ],
+          },
+          "displayName": "Styled(Button)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      fullscreen={false}
+      size="medium"
+      state="initial"
+      width="400px"
+    >
+      <Button
+        className="c0"
+        disabled={false}
+        fullscreen={false}
+        size="medium"
+        state="initial"
+        width="400px"
+      >
+        <styled.button
+          className="c0"
+          disabled={false}
+          fullscreen={false}
+          size="medium"
+          state="initial"
+          width="400px"
+        >
+          <StyledComponent
+            className="c0"
+            disabled={false}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: ",
+                    [Function],
+                    ";
+  box-sizing: border-box;
+  width: ",
+                    [Function],
+                    ";
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  transition: 0.2s;
+  cursor: ",
+                    [Function],
+                    ";
+  font-family: Inter, sans-serif;
+  font-size: ",
+                    [Function],
+                    ";
+  font-weight: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.button",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "button",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            fullscreen={false}
+            size="medium"
+            state="initial"
+            width="400px"
+          >
+            <button
+              className="c0 c1"
+              disabled={false}
+              size="medium"
+              width="400px"
+            >
+              PrimaryButton
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </Button>
+    </StyledComponent>
+  </Styled(Button)>
+</PrimaryButton>
+`;
+
+exports[`PrimaryButton should render correctly 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.c0 {
+  background: #0C6CF2;
+  color: #FFF;
+  border-color: #0C6CF2;
+}
+
+.c0:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+.c0:active,
+.c0:focus {
+  background: #144699;
+  color: #FFF;
+  border-color: #144699;
+}
+
+.c0:hover {
+  background: #1656B9;
+  color: #FFF;
+  border-color: #1656B9;
+}
+
+.c0:hover:disabled {
+  background: #BBDBFC;
+  color: #FFF;
+  border-color: #BBDBFC;
+}
+
+<PrimaryButton
+  disabled={false}
+  fullscreen={false}
+  size="medium"
+  state="initial"
+  width="auto"
+>
+  <Styled(Button)
+    disabled={false}
+    fullscreen={false}
+    size="medium"
+    state="initial"
+    width="auto"
+  >
+    <StyledComponent
+      disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  background: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  border-color: ",
+              [Function],
+              ";
+
+  &:disabled {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:active,
+  :focus {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+  }
+
+  &:hover {
+    background: ",
+              [Function],
+              ";
+    color: ",
+              [Function],
+              ";
+    border-color: ",
+              [Function],
+              ";
+
+    &:disabled {
+      background: ",
+              [Function],
+              ";
+      color: ",
+              [Function],
+              ";
+      border-color: ",
+              [Function],
+              ";
+    }
+  }
+",
+            ],
+          },
+          "displayName": "Styled(Button)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      fullscreen={false}
+      size="medium"
+      state="initial"
+      width="auto"
+    >
+      <Button
+        className="c0"
+        disabled={false}
+        fullscreen={false}
+        size="medium"
+        state="initial"
+        width="auto"
+      >
+        <styled.button
+          className="c0"
+          disabled={false}
+          fullscreen={false}
+          size="medium"
+          state="initial"
+          width="auto"
+        >
+          <StyledComponent
+            className="c0"
+            disabled={false}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  min-width: 100px;
+  padding: ",
+                    [Function],
+                    ";
+  box-sizing: border-box;
+  width: ",
+                    [Function],
+                    ";
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  transition: 0.2s;
+  cursor: ",
+                    [Function],
+                    ";
+  font-family: Inter, sans-serif;
+  font-size: ",
+                    [Function],
+                    ";
+  font-weight: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.button",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "button",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            fullscreen={false}
+            size="medium"
+            state="initial"
+            width="auto"
+          >
+            <button
+              className="c0 c1"
+              disabled={false}
+              size="medium"
+              width="auto"
+            >
+              PrimaryButton
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </Button>
+    </StyledComponent>
+  </Styled(Button)>
+</PrimaryButton>
+`;

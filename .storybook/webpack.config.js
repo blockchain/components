@@ -1,23 +1,16 @@
-module.exports = {
-  module: {
-    rules: [
-      {
-        exclude: [/[/\\\\]node_modules[/\\\\]/],
-        include: /src/,
-        test: /\.js$/,
-        use: [
-          {
-            loader: `babel-loader?cacheDirectory=true`,
-          },
-          'stylelint-custom-processor-loader',
-          {
-            loader: 'eslint-loader',
-            options: {
-              quiet: true,
-            },
-          },
-        ],
-      },
-    ],
-  },
-}
+const path = require("path");
+const SRC_PATH = path.join(__dirname, "../src");
+
+module.exports = ({ config, ...rest }) => {
+  config.module.rules.push({
+    test: /\.(ts|tsx)$/,
+    use: [
+      require.resolve("awesome-typescript-loader"),
+      require.resolve("react-docgen-typescript-loader")
+    ]
+  });
+
+  config.resolve.extensions.push(".ts", ".tsx");
+
+  return config;
+};

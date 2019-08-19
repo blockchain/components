@@ -1,3 +1,3 @@
-require('jest-styled-components')
+require('jest-styled-components');
 
-module.exports = {}
+module.exports = {};
