@@ -177,7 +177,8 @@ class Tooltip extends React.Component<PropsType, StateType> {
             placement,
           }: {
             +placement: PlacementType,
-            +ref: React.ElementRef<*>, // eslint-disable-line react/no-unused-prop-types
+            /* eslint-disable no-undef */
+            +ref: React.ElementRef<*>,
             +style: {},
           }) => (
             <CSSTransition
