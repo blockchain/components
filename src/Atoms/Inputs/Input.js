@@ -172,6 +172,7 @@ Input.propTypes = {
     'radio',
     'search',
     'text',
+    'email',
   ]),
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   width: PropTypes.string,
