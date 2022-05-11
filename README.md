@@ -1,3 +1,7 @@
+
+# THIS UI LIBRARY IS DEPRICATED, PLEASE USE CONSTELLATION!
+
+
 [![Coverage Status](https://coveralls.io/repos/github/blockchain/components/badge.svg?branch=master)](https://coveralls.io/github/blockchain/components?branch=master)
 [![Flow Coverage](artifacts/flow-coverage-badge.svg)](http://flow.org)
 [![CircleCI](https://circleci.com/gh/blockchain/components/tree/master.svg?style=svg)](https://circleci.com/gh/blockchain/components/tree/master)
